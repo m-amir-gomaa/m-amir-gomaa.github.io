@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Gomaa | Full-Stack Engineer</title>
+  <meta name="description" content="Mohamed Gomaa — Full-Stack Software Engineer specializing in Go, Next.js, and modern web architectures. Available for full-stack opportunities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient animated background -->
+  <div class="ambient-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="glass-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-content">
+      <a href="#" class="logo" aria-label="Mohamed Gomaa — Home">MG.</a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links" role="list">
+        <a href="#about" role="listitem">About</a>
+        <a href="#projects" role="listitem">Work</a>
+        <a href="#contact" role="listitem">Contact</a>
+        <a href="#" class="nav-resume-btn" id="nav-resume-btn" role="listitem" aria-haspopup="dialog">Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== MAIN ===================== -->
+  <main>
+
+    <!-- Hero -->
+    <section id="about" class="hero glass-panel fade-in">
+      <div class="hero-content">
+        <p class="hero-greeting">👋 Available for hire</p>
+        <h1>Hi, I'm <span class="highlight">Mohamed Gomaa</span></h1>
+        <h2>Full-Stack Software Engineer</h2>
+        <p>I build high-performance backend systems and immaculate front-end experiences. Specializing in <strong>Go</strong>, <strong>Next.js</strong>, and modern web architectures.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary-btn" id="view-work-btn">View My Work</a>
+          <button class="btn resume-btn" id="open-resume-modal" aria-haspopup="dialog">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </button>
+          <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects-section">
+      <h2 class="section-title fade-in">Featured Projects</h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Hermes -->
+        <article class="project-card glass-panel fade-in" aria-label="Hermes Webhook Dispatcher project">
+          <div class="project-header">
+            <h3>Hermes Webhook Dispatcher</h3>
+            <span class="badge go">Go</span>
+          </div>
+          <p class="project-desc">A blazing-fast, concurrent Webhook Dispatcher microservice. Handles high-throughput network I/O with connection pooling, rate limiting, and exponential backoff using Goroutines and Mutexes.</p>
+          <div class="tech-stack">
+            <span>Go</span> <span>net/http</span> <span>Concurrency</span> <span>Docker</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/m-amir-gomaa/portfolio-hermes" target="_blank" rel="noopener noreferrer" class="link-btn" aria-label="View Hermes source code on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              Source Code
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2: Next.js Keep -->
+        <article class="project-card glass-panel fade-in" style="transition-delay: 100ms;" aria-label="Keep Clone Full-Stack project">
+          <div class="project-header">
+            <h3>Keep Clone (Full-Stack)</h3>
+            <span class="badge nextjs">Next.js</span>
+          </div>
+          <p class="project-desc">A full-stack Google Keep clone with secure authentication, persistent PostgreSQL storage, and strict E2E testing via Playwright. Features server-side rendering and optimistic UI updates.</p>
+          <div class="tech-stack">
+            <span>Next.js</span> <span>React</span> <span>PostgreSQL</span> <span>Tailwind</span> <span>Playwright</span>
+          </div>
+          <div class="project-links">
+            <a href="https://keep-nextjs0.vercel.app" target="_blank" rel="noopener noreferrer" class="link-btn primary" aria-label="View Keep Full-Stack live demo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              Live Demo
+            </a>
+            <a href="https://github.com/m-amir-gomaa/keep-nextjs" target="_blank" rel="noopener noreferrer" class="link-btn" aria-label="View Keep Full-Stack source code on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              Source Code
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3: Vanilla Keep -->
+        <article class="project-card glass-panel fade-in" style="transition-delay: 200ms;" aria-label="Keep Clone Vanilla JS project">
+          <div class="project-header">
+            <h3>Keep Clone (Vanilla JS)</h3>
+            <span class="badge js">Vanilla JS</span>
+          </div>
+          <p class="project-desc">A pure HTML/CSS/JS implementation of Google Keep. Demonstrates deep understanding of DOM manipulation, event delegation, client-side routing, and zero-dependency component architecture.</p>
+          <div class="tech-stack">
+            <span>Vanilla JS</span> <span>HTML5</span> <span>CSS3</span> <span>Local Storage</span>
+          </div>
+          <div class="project-links">
+            <a href="https://m-amir-gomaa.github.io/Keep/" target="_blank" rel="noopener noreferrer" class="link-btn primary" aria-label="View Keep Vanilla JS live demo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              Live Demo
+            </a>
+            <a href="https://github.com/m-amir-gomaa/Keep" target="_blank" rel="noopener noreferrer" class="link-btn" aria-label="View Keep Vanilla JS source code on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              Source Code
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="contact" class="glass-panel" role="contentinfo">
+    <div class="footer-content">
+      <h2>Let's Build Together</h2>
+      <p>Currently open for full-stack opportunities.</p>
+      <a href="mailto:m.amir.gomaa@gmail.com" class="btn primary-btn" id="say-hello-btn">Say Hello</a>
+      <div class="social-links">
+        <a href="https://github.com/m-amir-gomaa" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub</a>
+        <a href="https://www.linkedin.com/in/mohamed-gomaa0/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">LinkedIn</a>
+        <a href="#" class="footer-resume-link" id="footer-resume-link" aria-haspopup="dialog">Resume</a>
+      </div>
+      <p class="footer-copy">© 2024 Mohamed Gomaa. Built with ❤️ and vanilla code.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== RESUME MODAL ===================== -->
+  <div class="modal-overlay" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-card glass-panel">
+      <button class="modal-close" id="modal-close" aria-label="Close resume modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+      </div>
+      <h2 id="modal-title">Download Resume</h2>
+      <p class="modal-subtitle">Choose your preferred format</p>
+      <div class="format-options">
+        <a href="resume/Mohamed-Gomaa-Resume.pdf" download class="format-btn" id="download-pdf" aria-label="Download resume as PDF">
+          <div class="format-icon pdf-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+          </div>
+          <div class="format-info">
+            <span class="format-name">PDF</span>
+            <span class="format-desc">Best for printing & sharing</span>
+          </div>
+          <svg class="format-arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+        <a href="resume/Mohamed-Gomaa-Resume.docx" download class="format-btn" id="download-docx" aria-label="Download resume as DOCX">
+          <div class="format-icon docx-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          </div>
+          <div class="format-info">
+            <span class="format-name">DOCX</span>
+            <span class="format-desc">Editable Word document</span>
+          </div>
+          <svg class="format-arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+        <a href="resume/Mohamed-Gomaa-Resume.txt" download class="format-btn" id="download-txt" aria-label="Download resume as plain text">
+          <div class="format-icon txt-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line></svg>
+          </div>
+          <div class="format-info">
+            <span class="format-name">TXT</span>
+            <span class="format-desc">Plain text, ATS-friendly</span>
+          </div>
+          <svg class="format-arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+      </div>
+      <p class="modal-note">Files update automatically when you provide your resume.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
