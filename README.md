@@ -1,6 +1,6 @@
 # Amir Gomaa — freelance portfolio
 
-Static HTML, CSS, and JavaScript portfolio with project filters, case studies, an Upwork contact link, mobile navigation, and an interactive vanilla Keep demo. No site build or external font request is required.
+Static HTML, CSS, and JavaScript portfolio with project filters, case studies, Upwork/email contact links, mobile navigation, an interactive vanilla Keep demo and an embedded Document Studio sample-output viewer. No site build or external font request is required.
 
 The full-stack cover and Hermes diagram are illustrations, clearly labeled. Project descriptions distinguish implemented features from simulation and planned work.
 
@@ -14,6 +14,14 @@ node tests/portfolio.test.mjs
 ```
 
 The tests use jsdom installed in sibling `../Keep` (`npm ci` there first). They cover project links, filters, mobile navigation, demo cleanup, and bundled assets. Browser screenshots and visual review remain necessary before publication.
+
+## Document Studio preview — 15 October 2026
+
+The project card has an explicit **Open live converter** link and **Explore sample output** button. The latter opens a portfolio-native dialog comparing actual PDF raster excerpts against all three pages of actual exported Markdown, with copy and Markdown/ZIP downloads. It is a precomputed original public example, not a simulated conversion or an upload form. It requires no account or cloud job. Asset provenance and regeneration commands are in [assets/document-sample/README.md](assets/document-sample/README.md).
+
+Contact email is `mo.gomaa.formal@gmail.com`. The descriptive Document Studio title remains pending Amir's branding choice. Preliminary candidate **Pageweft — PDF to Markdown** had no exact web-search results on 15 October 2026; this does not establish domain/trademark availability. The existing [Suntof Document Studio](https://suntof.com/en/apps/suntof-document-studio/) also converts documents to Markdown, confirming that the current title overlaps a related product.
+
+Seven DOM tests passed, including page comparison, retry after a failed sample load, focus restoration and switching back to Keep. System Chromium checks passed at 320/360/390/768/1440 pixels: no page/dialog horizontal overflow, sample switching, actual clipboard readback, actual ZIP download, Escape/focus restoration, Keep open/close and no page errors or failed HTTP responses. Deliberately interrupted sample loading recovered through Retry. Desktop/phone screenshots were visually reviewed. These are Chromium checks, not Safari/iPhone device certification. The preview's source excerpt has an intentional internal horizontal scroller at narrow widths to preserve readable source text.
 
 ## Update the embedded demo
 

@@ -1,0 +1,173 @@
+%PDF-1.3
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 3
+/Kids [ 5 0 R 10 0 R 14 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+/Outlines 9 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+5 0 obj
+<<
+/Type /Page
+/Resources <<
+/Font <<
+/F1 4 0 R
+>>
+>>
+/MediaBox [ 0.0 0.0 612 792 ]
+/Parent 2 0 R
+/Contents 6 0 R
+>>
+endobj
+6 0 obj
+<<
+/Length 220
+>>
+stream
+BT /F1 14 Tf 50 730 Td 24 TL (Field notes: vegetation survey) Tj T* (This is an original demonstration document.) Tj T* (Goal: compare plant counts at two sites.) Tj T* (Use the same observation area at each site.) Tj ET
+endstream
+endobj
+7 0 obj
+<<
+/D [ 5 0 R /Fit ]
+/S /GoTo
+>>
+endobj
+8 0 obj
+<<
+/A 7 0 R
+/Title (Survey plan)
+/Parent 9 0 R
+/Count 0
+/Next 13 0 R
+>>
+endobj
+9 0 obj
+<<
+/First 8 0 R
+/Count 3
+/Last 17 0 R
+>>
+endobj
+10 0 obj
+<<
+/Type /Page
+/Resources <<
+/Font <<
+/F1 4 0 R
+>>
+>>
+/MediaBox [ 0.0 0.0 612 792 ]
+/Parent 2 0 R
+/Contents 11 0 R
+>>
+endobj
+11 0 obj
+<<
+/Length 217
+>>
+stream
+BT /F1 14 Tf 50 730 Td 24 TL (Observations) Tj T* (Site A: 12 plants in the observation area.) Tj T* (Site B: 18 plants in the observation area.) Tj T* (These invented values are examples, not research results.) Tj ET
+endstream
+endobj
+12 0 obj
+<<
+/D [ 10 0 R /Fit ]
+/S /GoTo
+>>
+endobj
+13 0 obj
+<<
+/A 12 0 R
+/Title (Observations)
+/Prev 8 0 R
+/Parent 9 0 R
+/Count 0
+/Next 17 0 R
+>>
+endobj
+14 0 obj
+<<
+/Type /Page
+/Resources <<
+/Font <<
+/F1 4 0 R
+>>
+>>
+/MediaBox [ 0.0 0.0 612 792 ]
+/Parent 2 0 R
+/Contents 15 0 R
+>>
+endobj
+15 0 obj
+<<
+/Length 222
+>>
+stream
+BT /F1 14 Tf 50 730 Td 24 TL (Interpretation and next steps) Tj T* (The observed difference is six plants.) Tj T* (Repeat observations before drawing a conclusion.) Tj T* (Keep the original source beside your notes.) Tj ET
+endstream
+endobj
+16 0 obj
+<<
+/D [ 14 0 R /Fit ]
+/S /GoTo
+>>
+endobj
+17 0 obj
+<<
+/A 16 0 R
+/Title (Interpretation)
+/Prev 13 0 R
+/Parent 9 0 R
+/Count 0
+>>
+endobj
+xref
+0 18
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000127 00000 n 
+0000000192 00000 n 
+0000000262 00000 n 
+0000000394 00000 n 
+0000000665 00000 n 
+0000000713 00000 n 
+0000000800 00000 n 
+0000000856 00000 n 
+0000000990 00000 n 
+0000001259 00000 n 
+0000001309 00000 n 
+0000001411 00000 n 
+0000001545 00000 n 
+0000001819 00000 n 
+0000001869 00000 n 
+trailer
+<<
+/Size 18
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+1961
+%%EOF
