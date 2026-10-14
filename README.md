@@ -30,7 +30,7 @@ Commit site assets and publish through this repository's GitHub Pages configurat
 
 ## Release review — 14 October 2026
 
-Approved titles: Knowledge Workspace, Knowledge Workspace — Vanilla JS Demo, Queue Lab, Transcript Studio and Document Studio. Existing repo/demo URLs remain unchanged. Document Studio is the existing PDF2Markdown project, with its in-memory prototype limitations stated explicitly.
+Approved titles: Knowledge Workspace, Knowledge Workspace — Vanilla JS Demo, Queue Lab, Transcript Studio and Document Studio. Existing repo URLs remain unchanged. Document Studio now links its bounded public trial; its persistent ledger, source-aware exports and paid/full-book limitations are described explicitly. A real public synthetic upload/conversion/download and session isolation passed in the Document Studio repository; the portfolio itself does not certify document fidelity or payment readiness.
 
 The older resume files are preserved but their public download link is hidden pending factual review. No resume claims were silently rewritten. Source/demo HTTP checks passed for Document Studio; no cloud extraction was run by this portfolio release.
 
