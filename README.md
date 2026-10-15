@@ -47,3 +47,5 @@ Browser checks passed at 320, 360, 390, 768 and 1440 CSS pixels: no horizontal o
 ## Sonaweft release — 15 October 2026
 
 Transcript Studio is now Sonaweft — audio to source-linked notes. The existing #instascript anchor and GitHub source URL are preserved. Its card links the actual regional Modal deployment and describes original/corrected/AI outputs, private credit accounting and concrete limits. The example VTT remains a format illustration, not a newly claimed model result. Paid packs await seller/domain approval and real payment delivery. Noteweld is proposed for Keep; Keep titles remain unchanged until that project is active.
+
+The card also links Sonaweft's completed original recording example: actual audio, ASR, optional saved review and portable bundle without a new processing job. The original VTT format illustration remains available in assets but is no longer the card's main sample link. Four local Chromium widths and seven DOM checks passed before the first release; the added sample link is checked separately.
