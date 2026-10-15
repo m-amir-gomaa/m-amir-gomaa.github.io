@@ -43,3 +43,7 @@ Approved titles: Knowledge Workspace, Knowledge Workspace — Vanilla JS Demo, Q
 The older resume files are preserved but their public download link is hidden pending factual review. No resume claims were silently rewritten. Source/demo HTTP checks passed for Document Studio; no cloud extraction was run by this portfolio release.
 
 Browser checks passed at 320, 360, 390, 768 and 1440 CSS pixels: no horizontal overflow, mobile navigation, project filters, demo open/close and no page errors. Screenshots were inspected. These are system Chromium checks, not Safari/iPhone device certification. Evidence: ../../environment/observations/portfolio-release-20261014/.
+
+## Sonaweft release — 15 October 2026
+
+Transcript Studio is now Sonaweft — audio to source-linked notes. The existing #instascript anchor and GitHub source URL are preserved. Its card links the actual regional Modal deployment and describes original/corrected/AI outputs, private credit accounting and concrete limits. The example VTT remains a format illustration, not a newly claimed model result. Paid packs await seller/domain approval and real payment delivery. Noteweld is proposed for Keep; Keep titles remain unchanged until that project is active.
