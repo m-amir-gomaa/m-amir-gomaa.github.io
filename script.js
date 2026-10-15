@@ -36,7 +36,7 @@ const demos = {
   url: 'https://m-amir-gomaa.github.io/Keep/',
  },
  document: {
-  title: 'Document Studio · sample output',
+  title: 'Pageweft · sample output',
   description: 'An original three-page PDF and its actual text-only export. Precomputed sample; no upload or cloud job.',
   url: 'https://m-amir-gomaa--mineru-pdf-extractor-web-app.modal.run/?utm_source=portfolio',
  },
