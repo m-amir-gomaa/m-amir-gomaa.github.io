@@ -2,6 +2,8 @@
 
 Static HTML, CSS, and JavaScript portfolio with project filters, case studies, Upwork/email contact links, mobile navigation, an interactive vanilla Keep demo and an embedded Pageweft sample-output viewer. No site build or external font request is required.
 
+Current update — 16 October 2026: Noteweld's card now links its account-free Markdown/Vim editor at `/example`, its private workspace and `feat/markdown-vim-editor` source. The hero uses the professional Noteweld name; the separate vanilla demo is unchanged. The case study describes safe preview, editing/undo/search, exact downloads and actually exercised failure states, with backlinks/graph/imports still planned. A narrow-screen cover-title overlap was corrected. Publication evidence for this update is recorded below.
+
 The full-stack cover and Hermes diagram are illustrations, clearly labeled. Project descriptions distinguish implemented features from simulation and planned work.
 
 ## Preview and checks
@@ -55,3 +57,7 @@ The card also links Sonaweft's completed original recording example: actual audi
 The professional workspace card is now **Noteweld — a connected writing workspace**, linking the verified [free preview](https://m-amir-gomaa--noteweld-web-app.us-east.modal.run/) and its current reliability branch. The existing `#keep-stack` bookmark is preserved. Its description covers real transactions/revisions, recovery, export/deletion and tested failure handling; Markdown/Vim/graph/imports and closed billing are explicitly distinguished. The vanilla demo remains its own implementation and is not claimed to have these server features.
 
 Seven DOM checks passed. Actual Chromium review passed at 320/390/768/1440, including the updated link/case study and overflow/page-error checks; the phone card screenshot was visually reviewed. The app itself has separate actual hosted-cookie/database evidence and [successful source CI](https://github.com/m-amir-gomaa/keep-nextjs/actions/runs/38801749405). No private app was embedded or authentication frame policy weakened.
+
+## Markdown/Vim editor update — 16 October 2026
+
+Seven DOM checks and actual local Chromium review at 320/390/768/1440 passed, including updated links/source, case study, contact and no horizontal overflow or page errors. The phone card was visually reviewed. Noteweld code `cbd60fe` passed [actual source CI](https://github.com/m-amir-gomaa/keep-nextjs/actions/runs/38872939594), and all 11 app browser checks passed against its real HTTPS deployment. The public scratchpad downloads actual Markdown without requiring an account or uploading draft content. Portfolio publication and final public observation are being verified separately.
