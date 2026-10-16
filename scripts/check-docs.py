@@ -63,9 +63,11 @@ def main():
                     errors.append(f'{path.relative_to(ROOT)}: missing fragment {link}')
             checked += 1
     inventory = json.loads((ROOT / 'manuals/sources.json').read_text())
-    if len(inventory['documents']) != 28:
-        errors.append('Source coverage changed: review the manifest and documentation.')
     manifest = json.loads((ROOT / 'documentation/manifest.json').read_text())
+    expected_sources = {(project['slug'], entry['path']) for project in manifest['projects'] for entry in project['files']}
+    actual_sources = {(record['project'], record['path']) for record in inventory['documents']}
+    if actual_sources != expected_sources:
+        errors.append('Source coverage differs from the reviewed manifest.')
     if len(manifest['projects']) != 5:
         errors.append('Expected five project implementations')
     for record in inventory['documents']:
@@ -82,11 +84,12 @@ def main():
         if re.search(r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|postgres(?:ql)?://[^\s:@]+:[^\s@]+@|\b(?:ghp_|pdl_live_apikey_)[A-Za-z0-9_-]{25,}', content):
             errors.append(f'Potential secret in {file.relative_to(ROOT)}; inspect privately')
     search = json.loads((ROOT / 'manuals/index.json').read_text())
-    if len(search) != 36 or not all(item['url'].startswith('/manuals/') for item in search):
+    expected_articles = sum(1 for p in (ROOT / 'documentation/content').rglob('*.md') if p.name != '_index.md')
+    if len(search) != expected_articles or not all(item['url'].startswith('/manuals/') for item in search):
         errors.append('Search index coverage/routes differ from the reviewed library')
     if errors:
         raise SystemExit('\n'.join(errors))
-    print(f'{len(pages)} HTML pages, {checked} local links/assets/fragments, 28 source records and 36 indexed articles passed.')
+    print(f'{len(pages)} HTML pages, {checked} local links/assets/fragments, {len(actual_sources)} source records and {len(search)} indexed articles passed.')
 
 
 if __name__ == '__main__':

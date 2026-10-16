@@ -258,15 +258,15 @@
     },
     {
       "slug": "queue-lab",
-      "title": "Queue Lab",
-      "directory": "../queue-lab",
+      "title": "Batchlark",
+      "directory": "../batchlark",
       "repository": "portfolio-hermes",
       "number": "05",
-      "stack": "GO / CONCURRENCY",
-      "status": "Local simulation",
+      "stack": "GO / SYSTEMS STUDY",
+      "status": "Retained study",
       "live": "",
-      "description": "A bounded-worker queue demonstration with progress events, admission limits and graceful shutdown.",
-      "notice": "Queue Lab is the portfolio name; Hermes remains the source repository/internal name. Delivery is simulated, state is in memory and no separate public production backend is established.",
+      "description": "A retained bounded-worker concurrency exercise while a practical science application is evaluated.",
+      "notice": "Formerly Queue Lab/Hermes. This is an in-memory simulation and retained systems study, not a production queue or commercial product. A replacement remains under discussion; published Git history has not been rewritten.",
       "files": [
         {
           "path": "README.md",

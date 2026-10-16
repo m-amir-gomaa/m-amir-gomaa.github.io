@@ -19,3 +19,7 @@
 **Current status:** This is the separate vanilla JavaScript implementation. It does not include Noteweld authentication, PostgreSQL, Markdown/Vim or connected-note features. The embedded published bundle and local source can differ; the guide calls out that boundary.
 
 These are reviewed documentation snapshots from 16 October 2026, not live provider/account-status feeds. Each imported record links its source revision; reviewed public editions can be downloaded as Markdown. [How this library is published](/manuals/journal/publishing/).
+
+## Follow the implementation history
+
+[Read the build history](/manuals/vanilla-keep/build-history/) for the recorded steps, successful commands, evidence and known corrections.

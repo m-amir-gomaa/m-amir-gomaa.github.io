@@ -19,3 +19,7 @@
 **Current status:** Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.
 
 These are reviewed documentation snapshots from 16 October 2026, not live provider/account-status feeds. Each imported record links its source revision; reviewed public editions can be downloaded as Markdown. [How this library is published](/manuals/journal/publishing/).
+
+## Follow the implementation history
+
+[Read the build history](/manuals/sonaweft/build-history/) for the recorded steps, successful commands, evidence and known corrections.

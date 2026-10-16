@@ -46,9 +46,13 @@ require('node:fs').mkdirSync(artifacts, { recursive: true });
       assert(await page.locator('.table-wrap').count() > 0);
       await noOverflow();
       await page.goto(origin + '/#documentation');
-      assert.equal(await page.locator('.project a[href^="manuals/"]').count(), 5);
+      assert.equal(await page.locator('.project a[href^="manuals/"]').count(), 10);
+      assert.equal(await page.locator('.project a[href$="/build-history/"]').count(), 5);
       await noOverflow();
       await page.locator('#documentation').screenshot({ path: `${artifacts}/portfolio-${width}.png` });
+      await page.goto(origin + '/manuals/noteweld/build-history/');
+      await noOverflow();
+      await page.screenshot({ path: `${artifacts}/history-${width}.png`, fullPage: true });
       checks += 4;
     }
     // Loading, failed static-index fetch, retry and subsequent successful results.
@@ -88,7 +92,7 @@ require('node:fs').mkdirSync(artifacts, { recursive: true });
     await page.getByRole('link', { name: 'Manuals', exact: true }).focus();
     await page.keyboard.press('Enter');
     assert(page.url().endsWith('#library'));
-    // All 36 article routes really load, beyond merely resolving their HTML files.
+    // Every indexed article route really loads, beyond merely resolving its HTML file.
     const index = await (await context.request.get(origin + '/manuals/index.json')).json();
     for (const item of index) {
       const response = await page.goto(origin + item.url);
@@ -108,6 +112,6 @@ require('node:fs').mkdirSync(artifacts, { recursive: true });
     await noScript.close();
     assert.deepEqual(errors, []);
     assert.deepEqual(unexpected, []);
-    console.log(`Passed ${checks + 1} grouped browser checks: four widths, 36 article routes, search/failure/retry, real download/clipboard, keyboard, no-JS and no external requests/page errors.`);
+    console.log(`Passed ${checks + 1} grouped browser checks: four widths, ${index.length} article routes, search/failure/retry, real download/clipboard, keyboard, no-JS and no external requests/page errors.`);
   } finally { await browser.close(); }
 })().catch(error => { console.error(error.stack); process.exitCode = 1; });

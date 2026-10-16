@@ -3,72 +3,56 @@
   "description": "Go setup, API endpoints, bounded concurrency, shutdown and production boundaries.",
   "date": "2026-10-16",
   "weight": 30,
-  "project": "Queue Lab",
+  "project": "Batchlark",
   "category": "Reference",
-  "notice": "Queue Lab is the portfolio name; Hermes remains the source repository/internal name. Delivery is simulated, state is in memory and no separate public production backend is established. This reviewed documentation snapshot includes local documentation edits; the source link shows the committed baseline.",
-  "sourceurl": "https://github.com/m-amir-gomaa/portfolio-hermes/blob/52b6258c146cce8815880560b03925272eae3981/README.md",
+  "notice": "Formerly Queue Lab/Hermes. This is an in-memory simulation and retained systems study, not a production queue or commercial product. A replacement remains under discussion; published Git history has not been rewritten.",
+  "sourceurl": "https://github.com/m-amir-gomaa/portfolio-hermes/blob/bed2cb3131a79aa2519e1a38e9a7f26ddc640bf7/README.md",
   "download": "markdown/queue-lab/overview.md"
 }
 
-A Go concurrency demo with a browser dashboard. Submit a batch, watch bounded workers process it, and inspect progress through JSON endpoints and Server-Sent Events.
+Status: retained engineering exercise; a practical replacement is being evaluated. This is the former Queue Lab/Hermes implementation. A worker pool alone is not a differentiated service, and this project is not presented as a paid SaaS or production queue.
 
-**Deliveries are simulated with a 50 ms task.** The running server makes no outbound webhook or LLM requests. State is in memory and resets on restart. Experimental RAG modules under `internal/` are not connected to this application.
+## What is implemented
 
-## What the demo demonstrates
+- Fifty fixed Go workers and a bounded 10,000-task queue.
+- Whole-batch admission with HTTP 429/Retry-After under pressure.
+- Strict JSON/body/count validation, bounded retained batches and event subscribers.
+- JSON metrics, batch status and server-sent progress events; slow consumers disconnect.
+- Graceful shutdown drains accepted simulated work.
+- A browser dashboard with bounded recent events and polling recovery.
 
-- 50 fixed workers consuming a bounded queue of 10,000 tasks, without a goroutine per queued task.
-- Atomic batch admission: accept the whole batch or return HTTP 429 with `Retry-After`.
-- Strict JSON validation, a 4 KiB body limit, and counts between 1 and 10,000.
-- Batch IDs and progress snapshots; at most 100 retained batches, evicting completed batches when needed.
-- Nonblocking SSE fan-out with heartbeats and request cancellation. Slow readers disconnect rather than stall workers; reconnecting clients recover progress through polling.
-- Graceful shutdown that drains accepted jobs.
-- A responsive dashboard with metrics, batch progress, measured completion rate, and a bounded event log.
+Tasks simulate a 50 ms delay. No webhook, LLM, scientific computation or paid customer work is performed. State is in memory and disappears on restart. The simulation is useful for studying concurrency mechanics, not evidence of durable delivery or production throughput.
 
-## Run
+## Run and inspect
 
-Use Go 1.26.4 or newer. From this directory:
-
-```sh
-go run main.go
-# Open http://localhost:8080
-```
-
-`PORT` defaults to `8080`. No API keys or database are needed.
+Go 1.26.4 or newer; the local review used Go 1.26.5. The active application now has no third-party Go modules.
 
 ```sh
-docker build -t hermes-demo .
-docker run --rm -p 8080:8080 hermes-demo
+go test -race ./...
+go vet ./...
+go build -o /tmp/batchlark .
+PORT=8080 /tmp/batchlark
+# Open http://localhost:8080 from this directory.
 ```
 
-## API
+The server defaults to loopback. Set `HOST=0.0.0.0` explicitly only in an appropriate container/server environment. It is not newly hosted by this cleanup. The Docker recipe is retained and renamed, but Docker was unavailable for execution during this review; a recipe is not a tested image.
 
 | Endpoint | Behavior |
 |---|---|
-| `POST /api/v1/dispatch` | Accept `{ "count": 100 }`; return HTTP 202 with `batchId` and `total` |
-| `GET /api/v1/batches/{id}` | Return batch status, active and completed counts |
-| `GET /api/v1/metrics` | Return worker, queue, and completion statistics |
-| `GET /api/v1/stream` | Stream simulated delivery events over SSE |
-| `GET /healthz` | Return an HTTP 200 health response |
+| `POST /api/v1/dispatch` | Accept a count from 1 to 10,000 and return the batch identity |
+| `GET /api/v1/batches/{id}` | Read retained batch progress |
+| `GET /api/v1/metrics` | Read shared simulation metrics |
+| `GET /api/v1/stream` | Observe simulated task completions |
+| `GET /healthz` | Read server health |
 
-```sh
-curl -X POST http://localhost:8080/api/v1/dispatch \
-  -H 'Content-Type: application/json' -d '{"count":100}'
-```
+## Cleanup and history
 
-## Validation
+The existing uncommitted reliability fixes were preserved in a private full working-tree/Git backup and checkpoint `ce80475` before this cleanup. Unused RAG/OpenAI scaffolding was removed from the active tree and retained in the private archive and original Git history; the unused SDK requirement and lock data were removed. The compiled executable remains generated and ignored.
 
-```sh
-go test -race .
-go vet .
-go build -o /tmp/hermes .
-```
+Canonical local directory is `freelance/batchlark`; `freelance/queue-lab` remains a compatibility link. Existing public repository identity is still `m-amir-gomaa/portfolio-hermes`; renaming/replacing that repository and rewriting its published history are separate from application branding. No force-push, backdated commit or destruction of the old history has occurred.
 
-Tests cover exact batch admission, invalid bodies, queue pressure, bounded concurrency, shutdown draining, slow clients, cancelled streams, progress, and method restrictions. The explicit file commands test the served application independently of the unused experimental modules.
+The user is considering a focused science/bioinformatics application using Go. That replacement has not been selected or implemented. Existing Asynq/River/Temporal/Modal job systems are preferable to turning this simulated pool into another generic queue product.
 
-## Next production milestone
+## Actual startup regression found during cleanup
 
-Real webhook delivery needs a persistent job store, authenticated access, destination restrictions, delivery timeouts, retry policy, idempotency, and failure inspection. Those capabilities are not claimed by this demo. There is no measured throughput benchmark yet.
-
-## Experimental code and packaging
-
-`internal/` is retained pending the questionnaire decision about RAG scope. It uses the Go OpenAI SDK declared in `go.mod`; it is not used by `main.go` or included in the Docker image. Consequently this repository as a whole is not dependency-free, even though the served simulation uses only the standard library. Its compiled executable is generated and should be rebuilt, not committed. Docker and hosted CI have not been executed during the local cleanup.
+Launching the full server exposed a ServeMux conflict between the broad method-qualified root and the method-unqualified dispatch path. Handler unit tests had not constructed the real router. The root now uses exact `GET /{$}` matching; the actual router is constructed in a regression test that exercises home, health, metrics, dispatch, wrong method and missing path. After correction, actual local health, batch admission and five completed tasks passed. Browser acceptance is recorded separately after execution.

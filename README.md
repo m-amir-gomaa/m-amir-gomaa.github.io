@@ -2,6 +2,14 @@
 
 Static HTML, CSS, and JavaScript portfolio with project filters, case studies, Upwork/email contact links, mobile navigation, an interactive vanilla Keep demo and an embedded Pageweft sample-output viewer. The companion **Fieldnotes** library is built with Hugo; its generated files are committed, so serving the portfolio does not require a runtime build.
 
+## Build histories and provider guide — 16 October 2026
+
+Every project card now links its own build history. Five project histories and a portfolio/Hugo history reconstruct recorded steps, commands, actual evidence and failures; a separate provider guide explains Neon, current Modal cost calculations and Paddle's remaining setup. The library now contains **43 articles** while preserving the original 28 reviewed source-record inventory. Histories identify where private provisioning or missing old evidence prevents a literal self-service replay; no secret values or fictional past commands are supplied.
+
+The former Queue Lab/Hermes application/library branding is **Batchlark — Go concurrency study**. The local source was cleaned, unused RAG scaffolding privately archived, and a real ServeMux startup bug fixed with router regression coverage and actual local browser evidence. Its source links `feat/batchlark-cleanup`. It is retained as an engineering study while a practical science-oriented Go replacement awaits Amir's approval; no new Go SaaS/hosting or science feature is claimed. The old GitHub repository slug and bookmark are retained pending the final replacement/repository decision. No published Git history was force-rewritten.
+
+The previous section below records the initial Hugo release, not the current article count.
+
 ## Fieldnotes — 16 October 2026
 
 [Open the manuals and journal](https://m-amir-gomaa.github.io/manuals/). Navigation, all five project cards and a dedicated portfolio section link the library. It contains five current usage guides, 28 reviewed source-document records (including five explicitly historical references), three journal entries, browser-local search, a table of contents, Markdown downloads, RSS and sitemap. Imported references identify exact source revisions; the vanilla README's reviewed working-copy edition is marked. Private books, credentials, personal account questions and untracked work are excluded. Older release records retain their original milestone/date and current context.

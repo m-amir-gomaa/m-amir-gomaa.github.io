@@ -274,10 +274,10 @@
     {
       "project": "queue-lab",
       "path": "README.md",
-      "revision": "52b6258c146cce8815880560b03925272eae3981",
-      "working_copy": true,
-      "source_sha256": "f42cc2d845ce2562eafe8945046b1b8bdd63252c4940492df5972e2b4d7f3db7",
-      "public_sha256": "fc918666ed7e6619cf2aea14eaea0fc17e00b8390801b31a802f6b927367e9ff",
+      "revision": "bed2cb3131a79aa2519e1a38e9a7f26ddc640bf7",
+      "working_copy": false,
+      "source_sha256": "7d56250bf938b5b976ae373fc2b8222e05b1895844e4413b9b56b359426fe4be",
+      "public_sha256": "e589ccaf9e11c05e376cc4df66a887298670a9ab6f3772e78755a6bc999b202b",
       "url": "/manuals/queue-lab/overview/",
       "mode": "public-edition"
     }

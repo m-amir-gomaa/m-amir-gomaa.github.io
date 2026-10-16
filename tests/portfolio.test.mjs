@@ -17,6 +17,9 @@ await test('documentation library is connected from navigation and every project
   const manual = project.querySelector('a[href^="manuals/"]');
   assert.ok(manual);
   assert.ok(existsSync(resolve(root, manual.getAttribute('href'), 'index.html')));
+  const history = project.querySelector('a[href$="/build-history/"]');
+  assert.ok(history);
+  assert.ok(existsSync(resolve(root, history.getAttribute('href'), 'index.html')));
  }
 });
 function page() { const dom = new JSDOM(html, { url: 'https://m-amir-gomaa.github.io/', runScripts: 'outside-only' }); dom.window.eval(script); return dom; }

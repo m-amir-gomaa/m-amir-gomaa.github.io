@@ -19,3 +19,7 @@
 **Current status:** Current preview includes Markdown/Vim and connected notes. Earlier foundation/editor release records describe their own milestones. Billing and source-bundle imports are not enabled.
 
 These are reviewed documentation snapshots from 16 October 2026, not live provider/account-status feeds. Each imported record links its source revision; reviewed public editions can be downloaded as Markdown. [How this library is published](/manuals/journal/publishing/).
+
+## Follow the implementation history
+
+[Read the build history](/manuals/noteweld/build-history/) for the recorded steps, successful commands, evidence and known corrections.

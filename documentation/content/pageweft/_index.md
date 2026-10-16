@@ -19,3 +19,7 @@
 **Current status:** The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence.
 
 These are reviewed documentation snapshots from 16 October 2026, not live provider/account-status feeds. Each imported record links its source revision; reviewed public editions can be downloaded as Markdown. [How this library is published](/manuals/journal/publishing/).
+
+## Follow the implementation history
+
+[Read the build history](/manuals/pageweft/build-history/) for the recorded steps, successful commands, evidence and known corrections.

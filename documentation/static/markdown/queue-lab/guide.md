@@ -1,10 +1,10 @@
-# Using Queue Lab
+# Using Batchlark
 
 Reviewed: 2026-10-16
 
 ## What you are observing
 
-Queue Lab is the portfolio name for the Hermes queue demonstration. Its dashboard represents simulated 50 ms work, not real email, webhook or language-model deliveries. It retains state in memory and resets on restart.
+Batchlark is the retained concurrency study formerly called Queue Lab/Hermes. It is not a differentiated service; a practical science-oriented replacement is being evaluated. Its dashboard represents simulated 50 ms work, not real email, webhook or language-model deliveries. It retains state in memory and resets on restart.
 
 ## Run it locally
 
