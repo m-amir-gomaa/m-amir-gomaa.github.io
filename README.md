@@ -2,7 +2,7 @@
 
 Static HTML, CSS, and JavaScript portfolio with project filters, case studies, Upwork/email contact links, mobile navigation, an interactive vanilla Keep demo and an embedded Pageweft sample-output viewer. No site build or external font request is required.
 
-Current update — 16 October 2026: Noteweld's card now links its account-free Markdown/Vim editor at `/example`, its private workspace and `feat/markdown-vim-editor` source. The hero uses the professional Noteweld name; the separate vanilla demo is unchanged. The case study describes safe preview, editing/undo/search, exact downloads and actually exercised failure states, with backlinks/graph/imports still planned. A narrow-screen cover-title overlap was corrected. Publication evidence for this update is recorded below.
+Current update — 16 October 2026: Noteweld now includes stable wiki links, outgoing/backlink panels, authenticated linked-note pages and a bounded/filterable graph. Its card links the account-free editor, original graph example, private workspace and `feat/connected-notes` source. The separate vanilla implementation is unchanged. The cover remains an illustration; graph limits and future import/revision work are explicit.
 
 The full-stack cover and Hermes diagram are illustrations, clearly labeled. Project descriptions distinguish implemented features from simulation and planned work.
 
@@ -61,3 +61,7 @@ Seven DOM checks passed. Actual Chromium review passed at 320/390/768/1440, incl
 ## Markdown/Vim editor update — 16 October 2026
 
 Seven DOM checks and actual local Chromium review at 320/390/768/1440 passed, including updated links/source, case study, contact and no horizontal overflow or page errors. The phone card was visually reviewed. Noteweld code `cbd60fe` passed [actual source CI](https://github.com/m-amir-gomaa/keep-nextjs/actions/runs/38872939594), and all 11 app browser checks passed against its real HTTPS deployment. The public scratchpad downloads actual Markdown without requiring an account or uploading draft content. Published UI `394b6c3` passed [Pages deployment 38873434205](https://github.com/m-amir-gomaa/m-amir-gomaa.github.io/actions/runs/38873434205). Actual public Chromium review at all four widths passed, including the three Noteweld links, contact, case study and no overflow/page errors. Subsequent README evidence edits do not change the tested interface.
+
+## Connected notes update — 16 October 2026
+
+The Noteweld case study now covers identity-preserving links, explicit ambiguous/unavailable targets, backlinks and graph focus/filter/camera/keyboard behavior. Seven DOM checks and actual local Chromium review at 320/390/768/1440 passed, including all four app/source links, contact and no page overflow/errors. Application code `e1b8740` passed [actual source CI](https://github.com/m-amir-gomaa/keep-nextjs/actions/runs/38877398787); all 14 browser checks passed against the actual Modal HTTPS deployment, including the two-account connection/deletion journey. The graph example uses six original static notes and reads no private API.
