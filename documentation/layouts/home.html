@@ -7,11 +7,12 @@
   <section id="library" class="library" aria-labelledby="library-title">
     <div class="section-heading"><div><p class="eyebrow">01 / PROJECT LIBRARY</p><h2 id="library-title">Find your <em>starting point.</em></h2></div><p>Current guides first.<br>Dated records keep their context.</p></div>
     <div class="project-grid">
-    {{ range where site.Sections "Section" "ne" "journal" }}
+    {{ range where (where site.Sections "Section" "ne" "journal") "Section" "ne" "development-environment" }}
       <a class="project-card project-{{ .Section }}" href="{{ .RelPermalink }}"><span class="project-number">{{ .Params.number }} / {{ .Params.stack }}</span><h3>{{ .Title }} <span aria-hidden="true">→</span></h3><p>{{ .Description }}</p><div class="project-foot"><span>{{ .Params.status }}</span><span>{{ len .RegularPages }} documents</span></div></a>
     {{ end }}
     </div>
   </section>
+  <a class="environment-preview" href="{{ "development-environment/" | relURL }}"><div><p class="eyebrow">INSIDE THE DEVELOPMENT ENVIRONMENT</p><h2>The workbench,<br><em>opened up.</em></h2><p>Explore NixOS, the desktop and a small keyboard-driven editor. Follow the source and the reasoning behind the setup.</p></div><div class="environment-preview-art" aria-hidden="true"><span>NixOS</span><i>→</i><span>Hyprland</span><i>→</i><span>Neovim</span><b>Step inside ↗</b></div></a>
   <section class="search-section" aria-labelledby="search-title" data-search data-index="{{ "index.json" | relURL }}">
     <div><p class="eyebrow">02 / LOOK SOMETHING UP</p><h2 id="search-title">One library.<br><em>Less hunting.</em></h2><p>Search titles and document text. Everything stays in your browser.</p></div>
     <div class="search-panel"><label for="search">Search the manuals</label><div class="search-row"><input id="search" type="search" placeholder="Try “Vim”, “exports” or “backups”" autocomplete="off" maxlength="160" aria-describedby="search-status"><button type="button" id="search-retry" hidden>Retry</button></div><p id="search-status" role="status" aria-live="polite">Search needs JavaScript; every manual is also listed above.</p><ul id="search-results" class="search-results"></ul></div>

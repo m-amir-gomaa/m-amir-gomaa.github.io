@@ -106,8 +106,10 @@ await test('unavailable sample can be retried without disabling downloads or liv
  assert.equal(document.querySelector('#copy-sample').disabled, false);
  dom.window.close();
 });
-await test('resume, subtitle sample, and embedded app assets exist', () => {
+await test('published downloads are valid targets and unreviewed resume is not offered', () => {
  const dom = page(); const document = dom.window.document;
+ assert.equal(document.querySelectorAll('a[href$=".pdf"][href*="resume"]').length, 0);
+ assert.ok(document.querySelector('#navigation a[href="manuals/development-environment/"]'));
  for (const anchor of document.querySelectorAll('a[download]')) assert.ok(existsSync(resolve(root, anchor.getAttribute('href'))));
  const app = readFileSync(resolve(root, 'demos/keep/index.html'), 'utf8');
  const embedded = new JSDOM(app);

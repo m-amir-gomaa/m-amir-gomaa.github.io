@@ -1,0 +1,85 @@
+const assert = require('node:assert/strict');
+const {createRequire} = require('node:module');
+const {resolve} = require('node:path');
+const fs = require('node:fs');
+const requireTools = createRequire(resolve(__dirname, '../../noteweld/package.json'));
+const {chromium} = requireTools('playwright');
+const origin = (process.env.PORTFOLIO_TEST_URL || 'http://127.0.0.1:8315').replace(/\/$/, '');
+const artifacts = resolve(__dirname, '../.local/workbench-browser');
+fs.mkdirSync(artifacts, {recursive: true});
+(async () => {
+ const browser = await chromium.launch({executablePath: '/run/current-system/sw/bin/chromium', headless: true});
+ const context = await browser.newContext({permissions: ['clipboard-read', 'clipboard-write']});
+ const page = await context.newPage();
+ const errors = [], external = [];
+ page.on('pageerror', e => errors.push(e.message));
+ page.on('request', r => {if (!r.url().startsWith(origin + '/') && !r.url().startsWith('data:')) external.push(r.url());});
+ try {
+  for (const width of [320,390,768,1440]) {
+   await page.setViewportSize({width,height:1000});
+   await page.goto(origin + '/manuals/development-environment/');
+   await page.getByRole('heading',{level:1,name:/thought & code/}).waitFor();
+   assert.equal(await page.locator('#wb-mode').innerText(), 'NORMAL');
+   assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+   assert.equal(await page.locator('[data-wb-file]:disabled').count(), 0);
+   await page.locator('[data-wb-layer="3"]').click();
+   assert.equal(await page.locator('#wb-layer-title').innerText(), 'Neovim');
+   await page.locator('#wb-layer-open').click();
+   assert.equal(await page.locator('#wb-filename').innerText(), 'keymaps.lua');
+   await page.locator('#wb-motion').click();
+   assert.equal(await page.locator('[data-workbench]').getAttribute('data-motion'), 'paused');
+   assert.equal(await page.locator('.wb-hero h1').evaluate(e => getComputedStyle(e.parentElement).opacity), '1');
+   await page.screenshot({path: `${artifacts}/workbench-${width}.png`, fullPage:true});
+  }
+  await page.goto(origin + '/manuals/development-environment/');
+  const editor = page.locator('#wb-editor'); const original = await editor.inputValue();
+  await editor.focus(); await editor.press('j');
+  assert(await editor.evaluate(e => e.selectionStart > 0));
+  await editor.press('0'); await editor.press('i'); await editor.press('Home');
+  await page.keyboard.type('local_test = true; '); await editor.press('Escape');
+  const edited = await editor.inputValue(); assert.notEqual(edited, original);
+  await page.locator('[data-wb-file="2"]').click();
+  await page.locator('[data-wb-file="0"]').click();
+  assert.equal(await editor.inputValue(), edited);
+  await page.locator('#wb-reset').click(); assert.equal(await editor.inputValue(), original);
+  await editor.press('u'); assert.equal(await editor.inputValue(), edited);
+  await page.locator('#wb-copy').click(); assert.equal(await page.evaluate(() => navigator.clipboard.readText()), edited);
+  await editor.focus(); await editor.press('Space'); await editor.press('s'); await editor.press('f');
+  assert(await page.locator('#wb-picker').evaluate(e => e.open));
+  await page.locator('#wb-picker-search').fill('nothingzz');
+  assert.equal(await page.locator('#wb-picker-results button').count(), 0);
+  assert.match(await page.locator('#wb-picker-status').innerText(), /No matching/);
+  await page.locator('#wb-picker-search').fill('hyprland'); await page.keyboard.press('Enter');
+  assert.equal(await page.locator('#wb-filename').innerText(), 'hyprland.nix');
+  assert(await editor.evaluate(e => e === document.activeElement));
+  await page.locator('#wb-find').click(); await page.keyboard.press('Escape');
+  assert.equal(await page.locator('#wb-picker').evaluate(e => e.open), false);
+  assert(await page.locator('#wb-find').evaluate(e => e === document.activeElement));
+  // Permission denial gives a usable manual-copy fallback without losing the buffer.
+  await page.evaluate(() => {Object.defineProperty(navigator.clipboard, 'writeText', {configurable:true,value:async()=>{throw new Error('denied');}});});
+  const before = await editor.inputValue(); await page.locator('#wb-copy').click();
+  assert.match(await page.locator('#wb-announcement').innerText(), /selected/);
+  assert.equal(await editor.inputValue(), before);
+  assert(await editor.evaluate(e => e.selectionStart === 0 && e.selectionEnd === e.value.length));
+  // Tab remains browser focus navigation even when the sample has focus.
+  await editor.focus(); await page.keyboard.press('Tab');
+  assert.equal(await editor.evaluate(e => e === document.activeElement), false);
+  await page.emulateMedia({reducedMotion: 'reduce'});
+  await page.waitForFunction(()=>document.querySelector('[data-workbench]').dataset.motion === 'paused');
+  assert.equal(await page.locator('.orbit-two').evaluate(e=>getComputedStyle(e).animationName), 'none');
+  await page.addScriptTag({path:requireTools.resolve('axe-core/axe.min.js')});
+  const a11y = await page.evaluate(async()=>await axe.run(document, {runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}}));
+  fs.writeFileSync(`${artifacts}/accessibility.json`, JSON.stringify(a11y.violations,null,2));
+  assert.deepEqual(a11y.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})), []);
+  const noJS=await browser.newContext({javaScriptEnabled:false,viewport:{width:320,height:900}});const plain=await noJS.newPage();
+  await plain.goto(origin+'/manuals/development-environment/');
+  assert(await plain.locator('#wb-editor').inputValue().then(t=>t.includes('inputs')));
+  assert.equal(await plain.locator('[data-wb-file]:disabled').count(),4);
+  assert.equal(await plain.locator('#wb-controls').isVisible(),false);
+  await plain.locator('.wb-reading-row').first().click();
+  assert.equal(await plain.locator('main h1').innerText(),'How the environment fits together');
+  await noJS.close();
+  assert.deepEqual(errors, []); assert.deepEqual(external, []);
+  console.log('Workbench passed: four widths, edits/buffers/undo, leader picker and empty state, clipboard/denial, keyboard/focus, pause/reduced motion, axe WCAG checks, no-JS reading and no external requests/page errors.');
+ } finally {await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});

@@ -2,6 +2,16 @@
 
 Static HTML, CSS, and JavaScript portfolio with project filters, case studies, Upwork/email contact links, mobile navigation, an interactive vanilla Keep demo and an embedded Pageweft sample-output viewer. The companion **Fieldnotes** library is built with Hugo; its generated files are committed, so serving the portfolio does not require a runtime build.
 
+## Workbench and factual resume review — 16 October 2026
+
+[The Workbench](https://m-amir-gomaa.github.io/manuals/development-environment/) links the NixOS and Neovim repositories, explains the actual configured workflow and offers a browser-only keyboard sketch. Four configuration samples retain temporary edits/undo when switching files, with a filterable Space–s–f picker, clipboard fallback and an animated configuration-layer explorer. Motion can be paused and follows reduced-motion preferences. Three new guides bring Fieldnotes to **46 indexed articles**. This guide distinguishes explanatory snippets and the published configuration baseline from local maintenance; it does not expose or execute personal configuration.
+
+The portfolio navigation/manuals library link the Workbench. Confirmed low-contrast labels were corrected. The former resume downloads were plain text with PDF/DOCX extensions and unconfirmed claims; private originals were preserved, the download link removed, and those misleading public files withdrawn. Real one-page resume drafts and the factual interview stay outside this public repository until Mohamed approves the details.
+
+Local verification: reproducible Hugo generation; 28 source-snapshot checks; 56 HTML pages / 1,174 local link, asset and fragment checks; eight DOM regressions; 24 grouped manuals browser checks across 46 routes/four widths; Workbench edit/buffer/undo, leader picker, empty result, clipboard permission failure, focus/Tab, pause/reduced-motion, no-JavaScript and no external-request/page-error checks. Automated axe-core WCAG A/AA/2.1 AA checks pass on the Workbench; desktop/phone screenshots were reviewed. This is system Chromium evidence, not universal assistive-technology or physical iOS certification. Live release evidence is recorded separately in milestone 008.
+
+Supporting UI review also corrected Noteweld's explicit editor tab stop and Pageweft's named retained-PDF region, independently tested and deployed in their own repositories. Their data/accounts/billing were not changed. Sonaweft's public example and Noteweld's graph had no detected automated WCAG violations in reviewed views. The separate vanilla demo still has recorded accessibility/parity work; this release does not claim every project is finished.
+
 ## Build histories and provider guide — 16 October 2026
 
 Every project card now links its own build history. Five project histories and a portfolio/Hugo history reconstruct recorded steps, commands, actual evidence and failures; a separate provider guide explains Neon, current Modal cost calculations and Paddle's remaining setup. The library now contains **43 articles** while preserving the original 28 reviewed source-record inventory. Histories identify where private provisioning or missing old evidence prevents a literal self-service replay; no secret values or fictional past commands are supplied.
@@ -52,7 +62,7 @@ cd ../portfolio
 rsync -a --delete ../Keep/dist/ demos/keep/
 ```
 
-Commit site assets and publish through this repository's GitHub Pages configuration after reviewing locally. Publication is authorized by Amir on 14 October 2026; the release evidence is recorded below. The existing resume PDF is preserved and should be reviewed for current accuracy.
+Commit site assets and publish through this repository's GitHub Pages configuration after reviewing locally. Publication is authorized by Amir on 14 October 2026; the release evidence is recorded below. Historical note: the resume was later reviewed and its misleading public file formats withdrawn; see the current Workbench/resume entry above.
 
 ## Release review — 14 October 2026
 

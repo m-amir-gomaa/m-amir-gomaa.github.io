@@ -15,13 +15,19 @@
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
   {{ $js := resources.Get "fieldnotes.js" | minify | fingerprint }}
   <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+  {{ if eq .Section "development-environment" }}
+  {{ $wbCSS := resources.Get "workbench.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $wbCSS.RelPermalink }}" integrity="{{ $wbCSS.Data.Integrity }}">
+  {{ $wbJS := resources.Get "workbench.js" | minify | fingerprint }}
+  <script src="{{ $wbJS.RelPermalink }}" integrity="{{ $wbJS.Data.Integrity }}" defer></script>
+  {{ end }}
   <link rel="alternate" type="application/rss+xml" title="Fieldnotes feed" href="{{ "index.xml" | absURL }}">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="header shell">
   <a class="brand" href="{{ site.Home.RelPermalink }}" aria-label="Fieldnotes home">mg<span>/</span><small>FIELDNOTES</small></a>
-  <nav aria-label="Main navigation"><a href="{{ site.Home.RelPermalink }}#library">Manuals</a><a href="{{ "journal/" | relURL }}">Journal</a><a href="/">Portfolio <span aria-hidden="true">→</span></a></nav>
+  <nav aria-label="Main navigation"><a href="{{ site.Home.RelPermalink }}#library">Manuals</a><a href="{{ "journal/" | relURL }}">Journal</a><a href="{{ "development-environment/" | relURL }}">Workbench</a><a href="/">Portfolio <span aria-hidden="true">→</span></a></nav>
 </header>
 {{ block "main" . }}{{ end }}
 <footer class="footer shell"><span>© 2026 Mohamed Gomaa · Built with Hugo.</span><a href="mailto:mo.gomaa.formal@gmail.com">Questions or corrections →</a><a href="{{ "index.xml" | relURL }}">RSS</a></footer>
