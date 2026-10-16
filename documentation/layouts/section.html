@@ -1,0 +1,8 @@
+{{ define "main" }}
+<main id="main" class="shell section-page">
+  <a class="back-link" href="{{ site.Home.RelPermalink }}#library">← Project library</a>
+  <header class="section-intro"><p class="eyebrow">{{ if eq .Section "journal" }}ENGINEERING JOURNAL{{ else }}{{ .Params.stack }} / PROJECT MANUALS{{ end }}</p><h1>{{ .Title }}</h1><p class="lede">{{ .Description }}</p>{{ if .Params.live }}<a class="button" href="{{ .Params.live }}">Open the project →</a>{{ end }}</header>
+  <div class="section-copy prose">{{ .Content }}</div>
+  <section aria-label="Documents" class="document-list">{{ range .RegularPages.ByWeight }}<a class="document-row" href="{{ .RelPermalink }}"><span class="badge">{{ .Params.category | default "Article" }}</span><div><h2>{{ .Title }}</h2><p>{{ .Description }}</p></div><span aria-hidden="true">→</span></a>{{ end }}</section>
+</main>
+{{ end }}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Queue Lab on Fieldnotes · Mohamed Gomaa</title><link>https://m-amir-gomaa.github.io/manuals/queue-lab/</link><description>Recent content in Queue Lab on Fieldnotes · Mohamed Gomaa</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://m-amir-gomaa.github.io/manuals/queue-lab/index.xml" rel="self" type="application/rss+xml"/><item><title>Using Queue Lab</title><link>https://m-amir-gomaa.github.io/manuals/queue-lab/guide/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://m-amir-gomaa.github.io/manuals/queue-lab/guide/</guid><description>&lt;h2 id="what-you-are-observing"&gt;What you are observing&lt;/h2&gt;
+&lt;p&gt;Queue Lab is the portfolio name for the Hermes queue demonstration. Its dashboard represents simulated 50 ms work, not real email, webhook or language-model deliveries. It retains state in memory and resets on restart.&lt;/p&gt;
+&lt;h2 id="run-it-locally"&gt;Run it locally&lt;/h2&gt;
+&lt;p&gt;Follow the tested source setup in the &lt;a href="https://m-amir-gomaa.github.io/manuals/queue-lab/overview/"&gt;implementation notes&lt;/a&gt;
+. The served application uses Go and opens a dashboard on port 8080 by default. No API key or database is needed.&lt;/p&gt;</description></item><item><title>Running the queue simulation</title><link>https://m-amir-gomaa.github.io/manuals/queue-lab/overview/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://m-amir-gomaa.github.io/manuals/queue-lab/overview/</guid><description>&lt;p&gt;A Go concurrency demo with a browser dashboard. Submit a batch, watch bounded workers process it, and inspect progress through JSON endpoints and Server-Sent Events.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Deliveries are simulated with a 50 ms task.&lt;/strong&gt; The running server makes no outbound webhook or LLM requests. State is in memory and resets on restart. Experimental RAG modules under &lt;code&gt;internal/&lt;/code&gt; are not connected to this application.&lt;/p&gt;
+&lt;h2 id="what-the-demo-demonstrates"&gt;What the demo demonstrates&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;50 fixed workers consuming a bounded queue of 10,000 tasks, without a goroutine per queued task.&lt;/li&gt;
+&lt;li&gt;Atomic batch admission: accept the whole batch or return HTTP 429 with &lt;code&gt;Retry-After&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Strict JSON validation, a 4 KiB body limit, and counts between 1 and 10,000.&lt;/li&gt;
+&lt;li&gt;Batch IDs and progress snapshots; at most 100 retained batches, evicting completed batches when needed.&lt;/li&gt;
+&lt;li&gt;Nonblocking SSE fan-out with heartbeats and request cancellation. Slow readers disconnect rather than stall workers; reconnecting clients recover progress through polling.&lt;/li&gt;
+&lt;li&gt;Graceful shutdown that drains accepted jobs.&lt;/li&gt;
+&lt;li&gt;A responsive dashboard with metrics, batch progress, measured completion rate, and a bounded event log.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="run"&gt;Run&lt;/h2&gt;
+&lt;p&gt;Use Go 1.26.4 or newer. From this directory:&lt;/p&gt;</description></item></channel></rss>

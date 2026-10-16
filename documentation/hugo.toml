@@ -1,0 +1,26 @@
+baseURL = 'https://m-amir-gomaa.github.io/manuals/'
+languageCode = 'en'
+title = 'Fieldnotes · Mohamed Gomaa'
+enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term']
+
+[outputs]
+home = ['HTML', 'RSS', 'JSON']
+
+[markup.goldmark.renderer]
+unsafe = false
+
+[markup.highlight]
+noClasses = false
+
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 3
+
+[params]
+description = 'Project manuals, engineering notes and release evidence for Noteweld, Pageweft, Sonaweft and the work behind them.'
+reviewed = '2026-10-16'
+
+[sitemap]
+changeFreq = 'weekly'
+priority = 0.5

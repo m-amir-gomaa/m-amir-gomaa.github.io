@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sonaweft on Fieldnotes · Mohamed Gomaa</title><link>https://m-amir-gomaa.github.io/manuals/sonaweft/</link><description>Recent content in Sonaweft on Fieldnotes · Mohamed Gomaa</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://m-amir-gomaa.github.io/manuals/sonaweft/index.xml" rel="self" type="application/rss+xml"/><item><title>Using Sonaweft</title><link>https://m-amir-gomaa.github.io/manuals/sonaweft/guide/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://m-amir-gomaa.github.io/manuals/sonaweft/guide/</guid><description>&lt;h2 id="hear-a-completed-example"&gt;Hear a completed example&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://m-amir-gomaa--sonaweft-web-app.us-east.modal.run/example"&gt;Open the original example&lt;/a&gt;
+ to hear source audio, inspect the actual recognition/review and download a hashed bundle. This precomputed example does not start another transcription job.&lt;/p&gt;
+&lt;h2 id="upload-and-inspect"&gt;Upload and inspect&lt;/h2&gt;
+&lt;p&gt;The hosted workflow accepts authorized English audio/video up to 64 MiB and 60 minutes. Upload a file and inspect its duration/quote before confirming work. The hosted application does not download arbitrary platform URLs or use your browser cookies.&lt;/p&gt;</description></item><item><title>Technical overview</title><link>https://m-amir-gomaa.github.io/manuals/sonaweft/overview/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://m-amir-gomaa.github.io/manuals/sonaweft/overview/</guid><description>&lt;p&gt;&lt;a href="https://m-amir-gomaa--sonaweft-web-app.us-east.modal.run"&gt;Open Sonaweft&lt;/a&gt;
+ · &lt;a href="https://m-amir-gomaa--sonaweft-web-app.us-east.modal.run/example"&gt;Hear completed example&lt;/a&gt;
+ · &lt;a href="https://m-amir-gomaa.github.io/manuals/sonaweft/product/"&gt;Product contract&lt;/a&gt;
+ · &lt;a href="https://m-amir-gomaa.github.io/manuals/sonaweft/operations/"&gt;Operations&lt;/a&gt;
+ · &lt;a href="https://m-amir-gomaa.github.io/manuals/sonaweft/release/"&gt;Release evidence&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;Turn authorized recordings into timestamped transcripts, editable drafts, subtitles and portable Markdown. Hear each segment while correcting it. Original speech recognition, your corrections and optional AI notes remain separate. Formerly instaScript / Transcript Studio; existing commands, Python imports and GitHub URLs remain compatible.&lt;/p&gt;
+&lt;h2 id="hosted-workflow"&gt;Hosted workflow&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Upload English audio/video, up to &lt;strong&gt;64 MiB / 60 minutes&lt;/strong&gt;; inspection returns a quote without starting transcription.&lt;/li&gt;
+&lt;li&gt;Confirm media rights, then request a bounded &lt;strong&gt;30-second&lt;/strong&gt; sample or paid processing when commercial access opens.&lt;/li&gt;
+&lt;li&gt;Optionally consent to sending transcript text to DeepSeek for standard/deeper review. Audio is not sent to DeepSeek.&lt;/li&gt;
+&lt;li&gt;Follow the job, hear timestamped segments, search text and save separate corrections with revision checks.&lt;/li&gt;
+&lt;li&gt;Export original Markdown/text/JSON/SRT/VTT, corrected Markdown/JSON, optional summary/research questions and a hashed &lt;code&gt;instascript-export/v1&lt;/code&gt; manifest.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;AI suggestions never silently replace the original. Source questions quote actual segments; explicit Crossref lookup returns scholarly metadata candidates, not factual verdicts. Hosted URL downloads, diarization, speaker identification and certified transcription are not implemented; use an authorized upload or the local CLI.&lt;/p&gt;</description></item><item><title>Product contract</title><link>https://m-amir-gomaa.github.io/manuals/sonaweft/product/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://m-amir-gomaa.github.io/manuals/sonaweft/product/</guid><description>&lt;p&gt;Amir explicitly made the transcript product active ahead of Keep, delegated a stronger brand and asked for hosted ASR/LLM processing, Paddle and a Pageweft-like usage model. Sonaweft is the selected brand (bounded exact-name searches found no obvious matching software listing; this is not trademark clearance). Preserve &lt;code&gt;instascript&lt;/code&gt; imports/command and existing remote URLs. Noteweld is the proposed next Keep brand; its implementation remains deferred.&lt;/p&gt;
+&lt;p&gt;Source decisions: CLI-001/002/003/005/009/010/013/022/023/033/037/041 and the current chat. Broad audiences and good defaults; English first; user-authorized media; Linux CLI/self-hosting plus hosted UI. Success: ingest media, hear/read timestamped ASR, keep original text, save separate corrections, optionally derive a faithful summary/research questions, export Markdown/JSON/SRT/VTT and a versioned bundle. AI review must not silently change the source or pretend to verify facts. A selected all-or-none hosted package is charged only after all its deliverables complete; retained private ASR checkpoints support explicit retry.&lt;/p&gt;</description></item><item><title>Processing architecture</title><link>https://m-amir-gomaa.github.io/manuals/sonaweft/architecture/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://m-amir-gomaa.github.io/manuals/sonaweft/architecture/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Browser --&amp;gt; secure cookie + CSRF --&amp;gt; FastAPI / Modal
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; |--&amp;gt; serialized SQLite ledger writer
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; |--&amp;gt; private media volume (48-hour TTL)
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; |--&amp;gt; confirmed CPU coordinator
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; |--&amp;gt; FFmpeg normalization
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; |--&amp;gt; L4 / faster-whisper large-v3
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; |--&amp;gt; optional DeepSeek text review
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; |--&amp;gt; committed result --&amp;gt; settle hold
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Review player / separate corrections / portable exports &amp;lt;--|
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Explicit selected claim --&amp;gt; Crossref metadata candidates
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Isolated checkout --&amp;gt; Paddle --&amp;gt; signed durable inbox
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; |--&amp;gt; fresh transaction + all adjustment pages
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; |--&amp;gt; intent/owner/product-bound credit or revocation
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;instascript/contract.py&lt;/code&gt; validates original ASR and exact source-quoted review and creates versioned exports. &lt;code&gt;pipeline.py&lt;/code&gt; provides local private checkpoints, exclusive locks, completion hashes and atomic publication. &lt;code&gt;review.py&lt;/code&gt; bounds text/output, validates JSON and has no autonomous tools. Local &lt;code&gt;source.py&lt;/code&gt; downloads are never invoked for public uploads.&lt;/p&gt;</description></item><item><title>Owner operations</title><link>https://m-amir-gomaa.github.io/manuals/sonaweft/operations/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://m-amir-gomaa.github.io/manuals/sonaweft/operations/</guid><description>&lt;p&gt;Live: &lt;a href="https://m-amir-gomaa--sonaweft-web-app.us-east.modal.run"&gt;https://m-amir-gomaa--sonaweft-web-app.us-east.modal.run&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="observed-account-state"&gt;Observed account state&lt;/h2&gt;
+&lt;p&gt;The existing owner Modal account hosts &lt;code&gt;sonaweft&lt;/code&gt;. Volumes: &lt;code&gt;sonaweft-media-v1&lt;/code&gt;, &lt;code&gt;sonaweft-ledger-v1&lt;/code&gt;, &lt;code&gt;sonaweft-models-v1&lt;/code&gt;. Secrets: &lt;code&gt;sonaweft-session&lt;/code&gt;, &lt;code&gt;sonaweft-payments&lt;/code&gt;, &lt;code&gt;sonaweft-llm&lt;/code&gt;. Large model weights are cached only in the cloud.&lt;/p&gt;
+&lt;p&gt;The existing verified-email Paddle seller has a separate Sonaweft SaaS product, one-time USD $5/$10 prices, client token and &lt;strong&gt;paused&lt;/strong&gt; notification destination at the live regional hostname&amp;rsquo;s &lt;code&gt;/api/payment-event&lt;/code&gt;. The account-scoped runtime key is currently reused from Pageweft; product/prices/intents are checked independently. Private setup values are ignored under &lt;code&gt;.local/integrations/&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Hosted release evidence</title><link>https://m-amir-gomaa.github.io/manuals/sonaweft/release/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://m-amir-gomaa.github.io/manuals/sonaweft/release/</guid><description>&lt;p&gt;&lt;em&gt;Original record: Release evidence — 15 October 2026.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Sonaweft is deployed at &lt;a href="https://m-amir-gomaa--sonaweft-web-app.us-east.modal.run"&gt;https://m-amir-gomaa--sonaweft-web-app.us-east.modal.run&lt;/a&gt;
+. &lt;code&gt;/health&lt;/code&gt; reports hosted processing enabled and billing disabled. Existing Pageweft cloud identities, balances and files were not migrated.&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Check&lt;/th&gt;
+ &lt;th&gt;Actual evidence&lt;/th&gt;
+ &lt;th&gt;Scope&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Automated suite&lt;/td&gt;
+ &lt;td&gt;52 tests passed, Python safety lint and both JS syntax checks passed&lt;/td&gt;
+ &lt;td&gt;Real temporary SQLite/files/FFprobe; model dispatch and Paddle HTTP are mocked&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Local speech&lt;/td&gt;
+ &lt;td&gt;Existing cached small model transcribed the original generated recording in about 5.4 seconds&lt;/td&gt;
+ &lt;td&gt;CPU/int8 on this laptop; not an accuracy benchmark&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Cloud speech&lt;/td&gt;
+ &lt;td&gt;Pinned large-v3 revision on Modal L4 returned the expected two English sentences&lt;/td&gt;
+ &lt;td&gt;Real inference, cloud-cached weights; not local MX350 inference&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Optional review&lt;/td&gt;
+ &lt;td&gt;Real configured DeepSeek Flash returned schema-valid notes; combined cloud processing reached ready&lt;/td&gt;
+ &lt;td&gt;Actual text provider, original preserved; advanced model listed by API but not inference-benchmarked&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Public workflow&lt;/td&gt;
+ &lt;td&gt;Chromium uploaded/inspected the generated recording, confirmed a trial, waited for actual cloud ASR, opened source audio, saved a separate correction and downloaded a ZIP&lt;/td&gt;
+ &lt;td&gt;Public HTTPS and real workers/storage; no customer media or purchase&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Responsive browser&lt;/td&gt;
+ &lt;td&gt;320/390/768/1440 workspace/review widths and 20 policy/checkout cases passed with zero page errors/overflow&lt;/td&gt;
+ &lt;td&gt;System Chromium; desktop/phone screenshots visually reviewed, not physical iPhone/Safari certification&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Source lookup&lt;/td&gt;
+ &lt;td&gt;Real Crossref request returned DOI candidates; tests exercise malformed results/outage and route consent/ownership/rate limits&lt;/td&gt;
+ &lt;td&gt;Bibliographic matches only; no truth verdict or general search&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Recovery/accounting&lt;/td&gt;
+ &lt;td&gt;Once-only reservation/settlement, partial/full refund, chargeback, outage, replay, ownership and revision cases passed&lt;/td&gt;
+ &lt;td&gt;Provider responses mocked; SQLite durable and concurrent checks real&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Owner backup&lt;/td&gt;
+ &lt;td&gt;Actual remote financial snapshot encrypted/downloaded/decrypted into a disposable SQLite clone; integrity &lt;code&gt;ok&lt;/code&gt;, zero balance violations, zero media rows&lt;/td&gt;
+ &lt;td&gt;Financial recovery snapshot, not media restore or production rollback&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Nix&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;nix build .#default --no-link&lt;/code&gt; succeeded; built CLI actually transcribed the generated audio and published a complete hashed export&lt;/td&gt;
+ &lt;td&gt;Nixpkgs Python 3.14.6 / faster-whisper 1.2.1 / PyAV 17.0.1; no system rebuild&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Portfolio&lt;/td&gt;
+ &lt;td&gt;Seven DOM tests and four Chromium viewport checks passed for the updated card/link/details&lt;/td&gt;
+ &lt;td&gt;Sonaweft linked explicitly; Noteweld remains a proposal&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Completed example&lt;/td&gt;
+ &lt;td&gt;Original audio, actual ASR/review and downloadable bundle; four browser widths, decoded audio playback/seek and ZIP hash validation passed with no processing/API job calls&lt;/td&gt;
+ &lt;td&gt;Public precomputed evidence, separate from the bounded live sample&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Paddle setup&lt;/td&gt;
+ &lt;td&gt;Separate real product, fixed $5/$10 prices, client token and paused notification created; Sonaweft hostname submitted and observed &lt;strong&gt;In review&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Seller identity approval, real checkout/webhook/refund/payout remain unverified&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The initial cloud probe exposed cross-environment exception/NumPy serialization failures; native JSON values and a plain error envelope fixed them before public enablement. Local testing found PyAV 19 incompatible with the pip speech dependency combination, so pip/cloud use the tested 15.1.0 pin. Nix supplies a separately tested compatible pair. The launcher also handled a Nix library-discovery SIGPIPE before release.&lt;/p&gt;</description></item><item><title>Historical agent setup</title><link>https://m-amir-gomaa.github.io/manuals/sonaweft/agent-history/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://m-amir-gomaa.github.io/manuals/sonaweft/agent-history/</guid><description>&lt;h2 id="why-this-record-is-separate"&gt;Why this record is separate&lt;/h2&gt;
+&lt;p&gt;This optional discovery document predates the hosted Sonaweft pipeline. Its provider/model/agent setup was not validated by the current release. No agent installation is needed to upload a recording, use the supported CLI or export files. Jev is retired and is not part of this workflow.&lt;/p&gt;
+&lt;p&gt;Read the current usage guide and project index first. The historical Markdown remains available at the source revision linked above; its commands, provider assumptions and completion claims are not current instructions.&lt;/p&gt;</description></item><item><title>Historical demo script</title><link>https://m-amir-gomaa.github.io/manuals/sonaweft/demo-history/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://m-amir-gomaa.github.io/manuals/sonaweft/demo-history/</guid><description>&lt;h2 id="why-this-record-is-separate"&gt;Why this record is separate&lt;/h2&gt;
+&lt;p&gt;The old recording script includes illustrative output, legacy paths, a third-party media example and cleanup instructions. It is not current acceptance evidence or a recommended command sequence. Use the original generated hosted example and the release evidence instead; no third-party recording is republished here.&lt;/p&gt;
+&lt;p&gt;Read the current usage guide and project index first. The historical Markdown remains available at the source revision linked above; its commands, provider assumptions and completion claims are not current instructions.&lt;/p&gt;</description></item><item><title>Historical vault design</title><link>https://m-amir-gomaa.github.io/manuals/sonaweft/vault-history/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://m-amir-gomaa.github.io/manuals/sonaweft/vault-history/</guid><description>&lt;h2 id="why-this-record-is-separate"&gt;Why this record is separate&lt;/h2&gt;
+&lt;p&gt;This is an earlier optional Obsidian/agent design, not a shipped hosted feature. Research matches do not establish truth and language-model notes do not replace the immutable recognition source. The current architecture documents the supported pipeline. Noteweld imports and shared login remain future work.&lt;/p&gt;
+&lt;p&gt;Read the current usage guide and project index first. The historical Markdown remains available at the source revision linked above; its commands, provider assumptions and completion claims are not current instructions.&lt;/p&gt;</description></item></channel></rss>

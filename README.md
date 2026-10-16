@@ -1,6 +1,14 @@
 # Amir Gomaa — freelance portfolio
 
-Static HTML, CSS, and JavaScript portfolio with project filters, case studies, Upwork/email contact links, mobile navigation, an interactive vanilla Keep demo and an embedded Pageweft sample-output viewer. No site build or external font request is required.
+Static HTML, CSS, and JavaScript portfolio with project filters, case studies, Upwork/email contact links, mobile navigation, an interactive vanilla Keep demo and an embedded Pageweft sample-output viewer. The companion **Fieldnotes** library is built with Hugo; its generated files are committed, so serving the portfolio does not require a runtime build.
+
+## Fieldnotes — 16 October 2026
+
+[Open the manuals and journal](https://m-amir-gomaa.github.io/manuals/). Navigation, all five project cards and a dedicated portfolio section link the library. It contains five current usage guides, 28 reviewed source-document records (including five explicitly historical references), three journal entries, browser-local search, a table of contents, Markdown downloads, RSS and sitemap. Imported references identify exact source revisions; the vanilla README's reviewed working-copy edition is marked. Private books, credentials, personal account questions and untracked work are excluded. Older release records retain their original milestone/date and current context.
+
+Hugo **0.156.0** source is in `documentation/`; generated output is `manuals/`. [Build/update instructions](documentation/README.md) and the [publication guide](documentation/content/journal/publishing.md) explain the explicit refresh and existing GitHub Pages workflow. No new hosting account, application server, payment activation, NixOS edit or provider setup is needed. Rollback is a normal portfolio Git commit; application data is unchanged. Source documents in other repositories and their existing working changes were not modified.
+
+Local verification passed: reproducible Hugo build; 28 source snapshot checks; 45 HTML pages and 862 local link/asset/fragment checks; eight DOM regressions; 24 grouped Chromium checks covering four viewport widths, all 36 article routes, search/error/retry/no-results, real Markdown download and clipboard copying, keyboard navigation and no-JavaScript reading. The Hugo pages made no external requests. Desktop/phone screenshots were inspected. System Chromium evidence does not certify physical iOS/Safari or every assistive technology. Publication and actual public checks are recorded in the release milestone rather than inferred from these local results.
 
 Current update — 16 October 2026: Noteweld now includes stable wiki links, outgoing/backlink panels, authenticated linked-note pages and a bounded/filterable graph. Its card links the account-free editor, original graph example, private workspace and `feat/connected-notes` source. The separate vanilla implementation is unchanged. The cover remains an illustration; graph limits and future import/revision work are explicit.
 

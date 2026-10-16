@@ -1,0 +1,281 @@
+{
+  "reviewed": "2026-10-16",
+  "projects": [
+    {
+      "slug": "noteweld",
+      "title": "Noteweld",
+      "directory": "../noteweld",
+      "repository": "keep-nextjs",
+      "number": "01",
+      "stack": "NEXT.JS / POSTGRESQL",
+      "status": "Free hosted preview",
+      "live": "https://m-amir-gomaa--noteweld-web-app.us-east.modal.run/",
+      "description": "Write Markdown, connect notes and explore a private workspace with optional Vim editing.",
+      "notice": "Current preview includes Markdown/Vim and connected notes. Earlier foundation/editor release records describe their own milestones. Billing and source-bundle imports are not enabled.",
+      "files": [
+        {
+          "path": "README.md",
+          "slug": "overview",
+          "title": "Technical overview",
+          "description": "Architecture, implemented scope, setup and the current release.",
+          "category": "Reference"
+        },
+        {
+          "path": "docs/EDITOR.md",
+          "slug": "editor",
+          "title": "Markdown and Vim editing",
+          "description": "Editing modes, keyboard controls, safe previews, exports and draft boundaries.",
+          "category": "Guide"
+        },
+        {
+          "path": "docs/CONNECTIONS.md",
+          "slug": "connections",
+          "title": "Links, backlinks and graphs",
+          "description": "Stable note identities, title resolution, graph controls and connection limits.",
+          "category": "Guide"
+        },
+        {
+          "path": "docs/OPERATIONS.md",
+          "slug": "operations",
+          "title": "Deployment and recovery",
+          "description": "CPU hosting, isolated PostgreSQL, encrypted snapshots and incident recovery.",
+          "category": "Operations"
+        },
+        {
+          "path": "docs/CONNECTIONS-RELEASE.md",
+          "slug": "connections-release",
+          "title": "Connected notes release",
+          "description": "The connected-notes milestone and its local, database and hosted browser evidence.",
+          "category": "Release record"
+        },
+        {
+          "path": "docs/EDITOR-RELEASE.md",
+          "slug": "editor-release",
+          "title": "Markdown editor release",
+          "description": "The editing milestone and its specific acceptance evidence.",
+          "category": "Release record"
+        },
+        {
+          "path": "docs/RELEASE.md",
+          "slug": "foundation-release",
+          "title": "Account reliability release",
+          "description": "Original reliability milestone, isolation checks and known boundaries.",
+          "category": "Release record"
+        }
+      ]
+    },
+    {
+      "slug": "pageweft",
+      "title": "Pageweft",
+      "directory": "../pageweft",
+      "repository": "PDF2Markdown-",
+      "number": "02",
+      "stack": "PYTHON / MINERU",
+      "status": "Bounded public sample",
+      "live": "https://m-amir-gomaa--mineru-pdf-extractor-web-app.modal.run/",
+      "description": "Convert technical PDFs into portable Markdown with source-page review and separate corrections.",
+      "notice": "The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence.",
+      "files": [
+        {
+          "path": "README.md",
+          "slug": "overview",
+          "title": "Technical overview",
+          "description": "Features, extraction architecture, local setup, cloud deployment and limits.",
+          "category": "Reference"
+        },
+        {
+          "path": "docs/CONVERSION-PRODUCT.md",
+          "slug": "product-design",
+          "title": "Conversion product design",
+          "description": "Design rationale and evaluation criteria; the usage guide describes current availability.",
+          "category": "Design record"
+        },
+        {
+          "path": "docs/THIRD-PARTY.md",
+          "slug": "dependencies",
+          "title": "Dependencies and licensing",
+          "description": "Pinned MinerU release, upstream source and third-party licensing boundaries.",
+          "category": "Reference"
+        },
+        {
+          "path": "docs/OPERATIONS.md",
+          "slug": "operations",
+          "title": "Owner operations",
+          "description": "Usage reporting, admission controls, pause, encrypted ledger backups and recovery.",
+          "category": "Operations"
+        },
+        {
+          "path": "docs/PAYMENT-ACTIVATION.md",
+          "slug": "payments",
+          "title": "Payment activation checklist",
+          "description": "Owner-only commercial gates, provider verification and the current Paddle procedure.",
+          "category": "Operations"
+        },
+        {
+          "path": "docs/LAUNCH.md",
+          "slug": "launch",
+          "title": "Launch readiness register",
+          "description": "An ordered readiness checklist; owner-specific account questions are omitted from this public edition.",
+          "category": "Operations"
+        },
+        {
+          "path": "docs/BOOK-RELEASE.md",
+          "slug": "book-release",
+          "title": "Book conversion release",
+          "description": "Implemented conversion features and the evidence for this dated milestone.",
+          "category": "Release record"
+        },
+        {
+          "path": "docs/PADDLE-20261015.md",
+          "slug": "paddle-release",
+          "title": "Paddle integration evidence",
+          "description": "Configured payment integration and the distinction between mocks and real approval.",
+          "category": "Release record"
+        },
+        {
+          "path": "docs/VERIFICATION-2026-10-14.md",
+          "slug": "verification",
+          "title": "Extraction verification record",
+          "description": "Dated extraction checks and the limits of the tested documents.",
+          "category": "Release record"
+        },
+        {
+          "path": "docs/PRICING-AND-DISCOVERY.md",
+          "slug": "pricing-history",
+          "title": "Pricing research archive",
+          "description": "The earlier pricing/discovery record, preserved separately from current product instructions.",
+          "category": "Archive",
+          "mode": "reference",
+          "context": "This record contains historical fee comparisons, owner income scenarios and a discovery plan. It predates the Paddle selection. Its numerical assumptions are not a current quotation or a forecast. Current service tariffs are in the technical overview; live billing remains disabled."
+        },
+        {
+          "path": "docs/SAAS-DECISIONS.md",
+          "slug": "decision-history",
+          "title": "Product decisions archive",
+          "description": "Historical product decisions and their current professional summary.",
+          "category": "Archive",
+          "mode": "reference",
+          "context": "The resulting choices are owner-hosted extraction, no customer Modal accounts, one-time processing packs, a small bounded sample and separate operational controls. Personal conversation, account questions and private preparation context are not reproduced here. The technical overview and payment checklist carry the actionable public information."
+        }
+      ]
+    },
+    {
+      "slug": "sonaweft",
+      "title": "Sonaweft",
+      "directory": "../sonaweft",
+      "repository": "ig_intel",
+      "number": "03",
+      "stack": "PYTHON / SPEECH / LLM",
+      "status": "Bounded public sample",
+      "live": "https://m-amir-gomaa--sonaweft-web-app.us-east.modal.run/",
+      "description": "Turn recordings into timestamped transcripts, separate corrections and source-linked notes.",
+      "notice": "Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.",
+      "files": [
+        {
+          "path": "README.md",
+          "slug": "overview",
+          "title": "Technical overview",
+          "description": "Hosted workflow, processing tariff, local CLI, deployment and limits.",
+          "category": "Reference"
+        },
+        {
+          "path": "docs/PRODUCT.md",
+          "slug": "product",
+          "title": "Product contract",
+          "description": "Recognition, review, file retention, cost controls and the boundaries between outputs.",
+          "category": "Reference"
+        },
+        {
+          "path": "docs/architecture.md",
+          "slug": "architecture",
+          "title": "Processing architecture",
+          "description": "Browser, isolated ledger, media handling, speech workers and payment events.",
+          "category": "Architecture"
+        },
+        {
+          "path": "docs/OPERATIONS.md",
+          "slug": "operations",
+          "title": "Owner operations",
+          "description": "Admission caps, monitoring, backups, incidents and payment opening sequence.",
+          "category": "Operations"
+        },
+        {
+          "path": "docs/RELEASE.md",
+          "slug": "release",
+          "title": "Hosted release evidence",
+          "description": "Actual short-recording/cloud/browser checks and outstanding commercial gates.",
+          "category": "Release record"
+        },
+        {
+          "path": "docs/claude-code.md",
+          "slug": "agent-history",
+          "title": "Historical agent setup",
+          "description": "Legacy Claude Code and UTCP discovery notes.",
+          "category": "Archive",
+          "mode": "reference",
+          "context": "This optional discovery document predates the hosted Sonaweft pipeline. Its provider/model/agent setup was not validated by the current release. No agent installation is needed to upload a recording, use the supported CLI or export files. Jev is retired and is not part of this workflow."
+        },
+        {
+          "path": "docs/demo-upwork.md",
+          "slug": "demo-history",
+          "title": "Historical demo script",
+          "description": "An older terminal demonstration and proposal draft.",
+          "category": "Archive",
+          "mode": "reference",
+          "context": "The old recording script includes illustrative output, legacy paths, a third-party media example and cleanup instructions. It is not current acceptance evidence or a recommended command sequence. Use the original generated hosted example and the release evidence instead; no third-party recording is republished here."
+        },
+        {
+          "path": "docs/second-brain.md",
+          "slug": "vault-history",
+          "title": "Historical vault design",
+          "description": "An optional earlier vault/agent concept, preserved as a design reference.",
+          "category": "Archive",
+          "mode": "reference",
+          "context": "This is an earlier optional Obsidian/agent design, not a shipped hosted feature. Research matches do not establish truth and language-model notes do not replace the immutable recognition source. The current architecture documents the supported pipeline. Noteweld imports and shared login remain future work."
+        }
+      ]
+    },
+    {
+      "slug": "vanilla-keep",
+      "title": "Vanilla Keep",
+      "directory": "../knowledge-workspace-vanilla",
+      "repository": "Keep",
+      "number": "04",
+      "stack": "VANILLA JAVASCRIPT",
+      "status": "Browser-only demo",
+      "live": "https://m-amir-gomaa.github.io/demos/keep/index.html",
+      "description": "A separate notes-and-checklists implementation built with native browser APIs and local storage.",
+      "notice": "This is the separate vanilla JavaScript implementation. It does not include Noteweld authentication, PostgreSQL, Markdown/Vim or connected-note features. The embedded published bundle and local source can differ; the guide calls out that boundary.",
+      "files": [
+        {
+          "path": "README.md",
+          "slug": "overview",
+          "title": "Source and implementation notes",
+          "description": "LocalStorage behavior, setup, backup/import design and known release work.",
+          "category": "Reference"
+        }
+      ]
+    },
+    {
+      "slug": "queue-lab",
+      "title": "Queue Lab",
+      "directory": "../queue-lab",
+      "repository": "portfolio-hermes",
+      "number": "05",
+      "stack": "GO / CONCURRENCY",
+      "status": "Local simulation",
+      "live": "",
+      "description": "A bounded-worker queue demonstration with progress events, admission limits and graceful shutdown.",
+      "notice": "Queue Lab is the portfolio name; Hermes remains the source repository/internal name. Delivery is simulated, state is in memory and no separate public production backend is established.",
+      "files": [
+        {
+          "path": "README.md",
+          "slug": "overview",
+          "title": "Running the queue simulation",
+          "description": "Go setup, API endpoints, bounded concurrency, shutdown and production boundaries.",
+          "category": "Reference"
+        }
+      ]
+    }
+  ]
+}

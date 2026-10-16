@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vanilla Keep on Fieldnotes · Mohamed Gomaa</title><link>https://m-amir-gomaa.github.io/manuals/vanilla-keep/</link><description>Recent content in Vanilla Keep on Fieldnotes · Mohamed Gomaa</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://m-amir-gomaa.github.io/manuals/vanilla-keep/index.xml" rel="self" type="application/rss+xml"/><item><title>Using the vanilla demo</title><link>https://m-amir-gomaa.github.io/manuals/vanilla-keep/guide/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://m-amir-gomaa.github.io/manuals/vanilla-keep/guide/</guid><description>&lt;h2 id="open-the-portfolio-demo"&gt;Open the portfolio demo&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://m-amir-gomaa.github.io/manuals/demos/keep/index.html"&gt;Open the bundled demo&lt;/a&gt;
+ or launch it from the portfolio&amp;rsquo;s vanilla JavaScript card. This is a separate implementation from Noteweld. It demonstrates native browser APIs rather than the professional Next.js application.&lt;/p&gt;
+&lt;h2 id="work-in-one-browser"&gt;Work in one browser&lt;/h2&gt;
+&lt;p&gt;Try notes and checklists, pin/color/label controls, archive and trash. Storage belongs to this browser and website origin. It does not create a cloud account, synchronize devices or inherit Noteweld&amp;rsquo;s editor/graph features.&lt;/p&gt;</description></item><item><title>Source and implementation notes</title><link>https://m-amir-gomaa.github.io/manuals/vanilla-keep/overview/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://m-amir-gomaa.github.io/manuals/vanilla-keep/overview/</guid><description>&lt;p&gt;A local-first notes and checklist app inspired by Google Keep. It uses native DOM APIs, localStorage, CSS, and Webpack, with no UI framework. Build and test dependencies are declared separately from the runtime CSS dependency.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://m-amir-gomaa.github.io/Keep/"&gt;Published demo&lt;/a&gt;
+ · &lt;a href="https://github.com/m-amir-gomaa/Keep"&gt;Source&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;The published demo may not contain the current local changes. Browser and visual release review is still outstanding.&lt;/p&gt;
+&lt;h2 id="implemented-behavior"&gt;Implemented behavior&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Create/edit text notes and checklists; add, remove, and complete checklist items.&lt;/li&gt;
+&lt;li&gt;Pin, color, label, archive, trash, restore, and permanently delete notes.&lt;/li&gt;
+&lt;li&gt;Search titles, bodies, labels, and checklist text using the notes-view search.&lt;/li&gt;
+&lt;li&gt;Persist notes in this browser&amp;rsquo;s localStorage.&lt;/li&gt;
+&lt;li&gt;Export versioned JSON backups including archived/trashed notes and labels.&lt;/li&gt;
+&lt;li&gt;Validate imports before writes; merge without replacing existing IDs; attempt rollback if a storage write fails.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The header search is a separate unfinished control; use the notes-view search. Reminders are a placeholder view, not an implemented scheduling feature. Imported labels currently require a refresh for sidebar navigation. Storage-quota failures outside import still need a complete user-facing recovery flow. Accessibility and mobile appearance are not yet verified in a real browser. These gaps are tracked in the workspace status file and questionnaires.&lt;/p&gt;</description></item></channel></rss>

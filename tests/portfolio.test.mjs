@@ -9,6 +9,16 @@ const { JSDOM } = require('jsdom');
 const root = resolve(import.meta.dirname, '..');
 const html = readFileSync(resolve(root, 'index.html'), 'utf8');
 const script = readFileSync(resolve(root, 'script.js'), 'utf8');
+await test('documentation library is connected from navigation and every project', () => {
+ const document = new JSDOM(html).window.document;
+ assert.ok(document.querySelector('#navigation a[href="manuals/"]'));
+ assert.ok(document.querySelector('#documentation a[href="manuals/"]'));
+ for (const project of document.querySelectorAll('.project')) {
+  const manual = project.querySelector('a[href^="manuals/"]');
+  assert.ok(manual);
+  assert.ok(existsSync(resolve(root, manual.getAttribute('href'), 'index.html')));
+ }
+});
 function page() { const dom = new JSDOM(html, { url: 'https://m-amir-gomaa.github.io/', runScripts: 'outside-only' }); dom.window.eval(script); return dom; }
 await test('all five projects are visible with working source and demo links', () => {
  const dom = page(); const document = dom.window.document;
