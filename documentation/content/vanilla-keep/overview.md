@@ -3,66 +3,62 @@
   "description": "LocalStorage behavior, setup, backup/import design and known release work.",
   "date": "2026-10-16",
   "weight": 30,
-  "project": "Vanilla Keep",
+  "project": "Noteweld Local",
   "category": "Reference",
-  "notice": "This is the separate vanilla JavaScript implementation. It does not include Noteweld authentication, PostgreSQL, Markdown/Vim or connected-note features. The embedded published bundle and local source can differ; the guide calls out that boundary. This reviewed documentation snapshot includes local documentation edits; the source link shows the committed baseline.",
-  "sourceurl": "https://github.com/m-amir-gomaa/Keep/blob/64471b8d5d37350230e19465e9a7d459a7cedc1f/README.md",
+  "notice": "Separate browser-only JavaScript demo with JSON portability, responsive layouts and recovery checks. No accounts, payments, Markdown/Vim editor or graph. The established Keep URLs are preserved.",
+  "sourceurl": "https://github.com/m-amir-gomaa/Keep/blob/6d0eb65e8709e002f5fc9663a656d2b23a75ea00/README.md",
   "download": "markdown/vanilla-keep/overview.md"
 }
 
-A local-first notes and checklist app inspired by Google Keep. It uses native DOM APIs, localStorage, CSS, and Webpack, with no UI framework. Build and test dependencies are declared separately from the runtime CSS dependency.
+A free, browser-only notes and checklist demo built with native DOM APIs, CSS, localStorage and Webpack. It shares Noteweld’s product family and deliberately has no account, server or paid features. The existing Keep repository and public URL are preserved.
 
-[Published demo](https://m-amir-gomaa.github.io/Keep/) · [Source](https://github.com/m-amir-gomaa/Keep)
+[Live demo](https://m-amir-gomaa.github.io/Keep/) · [Source](https://github.com/m-amir-gomaa/Keep) · [Portfolio and manuals](https://m-amir-gomaa.github.io/)
 
-The published demo may not contain the current local changes. Browser and visual release review is still outstanding.
+## Features
 
-## Implemented behavior
+- Create and edit notes and checklists; pin, color, label, archive, trash and restore them.
+- Search titles, bodies, labels and checklist text from either search control.
+- Use keyboard navigation, named controls and a focus-contained edit dialog; Escape saves and returns focus.
+- Export versioned JSON including archived/trashed notes and labels; validate and merge imports without replacing existing IDs.
+- Preserve drafts when a storage write fails, display an error and allow retry.
+- Recover raw stored JSON if existing notes are malformed, without silently resetting user data.
+- Use a responsive layout with readable colored notes and reduced-motion support.
 
-- Create/edit text notes and checklists; add, remove, and complete checklist items.
-- Pin, color, label, archive, trash, restore, and permanently delete notes.
-- Search titles, bodies, labels, and checklist text using the notes-view search.
-- Persist notes in this browser's localStorage.
-- Export versioned JSON backups including archived/trashed notes and labels.
-- Validate imports before writes; merge without replacing existing IDs; attempt rollback if a storage write fails.
+Delete from Archive moves to recoverable Trash. Delete forever and Empty Trash require confirmation. There is no automatic seven-day purge. Header Refresh reloads this browser view; the layout control switches compact display. Placeholder reminders/settings are omitted from the available controls.
 
-The header search is a separate unfinished control; use the notes-view search. Reminders are a placeholder view, not an implemented scheduling feature. Imported labels currently require a refresh for sidebar navigation. Storage-quota failures outside import still need a complete user-facing recovery flow. Accessibility and mobile appearance are not yet verified in a real browser. These gaps are tracked in the workspace status file and questionnaires.
+## Run and verify
 
-## Setup
-
-Use Node.js 24 for the installed test tooling.
+Use Node.js 24. Development serves only on loopback.
 
 ```sh
-git clone https://github.com/m-amir-gomaa/Keep.git
-cd Keep
 npm ci
 npm run dev
 # Open http://localhost:3000
-```
-
-## Checks and build
-
-```sh
 npm test
 npm run build
 npx playwright install chromium
 npm run test:e2e
+npm audit
 ```
 
-`npm test` covers storage, backups, failed import writes, and checklist editing using jsdom. Browser checks use the single `playwright.config.ts` configuration and require Chromium plus a working browser/server environment. `vitest.config.mjs` limits unit checks to `tests/**/*.test.js`.
+On NixOS, use an installed compatible Chromium via `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/run/current-system/sw/bin/chromium`. The lockfile pins tested dependencies. A small loopback-only Node server serves the generated demo; Webpack watches source changes, and you refresh the page to see them. It has no proxy, uploads or hot-reload service. Unit tests cover storage, backup validation/rollback and checklist editing. Browser tests exercise persistence, import/export, keyboard controls, failed saves, corrupt-data recovery and four viewport widths. Automated accessibility checks supplement keyboard and visual review; they do not certify every possible user journey.
 
-The production bundle is generated into `dist/`. The Pages workflow installs from the lockfile and builds it before upload. Generated assets are distinct from editable `src/` source; the portfolio intentionally keeps an embedded copy of the built demo.
+The Pages workflow builds `dist/` from source. The portfolio embeds a copy of that production bundle; a release must update both and verify public pages.
 
-## Source layout
+## Code map
 
-- `src/index.js`: startup and DOM helpers.
-- `src/header/`, `src/side/`: navigation and header.
-- `src/main/notes/notes-store.js`: localStorage data operations.
-- `src/main/notes/backup.js`: backup validation/import/export.
-- `src/main/notes/checklist-editor.js`: native checklist editor.
-- `src/main/notes/notes.js`: composer, card rendering, and notes search.
-- Other `src/main/` modules: labels, archive, trash, and reminder placeholder.
-- `tests/`: unit and browser checks.
+- `src/index.js`: boot, recovery and shared DOM helpers.
+- `src/header/`, `src/side/`: search and keyboard navigation.
+- `src/main/notes/notes-store.js`: persisted notes and labels.
+- `src/main/notes/backup.js`: validated, additive JSON portability.
+- `src/main/notes/checklist-editor.js`: checklist UI.
+- `src/main/notes/notes.js`: composer, edit dialog, cards and filters.
+- `src/main/notes/storage-feedback.js`: visible persistence failures.
+- `src/main/archive/`, `src/main/trash/`: recovery and explicit deletion.
+- `tests/`: unit and browser acceptance cases.
 
-## Limits and release work
+## Boundaries
 
-Data is browser-specific; it does not sync to another device or account. Export is the current portability mechanism. Do not treat a passing unit suite as proof that all UI journeys work. Licensing and third-party asset attribution need review: the package currently declares ISC and no standalone license file is present; the old README's MIT claim was inconsistent and has been removed without choosing a new license.
+This is a local demo, with no cloud sync, login, payments, reminder scheduler, Markdown/Vim editor or graph. Export important notes before clearing browser data. Different sites/origins have separate storage, while the portfolio and its embedded demo share an origin; avoid putting sensitive material in a showcase.
+
+The package declares ISC; no standalone license file was present in the original repository. This release does not invent an MIT grant or change asset ownership. The active Noteweld mark is original SVG code, fonts come from the operating system, and the inactive legacy Keep image is no longer bundled. Full non-paid feature parity with the professional product remains a later scope.

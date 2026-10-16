@@ -1,5 +1,5 @@
 {
-  "title": "Vanilla Keep",
+  "title": "Noteweld Local",
   "description": "A separate notes-and-checklists implementation built with native browser APIs and local storage.",
   "date": "2026-10-16",
   "weight": 4,
@@ -11,7 +11,7 @@
 
 ## A useful reading order
 
-1. Start with **Using Vanilla Keep** for the practical workflow and current availability.
+1. Start with **Using Noteweld Local** for the practical workflow and current availability.
 2. Read the **technical overview** for setup and implementation details.
 3. Follow the specialist guides, architecture and operations references relevant to your task.
 4. Read dated release evidence to see exactly what was checked. Archive entries are historical references.

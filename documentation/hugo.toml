@@ -1,6 +1,6 @@
 baseURL = 'https://m-amir-gomaa.github.io/manuals/'
 languageCode = 'en'
-title = 'Fieldnotes · Mohamed Gomaa'
+title = 'Fieldnotes · Mohamed Amir Gomaa'
 enableRobotsTXT = true
 disableKinds = ['taxonomy', 'term']
 

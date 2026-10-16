@@ -61,6 +61,13 @@
           "title": "Account reliability release",
           "description": "Original reliability milestone, isolation checks and known boundaries.",
           "category": "Release record"
+        },
+        {
+          "path": "docs/ACCESSIBILITY-20261016.md",
+          "slug": "accessibility-review",
+          "title": "Accessibility review \u2014 16 October",
+          "description": "The specific accessibility fix, test evidence and remaining acceptance limits.",
+          "category": "Release record"
         }
       ]
     },
@@ -156,6 +163,13 @@
           "category": "Archive",
           "mode": "reference",
           "context": "The resulting choices are owner-hosted extraction, no customer Modal accounts, one-time processing packs, a small bounded sample and separate operational controls. Personal conversation, account questions and private preparation context are not reproduced here. The technical overview and payment checklist carry the actionable public information."
+        },
+        {
+          "path": "docs/ACCESSIBILITY-20261016.md",
+          "slug": "accessibility-review",
+          "title": "Accessibility review \u2014 16 October",
+          "description": "The specific accessibility fix, test evidence and remaining acceptance limits.",
+          "category": "Release record"
         }
       ]
     },
@@ -237,7 +251,7 @@
     },
     {
       "slug": "vanilla-keep",
-      "title": "Vanilla Keep",
+      "title": "Noteweld Local",
       "directory": "../knowledge-workspace-vanilla",
       "repository": "Keep",
       "number": "04",
@@ -245,7 +259,7 @@
       "status": "Browser-only demo",
       "live": "https://m-amir-gomaa.github.io/demos/keep/index.html",
       "description": "A separate notes-and-checklists implementation built with native browser APIs and local storage.",
-      "notice": "This is the separate vanilla JavaScript implementation. It does not include Noteweld authentication, PostgreSQL, Markdown/Vim or connected-note features. The embedded published bundle and local source can differ; the guide calls out that boundary.",
+      "notice": "Separate browser-only JavaScript demo with JSON portability, responsive layouts and recovery checks. No accounts, payments, Markdown/Vim editor or graph. The established Keep URLs are preserved.",
       "files": [
         {
           "path": "README.md",

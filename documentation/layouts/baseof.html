@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f5f0">
   <meta name="description" content="{{ .Description | default site.Params.description }}">
-  <title>{{ if .IsHome }}Fieldnotes · Mohamed Gomaa{{ else }}{{ .Title }} · Fieldnotes{{ end }}</title>
+  <title>{{ if .IsHome }}Fieldnotes · Mohamed Amir Gomaa{{ else }}{{ .Title }} · Fieldnotes{{ end }}</title>
   <link rel="canonical" href="{{ .Permalink }}">
   <meta property="og:title" content="{{ .Title }} · Fieldnotes">
   <meta property="og:description" content="{{ .Description | default site.Params.description }}">
@@ -30,6 +30,6 @@
   <nav aria-label="Main navigation"><a href="{{ site.Home.RelPermalink }}#library">Manuals</a><a href="{{ "journal/" | relURL }}">Journal</a><a href="{{ "development-environment/" | relURL }}">Workbench</a><a href="/">Portfolio <span aria-hidden="true">→</span></a></nav>
 </header>
 {{ block "main" . }}{{ end }}
-<footer class="footer shell"><span>© 2026 Mohamed Gomaa · Built with Hugo.</span><a href="mailto:mo.gomaa.formal@gmail.com">Questions or corrections →</a><a href="{{ "index.xml" | relURL }}">RSS</a></footer>
+<footer class="footer shell"><span>© 2026 Mohamed Amir Gomaa · Built with Hugo.</span><a href="mailto:mo.gomaa.formal@gmail.com">Questions or corrections →</a><a href="{{ "index.xml" | relURL }}">RSS</a></footer>
 </body>
 </html>

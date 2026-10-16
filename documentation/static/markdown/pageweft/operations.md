@@ -2,7 +2,7 @@
 
 > The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence.
 
-Source baseline: https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e7a70ee08940f935e1d1385d9811bbe5b724028a/docs/OPERATIONS.md
+Source baseline: https://github.com/m-amir-gomaa/PDF2Markdown-/blob/b5ccb96441757e39e0431c61a69a264627a40a60/docs/OPERATIONS.md
 Reviewed: 2026-10-16
 
 Run from the Pageweft repository with the existing authenticated Modal profile. There is no publicly accessible admin endpoint or new monitoring subscription.

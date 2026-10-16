@@ -6,7 +6,7 @@
   "project": "Pageweft",
   "category": "Release record",
   "notice": "Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence.",
-  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e7a70ee08940f935e1d1385d9811bbe5b724028a/docs/PADDLE-20261015.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/b5ccb96441757e39e0431c61a69a264627a40a60/docs/PADDLE-20261015.md",
   "download": "markdown/pageweft/paddle-release.md"
 }
 

@@ -2,7 +2,7 @@
 
 > Current preview includes Markdown/Vim and connected notes. Earlier foundation/editor release records describe their own milestones. Billing and source-bundle imports are not enabled.
 
-Source baseline: https://github.com/m-amir-gomaa/keep-nextjs/blob/f6901ff60652682c4529879f8fb6d96fafb127d3/README.md
+Source baseline: https://github.com/m-amir-gomaa/keep-nextjs/blob/5ac512f73d2d0ff2ec5ca1e293e80d744e67fc5f/README.md
 Reviewed: 2026-10-16
 
 A private notes/checklist preview built with Next.js 16.3.8, React 19, Auth.js and PostgreSQL/Drizzle. This repository retains its original `keep-nextjs` GitHub identity. The old Vercel deployment is a historical version; it is not updated by this release.

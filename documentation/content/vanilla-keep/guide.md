@@ -3,7 +3,7 @@
   "description": "Understand the separate browser-only demonstration and its storage boundary.",
   "date": "2026-10-16",
   "weight": 1,
-  "project": "Vanilla Keep",
+  "project": "Noteweld Local",
   "category": "Start here",
   "download": "markdown/vanilla-keep/guide.md"
 }
@@ -18,8 +18,16 @@ Try notes and checklists, pin/color/label controls, archive and trash. Storage b
 
 Use a disposable test note when exploring the demo. Browser data clearing, private browsing, storage limits or a different origin can affect persistence. Keep important content outside a portfolio demonstration.
 
-## Source versus published bundle
+## Save, search and recover
 
-The [source notes](/manuals/vanilla-keep/overview/) describe the current local implementation, including JSON backup/import work and known controls needing further release review. That source can be ahead of the copied portfolio bundle. Do not assume every local capability is present in the embedded demo.
+Use either search field to find titles, bodies, labels or checklist text. Create a text note or checklist; labels imported in a JSON backup are available in navigation immediately. Use the edit button or open a card; Escape saves and returns focus.
 
-Current local limitations include an unfinished header search, placeholder reminders and further storage-failure/accessibility review. Use the notes-view search where available. A future parity release will be separate from the professional Noteweld releases.
+Export a JSON backup before clearing browser storage. Imports validate the file and merge without replacing existing note IDs. When a save fails, the app shows an error and retains an open draft for retry. Malformed existing data opens a recovery screen with a raw JSON download instead of reseeding the database.
+
+Archive keeps a note available for later. Delete from Archive moves it to Trash. Restore recovers it; Delete forever and Empty Trash ask for confirmation. There is no automatic seven-day deletion.
+
+## Release boundary
+
+The published portfolio bundle is refreshed from the same production build as the standalone demo. The source release records 14 unit tests, 22 Chromium journeys, four viewport widths and no automated WCAG A/AA findings on the tested seeded screens. These checks do not certify every browser or replace usability testing.
+
+Reminders and inactive settings controls are omitted. The professional Noteweld editor, Vim mode, graph, cloud accounts and payments are separate. [Read the implementation guide](/manuals/vanilla-keep/overview/) and [release history](/manuals/vanilla-keep/build-history/) for the exact boundary.

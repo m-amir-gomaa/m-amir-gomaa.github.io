@@ -2,7 +2,7 @@
 
 > Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current preview includes Markdown/Vim and connected notes. Earlier foundation/editor release records describe their own milestones. Billing and source-bundle imports are not enabled.
 
-Source baseline: https://github.com/m-amir-gomaa/keep-nextjs/blob/f6901ff60652682c4529879f8fb6d96fafb127d3/docs/RELEASE.md
+Source baseline: https://github.com/m-amir-gomaa/keep-nextjs/blob/5ac512f73d2d0ff2ec5ca1e293e80d744e67fc5f/docs/RELEASE.md
 Reviewed: 2026-10-16
 
 *Original record: Noteweld foundation release — 15 October 2026.*

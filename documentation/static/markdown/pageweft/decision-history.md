@@ -2,7 +2,7 @@
 
 > Historical reference; not part of the current setup or recommended execution path.
 
-Source baseline: https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e7a70ee08940f935e1d1385d9811bbe5b724028a/docs/SAAS-DECISIONS.md
+Source baseline: https://github.com/m-amir-gomaa/PDF2Markdown-/blob/b5ccb96441757e39e0431c61a69a264627a40a60/docs/SAAS-DECISIONS.md
 Reviewed: 2026-10-16
 
 ## Why this record is separate
