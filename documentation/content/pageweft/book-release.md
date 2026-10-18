@@ -1,12 +1,12 @@
 {
   "title": "Book conversion release",
   "description": "Implemented conversion features and the evidence for this dated milestone.",
-  "date": "2026-10-16",
+  "date": "2026-10-18",
   "weight": 90,
   "project": "Pageweft",
   "category": "Release record",
   "notice": "Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence. Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification.",
-  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/b5ccb96441757e39e0431c61a69a264627a40a60/docs/BOOK-RELEASE.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e38ecb2877bb76d7dd0b141e6cfdec4a597d4399/docs/BOOK-RELEASE.md",
   "download": "markdown/pageweft/book-release.md"
 }
 

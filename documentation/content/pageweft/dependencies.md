@@ -1,12 +1,12 @@
 {
   "title": "Dependencies and licensing",
   "description": "Pinned MinerU release, upstream source and third-party licensing boundaries.",
-  "date": "2026-10-16",
+  "date": "2026-10-18",
   "weight": 50,
   "project": "Pageweft",
   "category": "Reference",
   "notice": "The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence.",
-  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/b5ccb96441757e39e0431c61a69a264627a40a60/docs/THIRD-PARTY.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e38ecb2877bb76d7dd0b141e6cfdec4a597d4399/docs/THIRD-PARTY.md",
   "download": "markdown/pageweft/dependencies.md"
 }
 

@@ -1,6 +1,6 @@
 # Neovim: find, edit, inspect
 
-Reviewed: 2026-10-16
+Reviewed: 2026-10-18
 
 ## Follow a small loop
 

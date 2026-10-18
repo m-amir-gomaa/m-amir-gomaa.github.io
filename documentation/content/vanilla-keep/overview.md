@@ -1,7 +1,7 @@
 {
   "title": "Source and implementation notes",
   "description": "LocalStorage behavior, setup, backup/import design and known release work.",
-  "date": "2026-10-16",
+  "date": "2026-10-18",
   "weight": 30,
   "project": "Noteweld Local",
   "category": "Reference",

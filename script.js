@@ -38,7 +38,7 @@ const demos = {
  document: {
   title: 'Pageweft · sample output',
   description: 'An original three-page PDF and its actual text-only export. Precomputed sample; no upload or cloud job.',
-  url: 'https://m-amir-gomaa--mineru-pdf-extractor-web-app.modal.run/?utm_source=portfolio',
+  url: 'https://pageweft.amirgomaa.com/?utm_source=portfolio',
  },
 };
 let samplePages;

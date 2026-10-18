@@ -1,16 +1,16 @@
 {
   "title": "Owner operations",
   "description": "Admission caps, monitoring, backups, incidents and payment opening sequence.",
-  "date": "2026-10-16",
+  "date": "2026-10-18",
   "weight": 60,
   "project": "Sonaweft",
   "category": "Operations",
   "notice": "Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.",
-  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/68b84726aaf3da129cfe2e796f6d5ac227d57333/docs/OPERATIONS.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f/docs/OPERATIONS.md",
   "download": "markdown/sonaweft/operations.md"
 }
 
-Live: https://m-amir-gomaa--sonaweft-web-app.us-east.modal.run
+Live: https://sonaweft.amirgomaa.com ([custom domain / recovery](/manuals/sonaweft/custom-domain/)); original Modal endpoint remains available.
 
 ## Observed account state
 

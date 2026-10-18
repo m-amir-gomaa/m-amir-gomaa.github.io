@@ -11,7 +11,7 @@ from urllib.parse import quote, urlsplit, unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / 'documentation'
-DATE = '2026-10-16'
+DATE = '2026-10-18'
 
 
 def git(path, *args):

@@ -1,7 +1,7 @@
 {
   "title": "Running the queue simulation",
   "description": "Go setup, API endpoints, bounded concurrency, shutdown and production boundaries.",
-  "date": "2026-10-16",
+  "date": "2026-10-18",
   "weight": 30,
   "project": "Batchlark",
   "category": "Reference",

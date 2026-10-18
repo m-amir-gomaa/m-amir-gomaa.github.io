@@ -1,16 +1,16 @@
 {
   "title": "Technical overview",
   "description": "Hosted workflow, processing tariff, local CLI, deployment and limits.",
-  "date": "2026-10-16",
+  "date": "2026-10-18",
   "weight": 30,
   "project": "Sonaweft",
   "category": "Reference",
   "notice": "Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.",
-  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/68b84726aaf3da129cfe2e796f6d5ac227d57333/README.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f/README.md",
   "download": "markdown/sonaweft/overview.md"
 }
 
-[Open Sonaweft](https://m-amir-gomaa--sonaweft-web-app.us-east.modal.run) · [Hear completed example](https://m-amir-gomaa--sonaweft-web-app.us-east.modal.run/example) · [Product contract](/manuals/sonaweft/product/) · [Operations](/manuals/sonaweft/operations/) · [Release evidence](/manuals/sonaweft/release/)
+[Open Sonaweft](https://sonaweft.amirgomaa.com) · [Hear completed example](https://sonaweft.amirgomaa.com/example) · [Product contract](/manuals/sonaweft/product/) · [Operations](/manuals/sonaweft/operations/) · [Release evidence](/manuals/sonaweft/release/)
 
 Turn authorized recordings into timestamped transcripts, editable drafts, subtitles and portable Markdown. Hear each segment while correcting it. Original speech recognition, your corrections and optional AI notes remain separate. Formerly instaScript / Transcript Studio; existing commands, Python imports and GitHub URLs remain compatible.
 
@@ -52,7 +52,7 @@ bin/sonaweft recording.mp3 --review --review-model standard --out ./out
 bin/sonaweft --export-item ./out/ITEM --format vtt
 ```
 
-The launchers resolve NixOS wheel libraries dynamically, prefer an existing tested `.venv-web`, otherwise `.venv`; `SONAWEFT_PYTHON` overrides. Export `DEEPSEEK_API_KEY` only for review. `.env` files are not automatically loaded; see [.env.example](https://github.com/m-amir-gomaa/ig_intel/blob/68b84726aaf3da129cfe2e796f6d5ac227d57333/.env.example). `SONAWEFT_VAULT` takes precedence over legacy `IG_INTEL_VAULT`; the old `~/ig_intel/Inbox` default is preserved.
+The launchers resolve NixOS wheel libraries dynamically, prefer an existing tested `.venv-web`, otherwise `.venv`; `SONAWEFT_PYTHON` overrides. Export `DEEPSEEK_API_KEY` only for review. `.env` files are not automatically loaded; see [.env.example](https://github.com/m-amir-gomaa/ig_intel/blob/5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f/.env.example). `SONAWEFT_VAULT` takes precedence over legacy `IG_INTEL_VAULT`; the old `~/ig_intel/Inbox` default is preserved.
 
 Private `.pending` checkpoints support retry without repeating successful ASR. Complete exports publish atomically; hashes detect modified/incomplete output, which is preserved. Source/model/review identity suppresses repeats. Cross-path perceptual deduplication is not promised. A killed process may leave `running.lock`; verify it has stopped before removing only that lock.
 
@@ -74,6 +74,6 @@ node --check sonaweft_web/static/app.js
 node --check sonaweft_web/static/checkout.js
 ```
 
-FFmpeg is required by boundary tests. Tests use real temporary SQLite/files/FFprobe with fake model dispatch and mocked payment APIs. Actual model/cloud/browser evidence is recorded separately. [requirements-web.lock](https://github.com/m-amir-gomaa/ig_intel/blob/68b84726aaf3da129cfe2e796f6d5ac227d57333/requirements-web.lock) records the tested Linux development environment; [app.py](https://github.com/m-amir-gomaa/ig_intel/blob/68b84726aaf3da129cfe2e796f6d5ac227d57333/app.py) pins cloud dependencies and an immutable model revision. No sibling repository is needed. Nix files have a separate verification status in RELEASE.md. New self-hosters need their own credentials, products and approvals.
+FFmpeg is required by boundary tests. Tests use real temporary SQLite/files/FFprobe with fake model dispatch and mocked payment APIs. Actual model/cloud/browser evidence is recorded separately. [requirements-web.lock](https://github.com/m-amir-gomaa/ig_intel/blob/5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f/requirements-web.lock) records the tested Linux development environment; [app.py](https://github.com/m-amir-gomaa/ig_intel/blob/5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f/app.py) pins cloud dependencies and an immutable model revision. No sibling repository is needed. Nix files have a separate verification status in RELEASE.md. New self-hosters need their own credentials, products and approvals.
 
 MIT application code; upstream tools/models have their own licenses. No speech model guarantees accuracy across accents, noise or long recordings.

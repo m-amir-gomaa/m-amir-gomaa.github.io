@@ -1,15 +1,19 @@
 {
   "title": "Technical overview",
   "description": "Architecture, implemented scope, setup and the current release.",
-  "date": "2026-10-16",
+  "date": "2026-10-18",
   "weight": 30,
   "project": "Noteweld",
   "category": "Reference",
   "notice": "Current preview includes Markdown/Vim and connected notes. Earlier foundation/editor release records describe their own milestones. Billing and source-bundle imports are not enabled.",
-  "sourceurl": "https://github.com/m-amir-gomaa/keep-nextjs/blob/5ac512f73d2d0ff2ec5ca1e293e80d744e67fc5f/README.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/keep-nextjs/blob/71e48f66b70dacb734ad6ff725be5f526c125bdf/README.md",
   "download": "markdown/noteweld/overview.md"
 }
 
+[Public address and existing-account access](/manuals/noteweld/custom-domain/)
+
+
+Account enhancement work on `feat/account-signin` is local and gated; [setup, behavior and remaining acceptance](/manuals/noteweld/account-work/). Existing public hosting is unchanged. Google/GitHub login is not publicly verified by these source changes.
 A private notes/checklist preview built with Next.js 16.3.8, React 19, Auth.js and PostgreSQL/Drizzle. This repository retains its original `keep-nextjs` GitHub identity. The old Vercel deployment is a historical version; it is not updated by this release.
 
 ## Implemented
@@ -18,8 +22,8 @@ A private notes/checklist preview built with Next.js 16.3.8, React 19, Auth.js a
 - Cookie authentication, hashed one-time recovery keys, key rotation, session revocation on recovery and account deletion. No email verification/reset provider is connected.
 - Notes, checklists, pin/colour/archive/trash, labels and search; shared navigation updates and narrow-screen drawer.
 - Stable wiki links, an owned connection index, outgoing/backlink lists and authenticated linked-note pages, including archive and explicit missing/ambiguous targets.
-- A bounded note graph with label/title filters, neighbourhood focus, fit/zoom/pan and equivalent keyboard/list navigation. [Explore the account-free graph](https://m-amir-gomaa--noteweld-web-app.us-east.modal.run/example/graph).
-- Markdown source editing with CodeMirror, optional Vim keys, undo/redo, in-note find/replace, formatting, safe GFM preview and split view. A simple textarea remains available. [Try the account-free editor](https://m-amir-gomaa--noteweld-web-app.us-east.modal.run/example).
+- A bounded note graph with label/title filters, neighbourhood focus, fit/zoom/pan and equivalent keyboard/list navigation. [Explore the account-free graph](https://noteweld.amirgomaa.com/example/graph).
+- Markdown source editing with CodeMirror, optional Vim keys, undo/redo, in-note find/replace, formatting, safe GFM preview and split view. A simple textarea remains available. [Try the account-free editor](https://noteweld.amirgomaa.com/example).
 - Exact `.md` downloads, explicit save shortcuts and retained undo when switching standard/Vim keys or write/preview/split views. Saved-version reload starts fresh history; server revisions protect against concurrent changes rather than storing a permanent revision archive.
 - Explicit saves, preserved failed drafts, bounded requests, idempotent creation and revision conflicts instead of silent overwrites. Trash permits restoration or confirmed permanent deletion.
 - Snapshot-based empty trash, account JSON export, confirmed passphrase-protected account deletion, no-cache private responses and nonce-based production script CSP.

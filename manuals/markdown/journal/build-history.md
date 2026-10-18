@@ -1,6 +1,6 @@
 # Building the portfolio and Fieldnotes
 
-Reviewed: 2026-10-16
+Reviewed: 2026-10-18
 
 ## Portfolio publication
 

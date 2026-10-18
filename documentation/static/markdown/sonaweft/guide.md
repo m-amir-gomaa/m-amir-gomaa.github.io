@@ -1,10 +1,10 @@
 # Using Sonaweft
 
-Reviewed: 2026-10-16
+Reviewed: 2026-10-18
 
 ## Hear a completed example
 
-[Open the original example](https://m-amir-gomaa--sonaweft-web-app.us-east.modal.run/example) to hear source audio, inspect the actual recognition/review and download a hashed bundle. This precomputed example does not start another transcription job.
+[Open the original example](https://sonaweft.amirgomaa.com/example) to hear source audio, inspect the actual recognition/review and download a hashed bundle. This precomputed example does not start another transcription job.
 
 ## Upload and inspect
 

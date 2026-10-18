@@ -1,12 +1,12 @@
 {
   "title": "Links, backlinks and graphs",
   "description": "Stable note identities, title resolution, graph controls and connection limits.",
-  "date": "2026-10-16",
+  "date": "2026-10-18",
   "weight": 50,
   "project": "Noteweld",
   "category": "Guide",
   "notice": "Current preview includes Markdown/Vim and connected notes. Earlier foundation/editor release records describe their own milestones. Billing and source-bundle imports are not enabled.",
-  "sourceurl": "https://github.com/m-amir-gomaa/keep-nextjs/blob/5ac512f73d2d0ff2ec5ca1e293e80d744e67fc5f/docs/CONNECTIONS.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/keep-nextjs/blob/71e48f66b70dacb734ad6ff725be5f526c125bdf/docs/CONNECTIONS.md",
   "download": "markdown/noteweld/connections.md"
 }
 

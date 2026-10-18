@@ -2,8 +2,8 @@
 
 > The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence.
 
-Source baseline: https://github.com/m-amir-gomaa/PDF2Markdown-/blob/b5ccb96441757e39e0431c61a69a264627a40a60/docs/THIRD-PARTY.md
-Reviewed: 2026-10-16
+Source baseline: https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e38ecb2877bb76d7dd0b141e6cfdec4a597d4399/docs/THIRD-PARTY.md
+Reviewed: 2026-10-18
 
 Verified 14 October 2026. The extraction worker installs the official PyPI release `mineru[pipeline]==2.7.6` and invokes its CLI without patching it. Official source release: [mineru-2.7.6-released](https://github.com/opendatalab/MinerU/tree/mineru-2.7.6-released), commit `e31c0ec34da89f6d7db78866ffec13eb0aaa3a3c`. That release's [LICENSE.md](https://github.com/opendatalab/MinerU/blob/e31c0ec34da89f6d7db78866ffec13eb0aaa3a3c/LICENSE.md) is GNU Affero General Public License version 3. Current master licensing must not be substituted for the pinned release's terms.
 

@@ -79,7 +79,7 @@ await test('document preview uses actual local output, switches pages and restor
  assert.match(document.querySelector('#sample-markdown').textContent, /Site B: 18 plants/);
  assert.equal(document.querySelector('#sample-source-link').getAttribute('href'), 'assets/document-sample/document.pdf#page=2');
  assert.equal(document.querySelector('[data-sample-page="1"]').getAttribute('aria-pressed'), 'false');
- assert.ok(document.querySelector('#demo-external').href.startsWith('https://m-amir-gomaa--mineru-pdf-extractor-web-app.modal.run/'));
+ assert.ok(document.querySelector('#demo-external').href.startsWith('https://pageweft.amirgomaa.com/'));
  document.querySelector('#close-demo').click();
  assert.equal(document.activeElement, trigger);
  document.querySelector('[data-demo="keep"]').click();
@@ -97,7 +97,7 @@ await test('unavailable sample can be retried without disabling downloads or liv
  assert.equal(document.querySelector('#sample-retry').hidden, false);
  assert.match(document.querySelector('#sample-status').textContent, /could not load/);
  assert.ok(document.querySelector('#document-sample a[download]'));
- assert.ok(document.querySelector('#demo-external').href.includes('modal.run'));
+ assert.equal(new URL(document.querySelector('#demo-external').href).origin, 'https://pageweft.amirgomaa.com');
  dom.window.fetch = async url => ({ ok: true, text: async () => readFileSync(resolve(root, url), 'utf8') });
  document.querySelector('#sample-retry').click();
  await new Promise(resolve => setImmediate(resolve));

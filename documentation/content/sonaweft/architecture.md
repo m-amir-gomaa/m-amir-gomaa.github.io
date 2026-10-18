@@ -1,12 +1,12 @@
 {
   "title": "Processing architecture",
   "description": "Browser, isolated ledger, media handling, speech workers and payment events.",
-  "date": "2026-10-16",
+  "date": "2026-10-18",
   "weight": 50,
   "project": "Sonaweft",
   "category": "Architecture",
   "notice": "Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.",
-  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/68b84726aaf3da129cfe2e796f6d5ac227d57333/docs/architecture.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f/docs/architecture.md",
   "download": "markdown/sonaweft/architecture.md"
 }
 

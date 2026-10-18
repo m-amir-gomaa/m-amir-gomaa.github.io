@@ -1,12 +1,12 @@
 {
   "title": "Hosted release evidence",
   "description": "Actual short-recording/cloud/browser checks and outstanding commercial gates.",
-  "date": "2026-10-16",
+  "date": "2026-10-18",
   "weight": 70,
   "project": "Sonaweft",
   "category": "Release record",
   "notice": "Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.",
-  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/68b84726aaf3da129cfe2e796f6d5ac227d57333/docs/RELEASE.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f/docs/RELEASE.md",
   "download": "markdown/sonaweft/release.md"
 }
 

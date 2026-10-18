@@ -1,6 +1,6 @@
 # Building the vanilla Keep demo
 
-Reviewed: 2026-10-16
+Reviewed: 2026-10-18
 
 ## Keep the two implementations separate
 

@@ -1,12 +1,12 @@
 {
   "title": "Product contract",
   "description": "Recognition, review, file retention, cost controls and the boundaries between outputs.",
-  "date": "2026-10-16",
+  "date": "2026-10-18",
   "weight": 40,
   "project": "Sonaweft",
   "category": "Reference",
   "notice": "Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.",
-  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/68b84726aaf3da129cfe2e796f6d5ac227d57333/docs/PRODUCT.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f/docs/PRODUCT.md",
   "download": "markdown/sonaweft/product.md"
 }
 

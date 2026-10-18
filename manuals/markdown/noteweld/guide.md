@@ -1,16 +1,16 @@
 # Using Noteweld
 
-Reviewed: 2026-10-16
+Reviewed: 2026-10-18
 
 ## Try it without an account
 
-[Open the public editor](https://m-amir-gomaa--noteweld-web-app.us-east.modal.run/example) to try Markdown, preview and optional Vim. The scratchpad lives in the tab; this example does not save it to a private account. Download anything you want to keep before leaving.
+[Open the public editor](https://noteweld.amirgomaa.com/example) to try Markdown, preview and optional Vim. The scratchpad lives in the tab; this example does not save it to a private account. Download anything you want to keep before leaving.
 
-[Explore the public graph](https://m-amir-gomaa--noteweld-web-app.us-east.modal.run/example/graph) for an original six-note sample. It does not read private notes or start a processing job.
+[Explore the public graph](https://noteweld.amirgomaa.com/example/graph) for an original six-note sample. It does not read private notes or start a processing job.
 
 ## Create a private workspace
 
-Open the [hosted workspace](https://m-amir-gomaa--noteweld-web-app.us-east.modal.run/), register using the displayed requirements and keep the private recovery key securely. Recovery is based on your passphrase/key; no email reset service is connected. Keep the recovery key out of messages and screenshots.
+Open the [hosted workspace](https://noteweld.amirgomaa.com/), register using the displayed requirements and keep the private recovery key securely. Recovery is based on your passphrase/key; no email reset service is connected. Keep the recovery key out of messages and screenshots.
 
 Create notes or checklists, set labels/colors, pin useful items and use search. Save a note before relying on it being persisted. Archives and trash are distinct; permanently deleted content cannot be recovered through the normal UI. Account export and deletion are available.
 

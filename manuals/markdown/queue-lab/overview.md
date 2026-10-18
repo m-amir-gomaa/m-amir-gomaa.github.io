@@ -3,7 +3,7 @@
 > Formerly Queue Lab/Hermes. This is an in-memory simulation and retained systems study, not a production queue or commercial product. A replacement remains under discussion; published Git history has not been rewritten.
 
 Source baseline: https://github.com/m-amir-gomaa/portfolio-hermes/blob/bed2cb3131a79aa2519e1a38e9a7f26ddc640bf7/README.md
-Reviewed: 2026-10-16
+Reviewed: 2026-10-18
 
 Status: retained engineering exercise; a practical replacement is being evaluated. This is the former Queue Lab/Hermes implementation. A worker pool alone is not a differentiated service, and this project is not presented as a paid SaaS or production queue.
 

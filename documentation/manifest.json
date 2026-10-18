@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-10-16",
+  "reviewed": "2026-10-18",
   "projects": [
     {
       "slug": "noteweld",
@@ -9,7 +9,7 @@
       "number": "01",
       "stack": "NEXT.JS / POSTGRESQL",
       "status": "Free hosted preview",
-      "live": "https://m-amir-gomaa--noteweld-web-app.us-east.modal.run/",
+      "live": "https://noteweld.amirgomaa.com/",
       "description": "Write Markdown, connect notes and explore a private workspace with optional Vim editing.",
       "notice": "Current preview includes Markdown/Vim and connected notes. Earlier foundation/editor release records describe their own milestones. Billing and source-bundle imports are not enabled.",
       "files": [
@@ -65,9 +65,25 @@
         {
           "path": "docs/ACCESSIBILITY-20261016.md",
           "slug": "accessibility-review",
-          "title": "Accessibility review \u2014 16 October",
+          "title": "Accessibility review — 16 October",
           "description": "The specific accessibility fix, test evidence and remaining acceptance limits.",
           "category": "Release record"
+        },
+        {
+          "path": "docs/CUSTOM-DOMAIN.md",
+          "slug": "custom-domain",
+          "title": "Custom domain and account access",
+          "description": "Public hostname, secure gateway, existing-account access and rollback.",
+          "category": "Operations"
+        },
+        {
+          "path": "docs/ACCOUNTS.md",
+          "slug": "account-work",
+          "title": "Unreleased account work",
+          "description": "Source record of gated account enhancements; separate from the current public preview.",
+          "category": "Design record",
+          "mode": "reference",
+          "context": "The account foundation lives on a separate development branch. Production domain release 550be9c branches from 5ac512f and excludes this account work. This source record does not establish public Google/GitHub login or a completed provider consent flow."
         }
       ]
     },
@@ -79,7 +95,7 @@
       "number": "02",
       "stack": "PYTHON / MINERU",
       "status": "Bounded public sample",
-      "live": "https://m-amir-gomaa--mineru-pdf-extractor-web-app.modal.run/",
+      "live": "https://pageweft.amirgomaa.com/",
       "description": "Convert technical PDFs into portable Markdown with source-page review and separate corrections.",
       "notice": "The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence.",
       "files": [
@@ -167,9 +183,16 @@
         {
           "path": "docs/ACCESSIBILITY-20261016.md",
           "slug": "accessibility-review",
-          "title": "Accessibility review \u2014 16 October",
+          "title": "Accessibility review — 16 October",
           "description": "The specific accessibility fix, test evidence and remaining acceptance limits.",
           "category": "Release record"
+        },
+        {
+          "path": "docs/CUSTOM-DOMAIN.md",
+          "slug": "custom-domain",
+          "title": "Custom domain and account access",
+          "description": "Public hostname, secure gateway, existing-account access and rollback.",
+          "category": "Operations"
         }
       ]
     },
@@ -181,7 +204,7 @@
       "number": "03",
       "stack": "PYTHON / SPEECH / LLM",
       "status": "Bounded public sample",
-      "live": "https://m-amir-gomaa--sonaweft-web-app.us-east.modal.run/",
+      "live": "https://sonaweft.amirgomaa.com/",
       "description": "Turn recordings into timestamped transcripts, separate corrections and source-linked notes.",
       "notice": "Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.",
       "files": [
@@ -246,6 +269,13 @@
           "category": "Archive",
           "mode": "reference",
           "context": "This is an earlier optional Obsidian/agent design, not a shipped hosted feature. Research matches do not establish truth and language-model notes do not replace the immutable recognition source. The current architecture documents the supported pipeline. Noteweld imports and shared login remain future work."
+        },
+        {
+          "path": "docs/CUSTOM-DOMAIN.md",
+          "slug": "custom-domain",
+          "title": "Custom domain and account access",
+          "description": "Public hostname, secure gateway, existing-account access and rollback.",
+          "category": "Operations"
         }
       ]
     },

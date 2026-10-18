@@ -1,6 +1,6 @@
 # Batchlark: the retained study and replacement decision
 
-Reviewed: 2026-10-16
+Reviewed: 2026-10-18
 
 ## The actual starting point
 

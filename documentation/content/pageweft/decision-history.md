@@ -1,12 +1,12 @@
 {
   "title": "Product decisions archive",
   "description": "Historical product decisions and their current professional summary.",
-  "date": "2026-10-16",
+  "date": "2026-10-18",
   "weight": 130,
   "project": "Pageweft",
   "category": "Archive",
   "notice": "Historical reference; not part of the current setup or recommended execution path.",
-  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/b5ccb96441757e39e0431c61a69a264627a40a60/docs/SAAS-DECISIONS.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e38ecb2877bb76d7dd0b141e6cfdec4a597d4399/docs/SAAS-DECISIONS.md",
   "download": "markdown/pageweft/decision-history.md"
 }
 

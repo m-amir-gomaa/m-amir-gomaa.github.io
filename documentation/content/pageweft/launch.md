@@ -1,12 +1,12 @@
 {
   "title": "Launch readiness register",
   "description": "An ordered readiness checklist; owner-specific account questions are omitted from this public edition.",
-  "date": "2026-10-16",
+  "date": "2026-10-18",
   "weight": 80,
   "project": "Pageweft",
   "category": "Operations",
   "notice": "The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence.",
-  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/b5ccb96441757e39e0431c61a69a264627a40a60/docs/LAUNCH.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e38ecb2877bb76d7dd0b141e6cfdec4a597d4399/docs/LAUNCH.md",
   "download": "markdown/pageweft/launch.md"
 }
 

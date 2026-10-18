@@ -2,14 +2,14 @@
 
 > The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence.
 
-Source baseline: https://github.com/m-amir-gomaa/PDF2Markdown-/blob/b5ccb96441757e39e0431c61a69a264627a40a60/README.md
-Reviewed: 2026-10-16
+Source baseline: https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e38ecb2877bb76d7dd0b141e6cfdec4a597d4399/README.md
+Reviewed: 2026-10-18
 
 Formerly Document Studio; renamed with Amir's approval on 15 October 2026. Canonical local path: `~/Projects/freelance/pageweft`, with the old directory kept as a compatibility symlink. Existing public GitHub/Modal URLs and permanent storage/session/secret identifiers are retained so bookmarks, accounts and credits keep working.
 
 Hosted PDF-to-Markdown conversion for books and technical material, using MinerU on Amir's Modal account. Inspect selected pages, review issues, correct text and export portable files for your own editor or LLM workflow.
 
-[Live bounded sample](https://m-amir-gomaa--mineru-pdf-extractor-web-app.modal.run) · [Launch register / remaining steps](/manuals/pageweft/launch/) · [Owner operations](/manuals/pageweft/operations/) · [Implemented features / pricing / evidence](/manuals/pageweft/book-release/) · [Payment activation](/manuals/pageweft/payments/)
+[Live bounded sample](https://pageweft.amirgomaa.com) · [Custom domain / existing workspace recovery](/manuals/pageweft/custom-domain/) · [Launch register / remaining steps](/manuals/pageweft/launch/) · [Owner operations](/manuals/pageweft/operations/) · [Implemented features / pricing / evidence](/manuals/pageweft/book-release/) · [Payment activation](/manuals/pageweft/payments/)
 
 ## Current implementation
 

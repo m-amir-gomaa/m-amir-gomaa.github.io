@@ -1,16 +1,22 @@
 {
   "title": "Payment activation checklist",
   "description": "Owner-only commercial gates, provider verification and the current Paddle procedure.",
-  "date": "2026-10-16",
+  "date": "2026-10-18",
   "weight": 70,
   "project": "Pageweft",
   "category": "Operations",
-  "notice": "The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence. Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification.",
-  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/b5ccb96441757e39e0431c61a69a264627a40a60/docs/PAYMENT-ACTIVATION.md",
+  "notice": "The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence. Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification. This reviewed documentation snapshot includes local documentation edits; the source link shows the committed baseline.",
+  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e38ecb2877bb76d7dd0b141e6cfdec4a597d4399/docs/PAYMENT-ACTIVATION.md",
   "download": "markdown/pageweft/payments.md"
 }
 
-Updated 15 October 2026. **Paddle Billing is the selected provider. The integration is deployed; customer checkout remains disabled.** This supersedes the former Lemon Squeezy activation instructions. Existing balances, session keys and permanent Modal identifiers were preserved. Email verification is complete according to Amir; merchant identity/domain approval and actual payment delivery are separate.
+Updated 16 October 2026. **Paddle Billing is the selected provider. The integration is deployed; customer checkout remains disabled.** This supersedes the former Lemon Squeezy activation instructions. Existing balances, session keys and permanent Modal identifiers were preserved. Email verification is complete according to Amir; merchant identity/domain approval and actual payment delivery are separate.
+
+## Latest session observation — 16 October 2026
+
+The initial dashboard navigation displayed **Paddle Login**. After Amir confirmed signing in, the existing authenticated tabs were inspected and refreshed: **Pageweft and Sonaweft both show In review under Website approval**. The existing **Tell us more about yourself** verification form has empty date-of-birth and current-trading-name fields; it was left open for the owner to complete truthful personal details. No new seller account/signup, identity submission, payout change, billing activation, real purchase or email was performed. This supersedes the initial login-only observation; approval is still not established.
+
+A fresh public HTTPS check returned 200 for the workspace, pricing, terms, privacy and refunds. `/api/checkout-config` reports checkout disabled. The policies show the existing sole-developer brand/contact; no company incorporation or account approval is implied. See provider/domain learning guide (local reference; not published) for current pricing and the Modal native-custom-domain plan requirement.
 
 ## What is actually configured
 
@@ -49,7 +55,7 @@ Initial completed payment and approved partial/full refunds are fetched authorit
 
 ## Remaining actions, in order
 
-1. **Complete the existing verification form**, currently at `/onboarding/account-setup?step=4`, not signup. Review the prefilled legal-name/address fields; enter the actual date of birth, trading name, and truthful start date. The form says to use today if the product has not been sold before. Leave the optional sales-tax number blank unless actually assigned. The agent has not invented or submitted missing personal facts. Submit any final owner declarations only after reviewing them, then complete Paddle's own requested identity document/selfie process. Do not email identity documents or send them into chat.
+1. **Complete the existing verification form**, last observed on 15 October at `/onboarding/account-setup?step=4`, not signup. Review the prefilled legal-name/address fields; enter the actual date of birth, trading name, and truthful start date. The form says to use today if the product has not been sold before. Leave the optional sales-tax number blank unless actually assigned. The agent has not invented or submitted missing personal facts. Submit any final owner declarations only after reviewing them, then complete Paddle's own requested identity document/selfie process. Do not email identity documents or send them into chat.
 2. **Receive account and domain approval.** Review status in Get started → Verify your account and Settings → Website approval. The submitted domain is `m-amir-gomaa--mineru-pdf-extractor-web-app.modal.run`. It must become approved. If Paddle requests clarification, describe the actual conversion service and non-transferable/non-withdrawable software-processing allowance. Do not describe a wallet, reseller of books, marketplace or human consulting. Obtain account-specific acceptance of this actual model; catalog creation alone is not acceptance.
 3. **Verify provider checkout/delivery in an isolated test environment.** The current 78-test suite uses synthetic HTTP and real disposable SQLite, not Paddle sandbox purchases. No separate sandbox account was created after Amir instructed us to keep the existing login. A proper Paddle sandbox still needs its own available credentials and ledger isolated from production; production must never be opened just to simulate money. Exercise paid/pending/cancelled, duplicate/reordered notifications, full/partial/tax-only refund, network outage and recovery on another device. Verify the actual overlay and CSP in that environment. Do not check 'already integrated in sandbox' without this evidence.
 4. **Finish live readiness:** review seller display/receipt details and public policies against the verified seller identity; configure a payout method that Paddle accepts under the same identity; establish the workspace-wide Modal out-of-pocket ceiling (still not confirmed). Existing internal admission limits are not a Modal bill cap. Keep dependency/model and output-fidelity qualifications in LAUNCH.md. Paddle approval does not complete Egyptian income-tax/banking paperwork.

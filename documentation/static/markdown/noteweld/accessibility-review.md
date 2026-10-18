@@ -2,8 +2,8 @@
 
 > Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current preview includes Markdown/Vim and connected notes. Earlier foundation/editor release records describe their own milestones. Billing and source-bundle imports are not enabled.
 
-Source baseline: https://github.com/m-amir-gomaa/keep-nextjs/blob/5ac512f73d2d0ff2ec5ca1e293e80d744e67fc5f/docs/ACCESSIBILITY-20261016.md
-Reviewed: 2026-10-16
+Source baseline: https://github.com/m-amir-gomaa/keep-nextjs/blob/71e48f66b70dacb734ad6ff725be5f526c125bdf/docs/ACCESSIBILITY-20261016.md
+Reviewed: 2026-10-18
 
 *Original record: Editor accessibility review — 16 October 2026.*
 

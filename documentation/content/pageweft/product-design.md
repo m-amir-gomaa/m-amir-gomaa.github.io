@@ -1,12 +1,12 @@
 {
   "title": "Conversion product design",
   "description": "Design rationale and evaluation criteria; the usage guide describes current availability.",
-  "date": "2026-10-16",
+  "date": "2026-10-18",
   "weight": 40,
   "project": "Pageweft",
   "category": "Design record",
   "notice": "The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence.",
-  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/b5ccb96441757e39e0431c61a69a264627a40a60/docs/CONVERSION-PRODUCT.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e38ecb2877bb76d7dd0b141e6cfdec4a597d4399/docs/CONVERSION-PRODUCT.md",
   "download": "markdown/pageweft/product-design.md"
 }
 

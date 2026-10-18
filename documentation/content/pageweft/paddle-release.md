@@ -1,12 +1,12 @@
 {
   "title": "Paddle integration evidence",
   "description": "Configured payment integration and the distinction between mocks and real approval.",
-  "date": "2026-10-16",
+  "date": "2026-10-18",
   "weight": 100,
   "project": "Pageweft",
   "category": "Release record",
   "notice": "Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence.",
-  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/b5ccb96441757e39e0431c61a69a264627a40a60/docs/PADDLE-20261015.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e38ecb2877bb76d7dd0b141e6cfdec4a597d4399/docs/PADDLE-20261015.md",
   "download": "markdown/pageweft/paddle-release.md"
 }
 
