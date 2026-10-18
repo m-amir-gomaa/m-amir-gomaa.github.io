@@ -6,7 +6,7 @@
   "project": "Pageweft",
   "category": "Release record",
   "notice": "Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence. Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification.",
-  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e38ecb2877bb76d7dd0b141e6cfdec4a597d4399/docs/BOOK-RELEASE.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e2e4f390cd0397670b56e508e6d99d32c29b219f/docs/BOOK-RELEASE.md",
   "download": "markdown/pageweft/book-release.md"
 }
 

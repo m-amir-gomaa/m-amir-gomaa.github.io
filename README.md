@@ -2,6 +2,12 @@
 
 Static HTML, CSS, and JavaScript portfolio with project filters, case studies, Upwork/email contact links, mobile navigation, an interactive vanilla Keep demo and an embedded Pageweft sample-output viewer. The companion **Fieldnotes** library is built with Hugo; its generated files are committed, so serving the portfolio does not require a runtime build.
 
+## Current portfolio scope — 18 October 2026
+
+Four active product cards remain: **Noteweld, Noteweld Local, Sonaweft and Pageweft**. The former Go study has been removed at the owner's request, together with its category, cover styles, manual pages, search/feed entries and download editions. No replacement is scheduled. Development Workbench remains a separate environment case study. The library now has **49 indexed articles and 33 reviewed source records**. Earlier milestone counts below are dated history.
+
+The updated payment manuals require separate Paddle approval for both current product subdomains and genuine isolated provider testing; public billing remains closed.
+
 ## Custom-domain configuration — 18 October 2026
 
 The selected domain is **amirgomaa.com**, registered by the owner through Cloudflare for one year. `CNAME` declares the GitHub Pages hostname; `documentation/hugo.toml` supplies the matching manuals canonical URLs, feeds and sitemap. The original GitHub repository/hosting remain in place. The static checker validates both the selected host and historical GitHub Pages links. Product links now use pageweft.amirgomaa.com, sonaweft.amirgomaa.com and noteweld.amirgomaa.com after independent gateway/session/CSRF/upload/recovery checks. Existing Modal endpoints remain available. Paid checkout and external OAuth remain separate approval/acceptance gates. The manuals include individual domain/access/rollback guides.
@@ -22,15 +28,14 @@ Supporting UI review also corrected Noteweld's explicit editor tab stop and Page
 
 ## Build histories and provider guide — 16 October 2026
 
-Every project card now links its own build history. Five project histories and a portfolio/Hugo history reconstruct recorded steps, commands, actual evidence and failures; a separate provider guide explains Neon, current Modal cost calculations and Paddle's remaining setup. The library now contains **43 articles** while preserving the original 28 reviewed source-record inventory. Histories identify where private provisioning or missing old evidence prevents a literal self-service replay; no secret values or fictional past commands are supplied.
+Every project card now links its own build history. Four project histories and a portfolio/Hugo history reconstruct recorded steps, commands, actual evidence and failures; a separate provider guide explains Neon, current Modal cost calculations and Paddle's remaining setup. The library now contains **43 articles** while preserving the reviewed source-record inventory for active projects. Histories identify where private provisioning or missing old evidence prevents a literal self-service replay; no secret values or fictional past commands are supplied.
 
-The former Queue Lab/Hermes application/library branding is **Batchlark — Go concurrency study**. The local source was cleaned, unused RAG scaffolding privately archived, and a real ServeMux startup bug fixed with router regression coverage and actual local browser evidence. Its source links `feat/batchlark-cleanup`. It is retained as an engineering study while a practical science-oriented Go replacement awaits Amir's approval; no new Go SaaS/hosting or science feature is claimed. The old GitHub repository slug and bookmark are retained pending the final replacement/repository decision. No published Git history was force-rewritten.
 
 The previous section below records the initial Hugo release, not the current article count.
 
 ## Fieldnotes — 16 October 2026
 
-[Open the manuals and journal](https://m-amir-gomaa.github.io/manuals/). Navigation, all five project cards and a dedicated portfolio section link the library. It contains five current usage guides, 28 reviewed source-document records (including five explicitly historical references), three journal entries, browser-local search, a table of contents, Markdown downloads, RSS and sitemap. Imported references identify exact source revisions; the vanilla README's reviewed working-copy edition is marked. Private books, credentials, personal account questions and untracked work are excluded. Older release records retain their original milestone/date and current context.
+[Open the manuals and journal](https://m-amir-gomaa.github.io/manuals/). Navigation, all four project cards and a dedicated portfolio section link the library. It contains four current usage guides, reviewed source-document records (including five explicitly historical references), three journal entries, browser-local search, a table of contents, Markdown downloads, RSS and sitemap. Imported references identify exact source revisions; the vanilla README's reviewed working-copy edition is marked. Private books, credentials, personal account questions and untracked work are excluded. Older release records retain their original milestone/date and current context.
 
 Hugo **0.156.0** source is in `documentation/`; generated output is `manuals/`. [Build/update instructions](documentation/README.md) and the [publication guide](documentation/content/journal/publishing.md) explain the explicit refresh and existing GitHub Pages workflow. No new hosting account, application server, payment activation, NixOS edit or provider setup is needed. Rollback is a normal portfolio Git commit; application data is unchanged. Source documents in other repositories and their existing working changes were not modified.
 
@@ -38,7 +43,7 @@ Local verification passed: reproducible Hugo build; 28 source snapshot checks; 4
 
 Current update — 16 October 2026: Noteweld now includes stable wiki links, outgoing/backlink panels, authenticated linked-note pages and a bounded/filterable graph. Its card links the account-free editor, original graph example, private workspace and `feat/connected-notes` source. The separate vanilla implementation is unchanged. The cover remains an illustration; graph limits and future import/revision work are explicit.
 
-The full-stack cover and Hermes diagram are illustrations, clearly labeled. Project descriptions distinguish implemented features from simulation and planned work.
+The full-stack cover is an illustration, clearly labeled. Project descriptions distinguish implemented features from simulation and planned work.
 
 ## Preview and checks
 
@@ -74,7 +79,7 @@ Commit site assets and publish through this repository's GitHub Pages configurat
 
 ## Release review — 14 October 2026
 
-Approved titles: Knowledge Workspace, Knowledge Workspace — Vanilla JS Demo, Queue Lab, Transcript Studio and Document Studio. Existing repo URLs remain unchanged. Document Studio now links its bounded public trial; its persistent ledger, source-aware exports and paid/full-book limitations are described explicitly. A real public synthetic upload/conversion/download and session isolation passed in the Document Studio repository; the portfolio itself does not certify document fidelity or payment readiness.
+Current titles: Noteweld, Noteweld Local, Sonaweft and Pageweft. The Go study was removed at Amir’s request on 18 October 2026. Existing repo URLs remain unchanged. Document Studio now links its bounded public trial; its persistent ledger, source-aware exports and paid/full-book limitations are described explicitly. A real public synthetic upload/conversion/download and session isolation passed in the Document Studio repository; the portfolio itself does not certify document fidelity or payment readiness.
 
 The older resume files are preserved but their public download link is hidden pending factual review. No resume claims were silently rewritten. Source/demo HTTP checks passed for Document Studio; no cloud extraction was run by this portfolio release.
 

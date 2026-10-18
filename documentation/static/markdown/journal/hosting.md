@@ -16,7 +16,6 @@ Official references: [HTTP applications](https://modal.com/docs/guide/webhooks),
 | Pageweft web/API and extraction jobs | Modal CPU containers and A10G workers | Separate document and serialized SQLite ledger volumes |
 | Sonaweft web/API, speech and review coordination | Modal CPU containers and L4 workers | Separate media, model-cache and serialized SQLite ledger volumes |
 | Noteweld web/API | Modal Node/Next.js CPU container | Isolated Neon PostgreSQL; encrypted backups in Modal |
-| Queue Lab | Local Go demonstration | In-memory state; no separately verified public production backend |
 
 Paddle handles commercial payments rather than hosting these websites. DeepSeek is an optional text-inference provider for Sonaweft. No shared customer wallet or login is implemented. Linguavell is a separate startup project.
 

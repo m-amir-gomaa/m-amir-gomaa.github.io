@@ -6,9 +6,11 @@
   "project": "Sonaweft",
   "category": "Operations",
   "notice": "Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.",
-  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f/docs/OPERATIONS.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/75786f6c7c531f870fa7cd84e80202cbfb4ca455/docs/OPERATIONS.md",
   "download": "markdown/sonaweft/operations.md"
 }
+
+> Update — 18 October 2026: public host is **https://sonaweft.amirgomaa.com/**. Submit this exact checkout subdomain separately for Paddle approval; the old Modal-domain review does not cover it. Keep billing closed. After approval and isolated real sandbox testing, migrate the existing checkout URL and paused notification destination to this host, preserving signing secrets, product/price IDs, balances and recovery identity. Verify the account default payment link and per-transaction checkout override across both products. Identity/payout setup and controlled live purchase/refund remain unfinished.
 
 Live: https://sonaweft.amirgomaa.com ([custom domain / recovery](/manuals/sonaweft/custom-domain/)); original Modal endpoint remains available.
 
@@ -41,7 +43,7 @@ Backups create exclusive mode-0600 encrypted files plus a separate `.key`. Move 
 ## Required payment opening sequence
 
 1. Finish the owner's personal/identity/business review in the **existing** Paddle seller. Amir must supply correct unknown legal details, including DOB; do not create another seller or guess them.
-2. Settings → Website approval: submit the actual regional hostname and product/pricing/operator/policy pages. Record actual approval and whether prepaid processing packs are accepted; a submission is not approval.
+2. My account → Settings → Website approval: submit `sonaweft.amirgomaa.com` and its product/pricing/operator/policy pages. The companion `pageweft.amirgomaa.com` needs separate approval. Record actual approval and whether prepaid processing packs are accepted; a submission is not approval.
 3. Use isolated sandbox product/notification/ledger configuration to exercise purchase, abandonment, duplicate/reordered delivery, full/partial refund, chargeback, lost dispatch, recovery and provider outage. Existing HTTP mocks do not replace real delivery. Sandbox must never credit production.
 4. After production approval, verify the paused production notification, three handled event types and matching signing secret. Runtime permissions are transaction read/write and adjustment read. Credentials stay server-side.
 5. Compare actual long/noisy recording costs, retries, tax/payment fees and refunds to the tariff. Configure provider budgets/alerts and appropriate admission caps. The current tariff is provisional, not proven net profit.
@@ -51,7 +53,7 @@ No $1 monthly subscription is added. Occasional-use $5/$10 packs amortize paymen
 
 ## Deployment and incidents
 
-Install Python 3.13, FFmpeg and `.[web,cloud]`; authenticate your own Modal account and configure all three secrets before `python -m modal deploy app.py`. New self-hosters require their own Paddle products/approvals. The development freeze is separate from pinned cloud image dependencies/model revision.
+Install Python 3.13, FFmpeg and `.[web,cloud]`; authenticate your own Modal account and configure the existing session, payments, LLM and edge secrets before `python -m modal deploy app.py`. New self-hosters require their own Paddle products/approvals. The development freeze is separate from pinned cloud image dependencies/model revision.
 
 After ambiguous dispatch, refresh the existing job; do not automatically create a new billable job. Stale queued/running jobs release holds after 20 minutes through cleanup/status checks. Failed paid jobs offer explicit quoted retry; retained ASR may be reused. Free allowances are not automatically reset on provider failure. Pause admissions for persistent faults, inspect logs without printing transcripts/secrets, correct and redeploy, then resume.
 

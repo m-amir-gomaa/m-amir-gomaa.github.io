@@ -6,7 +6,7 @@
   "project": "Pageweft",
   "category": "Operations",
   "notice": "The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence.",
-  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e38ecb2877bb76d7dd0b141e6cfdec4a597d4399/docs/LAUNCH.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e2e4f390cd0397670b56e508e6d99d32c29b219f/docs/LAUNCH.md",
   "download": "markdown/pageweft/launch.md"
 }
 

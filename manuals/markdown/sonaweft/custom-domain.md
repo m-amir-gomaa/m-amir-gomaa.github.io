@@ -2,7 +2,7 @@
 
 > Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.
 
-Source baseline: https://github.com/m-amir-gomaa/ig_intel/blob/5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f/docs/CUSTOM-DOMAIN.md
+Source baseline: https://github.com/m-amir-gomaa/ig_intel/blob/75786f6c7c531f870fa7cd84e80202cbfb4ca455/docs/CUSTOM-DOMAIN.md
 Reviewed: 2026-10-18
 
 Public address: **https://sonaweft.amirgomaa.com/**. A dedicated Cloudflare Workers Free gateway fronts the preserved Modal origin; processing, files and ledger remain on Modal. No paid provider plan, live checkout or new customer credentials are activated by this route. Reproducible shared code/config/tests are in the workspace at `freelance/workflow/cloudflare-edge/`.

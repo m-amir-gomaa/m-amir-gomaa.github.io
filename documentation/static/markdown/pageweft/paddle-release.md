@@ -2,7 +2,7 @@
 
 > Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence.
 
-Source baseline: https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e38ecb2877bb76d7dd0b141e6cfdec4a597d4399/docs/PADDLE-20261015.md
+Source baseline: https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e2e4f390cd0397670b56e508e6d99d32c29b219f/docs/PADDLE-20261015.md
 Reviewed: 2026-10-18
 
 *Original record: Paddle integration evidence — 15 October 2026.*

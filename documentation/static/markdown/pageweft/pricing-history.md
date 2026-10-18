@@ -2,7 +2,7 @@
 
 > Historical reference; not part of the current setup or recommended execution path.
 
-Source baseline: https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e38ecb2877bb76d7dd0b141e6cfdec4a597d4399/docs/PRICING-AND-DISCOVERY.md
+Source baseline: https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e2e4f390cd0397670b56e508e6d99d32c29b219f/docs/PRICING-AND-DISCOVERY.md
 Reviewed: 2026-10-18
 
 ## Why this record is separate

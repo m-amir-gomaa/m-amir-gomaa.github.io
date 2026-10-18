@@ -6,7 +6,7 @@
   "project": "Pageweft",
   "category": "Archive",
   "notice": "Historical reference; not part of the current setup or recommended execution path.",
-  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e38ecb2877bb76d7dd0b141e6cfdec4a597d4399/docs/PRICING-AND-DISCOVERY.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e2e4f390cd0397670b56e508e6d99d32c29b219f/docs/PRICING-AND-DISCOVERY.md",
   "download": "markdown/pageweft/pricing-history.md"
 }
 

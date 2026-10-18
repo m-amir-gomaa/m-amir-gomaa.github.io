@@ -71,8 +71,8 @@ def main():
     actual_sources = {(record['project'], record['path']) for record in inventory['documents']}
     if actual_sources != expected_sources:
         errors.append('Source coverage differs from the reviewed manifest.')
-    if len(manifest['projects']) != 5:
-        errors.append('Expected five project implementations')
+    if len(manifest['projects']) != 4:
+        errors.append('Expected four project implementations')
     for record in inventory['documents']:
         if not target(ORIGIN + record['url']).exists():
             errors.append(f"Missing documented source {record['project']}/{record['path']}")

@@ -2,7 +2,7 @@
 
 > Historical reference; not part of the current setup or recommended execution path.
 
-Source baseline: https://github.com/m-amir-gomaa/ig_intel/blob/5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f/docs/second-brain.md
+Source baseline: https://github.com/m-amir-gomaa/ig_intel/blob/75786f6c7c531f870fa7cd84e80202cbfb4ca455/docs/second-brain.md
 Reviewed: 2026-10-18
 
 ## Why this record is separate

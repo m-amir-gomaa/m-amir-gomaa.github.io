@@ -65,7 +65,7 @@
         {
           "path": "docs/ACCESSIBILITY-20261016.md",
           "slug": "accessibility-review",
-          "title": "Accessibility review — 16 October",
+          "title": "Accessibility review \u2014 16 October",
           "description": "The specific accessibility fix, test evidence and remaining acceptance limits.",
           "category": "Release record"
         },
@@ -183,7 +183,7 @@
         {
           "path": "docs/ACCESSIBILITY-20261016.md",
           "slug": "accessibility-review",
-          "title": "Accessibility review — 16 October",
+          "title": "Accessibility review \u2014 16 October",
           "description": "The specific accessibility fix, test evidence and remaining acceptance limits.",
           "category": "Release record"
         },
@@ -296,27 +296,6 @@
           "slug": "overview",
           "title": "Source and implementation notes",
           "description": "LocalStorage behavior, setup, backup/import design and known release work.",
-          "category": "Reference"
-        }
-      ]
-    },
-    {
-      "slug": "queue-lab",
-      "title": "Batchlark",
-      "directory": "../batchlark",
-      "repository": "portfolio-hermes",
-      "number": "05",
-      "stack": "GO / SYSTEMS STUDY",
-      "status": "Retained study",
-      "live": "",
-      "description": "A retained bounded-worker concurrency exercise while a practical science application is evaluated.",
-      "notice": "Formerly Queue Lab/Hermes. This is an in-memory simulation and retained systems study, not a production queue or commercial product. A replacement remains under discussion; published Git history has not been rewritten.",
-      "files": [
-        {
-          "path": "README.md",
-          "slug": "overview",
-          "title": "Running the queue simulation",
-          "description": "Go setup, API endpoints, bounded concurrency, shutdown and production boundaries.",
           "category": "Reference"
         }
       ]

@@ -2,7 +2,7 @@
 
 > Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.
 
-Source baseline: https://github.com/m-amir-gomaa/ig_intel/blob/5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f/docs/RELEASE.md
+Source baseline: https://github.com/m-amir-gomaa/ig_intel/blob/75786f6c7c531f870fa7cd84e80202cbfb4ca455/docs/RELEASE.md
 Reviewed: 2026-10-18
 
 *Original record: Release evidence — 15 October 2026.*

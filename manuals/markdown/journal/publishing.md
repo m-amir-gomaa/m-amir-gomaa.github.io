@@ -31,7 +31,7 @@ The build script uses a temporary directory, verifies the pinned Hugo version an
 
 ## Included and excluded material
 
-All 28 reviewed README/docs records from the five portfolio implementations are represented. Current guides, technical references, operations and release records are rendered. Five obsolete/personal-planning documents get clearly labeled archive entries that link their existing source instead of copying obsolete commands or personal conversation. Owner-specific questions at the end of the Pageweft launch register are omitted.
+All reviewed README/docs records from the four active portfolio implementations are represented by the explicit manifest. Current guides, technical references, operations and release records are rendered. Five obsolete/personal-planning documents get clearly labeled archive entries that link their existing source instead of copying obsolete commands or personal conversation. Owner-specific questions at the end of the Pageweft launch register are omitted.
 
 Agent instructions, private environment files, customer uploads, untracked work, generated transcripts, extracted books, original source PDFs and startup/business paperwork are outside this library. Existing unrelated working changes remain in their own repositories. Private evidence files are not uploaded to the site.
 

@@ -104,7 +104,7 @@
     {
       "project": "pageweft",
       "path": "README.md",
-      "revision": "e38ecb2877bb76d7dd0b141e6cfdec4a597d4399",
+      "revision": "e2e4f390cd0397670b56e508e6d99d32c29b219f",
       "working_copy": false,
       "source_sha256": "b0047077355b78946c49aad38bbd1bb34d56ef9ba571023c1151d232122bb8f5",
       "public_sha256": "76ab561fb88d3d871c3126e5e81a95c70c64a9470ab95cff8bd8bb5b9499930a",
@@ -114,7 +114,7 @@
     {
       "project": "pageweft",
       "path": "docs/CONVERSION-PRODUCT.md",
-      "revision": "e38ecb2877bb76d7dd0b141e6cfdec4a597d4399",
+      "revision": "e2e4f390cd0397670b56e508e6d99d32c29b219f",
       "working_copy": false,
       "source_sha256": "cc60fbbe347eacfb7b77f51b51d29bdd95e4273e83b37d6ea46a437eee24dea6",
       "public_sha256": "e355de9399286429ef7305bbf1b9a92ff84fc57fcef5c9a4002cc20833b171f7",
@@ -124,7 +124,7 @@
     {
       "project": "pageweft",
       "path": "docs/THIRD-PARTY.md",
-      "revision": "e38ecb2877bb76d7dd0b141e6cfdec4a597d4399",
+      "revision": "e2e4f390cd0397670b56e508e6d99d32c29b219f",
       "working_copy": false,
       "source_sha256": "41ca08b439bd0b90e09b60af8a242a2584163ff701d27eeca4e8f2feb5d92cd0",
       "public_sha256": "21b9681fd1f8a0e1596555ee0aabb8124a35f42a60459d6dc4f834b5401ffe05",
@@ -134,7 +134,7 @@
     {
       "project": "pageweft",
       "path": "docs/OPERATIONS.md",
-      "revision": "e38ecb2877bb76d7dd0b141e6cfdec4a597d4399",
+      "revision": "e2e4f390cd0397670b56e508e6d99d32c29b219f",
       "working_copy": false,
       "source_sha256": "6dc021ee72260180d13650c76c0782a8fef07398ae4b504b3532a2c817d98ca3",
       "public_sha256": "ec090315f5e408ed741dfc8a176555f6377b2657322556f3fc5a90916e44650f",
@@ -144,17 +144,17 @@
     {
       "project": "pageweft",
       "path": "docs/PAYMENT-ACTIVATION.md",
-      "revision": "e38ecb2877bb76d7dd0b141e6cfdec4a597d4399",
-      "working_copy": true,
-      "source_sha256": "0b54c49e21bc36833abc45587710093ad6013013acb8ca3e8bd56bc014efeb38",
-      "public_sha256": "7ff9af07aae4e3cdadc86bebc19672ed110267ee4efd45bef82320012b2f7fd0",
+      "revision": "e2e4f390cd0397670b56e508e6d99d32c29b219f",
+      "working_copy": false,
+      "source_sha256": "e7a0222481f90bfac9248992552153d2837a872ebbd2dfe23462a7824be8a334",
+      "public_sha256": "6d1fa0f03a006e9ad6d0619e3f0ccc31992aef7015f5ca4f42f9a2732afc5d83",
       "url": "/manuals/pageweft/payments/",
       "mode": "public-edition"
     },
     {
       "project": "pageweft",
       "path": "docs/LAUNCH.md",
-      "revision": "e38ecb2877bb76d7dd0b141e6cfdec4a597d4399",
+      "revision": "e2e4f390cd0397670b56e508e6d99d32c29b219f",
       "working_copy": false,
       "source_sha256": "7cc0e0c7a12f23038c66a8da17adcc0f15217a635fec5d47b0e3cbff72ae6ba5",
       "public_sha256": "048e045f356d807990490e6169649fa6760d7975dc6b93e664592556bdcd508a",
@@ -164,7 +164,7 @@
     {
       "project": "pageweft",
       "path": "docs/BOOK-RELEASE.md",
-      "revision": "e38ecb2877bb76d7dd0b141e6cfdec4a597d4399",
+      "revision": "e2e4f390cd0397670b56e508e6d99d32c29b219f",
       "working_copy": false,
       "source_sha256": "3b8323b6544931d3f8aeaec0f53ede0a5246fc1d1952d3a57b9f1ddda316ca82",
       "public_sha256": "31da412b32a3c1535ffa420822f36597480ae3eda18e764f134cf93b6d47a6de",
@@ -174,7 +174,7 @@
     {
       "project": "pageweft",
       "path": "docs/PADDLE-20261015.md",
-      "revision": "e38ecb2877bb76d7dd0b141e6cfdec4a597d4399",
+      "revision": "e2e4f390cd0397670b56e508e6d99d32c29b219f",
       "working_copy": false,
       "source_sha256": "d68d7a9e3c68a29d2d7148ef523b72cd04aadd63217b8bbd9e83f24d0709128a",
       "public_sha256": "7294fe4ea3c8d0710a8acbc0141eb16ea5c59936d24de771bcf1579ba70df9e0",
@@ -184,7 +184,7 @@
     {
       "project": "pageweft",
       "path": "docs/VERIFICATION-2026-10-14.md",
-      "revision": "e38ecb2877bb76d7dd0b141e6cfdec4a597d4399",
+      "revision": "e2e4f390cd0397670b56e508e6d99d32c29b219f",
       "working_copy": false,
       "source_sha256": "cb08580476c3d49a3049cac13510173dc31b4dca3ab0e9417b97bbee30545aef",
       "public_sha256": "6bce6e509f290b7594b1e1960630239de12c0b8498fb447fb6c6773d5de8ef2c",
@@ -194,7 +194,7 @@
     {
       "project": "pageweft",
       "path": "docs/PRICING-AND-DISCOVERY.md",
-      "revision": "e38ecb2877bb76d7dd0b141e6cfdec4a597d4399",
+      "revision": "e2e4f390cd0397670b56e508e6d99d32c29b219f",
       "working_copy": false,
       "source_sha256": "614bf57eae80ed65464fd7f84a893db3db2c52288b72ce81a477e7a2b58f5627",
       "public_sha256": "d591a1a2bc7eeb246ec2c00276aa85f3a61f4297745fc436619d6aa6bad99a1a",
@@ -204,7 +204,7 @@
     {
       "project": "pageweft",
       "path": "docs/SAAS-DECISIONS.md",
-      "revision": "e38ecb2877bb76d7dd0b141e6cfdec4a597d4399",
+      "revision": "e2e4f390cd0397670b56e508e6d99d32c29b219f",
       "working_copy": false,
       "source_sha256": "fbafbe8dc2417c24c660d014f447b884c4d0bb5ed9a37568e4f9a79f0fd2f17c",
       "public_sha256": "8a56f574047c3a48929e73f9e9eb4262983b37398f937ff3b11f67032faa1635",
@@ -214,7 +214,7 @@
     {
       "project": "pageweft",
       "path": "docs/ACCESSIBILITY-20261016.md",
-      "revision": "e38ecb2877bb76d7dd0b141e6cfdec4a597d4399",
+      "revision": "e2e4f390cd0397670b56e508e6d99d32c29b219f",
       "working_copy": false,
       "source_sha256": "5a21dab5d763d1bc7b90e308101e81f79c712d565dd99c7537767f030bab5940",
       "public_sha256": "d6b4437150e11e73a1922e98bf0a3f50a5a031026f12143fccf5e69e179bc7a5",
@@ -224,7 +224,7 @@
     {
       "project": "pageweft",
       "path": "docs/CUSTOM-DOMAIN.md",
-      "revision": "e38ecb2877bb76d7dd0b141e6cfdec4a597d4399",
+      "revision": "e2e4f390cd0397670b56e508e6d99d32c29b219f",
       "working_copy": false,
       "source_sha256": "8b2d3aa5ab44cd72ccffbafbd9d1ed6431547f809be25b0f3a21557aa9f67c88",
       "public_sha256": "12a73a33486c611bae49a2d3697d30752aaaf51792f837b99b53cdbd565378ed",
@@ -234,17 +234,17 @@
     {
       "project": "sonaweft",
       "path": "README.md",
-      "revision": "5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f",
+      "revision": "75786f6c7c531f870fa7cd84e80202cbfb4ca455",
       "working_copy": false,
       "source_sha256": "ed87e08c5386ab6c72f1e78d42e396912e95562790a25426f088f9f2c91f5c4f",
-      "public_sha256": "d3b02e15947747e7374688272e50ed3e7625de7f2b4d59b70a36ecd721fa8f1c",
+      "public_sha256": "274f70dd99a5257b6814685ae64aa49d17e6a68520e54db6f6519b2a1aa5057b",
       "url": "/manuals/sonaweft/overview/",
       "mode": "public-edition"
     },
     {
       "project": "sonaweft",
       "path": "docs/PRODUCT.md",
-      "revision": "5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f",
+      "revision": "75786f6c7c531f870fa7cd84e80202cbfb4ca455",
       "working_copy": false,
       "source_sha256": "513ac9c232cb81667a945dcef2613094505d08bcc49b8ec5cb456c0130d1d3a4",
       "public_sha256": "f0c9c196675b1fa7c32b1c400e40c4484b474946fcf193064c446865a692d4da",
@@ -254,7 +254,7 @@
     {
       "project": "sonaweft",
       "path": "docs/architecture.md",
-      "revision": "5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f",
+      "revision": "75786f6c7c531f870fa7cd84e80202cbfb4ca455",
       "working_copy": false,
       "source_sha256": "0a35814a6539c429bf35daa684d4aaf19b0003a79f5a69cb46eb5884beb3c9cc",
       "public_sha256": "3032b2123e5c508b2741dbad1ac0560a9fc059a9795fcc3839c364c27b130386",
@@ -264,17 +264,17 @@
     {
       "project": "sonaweft",
       "path": "docs/OPERATIONS.md",
-      "revision": "5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f",
+      "revision": "75786f6c7c531f870fa7cd84e80202cbfb4ca455",
       "working_copy": false,
-      "source_sha256": "6f79d0a8766653c7a3c6bcad557e472668192d1858b8723d61e25633fcdcf9ea",
-      "public_sha256": "4a587e0e2c2f8df21b401a1521ee694d2eecc8af3bde3953f165d24acab0f567",
+      "source_sha256": "ae9d8f655469b6cd578b65925a7bbaad673f6e5f71d0dea1d9ad396c2a8d83aa",
+      "public_sha256": "018e2179f65655858fe6d677737376285df6271fac315d2aa02b80d5bde9d193",
       "url": "/manuals/sonaweft/operations/",
       "mode": "public-edition"
     },
     {
       "project": "sonaweft",
       "path": "docs/RELEASE.md",
-      "revision": "5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f",
+      "revision": "75786f6c7c531f870fa7cd84e80202cbfb4ca455",
       "working_copy": false,
       "source_sha256": "cf130ed83f083f2546ac454b7effdd5ac6090c26d7f122501f1bdabfd20c9138",
       "public_sha256": "5e27f194da28e38afe4ecd6923004b26a83e0cf065ee029fdbfc816fdd2e9ba0",
@@ -284,7 +284,7 @@
     {
       "project": "sonaweft",
       "path": "docs/claude-code.md",
-      "revision": "5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f",
+      "revision": "75786f6c7c531f870fa7cd84e80202cbfb4ca455",
       "working_copy": false,
       "source_sha256": "9f5ee4636a5f2a7fba47a3b0424cae725737884145d594304309eebe0bbef949",
       "public_sha256": "e15bae34f54556343469d261f593b6ccb5483c2f3cb9e5cc5f56f308f139a85b",
@@ -294,7 +294,7 @@
     {
       "project": "sonaweft",
       "path": "docs/demo-upwork.md",
-      "revision": "5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f",
+      "revision": "75786f6c7c531f870fa7cd84e80202cbfb4ca455",
       "working_copy": false,
       "source_sha256": "8d748cff46bfed309360a869e710a5d4591322efbdcc2e3fdeabb6fbadcaa3cc",
       "public_sha256": "6058228b6a916ff2ba90524f6a8b2b525639eec6b6b677ce1569f2327a1b5461",
@@ -304,7 +304,7 @@
     {
       "project": "sonaweft",
       "path": "docs/second-brain.md",
-      "revision": "5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f",
+      "revision": "75786f6c7c531f870fa7cd84e80202cbfb4ca455",
       "working_copy": false,
       "source_sha256": "b250a3df5411928ff6612d0e8435e4dd60c0b957260f1ad7913a5ea1ca80e312",
       "public_sha256": "4a1ee5c81c5cbaf754d3ee6824aedc9a17a2d4279c4293e6b3ac7bd54f623bac",
@@ -314,7 +314,7 @@
     {
       "project": "sonaweft",
       "path": "docs/CUSTOM-DOMAIN.md",
-      "revision": "5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f",
+      "revision": "75786f6c7c531f870fa7cd84e80202cbfb4ca455",
       "working_copy": false,
       "source_sha256": "14e0813c26288196e2f8167ae914571cd0e64f4e96a0cec5f44d144f7a81b2ad",
       "public_sha256": "95d8ed17a71bed97278e3f8f78aae696ecd8437fe870edb28f034c4ef0340da2",
@@ -329,16 +329,6 @@
       "source_sha256": "7ca39de55e09a3b8d20fb3e553fea55c5cbcc47fce300bc7850af349112af580",
       "public_sha256": "e9b2a1cc7e3b7af05f211409a04144f70e5a52fb05878c60c95242d6e74cbe32",
       "url": "/manuals/vanilla-keep/overview/",
-      "mode": "public-edition"
-    },
-    {
-      "project": "queue-lab",
-      "path": "README.md",
-      "revision": "bed2cb3131a79aa2519e1a38e9a7f26ddc640bf7",
-      "working_copy": false,
-      "source_sha256": "7d56250bf938b5b976ae373fc2b8222e05b1895844e4413b9b56b359426fe4be",
-      "public_sha256": "e589ccaf9e11c05e376cc4df66a887298670a9ab6f3772e78755a6bc999b202b",
-      "url": "/manuals/queue-lab/overview/",
       "mode": "public-edition"
     }
   ]

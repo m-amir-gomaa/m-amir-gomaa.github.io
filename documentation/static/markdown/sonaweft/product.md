@@ -2,7 +2,7 @@
 
 > Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.
 
-Source baseline: https://github.com/m-amir-gomaa/ig_intel/blob/5f0f9144fbe8cb37e25e1c307670c24f0a5cff2f/docs/PRODUCT.md
+Source baseline: https://github.com/m-amir-gomaa/ig_intel/blob/75786f6c7c531f870fa7cd84e80202cbfb4ca455/docs/PRODUCT.md
 Reviewed: 2026-10-18
 
 Amir explicitly made the transcript product active ahead of Keep, delegated a stronger brand and asked for hosted ASR/LLM processing, Paddle and a Pageweft-like usage model. Sonaweft is the selected brand (bounded exact-name searches found no obvious matching software listing; this is not trademark clearance). Preserve `instascript` imports/command and existing remote URLs. Noteweld is the proposed next Keep brand; its implementation remains deferred.

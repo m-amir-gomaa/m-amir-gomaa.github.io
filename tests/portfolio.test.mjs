@@ -23,9 +23,9 @@ await test('documentation library is connected from navigation and every project
  }
 });
 function page() { const dom = new JSDOM(html, { url: 'https://m-amir-gomaa.github.io/', runScripts: 'outside-only' }); dom.window.eval(script); return dom; }
-await test('all five projects are visible with working source and demo links', () => {
+await test('all four projects are visible with working source and demo links', () => {
  const dom = page(); const document = dom.window.document;
- assert.equal(document.querySelectorAll('.project').length, 5);
+ assert.equal(document.querySelectorAll('.project').length, 4);
  assert.equal(document.querySelectorAll('.project[hidden]').length, 0);
  assert.ok(document.querySelector('a[href="https://www.upwork.com/freelancers/~0173c5ce93bb9457ec"]'));
  for (const project of document.querySelectorAll('.project')) assert.ok(project.querySelector('a[href*="github.com/"]'));
@@ -38,11 +38,11 @@ await test('project filters update results and accessible pressed state', () => 
  assert.equal(document.querySelectorAll('.project:not([hidden])').length, 2);
  assert.equal(document.querySelector('#project-count').textContent, '2 projects');
  assert.equal(document.querySelector('[data-filter="all"]').getAttribute('aria-pressed'), 'false');
- document.querySelector('[data-filter="backend"]').click();
- assert.equal(document.querySelectorAll('.project:not([hidden])').length, 1);
- assert.equal(document.querySelector('#project-count').textContent, '1 project');
+ document.querySelector('[data-filter="tools"]').click();
+ assert.equal(document.querySelectorAll('.project:not([hidden])').length, 2);
+ assert.equal(document.querySelector('#project-count').textContent, '2 projects');
  document.querySelector('[data-filter="all"]').click();
- assert.equal(document.querySelectorAll('.project:not([hidden])').length, 5);
+ assert.equal(document.querySelectorAll('.project:not([hidden])').length, 4);
  dom.window.close();
 });
 await test('mobile navigation closes on selection, outside clicks, and Escape', () => {
@@ -116,4 +116,15 @@ await test('published downloads are valid targets and unreviewed resume is not o
  for (const source of embedded.window.document.querySelectorAll('script[src]')) assert.ok(existsSync(resolve(root, 'demos/keep', source.getAttribute('src'))));
  assert.ok(readdirSync(resolve(root, 'demos/keep/assets')).length > 0);
  embedded.window.close();dom.window.close();
+});
+
+await test('retired Go project has no card, filter, styling or published manual', () => {
+ const document = new JSDOM(html).window.document;
+ assert.equal(document.querySelector('#hermes'), null);
+ assert.equal(document.querySelector('[data-filter="backend"]'), null);
+ assert.equal(document.querySelector('[data-filter="all"] span').textContent, '04');
+ assert.equal(document.querySelector('#project-count').textContent, '4 projects');
+ assert.doesNotMatch(html, /batchlark|portfolio-hermes|queue-lab/i);
+ assert.doesNotMatch(readFileSync(resolve(root, 'style.css'), 'utf8'), /hermes-cover|queue-art|worker-row/);
+ assert.equal(existsSync(resolve(root, 'manuals/queue-lab')), false);
 });
