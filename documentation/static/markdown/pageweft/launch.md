@@ -2,7 +2,7 @@
 
 > The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence.
 
-Source baseline: https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e2e4f390cd0397670b56e508e6d99d32c29b219f/docs/LAUNCH.md
+Source baseline: https://github.com/m-amir-gomaa/PDF2Markdown-/blob/5eb782582e61d7e238cc4472f85362a9bd431427/docs/LAUNCH.md
 Reviewed: 2026-10-18
 
 Updated 15 October 2026. Pageweft is a working, bounded PDF-to-Markdown utility. Commercial demand, representative extraction quality and real payment delivery remain separate evidence. Initial spending and feature scope should stay small until those are measured.

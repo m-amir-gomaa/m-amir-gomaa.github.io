@@ -6,7 +6,7 @@
   "project": "Pageweft",
   "category": "Operations",
   "notice": "The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence. Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification.",
-  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/e2e4f390cd0397670b56e508e6d99d32c29b219f/docs/PAYMENT-ACTIVATION.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/5eb782582e61d7e238cc4472f85362a9bd431427/docs/PAYMENT-ACTIVATION.md",
   "download": "markdown/pageweft/payments.md"
 }
 
@@ -17,6 +17,12 @@ Updated 18 October 2026. **Paddle Billing is the selected provider. The integrat
 Current checkout domain is **pageweft.amirgomaa.com**, with the original Modal origin preserved. The companion product uses **sonaweft.amirgomaa.com**. Both custom domains serve working HTTPS pricing, terms, privacy, refund and checkout pages; public checkout configuration still reports disabled. Neither email verification nor domain ownership establishes Paddle approval. The last authenticated Website approval observation covered the older Modal hosts, not these new subdomains.
 
 Submit each new checkout subdomain separately in My account → Settings → Website approval. After approval, migrate the existing per-app checkout URL and notification destination to the approved host; preserve its signing secret, product IDs, original workspace balances and session key. Also verify the account-level default payment link and each app's per-transaction checkout override. Do not recreate live products or a live seller account. Sandbox has separate credentials/data and still needs genuine provider testing. These are current execution requirements; the older evidence below remains dated.
+
+## Verified preparation — 18 October 2026
+
+Amir submitted both new product subdomains; his Website approval screenshot and an authenticated API read confirm both are pending review. Do not remove or resubmit them. An authenticated onboarding read reports `in_progress`: account setup remains in progress, while domain review, identity verification and final review are pending. This is not merchant approval and does not identify a rejection reason.
+
+Both existing one-time USD $5/$10 catalogs were reread successfully. The existing notification destinations now use each app's custom-domain `/api/payment-event`; API rereads confirm they remain paused, with the same signing secrets, subscribed events, platform-only traffic and sensitive-field settings. The runtime checkout URL/default payment link still need final approved-host reconciliation before opening. No balances, session secrets, bank details, charges or billing flags changed. Privacy notices now disclose Cloudflare's gateway processing in addition to the existing hosting/payment providers.
 
 ## Latest session observation — 16 October 2026
 

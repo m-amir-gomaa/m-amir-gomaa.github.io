@@ -6,7 +6,7 @@
   "project": "Sonaweft",
   "category": "Archive",
   "notice": "Historical reference; not part of the current setup or recommended execution path.",
-  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/75786f6c7c531f870fa7cd84e80202cbfb4ca455/docs/second-brain.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/75e9b608befb7a52eb9c981f86477ae2e34a885a/docs/second-brain.md",
   "download": "markdown/sonaweft/vault-history.md"
 }
 

@@ -6,19 +6,20 @@
   "project": "Sonaweft",
   "category": "Operations",
   "notice": "Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.",
-  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/75786f6c7c531f870fa7cd84e80202cbfb4ca455/docs/OPERATIONS.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/75e9b608befb7a52eb9c981f86477ae2e34a885a/docs/OPERATIONS.md",
   "download": "markdown/sonaweft/operations.md"
 }
 
-> Update — 18 October 2026: public host is **https://sonaweft.amirgomaa.com/**. Submit this exact checkout subdomain separately for Paddle approval; the old Modal-domain review does not cover it. Keep billing closed. After approval and isolated real sandbox testing, migrate the existing checkout URL and paused notification destination to this host, preserving signing secrets, product/price IDs, balances and recovery identity. Verify the account default payment link and per-transaction checkout override across both products. Identity/payout setup and controlled live purchase/refund remain unfinished.
+> Update — 18 October 2026: public host is **https://sonaweft.amirgomaa.com/**. Amir submitted both product subdomains; the screenshot and authenticated API confirm pending domain review. Onboarding remains in progress, with identity/final review pending. Both catalogs were verified. Existing webhook destinations now use the corresponding custom-domain `/api/payment-event` and remain paused, with signing secrets, events and safety settings preserved. Runtime checkout URLs/default payment-link reconciliation, isolated real sandbox tests, owner identity/payout setup and controlled live acceptance remain unfinished. Billing stays closed. Privacy now discloses Cloudflare's gateway role.
+
 
 Live: https://sonaweft.amirgomaa.com ([custom domain / recovery](/manuals/sonaweft/custom-domain/)); original Modal endpoint remains available.
 
 ## Observed account state
 
-The existing owner Modal account hosts `sonaweft`. Volumes: `sonaweft-media-v1`, `sonaweft-ledger-v1`, `sonaweft-models-v1`. Secrets: `sonaweft-session`, `sonaweft-payments`, `sonaweft-llm`. Large model weights are cached only in the cloud.
+The existing owner Modal account hosts `sonaweft`. Volumes: `sonaweft-media-v1`, `sonaweft-ledger-v1`, `sonaweft-models-v1`. Secrets: `sonaweft-session`, `sonaweft-payments`, `sonaweft-llm`, `sonaweft-edge`. Large model weights are cached only in the cloud.
 
-The existing verified-email Paddle seller has a separate Sonaweft SaaS product, one-time USD $5/$10 prices, client token and **paused** notification destination at the live regional hostname's `/api/payment-event`. The account-scoped runtime key is currently reused from Pageweft; product/prices/intents are checked independently. Private setup values are ignored under `.local/integrations/`.
+The existing verified-email Paddle seller has a separate Sonaweft SaaS product, one-time USD $5/$10 prices, client token and **paused** notification destination at `https://sonaweft.amirgomaa.com/api/payment-event`. The account-scoped runtime key is currently reused from Pageweft; product/prices/intents are checked independently. Private setup values are ignored under `.local/integrations/`.
 
 Paid access remains closed. The Sonaweft hostname was submitted through the existing signed-in Firefox account and observed **In review** on 15 October. Pageweft remains separately in review. Email verification does not establish identity, seller or website approval. The runtime key expires **13 January 2027**; rotate before **6 January**, updating both products if still shared.
 
@@ -43,7 +44,7 @@ Backups create exclusive mode-0600 encrypted files plus a separate `.key`. Move 
 ## Required payment opening sequence
 
 1. Finish the owner's personal/identity/business review in the **existing** Paddle seller. Amir must supply correct unknown legal details, including DOB; do not create another seller or guess them.
-2. My account → Settings → Website approval: submit `sonaweft.amirgomaa.com` and its product/pricing/operator/policy pages. The companion `pageweft.amirgomaa.com` needs separate approval. Record actual approval and whether prepaid processing packs are accepted; a submission is not approval.
+2. My account → Settings → Website approval: both `sonaweft.amirgomaa.com` and `pageweft.amirgomaa.com` are already submitted and pending review. Do not resubmit. Each exact hostname needs its own approval. Record actual approval and whether prepaid processing packs are accepted; a submission is not approval.
 3. Use isolated sandbox product/notification/ledger configuration to exercise purchase, abandonment, duplicate/reordered delivery, full/partial refund, chargeback, lost dispatch, recovery and provider outage. Existing HTTP mocks do not replace real delivery. Sandbox must never credit production.
 4. After production approval, verify the paused production notification, three handled event types and matching signing secret. Runtime permissions are transaction read/write and adjustment read. Credentials stay server-side.
 5. Compare actual long/noisy recording costs, retries, tax/payment fees and refunds to the tariff. Configure provider budgets/alerts and appropriate admission caps. The current tariff is provisional, not proven net profit.

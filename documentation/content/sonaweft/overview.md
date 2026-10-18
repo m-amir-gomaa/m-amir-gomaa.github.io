@@ -6,7 +6,7 @@
   "project": "Sonaweft",
   "category": "Reference",
   "notice": "Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.",
-  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/75786f6c7c531f870fa7cd84e80202cbfb4ca455/README.md",
+  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/75e9b608befb7a52eb9c981f86477ae2e34a885a/README.md",
   "download": "markdown/sonaweft/overview.md"
 }
 
@@ -52,7 +52,7 @@ bin/sonaweft recording.mp3 --review --review-model standard --out ./out
 bin/sonaweft --export-item ./out/ITEM --format vtt
 ```
 
-The launchers resolve NixOS wheel libraries dynamically, prefer an existing tested `.venv-web`, otherwise `.venv`; `SONAWEFT_PYTHON` overrides. Export `DEEPSEEK_API_KEY` only for review. `.env` files are not automatically loaded; see [.env.example](https://github.com/m-amir-gomaa/ig_intel/blob/75786f6c7c531f870fa7cd84e80202cbfb4ca455/.env.example). `SONAWEFT_VAULT` takes precedence over legacy `IG_INTEL_VAULT`; the old `~/ig_intel/Inbox` default is preserved.
+The launchers resolve NixOS wheel libraries dynamically, prefer an existing tested `.venv-web`, otherwise `.venv`; `SONAWEFT_PYTHON` overrides. Export `DEEPSEEK_API_KEY` only for review. `.env` files are not automatically loaded; see [.env.example](https://github.com/m-amir-gomaa/ig_intel/blob/75e9b608befb7a52eb9c981f86477ae2e34a885a/.env.example). `SONAWEFT_VAULT` takes precedence over legacy `IG_INTEL_VAULT`; the old `~/ig_intel/Inbox` default is preserved.
 
 Private `.pending` checkpoints support retry without repeating successful ASR. Complete exports publish atomically; hashes detect modified/incomplete output, which is preserved. Source/model/review identity suppresses repeats. Cross-path perceptual deduplication is not promised. A killed process may leave `running.lock`; verify it has stopped before removing only that lock.
 
@@ -74,6 +74,6 @@ node --check sonaweft_web/static/app.js
 node --check sonaweft_web/static/checkout.js
 ```
 
-FFmpeg is required by boundary tests. Tests use real temporary SQLite/files/FFprobe with fake model dispatch and mocked payment APIs. Actual model/cloud/browser evidence is recorded separately. [requirements-web.lock](https://github.com/m-amir-gomaa/ig_intel/blob/75786f6c7c531f870fa7cd84e80202cbfb4ca455/requirements-web.lock) records the tested Linux development environment; [app.py](https://github.com/m-amir-gomaa/ig_intel/blob/75786f6c7c531f870fa7cd84e80202cbfb4ca455/app.py) pins cloud dependencies and an immutable model revision. No sibling repository is needed. Nix files have a separate verification status in RELEASE.md. New self-hosters need their own credentials, products and approvals.
+FFmpeg is required by boundary tests. Tests use real temporary SQLite/files/FFprobe with fake model dispatch and mocked payment APIs. Actual model/cloud/browser evidence is recorded separately. [requirements-web.lock](https://github.com/m-amir-gomaa/ig_intel/blob/75e9b608befb7a52eb9c981f86477ae2e34a885a/requirements-web.lock) records the tested Linux development environment; [app.py](https://github.com/m-amir-gomaa/ig_intel/blob/75e9b608befb7a52eb9c981f86477ae2e34a885a/app.py) pins cloud dependencies and an immutable model revision. No sibling repository is needed. Nix files have a separate verification status in RELEASE.md. New self-hosters need their own credentials, products and approvals.
 
 MIT application code; upstream tools/models have their own licenses. No speech model guarantees accuracy across accents, noise or long recordings.
