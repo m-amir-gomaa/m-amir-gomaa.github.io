@@ -2,6 +2,14 @@
 
 Static HTML, CSS, and JavaScript portfolio with project filters, case studies, Upwork/email contact links, mobile navigation, an interactive vanilla Keep demo and an embedded Pageweft sample-output viewer. The companion **Fieldnotes** library is built with Hugo; its generated files are committed, so serving the portfolio does not require a runtime build.
 
+## Custom-domain configuration — 18 October 2026
+
+The selected domain is **amirgomaa.com**, registered by the owner through Cloudflare for one year. `CNAME` declares the GitHub Pages hostname; `documentation/hugo.toml` supplies the matching manuals canonical URLs, feeds and sitemap. The original GitHub repository/hosting remain in place. The static checker validates both the selected host and historical GitHub Pages links. Product application links retain their working Modal addresses until their separate gateway/auth/upload/checkout checks pass.
+
+Publication requires verified GitHub domain ownership, the actual Pages repository binding, four DNS-only apex A records and DNS-only `www` CNAME, followed by GitHub certificate issuance and Enforce HTTPS. Configuration in Git alone does not establish those provider states. Domain acceptance and release evidence are recorded in the workspace milestone; do not equate a local build with public HTTPS success. DNSSEC is checked independently of the website certificate. No paid Cloudflare or Modal plan upgrade is required for this portfolio mapping.
+
+Browser-local demo notes belong to their original scheme/hostname. A changed hostname has a separate localStorage area; it does not automatically transfer old notes. Keep original exports/backups when changing addresses. Hosted product accounts and storage are not migrated by this static configuration.
+
 ## Workbench and factual resume review — 16 October 2026
 
 [The Workbench](https://m-amir-gomaa.github.io/manuals/development-environment/) links the NixOS and Neovim repositories, explains the actual configured workflow and offers a browser-only keyboard sketch. Four configuration samples retain temporary edits/undo when switching files, with a filterable Space–s–f picker, clipboard fallback and an animated configuration-layer explorer. Motion can be paused and follows reduced-motion preferences. Three new guides bring Fieldnotes to **46 indexed articles**. This guide distinguishes explanatory snippets and the published configuration baseline from local maintenance; it does not expose or execute personal configuration.

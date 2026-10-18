@@ -2,12 +2,15 @@
 """Check the built library, local routes/fragments, provenance and publication boundary."""
 import json
 import re
+import tomllib
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit, unquote
 
 ROOT = Path(__file__).resolve().parents[1]
-ORIGIN = 'https://m-amir-gomaa.github.io'
+SITE_URL = urlsplit(tomllib.loads((ROOT / 'documentation/hugo.toml').read_text())['baseURL'])
+ORIGIN = f'{SITE_URL.scheme}://{SITE_URL.netloc}'
+OWN_HOSTS = {SITE_URL.netloc, 'm-amir-gomaa.github.io'}
 
 
 class Document(HTMLParser):
@@ -49,7 +52,7 @@ def main():
         base = ORIGIN + '/' + str(path.relative_to(ROOT))
         for link in document.links:
             url = urlsplit(urljoin(base, link))
-            if url.netloc != 'm-amir-gomaa.github.io':
+            if url.netloc not in OWN_HOSTS:
                 continue
             if url.path == '/Keep/':
                 # A separately deployed GitHub project site, outside this repository's artifact.
