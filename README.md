@@ -5,11 +5,11 @@
 
 Static HTML, CSS, and JavaScript portfolio with project filters, case studies, Upwork/email contact links, mobile navigation, an interactive vanilla Keep demo and an embedded Pageweft sample-output viewer. The companion **Fieldnotes** library is built with Hugo; its generated files are committed, so serving the portfolio does not require a runtime build.
 
-## Current portfolio scope — 18 October 2026
+## Current portfolio scope — 19 October 2026
 
-Four active product cards remain: **Noteweld, Noteweld Local, Sonaweft and Pageweft**. The former Go study has been removed at the owner's request, together with its category, cover styles, manual pages, search/feed entries and download editions. No replacement is scheduled. Development Workbench remains a separate environment case study. The library now has **49 indexed articles and 33 reviewed source records**. Earlier milestone counts below are dated history.
+Four active product cards remain: **Noteweld, Noteweld Local, Sonaweft and Pageweft**. The former Go study has been removed at the owner's request, together with its category, cover styles, manual pages, search/feed entries and download editions. No replacement is scheduled. Development Workbench remains a separate environment case study. The library now has **58 indexed articles and 41 reviewed source records**. Earlier milestone counts below are dated history.
 
-The updated payment manuals require separate Paddle approval for both current product subdomains and genuine isolated provider testing; public billing remains closed.
+The owner reports both app domains approved; genuine payment/payout acceptance remains separate and public billing stays closed.
 
 ## Custom-domain configuration — 18 October 2026
 

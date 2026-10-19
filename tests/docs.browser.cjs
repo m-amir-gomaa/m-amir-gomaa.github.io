@@ -46,7 +46,12 @@ require('node:fs').mkdirSync(artifacts, { recursive: true });
       assert(await page.locator('.table-wrap').count() > 0);
       await noOverflow();
       await page.goto(origin + '/#documentation');
-      assert.equal(await page.locator('.project a[href^="manuals/"]').count(), 8);
+      // A private-source project can also expose its public architecture guide.
+      // Check every card's guide/history access rather than forbidding extra links.
+      for (const project of await page.locator('.project').all()) {
+        assert(await project.locator('a[href^="manuals/"]').count() >= 2);
+        assert.equal(await project.locator('a[href$="/build-history/"]').count(), 1);
+      }
       assert.equal(await page.locator('.project a[href$="/build-history/"]').count(), 4);
       await noOverflow();
       await page.locator('#documentation').screenshot({ path: `${artifacts}/portfolio-${width}.png` });
