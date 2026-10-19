@@ -65,7 +65,7 @@ def main():
             notice = project['notice']
             if project.get('source_access') == 'owner':
                 source_url = ''
-                notice += f' Source revision {revision[:7]} is retained for the owner; anonymous repository access is unavailable. This reviewed public edition is readable independently.'
+                notice += f' Production source revision {revision[:7]} is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.'
             if entry.get('category') == 'Release record':
                 notice = 'Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. ' + notice
             if entry.get('mode') == 'reference':

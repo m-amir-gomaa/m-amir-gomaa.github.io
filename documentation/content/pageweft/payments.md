@@ -5,7 +5,7 @@
   "weight": 70,
   "project": "Pageweft",
   "category": "Operations",
-  "notice": "Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Source revision d35780b is retained for the owner; anonymous repository access is unavailable. This reviewed public edition is readable independently. Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification.",
+  "notice": "Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 990e994 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification.",
   "sourceurl": "",
   "download": "markdown/pageweft/payments.md"
 }

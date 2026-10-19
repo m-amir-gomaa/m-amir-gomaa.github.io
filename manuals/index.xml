@@ -63,17 +63,14 @@
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Paddle handles commercial payments rather than hosting these websites. DeepSeek is an optional text-inference provider for Sonaweft. No shared customer wallet or login is implemented. Linguavell is a separate startup project.&lt;/p&gt;</description></item><item><title>Building Noteweld: accounts to connected notes</title><link>https://amirgomaa.com/manuals/noteweld/build-history/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/noteweld/build-history/</guid><description>&lt;h2 id="start-from-the-evidence"&gt;Start from the evidence&lt;/h2&gt;
-&lt;p&gt;The current source is &lt;a href="https://github.com/m-amir-gomaa/keep-nextjs/tree/f6901ff60652682c4529879f8fb6d96fafb127d3"&gt;connected-notes handoff f6901ff&lt;/a&gt;
-. Application code for that collection is &lt;code&gt;e1b8740&lt;/code&gt;; earlier foundations are not descriptions of every current feature. Read the &lt;a href="https://amirgomaa.com/manuals/noteweld/guide/"&gt;usage guide&lt;/a&gt;
+&lt;p&gt;The current source is connected-notes handoff f6901ff (owner-access source record). Application code for that collection is &lt;code&gt;e1b8740&lt;/code&gt;; earlier foundations are not descriptions of every current feature. Read the &lt;a href="https://amirgomaa.com/manuals/noteweld/guide/"&gt;usage guide&lt;/a&gt;
  before following the implementation record.&lt;/p&gt;
 &lt;h2 id="1-repair-account-and-note-persistence"&gt;1. Repair account and note persistence&lt;/h2&gt;
 &lt;p&gt;The early registration work validated identity/password input, seeded accounts and preserved failed form input. The then-selected Neon HTTP adapter supported a batch operation rather than interactive transaction callbacks. Its mocked-transport checks were explicitly not evidence of database rollback.&lt;/p&gt;</description></item><item><title>Building Pageweft: extraction to a hosted workbench</title><link>https://amirgomaa.com/manuals/pageweft/build-history/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/pageweft/build-history/</guid><description>&lt;h2 id="1-establish-actual-extraction"&gt;1. Establish actual extraction&lt;/h2&gt;
 &lt;p&gt;The initial requirement was private PDF-to-Markdown preparation using MinerU on the owner&amp;rsquo;s Modal account. The design moved from customer-provided Modal credentials to owner-hosted processing; customers do not provide cloud tokens. MinerU 2.7.6 runs in a cloud GPU image and retains original engine output. The laptop&amp;rsquo;s 2 GB GPU is not required.&lt;/p&gt;
 &lt;p&gt;A bounded one-page public trial was verified before describing full-book processing. The initial deployed web startup failed because &lt;code&gt;modal_fn.py&lt;/code&gt; was missing from its uploaded source. Explicit inclusion fixed the image, followed by a fresh deployment and public workflow checks. &lt;a href="https://amirgomaa.com/manuals/pageweft/verification/"&gt;Original verification record&lt;/a&gt;
 .&lt;/p&gt;</description></item><item><title>Building Sonaweft: speech, source and recovery</title><link>https://amirgomaa.com/manuals/sonaweft/build-history/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/sonaweft/build-history/</guid><description>&lt;h2 id="source-chronology"&gt;Source chronology&lt;/h2&gt;
-&lt;p&gt;The original &lt;code&gt;instascript&lt;/code&gt; command and import paths remain compatible. Hosted workbench &lt;a href="https://github.com/m-amir-gomaa/ig_intel/commit/7fde01a"&gt;7fde01a&lt;/a&gt;
- added the upload/review/export workflow. &lt;code&gt;5ac1d7c&lt;/code&gt; added the original completed audio example; handoff &lt;a href="https://github.com/m-amir-gomaa/ig_intel/tree/68b84726aaf3da129cfe2e796f6d5ac227d57333"&gt;68b8472&lt;/a&gt;
- normalized artifacts and corrected the provider reference. The old optional Claude/vault documents are archives, not required setup.&lt;/p&gt;
+&lt;p&gt;The original &lt;code&gt;instascript&lt;/code&gt; command and import paths remain compatible. Hosted workbench 7fde01a (owner-access source record) added the upload/review/export workflow. &lt;code&gt;5ac1d7c&lt;/code&gt; added the original completed audio example; handoff 68b8472 (owner-access source record) normalized artifacts and corrected the provider reference. The old optional Claude/vault documents are archives, not required setup.&lt;/p&gt;
 &lt;h2 id="1-preserve-source-and-recover-work"&gt;1. Preserve source and recover work&lt;/h2&gt;
 &lt;p&gt;The standalone CPU CLI uses FFmpeg/FFprobe and faster-whisper. Immutable original recognition, separate corrections, generated notes and sourced questions became distinct artifacts. Private checkpoints, exclusive locks, completion hashes and atomic publication support deliberate recovery; cross-path perceptual deduplication is not promised.&lt;/p&gt;</description></item><item><title>Building the vanilla Keep demo</title><link>https://amirgomaa.com/manuals/vanilla-keep/build-history/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/vanilla-keep/build-history/</guid><description>&lt;h2 id="keep-the-two-implementations-separate"&gt;Keep the two implementations separate&lt;/h2&gt;
 &lt;p&gt;This is the vanilla JavaScript/localStorage application, not Noteweld. Native DOM modules, Webpack, checklists, labels, colors, pin/archive/trash and browser storage form its implementation. Existing source history includes &lt;code&gt;f6bc24ce&lt;/code&gt; for labels/search/filter/demo notes and &lt;code&gt;64471b8d&lt;/code&gt; for an unused import cleanup.&lt;/p&gt;
@@ -162,7 +159,61 @@
 &lt;/table&gt;
 &lt;p&gt;For this machine, the &lt;code&gt;nr&lt;/code&gt; shortcut runs &lt;code&gt;sudo nixos-rebuild switch&lt;/code&gt; against the NixOS flake. It does not decrypt secrets, stage files or commit changes. Administrative authentication remains an operating-system boundary.&lt;/p&gt;</description></item><item><title>Maintaining this documentation library</title><link>https://amirgomaa.com/manuals/journal/publishing/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/publishing/</guid><description>&lt;h2 id="source-and-publication"&gt;Source and publication&lt;/h2&gt;
 &lt;p&gt;The actual portfolio repository contains &lt;code&gt;documentation/&lt;/code&gt; for Hugo source and &lt;code&gt;manuals/&lt;/code&gt; for generated static output. The existing GitHub Pages root serves both the portfolio and &lt;code&gt;/manuals/&lt;/code&gt;. No application server, visitor login, external font, analytics service or search API is needed.&lt;/p&gt;
-&lt;p&gt;Hugo 0.156.0 is the recorded build version. Imported project README/docs files are explicitly listed in &lt;code&gt;documentation/manifest.json&lt;/code&gt;; this is not a recursive copy of the workspace. Current usage guides and journal entries are authored directly in Hugo content.&lt;/p&gt;</description></item><item><title>Building the portfolio and Fieldnotes</title><link>https://amirgomaa.com/manuals/journal/build-history/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/build-history/</guid><description>&lt;h2 id="portfolio-publication"&gt;Portfolio publication&lt;/h2&gt;
+&lt;p&gt;Hugo 0.156.0 is the recorded build version. Imported project README/docs files are explicitly listed in &lt;code&gt;documentation/manifest.json&lt;/code&gt;; this is not a recursive copy of the workspace. Current usage guides and journal entries are authored directly in Hugo content.&lt;/p&gt;</description></item><item><title>Public examples and commercial source</title><link>https://amirgomaa.com/manuals/journal/source-access/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/source-access/</guid><description>&lt;h2 id="inspect-the-work"&gt;Inspect the work&lt;/h2&gt;
+&lt;p&gt;The public portfolio combines working applications, implementation manuals,
+release records and deliberately selected source examples. Production source
+access is reserved for owner-authorized review. This describes the publication
+policy; it is not proof of a repository&amp;rsquo;s current GitHub visibility setting.&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Project&lt;/th&gt;
+ &lt;th&gt;Public evidence&lt;/th&gt;
+ &lt;th&gt;Source and licensing boundary&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Noteweld&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://noteweld.amirgomaa.com/example"&gt;Editor&lt;/a&gt;
+, &lt;a href="https://noteweld.amirgomaa.com/example/graph"&gt;graph&lt;/a&gt;
+, &lt;a href="https://amirgomaa.com/manuals/noteweld/overview/"&gt;implementation&lt;/a&gt;
+&lt;/td&gt;
+ &lt;td&gt;Original application material is reserved; third-party software and asset terms remain in force.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Pageweft&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://pageweft.amirgomaa.com/"&gt;Converter&lt;/a&gt;
+, &lt;a href="https://amirgomaa.com/manuals/pageweft/overview/"&gt;implementation&lt;/a&gt;
+, original sample in the portfolio&lt;/td&gt;
+ &lt;td&gt;Original application rights and upstream engine/model licenses are separate; MinerU review remains a release gate.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Sonaweft&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://sonaweft.amirgomaa.com/example"&gt;Recording example&lt;/a&gt;
+, &lt;a href="https://amirgomaa.com/manuals/sonaweft/overview/"&gt;implementation&lt;/a&gt;
+, selected MIT code below&lt;/td&gt;
+ &lt;td&gt;The existing application edition remains MIT. Source privacy does not revoke earlier grants; future private modules need explicit terms.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Noteweld Local&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://amirgomaa.com/manuals/demos/keep/"&gt;Interactive demo&lt;/a&gt;
+, &lt;a href="https://github.com/m-amir-gomaa/Keep"&gt;public JavaScript source&lt;/a&gt;
+, &lt;a href="https://amirgomaa.com/manuals/vanilla-keep/"&gt;manual&lt;/a&gt;
+&lt;/td&gt;
+ &lt;td&gt;Remains public; its existing package declares ISC. Asset ownership is separate.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="a-runnable-sonaweft-excerpt"&gt;A runnable Sonaweft excerpt&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/m-amir-gomaa/m-amir-gomaa.github.io/tree/main/showcase/sonaweft"&gt;Open the selected source and its MIT license&lt;/a&gt;
+.
+The transcript contract and subtitle renderer are copied unchanged from
+&lt;code&gt;00522f212d686ee813f4d0275c34d7c7db48ccef&lt;/code&gt;, with per-file hashes in
+&lt;code&gt;provenance.json&lt;/code&gt;. This is an actual application excerpt, independently runnable
+using the Python standard library. Additional standalone tests check original
+preservation, quote validation, malformed timing, annotation ownership and
+the manifest&amp;rsquo;s exported-file hashes.&lt;/p&gt;</description></item><item><title>Building the portfolio and Fieldnotes</title><link>https://amirgomaa.com/manuals/journal/build-history/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/build-history/</guid><description>&lt;h2 id="portfolio-publication"&gt;Portfolio publication&lt;/h2&gt;
 &lt;p&gt;The active site source is the standalone &lt;code&gt;m-amir-gomaa.github.io&lt;/code&gt; repository. Its static HTML/CSS/JavaScript redesign was published before adding the source-aware Pageweft sample viewer, corrected contact address, Sonaweft audio example and Noteweld links. Covers that illustrate a workflow remain labeled illustrations.&lt;/p&gt;
 &lt;p&gt;Selected published revisions give useful audit anchors:&lt;/p&gt;
 &lt;table&gt;
@@ -224,17 +275,15 @@
 &lt;li&gt;Recover raw stored JSON if existing notes are malformed, without silently resetting user data.&lt;/li&gt;
 &lt;li&gt;Use a responsive layout with readable colored notes and reduced-motion support.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Delete from Archive moves to recoverable Trash. Delete forever and Empty Trash require confirmation. There is no automatic seven-day purge. Header Refresh reloads this browser view; the layout control switches compact display. Placeholder reminders/settings are omitted from the available controls.&lt;/p&gt;</description></item><item><title>Technical overview</title><link>https://amirgomaa.com/manuals/noteweld/overview/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/noteweld/overview/</guid><description>&lt;p&gt;&lt;a href="https://amirgomaa.com/manuals/noteweld/custom-domain/"&gt;Public address and existing-account access&lt;/a&gt;
+&lt;p&gt;Delete from Archive moves to recoverable Trash. Delete forever and Empty Trash require confirmation. There is no automatic seven-day purge. Header Refresh reloads this browser view; the layout control switches compact display. Placeholder reminders/settings are omitted from the available controls.&lt;/p&gt;</description></item><item><title>Technical overview</title><link>https://amirgomaa.com/manuals/noteweld/overview/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/noteweld/overview/</guid><description>&lt;p&gt;Original application material is reserved under the repository notice (source repository requires access), subject to separately licensed dependencies/assets and any previously granted permissions. Production source review is by arrangement; the public manuals and hosted editor/graph examples remain available.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://amirgomaa.com/manuals/noteweld/custom-domain/"&gt;Public address and existing-account access&lt;/a&gt;
 &lt;/p&gt;
 &lt;p&gt;The source-bundle and account collection is documented in &lt;a href="https://amirgomaa.com/manuals/noteweld/source-handoff-release/"&gt;release evidence&lt;/a&gt;
 . Google/GitHub consent remains unverified and public provider buttons stay disabled; &lt;a href="https://amirgomaa.com/manuals/noteweld/account-work/"&gt;setup and account behavior&lt;/a&gt;
 .
-A private notes/checklist preview built with Next.js 16.3.8, React 19, Auth.js and PostgreSQL/Drizzle. This repository retains its original &lt;code&gt;keep-nextjs&lt;/code&gt; GitHub identity. The old Vercel deployment is a historical version; it is not updated by this release.&lt;/p&gt;
-&lt;h2 id="implemented"&gt;Implemented&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Real account/seed transactions; normalized unique email and label identities; exact passphrases, with 15-character minimum and bcrypt&amp;rsquo;s 72-byte UTF-8 limit.&lt;/p&gt;</description></item><item><title>Technical overview</title><link>https://amirgomaa.com/manuals/pageweft/overview/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/pageweft/overview/</guid><description>&lt;p&gt;Formerly Document Studio; renamed with Amir&amp;rsquo;s approval on 15 October 2026. Canonical local path: &lt;code&gt;~/Projects/freelance/pageweft&lt;/code&gt;, with the old directory kept as a compatibility symlink. Existing public GitHub/Modal URLs and permanent storage/session/secret identifiers are retained so bookmarks, accounts and credits keep working.&lt;/p&gt;
-&lt;p&gt;Hosted PDF-to-Markdown conversion for books and technical material, using MinerU on Amir&amp;rsquo;s Modal account. Inspect selected pages, review issues, correct text and export portable files for your own editor or LLM workflow.&lt;/p&gt;</description></item><item><title>Technical overview</title><link>https://amirgomaa.com/manuals/sonaweft/overview/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/sonaweft/overview/</guid><description>&lt;p&gt;&lt;a href="https://sonaweft.amirgomaa.com"&gt;Open Sonaweft&lt;/a&gt;
+A private notes/checklist preview built with Next.js 16.3.8, React 19, Auth.js and PostgreSQL/Drizzle. This repository retains its original &lt;code&gt;keep-nextjs&lt;/code&gt; GitHub identity. The old Vercel deployment is a historical version; it is not updated by this release.&lt;/p&gt;</description></item><item><title>Technical overview</title><link>https://amirgomaa.com/manuals/pageweft/overview/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/pageweft/overview/</guid><description>&lt;p&gt;Original Pageweft material has a scoped rights notice (source repository requires access); third-party licenses and applicable source obligations remain in force. The pinned MinerU engine is AGPL-3.0. &lt;a href="https://amirgomaa.com/manuals/pageweft/dependencies/"&gt;Exact dependency notes&lt;/a&gt;
+ describe the remaining integration/model review; repository privacy is not a licensing clearance.&lt;/p&gt;
+&lt;p&gt;Formerly Document Studio; renamed with Amir&amp;rsquo;s approval on 15 October 2026. Canonical local path: &lt;code&gt;~/Projects/freelance/pageweft&lt;/code&gt;, with the old directory kept as a compatibility symlink. Existing public GitHub/Modal URLs and permanent storage/session/secret identifiers are retained so bookmarks, accounts and credits keep working.&lt;/p&gt;</description></item><item><title>Technical overview</title><link>https://amirgomaa.com/manuals/sonaweft/overview/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/sonaweft/overview/</guid><description>&lt;p&gt;&lt;a href="https://sonaweft.amirgomaa.com"&gt;Open Sonaweft&lt;/a&gt;
  · &lt;a href="https://sonaweft.amirgomaa.com/example"&gt;Hear completed example&lt;/a&gt;
  · &lt;a href="https://amirgomaa.com/manuals/sonaweft/product/"&gt;Product contract&lt;/a&gt;
  · &lt;a href="https://amirgomaa.com/manuals/sonaweft/operations/"&gt;Operations&lt;/a&gt;

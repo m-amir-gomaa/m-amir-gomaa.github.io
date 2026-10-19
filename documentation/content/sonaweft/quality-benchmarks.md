@@ -5,8 +5,8 @@
   "weight": 130,
   "project": "Sonaweft",
   "category": "Operations",
-  "notice": "Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones.",
-  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/00522f212d686ee813f4d0275c34d7c7db48ccef/docs/QUALITY-BENCHMARKS.md",
+  "notice": "Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 69d3d0e is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
+  "sourceurl": "",
   "download": "markdown/sonaweft/quality-benchmarks.md"
 }
 

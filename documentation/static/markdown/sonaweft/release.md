@@ -1,8 +1,8 @@
 # Hosted release evidence
 
-> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones.
+> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 69d3d0e is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: https://github.com/m-amir-gomaa/ig_intel/blob/00522f212d686ee813f4d0275c34d7c7db48ccef/docs/RELEASE.md
+Source baseline: Owner-access repository, revision 69d3d0e92c8976373cbefb7a4cf847219b04bc22
 Reviewed: 2026-10-19
 
 *Original record: Release evidence — 15 October 2026.*
@@ -27,7 +27,7 @@ Sonaweft is deployed at https://m-amir-gomaa--sonaweft-web-app.us-east.modal.run
 
 The initial cloud probe exposed cross-environment exception/NumPy serialization failures; native JSON values and a plain error envelope fixed them before public enablement. Local testing found PyAV 19 incompatible with the pip speech dependency combination, so pip/cloud use the tested 15.1.0 pin. Nix supplies a separately tested compatible pair. The launcher also handled a Nix library-discovery SIGPIPE before release.
 
-Source release `7fde01a` passed the actual [Sonaweft GitHub Actions run](https://github.com/m-amir-gomaa/ig_intel/actions/runs/38787220199); portfolio `5ca6dc8` passed [Pages deployment](https://github.com/m-amir-gomaa/m-amir-gomaa.github.io/actions/runs/38787208079) and was observed live. Later completed-example changes have their own CI run; earlier success does not certify later code by itself.
+Source release `7fde01a` passed the actual Sonaweft GitHub Actions run (source repository requires access); portfolio `5ca6dc8` passed [Pages deployment](https://github.com/m-amir-gomaa/m-amir-gomaa.github.io/actions/runs/38787208079) and was observed live. Later completed-example changes have their own CI run; earlier success does not certify later code by itself.
 
 Private reproducible probe data/logs/screenshots are ignored under `.local/fixtures/`, `.local/browser/` and `.local/backups/`. Original sample text was generated locally with eSpeak: “A careful reader can follow the original recording. This example contains two short sentences.” No customer or copyrighted book media was used. The internal seeded $5 validation credit is explicitly unverified fixture funding; reports show zero commercial purchases. One failed diagnostic job is retained in aggregate metrics; it was not hidden as success.
 

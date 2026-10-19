@@ -1,8 +1,8 @@
 # Source workflow and diagnostics release
 
-> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones.
+> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 69d3d0e is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: https://github.com/m-amir-gomaa/ig_intel/blob/00522f212d686ee813f4d0275c34d7c7db48ccef/docs/SOURCE-WORKFLOW-RELEASE.md
+Source baseline: Owner-access repository, revision 69d3d0e92c8976373cbefb7a4cf847219b04bc22
 Reviewed: 2026-10-19
 
 *Original record: Recording workflow, accounts and diagnostics — 18 October 2026.*

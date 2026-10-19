@@ -1,8 +1,8 @@
 # Declared image package inventory
 
-> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones.
+> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 69d3d0e is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: https://github.com/m-amir-gomaa/ig_intel/blob/00522f212d686ee813f4d0275c34d7c7db48ccef/docs/DEPENDENCY-INVENTORY.md
+Source baseline: Owner-access repository, revision 69d3d0e92c8976373cbefb7a4cf847219b04bc22
 Reviewed: 2026-10-19
 
 Actual CPU inspection of the current web/Whisper package images. Full [metadata and license-file hashes](/manuals/metadata/sonaweft-image-inventory.json), SHA256 `4e1fbbab5b0c50ab0afd77f0c95341c011bd4829b23bc5a402661dfcda1a68a0`. No model volume, app secret, customer source or GPU was used. The NVIDIA CUDA base image emitted its normal upstream notice on CPU; this is not GPU inference or a change to the desktop drivers.

@@ -5,7 +5,7 @@
   "weight": 90,
   "project": "Pageweft",
   "category": "Release record",
-  "notice": "Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Source revision d35780b is retained for the owner; anonymous repository access is unavailable. This reviewed public edition is readable independently. Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification. This reviewed documentation snapshot includes local documentation edits; the recorded revision is the committed baseline.",
+  "notice": "Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 990e994 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification. This reviewed documentation snapshot includes local documentation edits; the recorded revision is the committed baseline.",
   "sourceurl": "",
   "download": "markdown/pageweft/book-release.md"
 }

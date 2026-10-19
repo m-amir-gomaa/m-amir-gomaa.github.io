@@ -5,8 +5,8 @@
   "weight": 50,
   "project": "Noteweld",
   "category": "Guide",
-  "notice": "Current bounded preview includes Markdown/Vim, connected notes, source-bundle imports and browser-session controls. Real Google/GitHub consent remains unverified and provider buttons stay disabled; billing is closed. Earlier release records describe their own milestones.",
-  "sourceurl": "https://github.com/m-amir-gomaa/keep-nextjs/blob/59e2325fd9d164a292303bc7bee9cb659438fa4c/docs/CONNECTIONS.md",
+  "notice": "Current bounded preview includes Markdown/Vim, connected notes, source-bundle imports and browser-session controls. Real Google/GitHub consent remains unverified and provider buttons stay disabled; billing is closed. Earlier release records describe their own milestones. Production source revision f612e01 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
+  "sourceurl": "",
   "download": "markdown/noteweld/connections.md"
 }
 

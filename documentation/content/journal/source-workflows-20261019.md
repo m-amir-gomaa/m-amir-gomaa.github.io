@@ -23,7 +23,7 @@ The original public Pageweft example was regenerated with the current CPU export
 
 ## Actual checks
 
-Pageweft: 108 unit/SQLite/HTTP checks and the real local upload/review/export browser flow at 320/390/768/1440. Sonaweft: 77 checks and real media inspection/decoding plus explicitly replayed ASR through correction/export/deletion at those widths. Noteweld: 55 unit/React/crypto checks, 32 real PostgreSQL cases, 21 production-build Chromium cases with synthetic provider request construction; the final success-copy fix also passed its affected flow. Noteweld [GitHub CI 39222871340](https://github.com/m-amir-gomaa/keep-nextjs/actions/runs/39222871340) succeeded for 54330b7.
+Pageweft: 108 unit/SQLite/HTTP checks and the real local upload/review/export browser flow at 320/390/768/1440. Sonaweft: 77 checks and real media inspection/decoding plus explicitly replayed ASR through correction/export/deletion at those widths. Noteweld: 55 unit/React/crypto checks, 32 real PostgreSQL cases, 21 production-build Chromium cases with synthetic provider request construction; the final success-copy fix also passed its affected flow. Noteweld GitHub CI 39222871340 (owner-access source record) succeeded for 54330b7.
 
 All three existing Modal apps were deployed; custom-domain browser checks returned 200 with billing closed. A populated hosted Noteweld v3 snapshot preserved one synthetic account, four notes, three labels/associations and one original ZIP exactly after restoration into an empty loopback clone. Browser sessions were excluded and restored epochs incremented. Only the run's synthetic live account was removed afterward; original accounts/financial/provider infrastructure remain.
 

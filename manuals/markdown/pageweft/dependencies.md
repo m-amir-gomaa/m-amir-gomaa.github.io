@@ -1,8 +1,8 @@
 # Dependencies and licensing
 
-> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Source revision d35780b is retained for the owner; anonymous repository access is unavailable. This reviewed public edition is readable independently.
+> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 990e994 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision d35780b9038e6ead15c260965ff53f20e79c6315
+Source baseline: Owner-access repository, revision 990e99478f468f891370471f66d9b40272ea5680
 Reviewed: 2026-10-19
 
 > 19 October: exact current web/MinerU Python package versions, declared license metadata and wheel license-file hashes are now recorded in [image inventory](/manuals/pageweft/image-inventory/). This replaces the older “no inventory” statement only for the Python distribution layer; bundled native/system libraries, complete model terms and compatibility still require the stated review. No licensing conclusion is inferred from metadata.

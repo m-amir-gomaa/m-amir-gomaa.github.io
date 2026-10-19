@@ -1,8 +1,8 @@
 # Custom domain and account access
 
-> Current bounded preview includes Markdown/Vim, connected notes, source-bundle imports and browser-session controls. Real Google/GitHub consent remains unverified and provider buttons stay disabled; billing is closed. Earlier release records describe their own milestones.
+> Current bounded preview includes Markdown/Vim, connected notes, source-bundle imports and browser-session controls. Real Google/GitHub consent remains unverified and provider buttons stay disabled; billing is closed. Earlier release records describe their own milestones. Production source revision f612e01 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: https://github.com/m-amir-gomaa/keep-nextjs/blob/59e2325fd9d164a292303bc7bee9cb659438fa4c/docs/CUSTOM-DOMAIN.md
+Source baseline: Owner-access repository, revision f612e0130637ecf2d1cfbd2d1d1b5c1643013d42
 Reviewed: 2026-10-19
 
 Public address: **https://noteweld.amirgomaa.com/**. The account-free editor and graph are `/example` and `/example/graph`; private writing starts at `/auth/signin`. A dedicated Cloudflare Workers Free gateway fronts the existing Modal deployment. The same isolated Neon database, restricted role, AUTH_SECRET, BACKUP_KEY and backup jobs remain in use. Sign in again with existing credentials at the new host; browser cookies do not transfer between hostnames. No database migration or account merge is required.

@@ -1,8 +1,8 @@
 # Custom domain and account access
 
-> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Source revision d35780b is retained for the owner; anonymous repository access is unavailable. This reviewed public edition is readable independently.
+> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 990e994 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision d35780b9038e6ead15c260965ff53f20e79c6315
+Source baseline: Owner-access repository, revision 990e99478f468f891370471f66d9b40272ea5680
 Reviewed: 2026-10-19
 
 Public address: **https://pageweft.amirgomaa.com/**. A fixed-origin Cloudflare Workers Free gateway connects to the preserved Modal endpoint; Modal still runs the app and processing. No Team upgrade or live payment activation was made. The shared reproducible gateway source/config/tests and rollout guide are in the workspace at `freelance/workflow/cloudflare-edge/`.

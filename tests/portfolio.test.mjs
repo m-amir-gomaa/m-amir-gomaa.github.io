@@ -34,7 +34,11 @@ await test('all four projects expose demos and readable source or implementation
   assert.ok(source || architecture, 'Every project needs readable implementation evidence');
   if (architecture) assert.ok(existsSync(resolve(root, architecture.getAttribute('href'), 'index.html')));
  }
- assert.equal(document.querySelector('#document-details').closest('article').querySelector('a[href*="PDF2Markdown-"]'), null, 'Do not send anonymous visitors to the unavailable Pageweft source');
+ for (const repository of ['keep-nextjs', 'ig_intel', 'PDF2Markdown-']) {
+  assert.equal(document.querySelector(`.project a[href*="github.com/m-amir-gomaa/${repository}"]`), null,
+   'Commercial cards should lead to public evidence, rather than owner-access repositories');
+ }
+ assert.ok(document.querySelector('a[href="manuals/journal/source-access/"]'));
  for (const anchor of document.querySelectorAll('a[href^="#"]')) assert.ok(document.querySelector(anchor.getAttribute('href')), 'anchor must resolve');
  dom.window.close();
 });

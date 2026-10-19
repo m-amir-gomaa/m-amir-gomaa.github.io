@@ -5,8 +5,8 @@
   "weight": 30,
   "project": "Sonaweft",
   "category": "Reference",
-  "notice": "Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones.",
-  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/00522f212d686ee813f4d0275c34d7c7db48ccef/README.md",
+  "notice": "Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 69d3d0e is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
+  "sourceurl": "",
   "download": "markdown/sonaweft/overview.md"
 }
 
@@ -52,7 +52,7 @@ bin/sonaweft recording.mp3 --review --review-model standard --out ./out
 bin/sonaweft --export-item ./out/ITEM --format vtt
 ```
 
-The launchers resolve NixOS wheel libraries dynamically, prefer an existing tested `.venv-web`, otherwise `.venv`; `SONAWEFT_PYTHON` overrides. Export `DEEPSEEK_API_KEY` only for review. `.env` files are not automatically loaded; see [.env.example](https://github.com/m-amir-gomaa/ig_intel/blob/00522f212d686ee813f4d0275c34d7c7db48ccef/.env.example). `SONAWEFT_VAULT` takes precedence over legacy `IG_INTEL_VAULT`; the old `~/ig_intel/Inbox` default is preserved.
+The launchers resolve NixOS wheel libraries dynamically, prefer an existing tested `.venv-web`, otherwise `.venv`; `SONAWEFT_PYTHON` overrides. Export `DEEPSEEK_API_KEY` only for review. `.env` files are not automatically loaded; see .env.example (source repository requires access). `SONAWEFT_VAULT` takes precedence over legacy `IG_INTEL_VAULT`; the old `~/ig_intel/Inbox` default is preserved.
 
 Private `.pending` checkpoints support retry without repeating successful ASR. Complete exports publish atomically; hashes detect modified/incomplete output, which is preserved. Source/model/review identity suppresses repeats. Cross-path perceptual deduplication is not promised. A killed process may leave `running.lock`; verify it has stopped before removing only that lock.
 
@@ -74,6 +74,6 @@ node --check sonaweft_web/static/app.js
 node --check sonaweft_web/static/checkout.js
 ```
 
-FFmpeg is required by boundary tests. Tests use real temporary SQLite/files/FFprobe with fake model dispatch and mocked payment APIs. Actual model/cloud/browser evidence is recorded separately. [requirements-web.lock](https://github.com/m-amir-gomaa/ig_intel/blob/00522f212d686ee813f4d0275c34d7c7db48ccef/requirements-web.lock) records the tested Linux development environment; [app.py](https://github.com/m-amir-gomaa/ig_intel/blob/00522f212d686ee813f4d0275c34d7c7db48ccef/app.py) pins cloud dependencies and an immutable model revision. No sibling repository is needed. Nix files have a separate verification status in RELEASE.md. New self-hosters need their own credentials, products and approvals.
+FFmpeg is required by boundary tests. Tests use real temporary SQLite/files/FFprobe with fake model dispatch and mocked payment APIs. Actual model/cloud/browser evidence is recorded separately. requirements-web.lock (source repository requires access) records the tested Linux development environment; app.py (source repository requires access) pins cloud dependencies and an immutable model revision. No sibling repository is needed. Nix files have a separate verification status in RELEASE.md. New self-hosters need their own credentials, products and approvals.
 
-MIT application code; upstream tools/models have their own licenses. No speech model guarantees accuracy across accents, noise or long recordings.
+The existing application edition remains MIT; upstream tools/models have their own licenses. Source-access policy and future commercial additions (source repository requires access) preserve that existing grant and require explicit licensing for any future proprietary modules. Private repository access does not withdraw the MIT permissions already granted. No speech model guarantees accuracy across accents, noise or long recordings.

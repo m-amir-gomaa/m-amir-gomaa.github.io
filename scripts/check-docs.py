@@ -67,6 +67,13 @@ def main():
             checked += 1
     inventory = json.loads((ROOT / 'manuals/sources.json').read_text())
     manifest = json.loads((ROOT / 'documentation/manifest.json').read_text())
+    owner_repositories = {project['repository'] for project in manifest['projects'] if project.get('source_access') == 'owner'}
+    for path, document in pages.items():
+        for link in document.links:
+            url = urlsplit(link)
+            parts = unquote(url.path).strip('/').split('/')
+            if url.netloc == 'github.com' and len(parts) >= 2 and parts[0] == 'm-amir-gomaa' and parts[1] in owner_repositories:
+                errors.append(f'{path.relative_to(ROOT)}: owner-access source link should use public evidence: {link}')
     expected_sources = {(project['slug'], entry['path']) for project in manifest['projects'] for entry in project['files']}
     actual_sources = {(record['project'], record['path']) for record in inventory['documents']}
     if actual_sources != expected_sources:

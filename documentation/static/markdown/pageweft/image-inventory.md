@@ -1,8 +1,8 @@
 # Declared image package inventory
 
-> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Source revision d35780b is retained for the owner; anonymous repository access is unavailable. This reviewed public edition is readable independently.
+> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 990e994 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision d35780b9038e6ead15c260965ff53f20e79c6315
+Source baseline: Owner-access repository, revision 990e99478f468f891370471f66d9b40272ea5680
 Reviewed: 2026-10-19
 
 Actual ephemeral CPU inspection of the current deployment package image definitions. Full [wheel metadata and license-file hashes](/manuals/metadata/pageweft-image-inventory.json); SHA256 `4b3bbd7a425c300a9563cfe4a147b0bb1d3e6e49d29a119c7ff75d216d0d1161`. No GPU, model download, customer volume or secret was used. This records installed Python distributions, not a legal compatibility approval. Bundled native/system libraries and model weights need separate review; exact previously observed model revisions and upstream terms are in [third-party source notes](/manuals/pageweft/dependencies/).

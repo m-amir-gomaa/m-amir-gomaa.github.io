@@ -2,7 +2,7 @@
 
 > Historical reference; not part of the current setup or recommended execution path.
 
-Source baseline: https://github.com/m-amir-gomaa/keep-nextjs/blob/59e2325fd9d164a292303bc7bee9cb659438fa4c/docs/ACCOUNTS.md
+Source baseline: Owner-access repository, revision f612e0130637ecf2d1cfbd2d1d1b5c1643013d42
 Reviewed: 2026-10-19
 
 ## Why this record is separate

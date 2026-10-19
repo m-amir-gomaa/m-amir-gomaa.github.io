@@ -99,7 +99,8 @@
           "description": "The import/session milestone, database migration, restore and hosted browser evidence.",
           "category": "Release record"
         }
-      ]
+      ],
+      "source_access": "owner"
     },
     {
       "slug": "pageweft",
@@ -346,7 +347,8 @@
           "path": "docs/DEPENDENCY-INVENTORY-20261019.json",
           "public": "metadata/sonaweft-image-inventory.json"
         }
-      ]
+      ],
+      "source_access": "owner"
     },
     {
       "slug": "vanilla-keep",

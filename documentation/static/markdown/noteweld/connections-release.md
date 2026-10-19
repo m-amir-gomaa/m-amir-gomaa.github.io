@@ -1,8 +1,8 @@
 # Connected notes release
 
-> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current bounded preview includes Markdown/Vim, connected notes, source-bundle imports and browser-session controls. Real Google/GitHub consent remains unverified and provider buttons stay disabled; billing is closed. Earlier release records describe their own milestones.
+> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current bounded preview includes Markdown/Vim, connected notes, source-bundle imports and browser-session controls. Real Google/GitHub consent remains unverified and provider buttons stay disabled; billing is closed. Earlier release records describe their own milestones. Production source revision f612e01 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: https://github.com/m-amir-gomaa/keep-nextjs/blob/59e2325fd9d164a292303bc7bee9cb659438fa4c/docs/CONNECTIONS-RELEASE.md
+Source baseline: Owner-access repository, revision f612e0130637ecf2d1cfbd2d1d1b5c1643013d42
 Reviewed: 2026-10-19
 
 *Original record: Connected notes release — 16 October 2026.*
@@ -15,7 +15,7 @@ Forty unit/React checks and 14 actual PostgreSQL checks passed, including parser
 
 ## Hosted acceptance and source
 
-Application code `e1b8740` is published on `feat/connected-notes`. Actual [GitHub CI run 38877398787](https://github.com/m-amir-gomaa/keep-nextjs/actions/runs/38877398787) completed successfully: clean install, migrations, lint/types, 40 unit/React checks, 14 PostgreSQL checks, production build and all 14 real sandboxed Chrome checks.
+Application code `e1b8740` is published on `feat/connected-notes`. Actual GitHub CI run 38877398787 (source repository requires access) completed successfully: clean install, migrations, lint/types, 40 unit/React checks, 14 PostgreSQL checks, production build and all 14 real sandboxed Chrome checks.
 
 Modal deployed successfully in 116.5 seconds from the immutable credential-free source allowlist, preserving the existing secret, restricted role, backup functions and scale-to-zero limits. Actual returned hostname remains https://m-amir-gomaa--noteweld-web-app.us-east.modal.run. All 14 checks passed against that real HTTPS deployment in 1.7 minutes. This includes actual two-account isolation, stable links across rename/archive/trash/restore/permanent deletion, no rebinding to a replacement title, picker focus, guarded dirty navigation, graph filters/camera, explicit API failure/retry, all original account/recovery and editor/export regressions. The public graph example made no private API requests.
 

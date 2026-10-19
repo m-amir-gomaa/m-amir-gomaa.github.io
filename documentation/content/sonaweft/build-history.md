@@ -11,7 +11,7 @@
 
 ## Source chronology
 
-The original `instascript` command and import paths remain compatible. Hosted workbench [7fde01a](https://github.com/m-amir-gomaa/ig_intel/commit/7fde01a) added the upload/review/export workflow. `5ac1d7c` added the original completed audio example; handoff [68b8472](https://github.com/m-amir-gomaa/ig_intel/tree/68b84726aaf3da129cfe2e796f6d5ac227d57333) normalized artifacts and corrected the provider reference. The old optional Claude/vault documents are archives, not required setup.
+The original `instascript` command and import paths remain compatible. Hosted workbench 7fde01a (owner-access source record) added the upload/review/export workflow. `5ac1d7c` added the original completed audio example; handoff 68b8472 (owner-access source record) normalized artifacts and corrected the provider reference. The old optional Claude/vault documents are archives, not required setup.
 
 ## 1. Preserve source and recover work
 

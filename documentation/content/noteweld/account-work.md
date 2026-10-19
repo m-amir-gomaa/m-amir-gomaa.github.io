@@ -6,7 +6,7 @@
   "project": "Noteweld",
   "category": "Design record",
   "notice": "Historical reference; not part of the current setup or recommended execution path.",
-  "sourceurl": "https://github.com/m-amir-gomaa/keep-nextjs/blob/59e2325fd9d164a292303bc7bee9cb659438fa4c/docs/ACCOUNTS.md",
+  "sourceurl": "",
   "download": "markdown/noteweld/account-work.md"
 }
 

@@ -1,8 +1,8 @@
 # Markdown editor release
 
-> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current bounded preview includes Markdown/Vim, connected notes, source-bundle imports and browser-session controls. Real Google/GitHub consent remains unverified and provider buttons stay disabled; billing is closed. Earlier release records describe their own milestones.
+> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current bounded preview includes Markdown/Vim, connected notes, source-bundle imports and browser-session controls. Real Google/GitHub consent remains unverified and provider buttons stay disabled; billing is closed. Earlier release records describe their own milestones. Production source revision f612e01 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: https://github.com/m-amir-gomaa/keep-nextjs/blob/59e2325fd9d164a292303bc7bee9cb659438fa4c/docs/EDITOR-RELEASE.md
+Source baseline: Owner-access repository, revision f612e0130637ecf2d1cfbd2d1d1b5c1643013d42
 Reviewed: 2026-10-19
 
 *Original record: Markdown/Vim release — 16 October 2026.*
@@ -21,7 +21,7 @@ Workspace, editing dialog, public example and supporting portfolio were checked 
 
 ## Hosted acceptance and source
 
-Code `cbd60fe` was pushed to `feat/markdown-vim-editor`. Actual [GitHub CI run 38872939594](https://github.com/m-amir-gomaa/keep-nextjs/actions/runs/38872939594) completed successfully, including clean dependency installation, PostgreSQL service/migrations, lint/types, all 33 unit/React checks, 13 PostgreSQL checks, production build and all 11 sandboxed Chrome checks.
+Code `cbd60fe` was pushed to `feat/markdown-vim-editor`. Actual GitHub CI run 38872939594 (source repository requires access) completed successfully, including clean dependency installation, PostgreSQL service/migrations, lint/types, all 33 unit/React checks, 13 PostgreSQL checks, production build and all 11 sandboxed Chrome checks.
 
 Modal deployment succeeded from an immutable credential-free source allowlist in 102.4 seconds. Actual returned URL remains https://m-amir-gomaa--noteweld-web-app.us-east.modal.run. The public example is [/example](https://m-amir-gomaa--noteweld-web-app.us-east.modal.run/example). All 11 checks passed against this actual HTTPS deployment (1.1 minutes), including real cookies/persistence/recovery/deletion and both intentional failure simulations. Synthetic accounts were deleted by the journeys. The existing runtime secret, restricted database role, backup key and scale-to-zero limits were preserved. No new provider account, database migration or payment activation was required.
 

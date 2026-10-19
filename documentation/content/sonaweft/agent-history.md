@@ -6,7 +6,7 @@
   "project": "Sonaweft",
   "category": "Archive",
   "notice": "Historical reference; not part of the current setup or recommended execution path.",
-  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/00522f212d686ee813f4d0275c34d7c7db48ccef/docs/claude-code.md",
+  "sourceurl": "",
   "download": "markdown/sonaweft/agent-history.md"
 }
 

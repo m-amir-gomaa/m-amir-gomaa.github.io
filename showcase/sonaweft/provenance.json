@@ -1,0 +1,24 @@
+{
+  "source_project": "Sonaweft",
+  "source_revision": "00522f212d686ee813f4d0275c34d7c7db48ccef",
+  "license": "MIT",
+  "files": [
+    {
+      "path": "instascript/contract.py",
+      "sha256": "b77c953bae16b67549ce2acb7f8356b5d0cab28d92216b07fb7ab19f02989d9b"
+    },
+    {
+      "path": "instascript/subtitles.py",
+      "sha256": "415e5fdde801d364ba330290dec0e1287a7a46e82e6a7881507ff67803d5f3c3"
+    },
+    {
+      "path": "tests/test_subtitles.py",
+      "sha256": "48180190b237a11a0dd0f000a95658ab516f484b2df77e3233e1cea5b91318ea"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "6e8ed2832f996da3b25ab5f1f56ba749982653bdf7f71c1bcaa5effc9db1fc06"
+    }
+  ],
+  "scope": "Selected portable transcript/export code and original subtitle tests; no hosted service or private user data."
+}

@@ -2,7 +2,7 @@
 
 > Historical reference; not part of the current setup or recommended execution path.
 
-Source baseline: https://github.com/m-amir-gomaa/ig_intel/blob/00522f212d686ee813f4d0275c34d7c7db48ccef/docs/claude-code.md
+Source baseline: Owner-access repository, revision 69d3d0e92c8976373cbefb7a4cf847219b04bc22
 Reviewed: 2026-10-19
 
 ## Why this record is separate

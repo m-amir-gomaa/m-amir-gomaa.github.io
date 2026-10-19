@@ -42,7 +42,61 @@
 &lt;h2 id="follow-the-implementation"&gt;Follow the implementation&lt;/h2&gt;
 &lt;p&gt;Read the technical overview, then the specific architecture/editor/connections manual. Imported documents link an exact committed source revision. A local documentation edition is marked when it includes uncommitted documentation changes; the link then identifies the committed baseline.&lt;/p&gt;</description></item><item><title>Maintaining this documentation library</title><link>https://amirgomaa.com/manuals/journal/publishing/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/publishing/</guid><description>&lt;h2 id="source-and-publication"&gt;Source and publication&lt;/h2&gt;
 &lt;p&gt;The actual portfolio repository contains &lt;code&gt;documentation/&lt;/code&gt; for Hugo source and &lt;code&gt;manuals/&lt;/code&gt; for generated static output. The existing GitHub Pages root serves both the portfolio and &lt;code&gt;/manuals/&lt;/code&gt;. No application server, visitor login, external font, analytics service or search API is needed.&lt;/p&gt;
-&lt;p&gt;Hugo 0.156.0 is the recorded build version. Imported project README/docs files are explicitly listed in &lt;code&gt;documentation/manifest.json&lt;/code&gt;; this is not a recursive copy of the workspace. Current usage guides and journal entries are authored directly in Hugo content.&lt;/p&gt;</description></item><item><title>Building the portfolio and Fieldnotes</title><link>https://amirgomaa.com/manuals/journal/build-history/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/build-history/</guid><description>&lt;h2 id="portfolio-publication"&gt;Portfolio publication&lt;/h2&gt;
+&lt;p&gt;Hugo 0.156.0 is the recorded build version. Imported project README/docs files are explicitly listed in &lt;code&gt;documentation/manifest.json&lt;/code&gt;; this is not a recursive copy of the workspace. Current usage guides and journal entries are authored directly in Hugo content.&lt;/p&gt;</description></item><item><title>Public examples and commercial source</title><link>https://amirgomaa.com/manuals/journal/source-access/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/source-access/</guid><description>&lt;h2 id="inspect-the-work"&gt;Inspect the work&lt;/h2&gt;
+&lt;p&gt;The public portfolio combines working applications, implementation manuals,
+release records and deliberately selected source examples. Production source
+access is reserved for owner-authorized review. This describes the publication
+policy; it is not proof of a repository&amp;rsquo;s current GitHub visibility setting.&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Project&lt;/th&gt;
+ &lt;th&gt;Public evidence&lt;/th&gt;
+ &lt;th&gt;Source and licensing boundary&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Noteweld&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://noteweld.amirgomaa.com/example"&gt;Editor&lt;/a&gt;
+, &lt;a href="https://noteweld.amirgomaa.com/example/graph"&gt;graph&lt;/a&gt;
+, &lt;a href="https://amirgomaa.com/manuals/noteweld/overview/"&gt;implementation&lt;/a&gt;
+&lt;/td&gt;
+ &lt;td&gt;Original application material is reserved; third-party software and asset terms remain in force.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Pageweft&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://pageweft.amirgomaa.com/"&gt;Converter&lt;/a&gt;
+, &lt;a href="https://amirgomaa.com/manuals/pageweft/overview/"&gt;implementation&lt;/a&gt;
+, original sample in the portfolio&lt;/td&gt;
+ &lt;td&gt;Original application rights and upstream engine/model licenses are separate; MinerU review remains a release gate.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Sonaweft&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://sonaweft.amirgomaa.com/example"&gt;Recording example&lt;/a&gt;
+, &lt;a href="https://amirgomaa.com/manuals/sonaweft/overview/"&gt;implementation&lt;/a&gt;
+, selected MIT code below&lt;/td&gt;
+ &lt;td&gt;The existing application edition remains MIT. Source privacy does not revoke earlier grants; future private modules need explicit terms.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Noteweld Local&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://amirgomaa.com/manuals/demos/keep/"&gt;Interactive demo&lt;/a&gt;
+, &lt;a href="https://github.com/m-amir-gomaa/Keep"&gt;public JavaScript source&lt;/a&gt;
+, &lt;a href="https://amirgomaa.com/manuals/vanilla-keep/"&gt;manual&lt;/a&gt;
+&lt;/td&gt;
+ &lt;td&gt;Remains public; its existing package declares ISC. Asset ownership is separate.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="a-runnable-sonaweft-excerpt"&gt;A runnable Sonaweft excerpt&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/m-amir-gomaa/m-amir-gomaa.github.io/tree/main/showcase/sonaweft"&gt;Open the selected source and its MIT license&lt;/a&gt;
+.
+The transcript contract and subtitle renderer are copied unchanged from
+&lt;code&gt;00522f212d686ee813f4d0275c34d7c7db48ccef&lt;/code&gt;, with per-file hashes in
+&lt;code&gt;provenance.json&lt;/code&gt;. This is an actual application excerpt, independently runnable
+using the Python standard library. Additional standalone tests check original
+preservation, quote validation, malformed timing, annotation ownership and
+the manifest&amp;rsquo;s exported-file hashes.&lt;/p&gt;</description></item><item><title>Building the portfolio and Fieldnotes</title><link>https://amirgomaa.com/manuals/journal/build-history/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/build-history/</guid><description>&lt;h2 id="portfolio-publication"&gt;Portfolio publication&lt;/h2&gt;
 &lt;p&gt;The active site source is the standalone &lt;code&gt;m-amir-gomaa.github.io&lt;/code&gt; repository. Its static HTML/CSS/JavaScript redesign was published before adding the source-aware Pageweft sample viewer, corrected contact address, Sonaweft audio example and Noteweld links. Covers that illustrate a workflow remain labeled illustrations.&lt;/p&gt;
 &lt;p&gt;Selected published revisions give useful audit anchors:&lt;/p&gt;
 &lt;table&gt;

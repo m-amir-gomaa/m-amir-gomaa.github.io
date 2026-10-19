@@ -25,7 +25,7 @@ Actual GPU extraction checked selected pages from an original four-page fixture.
 
 The book ledger has one serialized writer, distinct from the older prototype ledger. Credit holds are reserved, settled or released transactionally; duplicate confirmation does not dispatch twice. Processing and file retention are separate from persistent financial records. Owner reports, admission envelopes, pause and encrypted snapshots were added. Admission estimates are not a whole-account cloud bill cap.
 
-One-time $5/$10 packs replaced the earlier monthly access proposal. Rename commit `1372062` introduced Pageweft while retaining cloud/storage identities. Paddle integration commit [e7a70ee](https://github.com/m-amir-gomaa/PDF2Markdown-/tree/e7a70ee08940f935e1d1385d9811bbe5b724028a) superseded the Lemon Squeezy activation path. Signed events enter a durable inbox; fresh provider state and server-owned intents control grants/refunds. Current source has 78 automated checks; payment HTTP in those checks is mocked.
+One-time $5/$10 packs replaced the earlier monthly access proposal. Rename commit `1372062` introduced Pageweft while retaining cloud/storage identities. Paddle integration commit e7a70ee (owner-access source record) superseded the Lemon Squeezy activation path. Signed events enter a durable inbox; fresh provider state and server-owned intents control grants/refunds. Current source has 78 automated checks; payment HTTP in those checks is mocked.
 
 ## Successful commands and prerequisites
 

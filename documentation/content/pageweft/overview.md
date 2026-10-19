@@ -5,10 +5,12 @@
   "weight": 30,
   "project": "Pageweft",
   "category": "Reference",
-  "notice": "Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Source revision d35780b is retained for the owner; anonymous repository access is unavailable. This reviewed public edition is readable independently.",
+  "notice": "Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 990e994 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
   "sourceurl": "",
   "download": "markdown/pageweft/overview.md"
 }
+
+Original Pageweft material has a scoped rights notice (source repository requires access); third-party licenses and applicable source obligations remain in force. The pinned MinerU engine is AGPL-3.0. [Exact dependency notes](/manuals/pageweft/dependencies/) describe the remaining integration/model review; repository privacy is not a licensing clearance.
 
 Formerly Document Studio; renamed with Amir's approval on 15 October 2026. Canonical local path: `~/Projects/freelance/pageweft`, with the old directory kept as a compatibility symlink. Existing public GitHub/Modal URLs and permanent storage/session/secret identifiers are retained so bookmarks, accounts and credits keep working.
 
