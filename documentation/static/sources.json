@@ -284,7 +284,7 @@
     {
       "project": "sonaweft",
       "path": "README.md",
-      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
+      "revision": "4da017611edbb2bd57f736fad44428e47d2fc50a",
       "working_copy": false,
       "source_sha256": "e6e184b612a49c3fe73ad0fe62e4e343695df7a158db770cc392c7d128064b41",
       "public_sha256": "af5396b323012d9d629c8bcd48f545b10e52c9efeba30654dd97e57590a05acf",
@@ -294,7 +294,7 @@
     {
       "project": "sonaweft",
       "path": "docs/PRODUCT.md",
-      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
+      "revision": "4da017611edbb2bd57f736fad44428e47d2fc50a",
       "working_copy": true,
       "source_sha256": "28d9004dadfdb26da007387adb44a840aae9d4622637b68e200d86805df27787",
       "public_sha256": "edb942f3ad7734a2d7db1cdffb915e884a916f9abf93b7a32f50b912c536929f",
@@ -304,7 +304,7 @@
     {
       "project": "sonaweft",
       "path": "docs/architecture.md",
-      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
+      "revision": "4da017611edbb2bd57f736fad44428e47d2fc50a",
       "working_copy": false,
       "source_sha256": "0a35814a6539c429bf35daa684d4aaf19b0003a79f5a69cb46eb5884beb3c9cc",
       "public_sha256": "3032b2123e5c508b2741dbad1ac0560a9fc059a9795fcc3839c364c27b130386",
@@ -314,7 +314,7 @@
     {
       "project": "sonaweft",
       "path": "docs/OPERATIONS.md",
-      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
+      "revision": "4da017611edbb2bd57f736fad44428e47d2fc50a",
       "working_copy": false,
       "source_sha256": "75d6e79143d2eb2d2e6d85c61122904c2efbe2fea635f83cf6412c8e5a2183b6",
       "public_sha256": "0c08f7eac6b04d62fa04cce479e37875b739f0f356d03da210be81d600c24f1d",
@@ -324,7 +324,7 @@
     {
       "project": "sonaweft",
       "path": "docs/RELEASE.md",
-      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
+      "revision": "4da017611edbb2bd57f736fad44428e47d2fc50a",
       "working_copy": false,
       "source_sha256": "c6c3eccaa9a2540660f86bc254e5142a6ec5c798858b27fa0b3628eaf42da2c6",
       "public_sha256": "c0227eb55a1d6fd3f486193d66f3b8eeb8221138bef73d91ed96bb61138f0b21",
@@ -334,7 +334,7 @@
     {
       "project": "sonaweft",
       "path": "docs/claude-code.md",
-      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
+      "revision": "4da017611edbb2bd57f736fad44428e47d2fc50a",
       "working_copy": false,
       "source_sha256": "9f5ee4636a5f2a7fba47a3b0424cae725737884145d594304309eebe0bbef949",
       "public_sha256": "d2451fe63f9285871ab143478292fab02df4ea1f6a39b816c367bc99350b17c9",
@@ -344,7 +344,7 @@
     {
       "project": "sonaweft",
       "path": "docs/demo-upwork.md",
-      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
+      "revision": "4da017611edbb2bd57f736fad44428e47d2fc50a",
       "working_copy": false,
       "source_sha256": "8d748cff46bfed309360a869e710a5d4591322efbdcc2e3fdeabb6fbadcaa3cc",
       "public_sha256": "d6bd6f2f5d8ee00c4c721126fc50645b394dd35578c9e8020592e1f9517ff343",
@@ -354,7 +354,7 @@
     {
       "project": "sonaweft",
       "path": "docs/second-brain.md",
-      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
+      "revision": "4da017611edbb2bd57f736fad44428e47d2fc50a",
       "working_copy": false,
       "source_sha256": "b250a3df5411928ff6612d0e8435e4dd60c0b957260f1ad7913a5ea1ca80e312",
       "public_sha256": "dbf6ff09693a874445a76d50c899169ebc3a5753cc9b6842dbff13ad4834828a",
@@ -364,7 +364,7 @@
     {
       "project": "sonaweft",
       "path": "docs/CUSTOM-DOMAIN.md",
-      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
+      "revision": "4da017611edbb2bd57f736fad44428e47d2fc50a",
       "working_copy": false,
       "source_sha256": "14e0813c26288196e2f8167ae914571cd0e64f4e96a0cec5f44d144f7a81b2ad",
       "public_sha256": "95d8ed17a71bed97278e3f8f78aae696ecd8437fe870edb28f034c4ef0340da2",
@@ -374,7 +374,7 @@
     {
       "project": "sonaweft",
       "path": "docs/SOURCE-WORKFLOW-RELEASE.md",
-      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
+      "revision": "4da017611edbb2bd57f736fad44428e47d2fc50a",
       "working_copy": false,
       "source_sha256": "dbb8dbbe9247e2c6c41e3bbffe9444d35a937eea4ffc04ca1474cc68ecd6ab56",
       "public_sha256": "fda64546f85af613cc95ce6f76333ee497af00b3952bc8fc0da908e41e226b3d",
@@ -384,7 +384,7 @@
     {
       "project": "sonaweft",
       "path": "docs/QUALITY-BENCHMARKS.md",
-      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
+      "revision": "4da017611edbb2bd57f736fad44428e47d2fc50a",
       "working_copy": false,
       "source_sha256": "68736c256d1af77864ff19ace2f1403891df7b8a23231d8a589cca7e5f689585",
       "public_sha256": "f672e2f60c943eb1c625f44ef281a78d6e5427970a08594804cf2ea893610838",
@@ -394,11 +394,21 @@
     {
       "project": "sonaweft",
       "path": "docs/DEPENDENCY-INVENTORY.md",
-      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
+      "revision": "4da017611edbb2bd57f736fad44428e47d2fc50a",
       "working_copy": false,
       "source_sha256": "3735af09297d8a739134afe45d903c0e5b674494b1370618c5d36a792dfa764b",
       "public_sha256": "1290e649e49ed45c5aec171c999efcd220d8b56b900a0de973bccf6bf15dcd2d",
       "url": "/manuals/sonaweft/image-inventory/",
+      "mode": "public-edition"
+    },
+    {
+      "project": "sonaweft",
+      "path": "docs/ANNOTATION-HISTORY.md",
+      "revision": "4da017611edbb2bd57f736fad44428e47d2fc50a",
+      "working_copy": false,
+      "source_sha256": "321dc8a49bf856974104b761a5fa453631371e41618ffd9eddc7bb4d7ccb36d1",
+      "public_sha256": "8c3b58c60cd34d8b6d356a801bf4d08606f7d6d598d10a1ef7dc735c53b4e8a7",
+      "url": "/manuals/sonaweft/annotation-history/",
       "mode": "public-edition"
     },
     {
@@ -423,7 +433,7 @@
     {
       "project": "sonaweft",
       "path": "docs/DEPENDENCY-INVENTORY-20261019.json",
-      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
+      "revision": "4da017611edbb2bd57f736fad44428e47d2fc50a",
       "sha256": "4e1fbbab5b0c50ab0afd77f0c95341c011bd4829b23bc5a402661dfcda1a68a0",
       "url": "/manuals/metadata/sonaweft-image-inventory.json"
     }

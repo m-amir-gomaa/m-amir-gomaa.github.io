@@ -260,7 +260,19 @@ the manifest&amp;rsquo;s exported-file hashes.&lt;/p&gt;</description></item><it
 &lt;p&gt;Neon hosts PostgreSQL. Noteweld connects through standard &lt;code&gt;pg&lt;/code&gt;/Drizzle and stores accounts, notes, labels, revisions and recovery/session state there. Modal runs the Node application; the two providers have separate roles. Moving the database later needs migration/connection configuration, not a replacement for SQL.&lt;/p&gt;
 &lt;p&gt;Neon supports autoscaling, idle suspension and branching. Its advertised Free tier currently includes 100 CU-hours and 1 GB per project. That is a published allowance, not verification of an individual account plan. &lt;a href="https://neon.com/docs/get-started/why-neon"&gt;Neon overview&lt;/a&gt;
 , &lt;a href="https://neon.com/pricing"&gt;pricing&lt;/a&gt;
-, checked 16 October 2026.&lt;/p&gt;</description></item><item><title>Source and implementation notes</title><link>https://amirgomaa.com/manuals/vanilla-keep/overview/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/vanilla-keep/overview/</guid><description>&lt;p&gt;A free, browser-only notes and checklist demo built with native DOM APIs, CSS, localStorage and Webpack. It shares Noteweld’s product family and deliberately has no account, server or paid features. The existing Keep repository and public URL are preserved.&lt;/p&gt;
+, checked 16 October 2026.&lt;/p&gt;</description></item><item><title>Making transcript review recoverable</title><link>https://amirgomaa.com/manuals/journal/recoverable-review/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/recoverable-review/</guid><description>&lt;h2 id="the-user-problem"&gt;The user problem&lt;/h2&gt;
+&lt;p&gt;A transcript can be corrected successfully while the editing workflow still loses
+valuable work. In-tab undo is insufficient after a reload, and a revision number
+prevents conflicting saves without keeping the earlier text. Sonaweft now keeps
+bounded, durable annotation snapshots and lets the owner compare and restore them.
+The original recognition remains a separate source throughout.&lt;/p&gt;
+&lt;p&gt;Try the &lt;a href="https://sonaweft.amirgomaa.com/"&gt;live workbench&lt;/a&gt;
+ or read the
+&lt;a href="https://amirgomaa.com/manuals/sonaweft/annotation-history/"&gt;history usage guide&lt;/a&gt;
+. A
+&lt;a href="https://sonaweft.amirgomaa.com/example"&gt;completed original example&lt;/a&gt;
+ is readable
+without consuming processing credit.&lt;/p&gt;</description></item><item><title>Source and implementation notes</title><link>https://amirgomaa.com/manuals/vanilla-keep/overview/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/vanilla-keep/overview/</guid><description>&lt;p&gt;A free, browser-only notes and checklist demo built with native DOM APIs, CSS, localStorage and Webpack. It shares Noteweld’s product family and deliberately has no account, server or paid features. The existing Keep repository and public URL are preserved.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://m-amir-gomaa.github.io/Keep/"&gt;Live demo&lt;/a&gt;
  · &lt;a href="https://github.com/m-amir-gomaa/Keep"&gt;Source&lt;/a&gt;
  · &lt;a href="https://m-amir-gomaa.github.io/"&gt;Portfolio and manuals&lt;/a&gt;
@@ -612,7 +624,25 @@ until confirmation. Earlier results and corrections remain separate.&lt;/p&gt;</
  for provider setup, and the dated foundation/editor/connections records for earlier evidence.&lt;/p&gt;
 &lt;p&gt;Pageweft/Sonaweft ZIPs now have a previewed, validated, transactionally atomic import. Raw archives are immutable, account-scoped and SHA256/CRC checked; paths, expansion, encoding, references, counts and capacity fail closed. Retained asset links use authenticated endpoints; imported note links use stable IDs. Original extraction, user corrections and AI-derived text remain labelled. Idempotent retries and deliberate duplicates have distinct semantics. Source deletion preserves editable notes; account deletion cascades through sources and sessions. The source traffic allowance is explicit and conservative, not a provider bill ceiling.&lt;/p&gt;</description></item><item><title>Custom domain and account access</title><link>https://amirgomaa.com/manuals/pageweft/custom-domain/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/pageweft/custom-domain/</guid><description>&lt;p&gt;Public address: &lt;strong&gt;&lt;a href="https://pageweft.amirgomaa.com/"&gt;https://pageweft.amirgomaa.com/&lt;/a&gt;
 &lt;/strong&gt;. A fixed-origin Cloudflare Workers Free gateway connects to the preserved Modal endpoint; Modal still runs the app and processing. No Team upgrade or live payment activation was made. The shared reproducible gateway source/config/tests and rollout guide are in the workspace at &lt;code&gt;freelance/workflow/cloudflare-edge/&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Session/payment secrets, volumes, existing balances and processing limits remain unchanged. A separate &lt;code&gt;pageweft-edge&lt;/code&gt; Modal secret authenticates time-bounded client-IP assertions from this Worker for rate quotas. Direct Modal requests retain the existing last-proxy-hop fallback. The web boundary still verifies CSRF tokens; the gateway rejects unsafe cross-origin requests before mapping its own trusted Origin to the upstream origin. Uploads/responses stream, cache mode is explicitly &lt;code&gt;no-store&lt;/code&gt;, and cookies stay host-only Secure/HttpOnly. Initial live verification caught and corrected a TTL-zero cache override that stripped cookies; do not reintroduce &lt;code&gt;cf.cacheTtl: 0&lt;/code&gt; as a cache-disable switch.&lt;/p&gt;</description></item><item><title>Source workflow and diagnostics release</title><link>https://amirgomaa.com/manuals/pageweft/source-workflow-release/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/pageweft/source-workflow-release/</guid><description>&lt;p&gt;&lt;em&gt;Original record: Source workflow and diagnostics — 18 October 2026.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Session/payment secrets, volumes, existing balances and processing limits remain unchanged. A separate &lt;code&gt;pageweft-edge&lt;/code&gt; Modal secret authenticates time-bounded client-IP assertions from this Worker for rate quotas. Direct Modal requests retain the existing last-proxy-hop fallback. The web boundary still verifies CSRF tokens; the gateway rejects unsafe cross-origin requests before mapping its own trusted Origin to the upstream origin. Uploads/responses stream, cache mode is explicitly &lt;code&gt;no-store&lt;/code&gt;, and cookies stay host-only Secure/HttpOnly. Initial live verification caught and corrected a TTL-zero cache override that stripped cookies; do not reintroduce &lt;code&gt;cf.cacheTtl: 0&lt;/code&gt; as a cache-disable switch.&lt;/p&gt;</description></item><item><title>Recoverable transcript review</title><link>https://amirgomaa.com/manuals/sonaweft/annotation-history/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/sonaweft/annotation-history/</guid><description>&lt;p&gt;Sonaweft keeps the original machine transcript unchanged. Corrections and speaker
+labels are your annotations. Their latest 20 saved states now survive a reload or
+recovered workspace, for as long as the recording itself remains available.&lt;/p&gt;
+&lt;h2 id="use-saved-history"&gt;Use saved history&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open a completed result with &lt;strong&gt;Review &amp;amp; export&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Expand &lt;strong&gt;Saved edit history&lt;/strong&gt; and choose &lt;strong&gt;Load saved history&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Choose a version. Changed passages show the current saved text/label beside
+the selected version. Reading history never replaces the editor draft.&lt;/li&gt;
+&lt;li&gt;Save any unfinished correction or speaker label first. Select &lt;strong&gt;Restore this
+version as a new save&lt;/strong&gt; and confirm the scope: every annotation in this result,
+rather than only the passage currently selected.&lt;/li&gt;
+&lt;li&gt;Restoration creates a new revision. Retained earlier saves and the original
+ASR remain available; another tab cannot silently overwrite a newer revision.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The comparison is plain inert text, including source material that resembles HTML.
+The current save is marked explicitly. A result changed in another tab must be
+reopened before restoring; failed requests preserve the saved result and draft.
+Inputs are temporarily disabled during an annotation write to prevent lost typing.&lt;/p&gt;</description></item><item><title>Source workflow and diagnostics release</title><link>https://amirgomaa.com/manuals/pageweft/source-workflow-release/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/pageweft/source-workflow-release/</guid><description>&lt;p&gt;&lt;em&gt;Original record: Source workflow and diagnostics — 18 October 2026.&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id="extraction-lineage-follow-through--19-october-2026"&gt;Extraction lineage follow-through — 19 October 2026&lt;/h2&gt;
 &lt;p&gt;Reprocessing now exposes the original extractor versions alongside the preserved
 user correction. The history reader returns the first and 19 most recent versions

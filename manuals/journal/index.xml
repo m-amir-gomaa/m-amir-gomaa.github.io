@@ -143,4 +143,16 @@ the manifest&amp;rsquo;s exported-file hashes.&lt;/p&gt;</description></item><it
 &lt;p&gt;Neon hosts PostgreSQL. Noteweld connects through standard &lt;code&gt;pg&lt;/code&gt;/Drizzle and stores accounts, notes, labels, revisions and recovery/session state there. Modal runs the Node application; the two providers have separate roles. Moving the database later needs migration/connection configuration, not a replacement for SQL.&lt;/p&gt;
 &lt;p&gt;Neon supports autoscaling, idle suspension and branching. Its advertised Free tier currently includes 100 CU-hours and 1 GB per project. That is a published allowance, not verification of an individual account plan. &lt;a href="https://neon.com/docs/get-started/why-neon"&gt;Neon overview&lt;/a&gt;
 , &lt;a href="https://neon.com/pricing"&gt;pricing&lt;/a&gt;
-, checked 16 October 2026.&lt;/p&gt;</description></item></channel></rss>
+, checked 16 October 2026.&lt;/p&gt;</description></item><item><title>Making transcript review recoverable</title><link>https://amirgomaa.com/manuals/journal/recoverable-review/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/recoverable-review/</guid><description>&lt;h2 id="the-user-problem"&gt;The user problem&lt;/h2&gt;
+&lt;p&gt;A transcript can be corrected successfully while the editing workflow still loses
+valuable work. In-tab undo is insufficient after a reload, and a revision number
+prevents conflicting saves without keeping the earlier text. Sonaweft now keeps
+bounded, durable annotation snapshots and lets the owner compare and restore them.
+The original recognition remains a separate source throughout.&lt;/p&gt;
+&lt;p&gt;Try the &lt;a href="https://sonaweft.amirgomaa.com/"&gt;live workbench&lt;/a&gt;
+ or read the
+&lt;a href="https://amirgomaa.com/manuals/sonaweft/annotation-history/"&gt;history usage guide&lt;/a&gt;
+. A
+&lt;a href="https://sonaweft.amirgomaa.com/example"&gt;completed original example&lt;/a&gt;
+ is readable
+without consuming processing credit.&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,47 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=theme-color content="#f6f5f0"><meta name=description content="Compare and restore saved corrections and speaker labels, retain hashed history exports, and understand deletion and expiry."><title>Recoverable transcript review · Fieldnotes</title><link rel=canonical href=https://amirgomaa.com/manuals/sonaweft/annotation-history/><meta property="og:title" content="Recoverable transcript review · Fieldnotes"><meta property="og:description" content="Compare and restore saved corrections and speaker labels, retain hashed history exports, and understand deletion and expiry."><meta property="og:type" content="article"><meta property="og:url" content="https://amirgomaa.com/manuals/sonaweft/annotation-history/"><link rel=stylesheet href=/manuals/fieldnotes.min.4de8b8f93361485a648444e9b2616cb11be15edbc1b08ce8035e8f8e990c6e6a.css integrity="sha256-Tei4+TNhSFpkhETpsmFssRvhXtvBsIzoA16PjpkMbmo="><script src=/manuals/fieldnotes.min.c65f7c30701fee59bee19705037dec00c8a05d4d0d5f99ed202ec39411de9bcf.js integrity="sha256-xl98MHAf7lm+4ZcFA33sAMigXU0NX5ntIC7DlBHem88=" defer></script><link rel=alternate type=application/rss+xml title="Fieldnotes feed" href=https://amirgomaa.com/manuals/index.xml></head><body><a class=skip-link href=#main>Skip to content</a><header class="header shell"><a class=brand href=/manuals/ aria-label="Fieldnotes home">mg<span>/</span><small>FIELDNOTES</small></a><nav aria-label="Main navigation"><a href=/manuals/#library>Manuals</a><a href=/manuals/journal/>Journal</a><a href=/manuals/development-environment/>Workbench</a><a href=/>Portfolio <span aria-hidden=true>→</span></a></nav></header><main id=main class="shell reading-page"><div class=breadcrumbs><a href=/manuals/>Fieldnotes</a><span aria-hidden=true>/</span><a href=/manuals/sonaweft/>Sonaweft</a></div><header class=article-header><p class=eyebrow>Usage guide / Sonaweft</p><h1>Recoverable transcript review</h1><p class=lede>Compare and restore saved corrections and speaker labels, retain hashed history exports, and understand deletion and expiry.</p><div class=article-meta><time datetime=2026-10-19>19 October 2026</time><span>4 min read</span><a href=/manuals/markdown/sonaweft/annotation-history.md download>Download Markdown ↓</a></div></header><aside class=notice aria-label="Document context">Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 4da0176 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.</aside><div class=reading-grid><article class=prose><p>Sonaweft keeps the original machine transcript unchanged. Corrections and speaker
+labels are your annotations. Their latest 20 saved states now survive a reload or
+recovered workspace, for as long as the recording itself remains available.</p><h2 id=use-saved-history>Use saved history</h2><ol><li>Open a completed result with <strong>Review & export</strong>.</li><li>Expand <strong>Saved edit history</strong> and choose <strong>Load saved history</strong>.</li><li>Choose a version. Changed passages show the current saved text/label beside
+the selected version. Reading history never replaces the editor draft.</li><li>Save any unfinished correction or speaker label first. Select <strong>Restore this
+version as a new save</strong> and confirm the scope: every annotation in this result,
+rather than only the passage currently selected.</li><li>Restoration creates a new revision. Retained earlier saves and the original
+ASR remain available; another tab cannot silently overwrite a newer revision.</li></ol><p>The comparison is plain inert text, including source material that resembles HTML.
+The current save is marked explicitly. A result changed in another tab must be
+reopened before restoring; failed requests preserve the saved result and draft.
+Inputs are temporarily disabled during an annotation write to prevent lost typing.</p><h2 id=portability-and-retention>Portability and retention</h2><p>The complete ZIP includes <strong>annotation-history.json</strong>, identified as
+<code>sonaweft-annotations/v1</code> and covered by the export manifest&rsquo;s SHA-256 hashes.
+It contains the retained snapshots, revision numbers, actions and available save
+times. Restore records identify the revision restored. Imported legacy results
+start with their real existing state; the app does not fabricate earlier edits
+or an unknown last-save date. Noteweld retains this file with the original bundle;
+it does not import the snapshots as separate notes or offer Sonaweft restoration.</p><p>History has the same source ownership and expiry as the result: normally 48 hours.
+Deleting a recording removes its annotation rows and clears both current
+corrections and speaker labels. Expiry cleanup also removes the snapshots.
+Financial backups exclude transcript corrections, labels and their history.
+Downloading a bundle is necessary if you want a longer-lived personal copy.
+It is not an indefinite hosted archive or a financial/audit record.</p><p>Each result has a 256 KiB combined annotation-state limit and at most 20 retained
+states. Very large exports still have to meet the destination&rsquo;s import limits;
+Noteweld currently accepts ZIP files up to 4 MiB with its existing note/file quotas.</p><h2 id=returning-to-a-full-recording-quote>Returning to a full-recording quote</h2><p>After inspecting an interval, choose <strong>Use the full recording</strong>. The server
+re-quotes that same upload; the app does not duplicate the file, calculate a
+different tariff locally or start processing. The first-30-second sample becomes
+eligible only if it still meets the existing mode, workspace, IP and global quotas.
+Returning to the full recording never resets a consumed trial allowance.</p><h2 id=implementation-and-verification>Implementation and verification</h2><ul><li><code>sonaweft_web/annotations.py</code> stores snapshots in the existing serialized
+SQLite writer. Annotation changes, snapshots and retention pruning share one
+transaction; a failed snapshot rolls back the current annotation too.</li><li>History reads and restore require the owned, completed, unexpired result.
+Restore also requires CSRF verification, a current expected revision and the
+annotation rate limit. Boolean/malformed revisions are rejected.</li><li><code>ledger.py</code> integrates history with source deletion, cleanup and content-free
+financial snapshots. <code>app.py</code> registers only the three named store operations;
+the HTTP boundary does not expose a generic ledger operation endpoint.</li><li>Real SQLite/HTTP tests cover recovery, migration from existing revisions,
+conflicts, retention, invalid input, cross-workspace isolation, deletion,
+rollback, backup exclusion and original-ASR-preserving hashed exports.</li><li>DOM tests cover stale responses, draft safety, explicit restore, inert text and
+request failure. Real Chromium tests use local SQLite and media decoding with
+an explicitly replayed original demo ASR; they do not claim new transcription
+accuracy, provider payments or external OAuth acceptance.</li><li>Browser review covers 320/390/768/1440 widths and automated WCAG A/AA checks on
+the review panel. Real people, physical devices and Safari remain separate
+evidence. Motion respects reduced-motion settings, and entry animation is
+restricted to the review header rather than a large composited editor surface.</li></ul><p>For a repeatable browser run, start <code>scripts.preview_source:app</code> with a <strong>fresh
+private SONAWEFT_PREVIEW_DIR</strong>. Reusing an old preview can correctly exhaust the
+real trial quota; do not raise production allowances to make tests pass. Then run
+<code>node scripts/source-review.browser.cjs</code> against its loopback URL. The fixture
+accepts only the original public example recording and makes no model/payment call.</p><p>This improves recoverability and continuity of source review. It is not a claim
+that version history is unique to Sonaweft, or that accuracy, demand and profitability
+have been established. Billing activation remains a separate verified milestone.</p><div class=article-end><a href=/manuals/sonaweft/>← All Sonaweft documents</a><a href=#main>Back to top ↑</a></div></article><aside class=toc aria-label="On this page"><details open><summary>On this page</summary><nav id=TableOfContents><ul><li><a href=#use-saved-history>Use saved history</a></li><li><a href=#portability-and-retention>Portability and retention</a></li><li><a href=#returning-to-a-full-recording-quote>Returning to a full-recording quote</a></li><li><a href=#implementation-and-verification>Implementation and verification</a></li></ul></nav></details><p>Read with the source.<br>Report anything unclear.</p></aside></div></main><footer class="footer shell"><span>© 2026 Mohamed Amir Gomaa · Built with Hugo.</span><a href=mailto:mo.gomaa.formal@gmail.com>Questions or corrections →</a><a href=/manuals/index.xml>RSS</a></footer></body></html>

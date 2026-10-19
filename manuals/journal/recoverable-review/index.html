@@ -1,0 +1,58 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=theme-color content="#f6f5f0"><meta name=description content="A concrete Sonaweft improvement, from a code map to transaction tests, accessible comparison and portable recovery."><title>Making transcript review recoverable · Fieldnotes</title><link rel=canonical href=https://amirgomaa.com/manuals/journal/recoverable-review/><meta property="og:title" content="Making transcript review recoverable · Fieldnotes"><meta property="og:description" content="A concrete Sonaweft improvement, from a code map to transaction tests, accessible comparison and portable recovery."><meta property="og:type" content="article"><meta property="og:url" content="https://amirgomaa.com/manuals/journal/recoverable-review/"><link rel=stylesheet href=/manuals/fieldnotes.min.4de8b8f93361485a648444e9b2616cb11be15edbc1b08ce8035e8f8e990c6e6a.css integrity="sha256-Tei4+TNhSFpkhETpsmFssRvhXtvBsIzoA16PjpkMbmo="><script src=/manuals/fieldnotes.min.c65f7c30701fee59bee19705037dec00c8a05d4d0d5f99ed202ec39411de9bcf.js integrity="sha256-xl98MHAf7lm+4ZcFA33sAMigXU0NX5ntIC7DlBHem88=" defer></script><link rel=alternate type=application/rss+xml title="Fieldnotes feed" href=https://amirgomaa.com/manuals/index.xml></head><body><a class=skip-link href=#main>Skip to content</a><header class="header shell"><a class=brand href=/manuals/ aria-label="Fieldnotes home">mg<span>/</span><small>FIELDNOTES</small></a><nav aria-label="Main navigation"><a href=/manuals/#library>Manuals</a><a href=/manuals/journal/>Journal</a><a href=/manuals/development-environment/>Workbench</a><a href=/>Portfolio <span aria-hidden=true>→</span></a></nav></header><main id=main class="shell reading-page"><div class=breadcrumbs><a href=/manuals/>Fieldnotes</a><span aria-hidden=true>/</span><a href=/manuals/journal/>Journal</a></div><header class=article-header><p class=eyebrow>Engineering journal / Fieldnotes</p><h1>Making transcript review recoverable</h1><p class=lede>A concrete Sonaweft improvement, from a code map to transaction tests, accessible comparison and portable recovery.</p><div class=article-meta><time datetime=2026-10-19>19 October 2026</time><span>4 min read</span><a href=/manuals/markdown/journal/recoverable-review.md download>Download Markdown ↓</a></div></header><div class=reading-grid><article class=prose><h2 id=the-user-problem>The user problem</h2><p>A transcript can be corrected successfully while the editing workflow still loses
+valuable work. In-tab undo is insufficient after a reload, and a revision number
+prevents conflicting saves without keeping the earlier text. Sonaweft now keeps
+bounded, durable annotation snapshots and lets the owner compare and restore them.
+The original recognition remains a separate source throughout.</p><p>Try the <a href=https://sonaweft.amirgomaa.com/>live workbench</a>
+or read the
+<a href=/manuals/sonaweft/annotation-history/>history usage guide</a>
+. A
+<a href=https://sonaweft.amirgomaa.com/example>completed original example</a>
+is readable
+without consuming processing credit.</p><h2 id=find-the-boundaries-before-changing-the-interface>Find the boundaries before changing the interface</h2><p>A local Graphify code-only map of the relevant source snapshot contained 512
+nodes and 1,442 relationships. It directed review toward the annotation writer,
+source deletion, expiry cleanup, exports and financial snapshots. The graph was
+a navigation aid; source inspection and executed tests established the behavior.</p><p>That review found an existing privacy defect: deleting a recording cleared
+correction text but left its current speaker-label fields in the ledger.
+The repair clears both, removes history immediately and excludes annotation
+content from financial snapshots. Retention cannot be implemented solely as a
+visible history dropdown.</p><h2 id=make-recovery-atomic>Make recovery atomic</h2><p>The existing serialized SQLite writer now saves an annotation and its history in
+one transaction. Snapshot failure rolls back the annotation. Every restore checks
+ownership, result expiry, CSRF, request rate and the expected current revision.
+Concurrent restores/saves cannot both overwrite the same revision.</p><p>The latest 20 states are retained per result. Restoring an older one creates a
+new revision rather than rewriting its predecessor. Existing results begin with
+their actual saved state; missing historical timestamps are not invented.</p><h2 id=keep-the-interaction-explicit>Keep the interaction explicit</h2><p>The comparison uses inert text and shows changes across the whole result.
+Previewing it does not modify the editor. Unsaved correction and speaker-label
+drafts prevent restore; a confirmation explains its full-result scope. Fields
+are temporarily locked while an annotation write is in flight, and stale reads
+cannot repopulate a different result.</p><p>Browser testing also exposed a missing return path from interval quoting.
+<strong>Use the full recording</strong> now re-quotes the same upload without duplicating
+media or starting inference. It does not reset a consumed free allowance.</p><p>On phones, controls stack naturally. Motion respects reduced-motion preferences;
+entry animation is limited to the review heading, avoiding a large composited
+editor layer. Functional layout and accessibility belong with the feature,
+before the separate final visual-polish pass.</p><h2 id=check-real-boundaries>Check real boundaries</h2><ul><li><strong>89 backend checks</strong> passed, including real SQLite reopen, concurrency,
+rollback, retention, ownership, deletion, legacy revision preservation and
+backup exclusion.</li><li>DOM checks covered inert text, draft safety, failed-read retry, failed restore,
+stale responses and explicit server-priced quoting without starting processing.</li><li>Real Chromium exercised local SQLite, actual media inspection/decoding and an
+explicitly replayed original ASR fixture: edit, label, compare, restore, reload,
+export and delete at 320/390/768/1440 widths. The review panel had no automated
+WCAG A/AA findings. This is not physical-device, Safari or human usability evidence.</li><li>The exported history is hashed in the manifest. The actual Noteweld validator
+accepted the ZIP as two notes and fourteen retained files, including the history.</li><li>Before deployment, an encrypted financial snapshot passed an isolated integrity
+and balance check. Public HTML/JavaScript/CSS matched the deployed release bytes;
+the new history endpoint rejected anonymous access and billing stayed closed.</li></ul><p>During testing, reusing a local preview exhausted its real global trial quota.
+The correct fix was a fresh isolated preview ledger, not a larger production
+allowance. A stale status-text expectation was corrected too.</p><p>A Strix experiment did not produce a completed security assessment: its default
+example model was unavailable on the subscription, and a compatible-model run
+was stopped for excessive context overhead before finishing. It is not recorded
+as a clean pentest. Targeted source review and executed security tests remain the
+evidence for this release; broader testing is a separate controlled task.</p><h2 id=what-this-adds-commercially>What this adds commercially</h2><p>Basic editing and export are established features: <a href=https://mathpix.com/docs/snip/snip-with-pdfs>Mathpix documents editable
+PDF conversion and export</a>
+, and
+<a href=https://www.descript.com/price>Descript describes text-based media editing</a>
+.
+Sources checked 19 October 2026. A history dropdown alone is not a defensible moat.</p><p>The product hypothesis is a useful combination: source-linked review, recoverable
+edits, explicit processing costs and portable outputs that keep working in the
+user&rsquo;s own tools. Its commercial advantage must be measured in correction time,
+successful exports, return usage and willingness to pay. These engineering checks
+do not establish market demand, superior recognition accuracy or profitability.</p><p>For a client, the case study exposes concrete delivery work: finding a privacy
+defect, protecting state under failure, implementing a usable recovery flow and
+verifying it across the API, database, browser and exported files.</p><div class=article-end><a href=/manuals/journal/>← All Journal documents</a><a href=#main>Back to top ↑</a></div></article><aside class=toc aria-label="On this page"><details open><summary>On this page</summary><nav id=TableOfContents><ul><li><a href=#the-user-problem>The user problem</a></li><li><a href=#find-the-boundaries-before-changing-the-interface>Find the boundaries before changing the interface</a></li><li><a href=#make-recovery-atomic>Make recovery atomic</a></li><li><a href=#keep-the-interaction-explicit>Keep the interaction explicit</a></li><li><a href=#check-real-boundaries>Check real boundaries</a></li><li><a href=#what-this-adds-commercially>What this adds commercially</a></li></ul></nav></details><p>Read with the source.<br>Report anything unclear.</p></aside></div></main><footer class="footer shell"><span>© 2026 Mohamed Amir Gomaa · Built with Hugo.</span><a href=mailto:mo.gomaa.formal@gmail.com>Questions or corrections →</a><a href=/manuals/index.xml>RSS</a></footer></body></html>

@@ -131,4 +131,22 @@ review remains a separate explicit choice and consent. No processing starts
 until confirmation. Earlier results and corrections remain separate.&lt;/p&gt;</description></item><item><title>Quality and cost measurement</title><link>https://amirgomaa.com/manuals/sonaweft/quality-benchmarks/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/sonaweft/quality-benchmarks/</guid><description>&lt;h2 id="offline-scoring"&gt;Offline scoring&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;scripts/score_quality.py&lt;/code&gt; compares human-prepared &lt;strong&gt;comparable text&lt;/strong&gt; and observed measurements. It never uploads files, calls a model, spends credits or silently changes app limits. It reports exact character/word edit rates, not factual correctness or a calibrated confidence badge. Case, punctuation, numeric values, diacritics and technical symbols remain significant; only Unicode NFC and CRLF representation normalize. Whitespace splits word tokens, so CER is generally the more useful measure for languages without space-delimited words.&lt;/p&gt;</description></item><item><title>Declared image package inventory</title><link>https://amirgomaa.com/manuals/sonaweft/image-inventory/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/sonaweft/image-inventory/</guid><description>&lt;p&gt;Actual CPU inspection of the current web/Whisper package images. Full &lt;a href="https://amirgomaa.com/manuals/metadata/sonaweft-image-inventory.json"&gt;metadata and license-file hashes&lt;/a&gt;
 , SHA256 &lt;code&gt;4e1fbbab5b0c50ab0afd77f0c95341c011bd4829b23bc5a402661dfcda1a68a0&lt;/code&gt;. No model volume, app secret, customer source or GPU was used. The NVIDIA CUDA base image emitted its normal upstream notice on CPU; this is not GPU inference or a change to the desktop drivers.&lt;/p&gt;
-&lt;p&gt;These are Python distribution declarations and license-file hashes, not a complete license compatibility approval. Bundled native libraries, FFmpeg, system packages, the pinned CUDA image and model weights require their own exact terms. The actual ASR code pins Systran/faster-whisper-large-v3 revision &lt;code&gt;edaa852ec7e145841d8ffdb056a99866b5f0a478&lt;/code&gt;; do not substitute current master terms.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;These are Python distribution declarations and license-file hashes, not a complete license compatibility approval. Bundled native libraries, FFmpeg, system packages, the pinned CUDA image and model weights require their own exact terms. The actual ASR code pins Systran/faster-whisper-large-v3 revision &lt;code&gt;edaa852ec7e145841d8ffdb056a99866b5f0a478&lt;/code&gt;; do not substitute current master terms.&lt;/p&gt;</description></item><item><title>Recoverable transcript review</title><link>https://amirgomaa.com/manuals/sonaweft/annotation-history/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/sonaweft/annotation-history/</guid><description>&lt;p&gt;Sonaweft keeps the original machine transcript unchanged. Corrections and speaker
+labels are your annotations. Their latest 20 saved states now survive a reload or
+recovered workspace, for as long as the recording itself remains available.&lt;/p&gt;
+&lt;h2 id="use-saved-history"&gt;Use saved history&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open a completed result with &lt;strong&gt;Review &amp;amp; export&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Expand &lt;strong&gt;Saved edit history&lt;/strong&gt; and choose &lt;strong&gt;Load saved history&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Choose a version. Changed passages show the current saved text/label beside
+the selected version. Reading history never replaces the editor draft.&lt;/li&gt;
+&lt;li&gt;Save any unfinished correction or speaker label first. Select &lt;strong&gt;Restore this
+version as a new save&lt;/strong&gt; and confirm the scope: every annotation in this result,
+rather than only the passage currently selected.&lt;/li&gt;
+&lt;li&gt;Restoration creates a new revision. Retained earlier saves and the original
+ASR remain available; another tab cannot silently overwrite a newer revision.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The comparison is plain inert text, including source material that resembles HTML.
+The current save is marked explicitly. A result changed in another tab must be
+reopened before restoring; failed requests preserve the saved result and draft.
+Inputs are temporarily disabled during an annotation write to prevent lost typing.&lt;/p&gt;</description></item></channel></rss>

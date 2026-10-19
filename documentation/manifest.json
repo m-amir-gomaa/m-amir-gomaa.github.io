@@ -72,7 +72,7 @@
         {
           "path": "docs/ACCESSIBILITY-20261016.md",
           "slug": "accessibility-review",
-          "title": "Accessibility review \u2014 16 October",
+          "title": "Accessibility review — 16 October",
           "description": "The specific accessibility fix, test evidence and remaining acceptance limits.",
           "category": "Release record"
         },
@@ -198,7 +198,7 @@
         {
           "path": "docs/ACCESSIBILITY-20261016.md",
           "slug": "accessibility-review",
-          "title": "Accessibility review \u2014 16 October",
+          "title": "Accessibility review — 16 October",
           "description": "The specific accessibility fix, test evidence and remaining acceptance limits.",
           "category": "Release record"
         },
@@ -340,6 +340,13 @@
           "title": "Declared image package inventory",
           "description": "Observed package versions, license metadata/file hashes and native/system/model review boundaries.",
           "category": "Reference"
+        },
+        {
+          "path": "docs/ANNOTATION-HISTORY.md",
+          "slug": "annotation-history",
+          "title": "Recoverable transcript review",
+          "description": "Compare and restore saved corrections and speaker labels, retain hashed history exports, and understand deletion and expiry.",
+          "category": "Usage guide"
         }
       ],
       "artifacts": [
