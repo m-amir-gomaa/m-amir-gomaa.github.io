@@ -1,8 +1,8 @@
 # Recoverable transcript review
 
-> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 4da0176 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
+> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision cfe3442 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision 4da017611edbb2bd57f736fad44428e47d2fc50a
+Source baseline: Owner-access repository, revision cfe3442fd27b2afab65688d852c69a7298c246a7
 Reviewed: 2026-10-19
 
 Sonaweft keeps the original machine transcript unchanged. Corrections and speaker
@@ -25,6 +25,8 @@ The comparison is plain inert text, including source material that resembles HTM
 The current save is marked explicitly. A result changed in another tab must be
 reopened before restoring; failed requests preserve the saved result and draft.
 Inputs are temporarily disabled during an annotation write to prevent lost typing.
+Refreshing listening/glossary cues preserves both drafts instead of resetting the
+editor, and a response for an earlier result cannot change the newly opened one.
 
 ## Portability and retention
 
@@ -83,6 +85,9 @@ private SONAWEFT_PREVIEW_DIR**. Reusing an old preview can correctly exhaust the
 real trial quota; do not raise production allowances to make tests pass. Then run
 `node scripts/source-review.browser.cjs` against its loopback URL. The fixture
 accepts only the original public example recording and makes no model/payment call.
+Alternatively, `.venv-web/bin/python scripts/run_source_review.py` creates its own
+private fresh ledger and loopback port, waits for readiness, runs the journey,
+retains its evidence and stops only the server it started.
 
 This improves recoverability and continuity of source review. It is not a claim
 that version history is unique to Sonaweft, or that accuracy, demand and profitability

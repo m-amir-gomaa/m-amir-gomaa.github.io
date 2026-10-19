@@ -642,7 +642,9 @@ ASR remain available; another tab cannot silently overwrite a newer revision.&lt
 &lt;p&gt;The comparison is plain inert text, including source material that resembles HTML.
 The current save is marked explicitly. A result changed in another tab must be
 reopened before restoring; failed requests preserve the saved result and draft.
-Inputs are temporarily disabled during an annotation write to prevent lost typing.&lt;/p&gt;</description></item><item><title>Source workflow and diagnostics release</title><link>https://amirgomaa.com/manuals/pageweft/source-workflow-release/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/pageweft/source-workflow-release/</guid><description>&lt;p&gt;&lt;em&gt;Original record: Source workflow and diagnostics — 18 October 2026.&lt;/em&gt;&lt;/p&gt;
+Inputs are temporarily disabled during an annotation write to prevent lost typing.
+Refreshing listening/glossary cues preserves both drafts instead of resetting the
+editor, and a response for an earlier result cannot change the newly opened one.&lt;/p&gt;</description></item><item><title>Source workflow and diagnostics release</title><link>https://amirgomaa.com/manuals/pageweft/source-workflow-release/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/pageweft/source-workflow-release/</guid><description>&lt;p&gt;&lt;em&gt;Original record: Source workflow and diagnostics — 18 October 2026.&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id="extraction-lineage-follow-through--19-october-2026"&gt;Extraction lineage follow-through — 19 October 2026&lt;/h2&gt;
 &lt;p&gt;Reprocessing now exposes the original extractor versions alongside the preserved
 user correction. The history reader returns the first and 19 most recent versions

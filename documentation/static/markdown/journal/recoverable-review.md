@@ -45,7 +45,9 @@ The comparison uses inert text and shows changes across the whole result.
 Previewing it does not modify the editor. Unsaved correction and speaker-label
 drafts prevent restore; a confirmation explains its full-result scope. Fields
 are temporarily locked while an annotation write is in flight, and stale reads
-cannot repopulate a different result.
+cannot repopulate a different result. Refreshing read-only listening cues also
+preserves unsaved correction and speaker-label drafts. Malformed Unicode labels
+are rejected without a partial save.
 
 Browser testing also exposed a missing return path from interval quoting.
 **Use the full recording** now re-quotes the same upload without duplicating
@@ -58,7 +60,7 @@ before the separate final visual-polish pass.
 
 ## Check real boundaries
 
-- **89 backend checks** passed, including real SQLite reopen, concurrency,
+- **90 backend checks** passed, including real SQLite reopen, concurrency,
   rollback, retention, ownership, deletion, legacy revision preservation and
   backup exclusion.
 - DOM checks covered inert text, draft safety, failed-read retry, failed restore,

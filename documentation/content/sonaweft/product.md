@@ -5,7 +5,7 @@
   "weight": 40,
   "project": "Sonaweft",
   "category": "Reference",
-  "notice": "Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 4da0176 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This reviewed documentation snapshot includes local documentation edits; the recorded revision is the committed baseline.",
+  "notice": "Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision cfe3442 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This reviewed documentation snapshot includes local documentation edits; the recorded revision is the committed baseline.",
   "sourceurl": "",
   "download": "markdown/sonaweft/product.md"
 }

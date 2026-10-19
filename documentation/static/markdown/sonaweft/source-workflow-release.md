@@ -1,8 +1,8 @@
 # Source workflow and diagnostics release
 
-> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 4da0176 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
+> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision cfe3442 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision 4da017611edbb2bd57f736fad44428e47d2fc50a
+Source baseline: Owner-access repository, revision cfe3442fd27b2afab65688d852c69a7298c246a7
 Reviewed: 2026-10-19
 
 *Original record: Recording workflow, accounts and diagnostics — 18 October 2026.*

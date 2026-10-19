@@ -149,4 +149,6 @@ ASR remain available; another tab cannot silently overwrite a newer revision.&lt
 &lt;p&gt;The comparison is plain inert text, including source material that resembles HTML.
 The current save is marked explicitly. A result changed in another tab must be
 reopened before restoring; failed requests preserve the saved result and draft.
-Inputs are temporarily disabled during an annotation write to prevent lost typing.&lt;/p&gt;</description></item></channel></rss>
+Inputs are temporarily disabled during an annotation write to prevent lost typing.
+Refreshing listening/glossary cues preserves both drafts instead of resetting the
+editor, and a response for an earlier result cannot change the newly opened one.&lt;/p&gt;</description></item></channel></rss>

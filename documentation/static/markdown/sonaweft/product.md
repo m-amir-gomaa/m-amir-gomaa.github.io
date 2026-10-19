@@ -1,8 +1,8 @@
 # Product contract
 
-> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 4da0176 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This reviewed documentation snapshot includes local documentation edits; the recorded revision is the committed baseline.
+> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision cfe3442 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This reviewed documentation snapshot includes local documentation edits; the recorded revision is the committed baseline.
 
-Source baseline: Owner-access repository, revision 4da017611edbb2bd57f736fad44428e47d2fc50a
+Source baseline: Owner-access repository, revision cfe3442fd27b2afab65688d852c69a7298c246a7
 Reviewed: 2026-10-19
 
 Amir explicitly made the transcript product active ahead of Keep, delegated a stronger brand and asked for hosted ASR/LLM processing, Paddle and a Pageweft-like usage model. Sonaweft is the selected brand (bounded exact-name searches found no obvious matching software listing; this is not trademark clearance). Preserve `instascript` imports/command and existing remote URLs. Noteweld is now the professional notes product; its importer is not implemented merely because Sonaweft exports bundles.
