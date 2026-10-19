@@ -12,7 +12,7 @@ The early registration work validated identity/password input, seeded accounts a
 
 The reliability foundation switched to standard `pg`/Drizzle transactions shared between local PostgreSQL and Neon. It added real seed rollback/races, per-account ownership, note revisions/idempotency, trash rules and label consistency. A new database and restricted runtime role were provisioned for the preview; the original Keep database was not migrated. The private provisioning values are deliberately absent from this library.
 
-Recovery-key hashing, session revocation, export/deletion, bounded signup/storage, CSP and encrypted backups followed. Foundation code `4d79e53` passed actual source CI (owner-access source record). The original eight hosted browser journeys passed; a nonempty hosted snapshot was restored into an isolated local clone.
+Recovery-key hashing, session revocation, export/deletion, bounded signup/storage, CSP and encrypted backups followed. Foundation code `4d79e53` passed actual source CI (run 38801749405; owner-access source record). The original eight hosted browser journeys passed; a nonempty hosted snapshot was restored into an isolated local clone.
 
 ## 2. Add the editor without losing failure recovery
 
@@ -24,7 +24,7 @@ The collection passed 33 unit/React, 13 real PostgreSQL and 11 hosted browser ch
 
 Code `e1b8740` added stable ID links, explicit title ambiguity/missing states, linked-note pages, outgoing/backlink views and bounded graph navigation. A shared Markdown-aware scanner excluded code/HTML/existing links. Public example notes used no private API. Graph fitting and constant screen-size labels were corrected during visual review.
 
-The collection passed 40 unit/React, 14 PostgreSQL and 14 hosted browser checks. [Connected release](/manuals/noteweld/connections-release/) and successful CI (owner-access source record).
+The collection passed 40 unit/React, 14 PostgreSQL and 14 hosted browser checks. [Connected release](/manuals/noteweld/connections-release/) and successful CI (run 38877398787; owner-access source record).
 
 ## Successful check commands
 

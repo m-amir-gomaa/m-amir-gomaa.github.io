@@ -97,6 +97,9 @@ def main():
                     label, destination = match.group(1), match.group(2)
                     parsed = urlsplit(destination)
                     if project.get('source_access') == 'owner' and parsed.hostname == 'github.com' and (unquote(parsed.path) + '/').startswith(f"/m-amir-gomaa/{project['repository']}/"):
+                        run = re.search(r'/actions/runs/(\d+)(?:/|$)', unquote(parsed.path))
+                        if run and run.group(1) not in label:
+                            label += f' (run {run.group(1)})'
                         return label + ' (source repository requires access)'
                     if parsed.scheme or destination.startswith(('#', '/', '//')):
                         return match.group(0)

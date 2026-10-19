@@ -54,3 +54,8 @@ No proprietary notice overrides applicable source-disclosure obligations.
 The portfolio, Fieldnotes, Noteweld Local and this selected sample remain public.
 The sample's MIT license applies to its directory; it does not license every
 website asset or unrelated application.
+
+Browsers still receive the HTML, CSS and JavaScript used by a web interface.
+Private repository access protects the full source tree and private server
+implementation; it cannot make delivered frontend code invisible. Provider
+credentials and access-control decisions must stay on the server.
