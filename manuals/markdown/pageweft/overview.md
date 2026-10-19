@@ -1,11 +1,13 @@
 # Technical overview
 
-> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 990e994 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
+> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 6321c59 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision 990e99478f468f891370471f66d9b40272ea5680
+Source baseline: Owner-access repository, revision 6321c592f9cfbaa9cb758f85e63f140803087685
 Reviewed: 2026-10-19
 
 Original Pageweft material has a scoped rights notice (source repository requires access); third-party licenses and applicable source obligations remain in force. The pinned MinerU engine is AGPL-3.0. [Exact dependency notes](/manuals/pageweft/dependencies/) describe the remaining integration/model review; repository privacy is not a licensing clearance.
+
+Reprocessed pages retain their extraction lineage separately from saved corrections. Review the first/latest engine outputs, copy a chosen version into an unsaved draft, and export all retained versions with the original source references and file hashes. The history reader shows at most 20 versions; exports preserve every retained extraction.
 
 Formerly Document Studio; renamed with Amir's approval on 15 October 2026. Canonical local path: `~/Projects/freelance/pageweft`, with the old directory kept as a compatibility symlink. Existing public GitHub/Modal URLs and permanent storage/session/secret identifiers are retained so bookmarks, accounts and credits keep working.
 

@@ -124,17 +124,17 @@
     {
       "project": "pageweft",
       "path": "README.md",
-      "revision": "990e99478f468f891370471f66d9b40272ea5680",
+      "revision": "6321c592f9cfbaa9cb758f85e63f140803087685",
       "working_copy": false,
-      "source_sha256": "49519a0d38119a693f0f354f76a7039231a2441d7d4dff27f0629ace562bddcb",
-      "public_sha256": "33773618f2c9bd0533d73609d2b328cbc22be74f9a2cbd6ad0410ffa4dd28d9a",
+      "source_sha256": "e0b5f21b180a8f52295f5ec6f553be56d43468312f567e22ab0d255e9be67f4b",
+      "public_sha256": "a9ca3889688455533bad939a8baa618d35620162d1f33356297d6584fff038a0",
       "url": "/manuals/pageweft/overview/",
       "mode": "public-edition"
     },
     {
       "project": "pageweft",
       "path": "docs/CONVERSION-PRODUCT.md",
-      "revision": "990e99478f468f891370471f66d9b40272ea5680",
+      "revision": "6321c592f9cfbaa9cb758f85e63f140803087685",
       "working_copy": false,
       "source_sha256": "cc60fbbe347eacfb7b77f51b51d29bdd95e4273e83b37d6ea46a437eee24dea6",
       "public_sha256": "e355de9399286429ef7305bbf1b9a92ff84fc57fcef5c9a4002cc20833b171f7",
@@ -144,7 +144,7 @@
     {
       "project": "pageweft",
       "path": "docs/THIRD-PARTY.md",
-      "revision": "990e99478f468f891370471f66d9b40272ea5680",
+      "revision": "6321c592f9cfbaa9cb758f85e63f140803087685",
       "working_copy": false,
       "source_sha256": "c9101e16532f734844492818cda736b275120d03b0fc11dcbd168e542ff6042b",
       "public_sha256": "fd4d4a92e75f9e9c3e614e2850b8d03c547f79bfe60c026453018b4328f0f11d",
@@ -154,7 +154,7 @@
     {
       "project": "pageweft",
       "path": "docs/OPERATIONS.md",
-      "revision": "990e99478f468f891370471f66d9b40272ea5680",
+      "revision": "6321c592f9cfbaa9cb758f85e63f140803087685",
       "working_copy": false,
       "source_sha256": "6dc021ee72260180d13650c76c0782a8fef07398ae4b504b3532a2c817d98ca3",
       "public_sha256": "ec090315f5e408ed741dfc8a176555f6377b2657322556f3fc5a90916e44650f",
@@ -164,7 +164,7 @@
     {
       "project": "pageweft",
       "path": "docs/PAYMENT-ACTIVATION.md",
-      "revision": "990e99478f468f891370471f66d9b40272ea5680",
+      "revision": "6321c592f9cfbaa9cb758f85e63f140803087685",
       "working_copy": false,
       "source_sha256": "587678b8dedca5bd5165185628700e9faeb6b06794b0de63911051c247d307fd",
       "public_sha256": "b8b1d93ab53281892dcc145c4bd7fbf8a9191670a4039589106393c0996a945b",
@@ -174,7 +174,7 @@
     {
       "project": "pageweft",
       "path": "docs/LAUNCH.md",
-      "revision": "990e99478f468f891370471f66d9b40272ea5680",
+      "revision": "6321c592f9cfbaa9cb758f85e63f140803087685",
       "working_copy": false,
       "source_sha256": "7cc0e0c7a12f23038c66a8da17adcc0f15217a635fec5d47b0e3cbff72ae6ba5",
       "public_sha256": "048e045f356d807990490e6169649fa6760d7975dc6b93e664592556bdcd508a",
@@ -184,7 +184,7 @@
     {
       "project": "pageweft",
       "path": "docs/BOOK-RELEASE.md",
-      "revision": "990e99478f468f891370471f66d9b40272ea5680",
+      "revision": "6321c592f9cfbaa9cb758f85e63f140803087685",
       "working_copy": true,
       "source_sha256": "e619459cbbec1639b57e87547c59829fe9e2cedb1da13b08b40f0ef645b39318",
       "public_sha256": "cac369579d3607e9bdaad56cd8b3a6d443cd2708f90d53d1df5c44ac6758fed8",
@@ -194,7 +194,7 @@
     {
       "project": "pageweft",
       "path": "docs/PADDLE-20261015.md",
-      "revision": "990e99478f468f891370471f66d9b40272ea5680",
+      "revision": "6321c592f9cfbaa9cb758f85e63f140803087685",
       "working_copy": false,
       "source_sha256": "d68d7a9e3c68a29d2d7148ef523b72cd04aadd63217b8bbd9e83f24d0709128a",
       "public_sha256": "7294fe4ea3c8d0710a8acbc0141eb16ea5c59936d24de771bcf1579ba70df9e0",
@@ -204,7 +204,7 @@
     {
       "project": "pageweft",
       "path": "docs/VERIFICATION-2026-10-14.md",
-      "revision": "990e99478f468f891370471f66d9b40272ea5680",
+      "revision": "6321c592f9cfbaa9cb758f85e63f140803087685",
       "working_copy": false,
       "source_sha256": "cb08580476c3d49a3049cac13510173dc31b4dca3ab0e9417b97bbee30545aef",
       "public_sha256": "6bce6e509f290b7594b1e1960630239de12c0b8498fb447fb6c6773d5de8ef2c",
@@ -214,7 +214,7 @@
     {
       "project": "pageweft",
       "path": "docs/PRICING-AND-DISCOVERY.md",
-      "revision": "990e99478f468f891370471f66d9b40272ea5680",
+      "revision": "6321c592f9cfbaa9cb758f85e63f140803087685",
       "working_copy": true,
       "source_sha256": "a6b0a23b290caaf258bfb216425b6bee738c100191422977f76ebe64ad660b38",
       "public_sha256": "b3b3e021966961ea563a4323bddf906a2ad9d24ca58d2d832063d342fead9c41",
@@ -224,7 +224,7 @@
     {
       "project": "pageweft",
       "path": "docs/SAAS-DECISIONS.md",
-      "revision": "990e99478f468f891370471f66d9b40272ea5680",
+      "revision": "6321c592f9cfbaa9cb758f85e63f140803087685",
       "working_copy": true,
       "source_sha256": "0bda0c5f46bb28c5e4a7f9253503215ea2964accd12ad508448ef6c1f6368e8f",
       "public_sha256": "ca5d2174d1211863bce8c7e7f076ee5c4aaa48be528785c18925826b81af21ee",
@@ -234,7 +234,7 @@
     {
       "project": "pageweft",
       "path": "docs/ACCESSIBILITY-20261016.md",
-      "revision": "990e99478f468f891370471f66d9b40272ea5680",
+      "revision": "6321c592f9cfbaa9cb758f85e63f140803087685",
       "working_copy": false,
       "source_sha256": "5a21dab5d763d1bc7b90e308101e81f79c712d565dd99c7537767f030bab5940",
       "public_sha256": "d6b4437150e11e73a1922e98bf0a3f50a5a031026f12143fccf5e69e179bc7a5",
@@ -244,7 +244,7 @@
     {
       "project": "pageweft",
       "path": "docs/CUSTOM-DOMAIN.md",
-      "revision": "990e99478f468f891370471f66d9b40272ea5680",
+      "revision": "6321c592f9cfbaa9cb758f85e63f140803087685",
       "working_copy": false,
       "source_sha256": "8b2d3aa5ab44cd72ccffbafbd9d1ed6431547f809be25b0f3a21557aa9f67c88",
       "public_sha256": "12a73a33486c611bae49a2d3697d30752aaaf51792f837b99b53cdbd565378ed",
@@ -254,17 +254,17 @@
     {
       "project": "pageweft",
       "path": "docs/SOURCE-WORKFLOW-RELEASE.md",
-      "revision": "990e99478f468f891370471f66d9b40272ea5680",
+      "revision": "6321c592f9cfbaa9cb758f85e63f140803087685",
       "working_copy": false,
-      "source_sha256": "f54c226fcb9682ebfe85bcb54e0b1508f7cf42e90ce4c7bb78c5f2ba6eb96457",
-      "public_sha256": "daa2fd32a2ffafc0754012c1714a280edee15980f778a4fcc51b10a6e1c7cbe8",
+      "source_sha256": "fb3d9cdf775c0cc5ab9c40a60f08af52363f827bfce12124c7039a2cabf9141d",
+      "public_sha256": "e8d16db4d82ab54aa935fd807044e14c88667de499f2de63e40a27c00fd52b87",
       "url": "/manuals/pageweft/source-workflow-release/",
       "mode": "public-edition"
     },
     {
       "project": "pageweft",
       "path": "docs/QUALITY-BENCHMARKS.md",
-      "revision": "990e99478f468f891370471f66d9b40272ea5680",
+      "revision": "6321c592f9cfbaa9cb758f85e63f140803087685",
       "working_copy": false,
       "source_sha256": "b159acd5cc85906f7e8e04f487dfa11c9ade885d8ad6d7eca1ecb7e6031b7d07",
       "public_sha256": "565e43b217472bd458c4c2bbc1108f5a9358253bd1ee713aae4423fdeee9d3ec",
@@ -274,7 +274,7 @@
     {
       "project": "pageweft",
       "path": "docs/DEPENDENCY-INVENTORY.md",
-      "revision": "990e99478f468f891370471f66d9b40272ea5680",
+      "revision": "6321c592f9cfbaa9cb758f85e63f140803087685",
       "working_copy": false,
       "source_sha256": "249ddbb35dc7e9610dbee11dc77b0ef1c51b702b8537ccc391776f63e6727778",
       "public_sha256": "a6633b15b024af3ccfb01868bbdbaf68dcd59a02adeeb6aa30713798876c05b9",
@@ -284,17 +284,17 @@
     {
       "project": "sonaweft",
       "path": "README.md",
-      "revision": "69d3d0e92c8976373cbefb7a4cf847219b04bc22",
+      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
       "working_copy": false,
-      "source_sha256": "b732fc85f0f318c8efb7906109ba399a5c144b7724cd76e527ec6dfdadd8b543",
-      "public_sha256": "9c4c149f7cfd16151ce9bf5f47c6cf6f918109c19bf4b590a28237d976da8b57",
+      "source_sha256": "e6e184b612a49c3fe73ad0fe62e4e343695df7a158db770cc392c7d128064b41",
+      "public_sha256": "af5396b323012d9d629c8bcd48f545b10e52c9efeba30654dd97e57590a05acf",
       "url": "/manuals/sonaweft/overview/",
       "mode": "public-edition"
     },
     {
       "project": "sonaweft",
       "path": "docs/PRODUCT.md",
-      "revision": "69d3d0e92c8976373cbefb7a4cf847219b04bc22",
+      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
       "working_copy": true,
       "source_sha256": "28d9004dadfdb26da007387adb44a840aae9d4622637b68e200d86805df27787",
       "public_sha256": "edb942f3ad7734a2d7db1cdffb915e884a916f9abf93b7a32f50b912c536929f",
@@ -304,7 +304,7 @@
     {
       "project": "sonaweft",
       "path": "docs/architecture.md",
-      "revision": "69d3d0e92c8976373cbefb7a4cf847219b04bc22",
+      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
       "working_copy": false,
       "source_sha256": "0a35814a6539c429bf35daa684d4aaf19b0003a79f5a69cb46eb5884beb3c9cc",
       "public_sha256": "3032b2123e5c508b2741dbad1ac0560a9fc059a9795fcc3839c364c27b130386",
@@ -314,7 +314,7 @@
     {
       "project": "sonaweft",
       "path": "docs/OPERATIONS.md",
-      "revision": "69d3d0e92c8976373cbefb7a4cf847219b04bc22",
+      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
       "working_copy": false,
       "source_sha256": "75d6e79143d2eb2d2e6d85c61122904c2efbe2fea635f83cf6412c8e5a2183b6",
       "public_sha256": "0c08f7eac6b04d62fa04cce479e37875b739f0f356d03da210be81d600c24f1d",
@@ -324,7 +324,7 @@
     {
       "project": "sonaweft",
       "path": "docs/RELEASE.md",
-      "revision": "69d3d0e92c8976373cbefb7a4cf847219b04bc22",
+      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
       "working_copy": false,
       "source_sha256": "c6c3eccaa9a2540660f86bc254e5142a6ec5c798858b27fa0b3628eaf42da2c6",
       "public_sha256": "c0227eb55a1d6fd3f486193d66f3b8eeb8221138bef73d91ed96bb61138f0b21",
@@ -334,7 +334,7 @@
     {
       "project": "sonaweft",
       "path": "docs/claude-code.md",
-      "revision": "69d3d0e92c8976373cbefb7a4cf847219b04bc22",
+      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
       "working_copy": false,
       "source_sha256": "9f5ee4636a5f2a7fba47a3b0424cae725737884145d594304309eebe0bbef949",
       "public_sha256": "d2451fe63f9285871ab143478292fab02df4ea1f6a39b816c367bc99350b17c9",
@@ -344,7 +344,7 @@
     {
       "project": "sonaweft",
       "path": "docs/demo-upwork.md",
-      "revision": "69d3d0e92c8976373cbefb7a4cf847219b04bc22",
+      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
       "working_copy": false,
       "source_sha256": "8d748cff46bfed309360a869e710a5d4591322efbdcc2e3fdeabb6fbadcaa3cc",
       "public_sha256": "d6bd6f2f5d8ee00c4c721126fc50645b394dd35578c9e8020592e1f9517ff343",
@@ -354,7 +354,7 @@
     {
       "project": "sonaweft",
       "path": "docs/second-brain.md",
-      "revision": "69d3d0e92c8976373cbefb7a4cf847219b04bc22",
+      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
       "working_copy": false,
       "source_sha256": "b250a3df5411928ff6612d0e8435e4dd60c0b957260f1ad7913a5ea1ca80e312",
       "public_sha256": "dbf6ff09693a874445a76d50c899169ebc3a5753cc9b6842dbff13ad4834828a",
@@ -364,7 +364,7 @@
     {
       "project": "sonaweft",
       "path": "docs/CUSTOM-DOMAIN.md",
-      "revision": "69d3d0e92c8976373cbefb7a4cf847219b04bc22",
+      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
       "working_copy": false,
       "source_sha256": "14e0813c26288196e2f8167ae914571cd0e64f4e96a0cec5f44d144f7a81b2ad",
       "public_sha256": "95d8ed17a71bed97278e3f8f78aae696ecd8437fe870edb28f034c4ef0340da2",
@@ -374,17 +374,17 @@
     {
       "project": "sonaweft",
       "path": "docs/SOURCE-WORKFLOW-RELEASE.md",
-      "revision": "69d3d0e92c8976373cbefb7a4cf847219b04bc22",
+      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
       "working_copy": false,
-      "source_sha256": "242a0c1a75588513121898957801989a78dd31f7ec920b8bb3ad0311cff780df",
-      "public_sha256": "e0eeedace838d855a6093d2abd6ed1e86550b9c76afe5b2e8fbfa38932172428",
+      "source_sha256": "dbb8dbbe9247e2c6c41e3bbffe9444d35a937eea4ffc04ca1474cc68ecd6ab56",
+      "public_sha256": "fda64546f85af613cc95ce6f76333ee497af00b3952bc8fc0da908e41e226b3d",
       "url": "/manuals/sonaweft/source-workflow-release/",
       "mode": "public-edition"
     },
     {
       "project": "sonaweft",
       "path": "docs/QUALITY-BENCHMARKS.md",
-      "revision": "69d3d0e92c8976373cbefb7a4cf847219b04bc22",
+      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
       "working_copy": false,
       "source_sha256": "68736c256d1af77864ff19ace2f1403891df7b8a23231d8a589cca7e5f689585",
       "public_sha256": "f672e2f60c943eb1c625f44ef281a78d6e5427970a08594804cf2ea893610838",
@@ -394,7 +394,7 @@
     {
       "project": "sonaweft",
       "path": "docs/DEPENDENCY-INVENTORY.md",
-      "revision": "69d3d0e92c8976373cbefb7a4cf847219b04bc22",
+      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
       "working_copy": false,
       "source_sha256": "3735af09297d8a739134afe45d903c0e5b674494b1370618c5d36a792dfa764b",
       "public_sha256": "1290e649e49ed45c5aec171c999efcd220d8b56b900a0de973bccf6bf15dcd2d",
@@ -416,14 +416,14 @@
     {
       "project": "pageweft",
       "path": "docs/DEPENDENCY-INVENTORY-20261019.json",
-      "revision": "990e99478f468f891370471f66d9b40272ea5680",
+      "revision": "6321c592f9cfbaa9cb758f85e63f140803087685",
       "sha256": "4b3bbd7a425c300a9563cfe4a147b0bb1d3e6e49d29a119c7ff75d216d0d1161",
       "url": "/manuals/metadata/pageweft-image-inventory.json"
     },
     {
       "project": "sonaweft",
       "path": "docs/DEPENDENCY-INVENTORY-20261019.json",
-      "revision": "69d3d0e92c8976373cbefb7a4cf847219b04bc22",
+      "revision": "b2903875e625468b6b08d9de1da905d52d3c0220",
       "sha256": "4e1fbbab5b0c50ab0afd77f0c95341c011bd4829b23bc5a402661dfcda1a68a0",
       "url": "/manuals/metadata/sonaweft-image-inventory.json"
     }

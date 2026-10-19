@@ -5,10 +5,12 @@
   "weight": 30,
   "project": "Sonaweft",
   "category": "Reference",
-  "notice": "Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 69d3d0e is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
+  "notice": "Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision b290387 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
   "sourceurl": "",
   "download": "markdown/sonaweft/overview.md"
 }
+
+Selected transcript passages can open an authoritative server quote for reprocessing using their original recording offsets. Earlier jobs and corrections remain separate; preparing a quote never starts inference. Retries use the same server pricing path, and changed intervals must be quoted again before confirmation.
 
 [Open Sonaweft](https://sonaweft.amirgomaa.com) · [Hear completed example](https://sonaweft.amirgomaa.com/example) · [Product contract](/manuals/sonaweft/product/) · [Operations](/manuals/sonaweft/operations/) · [Release evidence](/manuals/sonaweft/release/)
 

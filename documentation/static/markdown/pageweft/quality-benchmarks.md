@@ -1,8 +1,8 @@
 # Quality and cost measurement
 
-> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 990e994 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
+> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 6321c59 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision 990e99478f468f891370471f66d9b40272ea5680
+Source baseline: Owner-access repository, revision 6321c592f9cfbaa9cb758f85e63f140803087685
 Reviewed: 2026-10-19
 
 ## Offline scoring

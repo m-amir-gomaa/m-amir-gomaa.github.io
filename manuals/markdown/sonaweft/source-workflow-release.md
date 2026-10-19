@@ -1,11 +1,37 @@
 # Source workflow and diagnostics release
 
-> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 69d3d0e is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
+> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision b290387 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision 69d3d0e92c8976373cbefb7a4cf847219b04bc22
+Source baseline: Owner-access repository, revision b2903875e625468b6b08d9de1da905d52d3c0220
 Reviewed: 2026-10-19
 
 *Original record: Recording workflow, accounts and diagnostics — 18 October 2026.*
+
+## Passage-to-quote follow-through — 19 October 2026
+
+The listening toolbar can prepare reprocessing for its selected passage without
+re-uploading the recording or entering its original source timestamps manually.
+Clip-relative times are converted back to the original recording offset and
+quoted by the owned-upload endpoint. The reviewer must save an unsaved correction
+before preparing this quote. It defaults to transcription only; optional AI
+review remains a separate explicit choice and consent. No processing starts
+until confirmation. Earlier results and corrections remain separate.
+
+The failed-job retry control now asks the server for its quote instead of
+duplicating tariff arithmetic in JavaScript. Original recording duration is
+returned by the owned quote API. A response for an old passage, another recording
+or changed interval cannot approve the currently displayed fields. Selected
+intervals cannot silently invoke the separate first-30-second free trial.
+Searching an intentionally empty correction no longer falls back to the removed
+original words.
+
+Evidence: 78 Python/SQLite/HTTP cases, including a read-only interval-price case
+that creates no job, credit hold or model dispatch. Scripted DOM checks with
+mocked HTTP cover original offsets, deliberately different server tariffs,
+explicit confirmation, draft protection, quote failures, stale selections and
+range changes. This adds no graphical browser, new ASR/GPU quality, genuine
+Paddle transaction or real identity consent evidence. Functional visual
+acceptance remains an owner step; final visual polish stays last.
 
 ## Implemented collection
 

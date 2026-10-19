@@ -1,8 +1,8 @@
 # Owner operations
 
-> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 69d3d0e is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
+> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision b290387 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision 69d3d0e92c8976373cbefb7a4cf847219b04bc22
+Source baseline: Owner-access repository, revision b2903875e625468b6b08d9de1da905d52d3c0220
 Reviewed: 2026-10-19
 
 > Current implementation, 18 October 2026: SOURCE-WORKFLOW-RELEASE.md supersedes historical missing-feature notes below. Amir reports both app domains approved; seller/payout and genuine payment acceptance remain independently unverified. Optional Google/GitHub code is installed with providers disabled until registered. Structured logs, 30-day HTTP aggregates, 90-day runtime/token aggregates and private alerts are implemented; no external alert delivery is claimed. Backup now validates an isolated SQLite restore and credit identities.

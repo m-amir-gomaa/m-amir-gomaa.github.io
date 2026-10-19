@@ -5,12 +5,36 @@
   "weight": 160,
   "project": "Pageweft",
   "category": "Release record",
-  "notice": "Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 990e994 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
+  "notice": "Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 6321c59 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
   "sourceurl": "",
   "download": "markdown/pageweft/source-workflow-release.md"
 }
 
 *Original record: Source workflow and diagnostics — 18 October 2026.*
+
+## Extraction lineage follow-through — 19 October 2026
+
+Reprocessing now exposes the original extractor versions alongside the preserved
+user correction. The history reader returns the first and 19 most recent versions
+when there are more than 20, limiting loaded sections and returned text. Loading
+or selecting a version never saves it; copying it into the editor asks before
+discarding an unsaved draft. Explicit Save retains the existing conflict check
+and correction history. Expired/deleted or another owner's conversions cannot
+be read. A failed retry leaves the earlier successful extraction available.
+
+Reprocessed pages export every retained extraction under `extraction-versions/`;
+`MANIFEST.json` records page/run/section/method/path, and the existing file hashes
+cover these files too. Corrected notes remain the selected importable notes;
+the original extractor versions are separate retained assets, not duplicate notes.
+Version-file image references point back to their matching extracted assets.
+
+Local evidence: 115 Python/SQLite/HTTP checks, including seven lineage cases;
+scripted DOM checks with mocked HTTP for selection, inert text, unsaved-draft
+protection, no automatic save, retry and stale responses. The actual Noteweld
+bundle validator accepts a generated two-extraction archive and preserves the
+checked correction as its single note with ten retained files. No graphical
+browser, new OCR/GPU comparison or actual customer/payment evidence is claimed
+for this follow-through. Functional visual acceptance remains an owner step.
 
 ## Implemented
 

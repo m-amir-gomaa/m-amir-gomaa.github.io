@@ -1,8 +1,8 @@
 # Payment activation checklist
 
-> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 990e994 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification.
+> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision 6321c59 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification.
 
-Source baseline: Owner-access repository, revision 990e99478f468f891370471f66d9b40272ea5680
+Source baseline: Owner-access repository, revision 6321c592f9cfbaa9cb758f85e63f140803087685
 Reviewed: 2026-10-19
 
 Updated 18 October 2026. **Paddle Billing is the selected provider. The integration is deployed; customer checkout remains disabled.** This supersedes the former Lemon Squeezy activation instructions. Existing balances, session keys and permanent Modal identifiers were preserved. Email verification is complete according to Amir; merchant identity/domain approval and actual payment delivery are separate.
