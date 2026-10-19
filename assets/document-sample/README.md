@@ -1,6 +1,6 @@
 # Original sample provenance
 
-`document.pdf`, `field-notes.md` and `field-notes.zip` are exact copies of the original public fixture in `../document-studio/static/examples/` (source repository revision `abe1169`). The PDF was authored for demonstration by `scripts/build_public_example.py`; the Markdown and ZIP were produced by the actual CPU text extractor and exporter. All observations are invented. No private books, customer files or extracted third-party content are included.
+`document.pdf`, `field-notes.md` and `field-notes.zip` are exact copies of the original public fixture in `../pageweft/static/examples/` (current exporter revision `ae159f7`; refreshed 19 October 2026). The PDF was authored for demonstration by `scripts/build_public_example.py`; the Markdown and ZIP were produced by the actual CPU text extractor and exporter. All observations are invented. No private books, customer files or extracted third-party content are included.
 
 `page-1.png` through `page-3.png` are actual raster excerpts from that PDF, generated using Poppler:
 

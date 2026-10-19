@@ -1,7 +1,7 @@
 {
   "title": "Using Pageweft",
   "description": "Inspect a PDF, choose a conversion method, review the source and keep portable files.",
-  "date": "2026-10-16",
+  "date": "2026-10-19",
   "weight": 1,
   "project": "Pageweft",
   "category": "Start here",
@@ -20,7 +20,7 @@ Inspection does not establish that OCR will preserve every formula, table or sym
 
 ## Choose the extraction route
 
-- **Automatic MinerU:** use the supported text/OCR decision path and structured extraction.
+- **Automatic:** inspect the per-page text/MinerU routing plan and its quote; keep or deliberately override the conservative heuristic.
 - **Forced OCR:** request OCR explicitly where the text layer is unsuitable.
 - **Text-only:** use the cheaper CPU route for available text; it does not provide OCR, extracted images or full layout reconstruction.
 
@@ -42,4 +42,10 @@ Choose single-document, per-page, page-group or PDF-bookmark exports. The ZIP ca
 
 Download results before the 48-hour retention window expires; scheduled cleanup removes expired source/output files. Saved financial/recovery records are separate from file retention. Retain the private recovery key securely and use deletion/discard controls when appropriate.
 
-Current pricing and boundaries are in the [technical overview](/manuals/pageweft/overview/). Owner deployment and incident procedures are in [operations](/manuals/pageweft/operations/). Paddle approval and real payment verification are still required; no earnings or perfect OCR is promised.
+Current pricing and boundaries are in the [technical overview](/manuals/pageweft/overview/). Owner deployment and incident procedures are in [operations](/manuals/pageweft/operations/). The owner reports app domains approved; seller/payout and genuine payment acceptance are still required; no earnings or perfect OCR is promised.
+
+## Review and portable handoff
+
+Compare flagged or edited pages against the original, including printed labels versus PDF indexes. Normalization and cross-page joins offer explicit previews/diffs; saving requires current versions and never rewrites raw engine output. Technical/IPA cues are symptoms, not accuracy certification.
+
+Choose plain Markdown, Obsidian or LLM-oriented exports. Size-targeted chunks preserve Markdown blocks and report oversized ones; they are formatting, not generated summaries. The hashed v1 archive can be previewed and imported atomically through [Noteweld sources](/manuals/noteweld/source-bundles/). See [the source-workflow record](/manuals/pageweft/source-workflow-release/) and [quality measurements](/manuals/pageweft/quality-benchmarks/) for actual evidence and remaining representative samples.

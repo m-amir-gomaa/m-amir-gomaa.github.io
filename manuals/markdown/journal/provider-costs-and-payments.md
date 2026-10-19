@@ -1,6 +1,6 @@
 # Neon, Modal costs and opening Paddle
 
-Reviewed: 2026-10-18
+Reviewed: 2026-10-19
 
 ## Neon in this application
 

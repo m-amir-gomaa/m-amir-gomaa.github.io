@@ -1,6 +1,6 @@
 # Using Noteweld
 
-Reviewed: 2026-10-18
+Reviewed: 2026-10-19
 
 ## Try it without an account
 
@@ -32,4 +32,10 @@ Open a note's outgoing references and backlinks, or use the graph's title/label/
 
 The free preview is capped at 100 accounts and, per account, 250 notes, 50 labels and 2 MiB of note text. Graph drawing is bounded to 500 nodes/1,000 edges, with at most 256 scanned references per note. These are configured limits, not proof of capacity at every load.
 
-Do not treat this as end-to-end encrypted, collaborative or continuously synchronized between tabs. There is no paid checkout, durable revision archive or Pageweft/Sonaweft importer yet. Export important work and report unclear behavior to [support](mailto:mo.gomaa.formal@gmail.com).
+Do not treat this as end-to-end encrypted, collaborative or continuously synchronized between tabs. There is no paid checkout or durable revision archive. Pageweft/Sonaweft ZIP imports are available with explicit archive/text/traffic limits. Export important work and report unclear behavior to [support](mailto:mo.gomaa.formal@gmail.com).
+
+## Retain sources and manage sessions
+
+Choose **Source bundles** to preview a supported ZIP, check its categories/hashes and confirm an all-or-nothing import. Original/corrected/AI notes retain their labels; source archives stay separate from edits. Download an original backup. Deleting a retained archive preserves notes but breaks its source-file links. Follow [the source guide](/manuals/noteweld/source-bundles/) for limits and duplicate/retry behavior.
+
+In Account, review browser sessions, sign out a session or every device, and confirm recent ownership before sensitive account actions. Unconfigured Google/GitHub buttons remain disabled; this release does not claim real consent or email-reset delivery.

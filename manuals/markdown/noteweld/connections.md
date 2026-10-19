@@ -1,9 +1,9 @@
 # Links, backlinks and graphs
 
-> Current preview includes Markdown/Vim and connected notes. Earlier foundation/editor release records describe their own milestones. Billing and source-bundle imports are not enabled.
+> Current bounded preview includes Markdown/Vim, connected notes, source-bundle imports and browser-session controls. Real Google/GitHub consent remains unverified and provider buttons stay disabled; billing is closed. Earlier release records describe their own milestones.
 
-Source baseline: https://github.com/m-amir-gomaa/keep-nextjs/blob/71e48f66b70dacb734ad6ff725be5f526c125bdf/docs/CONNECTIONS.md
-Reviewed: 2026-10-18
+Source baseline: https://github.com/m-amir-gomaa/keep-nextjs/blob/59e2325fd9d164a292303bc7bee9cb659438fa4c/docs/CONNECTIONS.md
+Reviewed: 2026-10-19
 
 Choose **Link note** while writing to insert a stable reference such as `[[note:UUID|Readable caption]]`. Search titles/labels, select a note and insert; the editor keeps your cursor position and undo. Escape closes the picker and returns focus. A stable ID survives a rename; its optional caption remains the text you wrote, while the link tooltip shows the current title. Copy a stable reference from any note's detail page too.
 

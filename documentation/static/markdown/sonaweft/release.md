@@ -1,9 +1,9 @@
 # Hosted release evidence
 
-> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.
+> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones.
 
-Source baseline: https://github.com/m-amir-gomaa/ig_intel/blob/75e9b608befb7a52eb9c981f86477ae2e34a885a/docs/RELEASE.md
-Reviewed: 2026-10-18
+Source baseline: https://github.com/m-amir-gomaa/ig_intel/blob/00522f212d686ee813f4d0275c34d7c7db48ccef/docs/RELEASE.md
+Reviewed: 2026-10-19
 
 *Original record: Release evidence — 15 October 2026.*
 
@@ -36,5 +36,5 @@ Private reproducible probe data/logs/screenshots are ignored under `.local/fixtu
 - Actual Paddle seller/website approval, isolated sandbox delivery and controlled live purchase/refund/payout acceptance; keep production notification paused and billing closed meanwhile.
 - Representative long/noisy/accented audio accuracy, 60-minute runtime/failure-cost benchmarks, load/admission and operational margin measurement before increasing the small preview caps. A working short sample is not capacity evidence for 1,000 users.
 - Provider-wide budget/alerts and automatic external monitoring are not configured. Admission estimates are not a total bill cap; owner checks and pause controls are available.
-- Hosted URL import, diarization, immediate self-service deletion, email accounts/team access, Noteweld importer and shared login are not implemented. No enterprise/privacy certification is claimed.
+- The 18 October source-workflow release adds authorized public media/RSS import, immediate self-service deletion, manual speaker labels, selected intervals, accounts and diagnostics; see SOURCE-WORKFLOW-RELEASE.md for exact evidence. Automatic diarization, email delivery/team access, cross-product shared login and external provider/payment acceptance remain separate. No enterprise/privacy certification is claimed.
 - No trademark clearance, user-demand/revenue guarantee or perfect-transcription claim. See OPERATIONS.md for concrete payment opening steps.

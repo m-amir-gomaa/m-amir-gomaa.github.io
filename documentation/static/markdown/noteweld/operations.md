@@ -1,9 +1,9 @@
 # Deployment and recovery
 
-> Current preview includes Markdown/Vim and connected notes. Earlier foundation/editor release records describe their own milestones. Billing and source-bundle imports are not enabled.
+> Current bounded preview includes Markdown/Vim, connected notes, source-bundle imports and browser-session controls. Real Google/GitHub consent remains unverified and provider buttons stay disabled; billing is closed. Earlier release records describe their own milestones.
 
-Source baseline: https://github.com/m-amir-gomaa/keep-nextjs/blob/71e48f66b70dacb734ad6ff725be5f526c125bdf/docs/OPERATIONS.md
-Reviewed: 2026-10-18
+Source baseline: https://github.com/m-amir-gomaa/keep-nextjs/blob/59e2325fd9d164a292303bc7bee9cb659438fa4c/docs/OPERATIONS.md
+Reviewed: 2026-10-19
 
 ## Scope and least privilege
 
@@ -38,7 +38,7 @@ For incidents: stop new access by stopping the Modal app in the authenticated da
 
 ## Restore on a new target
 
-Decrypt the Fernet snapshot **locally** using the separately stored BACKUP_KEY, writing a mode-0600 temporary file in a private directory. The hosted pre-OAuth release emits `format=noteweld-backup`, version 1. The account branch emits version 2 with OAuth identities; the updated restore accepts both versions into an empty target migrated through 0005. The snapshot includes account password/recovery hashes and private note text; never print it. `scripts/backup-format.mjs` verifies table/column names, locks all five persistent app tables, including oauth_identity, in the updated account source and refuses any non-empty target.
+Decrypt the Fernet snapshot **locally** using the separately stored BACKUP_KEY, writing a mode-0600 temporary file in a private directory. The foundation emits `format=noteweld-backup`, version 1; the identity collection used version 2. Current version 3 includes retained source archives and identity rows. Restore accepts all three into an empty target migrated through 0007; it excludes browser sessions and increments every restored account epoch to invalidate pre-restore cookies. The snapshot includes account password/recovery hashes and private note text; never print it. `scripts/backup-format.mjs` verifies table/column names, locks persistent content, identity, source and session tables and refuses any non-empty target.
 
 Create a new empty PostgreSQL database, apply this source's migrations with privileged access, and set NOTEWELD_RESTORE_DATABASE_URL to that exact target using private environment handling. Run:
 
@@ -55,6 +55,8 @@ Compare counts, representative note/checklist content, labels and login/recovery
 - [Modal web servers](https://modal.com/docs/guide/webhooks), [image builds](https://modal.com/docs/guide/images), [secrets](https://modal.com/docs/guide/secrets), [volumes](https://modal.com/docs/guide/volumes).
 - [NIST password guidance](https://pages.nist.gov/800-63-4/sp800-63b.html): the 15-character new-password minimum follows password-only guidance; full NIST compliance is not claimed.
 
-## Account branch deployment gate — 16 October 2026
+## Account/source release gate — updated 19 October 2026
 
-[Account setup](/manuals/noteweld/account-work/) describes migration 0005, provider registration and narrow scopes. This branch is not deployed. Before migration, obtain an encrypted snapshot of the isolated Noteweld preview and restore-check it in a clone. Keep the original Keep database unchanged. Grant the existing restricted runtime role CRUD on the new oauth_identity table; retain AUTH_SECRET/BACKUP_KEY and all existing runtime secret fields. Do not enable social providers until live provider and remaining account-collection acceptance pass. A rollback must preserve new identity rows and nullable-password users; do not drop the table, force NOT NULL back onto existing provider-only accounts or claim that an older credentials-only build supports their login. Prefer a reviewed compatible forward repair or a verified fresh-target restore.
+[Account setup](/manuals/noteweld/account-work/) and [current release evidence](/manuals/noteweld/source-handoff-release/) cover additive migrations 0005–0007, snapshot restoration and restricted grants. Preserve original Keep, existing AUTH_SECRET/BACKUP_KEY/runtime fields, and the owned public AUTH_URL `https://noteweld.amirgomaa.com`; the Modal origin remains the infrastructure endpoint behind the existing gateway. Do not enable providers until actual consent and policy/domain acceptance pass. A rollback must preserve new identities, retained sources, browser-session revocations and nullable-password users. Do not drop tables, reimpose NOT NULL on provider-only users, or promise that the foundation build understands their login. Prefer a compatible forward repair or verified fresh-target restore.
+
+Daily cleanup retains admission counters for 35 days (the longest artifact window is 30 days), and removes browser sessions expired for over 30 days. Artifact storage/traffic admission is explained in SOURCE-BUNDLES.md; these are preview resource controls, not global Modal/Neon spending limits. Off-device snapshot/key custody and external alert delivery remain operator acceptance.

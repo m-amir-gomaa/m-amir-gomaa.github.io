@@ -1,9 +1,9 @@
 # Processing architecture
 
-> Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.
+> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones.
 
-Source baseline: https://github.com/m-amir-gomaa/ig_intel/blob/75e9b608befb7a52eb9c981f86477ae2e34a885a/docs/architecture.md
-Reviewed: 2026-10-18
+Source baseline: https://github.com/m-amir-gomaa/ig_intel/blob/00522f212d686ee813f4d0275c34d7c7db48ccef/docs/architecture.md
+Reviewed: 2026-10-19
 
 ```text
 Browser --> secure cookie + CSRF --> FastAPI / Modal

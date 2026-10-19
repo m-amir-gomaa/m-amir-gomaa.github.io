@@ -1,9 +1,13 @@
 # Owner operations
 
-> Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.
+> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones.
 
-Source baseline: https://github.com/m-amir-gomaa/ig_intel/blob/75e9b608befb7a52eb9c981f86477ae2e34a885a/docs/OPERATIONS.md
-Reviewed: 2026-10-18
+Source baseline: https://github.com/m-amir-gomaa/ig_intel/blob/00522f212d686ee813f4d0275c34d7c7db48ccef/docs/OPERATIONS.md
+Reviewed: 2026-10-19
+
+> Current implementation, 18 October 2026: SOURCE-WORKFLOW-RELEASE.md supersedes historical missing-feature notes below. Amir reports both app domains approved; seller/payout and genuine payment acceptance remain independently unverified. Optional Google/GitHub code is installed with providers disabled until registered. Structured logs, 30-day HTTP aggregates, 90-day runtime/token aggregates and private alerts are implemented; no external alert delivery is claimed. Backup now validates an isolated SQLite restore and credit identities.
+
+## Sonaweft operations — 15 October 2026
 
 > Update — 18 October 2026: public host is **https://sonaweft.amirgomaa.com/**. Amir submitted both product subdomains; the screenshot and authenticated API confirm pending domain review. Onboarding remains in progress, with identity/final review pending. Both catalogs were verified. Existing webhook destinations now use the corresponding custom-domain `/api/payment-event` and remain paused, with signing secrets, events and safety settings preserved. Runtime checkout URLs/default payment-link reconciliation, isolated real sandbox tests, owner identity/payout setup and controlled live acceptance remain unfinished. Billing stays closed. Privacy now discloses Cloudflare's gateway role.
 
@@ -53,7 +57,7 @@ Install Python 3.13, FFmpeg and `.[web,cloud]`; authenticate your own Modal acco
 
 After ambiguous dispatch, refresh the existing job; do not automatically create a new billable job. Stale queued/running jobs release holds after 20 minutes through cleanup/status checks. Failed paid jobs offer explicit quoted retry; retained ASR may be reused. Free allowances are not automatically reset on provider failure. Pause admissions for persistent faults, inspect logs without printing transcripts/secrets, correct and redeploy, then resume.
 
-Sources/results are deleted by the first hourly cleanup after 48-hour expiry. No immediate user-delete control is implemented; contact `mo.gomaa.formal@gmail.com` with ownership proof, never recovery keys or recordings. Recovery uses a private bearer key; email login, team sharing and enterprise compliance are not claimed.
+Sources/results are deleted by scheduled cleanup after 48-hour expiry. A self-service delete control now closes access, removes source/results and returns active holds; in-flight buffers are discarded on bounded worker exit. Financial records remain separate. Contact `mo.gomaa.formal@gmail.com` with ownership proof, never recovery keys or recordings. Recovery uses a private bearer key; email login, team sharing and enterprise compliance are not claimed.
 
 ## Primary references
 

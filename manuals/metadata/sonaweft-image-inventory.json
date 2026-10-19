@@ -1,0 +1,2745 @@
+{
+  "schema": "sonaweft-image-inventory/v1",
+  "images": {
+    "web": {
+      "schema": "wheel-license-inventory/v1",
+      "python": "3.13.3",
+      "packages": [
+        {
+          "name": "aiohappyeyeballs",
+          "version": "2.6.1",
+          "license_expression": null,
+          "license_metadata": "PSF-2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Python Software Foundation License"
+          ],
+          "license_files": [
+            {
+              "path": "aiohappyeyeballs-2.6.1.dist-info/LICENSE",
+              "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Bug Tracker, https://github.com/aio-libs/aiohappyeyeballs/issues",
+            "Changelog, https://github.com/aio-libs/aiohappyeyeballs/blob/main/CHANGELOG.md",
+            "Documentation, https://aiohappyeyeballs.readthedocs.io",
+            "Repository, https://github.com/aio-libs/aiohappyeyeballs"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "aiohttp",
+          "version": "3.12.7",
+          "license_expression": null,
+          "license_metadata": "Apache-2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "aiohttp-3.12.7.dist-info/licenses/LICENSE.txt",
+              "sha256": "9f80d0db7d755a941db4572172c270ecbd8f082ba215ddd095985942ed94a9eb"
+            }
+          ],
+          "requires": [
+            "aiohappyeyeballs>=2.5.0",
+            "aiosignal>=1.1.2",
+            "async-timeout<6.0,>=4.0; python_version < \"3.11\"",
+            "attrs>=17.3.0",
+            "frozenlist>=1.1.1",
+            "multidict<7.0,>=4.5",
+            "propcache>=0.2.0",
+            "yarl<2.0,>=1.17.0",
+            "aiodns>=3.3.0; extra == \"speedups\"",
+            "Brotli; platform_python_implementation == \"CPython\" and extra == \"speedups\"",
+            "brotlicffi; platform_python_implementation != \"CPython\" and extra == \"speedups\""
+          ],
+          "project_urls": [
+            "Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org",
+            "Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org",
+            "CI: GitHub Actions, https://github.com/aio-libs/aiohttp/actions?query=workflow%3ACI",
+            "Coverage: codecov, https://codecov.io/github/aio-libs/aiohttp",
+            "Docs: Changelog, https://docs.aiohttp.org/en/stable/changes.html",
+            "Docs: RTD, https://docs.aiohttp.org",
+            "GitHub: issues, https://github.com/aio-libs/aiohttp/issues",
+            "GitHub: repo, https://github.com/aio-libs/aiohttp"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "aiosignal",
+          "version": "1.3.2",
+          "license_expression": null,
+          "license_metadata": "Apache 2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Apache Software License"
+          ],
+          "license_files": [
+            {
+              "path": "aiosignal-1.3.2.dist-info/LICENSE",
+              "sha256": "6fd5243e92dd7f98ec69c7ac377728e74905709ff527a5bf98d6d0263c04f5b6"
+            }
+          ],
+          "requires": [
+            "frozenlist>=1.1.0"
+          ],
+          "project_urls": [
+            "Chat: Gitter, https://gitter.im/aio-libs/Lobby",
+            "CI: GitHub Actions, https://github.com/aio-libs/aiosignal/actions",
+            "Coverage: codecov, https://codecov.io/github/aio-libs/aiosignal",
+            "Docs: RTD, https://docs.aiosignal.org",
+            "GitHub: issues, https://github.com/aio-libs/aiosignal/issues",
+            "GitHub: repo, https://github.com/aio-libs/aiosignal"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "annotated-doc",
+          "version": "0.0.5",
+          "license_expression": "MIT",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "annotated_doc-0.0.5.dist-info/licenses/LICENSE",
+              "sha256": "fff170779a6acbf65abdb405c087f1cee1786691e4a96a4034517e4a504a0cdf"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Homepage, https://github.com/fastapi/annotated-doc",
+            "Documentation, https://github.com/fastapi/annotated-doc",
+            "Repository, https://github.com/fastapi/annotated-doc",
+            "Issues, https://github.com/fastapi/annotated-doc/issues",
+            "Changelog, https://github.com/fastapi/annotated-doc/release-notes.md"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "annotated-types",
+          "version": "0.8.0",
+          "license_expression": "MIT",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: MIT License"
+          ],
+          "license_files": [
+            {
+              "path": "annotated_types-0.8.0.dist-info/licenses/LICENSE",
+              "sha256": "fe1049884b1a0d9342901e88e07f32925d24b3121d9972b6a6805fb9824b095d"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Homepage, https://github.com/annotated-types/annotated-types",
+            "Source, https://github.com/annotated-types/annotated-types",
+            "Changelog, https://github.com/annotated-types/annotated-types/releases"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "anyio",
+          "version": "4.15.1",
+          "license_expression": "MIT",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "anyio-4.15.1.dist-info/licenses/LICENSE",
+              "sha256": "5361ac9dc58f2ef5fd2e9b09c68297c17f04950909bbc8023bdb82eacf22c2b0"
+            }
+          ],
+          "requires": [
+            "exceptiongroup>=1.0.2; python_version < \"3.11\"",
+            "idna>=2.8",
+            "typing_extensions>=4.16.0; python_version < \"3.15\"",
+            "trio>=0.32.0; extra == \"trio\""
+          ],
+          "project_urls": [
+            "Documentation, https://anyio.readthedocs.io/en/latest/",
+            "Changelog, https://anyio.readthedocs.io/en/stable/versionhistory.html",
+            "Source code, https://github.com/agronholm/anyio",
+            "Issue tracker, https://github.com/agronholm/anyio/issues"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "attrs",
+          "version": "25.3.0",
+          "license_expression": "MIT",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "attrs-25.3.0.dist-info/licenses/LICENSE",
+              "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f"
+            }
+          ],
+          "requires": [
+            "cloudpickle; (platform_python_implementation == 'CPython') and extra == 'benchmark'",
+            "hypothesis; extra == 'benchmark'",
+            "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'benchmark'",
+            "pympler; extra == 'benchmark'",
+            "pytest-codspeed; extra == 'benchmark'",
+            "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'benchmark'",
+            "pytest-xdist[psutil]; extra == 'benchmark'",
+            "pytest>=4.3.0; extra == 'benchmark'",
+            "cloudpickle; (platform_python_implementation == 'CPython') and extra == 'cov'",
+            "coverage[toml]>=5.3; extra == 'cov'",
+            "hypothesis; extra == 'cov'",
+            "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'cov'",
+            "pympler; extra == 'cov'",
+            "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'cov'",
+            "pytest-xdist[psutil]; extra == 'cov'",
+            "pytest>=4.3.0; extra == 'cov'",
+            "cloudpickle; (platform_python_implementation == 'CPython') and extra == 'dev'",
+            "hypothesis; extra == 'dev'",
+            "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'dev'",
+            "pre-commit-uv; extra == 'dev'",
+            "pympler; extra == 'dev'",
+            "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'dev'",
+            "pytest-xdist[psutil]; extra == 'dev'",
+            "pytest>=4.3.0; extra == 'dev'",
+            "cogapp; extra == 'docs'",
+            "furo; extra == 'docs'",
+            "myst-parser; extra == 'docs'",
+            "sphinx; extra == 'docs'",
+            "sphinx-notfound-page; extra == 'docs'",
+            "sphinxcontrib-towncrier; extra == 'docs'",
+            "towncrier; extra == 'docs'",
+            "cloudpickle; (platform_python_implementation == 'CPython') and extra == 'tests'",
+            "hypothesis; extra == 'tests'",
+            "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'tests'",
+            "pympler; extra == 'tests'",
+            "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'tests'",
+            "pytest-xdist[psutil]; extra == 'tests'",
+            "pytest>=4.3.0; extra == 'tests'",
+            "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'tests-mypy'",
+            "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'tests-mypy'"
+          ],
+          "project_urls": [
+            "Documentation, https://www.attrs.org/",
+            "Changelog, https://www.attrs.org/en/stable/changelog.html",
+            "GitHub, https://github.com/python-attrs/attrs",
+            "Funding, https://github.com/sponsors/hynek",
+            "Tidelift, https://tidelift.com/subscription/pkg/pypi-attrs?utm_source=pypi-attrs&utm_medium=pypi"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "Authlib",
+          "version": "1.9.1",
+          "license_expression": null,
+          "license_metadata": "BSD-3-Clause",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: BSD License"
+          ],
+          "license_files": [
+            {
+              "path": "authlib-1.9.1.dist-info/licenses/LICENSE",
+              "sha256": "8e1b48518de9c6cd00cb48c7fe5b8023fd90d5552ca12ebe7362a0df30ddbe45"
+            }
+          ],
+          "requires": [
+            "cryptography>=45.0.1",
+            "joserfc>=1.6.8"
+          ],
+          "project_urls": [
+            "Documentation, https://docs.authlib.org/",
+            "Purchase, https://authlib.org/plans",
+            "Issues, https://github.com/authlib/authlib/issues",
+            "Source, https://github.com/authlib/authlib",
+            "Donate, https://github.com/sponsors/lepture",
+            "Blog, https://blog.authlib.org/"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "cbor2",
+          "version": "5.7.0",
+          "license_expression": "MIT",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "cbor2-5.7.0.dist-info/licenses/LICENSE.txt",
+              "sha256": "a6afd126d8f545a15166a22f25fadff4b9fb4978bbdd17e97d97d950b66d2fef"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Changelog, https://cbor2.readthedocs.io/en/latest/versionhistory.html",
+            "Documentation, https://cbor2.readthedocs.org/en/latest/",
+            "Source Code, https://github.com/agronholm/cbor2",
+            "Issue Tracker, https://github.com/agronholm/cbor2/issues"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "certifi",
+          "version": "2026.10.18",
+          "license_expression": null,
+          "license_metadata": "MPL-2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"
+          ],
+          "license_files": [
+            {
+              "path": "certifi-2026.10.18.dist-info/licenses/LICENSE",
+              "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Source, https://github.com/certifi/python-certifi"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "certifi",
+          "version": "2025.4.26",
+          "license_expression": null,
+          "license_metadata": "MPL-2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"
+          ],
+          "license_files": [
+            {
+              "path": "certifi-2025.4.26.dist-info/licenses/LICENSE",
+              "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Source, https://github.com/certifi/python-certifi"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "cffi",
+          "version": "2.1.1",
+          "license_expression": "MIT-0",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "cffi-2.1.1.dist-info/licenses/LICENSE",
+              "sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63"
+            }
+          ],
+          "requires": [
+            "pycparser; implementation_name != \"PyPy\""
+          ],
+          "project_urls": [
+            "Documentation, https://cffi.readthedocs.io/",
+            "Changelog, https://cffi.readthedocs.io/en/latest/whatsnew.html",
+            "Download, https://github.com/python-cffi/cffi/releases",
+            "Contact, https://groups.google.com/forum/#!forum/python-cffi",
+            "Source Code, https://github.com/python-cffi/cffi",
+            "Issue Tracker, https://github.com/python-cffi/cffi/issues"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "charset-normalizer",
+          "version": "3.5.2",
+          "license_expression": null,
+          "license_metadata": "MIT",
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "charset_normalizer-3.5.2.dist-info/licenses/LICENSE",
+              "sha256": "6d0d41bfe170ac6c7dc248c9a63e254d0fb45a60d50a8257d0af92c6e249b887"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Changelog, https://github.com/jawah/charset_normalizer/blob/master/CHANGELOG.md",
+            "Documentation, https://charset-normalizer.readthedocs.io/",
+            "Code, https://github.com/jawah/charset_normalizer",
+            "Issue tracker, https://github.com/jawah/charset_normalizer/issues"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "cryptography",
+          "version": "46.0.5",
+          "license_expression": "Apache-2.0 OR BSD-3-Clause",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "cryptography-46.0.5.dist-info/licenses/LICENSE",
+              "sha256": "3e0c7c091a948b82533ba98fd7cbb40432d6f1a9acbf85f5922d2f99a93ae6bb"
+            },
+            {
+              "path": "cryptography-46.0.5.dist-info/licenses/LICENSE.APACHE",
+              "sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe"
+            },
+            {
+              "path": "cryptography-46.0.5.dist-info/licenses/LICENSE.BSD",
+              "sha256": "602c4c7482de6479dd2e9793cda275e5e63d773dacd1eca689232ab7008fb4fb"
+            }
+          ],
+          "requires": [
+            "cffi>=1.14 ; python_full_version == '3.8.*' and platform_python_implementation != 'PyPy'",
+            "cffi>=2.0.0 ; python_full_version >= '3.9' and platform_python_implementation != 'PyPy'",
+            "typing-extensions>=4.13.2 ; python_full_version < '3.11'",
+            "bcrypt>=3.1.5 ; extra == 'ssh'",
+            "nox[uv]>=2024.4.15 ; extra == 'nox'",
+            "cryptography-vectors==46.0.5 ; extra == 'test'",
+            "pytest>=7.4.0 ; extra == 'test'",
+            "pytest-benchmark>=4.0 ; extra == 'test'",
+            "pytest-cov>=2.10.1 ; extra == 'test'",
+            "pytest-xdist>=3.5.0 ; extra == 'test'",
+            "pretend>=0.7 ; extra == 'test'",
+            "certifi>=2024 ; extra == 'test'",
+            "pytest-randomly ; extra == 'test-randomorder'",
+            "sphinx>=5.3.0 ; extra == 'docs'",
+            "sphinx-rtd-theme>=3.0.0 ; extra == 'docs'",
+            "sphinx-inline-tabs ; extra == 'docs'",
+            "pyenchant>=3 ; extra == 'docstest'",
+            "readme-renderer>=30.0 ; extra == 'docstest'",
+            "sphinxcontrib-spelling>=7.3.1 ; extra == 'docstest'",
+            "build>=1.0.0 ; extra == 'sdist'",
+            "ruff>=0.11.11 ; extra == 'pep8test'",
+            "mypy>=1.14 ; extra == 'pep8test'",
+            "check-sdist ; extra == 'pep8test'",
+            "click>=8.0.1 ; extra == 'pep8test'"
+          ],
+          "project_urls": [
+            "homepage, https://github.com/pyca/cryptography",
+            "documentation, https://cryptography.io/",
+            "source, https://github.com/pyca/cryptography/",
+            "issues, https://github.com/pyca/cryptography/issues",
+            "changelog, https://cryptography.io/en/latest/changelog/"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "fastapi",
+          "version": "0.141.1",
+          "license_expression": "MIT",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "fastapi-0.141.1.dist-info/licenses/LICENSE",
+              "sha256": "4ec89ffc81485b97fec584b2d4a961032eeffe834453894fd9c1274906cc744e"
+            }
+          ],
+          "requires": [
+            "starlette>=0.46.0",
+            "pydantic>=2.9.0",
+            "typing-extensions>=4.8.0",
+            "typing-inspection>=0.4.2",
+            "annotated-doc>=0.0.2",
+            "fastapi-cli[standard]>=0.0.32; extra == \"standard\"",
+            "fastar>=0.9.0; extra == \"standard\"",
+            "httpx<1.0.0,>=0.23.0; extra == \"standard\"",
+            "jinja2>=3.1.5; extra == \"standard\"",
+            "python-multipart>=0.0.18; extra == \"standard\"",
+            "email-validator>=2.0.0; extra == \"standard\"",
+            "uvicorn[standard]>=0.12.0; extra == \"standard\"",
+            "pydantic-settings>=2.0.0; extra == \"standard\"",
+            "pydantic-extra-types>=2.0.0; extra == \"standard\"",
+            "fastapi-cli[standard-no-fastapi-cloud-cli]>=0.0.32; extra == \"standard-no-fastapi-cloud-cli\"",
+            "httpx<1.0.0,>=0.23.0; extra == \"standard-no-fastapi-cloud-cli\"",
+            "jinja2>=3.1.5; extra == \"standard-no-fastapi-cloud-cli\"",
+            "python-multipart>=0.0.18; extra == \"standard-no-fastapi-cloud-cli\"",
+            "email-validator>=2.0.0; extra == \"standard-no-fastapi-cloud-cli\"",
+            "uvicorn[standard]>=0.12.0; extra == \"standard-no-fastapi-cloud-cli\"",
+            "pydantic-settings>=2.0.0; extra == \"standard-no-fastapi-cloud-cli\"",
+            "pydantic-extra-types>=2.0.0; extra == \"standard-no-fastapi-cloud-cli\"",
+            "fastapi-cli[standard]>=0.0.32; extra == \"all\"",
+            "httpx<1.0.0,>=0.23.0; extra == \"all\"",
+            "jinja2>=3.1.5; extra == \"all\"",
+            "python-multipart>=0.0.18; extra == \"all\"",
+            "itsdangerous>=1.1.0; extra == \"all\"",
+            "pyyaml>=5.3.1; extra == \"all\"",
+            "email-validator>=2.0.0; extra == \"all\"",
+            "uvicorn[standard]>=0.12.0; extra == \"all\"",
+            "pydantic-settings>=2.0.0; extra == \"all\"",
+            "pydantic-extra-types>=2.0.0; extra == \"all\""
+          ],
+          "project_urls": [
+            "Homepage, https://github.com/fastapi/fastapi",
+            "Documentation, https://fastapi.tiangolo.com/",
+            "Repository, https://github.com/fastapi/fastapi",
+            "Issues, https://github.com/fastapi/fastapi/issues",
+            "Changelog, https://fastapi.tiangolo.com/release-notes/"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "frozenlist",
+          "version": "1.6.0",
+          "license_expression": null,
+          "license_metadata": "Apache-2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "frozenlist-1.6.0.dist-info/licenses/LICENSE",
+              "sha256": "6fd5243e92dd7f98ec69c7ac377728e74905709ff527a5bf98d6d0263c04f5b6"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org",
+            "Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org",
+            "CI: Github Actions, https://github.com/aio-libs/frozenlist/actions",
+            "Code of Conduct, https://github.com/aio-libs/.github/blob/master/CODE_OF_CONDUCT.md",
+            "Coverage: codecov, https://codecov.io/github/aio-libs/frozenlist",
+            "Docs: Changelog, https://github.com/aio-libs/frozenlist/blob/master/CHANGES.rst#changelog",
+            "Docs: RTD, https://frozenlist.aio-libs.org",
+            "GitHub: issues, https://github.com/aio-libs/frozenlist/issues",
+            "GitHub: repo, https://github.com/aio-libs/frozenlist"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "grpclib",
+          "version": "0.4.8",
+          "license_expression": null,
+          "license_metadata": "BSD-3-Clause",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: BSD License"
+          ],
+          "license_files": [
+            {
+              "path": "grpclib-0.4.8.dist-info/LICENSE.txt",
+              "sha256": "6c7fa8cf9b94ad5043a6b550a0ffb98356e66100b69dd1cb8e1f82606b436e8e"
+            }
+          ],
+          "requires": [
+            "h2 <5,>=3.1.0",
+            "multidict",
+            "protobuf >=3.20.0 ; extra == 'protobuf'"
+          ],
+          "project_urls": [],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "h11",
+          "version": "0.16.0",
+          "license_expression": null,
+          "license_metadata": "MIT",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: MIT License"
+          ],
+          "license_files": [
+            {
+              "path": "h11-0.16.0.dist-info/licenses/LICENSE.txt",
+              "sha256": "37db5bb85926db28a427a25867f10b1232003aea1be69ccb851138adb8e6f361"
+            }
+          ],
+          "requires": [],
+          "project_urls": [],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "h2",
+          "version": "4.2.0",
+          "license_expression": null,
+          "license_metadata": "The MIT License (MIT)\n\nCopyright (c) 2015-2020 Cory Benfield and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: MIT License"
+          ],
+          "license_files": [
+            {
+              "path": "h2-4.2.0.dist-info/LICENSE",
+              "sha256": "7a65a5af0cbabf1c16251c7c6b2b7cb46d16a7222e79975b9b61fcd66a2e3f28"
+            }
+          ],
+          "requires": [
+            "hyperframe<7,>=6.1",
+            "hpack<5,>=4.1"
+          ],
+          "project_urls": [
+            "Homepage, https://github.com/python-hyper/h2/",
+            "Bug Reports, https://github.com/python-hyper/h2/issues",
+            "Source, https://github.com/python-hyper/h2/",
+            "Documentation, https://python-hyper.org/"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "hpack",
+          "version": "4.1.0",
+          "license_expression": null,
+          "license_metadata": "The MIT License (MIT)\n\nCopyright (c) 2014 Cory Benfield\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: MIT License"
+          ],
+          "license_files": [
+            {
+              "path": "hpack-4.1.0.dist-info/LICENSE",
+              "sha256": "763a9342a04df62046c9dc748a5287934eb0a5331c6863b3ca0aee20e18cb4ed"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Homepage, https://github.com/python-hyper/hpack/",
+            "Bug Reports, https://github.com/python-hyper/hpack/issues",
+            "Source, https://github.com/python-hyper/hpack/",
+            "Documentation, https://python-hyper.org/"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "httpcore",
+          "version": "1.0.9",
+          "license_expression": "BSD-3-Clause",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: BSD License"
+          ],
+          "license_files": [
+            {
+              "path": "httpcore-1.0.9.dist-info/licenses/LICENSE.md",
+              "sha256": "fdcb59154c74cbaba16a11242f7740bea9f23d6feb5547917d8c5f94a80392a5"
+            }
+          ],
+          "requires": [
+            "certifi",
+            "h11>=0.16",
+            "anyio<5.0,>=4.0; extra == 'asyncio'",
+            "h2<5,>=3; extra == 'http2'",
+            "socksio==1.*; extra == 'socks'",
+            "trio<1.0,>=0.22.0; extra == 'trio'"
+          ],
+          "project_urls": [
+            "Documentation, https://www.encode.io/httpcore",
+            "Homepage, https://www.encode.io/httpcore/",
+            "Source, https://github.com/encode/httpcore"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "httpx",
+          "version": "0.28.1",
+          "license_expression": null,
+          "license_metadata": "BSD-3-Clause",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: BSD License"
+          ],
+          "license_files": [
+            {
+              "path": "httpx-0.28.1.dist-info/licenses/LICENSE.md",
+              "sha256": "4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d"
+            }
+          ],
+          "requires": [
+            "anyio",
+            "certifi",
+            "httpcore==1.*",
+            "idna",
+            "brotli; (platform_python_implementation == 'CPython') and extra == 'brotli'",
+            "brotlicffi; (platform_python_implementation != 'CPython') and extra == 'brotli'",
+            "click==8.*; extra == 'cli'",
+            "pygments==2.*; extra == 'cli'",
+            "rich<14,>=10; extra == 'cli'",
+            "h2<5,>=3; extra == 'http2'",
+            "socksio==1.*; extra == 'socks'",
+            "zstandard>=0.18.0; extra == 'zstd'"
+          ],
+          "project_urls": [
+            "Changelog, https://github.com/encode/httpx/blob/master/CHANGELOG.md",
+            "Documentation, https://www.python-httpx.org",
+            "Homepage, https://github.com/encode/httpx",
+            "Source, https://github.com/encode/httpx"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "hyperframe",
+          "version": "6.1.0",
+          "license_expression": null,
+          "license_metadata": "The MIT License (MIT)\n\nCopyright (c) 2014 Cory Benfield\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: MIT License"
+          ],
+          "license_files": [
+            {
+              "path": "hyperframe-6.1.0.dist-info/LICENSE",
+              "sha256": "763a9342a04df62046c9dc748a5287934eb0a5331c6863b3ca0aee20e18cb4ed"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Homepage, https://github.com/python-hyper/hyperframe/",
+            "Bug Reports, https://github.com/python-hyper/hyperframe/issues",
+            "Source, https://github.com/python-hyper/hyperframe/",
+            "Documentation, https://python-hyper.org/"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "idna",
+          "version": "3.20",
+          "license_expression": "BSD-3-Clause",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "idna-3.20.dist-info/licenses/LICENSE.md",
+              "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+            }
+          ],
+          "requires": [
+            "ruff >= 0.16.0 ; extra == \"all\"",
+            "mypy >= 1.11.2 ; extra == \"all\"",
+            "ty >= 0.0.37 ; extra == \"all\"",
+            "pytest >= 8.3.2 ; extra == \"all\"",
+            "hypothesis >= 6.141.1 ; extra == \"all\"",
+            "coverage >= 7.10.0 ; extra == \"all\""
+          ],
+          "project_urls": [
+            "Changelog, https://github.com/kjd/idna/blob/master/HISTORY.md",
+            "Issue tracker, https://github.com/kjd/idna/issues",
+            "Source, https://github.com/kjd/idna"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "idna",
+          "version": "3.10",
+          "license_expression": null,
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: BSD License"
+          ],
+          "license_files": [
+            {
+              "path": "idna-3.10.dist-info/LICENSE.md",
+              "sha256": "a59f0b0ef3635874109a4461ca44ff7a70d50696e814767bfaf721d4c9b0db0f"
+            }
+          ],
+          "requires": [
+            "ruff >= 0.6.2 ; extra == \"all\"",
+            "mypy >= 1.11.2 ; extra == \"all\"",
+            "pytest >= 8.3.2 ; extra == \"all\"",
+            "flake8 >= 7.1.1 ; extra == \"all\""
+          ],
+          "project_urls": [
+            "Changelog, https://github.com/kjd/idna/blob/master/HISTORY.rst",
+            "Issue tracker, https://github.com/kjd/idna/issues",
+            "Source, https://github.com/kjd/idna"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "itsdangerous",
+          "version": "2.2.0",
+          "license_expression": null,
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: BSD License"
+          ],
+          "license_files": [
+            {
+              "path": "itsdangerous-2.2.0.dist-info/LICENSE.txt",
+              "sha256": "63af09891b6be8ad1a4252ed43af0f4efba7fc948e228367bed7f3c5ae0b09d7"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Changes, https://itsdangerous.palletsprojects.com/changes/",
+            "Chat, https://discord.gg/pallets",
+            "Documentation, https://itsdangerous.palletsprojects.com/",
+            "Donate, https://palletsprojects.com/donate",
+            "Source, https://github.com/pallets/itsdangerous/"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "joserfc",
+          "version": "1.7.5",
+          "license_expression": null,
+          "license_metadata": "BSD-3-Clause",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: BSD License"
+          ],
+          "license_files": [
+            {
+              "path": "joserfc-1.7.5.dist-info/licenses/LICENSE",
+              "sha256": "19ee1fafcc9ec4217fc32b8a651d820538c789cf4041cb4e46b4b176a5f2a9c8"
+            }
+          ],
+          "requires": [
+            "cryptography>=45.0.1",
+            "pycryptodome; extra == \"drafts\""
+          ],
+          "project_urls": [
+            "Documentation, https://jose.authlib.org/",
+            "Source, https://github.com/authlib/joserfc",
+            "Funding, https://github.com/sponsors/authlib",
+            "Blog, https://blog.authlib.org/"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "multidict",
+          "version": "6.4.4",
+          "license_expression": null,
+          "license_metadata": "Apache 2",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Apache Software License"
+          ],
+          "license_files": [
+            {
+              "path": "multidict-6.4.4.dist-info/licenses/LICENSE",
+              "sha256": "93d11a968e2f0f36373c40811ff6d20e173f58c3cab5884cd6617bbfd795492a"
+            }
+          ],
+          "requires": [
+            "typing-extensions>=4.1.0; python_version < \"3.11\""
+          ],
+          "project_urls": [
+            "Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org",
+            "Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org",
+            "CI: GitHub, https://github.com/aio-libs/multidict/actions",
+            "Code of Conduct, https://github.com/aio-libs/.github/blob/master/CODE_OF_CONDUCT.md",
+            "Coverage: codecov, https://codecov.io/github/aio-libs/multidict",
+            "Docs: Changelog, https://multidict.aio-libs.org/en/latest/changes/",
+            "Docs: RTD, https://multidict.aio-libs.org",
+            "GitHub: issues, https://github.com/aio-libs/multidict/issues",
+            "GitHub: repo, https://github.com/aio-libs/multidict"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "pip",
+          "version": "25.1.1",
+          "license_expression": null,
+          "license_metadata": "MIT",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: MIT License"
+          ],
+          "license_files": [
+            {
+              "path": "pip-25.1.1.dist-info/licenses/AUTHORS.txt",
+              "sha256": "6330c54d8a5e627c2998e0c315383229934a59c7dd3b5d0be44c7f53a9092d17"
+            },
+            {
+              "path": "pip-25.1.1.dist-info/licenses/LICENSE.txt",
+              "sha256": "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Homepage, https://pip.pypa.io/",
+            "Documentation, https://pip.pypa.io",
+            "Source, https://github.com/pypa/pip",
+            "Changelog, https://pip.pypa.io/en/stable/news/"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "propcache",
+          "version": "0.3.1",
+          "license_expression": null,
+          "license_metadata": "Apache-2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Apache Software License"
+          ],
+          "license_files": [
+            {
+              "path": "propcache-0.3.1.dist-info/licenses/LICENSE",
+              "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+            },
+            {
+              "path": "propcache-0.3.1.dist-info/licenses/NOTICE",
+              "sha256": "56d6ac6c8105c0a51304c21db060e361af9a8ea0af9a75c239c28b5d13693838"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org",
+            "Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org",
+            "CI: GitHub Workflows, https://github.com/aio-libs/propcache/actions?query=branch:master",
+            "Code of Conduct, https://github.com/aio-libs/.github/blob/master/CODE_OF_CONDUCT.md",
+            "Coverage: codecov, https://codecov.io/github/aio-libs/propcache",
+            "Docs: Changelog, https://propcache.readthedocs.io/en/latest/changes/",
+            "Docs: RTD, https://propcache.readthedocs.io",
+            "GitHub: issues, https://github.com/aio-libs/propcache/issues",
+            "GitHub: repo, https://github.com/aio-libs/propcache"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "protobuf",
+          "version": "6.31.1",
+          "license_expression": null,
+          "license_metadata": "3-Clause BSD License",
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "protobuf-6.31.1.dist-info/LICENSE",
+              "sha256": "6e5e117324afd944dcf67f36cf329843bc1a92229a8cd9bb573d7a83130fea7d"
+            }
+          ],
+          "requires": [],
+          "project_urls": [],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "pycparser",
+          "version": "3.11",
+          "license_expression": "BSD-3-Clause",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "pycparser-3.11.dist-info/licenses/LICENSE",
+              "sha256": "0a9e78156ae8b96caf1b4f11ac2df424b83de29736f9e757630548a6272fdf90"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Homepage, https://github.com/eliben/pycparser"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "pydantic",
+          "version": "2.14.1",
+          "license_expression": "MIT",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "pydantic-2.14.1.dist-info/licenses/LICENSE",
+              "sha256": "a9e186f3ca16b5eef84318e7a701721351a00cb7b8ae3a4394b67b49e3529ef3"
+            }
+          ],
+          "requires": [
+            "annotated-types>=0.6.0",
+            "pydantic-core==2.50.1",
+            "typing-extensions>=4.16.0",
+            "typing-inspection>=0.4.4",
+            "email-validator>=2.0.0; extra == 'email'",
+            "tzdata; (platform_system == 'Windows') and extra == 'timezone'"
+          ],
+          "project_urls": [
+            "Homepage, https://github.com/pydantic/pydantic",
+            "Documentation, https://pydantic.dev/docs/validation/latest/get-started/",
+            "Funding, https://github.com/sponsors/samuelcolvin",
+            "Source, https://github.com/pydantic/pydantic",
+            "Changelog, https://pydantic.dev/docs/validation/latest/get-started/changelog/"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "pydantic_core",
+          "version": "2.50.1",
+          "license_expression": "MIT",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "pydantic_core-2.50.1.dist-info/licenses/LICENSE",
+              "sha256": "2afdd30d54b4d62b6f488a6bcc1546e84ec5061f13f4209c03d012348783795a"
+            }
+          ],
+          "requires": [
+            "typing-extensions>=4.16.0"
+          ],
+          "project_urls": [
+            "Funding, https://github.com/sponsors/samuelcolvin",
+            "Homepage, https://github.com/pydantic",
+            "Source, https://github.com/pydantic/pydantic/tree/main/pydantic-core"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "python-multipart",
+          "version": "0.0.32",
+          "license_expression": "Apache-2.0",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Apache Software License"
+          ],
+          "license_files": [
+            {
+              "path": "python_multipart-0.0.32.dist-info/licenses/LICENSE.txt",
+              "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Homepage, https://github.com/Kludex/python-multipart",
+            "Documentation, https://kludex.github.io/python-multipart/",
+            "Changelog, https://github.com/Kludex/python-multipart/blob/master/CHANGELOG.md",
+            "Source, https://github.com/Kludex/python-multipart"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "requests",
+          "version": "2.32.5",
+          "license_expression": null,
+          "license_metadata": "Apache-2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Apache Software License"
+          ],
+          "license_files": [
+            {
+              "path": "requests-2.32.5.dist-info/licenses/LICENSE",
+              "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+            }
+          ],
+          "requires": [
+            "charset_normalizer<4,>=2",
+            "idna<4,>=2.5",
+            "urllib3<3,>=1.21.1",
+            "certifi>=2017.4.17",
+            "PySocks!=1.5.7,>=1.5.6; extra == \"socks\"",
+            "chardet<6,>=3.0.2; extra == \"use-chardet-on-py3\""
+          ],
+          "project_urls": [
+            "Documentation, https://requests.readthedocs.io",
+            "Source, https://github.com/psf/requests"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "starlette",
+          "version": "1.9.0",
+          "license_expression": "BSD-3-Clause",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "starlette-1.9.0.dist-info/licenses/LICENSE.md",
+              "sha256": "dcb95677a02240243187e964f941847d19b17821cf99e5afae684fab328c19bf"
+            }
+          ],
+          "requires": [
+            "anyio<5,>=4.0.0",
+            "typing-extensions>=4.10.0; python_version < '3.13'",
+            "httpx2>=2.0.0; extra == 'full'",
+            "httpx<0.29.0,>=0.27.0; extra == 'full'",
+            "itsdangerous; extra == 'full'",
+            "jinja2; extra == 'full'",
+            "opentelemetry-api; extra == 'full'",
+            "python-multipart>=0.0.18; extra == 'full'",
+            "pyyaml; extra == 'full'"
+          ],
+          "project_urls": [
+            "Homepage, https://github.com/Kludex/starlette",
+            "Documentation, https://starlette.dev/",
+            "Changelog, https://starlette.dev/release-notes/",
+            "Funding, https://github.com/sponsors/Kludex",
+            "Source, https://github.com/Kludex/starlette"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "typing-inspection",
+          "version": "0.4.4",
+          "license_expression": "MIT",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "typing_inspection-0.4.4.dist-info/licenses/LICENSE",
+              "sha256": "804b59b25f2c31bd278f9202a19ae49a3945aa2664387e2d0a128c7cacc61ec3"
+            }
+          ],
+          "requires": [
+            "typing-extensions>=4.15.0"
+          ],
+          "project_urls": [
+            "Homepage, https://github.com/pydantic/typing-inspection",
+            "Documentation, https://pydantic.github.io/typing-inspection/dev/",
+            "Source, https://github.com/pydantic/typing-inspection",
+            "Changelog, https://github.com/pydantic/typing-inspection/blob/main/HISTORY.md"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "typing_extensions",
+          "version": "4.16.0",
+          "license_expression": "PSF-2.0",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "typing_extensions-4.16.0.dist-info/licenses/LICENSE",
+              "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Bug Tracker, https://github.com/python/typing_extensions/issues",
+            "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+            "Documentation, https://typing-extensions.readthedocs.io/",
+            "Home, https://github.com/python/typing_extensions",
+            "Q & A, https://github.com/python/typing/discussions",
+            "Repository, https://github.com/python/typing_extensions"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "typing_extensions",
+          "version": "4.13.2",
+          "license_expression": "PSF-2.0",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "typing_extensions-4.13.2.dist-info/licenses/LICENSE",
+              "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Bug Tracker, https://github.com/python/typing_extensions/issues",
+            "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+            "Documentation, https://typing-extensions.readthedocs.io/",
+            "Home, https://github.com/python/typing_extensions",
+            "Q & A, https://github.com/python/typing/discussions",
+            "Repository, https://github.com/python/typing_extensions"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "urllib3",
+          "version": "2.8.0",
+          "license_expression": "MIT",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "urllib3-2.8.0.dist-info/licenses/LICENSE.txt",
+              "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
+            }
+          ],
+          "requires": [
+            "brotli>=1.2.0; (platform_python_implementation == 'CPython') and extra == 'brotli'",
+            "brotlicffi>=1.2.0.0; (platform_python_implementation != 'CPython') and extra == 'brotli'",
+            "h2<5,>=4; extra == 'h2'",
+            "pysocks!=1.5.7,<2.0,>=1.5.6; extra == 'socks'",
+            "backports-zstd>=1.0.0; (python_version < '3.14') and extra == 'zstd'"
+          ],
+          "project_urls": [
+            "Changelog, https://github.com/urllib3/urllib3/blob/main/CHANGES.rst",
+            "Documentation, https://urllib3.readthedocs.io",
+            "Code, https://github.com/urllib3/urllib3",
+            "Issue tracker, https://github.com/urllib3/urllib3/issues",
+            "Security policy, https://urllib3.readthedocs.io/en/latest/security.html"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "uv",
+          "version": "0.7.19",
+          "license_expression": null,
+          "license_metadata": "MIT OR Apache-2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: MIT License",
+            "License :: OSI Approved :: Apache Software License"
+          ],
+          "license_files": [
+            {
+              "path": "uv-0.7.19.dist-info/licenses/LICENSE-APACHE",
+              "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+            },
+            {
+              "path": "uv-0.7.19.dist-info/licenses/LICENSE-MIT",
+              "sha256": "860e3d7a86b84e6a7012c7a635fc64df475cebc6cce34dfeb73a5982ec58176c"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Repository, https://github.com/astral-sh/uv",
+            "Documentation, https://docs.astral.sh/uv",
+            "Changelog, https://github.com/astral-sh/uv/blob/main/CHANGELOG.md",
+            "Releases, https://github.com/astral-sh/uv/releases",
+            "Discord, https://discord.gg/astral-sh"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "wheel",
+          "version": "0.45.1",
+          "license_expression": null,
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: MIT License"
+          ],
+          "license_files": [
+            {
+              "path": "wheel-0.45.1.dist-info/LICENSE.txt",
+              "sha256": "30c23618679108f3e8ea1d2a658c7ca417bdfc891c98ef1a89fa4ff0c9828654"
+            },
+            {
+              "path": "wheel/vendored/packaging/LICENSE",
+              "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+            },
+            {
+              "path": "wheel/vendored/packaging/LICENSE.APACHE",
+              "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+            },
+            {
+              "path": "wheel/vendored/packaging/LICENSE.BSD",
+              "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+            }
+          ],
+          "requires": [
+            "pytest >= 6.0.0 ; extra == \"test\"",
+            "setuptools >= 65 ; extra == \"test\""
+          ],
+          "project_urls": [
+            "Changelog, https://wheel.readthedocs.io/en/stable/news.html",
+            "Documentation, https://wheel.readthedocs.io/",
+            "Issue Tracker, https://github.com/pypa/wheel/issues",
+            "Source, https://github.com/pypa/wheel"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "yarl",
+          "version": "1.20.0",
+          "license_expression": null,
+          "license_metadata": "Apache-2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Apache Software License"
+          ],
+          "license_files": [
+            {
+              "path": "yarl-1.20.0.dist-info/licenses/LICENSE",
+              "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+            },
+            {
+              "path": "yarl-1.20.0.dist-info/licenses/NOTICE",
+              "sha256": "56d6ac6c8105c0a51304c21db060e361af9a8ea0af9a75c239c28b5d13693838"
+            }
+          ],
+          "requires": [
+            "idna>=2.0",
+            "multidict>=4.0",
+            "propcache>=0.2.1"
+          ],
+          "project_urls": [
+            "Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org",
+            "Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org",
+            "CI: GitHub Workflows, https://github.com/aio-libs/yarl/actions?query=branch:master",
+            "Code of Conduct, https://github.com/aio-libs/.github/blob/master/CODE_OF_CONDUCT.md",
+            "Coverage: codecov, https://codecov.io/github/aio-libs/yarl",
+            "Docs: Changelog, https://yarl.aio-libs.org/en/latest/changes/",
+            "Docs: RTD, https://yarl.aio-libs.org",
+            "GitHub: issues, https://github.com/aio-libs/yarl/issues",
+            "GitHub: repo, https://github.com/aio-libs/yarl"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        }
+      ]
+    },
+    "whisper": {
+      "schema": "wheel-license-inventory/v1",
+      "python": "3.12.1",
+      "packages": [
+        {
+          "name": "aiohappyeyeballs",
+          "version": "2.6.1",
+          "license_expression": null,
+          "license_metadata": "PSF-2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Python Software Foundation License"
+          ],
+          "license_files": [
+            {
+              "path": "aiohappyeyeballs-2.6.1.dist-info/LICENSE",
+              "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Bug Tracker, https://github.com/aio-libs/aiohappyeyeballs/issues",
+            "Changelog, https://github.com/aio-libs/aiohappyeyeballs/blob/main/CHANGELOG.md",
+            "Documentation, https://aiohappyeyeballs.readthedocs.io",
+            "Repository, https://github.com/aio-libs/aiohappyeyeballs"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "aiohttp",
+          "version": "3.12.7",
+          "license_expression": null,
+          "license_metadata": "Apache-2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "aiohttp-3.12.7.dist-info/licenses/LICENSE.txt",
+              "sha256": "9f80d0db7d755a941db4572172c270ecbd8f082ba215ddd095985942ed94a9eb"
+            }
+          ],
+          "requires": [
+            "aiohappyeyeballs>=2.5.0",
+            "aiosignal>=1.1.2",
+            "async-timeout<6.0,>=4.0; python_version < \"3.11\"",
+            "attrs>=17.3.0",
+            "frozenlist>=1.1.1",
+            "multidict<7.0,>=4.5",
+            "propcache>=0.2.0",
+            "yarl<2.0,>=1.17.0",
+            "aiodns>=3.3.0; extra == \"speedups\"",
+            "Brotli; platform_python_implementation == \"CPython\" and extra == \"speedups\"",
+            "brotlicffi; platform_python_implementation != \"CPython\" and extra == \"speedups\""
+          ],
+          "project_urls": [
+            "Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org",
+            "Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org",
+            "CI: GitHub Actions, https://github.com/aio-libs/aiohttp/actions?query=workflow%3ACI",
+            "Coverage: codecov, https://codecov.io/github/aio-libs/aiohttp",
+            "Docs: Changelog, https://docs.aiohttp.org/en/stable/changes.html",
+            "Docs: RTD, https://docs.aiohttp.org",
+            "GitHub: issues, https://github.com/aio-libs/aiohttp/issues",
+            "GitHub: repo, https://github.com/aio-libs/aiohttp"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "aiosignal",
+          "version": "1.3.2",
+          "license_expression": null,
+          "license_metadata": "Apache 2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Apache Software License"
+          ],
+          "license_files": [
+            {
+              "path": "aiosignal-1.3.2.dist-info/LICENSE",
+              "sha256": "6fd5243e92dd7f98ec69c7ac377728e74905709ff527a5bf98d6d0263c04f5b6"
+            }
+          ],
+          "requires": [
+            "frozenlist>=1.1.0"
+          ],
+          "project_urls": [
+            "Chat: Gitter, https://gitter.im/aio-libs/Lobby",
+            "CI: GitHub Actions, https://github.com/aio-libs/aiosignal/actions",
+            "Coverage: codecov, https://codecov.io/github/aio-libs/aiosignal",
+            "Docs: RTD, https://docs.aiosignal.org",
+            "GitHub: issues, https://github.com/aio-libs/aiosignal/issues",
+            "GitHub: repo, https://github.com/aio-libs/aiosignal"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "anyio",
+          "version": "4.15.1",
+          "license_expression": "MIT",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "anyio-4.15.1.dist-info/licenses/LICENSE",
+              "sha256": "5361ac9dc58f2ef5fd2e9b09c68297c17f04950909bbc8023bdb82eacf22c2b0"
+            }
+          ],
+          "requires": [
+            "exceptiongroup>=1.0.2; python_version < \"3.11\"",
+            "idna>=2.8",
+            "typing_extensions>=4.16.0; python_version < \"3.15\"",
+            "trio>=0.32.0; extra == \"trio\""
+          ],
+          "project_urls": [
+            "Documentation, https://anyio.readthedocs.io/en/latest/",
+            "Changelog, https://anyio.readthedocs.io/en/stable/versionhistory.html",
+            "Source code, https://github.com/agronholm/anyio",
+            "Issue tracker, https://github.com/agronholm/anyio/issues"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "attrs",
+          "version": "25.3.0",
+          "license_expression": "MIT",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "attrs-25.3.0.dist-info/licenses/LICENSE",
+              "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f"
+            }
+          ],
+          "requires": [
+            "cloudpickle; (platform_python_implementation == 'CPython') and extra == 'benchmark'",
+            "hypothesis; extra == 'benchmark'",
+            "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'benchmark'",
+            "pympler; extra == 'benchmark'",
+            "pytest-codspeed; extra == 'benchmark'",
+            "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'benchmark'",
+            "pytest-xdist[psutil]; extra == 'benchmark'",
+            "pytest>=4.3.0; extra == 'benchmark'",
+            "cloudpickle; (platform_python_implementation == 'CPython') and extra == 'cov'",
+            "coverage[toml]>=5.3; extra == 'cov'",
+            "hypothesis; extra == 'cov'",
+            "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'cov'",
+            "pympler; extra == 'cov'",
+            "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'cov'",
+            "pytest-xdist[psutil]; extra == 'cov'",
+            "pytest>=4.3.0; extra == 'cov'",
+            "cloudpickle; (platform_python_implementation == 'CPython') and extra == 'dev'",
+            "hypothesis; extra == 'dev'",
+            "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'dev'",
+            "pre-commit-uv; extra == 'dev'",
+            "pympler; extra == 'dev'",
+            "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'dev'",
+            "pytest-xdist[psutil]; extra == 'dev'",
+            "pytest>=4.3.0; extra == 'dev'",
+            "cogapp; extra == 'docs'",
+            "furo; extra == 'docs'",
+            "myst-parser; extra == 'docs'",
+            "sphinx; extra == 'docs'",
+            "sphinx-notfound-page; extra == 'docs'",
+            "sphinxcontrib-towncrier; extra == 'docs'",
+            "towncrier; extra == 'docs'",
+            "cloudpickle; (platform_python_implementation == 'CPython') and extra == 'tests'",
+            "hypothesis; extra == 'tests'",
+            "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'tests'",
+            "pympler; extra == 'tests'",
+            "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'tests'",
+            "pytest-xdist[psutil]; extra == 'tests'",
+            "pytest>=4.3.0; extra == 'tests'",
+            "mypy>=1.11.1; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'tests-mypy'",
+            "pytest-mypy-plugins; (platform_python_implementation == 'CPython' and python_version >= '3.10') and extra == 'tests-mypy'"
+          ],
+          "project_urls": [
+            "Documentation, https://www.attrs.org/",
+            "Changelog, https://www.attrs.org/en/stable/changelog.html",
+            "GitHub, https://github.com/python-attrs/attrs",
+            "Funding, https://github.com/sponsors/hynek",
+            "Tidelift, https://tidelift.com/subscription/pkg/pypi-attrs?utm_source=pypi-attrs&utm_medium=pypi"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "av",
+          "version": "15.1.0",
+          "license_expression": "BSD-3-Clause",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "av-15.1.0.dist-info/licenses/AUTHORS.py",
+              "sha256": "b1a9d3ec0d96a0f4de56e175658f7da2e086dde8fcfc9671289ae4c166ecbe95"
+            },
+            {
+              "path": "av-15.1.0.dist-info/licenses/AUTHORS.rst",
+              "sha256": "779de255faa63bb828d78d32d221e921318d7cec466af86d07ff1e70fd8f12e0"
+            },
+            {
+              "path": "av-15.1.0.dist-info/licenses/LICENSE.txt",
+              "sha256": "76af0461ffb92e19f1c14449e95557d83a2dfaa1baf202d49e5f1d8746c0da19"
+            },
+            {
+              "path": "av-15.1.0.dist-info/licenses/__pycache__/AUTHORS.cpython-312.pyc",
+              "sha256": "98f594ad364bb90b7a304a37128bbfb7d2a85e46d5f9c995e193dccf8300307f"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Bug Tracker, https://github.com/PyAV-Org/PyAV/discussions/new?category=4-bugs",
+            "Source Code, https://github.com/PyAV-Org/PyAV",
+            "homepage, https://pyav.basswood-io.com"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "cbor2",
+          "version": "5.7.0",
+          "license_expression": "MIT",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "cbor2-5.7.0.dist-info/licenses/LICENSE.txt",
+              "sha256": "a6afd126d8f545a15166a22f25fadff4b9fb4978bbdd17e97d97d950b66d2fef"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Changelog, https://cbor2.readthedocs.io/en/latest/versionhistory.html",
+            "Documentation, https://cbor2.readthedocs.org/en/latest/",
+            "Source Code, https://github.com/agronholm/cbor2",
+            "Issue Tracker, https://github.com/agronholm/cbor2/issues"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "certifi",
+          "version": "2025.4.26",
+          "license_expression": null,
+          "license_metadata": "MPL-2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"
+          ],
+          "license_files": [
+            {
+              "path": "certifi-2025.4.26.dist-info/licenses/LICENSE",
+              "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Source, https://github.com/certifi/python-certifi"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "click",
+          "version": "8.5.0",
+          "license_expression": "BSD-3-Clause",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "click-8.5.0.dist-info/licenses/LICENSE.txt",
+              "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Changes, https://click.palletsprojects.com/page/changes/",
+            "Chat, https://discord.gg/pallets",
+            "Documentation, https://click.palletsprojects.com/",
+            "Donate, https://palletsprojects.com/donate",
+            "Source, https://github.com/pallets/click/"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "ctranslate2",
+          "version": "4.8.3",
+          "license_expression": null,
+          "license_metadata": "MIT",
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [],
+          "requires": [
+            "numpy",
+            "pyyaml<7,>=5.3"
+          ],
+          "project_urls": [
+            "Documentation, https://opennmt.net/CTranslate2",
+            "Forum, https://forum.opennmt.net",
+            "Gitter, https://gitter.im/OpenNMT/CTranslate2",
+            "Source, https://github.com/OpenNMT/CTranslate2"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "faster-whisper",
+          "version": "1.2.1",
+          "license_expression": null,
+          "license_metadata": "MIT",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: MIT License"
+          ],
+          "license_files": [
+            {
+              "path": "faster_whisper-1.2.1.dist-info/LICENSE",
+              "sha256": "af6798135e729f8aa6c853936d037dfdea449734d26b8ea6a89805fca758c0d5"
+            }
+          ],
+          "requires": [
+            "ctranslate2<5,>=4.0",
+            "huggingface-hub>=0.21",
+            "tokenizers<1,>=0.13",
+            "onnxruntime<2,>=1.14",
+            "av>=11",
+            "tqdm",
+            "transformers[torch]>=4.23; extra == \"conversion\"",
+            "black==23.*; extra == \"dev\"",
+            "flake8==6.*; extra == \"dev\"",
+            "isort==5.*; extra == \"dev\"",
+            "pytest==7.*; extra == \"dev\""
+          ],
+          "project_urls": [],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "filelock",
+          "version": "4.2.0",
+          "license_expression": "MIT",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: MIT License"
+          ],
+          "license_files": [
+            {
+              "path": "filelock-4.2.0.dist-info/licenses/LICENSE",
+              "sha256": "608c89d5060ae9921adccf3236695bc654a9946e12323ef6c021dfa04e294d48"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Documentation, https://py-filelock.readthedocs.io",
+            "Homepage, https://github.com/tox-dev/py-filelock",
+            "Source, https://github.com/tox-dev/py-filelock",
+            "Tracker, https://github.com/tox-dev/py-filelock/issues"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "flatbuffers",
+          "version": "25.12.19",
+          "license_expression": null,
+          "license_metadata": "Apache 2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Apache Software License"
+          ],
+          "license_files": [],
+          "requires": [],
+          "project_urls": [
+            "Documentation, https://google.github.io/flatbuffers/",
+            "Source, https://github.com/google/flatbuffers"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "frozenlist",
+          "version": "1.6.0",
+          "license_expression": null,
+          "license_metadata": "Apache-2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "frozenlist-1.6.0.dist-info/licenses/LICENSE",
+              "sha256": "6fd5243e92dd7f98ec69c7ac377728e74905709ff527a5bf98d6d0263c04f5b6"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org",
+            "Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org",
+            "CI: Github Actions, https://github.com/aio-libs/frozenlist/actions",
+            "Code of Conduct, https://github.com/aio-libs/.github/blob/master/CODE_OF_CONDUCT.md",
+            "Coverage: codecov, https://codecov.io/github/aio-libs/frozenlist",
+            "Docs: Changelog, https://github.com/aio-libs/frozenlist/blob/master/CHANGES.rst#changelog",
+            "Docs: RTD, https://frozenlist.aio-libs.org",
+            "GitHub: issues, https://github.com/aio-libs/frozenlist/issues",
+            "GitHub: repo, https://github.com/aio-libs/frozenlist"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "fsspec",
+          "version": "2026.9.0",
+          "license_expression": "BSD-3-Clause",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "fsspec-2026.9.0.dist-info/licenses/LICENSE",
+              "sha256": "2dc35496ce53a7307915c008a844aad53e772b49b34cdd00445067691407ec94"
+            }
+          ],
+          "requires": [
+            "adlfs; extra == 'abfs'",
+            "adlfs; extra == 'adl'",
+            "pyarrow>=1; extra == 'arrow'",
+            "dask; extra == 'dask'",
+            "distributed; extra == 'dask'",
+            "pre-commit; extra == 'dev'",
+            "ruff>=0.5; extra == 'dev'",
+            "numpydoc; extra == 'doc'",
+            "sphinx; extra == 'doc'",
+            "sphinx-design; extra == 'doc'",
+            "sphinx-rtd-theme; extra == 'doc'",
+            "yarl; extra == 'doc'",
+            "dropbox; extra == 'dropbox'",
+            "dropboxdrivefs; extra == 'dropbox'",
+            "requests; extra == 'dropbox'",
+            "adlfs; extra == 'full'",
+            "aiohttp!=4.0.0a0,!=4.0.0a1; extra == 'full'",
+            "dask; extra == 'full'",
+            "distributed; extra == 'full'",
+            "dropbox; extra == 'full'",
+            "dropboxdrivefs; extra == 'full'",
+            "fusepy; extra == 'full'",
+            "gcsfs>=2026.4.0; extra == 'full'",
+            "libarchive-c; extra == 'full'",
+            "ocifs; extra == 'full'",
+            "panel; extra == 'full'",
+            "paramiko; extra == 'full'",
+            "pyarrow>=1; extra == 'full'",
+            "pygit2; extra == 'full'",
+            "requests; extra == 'full'",
+            "s3fs>=2026.6.0; extra == 'full'",
+            "smbprotocol; extra == 'full'",
+            "tqdm; extra == 'full'",
+            "fusepy; extra == 'fuse'",
+            "gcsfs>=2026.4.0; extra == 'gcs'",
+            "pygit2; extra == 'git'",
+            "requests; extra == 'github'",
+            "gcsfs>=2026.4.0; extra == 'gs'",
+            "panel; extra == 'gui'",
+            "pyarrow>=1; extra == 'hdfs'",
+            "aiohttp!=4.0.0a0,!=4.0.0a1; extra == 'http'",
+            "libarchive-c; extra == 'libarchive'",
+            "ocifs; extra == 'oci'",
+            "s3fs>=2026.6.0; extra == 's3'",
+            "paramiko; extra == 'sftp'",
+            "smbprotocol; extra == 'smb'",
+            "paramiko; extra == 'ssh'",
+            "aiohttp!=4.0.0a0,!=4.0.0a1; extra == 'test'",
+            "numpy; extra == 'test'",
+            "pytest; extra == 'test'",
+            "pytest-asyncio!=0.22.0; extra == 'test'",
+            "pytest-benchmark; extra == 'test'",
+            "pytest-cov; extra == 'test'",
+            "pytest-mock; extra == 'test'",
+            "pytest-recording; extra == 'test'",
+            "pytest-rerunfailures; extra == 'test'",
+            "requests; extra == 'test'",
+            "aiobotocore<3.0.0,>=2.5.4; extra == 'test-downstream'",
+            "dask[dataframe,test]; extra == 'test-downstream'",
+            "moto[server]<5,>4; extra == 'test-downstream'",
+            "pytest-timeout; extra == 'test-downstream'",
+            "xarray; extra == 'test-downstream'",
+            "zarr; extra == 'test-downstream'",
+            "adlfs; extra == 'test-full'",
+            "aiohttp!=4.0.0a0,!=4.0.0a1; extra == 'test-full'",
+            "backports-zstd; (python_version < '3.14') and extra == 'test-full'",
+            "cloudpickle; extra == 'test-full'",
+            "dask; extra == 'test-full'",
+            "distributed; extra == 'test-full'",
+            "dropbox; extra == 'test-full'",
+            "dropboxdrivefs; extra == 'test-full'",
+            "fastparquet; extra == 'test-full'",
+            "fusepy; extra == 'test-full'",
+            "gcsfs>=2026.4.0; extra == 'test-full'",
+            "jinja2; extra == 'test-full'",
+            "kerchunk; extra == 'test-full'",
+            "libarchive-c; extra == 'test-full'",
+            "lz4; extra == 'test-full'",
+            "notebook; extra == 'test-full'",
+            "numpy; extra == 'test-full'",
+            "ocifs; extra == 'test-full'",
+            "pandas<3.0.0; extra == 'test-full'",
+            "panel; extra == 'test-full'",
+            "paramiko; extra == 'test-full'",
+            "pyarrow>=1; extra == 'test-full'",
+            "pyftpdlib; extra == 'test-full'",
+            "pygit2; extra == 'test-full'",
+            "pytest; extra == 'test-full'",
+            "pytest-asyncio!=0.22.0; extra == 'test-full'",
+            "pytest-benchmark; extra == 'test-full'",
+            "pytest-cov; extra == 'test-full'",
+            "pytest-mock; extra == 'test-full'",
+            "pytest-recording; extra == 'test-full'",
+            "pytest-rerunfailures; extra == 'test-full'",
+            "python-snappy; extra == 'test-full'",
+            "requests; extra == 'test-full'",
+            "s3fs>=2026.6.0; extra == 'test-full'",
+            "smbprotocol; extra == 'test-full'",
+            "tqdm; extra == 'test-full'",
+            "urllib3; extra == 'test-full'",
+            "zarr<3.2.0; extra == 'test-full'",
+            "zstandard; (python_version < '3.14') and extra == 'test-full'",
+            "tqdm; extra == 'tqdm'"
+          ],
+          "project_urls": [
+            "Changelog, https://filesystem-spec.readthedocs.io/en/latest/changelog.html",
+            "Documentation, https://filesystem-spec.readthedocs.io/en/latest/",
+            "Homepage, https://github.com/fsspec/filesystem_spec"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "grpclib",
+          "version": "0.4.8",
+          "license_expression": null,
+          "license_metadata": "BSD-3-Clause",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: BSD License"
+          ],
+          "license_files": [
+            {
+              "path": "grpclib-0.4.8.dist-info/LICENSE.txt",
+              "sha256": "6c7fa8cf9b94ad5043a6b550a0ffb98356e66100b69dd1cb8e1f82606b436e8e"
+            }
+          ],
+          "requires": [
+            "h2 <5,>=3.1.0",
+            "multidict",
+            "protobuf >=3.20.0 ; extra == 'protobuf'"
+          ],
+          "project_urls": [],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "h11",
+          "version": "0.16.0",
+          "license_expression": null,
+          "license_metadata": "MIT",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: MIT License"
+          ],
+          "license_files": [
+            {
+              "path": "h11-0.16.0.dist-info/licenses/LICENSE.txt",
+              "sha256": "37db5bb85926db28a427a25867f10b1232003aea1be69ccb851138adb8e6f361"
+            }
+          ],
+          "requires": [],
+          "project_urls": [],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "h2",
+          "version": "4.2.0",
+          "license_expression": null,
+          "license_metadata": "The MIT License (MIT)\n\nCopyright (c) 2015-2020 Cory Benfield and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: MIT License"
+          ],
+          "license_files": [
+            {
+              "path": "h2-4.2.0.dist-info/LICENSE",
+              "sha256": "7a65a5af0cbabf1c16251c7c6b2b7cb46d16a7222e79975b9b61fcd66a2e3f28"
+            }
+          ],
+          "requires": [
+            "hyperframe<7,>=6.1",
+            "hpack<5,>=4.1"
+          ],
+          "project_urls": [
+            "Homepage, https://github.com/python-hyper/h2/",
+            "Bug Reports, https://github.com/python-hyper/h2/issues",
+            "Source, https://github.com/python-hyper/h2/",
+            "Documentation, https://python-hyper.org/"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "hf-xet",
+          "version": "1.7.0",
+          "license_expression": "Apache-2.0",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Apache Software License"
+          ],
+          "license_files": [
+            {
+              "path": "hf_xet-1.7.0.dist-info/licenses/LICENSE",
+              "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+            }
+          ],
+          "requires": [
+            "pytest ; extra == 'tests'"
+          ],
+          "project_urls": [
+            "Documentation, https://huggingface.co/docs/hub/xet/index",
+            "Homepage, https://github.com/huggingface/xet-core",
+            "Issues, https://github.com/huggingface/xet-core/issues",
+            "Repository, https://github.com/huggingface/xet-core.git"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "hpack",
+          "version": "4.1.0",
+          "license_expression": null,
+          "license_metadata": "The MIT License (MIT)\n\nCopyright (c) 2014 Cory Benfield\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: MIT License"
+          ],
+          "license_files": [
+            {
+              "path": "hpack-4.1.0.dist-info/LICENSE",
+              "sha256": "763a9342a04df62046c9dc748a5287934eb0a5331c6863b3ca0aee20e18cb4ed"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Homepage, https://github.com/python-hyper/hpack/",
+            "Bug Reports, https://github.com/python-hyper/hpack/issues",
+            "Source, https://github.com/python-hyper/hpack/",
+            "Documentation, https://python-hyper.org/"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "httpcore2",
+          "version": "2.13.1",
+          "license_expression": "BSD-3-Clause",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: BSD License"
+          ],
+          "license_files": [
+            {
+              "path": "httpcore2-2.13.1.dist-info/licenses/LICENSE.md",
+              "sha256": "c4df125c807b0613501e943a5c92496dd11d2c16604ce396097a8dde396304d9"
+            }
+          ],
+          "requires": [
+            "h11>=0.16",
+            "truststore>=0.10",
+            "anyio<5.0,>=4.5.0; extra == 'asyncio'",
+            "h2<5,>=3; extra == 'http2'",
+            "socksio==1.*; extra == 'socks'",
+            "trio<1.0,>=0.34.0; extra == 'trio'"
+          ],
+          "project_urls": [
+            "Changelog, https://github.com/pydantic/httpx2/blob/main/src/httpcore2/CHANGELOG.md",
+            "Homepage, https://github.com/pydantic/httpx2",
+            "Source, https://github.com/pydantic/httpx2/blob/main/src/httpcore2"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "httpx2",
+          "version": "2.13.1",
+          "license_expression": "BSD-3-Clause",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: BSD License"
+          ],
+          "license_files": [
+            {
+              "path": "httpx2-2.13.1.dist-info/licenses/LICENSE.md",
+              "sha256": "7e7d6dbaf7fe160d39fd6e84fd02c33cab96bcbea34d36998d545bceb4a19c30"
+            }
+          ],
+          "requires": [
+            "anyio>=4.10; sys_platform != 'emscripten'",
+            "httpcore2==2.13.1; sys_platform != 'emscripten'",
+            "httpx2-jsfetch; sys_platform == 'emscripten' and python_version >= '3.12'",
+            "idna>=3.18",
+            "truststore>=0.10; sys_platform != 'emscripten'",
+            "typing-extensions>=4.5.0; python_version < '3.13'",
+            "brotli>=1.2.0; (platform_python_implementation == 'CPython') and extra == 'brotli'",
+            "brotlicffi>=1.2.0.2; (platform_python_implementation != 'CPython') and extra == 'brotli'",
+            "click>=8.4.2; extra == 'cli'",
+            "pygments==2.*; extra == 'cli'",
+            "rich<16,>=10; extra == 'cli'",
+            "h2<5,>=3; extra == 'http2'",
+            "socksio==1.*; extra == 'socks'",
+            "wsproto>=1.2; extra == 'ws'",
+            "backports-zstd>=1.0.0; (python_version <= '3.13') and extra == 'zstd'"
+          ],
+          "project_urls": [
+            "Changelog, https://github.com/pydantic/httpx2/blob/main/src/httpx2/CHANGELOG.md",
+            "Homepage, https://github.com/pydantic/httpx2",
+            "Source, https://github.com/pydantic/httpx2"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "huggingface_hub",
+          "version": "2.2.0",
+          "license_expression": null,
+          "license_metadata": "Apache-2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Apache Software License"
+          ],
+          "license_files": [
+            {
+              "path": "huggingface_hub-2.2.0.dist-info/licenses/LICENSE",
+              "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+            }
+          ],
+          "requires": [
+            "click<9.0.0,>=8.4.2",
+            "filelock>=3.10.0",
+            "fsspec>=2023.5.0",
+            "hf-xet<2.0.0,>=1.6.0; platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"arm64\" or platform_machine == \"ARM64\" or platform_machine == \"aarch64\"",
+            "httpx2<3,>=2.0.0",
+            "packaging>=20.9",
+            "pyyaml>=5.1",
+            "tomli>=1.1.0; python_version < \"3.11\"",
+            "tqdm>=4.42.1",
+            "typing-extensions>=4.1.0",
+            "authlib>=1.8.0; extra == \"oauth\"",
+            "fastapi; extra == \"oauth\"",
+            "itsdangerous; extra == \"oauth\"",
+            "torch; extra == \"torch\"",
+            "safetensors[torch]; extra == \"torch\"",
+            "toml; extra == \"fastai\"",
+            "fastai>=2.4; extra == \"fastai\"",
+            "fastcore>=1.3.27; extra == \"fastai\"",
+            "hf-xet<2.0.0,>=1.6.0; extra == \"hf-xet\"",
+            "mcp<2.0.0,>=1.9.4; extra == \"mcp\"",
+            "authlib>=1.8.0; extra == \"testing\"",
+            "fastapi; extra == \"testing\"",
+            "itsdangerous; extra == \"testing\"",
+            "jedi; extra == \"testing\"",
+            "Jinja2; extra == \"testing\"",
+            "pytest>=8.4.2; extra == \"testing\"",
+            "pytest-cov; extra == \"testing\"",
+            "pytest-env; extra == \"testing\"",
+            "pytest-xdist; extra == \"testing\"",
+            "pytest-vcr; extra == \"testing\"",
+            "pytest-asyncio; extra == \"testing\"",
+            "pytest-rerunfailures>=16.2; extra == \"testing\"",
+            "pytest-mock; extra == \"testing\"",
+            "urllib3<2.0; extra == \"testing\"",
+            "soundfile; extra == \"testing\"",
+            "Pillow; extra == \"testing\"",
+            "numpy; extra == \"testing\"",
+            "duckdb; extra == \"testing\"",
+            "fastapi; extra == \"testing\"",
+            "gradio>=5.0.0; extra == \"gradio\"",
+            "requests; extra == \"gradio\"",
+            "typing-extensions>=4.8.0; extra == \"typing\"",
+            "types-PyYAML; extra == \"typing\"",
+            "types-simplejson; extra == \"typing\"",
+            "types-toml; extra == \"typing\"",
+            "types-tqdm; extra == \"typing\"",
+            "types-urllib3; extra == \"typing\"",
+            "ruff>=0.9.0; extra == \"quality\"",
+            "mypy==1.15.0; extra == \"quality\"",
+            "libcst>=1.4.0; extra == \"quality\"",
+            "ty; extra == \"quality\"",
+            "authlib>=1.8.0; extra == \"all\"",
+            "fastapi; extra == \"all\"",
+            "itsdangerous; extra == \"all\"",
+            "jedi; extra == \"all\"",
+            "Jinja2; extra == \"all\"",
+            "pytest>=8.4.2; extra == \"all\"",
+            "pytest-cov; extra == \"all\"",
+            "pytest-env; extra == \"all\"",
+            "pytest-xdist; extra == \"all\"",
+            "pytest-vcr; extra == \"all\"",
+            "pytest-asyncio; extra == \"all\"",
+            "pytest-rerunfailures>=16.2; extra == \"all\"",
+            "pytest-mock; extra == \"all\"",
+            "urllib3<2.0; extra == \"all\"",
+            "soundfile; extra == \"all\"",
+            "Pillow; extra == \"all\"",
+            "numpy; extra == \"all\"",
+            "duckdb; extra == \"all\"",
+            "fastapi; extra == \"all\"",
+            "ruff>=0.9.0; extra == \"all\"",
+            "mypy==1.15.0; extra == \"all\"",
+            "libcst>=1.4.0; extra == \"all\"",
+            "ty; extra == \"all\"",
+            "typing-extensions>=4.8.0; extra == \"all\"",
+            "types-PyYAML; extra == \"all\"",
+            "types-simplejson; extra == \"all\"",
+            "types-toml; extra == \"all\"",
+            "types-tqdm; extra == \"all\"",
+            "types-urllib3; extra == \"all\"",
+            "authlib>=1.8.0; extra == \"dev\"",
+            "fastapi; extra == \"dev\"",
+            "itsdangerous; extra == \"dev\"",
+            "jedi; extra == \"dev\"",
+            "Jinja2; extra == \"dev\"",
+            "pytest>=8.4.2; extra == \"dev\"",
+            "pytest-cov; extra == \"dev\"",
+            "pytest-env; extra == \"dev\"",
+            "pytest-xdist; extra == \"dev\"",
+            "pytest-vcr; extra == \"dev\"",
+            "pytest-asyncio; extra == \"dev\"",
+            "pytest-rerunfailures>=16.2; extra == \"dev\"",
+            "pytest-mock; extra == \"dev\"",
+            "urllib3<2.0; extra == \"dev\"",
+            "soundfile; extra == \"dev\"",
+            "Pillow; extra == \"dev\"",
+            "numpy; extra == \"dev\"",
+            "duckdb; extra == \"dev\"",
+            "fastapi; extra == \"dev\"",
+            "ruff>=0.9.0; extra == \"dev\"",
+            "mypy==1.15.0; extra == \"dev\"",
+            "libcst>=1.4.0; extra == \"dev\"",
+            "ty; extra == \"dev\"",
+            "typing-extensions>=4.8.0; extra == \"dev\"",
+            "types-PyYAML; extra == \"dev\"",
+            "types-simplejson; extra == \"dev\"",
+            "types-toml; extra == \"dev\"",
+            "types-tqdm; extra == \"dev\"",
+            "types-urllib3; extra == \"dev\""
+          ],
+          "project_urls": [],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "hyperframe",
+          "version": "6.1.0",
+          "license_expression": null,
+          "license_metadata": "The MIT License (MIT)\n\nCopyright (c) 2014 Cory Benfield\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: MIT License"
+          ],
+          "license_files": [
+            {
+              "path": "hyperframe-6.1.0.dist-info/LICENSE",
+              "sha256": "763a9342a04df62046c9dc748a5287934eb0a5331c6863b3ca0aee20e18cb4ed"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Homepage, https://github.com/python-hyper/hyperframe/",
+            "Bug Reports, https://github.com/python-hyper/hyperframe/issues",
+            "Source, https://github.com/python-hyper/hyperframe/",
+            "Documentation, https://python-hyper.org/"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "idna",
+          "version": "3.20",
+          "license_expression": "BSD-3-Clause",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "idna-3.20.dist-info/licenses/LICENSE.md",
+              "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+            }
+          ],
+          "requires": [
+            "ruff >= 0.16.0 ; extra == \"all\"",
+            "mypy >= 1.11.2 ; extra == \"all\"",
+            "ty >= 0.0.37 ; extra == \"all\"",
+            "pytest >= 8.3.2 ; extra == \"all\"",
+            "hypothesis >= 6.141.1 ; extra == \"all\"",
+            "coverage >= 7.10.0 ; extra == \"all\""
+          ],
+          "project_urls": [
+            "Changelog, https://github.com/kjd/idna/blob/master/HISTORY.md",
+            "Issue tracker, https://github.com/kjd/idna/issues",
+            "Source, https://github.com/kjd/idna"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "idna",
+          "version": "3.10",
+          "license_expression": null,
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: BSD License"
+          ],
+          "license_files": [
+            {
+              "path": "idna-3.10.dist-info/LICENSE.md",
+              "sha256": "a59f0b0ef3635874109a4461ca44ff7a70d50696e814767bfaf721d4c9b0db0f"
+            }
+          ],
+          "requires": [
+            "ruff >= 0.6.2 ; extra == \"all\"",
+            "mypy >= 1.11.2 ; extra == \"all\"",
+            "pytest >= 8.3.2 ; extra == \"all\"",
+            "flake8 >= 7.1.1 ; extra == \"all\""
+          ],
+          "project_urls": [
+            "Changelog, https://github.com/kjd/idna/blob/master/HISTORY.rst",
+            "Issue tracker, https://github.com/kjd/idna/issues",
+            "Source, https://github.com/kjd/idna"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "multidict",
+          "version": "6.4.4",
+          "license_expression": null,
+          "license_metadata": "Apache 2",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Apache Software License"
+          ],
+          "license_files": [
+            {
+              "path": "multidict-6.4.4.dist-info/licenses/LICENSE",
+              "sha256": "93d11a968e2f0f36373c40811ff6d20e173f58c3cab5884cd6617bbfd795492a"
+            }
+          ],
+          "requires": [
+            "typing-extensions>=4.1.0; python_version < \"3.11\""
+          ],
+          "project_urls": [
+            "Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org",
+            "Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org",
+            "CI: GitHub, https://github.com/aio-libs/multidict/actions",
+            "Code of Conduct, https://github.com/aio-libs/.github/blob/master/CODE_OF_CONDUCT.md",
+            "Coverage: codecov, https://codecov.io/github/aio-libs/multidict",
+            "Docs: Changelog, https://multidict.aio-libs.org/en/latest/changes/",
+            "Docs: RTD, https://multidict.aio-libs.org",
+            "GitHub: issues, https://github.com/aio-libs/multidict/issues",
+            "GitHub: repo, https://github.com/aio-libs/multidict"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "numpy",
+          "version": "2.5.4",
+          "license_expression": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "numpy-2.5.4.dist-info/licenses/LICENSE.txt",
+              "sha256": "4860083caa0de2ac3292ca98bd074bd8f45d8b32624e37b1e70a240bff61e488"
+            },
+            {
+              "path": "numpy-2.5.4.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+              "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec"
+            },
+            {
+              "path": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+              "sha256": "3f2c1ffa76383a55ae0aac01c9737cd70050dff63e1f026694fbe9d662573c98"
+            },
+            {
+              "path": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+              "sha256": "e340270d4f64384569a91d546acb5b094d69ce47f0c015db77abb74dc6f815af"
+            },
+            {
+              "path": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+              "sha256": "f7b14309e5f54e5022b26448eefd419988ada2aec01d3c1162d84a0ea8f21f2c"
+            },
+            {
+              "path": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+              "sha256": "211e7d737d6179a08f791ebb0a99897ce7cd2457410c542876d125576edfe910"
+            },
+            {
+              "path": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+              "sha256": "c17011467b4fe6e20fbfbeda4df09e58c2bca5480a063e55735a4000a379aad9"
+            },
+            {
+              "path": "numpy-2.5.4.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+              "sha256": "a85ca13fdf90160b64a0698215868c13b74d835ad0a4e2ba44713b8c5058a056"
+            },
+            {
+              "path": "numpy-2.5.4.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+              "sha256": "a14cc25e10d40a3aa705b7de2fb764a6535d8ee9b2db4e1724900585457dfd55"
+            },
+            {
+              "path": "numpy-2.5.4.dist-info/licenses/numpy/ma/LICENSE",
+              "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6"
+            },
+            {
+              "path": "numpy-2.5.4.dist-info/licenses/numpy/random/LICENSE.md",
+              "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f"
+            },
+            {
+              "path": "numpy-2.5.4.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+              "sha256": "469778be8f33d54e1bcaab28c281cc472916d2d273f835e55bc487d30503face"
+            },
+            {
+              "path": "numpy-2.5.4.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+              "sha256": "0e111337b25494a773106695f0e799f642b8567aaacca4f116a74a8177179156"
+            },
+            {
+              "path": "numpy-2.5.4.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+              "sha256": "e7d4f4fb20358f314210a892ae17351e04993813646f697ec387385ca2a36918"
+            },
+            {
+              "path": "numpy-2.5.4.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+              "sha256": "6f5828a57223d4cc7f8ea505a2623e7b978b242752c1515e355f46ba2cec1800"
+            },
+            {
+              "path": "numpy-2.5.4.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+              "sha256": "9d4098846018319cd68e228ee6220361787f73bccbf00237a85e4fc9621b998f"
+            },
+            {
+              "path": "numpy-2.5.4.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+              "sha256": "268b0ca06759d31ea3ca68dd35f20e877916e927b1c2a835e4592a3c4354b1f9"
+            },
+            {
+              "path": "numpy/_core/include/numpy/random/LICENSE.txt",
+              "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec"
+            },
+            {
+              "path": "numpy/ma/LICENSE",
+              "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6"
+            },
+            {
+              "path": "numpy/random/LICENSE.md",
+              "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "homepage, https://numpy.org",
+            "documentation, https://numpy.org/doc/",
+            "source, https://github.com/numpy/numpy",
+            "download, https://pypi.org/project/numpy/#files",
+            "tracker, https://github.com/numpy/numpy/issues",
+            "release notes, https://numpy.org/doc/stable/release"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "onnxruntime",
+          "version": "1.31.0",
+          "license_expression": null,
+          "license_metadata": "MIT License",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: MIT License"
+          ],
+          "license_files": [
+            {
+              "path": "onnxruntime/LICENSE",
+              "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+            }
+          ],
+          "requires": [
+            "flatbuffers",
+            "numpy>=1.21.6",
+            "packaging",
+            "protobuf>=4.25.8",
+            "sympy; extra == \"symbolic\"",
+            "ml_dtypes; extra == \"quantization\""
+          ],
+          "project_urls": [],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "packaging",
+          "version": "26.3",
+          "license_expression": "Apache-2.0 OR BSD-2-Clause",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "packaging-26.3.dist-info/licenses/LICENSE",
+              "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+            },
+            {
+              "path": "packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+              "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+            },
+            {
+              "path": "packaging-26.3.dist-info/licenses/LICENSE.BSD",
+              "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Documentation, https://packaging.pypa.io/",
+            "Source, https://github.com/pypa/packaging"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "pip",
+          "version": "23.3.2",
+          "license_expression": null,
+          "license_metadata": "MIT",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: MIT License"
+          ],
+          "license_files": [
+            {
+              "path": "pip-23.3.2.dist-info/LICENSE.txt",
+              "sha256": "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Documentation, https://pip.pypa.io",
+            "Source, https://github.com/pypa/pip",
+            "Changelog, https://pip.pypa.io/en/stable/news/"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "propcache",
+          "version": "0.3.1",
+          "license_expression": null,
+          "license_metadata": "Apache-2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Apache Software License"
+          ],
+          "license_files": [
+            {
+              "path": "propcache-0.3.1.dist-info/licenses/LICENSE",
+              "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+            },
+            {
+              "path": "propcache-0.3.1.dist-info/licenses/NOTICE",
+              "sha256": "56d6ac6c8105c0a51304c21db060e361af9a8ea0af9a75c239c28b5d13693838"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org",
+            "Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org",
+            "CI: GitHub Workflows, https://github.com/aio-libs/propcache/actions?query=branch:master",
+            "Code of Conduct, https://github.com/aio-libs/.github/blob/master/CODE_OF_CONDUCT.md",
+            "Coverage: codecov, https://codecov.io/github/aio-libs/propcache",
+            "Docs: Changelog, https://propcache.readthedocs.io/en/latest/changes/",
+            "Docs: RTD, https://propcache.readthedocs.io",
+            "GitHub: issues, https://github.com/aio-libs/propcache/issues",
+            "GitHub: repo, https://github.com/aio-libs/propcache"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "protobuf",
+          "version": "6.33.6",
+          "license_expression": null,
+          "license_metadata": "3-Clause BSD License",
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "protobuf-6.33.6.dist-info/LICENSE",
+              "sha256": "6e5e117324afd944dcf67f36cf329843bc1a92229a8cd9bb573d7a83130fea7d"
+            }
+          ],
+          "requires": [],
+          "project_urls": [],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "protobuf",
+          "version": "6.31.1",
+          "license_expression": null,
+          "license_metadata": "3-Clause BSD License",
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "protobuf-6.31.1.dist-info/LICENSE",
+              "sha256": "6e5e117324afd944dcf67f36cf329843bc1a92229a8cd9bb573d7a83130fea7d"
+            }
+          ],
+          "requires": [],
+          "project_urls": [],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "PyYAML",
+          "version": "6.0.3",
+          "license_expression": null,
+          "license_metadata": "MIT",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: MIT License"
+          ],
+          "license_files": [
+            {
+              "path": "pyyaml-6.0.3.dist-info/licenses/LICENSE",
+              "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Bug Tracker, https://github.com/yaml/pyyaml/issues",
+            "CI, https://github.com/yaml/pyyaml/actions",
+            "Documentation, https://pyyaml.org/wiki/PyYAMLDocumentation",
+            "Mailing lists, http://lists.sourceforge.net/lists/listinfo/yaml-core",
+            "Source Code, https://github.com/yaml/pyyaml"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "setuptools",
+          "version": "69.0.3",
+          "license_expression": null,
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: MIT License"
+          ],
+          "license_files": [
+            {
+              "path": "setuptools-69.0.3.dist-info/LICENSE",
+              "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+            }
+          ],
+          "requires": [
+            "sphinx >=3.5 ; extra == 'docs'",
+            "sphinx <7.2.5 ; extra == 'docs'",
+            "jaraco.packaging >=9.3 ; extra == 'docs'",
+            "rst.linker >=1.9 ; extra == 'docs'",
+            "furo ; extra == 'docs'",
+            "sphinx-lint ; extra == 'docs'",
+            "jaraco.tidelift >=1.4 ; extra == 'docs'",
+            "pygments-github-lexers ==0.0.5 ; extra == 'docs'",
+            "sphinx-favicon ; extra == 'docs'",
+            "sphinx-inline-tabs ; extra == 'docs'",
+            "sphinx-reredirects ; extra == 'docs'",
+            "sphinxcontrib-towncrier ; extra == 'docs'",
+            "sphinx-notfound-page <2,>=1 ; extra == 'docs'",
+            "pytest >=6 ; extra == 'testing'",
+            "pytest-checkdocs >=2.4 ; extra == 'testing'",
+            "pytest-enabler >=2.2 ; extra == 'testing'",
+            "flake8-2020 ; extra == 'testing'",
+            "virtualenv >=13.0.0 ; extra == 'testing'",
+            "wheel ; extra == 'testing'",
+            "pip >=19.1 ; extra == 'testing'",
+            "jaraco.envs >=2.2 ; extra == 'testing'",
+            "pytest-xdist ; extra == 'testing'",
+            "jaraco.path >=3.2.0 ; extra == 'testing'",
+            "build[virtualenv] ; extra == 'testing'",
+            "filelock >=3.4.0 ; extra == 'testing'",
+            "ini2toml[lite] >=0.9 ; extra == 'testing'",
+            "tomli-w >=1.0.0 ; extra == 'testing'",
+            "pytest-timeout ; extra == 'testing'",
+            "pytest ; extra == 'testing-integration'",
+            "pytest-xdist ; extra == 'testing-integration'",
+            "pytest-enabler ; extra == 'testing-integration'",
+            "virtualenv >=13.0.0 ; extra == 'testing-integration'",
+            "tomli ; extra == 'testing-integration'",
+            "wheel ; extra == 'testing-integration'",
+            "jaraco.path >=3.2.0 ; extra == 'testing-integration'",
+            "jaraco.envs >=2.2 ; extra == 'testing-integration'",
+            "build[virtualenv] >=1.0.3 ; extra == 'testing-integration'",
+            "filelock >=3.4.0 ; extra == 'testing-integration'",
+            "packaging >=23.1 ; extra == 'testing-integration'",
+            "pytest-black >=0.3.7 ; (platform_python_implementation != \"PyPy\") and extra == 'testing'",
+            "pytest-cov ; (platform_python_implementation != \"PyPy\") and extra == 'testing'",
+            "pytest-mypy >=0.9.1 ; (platform_python_implementation != \"PyPy\") and extra == 'testing'",
+            "jaraco.develop >=7.21 ; (python_version >= \"3.9\" and sys_platform != \"cygwin\") and extra == 'testing'",
+            "pytest-ruff ; (sys_platform != \"cygwin\") and extra == 'testing'",
+            "pytest-perf ; (sys_platform != \"cygwin\") and extra == 'testing'"
+          ],
+          "project_urls": [
+            "Documentation, https://setuptools.pypa.io/",
+            "Changelog, https://setuptools.pypa.io/en/stable/history.html"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "tokenizers",
+          "version": "0.23.3",
+          "license_expression": null,
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Apache Software License"
+          ],
+          "license_files": [],
+          "requires": [
+            "huggingface-hub>=0.16.4,<3.0",
+            "tokenizers[testing] ; extra == 'dev'",
+            "sphinx ; extra == 'docs'",
+            "sphinx-rtd-theme ; extra == 'docs'",
+            "setuptools-rust ; extra == 'docs'",
+            "pytest ; extra == 'testing'",
+            "pytest-asyncio ; extra == 'testing'",
+            "requests ; extra == 'testing'",
+            "numpy ; extra == 'testing'",
+            "datasets ; extra == 'testing'",
+            "ruff ; extra == 'testing'",
+            "ty ; extra == 'testing'"
+          ],
+          "project_urls": [
+            "Homepage, https://github.com/huggingface/tokenizers",
+            "Source, https://github.com/huggingface/tokenizers"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "tqdm",
+          "version": "4.70.1",
+          "license_expression": null,
+          "license_metadata": "MPL-2.0 AND MIT",
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "tqdm-4.70.1.dist-info/licenses/LICENCE",
+              "sha256": "fcff87c3a47ce8028a8512aa182d4fcf0ad1c90544ee75cf9b343684cac194de"
+            }
+          ],
+          "requires": [
+            "colorama; platform_system == \"Windows\"",
+            "requests; extra == \"discord\"",
+            "envwrap; extra == \"discord\"",
+            "slack-sdk; extra == \"slack\"",
+            "envwrap; extra == \"slack\"",
+            "requests; extra == \"telegram\"",
+            "envwrap; extra == \"telegram\"",
+            "ipywidgets>=6; extra == \"notebook\""
+          ],
+          "project_urls": [
+            "homepage, https://tqdm.github.io",
+            "repository, https://github.com/tqdm/tqdm",
+            "changelog, https://tqdm.github.io/releases",
+            "wiki, https://github.com/tqdm/tqdm/wiki"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "truststore",
+          "version": "0.10.5",
+          "license_expression": "MIT",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "truststore-0.10.5.dist-info/licenses/LICENSE",
+              "sha256": "33be7b7e8fa4fd19b1760e1a8ed8a668bdab852c91b692dd41424bcb725a9fca"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Documentation, https://truststore.readthedocs.io",
+            "Source, https://github.com/sethmlarson/truststore"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "typing_extensions",
+          "version": "4.16.0",
+          "license_expression": "PSF-2.0",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "typing_extensions-4.16.0.dist-info/licenses/LICENSE",
+              "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Bug Tracker, https://github.com/python/typing_extensions/issues",
+            "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+            "Documentation, https://typing-extensions.readthedocs.io/",
+            "Home, https://github.com/python/typing_extensions",
+            "Q & A, https://github.com/python/typing/discussions",
+            "Repository, https://github.com/python/typing_extensions"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "typing_extensions",
+          "version": "4.13.2",
+          "license_expression": "PSF-2.0",
+          "license_metadata": null,
+          "license_metadata_truncated": false,
+          "license_classifiers": [],
+          "license_files": [
+            {
+              "path": "typing_extensions-4.13.2.dist-info/licenses/LICENSE",
+              "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+            }
+          ],
+          "requires": [],
+          "project_urls": [
+            "Bug Tracker, https://github.com/python/typing_extensions/issues",
+            "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+            "Documentation, https://typing-extensions.readthedocs.io/",
+            "Home, https://github.com/python/typing_extensions",
+            "Q & A, https://github.com/python/typing/discussions",
+            "Repository, https://github.com/python/typing_extensions"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        },
+        {
+          "name": "yarl",
+          "version": "1.20.0",
+          "license_expression": null,
+          "license_metadata": "Apache-2.0",
+          "license_metadata_truncated": false,
+          "license_classifiers": [
+            "License :: OSI Approved :: Apache Software License"
+          ],
+          "license_files": [
+            {
+              "path": "yarl-1.20.0.dist-info/licenses/LICENSE",
+              "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+            },
+            {
+              "path": "yarl-1.20.0.dist-info/licenses/NOTICE",
+              "sha256": "56d6ac6c8105c0a51304c21db060e361af9a8ea0af9a75c239c28b5d13693838"
+            }
+          ],
+          "requires": [
+            "idna>=2.0",
+            "multidict>=4.0",
+            "propcache>=0.2.1"
+          ],
+          "project_urls": [
+            "Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org",
+            "Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org",
+            "CI: GitHub Workflows, https://github.com/aio-libs/yarl/actions?query=branch:master",
+            "Code of Conduct, https://github.com/aio-libs/.github/blob/master/CODE_OF_CONDUCT.md",
+            "Coverage: codecov, https://codecov.io/github/aio-libs/yarl",
+            "Docs: Changelog, https://yarl.aio-libs.org/en/latest/changes/",
+            "Docs: RTD, https://yarl.aio-libs.org",
+            "GitHub: issues, https://github.com/aio-libs/yarl/issues",
+            "GitHub: repo, https://github.com/aio-libs/yarl"
+          ],
+          "review": "Declared wheel metadata and file hashes only; bundled native libraries/models/OS packages and license compatibility require separate review."
+        }
+      ]
+    }
+  }
+}

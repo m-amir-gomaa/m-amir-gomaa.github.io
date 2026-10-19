@@ -1,5 +1,8 @@
 # Amir Gomaa — freelance portfolio
 
+19 October 2026: the [source-workflow release journal](https://amirgomaa.com/manuals/journal/source-workflows-20261019/) connects current Pageweft/Sonaweft review/export/diagnostics and Noteweld atomic source imports/session controls. Public guides distinguish disabled real OAuth/payment acceptance from implemented code. The current sample ZIP uses the importable v1 schema. Pageweft's inaccessible anonymous code link now leads to its readable implementation manual; repository access settings were preserved. Two reviewed image-inventory JSON artifacts are explicitly allowlisted, without copying private evidence or source books.
+
+
 Static HTML, CSS, and JavaScript portfolio with project filters, case studies, Upwork/email contact links, mobile navigation, an interactive vanilla Keep demo and an embedded Pageweft sample-output viewer. The companion **Fieldnotes** library is built with Hugo; its generated files are committed, so serving the portfolio does not require a runtime build.
 
 ## Current portfolio scope — 18 October 2026

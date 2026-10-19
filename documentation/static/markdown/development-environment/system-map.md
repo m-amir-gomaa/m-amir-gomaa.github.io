@@ -1,6 +1,6 @@
 # How the environment fits together
 
-Reviewed: 2026-10-18
+Reviewed: 2026-10-19
 
 ## Start with the source
 

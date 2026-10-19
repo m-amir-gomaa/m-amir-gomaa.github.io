@@ -1,19 +1,19 @@
 {
   "title": "Technical overview",
   "description": "Architecture, implemented scope, setup and the current release.",
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "weight": 30,
   "project": "Noteweld",
   "category": "Reference",
-  "notice": "Current preview includes Markdown/Vim and connected notes. Earlier foundation/editor release records describe their own milestones. Billing and source-bundle imports are not enabled.",
-  "sourceurl": "https://github.com/m-amir-gomaa/keep-nextjs/blob/71e48f66b70dacb734ad6ff725be5f526c125bdf/README.md",
+  "notice": "Current bounded preview includes Markdown/Vim, connected notes, source-bundle imports and browser-session controls. Real Google/GitHub consent remains unverified and provider buttons stay disabled; billing is closed. Earlier release records describe their own milestones.",
+  "sourceurl": "https://github.com/m-amir-gomaa/keep-nextjs/blob/59e2325fd9d164a292303bc7bee9cb659438fa4c/README.md",
   "download": "markdown/noteweld/overview.md"
 }
 
 [Public address and existing-account access](/manuals/noteweld/custom-domain/)
 
 
-Account enhancement work on `feat/account-signin` is local and gated; [setup, behavior and remaining acceptance](/manuals/noteweld/account-work/). Existing public hosting is unchanged. Google/GitHub login is not publicly verified by these source changes.
+The source-bundle and account collection is documented in [release evidence](/manuals/noteweld/source-handoff-release/). Google/GitHub consent remains unverified and public provider buttons stay disabled; [setup and account behavior](/manuals/noteweld/account-work/).
 A private notes/checklist preview built with Next.js 16.3.8, React 19, Auth.js and PostgreSQL/Drizzle. This repository retains its original `keep-nextjs` GitHub identity. The old Vercel deployment is a historical version; it is not updated by this release.
 
 ## Implemented
@@ -29,7 +29,10 @@ A private notes/checklist preview built with Next.js 16.3.8, React 19, Auth.js a
 - Snapshot-based empty trash, account JSON export, confirmed passphrase-protected account deletion, no-cache private responses and nonce-based production script CSP.
 - Bounded free preview: 100 accounts, 50 registrations/day, 250 notes, 50 labels and 2 MiB note text/account. PostgreSQL-backed admission limits and one scale-to-zero CPU web container.
 
-**Not implemented:** Sonaweft/Pageweft bundle imports, bare hashtag parsing, global Vim navigation, durable revision history, paid access, reminders, offline sync, collaboration and end-to-end encryption. Those follow this connected-notes milestone. This is not a production SLA or a place for irreplaceable/sensitive material.
+- Validated Pageweft/Sonaweft ZIP import with preview, all-or-nothing note/source creation, stable source links, hashes, duplicate/retry policy and separate original/corrected/AI labels. Read [source imports](/manuals/noteweld/source-bundles/).
+- Browser-session inventory/revocation, sign out all devices, recent-proof provider linking/unlink protection, and private API support IDs. Provider registration/real consent is still a release gate.
+
+**Not implemented:** bare hashtag parsing, global Vim navigation, durable revision history, paid access, reminders, offline sync, collaboration and end-to-end encryption. Those follow this connected-notes milestone. This is not a production SLA or a place for irreplaceable/sensitive material.
 
 Read the [connected-notes guide](/manuals/noteweld/connections/) and [current release evidence](/manuals/noteweld/connections-release/). Graph bounds and title-vs-ID semantics are explicit; original note source remains the stored/exported format with no schema migration.
 

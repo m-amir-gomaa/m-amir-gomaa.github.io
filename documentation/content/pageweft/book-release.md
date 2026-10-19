@@ -1,12 +1,12 @@
 {
   "title": "Book conversion release",
   "description": "Implemented conversion features and the evidence for this dated milestone.",
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "weight": 90,
   "project": "Pageweft",
   "category": "Release record",
-  "notice": "Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence. Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification.",
-  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/5eb782582e61d7e238cc4472f85362a9bd431427/docs/BOOK-RELEASE.md",
+  "notice": "Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Source revision d35780b is retained for the owner; anonymous repository access is unavailable. This reviewed public edition is readable independently. Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification. This reviewed documentation snapshot includes local documentation edits; the recorded revision is the committed baseline.",
+  "sourceurl": "",
   "download": "markdown/pageweft/book-release.md"
 }
 
@@ -42,7 +42,7 @@ No recurring access fee. One-time $5/$10 processing packs; the service debit is:
 
 These are launch service tariffs, not exact pass-through of a measured Modal invoice. Credits do not expire; files/edits do. Prepaid funds are not all profit when purchased. Taxes may be added at checkout; fees/support/refunds/compute reduce contribution. Recalibrate tariffs from representative actual bills before expanding spending limits.
 
-[Lemon Squeezy fees](https://docs.lemonsqueezy.com/help/getting-started/fees): base 5% + $0.50, additional 0.5% for subscriptions, possible international/PayPal charges and non-US payout fees. The main savings here come from avoiding monthly microtransactions and amortizing the fixed checkout cost over prepaid use. At a simplified base fee, $5 leaves $4.25 before payout; $10 leaves $9. International and tax effects can reduce this further.
+[Paddle fees](https://www.paddle.com/pricing) supersede the historical Lemon-specific calculation: base 5% + $0.50/checkout. With no sales tax, $5 leaves $4.25 and $10 leaves $9 before processing/refunds/payout costs. Paddle calculates its fee from the tax-inclusive buyer total; actual tax mode and settlement must be checked. The savings come from amortizing a fixed transaction fee over prepaid use. Current financial assumptions and scenarios (local reference; not published) separate service debits, cash, costs and income.
 
 [Modal pricing](https://modal.com/pricing): A10 $0.000306/sec, CPU $0.0000131/core/sec, RAM $0.00000222/GiB/sec. New GPU sections request/cap two CPU cores and 8 GiB RAM, with 240-second function timeout, 180-second extraction bound and 5-second scale-down window. Model load, waiting, storage and orchestration can add cost. This is not invoice measurement or a guarantee every PDF finishes within the bound.
 

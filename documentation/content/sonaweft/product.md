@@ -1,16 +1,18 @@
 {
   "title": "Product contract",
   "description": "Recognition, review, file retention, cost controls and the boundaries between outputs.",
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "weight": 40,
   "project": "Sonaweft",
   "category": "Reference",
-  "notice": "Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.",
-  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/75e9b608befb7a52eb9c981f86477ae2e34a885a/docs/PRODUCT.md",
+  "notice": "Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. This reviewed documentation snapshot includes local documentation edits; the recorded revision is the committed baseline.",
+  "sourceurl": "https://github.com/m-amir-gomaa/ig_intel/blob/00522f212d686ee813f4d0275c34d7c7db48ccef/docs/PRODUCT.md",
   "download": "markdown/sonaweft/product.md"
 }
 
-Amir explicitly made the transcript product active ahead of Keep, delegated a stronger brand and asked for hosted ASR/LLM processing, Paddle and a Pageweft-like usage model. Sonaweft is the selected brand (bounded exact-name searches found no obvious matching software listing; this is not trademark clearance). Preserve `instascript` imports/command and existing remote URLs. Noteweld is the proposed next Keep brand; its implementation remains deferred.
+Amir explicitly made the transcript product active ahead of Keep, delegated a stronger brand and asked for hosted ASR/LLM processing, Paddle and a Pageweft-like usage model. Sonaweft is the selected brand (bounded exact-name searches found no obvious matching software listing; this is not trademark clearance). Preserve `instascript` imports/command and existing remote URLs. Noteweld is now the professional notes product; its importer is not implemented merely because Sonaweft exports bundles.
+
+Latest planning update — 18 October: Amir reports both processing apps approved by Paddle; independent public health shows hosted processing enabled and billing disabled. Remaining seller/payout and real payment/refund acceptance need their own evidence. ROADMAP.md (local reference; not published) records the current required/recommended/optional work; final visual polish must remain last. The shared financial strategy (local reference; not published) records current provider/competitor research and editable cost/conversion/growth scenarios. No price, provider or live flag was changed.
 
 Source decisions: CLI-001/002/003/005/009/010/013/022/023/033/037/041 and the current chat. Broad audiences and good defaults; English first; user-authorized media; Linux CLI/self-hosting plus hosted UI. Success: ingest media, hear/read timestamped ASR, keep original text, save separate corrections, optionally derive a faithful summary/research questions, export Markdown/JSON/SRT/VTT and a versioned bundle. AI review must not silently change the source or pretend to verify facts. A selected all-or-none hosted package is charged only after all its deliverables complete; retained private ASR checkpoints support explicit retry.
 

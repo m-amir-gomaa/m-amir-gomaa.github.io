@@ -23,12 +23,18 @@ await test('documentation library is connected from navigation and every project
  }
 });
 function page() { const dom = new JSDOM(html, { url: 'https://m-amir-gomaa.github.io/', runScripts: 'outside-only' }); dom.window.eval(script); return dom; }
-await test('all four projects are visible with working source and demo links', () => {
+await test('all four projects expose demos and readable source or implementation guides', () => {
  const dom = page(); const document = dom.window.document;
  assert.equal(document.querySelectorAll('.project').length, 4);
  assert.equal(document.querySelectorAll('.project[hidden]').length, 0);
  assert.ok(document.querySelector('a[href="https://www.upwork.com/freelancers/~0173c5ce93bb9457ec"]'));
- for (const project of document.querySelectorAll('.project')) assert.ok(project.querySelector('a[href*="github.com/"]'));
+ for (const project of document.querySelectorAll('.project')) {
+  const source = project.querySelector('a[href*="github.com/"]');
+  const architecture = project.querySelector('a[href^="manuals/"][href$="/overview/"]');
+  assert.ok(source || architecture, 'Every project needs readable implementation evidence');
+  if (architecture) assert.ok(existsSync(resolve(root, architecture.getAttribute('href'), 'index.html')));
+ }
+ assert.equal(document.querySelector('#document-details').closest('article').querySelector('a[href*="PDF2Markdown-"]'), null, 'Do not send anonymous visitors to the unavailable Pageweft source');
  for (const anchor of document.querySelectorAll('a[href^="#"]')) assert.ok(document.querySelector(anchor.getAttribute('href')), 'anchor must resolve');
  dom.window.close();
 });

@@ -1,12 +1,12 @@
 {
   "title": "Accessibility review — 16 October",
   "description": "The specific accessibility fix, test evidence and remaining acceptance limits.",
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "weight": 140,
   "project": "Pageweft",
   "category": "Release record",
-  "notice": "Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence.",
-  "sourceurl": "https://github.com/m-amir-gomaa/PDF2Markdown-/blob/5eb782582e61d7e238cc4472f85362a9bd431427/docs/ACCESSIBILITY-20261016.md",
+  "notice": "Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Source revision d35780b is retained for the owner; anonymous repository access is unavailable. This reviewed public edition is readable independently.",
+  "sourceurl": "",
   "download": "markdown/pageweft/accessibility-review.md"
 }
 

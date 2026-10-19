@@ -1,6 +1,6 @@
 # Using the vanilla demo
 
-Reviewed: 2026-10-18
+Reviewed: 2026-10-19
 
 ## Open the portfolio demo
 

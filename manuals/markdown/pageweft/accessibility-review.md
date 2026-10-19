@@ -1,9 +1,9 @@
 # Accessibility review — 16 October
 
-> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence.
+> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Source revision d35780b is retained for the owner; anonymous repository access is unavailable. This reviewed public edition is readable independently.
 
-Source baseline: https://github.com/m-amir-gomaa/PDF2Markdown-/blob/5eb782582e61d7e238cc4472f85362a9bd431427/docs/ACCESSIBILITY-20261016.md
-Reviewed: 2026-10-18
+Source baseline: Owner-access repository, revision d35780b9038e6ead15c260965ff53f20e79c6315
+Reviewed: 2026-10-19
 
 *Original record: Retained-document panel accessibility — 16 October 2026.*
 

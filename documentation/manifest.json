@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-10-18",
+  "reviewed": "2026-10-19",
   "projects": [
     {
       "slug": "noteweld",
@@ -10,8 +10,8 @@
       "stack": "NEXT.JS / POSTGRESQL",
       "status": "Free hosted preview",
       "live": "https://noteweld.amirgomaa.com/",
-      "description": "Write Markdown, connect notes and explore a private workspace with optional Vim editing.",
-      "notice": "Current preview includes Markdown/Vim and connected notes. Earlier foundation/editor release records describe their own milestones. Billing and source-bundle imports are not enabled.",
+      "description": "Write Markdown, connect notes and retain original Pageweft/Sonaweft source bundles in a private workspace.",
+      "notice": "Current bounded preview includes Markdown/Vim, connected notes, source-bundle imports and browser-session controls. Real Google/GitHub consent remains unverified and provider buttons stay disabled; billing is closed. Earlier release records describe their own milestones.",
       "files": [
         {
           "path": "README.md",
@@ -32,6 +32,13 @@
           "slug": "connections",
           "title": "Links, backlinks and graphs",
           "description": "Stable note identities, title resolution, graph controls and connection limits.",
+          "category": "Guide"
+        },
+        {
+          "path": "docs/SOURCE-BUNDLES.md",
+          "slug": "source-bundles",
+          "title": "Source bundles and provenance",
+          "description": "Preview, validate and atomically import original exports, keep source assets and manage retention.",
           "category": "Guide"
         },
         {
@@ -84,6 +91,13 @@
           "category": "Design record",
           "mode": "reference",
           "context": "The account foundation lives on a separate development branch. Production domain release 550be9c branches from 5ac512f and excludes this account work. This source record does not establish public Google/GitHub login or a completed provider consent flow."
+        },
+        {
+          "path": "docs/SOURCE-HANDOFF-RELEASE.md",
+          "slug": "source-handoff-release",
+          "title": "Source handoff and account release",
+          "description": "The import/session milestone, database migration, restore and hosted browser evidence.",
+          "category": "Release record"
         }
       ]
     },
@@ -97,7 +111,7 @@
       "status": "Bounded public sample",
       "live": "https://pageweft.amirgomaa.com/",
       "description": "Convert technical PDFs into portable Markdown with source-page review and separate corrections.",
-      "notice": "The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence.",
+      "notice": "Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones.",
       "files": [
         {
           "path": "README.md",
@@ -193,8 +207,36 @@
           "title": "Custom domain and account access",
           "description": "Public hostname, secure gateway, existing-account access and rollback.",
           "category": "Operations"
+        },
+        {
+          "path": "docs/SOURCE-WORKFLOW-RELEASE.md",
+          "slug": "source-workflow-release",
+          "title": "Source workflow and diagnostics release",
+          "description": "Implemented review/export/accounts, private monitoring and verified release boundaries.",
+          "category": "Release record"
+        },
+        {
+          "path": "docs/QUALITY-BENCHMARKS.md",
+          "slug": "quality-benchmarks",
+          "title": "Quality and cost measurement",
+          "description": "Offline text scoring, explicit unknown costs, failure-inclusive timings and representative-sample requirements.",
+          "category": "Operations"
+        },
+        {
+          "path": "docs/DEPENDENCY-INVENTORY.md",
+          "slug": "image-inventory",
+          "title": "Declared image package inventory",
+          "description": "Observed package versions, license metadata/file hashes and native/system/model review boundaries.",
+          "category": "Reference"
         }
-      ]
+      ],
+      "artifacts": [
+        {
+          "path": "docs/DEPENDENCY-INVENTORY-20261019.json",
+          "public": "metadata/pageweft-image-inventory.json"
+        }
+      ],
+      "source_access": "owner"
     },
     {
       "slug": "sonaweft",
@@ -206,7 +248,7 @@
       "status": "Bounded public sample",
       "live": "https://sonaweft.amirgomaa.com/",
       "description": "Turn recordings into timestamped transcripts, separate corrections and source-linked notes.",
-      "notice": "Hosted uploads and the standalone CLI are distinct workflows. Paid checkout remains closed. Historical instaScript/agent/vault notes are not instructions for the current hosted service. Noteweld is now released separately; old references to it as a proposal are historical.",
+      "notice": "Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones.",
       "files": [
         {
           "path": "README.md",
@@ -276,6 +318,33 @@
           "title": "Custom domain and account access",
           "description": "Public hostname, secure gateway, existing-account access and rollback.",
           "category": "Operations"
+        },
+        {
+          "path": "docs/SOURCE-WORKFLOW-RELEASE.md",
+          "slug": "source-workflow-release",
+          "title": "Source workflow and diagnostics release",
+          "description": "Implemented review/export/accounts, private monitoring and verified release boundaries.",
+          "category": "Release record"
+        },
+        {
+          "path": "docs/QUALITY-BENCHMARKS.md",
+          "slug": "quality-benchmarks",
+          "title": "Quality and cost measurement",
+          "description": "Offline text scoring, explicit unknown costs, failure-inclusive timings and representative-sample requirements.",
+          "category": "Operations"
+        },
+        {
+          "path": "docs/DEPENDENCY-INVENTORY.md",
+          "slug": "image-inventory",
+          "title": "Declared image package inventory",
+          "description": "Observed package versions, license metadata/file hashes and native/system/model review boundaries.",
+          "category": "Reference"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "docs/DEPENDENCY-INVENTORY-20261019.json",
+          "public": "metadata/sonaweft-image-inventory.json"
         }
       ]
     },

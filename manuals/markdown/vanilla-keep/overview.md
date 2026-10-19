@@ -3,7 +3,7 @@
 > Separate browser-only JavaScript demo with JSON portability, responsive layouts and recovery checks. No accounts, payments, Markdown/Vim editor or graph. The established Keep URLs are preserved.
 
 Source baseline: https://github.com/m-amir-gomaa/Keep/blob/6d0eb65e8709e002f5fc9663a656d2b23a75ea00/README.md
-Reviewed: 2026-10-18
+Reviewed: 2026-10-19
 
 A free, browser-only notes and checklist demo built with native DOM APIs, CSS, localStorage and Webpack. It shares Noteweld’s product family and deliberately has no account, server or paid features. The existing Keep repository and public URL are preserved.
 
