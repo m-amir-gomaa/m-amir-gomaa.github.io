@@ -1,5 +1,9 @@
 # Amir Gomaa — freelance portfolio
 
+22 October guest release: [Try the apps](https://amirgomaa.com/apps/) explains each app in simple words and links directly to its completed example and two-minute guide. The portfolio has a matching guest entry; Noteweld's private-workspace link now points to sign-in. Examples need no account or new processing. The processing apps support email/passphrase sign-in with a downloadable private recovery key; external Google consent is not claimed. New Modal guest processing stays paused until the owner confirms the provider's $0 net spending limit and the runtime can verify fresh allowance. Existing billing remains closed.
+
+Local verification: nine DOM checks, 43 root/app-guide local link, asset and fragment checks, and the manuals checker (70 HTML files, 1,506 targets, 42 reviewed source records, 61 articles). Actual Chromium review of the home and app chooser passed at 320/390/768/1440px, including whole-page automated WCAG A/AA/2.1 AA checks, keyboard/native disclosure behavior, navigation, no horizontal overflow or page errors, and a no-JavaScript guide. Desktop/phone screenshots were inspected. This is not a claim of universal screen-reader or physical-device acceptance. Publication evidence is recorded in workspace milestone 017.
+
 19 October recovery release: Sonaweft now has [durable annotation history](https://amirgomaa.com/manuals/sonaweft/annotation-history/) with comparison, conflict-safe restore and hashed portable snapshots. Its deployed code is `cfe3442`; 90 backend tests, targeted DOM checks and the real local SQLite/media browser workflow at four widths passed, with no automated review-panel WCAG A/AA findings. The [engineering journal](https://amirgomaa.com/manuals/journal/recoverable-review/) distinguishes those checks from new model, payment and user evidence.
 
 19 October source-repair follow-through: Pageweft's [extraction lineage](https://amirgomaa.com/manuals/pageweft/source-workflow-release/) separates every retained engine version from user repairs and keeps them in hashed exports. Sonaweft's [passage-to-quote workflow](https://amirgomaa.com/manuals/sonaweft/source-workflow-release/) uses original recording offsets, authoritative server prices and stale-response guards. Both changes are deployed with billing closed. Backend suites pass 115/78 cases and targeted scripted DOM checks pass; no new graphical-browser, representative quality or real-payment acceptance is claimed for this follow-through.
@@ -11,9 +15,9 @@
 
 Static HTML, CSS, and JavaScript portfolio with project filters, case studies, Upwork/email contact links, mobile navigation, an interactive vanilla Keep demo and an embedded Pageweft sample-output viewer. The companion **Fieldnotes** library is built with Hugo; its generated files are committed, so serving the portfolio does not require a runtime build.
 
-## Current portfolio scope — 19 October 2026
+## Current portfolio scope — 22 October 2026
 
-Four active product cards remain: **Noteweld, Noteweld Local, Sonaweft and Pageweft**. The former Go study has been removed at the owner's request, together with its category, cover styles, manual pages, search/feed entries and download editions. No replacement is scheduled. Development Workbench remains a separate environment case study. The library now has **59 indexed articles and 41 reviewed source records**, including the source-access and selected-code guide. Earlier milestone counts below are dated history.
+Four active product cards remain: **Noteweld, Noteweld Local, Sonaweft and Pageweft**. The former Go study has been removed at the owner's request, together with its category, cover styles, manual pages, search/feed entries and download editions. No replacement is scheduled. Development Workbench remains a separate environment case study. The library now has **61 indexed articles and 42 reviewed source records**, including the source-access and selected-code guide. Earlier milestone counts below are dated history.
 
 The owner reports both app domains approved; genuine payment/payout acceptance remains separate and public billing stays closed.
 
@@ -61,9 +65,10 @@ From this directory, run `python -m http.server 8000` and open `http://localhost
 ```sh
 node --check script.js
 node tests/portfolio.test.mjs
+node tests/guest.browser.cjs
 ```
 
-The tests use jsdom installed in sibling `../Keep` (`npm ci` there first). They cover project links, filters, mobile navigation, demo cleanup, and bundled assets. Browser screenshots and visual review remain necessary before publication.
+The DOM tests use jsdom installed in sibling `../Keep` (`npm ci` there first). They cover project links, filters, mobile navigation, demo cleanup, and bundled assets. The guest browser suite uses Playwright and axe-core installed in `../noteweld`, system Chromium and a local server on port 8322; set `PORTFOLIO_TEST_URL` to review another origin. It checks both root and app chooser at four widths and saves local screenshots. Inspect screenshots separately before publication.
 
 ## Pageweft preview — 15 October 2026
 
