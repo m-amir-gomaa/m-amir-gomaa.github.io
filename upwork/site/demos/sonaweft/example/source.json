@@ -1,0 +1,15 @@
+{
+  "title": "Why gravity changes across Earth — NOAA Ocean Podcast excerpt",
+  "kind": "attributed-public-science-excerpt",
+  "source_url": "https://oceanservice.noaa.gov/podcast/mar20/gravity.html",
+  "original_media_url": "https://oceanservice.noaa.gov/podcast/mar20/nop33-gravity.mp3",
+  "source_sha256": "0d4d0feffdc94b74f46d8efd232e4a7b4723eaf43606980b72a53a6a9ad0541f",
+  "original_source_sha256": "c45603ca1a0542cd5d958abf30d013c13c4fe2172d351979a731d149d91ffa77",
+  "source_start_seconds": 181.05,
+  "source_end_seconds": 244.7,
+  "credit": "NOAA Ocean Podcast, Understanding Gravity, episode 33; Megan Forbes and Derek van Westrum.",
+  "rights": "NOAA U.S. government material; see https://oceanservice.noaa.gov/about/faq.html. No NOAA endorsement.",
+  "edits": "Continuous excerpt, loudness normalization and brief edge fades; speech speed and pitch unchanged.",
+  "asr_provenance": "Real pinned production cloud ASR of the first 270 seconds; selected complete segments and word times rebased, with no text corrections.",
+  "review_model": null
+}

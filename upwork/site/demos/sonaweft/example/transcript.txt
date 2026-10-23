@@ -1,0 +1,22 @@
+[0.14-7.82] So we're measuring it. Does that mean it changes at different points on the Earth or in time? What do you mean? Isn't gravity the same all the time?
+[8.24-14.48] Great, great question. So to a certain approximation, gravity pretty much is the same everywhere.
+[14.48-16.02] In a high school physics course, you
+[16.02-18.36] may learn about 9.8 meters per second per second
+[18.36-20.56] is the acceleration of an object when you drop it.
+[21.14-23.84] I guess in the old days, it was 32 feet per second per second.
+[24.90-27.68] But it turns out that number changes a little bit
+[27.68-29.68] as you move around the surface of the Earth.
+[29.86-33.14] So the Earth itself isn't really a sphere.
+[33.34-35.98] It's more of a squished sphere called an ellipsoid.
+[36.74-39.18] So the Earth is wider the equator than it is from pole
+[39.18-39.54] to pole.
+[39.70-40.74] That's because the Earth is spinning,
+[40.74-44.52] and it kind of bulges out due to its own acceleration.
+[45.60-48.24] So at the pole, you're actually closer to the center
+[48.24-49.36] of the Earth than you are at the equator.
+[49.88-51.58] And Newton's law would tell you that if you're
+[51.58-52.70] closer to the center of the Earth,
+[52.86-53.88] gravity will be stronger there.
+[54.62-59.34] And sure enough, it's something like a half percent effect.
+[59.84-61.74] Gravity gets half percent stronger
+[61.74-63.20] if you go from the equator to the poles.

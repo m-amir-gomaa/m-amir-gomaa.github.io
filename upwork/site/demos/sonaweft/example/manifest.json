@@ -1,0 +1,133 @@
+{
+  "format": "instascript-export/v1",
+  "producer": "sonaweft",
+  "version": 1,
+  "language": "en",
+  "duration": 63.65,
+  "segments": [
+    {
+      "id": "s000000",
+      "start": 0.14,
+      "end": 7.82
+    },
+    {
+      "id": "s000001",
+      "start": 8.24,
+      "end": 14.48
+    },
+    {
+      "id": "s000002",
+      "start": 14.48,
+      "end": 16.02
+    },
+    {
+      "id": "s000003",
+      "start": 16.02,
+      "end": 18.36
+    },
+    {
+      "id": "s000004",
+      "start": 18.36,
+      "end": 20.56
+    },
+    {
+      "id": "s000005",
+      "start": 21.14,
+      "end": 23.84
+    },
+    {
+      "id": "s000006",
+      "start": 24.9,
+      "end": 27.68
+    },
+    {
+      "id": "s000007",
+      "start": 27.68,
+      "end": 29.68
+    },
+    {
+      "id": "s000008",
+      "start": 29.86,
+      "end": 33.14
+    },
+    {
+      "id": "s000009",
+      "start": 33.34,
+      "end": 35.98
+    },
+    {
+      "id": "s000010",
+      "start": 36.74,
+      "end": 39.18
+    },
+    {
+      "id": "s000011",
+      "start": 39.18,
+      "end": 39.54
+    },
+    {
+      "id": "s000012",
+      "start": 39.7,
+      "end": 40.74
+    },
+    {
+      "id": "s000013",
+      "start": 40.74,
+      "end": 44.52
+    },
+    {
+      "id": "s000014",
+      "start": 45.6,
+      "end": 48.24
+    },
+    {
+      "id": "s000015",
+      "start": 48.24,
+      "end": 49.36
+    },
+    {
+      "id": "s000016",
+      "start": 49.88,
+      "end": 51.58
+    },
+    {
+      "id": "s000017",
+      "start": 51.58,
+      "end": 52.7
+    },
+    {
+      "id": "s000018",
+      "start": 52.86,
+      "end": 53.88
+    },
+    {
+      "id": "s000019",
+      "start": 54.62,
+      "end": 59.34
+    },
+    {
+      "id": "s000020",
+      "start": 59.84,
+      "end": 61.74
+    },
+    {
+      "id": "s000021",
+      "start": 61.74,
+      "end": 63.2
+    }
+  ],
+  "files": {
+    "transcript.json": "fe53ae91107abc677922e4ad7691666e9b0f20a38fe44a4621bf8642dc5659e3",
+    "source.json": "9246c5ae095b2da39aae44323eb67f5e988c0077dafe6d6dd21e2564e0f64621",
+    "transcript.md": "1bec3157173e8cbc611675b130bec14ecdfe119eee51fb8854714ac7443c4e55",
+    "transcript.txt": "0a2c6026593005777f863f609983095755d30c9d2b7006f06954daf5a1870ed5",
+    "transcript.srt": "5b3593e7d20da6e2fb3073b0c86b3d7912ac4310c40b88bf68d76b910a3cd598",
+    "transcript.vtt": "0f8f4490f85e4ff8580a05aaba42bcd9009fed6484571def4b291a466b74d463",
+    "corrections.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "speakers.json": "3f4392dc53eef6cf0d53702a5db73136c7516d37f9f9953b2e46172f940858dd",
+    "listening-notes.md": "66c2f9489e8cf8622f0699fc9f4f00d4cbb3e028afd4c4b37b41f91540b3f2d4",
+    "README.md": "80a32db5e2092aabeabd0f3c5341fd26a88bb0fa52e751be38bb1caaa6d2bc17"
+  },
+  "asr_model": "Systran/faster-whisper-large-v3",
+  "review_model": null
+}

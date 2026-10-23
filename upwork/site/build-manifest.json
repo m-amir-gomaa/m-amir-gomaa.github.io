@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "canonical": "https://work.amirgomaa.com/",
+  "inputs": [
+    {
+      "path": "index.html",
+      "sha256": "f4a57eaa10632de33fc13a461210ab575a74397d3c804a14afe51dba48743655"
+    },
+    {
+      "path": "style.css",
+      "sha256": "b30b463c1b89df270fa4fa7f6f09860aba83a9a283e10e374a60e3b3a04bc9ce"
+    },
+    {
+      "path": "script.js",
+      "sha256": "7bc358d03e81cf31316b28de3046d41da7066be68ae30e6d7f955c9d47881801"
+    },
+    {
+      "path": "demos/keep/index.html",
+      "sha256": "263a2846bbe2f3d96ba670d15e3b98fb896f8175319d4502e536eede6281a0a8"
+    },
+    {
+      "path": "demos/keep/bundle.efd136bff7fcc9f2728b.js",
+      "sha256": "7003d07fcbf309800af043a1be0c036ed52cf946fa44e00d64db22f119769e38"
+    },
+    {
+      "path": "demos/keep/bundle.efd136bff7fcc9f2728b.js.LICENSE.txt",
+      "sha256": "8c9946dfc859a2bfb26cc541125631cd96e7110fa20a702eb19275c9d1658805"
+    },
+    {
+      "path": "demos/keep/assets/noteweld-local.svg",
+      "sha256": "07ae411f7f141b655234e634b94cdd0c072ac74f35aca180b4076e0b291a0b5f"
+    },
+    {
+      "path": "assets/document-sample/document.pdf",
+      "sha256": "57687dc6cb394a22d583d7feaefdaaa0c5a2799039d3c550d4308d9461765bb0"
+    },
+    {
+      "path": "assets/document-sample/field-notes.md",
+      "sha256": "314845e95334bb9a0dab4b3a98f635194e3d8586dcdf020b4b9613025ed35c2d"
+    },
+    {
+      "path": "assets/document-sample/field-notes.zip",
+      "sha256": "5594bc61322abb1f49eacb28927bca11451239a355081fe55bce5c68885df9d0"
+    },
+    {
+      "path": "assets/document-sample/page-1.png",
+      "sha256": "f4f2b815a9d222d9eb2346594d2559872c6f4f8532f2ea6ba24b32f783805284"
+    },
+    {
+      "path": "assets/document-sample/page-2.png",
+      "sha256": "89cf6dae7bac71f2dab55cebd6954df3b31474826e5224af3f6deadfa840627f"
+    },
+    {
+      "path": "assets/document-sample/page-3.png",
+      "sha256": "074c5ca3ae55088a04284ec3cf7ed19d248be44ab70e090f9debf017c80616e1"
+    },
+    {
+      "path": "assets/document-sample/README.md",
+      "sha256": "b774f7b94d69089239c37d18411166aa674b4718280b42a628b761ec1d799700"
+    },
+    {
+      "path": "../workflow/upwork-profile-20261023/assets/noteweld.png",
+      "sha256": "d0419fa4beac74e4f61d5e8042100e67cd02ca7eb470344a2dbd26d7a13de2d4"
+    },
+    {
+      "path": "../sonaweft/sonaweft_web/templates/example.html",
+      "sha256": "c016bfe57bf38002da020f0ddc6f7d0462e11c94170d8127b04d3d50fa66d8a0"
+    },
+    {
+      "path": "../sonaweft/sonaweft_web/static/style.css",
+      "sha256": "6afeff629c7d62957386e30403f6aeec3aedce650f5cc7e7fb839f85267aef26"
+    },
+    {
+      "path": "../sonaweft/sonaweft_web/static/example.js",
+      "sha256": "189ce2aa3733919ccf458e37ffff836327ea6a3aa15c12109137e18ffbf21425"
+    },
+    {
+      "path": "../sonaweft/sonaweft_web/static/example/audio.mp3",
+      "sha256": "0d4d0feffdc94b74f46d8efd232e4a7b4723eaf43606980b72a53a6a9ad0541f"
+    },
+    {
+      "path": "../sonaweft/sonaweft_web/static/example/view.json",
+      "sha256": "c7eaddcf68cdf89df2317e05a7bb52550d7fd91538eae372d88d499a08e8e771"
+    },
+    {
+      "path": "../sonaweft/sonaweft_web/static/example/transcript.json",
+      "sha256": "fe53ae91107abc677922e4ad7691666e9b0f20a38fe44a4621bf8642dc5659e3"
+    },
+    {
+      "path": "../sonaweft/sonaweft_web/static/example/source.json",
+      "sha256": "9246c5ae095b2da39aae44323eb67f5e988c0077dafe6d6dd21e2564e0f64621"
+    },
+    {
+      "path": "../sonaweft/sonaweft_web/static/example/transcript.md",
+      "sha256": "1bec3157173e8cbc611675b130bec14ecdfe119eee51fb8854714ac7443c4e55"
+    },
+    {
+      "path": "../sonaweft/sonaweft_web/static/example/transcript.txt",
+      "sha256": "0a2c6026593005777f863f609983095755d30c9d2b7006f06954daf5a1870ed5"
+    },
+    {
+      "path": "../sonaweft/sonaweft_web/static/example/transcript.srt",
+      "sha256": "5b3593e7d20da6e2fb3073b0c86b3d7912ac4310c40b88bf68d76b910a3cd598"
+    },
+    {
+      "path": "../sonaweft/sonaweft_web/static/example/transcript.vtt",
+      "sha256": "0f8f4490f85e4ff8580a05aaba42bcd9009fed6484571def4b291a466b74d463"
+    },
+    {
+      "path": "../sonaweft/sonaweft_web/static/example/manifest.json",
+      "sha256": "dee5db0623c5bac6fb300a7f0b613fa8b2ed64498fcb997c0a0ea6a06a69cde5"
+    },
+    {
+      "path": "../sonaweft/sonaweft_web/static/example/corrections.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "../sonaweft/sonaweft_web/static/example/speakers.json",
+      "sha256": "3f4392dc53eef6cf0d53702a5db73136c7516d37f9f9953b2e46172f940858dd"
+    },
+    {
+      "path": "../sonaweft/sonaweft_web/static/example/listening-notes.md",
+      "sha256": "66c2f9489e8cf8622f0699fc9f4f00d4cbb3e028afd4c4b37b41f91540b3f2d4"
+    },
+    {
+      "path": "../sonaweft/sonaweft_web/static/example/README.md",
+      "sha256": "80a32db5e2092aabeabd0f3c5341fd26a88bb0fa52e751be38bb1caaa6d2bc17"
+    },
+    {
+      "path": "../sonaweft/sonaweft_web/static/example/sonaweft-example.zip",
+      "sha256": "a173119a80bb55c9324438cc8f085e1c6c0ea1ae19bf59c62379ceb478ccc981"
+    }
+  ],
+  "files": {
+    "index.html": "fc07deb699fbf11baf30cd990825ee65f413e960ab47af7fcd5dba46af47524d",
+    "style.css": "b30b463c1b89df270fa4fa7f6f09860aba83a9a283e10e374a60e3b3a04bc9ce",
+    "script.js": "cd3c4d7ab7a1ea7a18bb43604927967c13cdb9161aff13ecb88facc8d20ff030",
+    "demos/keep/index.html": "95e9e899e9d16262fd6c0c53a8139149518b101cd972134f4aef31de047c65d6",
+    "demos/keep/frame-bridge.js": "bb8ba6e3420763ab3beeb96fb17ad012e52e031e319ee38d5fd2022d656f0ca6",
+    "demos/keep/bundle.efd136bff7fcc9f2728b.js": "7003d07fcbf309800af043a1be0c036ed52cf946fa44e00d64db22f119769e38",
+    "demos/keep/bundle.efd136bff7fcc9f2728b.js.LICENSE.txt": "8c9946dfc859a2bfb26cc541125631cd96e7110fa20a702eb19275c9d1658805",
+    "demos/keep/assets/noteweld-local.svg": "07ae411f7f141b655234e634b94cdd0c072ac74f35aca180b4076e0b291a0b5f",
+    "assets/document-sample/document.pdf": "57687dc6cb394a22d583d7feaefdaaa0c5a2799039d3c550d4308d9461765bb0",
+    "assets/document-sample/field-notes.md": "314845e95334bb9a0dab4b3a98f635194e3d8586dcdf020b4b9613025ed35c2d",
+    "assets/document-sample/field-notes.zip": "5594bc61322abb1f49eacb28927bca11451239a355081fe55bce5c68885df9d0",
+    "assets/document-sample/page-1.png": "f4f2b815a9d222d9eb2346594d2559872c6f4f8532f2ea6ba24b32f783805284",
+    "assets/document-sample/page-2.png": "89cf6dae7bac71f2dab55cebd6954df3b31474826e5224af3f6deadfa840627f",
+    "assets/document-sample/page-3.png": "074c5ca3ae55088a04284ec3cf7ed19d248be44ab70e090f9debf017c80616e1",
+    "assets/document-sample/README.md": "b774f7b94d69089239c37d18411166aa674b4718280b42a628b761ec1d799700",
+    "assets/screenshots/noteweld.png": "d0419fa4beac74e4f61d5e8042100e67cd02ca7eb470344a2dbd26d7a13de2d4",
+    "demos/sonaweft/index.html": "409a30a7c3075e8601e08e699ef63a485fd8245a0e14fa34627b44efe52bb9ef",
+    "demos/sonaweft/style.css": "6afeff629c7d62957386e30403f6aeec3aedce650f5cc7e7fb839f85267aef26",
+    "demos/sonaweft/example.js": "1b2e743371f4b84c522ffeaaf9b1c0bf9ac2c09a1c365386229a1b96a86d643d",
+    "demos/sonaweft/example/audio.mp3": "0d4d0feffdc94b74f46d8efd232e4a7b4723eaf43606980b72a53a6a9ad0541f",
+    "demos/sonaweft/example/view.json": "c7eaddcf68cdf89df2317e05a7bb52550d7fd91538eae372d88d499a08e8e771",
+    "demos/sonaweft/example/transcript.json": "fe53ae91107abc677922e4ad7691666e9b0f20a38fe44a4621bf8642dc5659e3",
+    "demos/sonaweft/example/source.json": "9246c5ae095b2da39aae44323eb67f5e988c0077dafe6d6dd21e2564e0f64621",
+    "demos/sonaweft/example/transcript.md": "1bec3157173e8cbc611675b130bec14ecdfe119eee51fb8854714ac7443c4e55",
+    "demos/sonaweft/example/transcript.txt": "0a2c6026593005777f863f609983095755d30c9d2b7006f06954daf5a1870ed5",
+    "demos/sonaweft/example/transcript.srt": "5b3593e7d20da6e2fb3073b0c86b3d7912ac4310c40b88bf68d76b910a3cd598",
+    "demos/sonaweft/example/transcript.vtt": "0f8f4490f85e4ff8580a05aaba42bcd9009fed6484571def4b291a466b74d463",
+    "demos/sonaweft/example/manifest.json": "dee5db0623c5bac6fb300a7f0b613fa8b2ed64498fcb997c0a0ea6a06a69cde5",
+    "demos/sonaweft/example/corrections.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "demos/sonaweft/example/speakers.json": "3f4392dc53eef6cf0d53702a5db73136c7516d37f9f9953b2e46172f940858dd",
+    "demos/sonaweft/example/listening-notes.md": "66c2f9489e8cf8622f0699fc9f4f00d4cbb3e028afd4c4b37b41f91540b3f2d4",
+    "demos/sonaweft/example/README.md": "80a32db5e2092aabeabd0f3c5341fd26a88bb0fa52e751be38bb1caaa6d2bc17",
+    "demos/sonaweft/example/sonaweft-example.zip": "a173119a80bb55c9324438cc8f085e1c6c0ea1ae19bf59c62379ceb478ccc981",
+    "404.html": "be48f29e042dd082f3c1c77785163c5699440092832d89f72536b033bbca0be4",
+    "robots.txt": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
+    "_headers": "9d5016c51ce183a6c4cd27b6f286b9cf2c268d3ca9400f097d1c5f1eb7a56b0b"
+  }
+}
