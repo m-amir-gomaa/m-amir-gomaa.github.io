@@ -76,7 +76,7 @@ const next=example.querySelector('main > p:last-child');assert(next);next.innerH
 for(const node of example.querySelectorAll('[href],[src]'))for(const attr of ['href','src']){
  const val=node.getAttribute(attr);if(val?.startsWith('/static/example/'))node.setAttribute(attr,val.replace('/static/example/','example/'));
 }
-put('demos/sonaweft/index.html',exampleDom.serialize());
+put('demos/sonaweft/index.html',exampleDom.serialize().replace(/[ \t]+$/gm,''));
 copy(join(sona,'static/style.css'),'demos/sonaweft/style.css');
 put('demos/sonaweft/example.js',replaceOnce(input(join(sona,'static/example.js')).toString(),'/static/example/view.json','example/view.json'));
 for(const name of ['audio.mp3','view.json','transcript.json','source.json','transcript.md','transcript.txt','transcript.srt','transcript.vtt','manifest.json','corrections.json','speakers.json','listening-notes.md','README.md','sonaweft-example.zip'])copy(join(sona,'static/example',name),'demos/sonaweft/example/'+name);

@@ -75,9 +75,9 @@ header, the tested browser treated the loaded audio as unseekable even though
 its bytes were buffered; adding the header restores timestamp seeking. A range
 request can return a valid full representation when the cache path does not
 select partial delivery. Acceptance checks real playback/seek as well as valid
-partial or complete response lengths, rather than assuming every request is206.
+partial or complete response lengths, rather than assuming every request is 206.
 
-Local acceptance: reproducible37-file build,49 local links/assets/fragments,
+Local acceptance: reproducible 37-file build, 49 local links/assets/fragments,
 36 manifest hashes and contact checks pass; the original portfolio's nine DOM
 cases pass. Four-width actual local runtime checks pass for demos, audio seeking,
 backup/PDF downloads, keyboard/focus, failure/retry, automated accessibility,
