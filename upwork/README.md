@@ -70,6 +70,12 @@ Inspect captured screenshots separately before publication.
 previous reviewed static directory to this same resource; it does not change
 the main Pages site, product gateways, DNS for other hosts or app data.
 
+The explicit `public, no-transform` cache directive prevents automatic Cloudflare
+analytics-script injection on this edition. The first real deployment check caught
+that host-level transformation despite a clean source build; actual HTML bytes and
+browser network requests must be verified after release. This setting is scoped to
+these static responses and does not change the zone's other analytics settings.
+
 The audio response advertises its actual byte-range capability. Without that
 header, the tested browser treated the loaded audio as unseekable even though
 its bytes were buffered; adding the header restores timestamp seeking. A range
