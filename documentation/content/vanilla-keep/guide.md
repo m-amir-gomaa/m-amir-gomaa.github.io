@@ -1,7 +1,7 @@
 {
   "title": "Using the vanilla demo",
   "description": "Understand the separate browser-only demonstration and its storage boundary.",
-  "date": "2026-10-16",
+  "date": "2026-11-05",
   "weight": 1,
   "project": "Noteweld Local",
   "category": "Start here",

@@ -1,11 +1,11 @@
 {
   "title": "Recoverable transcript review",
   "description": "Compare and restore saved corrections and speaker labels, retain hashed history exports, and understand deletion and expiry.",
-  "date": "2026-10-19",
+  "date": "2026-11-05",
   "weight": 150,
   "project": "Sonaweft",
   "category": "Usage guide",
-  "notice": "Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision cfe3442 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
+  "notice": "Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones. Production source revision f77aba4 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
   "sourceurl": "",
   "download": "markdown/sonaweft/annotation-history.md"
 }

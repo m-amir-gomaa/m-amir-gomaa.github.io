@@ -1,3 +1,17 @@
+# Current manuals refresh — 5 November 2026
+
+All four product guides and the Workbench/journal were checked against current
+source records. Noteweld's guide now covers the deployed interface, 29-role
+appearance settings and configured Google/GitHub controls with real-consent
+acceptance still pending. Sonaweft documents the credited NOAA scientific example.
+Pageweft/Sonaweft explain email/private-key recovery and generic processing
+unavailability; owner-only guest accounting stays excluded from publication.
+
+Fieldnotes now includes **64 indexed articles and 45 reviewed source records**.
+The manifest records explicit private exclusions and curated public editions;
+unreviewed tracked documents still block sync. Private code maps/learner material
+are not published. Earlier dated releases below are historical checkpoints.
+
 # Amir Gomaa — freelance portfolio
 
 22 October guest release: [Try the apps](https://amirgomaa.com/apps/) explains each app in simple words and links directly to its completed example and two-minute guide. The portfolio has a matching guest entry; Noteweld's private-workspace link now points to sign-in. Examples need no account or new processing. The processing apps support email/passphrase sign-in with a downloadable private recovery key; external Google consent is not claimed. Free-sample availability is checked privately before processing and can be temporarily unavailable. Completed examples remain open; paid billing remains closed.

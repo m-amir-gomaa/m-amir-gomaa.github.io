@@ -1,5 +1,7 @@
 # Fieldnotes — Hugo project documentation and journal
 
+Current review: 5 November 2026 — 64 indexed articles, 45 reviewed source records, explicit owner-only exclusions and curated public summaries.
+
 Source is here; generated output is `../manuals/`. The existing GitHub Pages root publishes both the portfolio and the library. Keeping reviewed generated files in Git avoids changing the working Pages deployment mode or requiring a new hosting account.
 
 Use **Hugo 0.156.0** (already provided by this NixOS environment) and Python 3. The build refuses another Hugo version rather than silently changing generated output. On a different machine, obtain that version through the [official releases](https://github.com/gohugoio/hugo/releases/tag/v0.156.0), verify the official checksum, or use an appropriately pinned Nix package. No new global package or NixOS rebuild is required here.
@@ -11,6 +13,7 @@ python3 scripts/build-docs.py
 python3 scripts/build-docs.py --check
 python3 scripts/check-docs.py
 node tests/portfolio.test.mjs
+python3 tests/manual-publication.test.py
 python3 -m http.server 8315 --bind 127.0.0.1
 # In another shell:
 node tests/docs.browser.cjs

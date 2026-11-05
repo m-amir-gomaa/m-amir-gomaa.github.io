@@ -78,6 +78,10 @@ def main():
     actual_sources = {(record['project'], record['path']) for record in inventory['documents']}
     if actual_sources != expected_sources:
         errors.append('Source coverage differs from the reviewed manifest.')
+    private_sources = {(project['slug'], entry['path']) for project in manifest['projects']
+                       for entry in project.get('excluded_files', [])}
+    if actual_sources & private_sources:
+        errors.append('An owner-only source was included in the public inventory.')
     if len(manifest['projects']) != 4:
         errors.append('Expected four project implementations')
     for record in inventory['documents']:
@@ -91,6 +95,8 @@ def main():
         content = file.read_text()
         if '/home/qwerty/' in content or 'general fear of failure' in content:
             errors.append(f'Private context in {file.relative_to(ROOT)}')
+        if '# Private shared guest processing budget' in content or 'freelance-guest-quota-v1' in content:
+            errors.append(f'Owner-only quota policy in {file.relative_to(ROOT)}')
         if re.search(r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|postgres(?:ql)?://[^\s:@]+:[^\s@]+@|\b(?:ghp_|pdl_live_apikey_)[A-Za-z0-9_-]{25,}', content):
             errors.append(f'Potential secret in {file.relative_to(ROOT)}; inspect privately')
     search = json.loads((ROOT / 'manuals/index.json').read_text())

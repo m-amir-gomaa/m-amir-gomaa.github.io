@@ -1,21 +1,35 @@
 {
   "title": "Technical overview",
   "description": "Architecture, implemented scope, setup and the current release.",
-  "date": "2026-10-19",
+  "date": "2026-11-05",
   "weight": 30,
   "project": "Noteweld",
   "category": "Reference",
-  "notice": "Current bounded preview includes Markdown/Vim, connected notes, source-bundle imports and browser-session controls. Real Google/GitHub consent remains unverified and provider buttons stay disabled; billing is closed. Earlier release records describe their own milestones. Production source revision f612e01 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
+  "notice": "Current preview includes the approved forest interface, full appearance customization, Markdown/Vim, connected notes, source imports and browser-session controls. Google/GitHub are configured; real owner consent/link acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 418fb83 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
   "sourceurl": "",
   "download": "markdown/noteweld/overview.md"
 }
+
+**Current release, 5 November:** approved forest UI, custom N logo and complete
+appearance controls are live. [Release evidence](/manuals/noteweld/ui-release/) and
+codebase walkthrough (source repository requires access). Earlier dated releases below
+are historical checkpoints.
+
+22 October guest release: the home page now introduces the workspace before
+sign-in, with direct account-free editor/graph entry, a [two-minute guide](https://noteweld.amirgomaa.com/help),
+and clear email-account/recovery navigation. The welcome and account surfaces use
+the reviewed cream/forest FigCraft direction. Existing account data, save
+semantics and provider gates remain intact. Local checks pass 55 unit/UI and
+21 Chromium cases (two optional provider-configuration checks skipped), including
+four-width public-page accessibility and no private note requests during guest
+navigation. Deployment evidence belongs in workspace milestone 017.
 
 Original application material is reserved under the repository notice (source repository requires access), subject to separately licensed dependencies/assets and any previously granted permissions. Production source review is by arrangement; the public manuals and hosted editor/graph examples remain available.
 
 [Public address and existing-account access](/manuals/noteweld/custom-domain/)
 
 
-The source-bundle and account collection is documented in [release evidence](/manuals/noteweld/source-handoff-release/). Google/GitHub consent remains unverified and public provider buttons stay disabled; [setup and account behavior](/manuals/noteweld/account-work/).
+The source-bundle and account collection is documented in [release evidence](/manuals/noteweld/source-handoff-release/). Google/GitHub registrations were configured on 5 November 2026 and their public-domain authorization redirects pass; real owner consent/link/unlink acceptance remains pending. [Current OAuth status](/manuals/noteweld/connected-signin/) and [setup/account behavior](/manuals/noteweld/account-work/). The approved UI/theme/logo is now implemented; see the November release below.
 A private notes/checklist preview built with Next.js 16.3.8, React 19, Auth.js and PostgreSQL/Drizzle. This repository retains its original `keep-nextjs` GitHub identity. The old Vercel deployment is a historical version; it is not updated by this release.
 
 ## Implemented
@@ -32,7 +46,7 @@ A private notes/checklist preview built with Next.js 16.3.8, React 19, Auth.js a
 - Bounded free preview: 100 accounts, 50 registrations/day, 250 notes, 50 labels and 2 MiB note text/account. PostgreSQL-backed admission limits and one scale-to-zero CPU web container.
 
 - Validated Pageweft/Sonaweft ZIP import with preview, all-or-nothing note/source creation, stable source links, hashes, duplicate/retry policy and separate original/corrected/AI labels. Read [source imports](/manuals/noteweld/source-bundles/).
-- Browser-session inventory/revocation, sign out all devices, recent-proof provider linking/unlink protection, and private API support IDs. Provider registration/real consent is still a release gate.
+- Browser-session inventory/revocation, sign out all devices, recent-proof provider linking/unlink protection, and private API support IDs. Provider registrations are configured; real owner consent/link acceptance is still pending.
 
 **Not implemented:** bare hashtag parsing, global Vim navigation, durable revision history, paid access, reminders, offline sync, collaboration and end-to-end encryption. Those follow this connected-notes milestone. This is not a production SLA or a place for irreplaceable/sensitive material.
 
@@ -79,3 +93,14 @@ Tests do not capture authentication screenshots, traces or video. Optional `NOTE
 `src/app/api/` owns runtime validation/auth boundaries. `src/components/WorkspaceContext.tsx` owns label/draft coordination; `useNotes` ignores stale requests. `src/db/migrations/` holds forward migrations, including legacy-collision protection. Existing source/working changes were preserved before this foundation was implemented; there is no automatic merge/delete of conflicting legacy accounts.
 
 The point-in-time runtime audit is clean after the 16.3.8 security patches. Development-only glob/esbuild advisories and their exact boundaries are recorded in [release evidence](/manuals/noteweld/foundation-release/); the full dependency graph is not claimed vulnerability-free.
+
+## November UI and appearance release
+
+The approved forest interface and joined-note N logo are implemented. Appearance
+supports six presets, light/dark/system, 29 independent colors, separate mode
+palettes, text size, spacing, reading fonts, motion/border preferences, validated
+portable themes and reset. Guests save locally; signed-in preferences save to the
+account and are included in exports/backups. Start with the codebase guide (source repository requires access).
+
+[Release evidence and limits](/manuals/noteweld/ui-release/) records deployment, tests,
+backup/migration and the separate real OAuth-consent acceptance step.

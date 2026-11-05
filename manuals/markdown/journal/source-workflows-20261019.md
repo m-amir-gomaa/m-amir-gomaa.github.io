@@ -1,6 +1,6 @@
 # From extracted files to retained sources
 
-Reviewed: 2026-10-19
+Reviewed: 2026-11-05
 
 ## A complete portable path
 

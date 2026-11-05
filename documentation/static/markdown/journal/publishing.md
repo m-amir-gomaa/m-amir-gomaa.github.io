@@ -1,6 +1,6 @@
 # Maintaining this documentation library
 
-Reviewed: 2026-10-19
+Reviewed: 2026-11-05
 
 ## Source and publication
 
@@ -38,3 +38,9 @@ Agent instructions, private environment files, customer uploads, untracked work,
 ## Future entries
 
 Add ordinary Markdown under `documentation/content/journal/` with a title, date and description, then rebuild. The home page lists new entries and publishes an RSS feed. Search reads a static generated JSON index in the visitor's browser; no query is sent to a search provider. Without JavaScript, project navigation and manuals remain readable.
+
+## Current review boundary
+
+The 5 November refresh accounts for 45 reviewed source records and 64 indexed articles across the four product implementations, the Workbench and journal. Current usage guides are distinct from dated release histories. Source revisions and public-edition hashes remain visible in the inventory.
+
+The manifest can explicitly exclude owner-only documents with a review reason or provide a curated public summary. Unreviewed new tracked documents block synchronization. Private guest-accounting policies and the owner's codebase-learning walkthrough are excluded; local code maps are not website artifacts. The publication fixture checks that excluded source text and unapproved parts of curated records never appear in public output.

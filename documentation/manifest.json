@@ -11,14 +11,15 @@
       "status": "Free hosted preview",
       "live": "https://noteweld.amirgomaa.com/",
       "description": "Write Markdown, connect notes and retain original Pageweft/Sonaweft source bundles in a private workspace.",
-      "notice": "Current bounded preview includes Markdown/Vim, connected notes, source-bundle imports and browser-session controls. Real Google/GitHub consent remains unverified and provider buttons stay disabled; billing is closed. Earlier release records describe their own milestones.",
+      "notice": "Current preview includes the approved forest interface, full appearance customization, Markdown/Vim, connected notes, source imports and browser-session controls. Google/GitHub are configured; real owner consent/link acceptance remains pending. Billing is closed. Earlier release records describe dated milestones.",
       "files": [
         {
           "path": "README.md",
           "slug": "overview",
           "title": "Technical overview",
           "description": "Architecture, implemented scope, setup and the current release.",
-          "category": "Reference"
+          "category": "Reference",
+          "start_at_title": true
         },
         {
           "path": "docs/EDITOR.md",
@@ -46,7 +47,9 @@
           "slug": "operations",
           "title": "Deployment and recovery",
           "description": "CPU hosting, isolated PostgreSQL, encrypted snapshots and incident recovery.",
-          "category": "Operations"
+          "category": "Operations",
+          "mode": "curated",
+          "context": "## Current deployment and data\n\nNoteweld runs its Next.js/Node application on Modal behind the public Cloudflare gateway. Neon PostgreSQL stores private account/note state. The preview has explicit account/note/source bounds and billing is closed. No shared wallet/login across the portfolio apps is implied.\n\n## Account and preference persistence\n\nEvery private operation validates the server session and owner. Browser-session revocation and account session versions control continuing access. Google/GitHub entry is configured, with actual owner grant/link acceptance still pending; matching emails never automatically merge accounts. Ordinary email/private-key recovery is deployed.\n\nGuest appearance is browser-local. Saved account appearance is stored with the account and included in exports/backups. Local drafts are not a crash-proof offline database. The owner's private code map and learning material are not public app features.\n\n## Backups and migrations\n\nThe November preferences release took a fresh encrypted snapshot before its additive migration. Account/note/provider-identity counts were preserved. Backup version 4 includes appearance data; earlier supported backup versions restore with defaults. Restore targets must be empty and isolated, and restored sessions must be invalidated. A local backup file alone does not prove off-device disaster recovery.\n\nOwner deployment, credential and recovery commands remain in the access-controlled repository. Keep application public-origin settings and gateway forwarding behavior consistent during rollback. Never erase accounts, identities or quotas to make a deployment appear healthy.\n\n## Verification scope\n\nA successful build is distinct from browser review, database persistence and real provider consent. The deployed release passed ordinary email sign-in, note save, account appearance save/reload/export and temporary-account deletion; [the current release](/manuals/noteweld/ui-release/) gives the relevant counts and limits.\n\n[Using Noteweld](/manuals/noteweld/guide/) explains normal operation; [public domain access](/manuals/noteweld/custom-domain/) explains the hosting boundary."
         },
         {
           "path": "docs/CONNECTIONS-RELEASE.md",
@@ -72,7 +75,7 @@
         {
           "path": "docs/ACCESSIBILITY-20261016.md",
           "slug": "accessibility-review",
-          "title": "Accessibility review — 16 October",
+          "title": "Accessibility review \u2014 16 October",
           "description": "The specific accessibility fix, test evidence and remaining acceptance limits.",
           "category": "Release record"
         },
@@ -81,16 +84,18 @@
           "slug": "custom-domain",
           "title": "Custom domain and account access",
           "description": "Public hostname, secure gateway, existing-account access and rollback.",
-          "category": "Operations"
+          "category": "Operations",
+          "mode": "curated",
+          "context": "## Current public address\n\nUse **https://noteweld.amirgomaa.com/**. The account-free editor and graph are `/example` and `/example/graph`; private writing starts at `/auth/signin`. The application runs on Modal behind a fixed Cloudflare HTTPS gateway, with PostgreSQL on Neon. Vercel is not its active host.\n\nExisting account data stays in the same independent database. Sign in again when changing hostnames; browser cookies and guest local storage do not automatically move between website origins. Matching email addresses do not merge accounts.\n\n## Public origin and authentication\n\nThe deployed Auth.js base URL is the public Noteweld origin. The gateway preserves validated public Origin/Referer values and supplies the fixed public forwarded host while fetching the fixed Modal upstream. Foreign unsafe origins are rejected before forwarding; private responses stream without shared caching. The November release repaired the older internal-origin mapping that blocked account writes after OAuth activation.\n\nGoogle/GitHub authorization redirects use the registered public callbacks, state/PKCE and Google nonce. Real owner consent/link acceptance remains a separate step. [Account controls](/manuals/noteweld/account-work/) explain deliberate linking and recovery.\n\n## Recovery boundary\n\nPreserve the public-origin contract when changing deployment versions: rolling back only the gateway to its old internal-origin mapping would break writes. Keep accounts, identities, backups and credentials intact. An additive UI/preferences rollback does not require deleting data.\n\n[Using Noteweld](/manuals/noteweld/guide/) is the visitor starting point; [the interface release](/manuals/noteweld/ui-release/) records current verification."
         },
         {
           "path": "docs/ACCOUNTS.md",
           "slug": "account-work",
-          "title": "Unreleased account work",
-          "description": "Source record of gated account enhancements; separate from the current public preview.",
-          "category": "Design record",
-          "mode": "reference",
-          "context": "The account foundation lives on a separate development branch. Production domain release 550be9c branches from 5ac512f and excludes this account work. This source record does not establish public Google/GitHub login or a completed provider consent flow."
+          "title": "Accounts, recovery and connected sign-in",
+          "description": "Current email/private-key recovery, browser sessions and deliberately linked Google/GitHub identities.",
+          "category": "Usage guide",
+          "mode": "curated",
+          "context": "## Sign in and retain recovery access\n\nUse email and a passphrase, or a configured Google/GitHub provider. Keep the private recovery key securely when creating an email account. Mailed password resets and email verification are not configured. Each portfolio application has a separate account.\n\n## Link a provider to an existing account\n\nSign in to the existing Noteweld account first. Open **Account \u2192 Sessions and connected sign-in \u2192 Provider identities**. Confirm ownership when asked, then choose **Link Google** or **Link GitHub**. Sensitive actions require ownership confirmation from the last five minutes. If it has expired, choosing an action explains the requirement and focuses the confirmation field; it does not change an identity. Enter the current passphrase or choose the private recovery key, confirm ownership, then choose the action again. Matching email addresses never silently merge accounts.\n\nGoogle/GitHub registrations and public-domain authorization requests have passed callback, state and PKCE checks; Google also uses an OIDC nonce. The owner's actual consent/link/unlink acceptance remains pending. A configured button is not evidence of a completed provider grant.\n\n## Sessions, copies and deletion\n\nReview active browser sessions, revoke a selected device or sign out every device. Export important notes/account data before deletion. Changing a passphrase or using recovery rotates recovery access and revokes older sessions. Removing a provider must leave a usable sign-in method.\n\n[Start with the current usage guide](/manuals/noteweld/guide/) or read [the November release](/manuals/noteweld/ui-release/)."
         },
         {
           "path": "docs/SOURCE-HANDOFF-RELEASE.md",
@@ -98,9 +103,33 @@
           "title": "Source handoff and account release",
           "description": "The import/session milestone, database migration, restore and hosted browser evidence.",
           "category": "Release record"
+        },
+        {
+          "path": "docs/UI-20261105.md",
+          "slug": "ui-release",
+          "title": "Interface and appearance release \u2014 5 November",
+          "description": "Approved interface/logo, complete color preferences, saved account settings and concrete release evidence.",
+          "category": "Release record",
+          "mode": "curated",
+          "context": "## What is live\n\nThe approved forest interface and custom joined-note N logo are deployed. Open **Appearance** in the signed-in sidebar, or [try browser-only appearance settings](https://noteweld.amirgomaa.com/appearance).\n\nChoose Forest, Paper, Slate, Graphite, Ocean or Rose; light, dark or system mode; and customize 29 semantic color roles. Light and dark retain separate overrides. Text size, reading font, spacing, reduced motion, stronger borders, individual/full reset and validated theme JSON import/export are available.\n\nGuest choices save in that browser. Signed-in choices save to the account and are included in account exports and backups. Preview changes are explicit; choose **Save preferences** to keep them. Low-contrast colors produce a warning, with an optional repair action that preserves the user's ability to choose.\n\n## What was checked\n\nThe release passed 58 unit/UI cases, 33 real PostgreSQL cases and 24 browser journeys; two optional locally unconfigured provider cases were skipped. Seven rendered app states had no automated WCAG A/AA/2.1 AA findings. Desktop/mobile captures and a fresh design review were completed.\n\nActual public-domain email sign-in, a note save, account appearance save/reload/export and temporary-account deletion passed. An encrypted backup preceded the additive preference migration; existing account/note/provider-identity counts were preserved. The gateway/public-origin mismatch discovered by live testing was repaired without weakening foreign-origin rejection.\n\nGoogle/GitHub authorization requests use the registered public callbacks with state/PKCE and Google nonce; actual owner consent/link acceptance remains pending. Chromium and automated checks do not establish universal browser/accessibility coverage or perfect custom-palette contrast. Billing remains closed.\n\n[Using Noteweld](/manuals/noteweld/guide/) explains the supported workflow."
+        },
+        {
+          "path": "docs/OAUTH-20261105.md",
+          "slug": "connected-signin",
+          "title": "Google and GitHub status",
+          "description": "Configured providers, explicit linking, recovery and the remaining real-consent acceptance step.",
+          "category": "Reference",
+          "mode": "curated",
+          "context": "## Configuration and actual use are different checks\n\nGoogle and GitHub are configured for Noteweld's public domain. Authorization request checks passed the exact callback URL, state and PKCE; Google also includes its OIDC nonce. Ordinary email sign-in and authenticated note/account operations passed the deployed release checks.\n\nThe owner's actual provider consent, linking/unlinking, cancellation and provider-specific email cases have not yet completed acceptance. Do not interpret configuration as evidence that every external account has been exercised.\n\n## Existing account? Link deliberately\n\nFirst sign in using the method that already owns your notes. Then open **Account \u2192 Sessions and connected sign-in \u2192 Provider identities**, confirm ownership if asked and choose the desired provider. If ownership confirmation has expired, the action remains clickable and guides you to the confirmation field. Confirm using your passphrase or private recovery key and retry the action. Google linking requests an explicit account choice. Matching email addresses do not automatically combine accounts.\n\n[Account controls and recovery](/manuals/noteweld/account-work/) describe the supported safety controls. The [usage guide](/manuals/noteweld/guide/) is the normal starting point."
         }
       ],
-      "source_access": "owner"
+      "source_access": "owner",
+      "excluded_files": [
+        {
+          "path": "docs/CODEBASE-GUIDE.md",
+          "reason": "Private owner learning/codebase walkthrough; delivered locally, not part of the public product manual."
+        }
+      ]
     },
     {
       "slug": "pageweft",
@@ -112,14 +141,18 @@
       "status": "Bounded public sample",
       "live": "https://pageweft.amirgomaa.com/",
       "description": "Convert technical PDFs into portable Markdown with source-page review and separate corrections.",
-      "notice": "Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones.",
+      "notice": "Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones.",
       "files": [
         {
           "path": "README.md",
           "slug": "overview",
           "title": "Technical overview",
           "description": "Features, extraction architecture, local setup, cloud deployment and limits.",
-          "category": "Reference"
+          "category": "Reference",
+          "start_at_title": true,
+          "public_replacements": {
+            "Live samples fail closed until the Modal\nzero-net-spend control and billing headroom can be verified.": "Free processing may be temporarily unavailable. Completed examples remain available."
+          }
         },
         {
           "path": "docs/CONVERSION-PRODUCT.md",
@@ -140,7 +173,9 @@
           "slug": "operations",
           "title": "Owner operations",
           "description": "Usage reporting, admission controls, pause, encrypted ledger backups and recovery.",
-          "category": "Operations"
+          "category": "Operations",
+          "mode": "curated",
+          "context": "## Current public operating boundary\n\nPageweft runs behind its public Cloudflare gateway on Modal. Email/passphrase and private-key recovery are deployed. Accounts and balances are product-specific. Google and mailed password reset remain unconfigured; paid checkout is closed.\n\n## Admission and privacy\n\nLive free processing checks visitor eligibility and private shared availability before dispatch. An unavailable or unverifiable admission check refuses new processing with **Currently unavailable. Please try again later.** Completed examples remain open. Signing in does not reset sample eligibility.\n\nOwner accounting amounts, spending settings, usage, reset details and private reports are deliberately omitted from public documentation and responses. Customer quotes and balances are a separate contract. An admission estimate is not proof of actual provider charges or a physically isolated provider billing account.\n\n## Durable work and recovery\n\nThe application records processing state and accounting transactionally, separates source/derived material, and checks ownership before private downloads. Retries and partial failures have explicit state and settlement behavior. Download retained outputs before their normal 48-hour expiry; immediate deletion closes access and removes supported files while financial records remain separate.\n\nOwner pause, diagnostics, backup and recovery commands are private operational tools. They are not public administration routes. Preserve source/ledger ownership, idempotency and admission gates during recovery; do not reset quotas or disable guards to reopen a trial.\n\n## Payment and quality evidence\n\nThe owner reports domain approval; seller/payout readiness and genuine payment/refund/payout acceptance remain separate. No billing activation or provider account change was performed by this guide refresh. Representative OCR/transcription quality, scale and margins require their own evidence.\n\n[Use the application](/manuals/pageweft/guide/) or read [current provider boundaries](/manuals/journal/provider-costs-and-payments/)."
         },
         {
           "path": "docs/PAYMENT-ACTIVATION.md",
@@ -154,7 +189,9 @@
           "slug": "launch",
           "title": "Launch readiness register",
           "description": "An ordered readiness checklist; owner-specific account questions are omitted from this public edition.",
-          "category": "Operations"
+          "category": "Operations",
+          "mode": "curated",
+          "context": "## What visitors can use\n\nThe completed PDF example, public guide, private email account/recovery flow and bounded processing interface are deployed. Live sample availability is checked privately and may temporarily close; an example remains useful without another processing job.\n\n## What is still gated\n\nPaid processing packs remain closed. App-domain approval is owner-reported; actual seller/payout readiness and genuine payment/refund/payout acceptance still require their own evidence. Do not infer merchant readiness from a successful processing demo or mocked payment tests.\n\nCurrent scope, retention, extraction routes and review controls are in [Using Pageweft](/manuals/pageweft/guide/). Source inspection and error flags do not certify OCR fidelity. A complete synthetic text-only book is not a representative difficult-book OCR benchmark.\n\n## Owner controls stay private\n\nGuest accounting amounts, provider usage, reset details and private reports are not part of the visitor contract. Availability can close when eligibility or safety evidence is unavailable. Customer processing quotes remain a separate contract.\n\n[Provider boundaries](/manuals/journal/provider-costs-and-payments/) distinguish deployed product functions from remaining commercial acceptance."
         },
         {
           "path": "docs/BOOK-RELEASE.md",
@@ -198,7 +235,7 @@
         {
           "path": "docs/ACCESSIBILITY-20261016.md",
           "slug": "accessibility-review",
-          "title": "Accessibility review — 16 October",
+          "title": "Accessibility review \u2014 16 October",
           "description": "The specific accessibility fix, test evidence and remaining acceptance limits.",
           "category": "Release record"
         },
@@ -237,7 +274,13 @@
           "public": "metadata/pageweft-image-inventory.json"
         }
       ],
-      "source_access": "owner"
+      "source_access": "owner",
+      "excluded_files": [
+        {
+          "path": "docs/GUEST-BUDGET.md",
+          "reason": "Owner-only guest accounting policy and provider financial controls. Never publish amounts, usage, reset data or owner reports."
+        }
+      ]
     },
     {
       "slug": "sonaweft",
@@ -249,14 +292,15 @@
       "status": "Bounded public sample",
       "live": "https://sonaweft.amirgomaa.com/",
       "description": "Turn recordings into timestamped transcripts, separate corrections and source-linked notes.",
-      "notice": "Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones.",
+      "notice": "Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones.",
       "files": [
         {
           "path": "README.md",
           "slug": "overview",
           "title": "Technical overview",
           "description": "Hosted workflow, processing tariff, local CLI, deployment and limits.",
-          "category": "Reference"
+          "category": "Reference",
+          "start_at_title": true
         },
         {
           "path": "docs/PRODUCT.md",
@@ -277,7 +321,9 @@
           "slug": "operations",
           "title": "Owner operations",
           "description": "Admission caps, monitoring, backups, incidents and payment opening sequence.",
-          "category": "Operations"
+          "category": "Operations",
+          "mode": "curated",
+          "context": "## Current public operating boundary\n\nSonaweft runs behind its public Cloudflare gateway on Modal. Email/passphrase and private-key recovery are deployed. Accounts and balances are product-specific. Google and mailed password reset remain unconfigured; paid checkout is closed.\n\n## Admission and privacy\n\nLive free processing checks visitor eligibility and private shared availability before dispatch. An unavailable or unverifiable admission check refuses new processing with **Currently unavailable. Please try again later.** Completed examples remain open. Signing in does not reset sample eligibility.\n\nOwner accounting amounts, spending settings, usage, reset details and private reports are deliberately omitted from public documentation and responses. Customer quotes and balances are a separate contract. An admission estimate is not proof of actual provider charges or a physically isolated provider billing account.\n\n## Durable work and recovery\n\nThe application records processing state and accounting transactionally, separates source/derived material, and checks ownership before private downloads. Retries and partial failures have explicit state and settlement behavior. Download retained outputs before their normal 48-hour expiry; immediate deletion closes access and removes supported files while financial records remain separate.\n\nOwner pause, diagnostics, backup and recovery commands are private operational tools. They are not public administration routes. Preserve source/ledger ownership, idempotency and admission gates during recovery; do not reset quotas or disable guards to reopen a trial.\n\n## Payment and quality evidence\n\nThe owner reports domain approval; seller/payout readiness and genuine payment/refund/payout acceptance remain separate. No billing activation or provider account change was performed by this guide refresh. Representative OCR/transcription quality, scale and margins require their own evidence.\n\n[Use the application](/manuals/sonaweft/guide/) or read [current provider boundaries](/manuals/journal/provider-costs-and-payments/)."
         },
         {
           "path": "docs/RELEASE.md",
@@ -311,7 +357,7 @@
           "description": "An optional earlier vault/agent concept, preserved as a design reference.",
           "category": "Archive",
           "mode": "reference",
-          "context": "This is an earlier optional Obsidian/agent design, not a shipped hosted feature. Research matches do not establish truth and language-model notes do not replace the immutable recognition source. The current architecture documents the supported pipeline. Noteweld imports and shared login remain future work."
+          "context": "This is an earlier optional Obsidian/agent design, not a shipped hosted feature. Research matches do not establish truth and language-model notes do not replace the immutable recognition source. The current architecture documents the supported pipeline. Noteweld source-bundle import is now available; cross-product shared login is not implemented."
         },
         {
           "path": "docs/CUSTOM-DOMAIN.md",
@@ -347,6 +393,15 @@
           "title": "Recoverable transcript review",
           "description": "Compare and restore saved corrections and speaker labels, retain hashed history exports, and understand deletion and expiry.",
           "category": "Usage guide"
+        },
+        {
+          "path": "docs/SCIENTIFIC-EXAMPLE.md",
+          "slug": "scientific-example",
+          "title": "The scientific recording example",
+          "description": "A credited human-voiced NOAA interview excerpt, original recognition and clearly labeled editorial notes.",
+          "category": "Release record",
+          "mode": "curated",
+          "context": "## Listen to a real scientific explanation\n\nThe completed Sonaweft example is a continuous **63.65-second NOAA Ocean Podcast excerpt** about why gravity varies across Earth. Megan Forbes interviews physicist Derek van Westrum in [Understanding Gravity, episode 33](https://oceanservice.noaa.gov/podcast/mar20/gravity.html). The selected passage runs from 181.05 to 244.70 seconds in the source episode.\n\nThe example credits NOAA and the speakers, links the original source and states that no endorsement is implied. It is third-party source material, not an original recording made for this portfolio. The excerpt contains speech rather than a music insert; the reuse review is specific to this selected source.\n\n## What you are seeing\n\nThe saved transcript comes from actual Whisper recognition. Recognition, manual corrections, source attribution and editorial listening notes remain separate. The listening notes are explicitly labeled as prepared with AI assistance; they are not output from Sonaweft's optional review provider. No new processing job is needed to open the example.\n\nListen, follow timestamps, try the review controls and download the complete bundle. Source offsets and hashes preserve traceability; a good short example does not certify transcription accuracy on every recording.\n\n[Hear the completed example](https://sonaweft.amirgomaa.com/example) or follow [the usage guide](/manuals/sonaweft/guide/)."
         }
       ],
       "artifacts": [
@@ -355,7 +410,13 @@
           "public": "metadata/sonaweft-image-inventory.json"
         }
       ],
-      "source_access": "owner"
+      "source_access": "owner",
+      "excluded_files": [
+        {
+          "path": "docs/GUEST-BUDGET.md",
+          "reason": "Owner-only guest accounting policy and provider financial controls. Never publish amounts, usage, reset data or owner reports."
+        }
+      ]
     },
     {
       "slug": "vanilla-keep",

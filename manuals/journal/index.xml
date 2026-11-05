@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Journal on Fieldnotes · Mohamed Amir Gomaa</title><link>https://amirgomaa.com/manuals/journal/</link><description>Recent content in Journal on Fieldnotes · Mohamed Amir Gomaa</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://amirgomaa.com/manuals/journal/index.xml" rel="self" type="application/rss+xml"/><item><title>Why these previews run on Modal</title><link>https://amirgomaa.com/manuals/journal/hosting/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/hosting/</guid><description>&lt;h2 id="more-than-a-gpu-rental"&gt;More than a GPU rental&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Journal on Fieldnotes · Mohamed Amir Gomaa</title><link>https://amirgomaa.com/manuals/journal/</link><description>Recent content in Journal on Fieldnotes · Mohamed Amir Gomaa</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://amirgomaa.com/manuals/journal/index.xml" rel="self" type="application/rss+xml"/><item><title>Why these previews run on Modal</title><link>https://amirgomaa.com/manuals/journal/hosting/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/hosting/</guid><description>&lt;h2 id="more-than-a-gpu-rental"&gt;More than a GPU rental&lt;/h2&gt;
 &lt;p&gt;Modal runs application containers on CPU as well as GPU resources. It supports HTTP applications, background functions, schedules, persistent volumes and secrets. An HTTP server can be Python/FastAPI or a Node process; the deployment wrapper does not require every application to be written in Python.&lt;/p&gt;
 &lt;p&gt;Official references: &lt;a href="https://modal.com/docs/guide/webhooks"&gt;HTTP applications&lt;/a&gt;
 , &lt;a href="https://modal.com/docs/guide/scale"&gt;autoscaling&lt;/a&gt;
@@ -40,7 +40,7 @@
 &lt;p&gt;Paddle handles commercial payments rather than hosting these websites. DeepSeek is an optional text-inference provider for Sonaweft. No shared customer wallet or login is implemented. Linguavell is a separate startup project.&lt;/p&gt;</description></item><item><title>How to review these projects</title><link>https://amirgomaa.com/manuals/journal/reading-the-evidence/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/reading-the-evidence/</guid><description>&lt;h2 id="start-with-behavior"&gt;Start with behavior&lt;/h2&gt;
 &lt;p&gt;Open a project&amp;rsquo;s usage guide and its live or completed example. Identify the intended action, what should persist, the expected failure behavior and the current limits. A polished cover illustration is not a running backend.&lt;/p&gt;
 &lt;h2 id="follow-the-implementation"&gt;Follow the implementation&lt;/h2&gt;
-&lt;p&gt;Read the technical overview, then the specific architecture/editor/connections manual. Imported documents link an exact committed source revision. A local documentation edition is marked when it includes uncommitted documentation changes; the link then identifies the committed baseline.&lt;/p&gt;</description></item><item><title>Maintaining this documentation library</title><link>https://amirgomaa.com/manuals/journal/publishing/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/publishing/</guid><description>&lt;h2 id="source-and-publication"&gt;Source and publication&lt;/h2&gt;
+&lt;p&gt;Read the technical overview, then the specific architecture/editor/connections manual. Imported documents link an exact committed source revision. A local documentation edition is marked when it includes uncommitted documentation changes; the link then identifies the committed baseline.&lt;/p&gt;</description></item><item><title>Maintaining this documentation library</title><link>https://amirgomaa.com/manuals/journal/publishing/</link><pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/publishing/</guid><description>&lt;h2 id="source-and-publication"&gt;Source and publication&lt;/h2&gt;
 &lt;p&gt;The actual portfolio repository contains &lt;code&gt;documentation/&lt;/code&gt; for Hugo source and &lt;code&gt;manuals/&lt;/code&gt; for generated static output. The existing GitHub Pages root serves both the portfolio and &lt;code&gt;/manuals/&lt;/code&gt;. No application server, visitor login, external font, analytics service or search API is needed.&lt;/p&gt;
 &lt;p&gt;Hugo 0.156.0 is the recorded build version. Imported project README/docs files are explicitly listed in &lt;code&gt;documentation/manifest.json&lt;/code&gt;; this is not a recursive copy of the workspace. Current usage guides and journal entries are authored directly in Hugo content.&lt;/p&gt;</description></item><item><title>Public examples and commercial source</title><link>https://amirgomaa.com/manuals/journal/source-access/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/source-access/</guid><description>&lt;h2 id="inspect-the-work"&gt;Inspect the work&lt;/h2&gt;
 &lt;p&gt;The public portfolio combines working applications, implementation manuals,
@@ -137,13 +137,40 @@ the manifest&amp;rsquo;s exported-file hashes.&lt;/p&gt;</description></item><it
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Each source/application release has separate evidence; a passing portfolio check does not establish private persistence, model accuracy or payment delivery.&lt;/p&gt;</description></item><item><title>From extracted files to retained sources</title><link>https://amirgomaa.com/manuals/journal/source-workflows-20261019/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/source-workflows-20261019/</guid><description>&lt;h2 id="a-complete-portable-path"&gt;A complete portable path&lt;/h2&gt;
+&lt;p&gt;Each source/application release has separate evidence; a passing portfolio check does not establish private persistence, model accuracy or payment delivery.&lt;/p&gt;</description></item><item><title>Neon, Modal costs and opening Paddle</title><link>https://amirgomaa.com/manuals/journal/provider-costs-and-payments/</link><pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/provider-costs-and-payments/</guid><description>&lt;h2 id="what-serves-the-applications"&gt;What serves the applications&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Product&lt;/th&gt;
+ &lt;th&gt;Current role&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;GitHub Pages&lt;/td&gt;
+ &lt;td&gt;Portfolio and this static Fieldnotes library&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Cloudflare&lt;/td&gt;
+ &lt;td&gt;Public domains, HTTPS application gateways and access boundaries&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Modal&lt;/td&gt;
+ &lt;td&gt;Noteweld Node runtime, PDF processing and audio transcription&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Neon PostgreSQL&lt;/td&gt;
+ &lt;td&gt;Noteweld notes, account state, source bundles and appearance preferences&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Paddle integration&lt;/td&gt;
+ &lt;td&gt;Processing-pack code is present; public paid checkout remains closed&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;These are product roles, not a guarantee of uptime or a claim of completed merchant acceptance. Vercel is not the active Noteweld host. The retained Vercel Git-deployment setting is disabled; old failure notifications do not establish the status of these current hosts.&lt;/p&gt;</description></item><item><title>From extracted files to retained sources</title><link>https://amirgomaa.com/manuals/journal/source-workflows-20261019/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/source-workflows-20261019/</guid><description>&lt;h2 id="a-complete-portable-path"&gt;A complete portable path&lt;/h2&gt;
 &lt;p&gt;Pageweft extracts selected PDF pages, lets the reader review original text and explicit corrections, and exports a hashed archive. Sonaweft retains original recognition, user corrections and optional advisory notes as separate outputs. Noteweld previews and validates those archives, imports notes and source files atomically, and keeps private original bytes available separately from later edits.&lt;/p&gt;
-&lt;p&gt;The original public Pageweft example was regenerated with the current CPU exporter. Its v1 schema, note index, hashes and relative references validate in Noteweld. The portfolio copy matches that original fixture; it contains no private book/customer content.&lt;/p&gt;</description></item><item><title>Neon, Modal costs and opening Paddle</title><link>https://amirgomaa.com/manuals/journal/provider-costs-and-payments/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/provider-costs-and-payments/</guid><description>&lt;h2 id="neon-in-this-application"&gt;Neon in this application&lt;/h2&gt;
-&lt;p&gt;Neon hosts PostgreSQL. Noteweld connects through standard &lt;code&gt;pg&lt;/code&gt;/Drizzle and stores accounts, notes, labels, revisions and recovery/session state there. Modal runs the Node application; the two providers have separate roles. Moving the database later needs migration/connection configuration, not a replacement for SQL.&lt;/p&gt;
-&lt;p&gt;Neon supports autoscaling, idle suspension and branching. Its advertised Free tier currently includes 100 CU-hours and 1 GB per project. That is a published allowance, not verification of an individual account plan. &lt;a href="https://neon.com/docs/get-started/why-neon"&gt;Neon overview&lt;/a&gt;
-, &lt;a href="https://neon.com/pricing"&gt;pricing&lt;/a&gt;
-, checked 16 October 2026.&lt;/p&gt;</description></item><item><title>Making transcript review recoverable</title><link>https://amirgomaa.com/manuals/journal/recoverable-review/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/recoverable-review/</guid><description>&lt;h2 id="the-user-problem"&gt;The user problem&lt;/h2&gt;
+&lt;p&gt;The original public Pageweft example was regenerated with the current CPU exporter. Its v1 schema, note index, hashes and relative references validate in Noteweld. The portfolio copy matches that original fixture; it contains no private book/customer content.&lt;/p&gt;</description></item><item><title>Making transcript review recoverable</title><link>https://amirgomaa.com/manuals/journal/recoverable-review/</link><pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/recoverable-review/</guid><description>&lt;h2 id="the-user-problem"&gt;The user problem&lt;/h2&gt;
 &lt;p&gt;A transcript can be corrected successfully while the editing workflow still loses
 valuable work. In-tab undo is insufficient after a reload, and a revision number
 prevents conflicting saves without keeping the earlier text. Sonaweft now keeps

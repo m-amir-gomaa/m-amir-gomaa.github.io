@@ -11,7 +11,7 @@ from urllib.parse import quote, urlsplit, unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / 'documentation'
-DATE = '2026-10-19'
+DATE = '2026-11-05'
 
 
 def git(path, *args):
@@ -39,6 +39,9 @@ def main():
         repo = (ROOT / project['directory']).resolve()
         revision = git(repo, 'rev-parse', 'HEAD')
         files = {entry['path']: entry for entry in project['files']}
+        excluded = {entry['path']: entry for entry in project.get('excluded_files', [])}
+        if files.keys() & excluded.keys() or any(not entry.get('reason', '').strip() for entry in excluded.values()):
+            raise SystemExit('Every private-document exclusion needs a distinct path and review reason')
         artifacts = {entry['path']: entry['public'] for entry in project.get('artifacts', [])}
         for source_path, public_path in artifacts.items():
             source = repo / source_path
@@ -52,7 +55,7 @@ def main():
             artifact_records.append(dict(project=project['slug'], path=source_path, revision=revision,
                                          sha256=digest(content), url='/manuals/' + public_path))
         tracked = git(repo, 'ls-files', 'README.md', 'docs/*.md').splitlines()
-        unreviewed = sorted(set(tracked) - files.keys())
+        unreviewed = sorted(set(tracked) - files.keys() - excluded.keys())
         if unreviewed:
             raise SystemExit(f"Review new {project['title']} documents before publication: {', '.join(unreviewed)}")
         for number, entry in enumerate(project['files'], start=1):
@@ -68,11 +71,26 @@ def main():
                 notice += f' Production source revision {revision[:7]} is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.'
             if entry.get('category') == 'Release record':
                 notice = 'Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. ' + notice
-            if entry.get('mode') == 'reference':
-                body = '## Why this record is separate\n\n' + entry['context'] + '\n\nRead the current usage guide and project index first. Historical Markdown remains at the recorded source revision (repository access may be required); its commands, provider assumptions and completion claims are not current instructions.\n'
-                notice = 'Historical reference; not part of the current setup or recommended execution path.'
+            if entry.get('mode') in {'reference', 'curated'}:
+                if not entry.get('context', '').strip():
+                    raise SystemExit('A reviewed summary requires explicit public content')
+                body = entry['context'].rstrip() + '\n'
+                if entry['mode'] == 'reference':
+                    body = '## Why this record is separate\n\n' + body + '\nRead the current usage guide and project index first. Historical Markdown remains at the recorded source revision (repository access may be required); its commands, provider assumptions and completion claims are not current instructions.\n'
+                    notice = 'Historical reference; not part of the current setup or recommended execution path.'
+                else:
+                    notice += ' This is an explicitly reviewed public summary; private operational and learner details are omitted.'
             else:
                 body = text
+                if entry.get('start_at_title'):
+                    title = re.search(r'^# ', body, re.MULTILINE)
+                    if not title:
+                        raise SystemExit('Reviewed title boundary is missing')
+                    body = body[title.start():]
+                for before, after in entry.get('public_replacements', {}).items():
+                    if before not in body:
+                        raise SystemExit(f"Reviewed public replacement is stale: {project['slug']}/{entry['path']}")
+                    body = body.replace(before, after)
                 if body.startswith('# '):
                     body = body.split('\n', 1)[1].lstrip()
                 # Imported files live below a template-owned h1; preserve code fences verbatim.

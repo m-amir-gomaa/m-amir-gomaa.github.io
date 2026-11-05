@@ -1,7 +1,7 @@
 {
   "title": "Pageweft",
   "description": "Convert technical PDFs into portable Markdown with source-page review and separate corrections.",
-  "date": "2026-10-16",
+  "date": "2026-11-05",
   "weight": 2,
   "number": "02",
   "stack": "PYTHON / MINERU",

@@ -1,7 +1,7 @@
 {
   "title": "Sonaweft",
   "description": "Turn recordings into timestamped transcripts, separate corrections and source-linked notes.",
-  "date": "2026-10-16",
+  "date": "2026-11-05",
   "weight": 3,
   "number": "03",
   "stack": "PYTHON / SPEECH / LLM",
@@ -23,3 +23,5 @@ These are reviewed documentation snapshots from 16 October 2026, not live provid
 ## Follow the implementation history
 
 [Read the build history](/manuals/sonaweft/build-history/) for the recorded steps, successful commands, evidence and known corrections.
+
+The completed example is now a credited human-voiced NOAA scientific interview, with actual recognition and separately labeled prepared listening notes. [Example source and evidence](/manuals/sonaweft/scientific-example/).

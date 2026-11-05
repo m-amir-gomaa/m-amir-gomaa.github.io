@@ -1,7 +1,7 @@
 {
   "title": "Neovim: find, edit, inspect",
   "description": "The actual configured editing workflow: Telescope, Harpoon, language servers, formatting and Markdown.",
-  "date": "2026-10-16",
+  "date": "2026-11-05",
   "category": "Editor guide",
   "weight": 2,
   "download": "markdown/development-environment/editor-guide.md"
@@ -37,3 +37,9 @@ The Workbench's browser editor demonstrates a deliberately small subset: h/j/k/l
 ## Verification boundary
 
 An actual headless Neovim startup succeeded on 16 October, and twelve selected language-server/formatter executables resolved inside its wrapped environment. That check does not certify every plugin, language server or debugger. The next deeper check is a representative edit/diagnostic/format/test journey for each language actually used on a client project.
+
+## Current display behavior
+
+The later Neovim display repair restored shared JavaScript/JSX Tree-sitter queries and distinct syntax groups. Mathematical operator substitutions are opt-in, and diagnostics use signs/floats/lists instead of inserting long messages into source lines. These were exercised with 62 editor checks on 5 November; that evidence is specific to the repaired workflow.
+
+The Workbench remains a browser-only keyboard sketch. It does not run the native editor or certify every plugin, parser or language server.

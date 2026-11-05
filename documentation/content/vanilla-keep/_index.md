@@ -1,7 +1,7 @@
 {
   "title": "Noteweld Local",
   "description": "A separate notes-and-checklists implementation built with native browser APIs and local storage.",
-  "date": "2026-10-16",
+  "date": "2026-11-05",
   "weight": 4,
   "number": "04",
   "stack": "VANILLA JAVASCRIPT",
