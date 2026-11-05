@@ -1,7 +1,7 @@
 {
   "title": "Noteweld",
   "description": "Write Markdown, connect notes and explore a private workspace with optional Vim editing.",
-  "date": "2026-10-16",
+  "date": "2026-11-05",
   "weight": 1,
   "number": "01",
   "stack": "NEXT.JS / POSTGRESQL",
@@ -23,3 +23,5 @@ These are reviewed documentation snapshots from 16 October 2026, not live provid
 ## Follow the implementation history
 
 [Read the build history](/manuals/noteweld/build-history/) for the recorded steps, successful commands, evidence and known corrections.
+
+The approved interface and full color preferences are live. Start with [Using Noteweld](/manuals/noteweld/guide/); [the November release](/manuals/noteweld/ui-release/) and [connected sign-in status](/manuals/noteweld/connected-signin/) distinguish deployed behavior from remaining owner consent.

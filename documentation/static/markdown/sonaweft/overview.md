@@ -1,9 +1,26 @@
 # Technical overview
 
-> Current source workflows, accounts and diagnostic behavior are recorded in the latest source-workflow release. Billing and real OAuth consent remain gated; earlier records describe their dated milestones. Production source revision cfe3442 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
+> Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones. Production source revision f77aba4 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision cfe3442fd27b2afab65688d852c69a7298c246a7
-Reviewed: 2026-10-19
+Source baseline: Owner-access repository, revision f77aba405853d62c981dfb5f922547f7050c244b
+Reviewed: 2026-11-05
+
+23 October: the [completed example](https://sonaweft.amirgomaa.com/example) now uses
+an attributed human-voiced NOAA explanation of why gravity varies across Earth.
+Its 64-second audio, real machine transcript, subtitles and portable bundle agree;
+AI-assisted editorial listening notes are labeled separately. Source credit,
+excerpt bounds and reuse information accompany the downloadable files.
+
+22 October guest/account collection: [the short guide](https://sonaweft.amirgomaa.com/help)
+and [email sign-in](https://sonaweft.amirgomaa.com/account) provide clear entry to
+the existing workspace. Email uses salted scrypt, exact passphrases, CSRF-protected
+rotating sessions, explicit workspace switching and private-key recovery. No email
+verification/reset delivery or real Google consent is claimed. Guest processing
+now fails closed without a verified zero-net-spend control and fresh billing
+headroom; completed examples remain usable. Current local acceptance: 105 backend
+checks, real SQLite email/recovery browser journeys and four-width accessibility,
+plus the existing source/review/history/media workflow. See workspace milestone 017
+for guest release evidence; milestone 018 records private quota activation and current provider checks.
 
 Selected transcript passages can open an authoritative server quote for reprocessing using their original recording offsets. Earlier jobs and corrections remain separate; preparing a quote never starts inference. Retries use the same server pricing path, and changed intervals must be quoted again before confirmation.
 

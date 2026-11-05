@@ -1,21 +1,29 @@
 {
   "title": "Custom domain and account access",
   "description": "Public hostname, secure gateway, existing-account access and rollback.",
-  "date": "2026-10-19",
+  "date": "2026-11-05",
   "weight": 120,
   "project": "Noteweld",
   "category": "Operations",
-  "notice": "Current bounded preview includes Markdown/Vim, connected notes, source-bundle imports and browser-session controls. Real Google/GitHub consent remains unverified and provider buttons stay disabled; billing is closed. Earlier release records describe their own milestones. Production source revision f612e01 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
+  "notice": "Current preview includes the approved forest interface, full appearance customization, Markdown/Vim, connected notes, source imports and browser-session controls. Google/GitHub are configured; real owner consent/link acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 418fb83 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
   "sourceurl": "",
   "download": "markdown/noteweld/custom-domain.md"
 }
 
-Public address: **https://noteweld.amirgomaa.com/**. The account-free editor and graph are `/example` and `/example/graph`; private writing starts at `/auth/signin`. A dedicated Cloudflare Workers Free gateway fronts the existing Modal deployment. The same isolated Neon database, restricted role, AUTH_SECRET, BACKUP_KEY and backup jobs remain in use. Sign in again with existing credentials at the new host; browser cookies do not transfer between hostnames. No database migration or account merge is required.
+## Current public address
 
-This release branches from production **5ac512f**, adding authenticated client-IP forwarding and the independent `noteweld-edge` Modal secret. It deliberately excludes the unfinished account/social-provider branch. Shared source/config/tests are maintained in `freelance/workflow/cloudflare-edge/` in the workspace. Each app has its own fixed upstream, secret and host-only secure cookies. Direct Modal access preserves its previous proxy fallback. CSRF/origin checks and application quotas remain enforced: foreign unsafe requests fail at the gateway, and same-origin requests are mapped to the current internal Auth.js origin. Bodies and private responses stream without caching.
+Use **https://noteweld.amirgomaa.com/**. The account-free editor and graph are `/example` and `/example/graph`; private writing starts at `/auth/signin`. The application runs on Modal behind a fixed Cloudflare HTTPS gateway, with PostgreSQL on Neon. Vercel is not its active host.
 
-The current credentials workflow retains its existing internal AUTH_URL, while the gateway translates only its own trusted Origin and upstream redirects. Before a future Google/GitHub release, configure and test the **public** base URL, provider callback URLs, policy ownership and gateway origin handling together; the present credentials-only mapping is not OAuth approval or a verified external consent flow. Billing remains closed.
+Existing account data stays in the same independent database. Sign in again when changing hostnames; browser cookies and guest local storage do not automatically move between website origins. Matching email addresses do not merge accounts.
 
-The deployment uses the production-only source allowlist and existing pinned Node image. Unit/boundary, lint, type and actual cloud production-build checks pass; the shared milestone records the complete real hosted browser/database journey and its exact result. Preserve the distinction between a generated build, simulated failure checks and real persistence/recovery. Synthetic browser accounts are deleted by the journeys.
+## Public origin and authentication
 
-Rollback an individual gateway version/route and restore prior links; the original Modal origin remains available. Preserve database contents, permanent secrets, backups, apex/www DNS records, GitHub verification and DNSSEC. Additive IP verification does not change account identities or notes.
+The deployed Auth.js base URL is the public Noteweld origin. The gateway preserves validated public Origin/Referer values and supplies the fixed public forwarded host while fetching the fixed Modal upstream. Foreign unsafe origins are rejected before forwarding; private responses stream without shared caching. The November release repaired the older internal-origin mapping that blocked account writes after OAuth activation.
+
+Google/GitHub authorization redirects use the registered public callbacks, state/PKCE and Google nonce. Real owner consent/link acceptance remains a separate step. [Account controls](/manuals/noteweld/account-work/) explain deliberate linking and recovery.
+
+## Recovery boundary
+
+Preserve the public-origin contract when changing deployment versions: rolling back only the gateway to its old internal-origin mapping would break writes. Keep accounts, identities, backups and credentials intact. An additive UI/preferences rollback does not require deleting data.
+
+[Using Noteweld](/manuals/noteweld/guide/) is the visitor starting point; [the interface release](/manuals/noteweld/ui-release/) records current verification.

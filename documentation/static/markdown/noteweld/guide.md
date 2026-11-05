@@ -1,6 +1,6 @@
 # Using Noteweld
 
-Reviewed: 2026-10-19
+Reviewed: 2026-11-05
 
 ## Try it without an account
 
@@ -10,7 +10,7 @@ Reviewed: 2026-10-19
 
 ## Create a private workspace
 
-Open the [hosted workspace](https://noteweld.amirgomaa.com/), register using the displayed requirements and keep the private recovery key securely. Recovery is based on your passphrase/key; no email reset service is connected. Keep the recovery key out of messages and screenshots.
+Open the [sign-in page](https://noteweld.amirgomaa.com/auth/signin), or create an email account using the displayed requirements and keep the private recovery key securely. Recovery is based on your passphrase/key; no email reset service is connected. Keep the recovery key out of messages and screenshots.
 
 Create notes or checklists, set labels/colors, pin useful items and use search. Save a note before relying on it being persisted. Archives and trash are distinct; permanently deleted content cannot be recovered through the normal UI. Account export and deletion are available.
 
@@ -38,4 +38,14 @@ Do not treat this as end-to-end encrypted, collaborative or continuously synchro
 
 Choose **Source bundles** to preview a supported ZIP, check its categories/hashes and confirm an all-or-nothing import. Original/corrected/AI notes retain their labels; source archives stay separate from edits. Download an original backup. Deleting a retained archive preserves notes but breaks its source-file links. Follow [the source guide](/manuals/noteweld/source-bundles/) for limits and duplicate/retry behavior.
 
-In Account, review browser sessions, sign out a session or every device, and confirm recent ownership before sensitive account actions. Unconfigured Google/GitHub buttons remain disabled; this release does not claim real consent or email-reset delivery.
+In Account, review browser sessions, sign out a session or every device, and confirm recent ownership before sensitive account actions. Google and GitHub are configured. To connect a provider to an existing workspace, sign in to that workspace first, then choose **Account → Sessions and connected sign-in → Provider identities** and confirm ownership if asked. When the five-minute confirmation expires, choosing a security action takes you to the confirmation field. Enter your current passphrase or select your private recovery key, choose **Confirm ownership**, then choose the provider action again. Matching emails do not automatically merge accounts. Authorization redirects pass; real owner consent/link acceptance remains pending. Mailed password resets remain unconfigured.
+
+## Make the workspace comfortable
+
+Open **Appearance** in the sidebar. Choose Forest, Paper, Slate, Graphite, Ocean or Rose, then light/dark/system mode. The color-group menu exposes 29 independent roles for surfaces/text, controls/feedback, editor/syntax and graph. Light and dark retain separate overrides. Each role has a color picker, hex field and Reset.
+
+Adjust text size, spacing, reading font, reduced motion and stronger borders. Preview changes affect the actual app; choose **Save preferences** to keep them. Signed-in choices save to your account. [Guest appearance](https://noteweld.amirgomaa.com/appearance) saves only in that browser. Note colors and editor keys remain separate.
+
+Use Export/Import theme JSON for a portable copy. Invalid theme files are rejected. Low-contrast choices show a warning; the optional contrast repair changes text colors only when requested. Resetting is a preview until saved. Unsaved account changes prompt before navigation.
+
+Read [the interface release](/manuals/noteweld/ui-release/) for verified behavior and limitations.

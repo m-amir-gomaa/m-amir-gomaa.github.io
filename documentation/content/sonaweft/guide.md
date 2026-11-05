@@ -1,7 +1,7 @@
 {
   "title": "Using Sonaweft",
   "description": "Go from an authorized recording to a timestamped transcript and portable source-linked notes.",
-  "date": "2026-10-19",
+  "date": "2026-11-05",
   "weight": 1,
   "project": "Sonaweft",
   "category": "Start here",
@@ -10,7 +10,7 @@
 
 ## Hear a completed example
 
-[Open the original example](https://sonaweft.amirgomaa.com/example) to hear source audio, inspect the actual recognition/review and download a hashed bundle. This precomputed example does not start another transcription job.
+[Open the completed scientific example](https://sonaweft.amirgomaa.com/example) to hear a human-voiced NOAA interview about gravity, follow actual recognition text and download a hashed bundle. Prepared listening notes are labeled separately from optional review-provider output. This precomputed example does not start another transcription job.
 
 ## Upload and inspect
 
@@ -43,3 +43,9 @@ Hosted source/results expire after 48 hours and are removed by scheduled cleanup
 The hosted importer accepts authorized public HTTPS direct media or RSS/Atom feeds with bounded, checked redirects. It does not download arbitrary webpages/YouTube, access private feeds or use browser cookies. Inspect before confirming. Selected-time-span quotes create a separate result with its original recording offset; earlier results and edits remain.
 
 Use playback speed/selection loop, source-linked quotes, listening cues and glossary candidates to review uncertain material. These are transparent symptoms, not calibrated truth scores. Optional AI suggestions can be staged/dismissed deliberately and saved as user corrections; original ASR stays unchanged. Read [the source-workflow release](/manuals/sonaweft/source-workflow-release/) for controls, deletion and diagnostic boundaries.
+
+## Accounts and free availability
+
+Use **Account** for email/passphrase sign-in and cross-browser recovery. Save the private recovery key at signup; mailed resets and Google sign-in remain unconfigured for Sonaweft. Signing in does not reset sample eligibility. If processing is unavailable, the app displays **Currently unavailable. Please try again later.** Completed examples remain open and owner billing/accounting stays private.
+
+[The scientific example record](/manuals/sonaweft/scientific-example/) explains the source, credit and what the saved transcript demonstrates.

@@ -111,7 +111,7 @@ require('node:fs').mkdirSync(artifacts, { recursive: true });
     await plain.goto(origin + '/manuals/');
     assert.equal(await plain.locator('.project-card').count(), 4);
     await plain.locator('.project-noteweld').click();
-    await plain.getByRole('link', { name: /Using Noteweld/ }).click();
+    await plain.getByRole('link', { name: 'Using Noteweld', exact: true }).click();
     assert(await plain.getByRole('heading', { name: 'Connect the work' }).isVisible());
     await plain.goto(origin + '/manuals/pageweft/book-release/');
     assert(await plain.evaluate(() => document.documentElement.scrollWidth <= innerWidth));

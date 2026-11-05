@@ -1,6 +1,6 @@
 # Building Pageweft: extraction to a hosted workbench
 
-Reviewed: 2026-10-19
+Reviewed: 2026-11-05
 
 ## 1. Establish actual extraction
 

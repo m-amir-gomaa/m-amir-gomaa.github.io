@@ -1,67 +1,33 @@
 {
   "title": "Deployment and recovery",
   "description": "CPU hosting, isolated PostgreSQL, encrypted snapshots and incident recovery.",
-  "date": "2026-10-19",
+  "date": "2026-11-05",
   "weight": 70,
   "project": "Noteweld",
   "category": "Operations",
-  "notice": "Current bounded preview includes Markdown/Vim, connected notes, source-bundle imports and browser-session controls. Real Google/GitHub consent remains unverified and provider buttons stay disabled; billing is closed. Earlier release records describe their own milestones. Production source revision f612e01 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
+  "notice": "Current preview includes the approved forest interface, full appearance customization, Markdown/Vim, connected notes, source imports and browser-session controls. Google/GitHub are configured; real owner consent/link acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 418fb83 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
   "sourceurl": "",
   "download": "markdown/noteweld/operations.md"
 }
 
-## Scope and least privilege
+## Current deployment and data
 
-The hosted preview uses a **new** database and login role on the existing Neon project, separate from the old Keep database. The original credential files and original two accounts are preserved. Migration credentials remain private on the owner's machine; only the new runtime role is sent to Modal. It has connection/schema-usage/table CRUD privileges, no database/schema creation or role-management privileges. All app queries enforce ownership; PostgreSQL RLS is not claimed.
+Noteweld runs its Next.js/Node application on Modal behind the public Cloudflare gateway. Neon PostgreSQL stores private account/note state. The preview has explicit account/note/source bounds and billing is closed. No shared wallet/login across the portfolio apps is implied.
 
-The Modal app/secret/backup volume are `noteweld`, `noteweld-runtime`, `noteweld-backups-v1`. `AUTH_SECRET` is unique to this app. It is not a Sonaweft/Pageweft shared login or wallet. There is one CPU web container, maximum 20 concurrent inputs, 3 database connections, 1536 MiB RAM, no GPU and no always-on minimum. Cold starts are expected. Neon compute can suspend, but retained storage, maintenance and real provider usage are not a universal $0 billing guarantee. Provider-wide hard spending caps/automatic external alerts have not been verified.
+## Account and preference persistence
 
-Signup is capped at 100 total accounts and 50 new attempts/day; IP and account login/recovery throttles live in PostgreSQL. Trusted proxy handling uses the final forwarded address, and global caps remain even if that header cannot be trusted. Quotas count trash too; restore does not bypass them. There is no polling or advertising/third-party analytics script. Logs return generic errors and omit request contents; provider access logs have separate retention.
+Every private operation validates the server session and owner. Browser-session revocation and account session versions control continuing access. Google/GitHub entry is configured, with actual owner grant/link acceptance still pending; matching emails never automatically merge accounts. Ordinary email/private-key recovery is deployed.
 
-## Owner actions
+Guest appearance is browser-local. Saved account appearance is stored with the account and included in exports/backups. Local drafts are not a crash-proof offline database. The owner's private code map and learning material are not public app features.
 
-Create a project operations venv with `python -m venv .venv-operations` and install `requirements-operations.txt`; authenticate your own Modal profile. Never send connection URLs, keys, recovery secrets or dumps to chat/Git.
+## Backups and migrations
 
-```sh
-.venv-operations/bin/python scripts/owner.py report
-.venv-operations/bin/python scripts/owner.py maintain
-.venv-operations/bin/python scripts/owner.py backup --output .local/backups/noteweld-NEW.fernet
-```
+The November preferences release took a fresh encrypted snapshot before its additive migration. Account/note/provider-identity counts were preserved. Backup version 4 includes appearance data; earlier supported backup versions restore with defaults. Restore targets must be empty and isolated, and restored sessions must be invalidated. A local backup file alone does not prove off-device disaster recovery.
 
-Reports show aggregate counts only. Maintenance removes counters older than two days and writes an encrypted daily backup, retaining seven daily files. This also runs at 02:23 UTC daily. Encryption uses an independent BACKUP_KEY stored in the provider secret; securely save a separate owner copy. Losing the key makes backups unreadable. No public admin/backup endpoint exists. Manually downloaded backups need owner-controlled retention; do not leave them indefinitely.
+Owner deployment, credential and recovery commands remain in the access-controlled repository. Keep application public-origin settings and gateway forwarding behavior consistent during rollback. Never erase accounts, identities or quotas to make a deployment appear healthy.
 
-For incidents: stop new access by stopping the Modal app in the authenticated dashboard, inspect aggregate logs and Neon availability privately, fix/redeploy, then verify health/login and restore access. No user content is needed in logs. Cookie resets/recovery revoke all prior sessions by database sessionVersion. Deletion cascades through notes/labels; live reads then reject old cookies. Existing unrelated provider apps are not stopped.
+## Verification scope
 
-## Deployment and rollback
+A successful build is distinct from browser review, database persistence and real provider consent. The deployed release passed ordinary email sign-in, note save, account appearance save/reload/export and temporary-account deletion; [the current release](/manuals/noteweld/ui-release/) gives the relevant counts and limits.
 
-1. Pin reviewed source and run unit/lint/types, isolated migrations/database/browser checks and build. Inspect outgoing Git diff for secrets. Never execute automatic migrations against the old Keep database.
-2. For a fresh isolated database, migrate with an explicit privileged DATABASE_URL in the process environment; grant the restricted runtime role usage and CRUD on that new database's public schema/tables. Retain migration access locally. For an existing database, first take a backup and audit case-folded email/label collisions. Migration 0002 intentionally fails on duplicates; resolve ownership explicitly instead of auto-merging accounts.
-3. Create `noteweld-runtime` from a private JSON file with DATABASE_URL, AUTH_SECRET, AUTH_URL and AUTH_TRUST_HOST=true; BACKUP_KEY is also required by owner backup/maintenance functions. Use `modal secret create ... --from-json PRIVATE_PATH`; use `--force` only to update that same app's reviewed values. Preserve AUTH_SECRET and BACKUP_KEY during routine releases.
-4. Deploy with `python -m modal deploy app.py`. Record the **actual returned hostname**, update AUTH_URL to that exact HTTPS origin and redeploy. Use a private immutable staging copy if editing source while the remote build runs. The app image allowlists files and cannot include local credential files.
-5. Verify `/api/health`, production CSP, no-cache responses and an actual synthetic account/create/reload/recovery/delete journey on the returned URL. Then update portfolio links. Billing stays closed.
-6. Code rollback: deploy the preceding reviewed source with the same new database/secret. Do not blindly reverse migrations or point the preview at the original Keep database. For a data incident, restore a backup to a **new empty database**, verify it, then update only this app's DATABASE_URL and redeploy. Keep the damaged database intact for investigation until recovery is confirmed.
-
-## Restore on a new target
-
-Decrypt the Fernet snapshot **locally** using the separately stored BACKUP_KEY, writing a mode-0600 temporary file in a private directory. The foundation emits `format=noteweld-backup`, version 1; the identity collection used version 2. Current version 3 includes retained source archives and identity rows. Restore accepts all three into an empty target migrated through 0007; it excludes browser sessions and increments every restored account epoch to invalidate pre-restore cookies. The snapshot includes account password/recovery hashes and private note text; never print it. `scripts/backup-format.mjs` verifies table/column names, locks persistent content, identity, source and session tables and refuses any non-empty target.
-
-Create a new empty PostgreSQL database, apply this source's migrations with privileged access, and set NOTEWELD_RESTORE_DATABASE_URL to that exact target using private environment handling. Run:
-
-```sh
-node scripts/restore.mjs PRIVATE_DECRYPTED_FILE EXACT_NEW_DATABASE_NAME
-```
-
-Compare counts, representative note/checklist content, labels and login/recovery in the clone before a cutover. Delete the temporary plaintext file after the check. The automated local test restores actual synthetic records into a fresh temporary database and confirms a second restore cannot overwrite it. This does not justify restoring into the old live Keep database. Neon provider recovery retention is separate from these seven-day application backups.
-
-## Primary/installed references
-
-- Installed Next 16.3.8: `node_modules/next/dist/docs/01-app/02-guides/content-security-policy.md`, proxy/error conventions and `03-api-reference/05-config/01-next-config-js/output.md`.
-- [Drizzle transactions](https://orm.drizzle.team/docs/transactions), [Neon role access](https://neon.com/docs/manage/roles).
-- [Modal web servers](https://modal.com/docs/guide/webhooks), [image builds](https://modal.com/docs/guide/images), [secrets](https://modal.com/docs/guide/secrets), [volumes](https://modal.com/docs/guide/volumes).
-- [NIST password guidance](https://pages.nist.gov/800-63-4/sp800-63b.html): the 15-character new-password minimum follows password-only guidance; full NIST compliance is not claimed.
-
-## Account/source release gate — updated 19 October 2026
-
-[Account setup](/manuals/noteweld/account-work/) and [current release evidence](/manuals/noteweld/source-handoff-release/) cover additive migrations 0005–0007, snapshot restoration and restricted grants. Preserve original Keep, existing AUTH_SECRET/BACKUP_KEY/runtime fields, and the owned public AUTH_URL `https://noteweld.amirgomaa.com`; the Modal origin remains the infrastructure endpoint behind the existing gateway. Do not enable providers until actual consent and policy/domain acceptance pass. A rollback must preserve new identities, retained sources, browser-session revocations and nullable-password users. Do not drop tables, reimpose NOT NULL on provider-only users, or promise that the foundation build understands their login. Prefer a compatible forward repair or verified fresh-target restore.
-
-Daily cleanup retains admission counters for 35 days (the longest artifact window is 30 days), and removes browser sessions expired for over 30 days. Artifact storage/traffic admission is explained in SOURCE-BUNDLES.md; these are preview resource controls, not global Modal/Neon spending limits. Off-device snapshot/key custody and external alert delivery remain operator acceptance.
+[Using Noteweld](/manuals/noteweld/guide/) explains normal operation; [public domain access](/manuals/noteweld/custom-domain/) explains the hosting boundary.
