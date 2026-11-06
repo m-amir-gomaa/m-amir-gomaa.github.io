@@ -1,7 +1,7 @@
 {
   "title": "The scientific recording example",
   "description": "A credited human-voiced NOAA interview excerpt, original recognition and clearly labeled editorial notes.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 160,
   "project": "Sonaweft",
   "category": "Release record",

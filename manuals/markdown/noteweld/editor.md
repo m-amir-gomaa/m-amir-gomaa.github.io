@@ -1,9 +1,9 @@
 # Markdown and Vim editing
 
-> Current preview includes the approved forest interface, full appearance customization, Markdown/Vim, connected notes, source imports and browser-session controls. Google/GitHub are configured; real owner consent/link acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 418fb83 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
+> Current preview includes verified email signup/reset, managed image/audio/video attachments, account storage controls, the approved forest interface, full appearance customization, Markdown/Vim, connected notes, source imports and browser-session controls. Google/GitHub are configured; real owner consent/link acceptance remains separate. Billing is closed. Earlier release records describe dated milestones. Production source revision 1a94c99 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision 418fb8367b1b311a68c1b8b7487874469ce55862
-Reviewed: 2026-11-05
+Source baseline: Owner-access repository, revision 1a94c99e3e3d037349ca720535f9d90171013911
+Reviewed: 2026-11-06
 
 Open a text note or choose **Take a note…**. Checklists keep their separate checklist editor.
 
@@ -15,11 +15,21 @@ Open a text note or choose **Take a note…**. Checklists keep their separate ch
 - A failed save leaves the draft and undo available. If another tab changed the note, copy or download the draft before **Reload saved version**. Reloading is a deliberate replacement and clears the old draft's undo history. There is no durable server revision archive yet.
 - **Download .md** exports the exact current body, including unsaved changes, with the title as a portable filename. It does not insert a heading or modify stored data. Account JSON export still includes all notes and labels.
 
+## Media attachments — 6 November
+
+In a signed-in note, use **Attach media** or drop/paste a file. Preview displays
+owned images, audio and video; **Manage attachments** reuses or removes account
+files. Checklists expose the same body under **Attachments and details**. Free
+accounts have 100 MB storage, 10 MB images and 25 MB audio/video files. Removing
+one file makes its references unavailable wherever used. Markdown/JSON exports
+contain references/metadata; download original media separately. See the
+[media manual and hosted evidence](/manuals/noteweld/attachments/).
+
 ## Privacy and limits
 
-Markdown rendering, syntax and Vim run in the browser. No AI request, external font or paid processing provider is added. Preview supports CommonMark and GFM tables/task lists. Raw HTML is ignored. Only explicit HTTP(S), mail and fragment links are clickable; application-relative and script/data/file links are disabled. External links open separately without a referrer. Images display their description and an optional external link, never an automatic image request.
+Markdown rendering, syntax and Vim run in the browser. No AI request, external font or paid processing provider is added. Preview supports CommonMark and GFM tables/task lists. Raw HTML is ignored. Only explicit HTTP(S), mail and fragment links are clickable; application-relative and script/data/file links are disabled. External links open separately without a referrer. Verified owned media and source-figure URLs render through authenticated application requests. Arbitrary external images display descriptions and optional links without automatic requests.
 
-Source text remains in the existing note body; no database migration is needed. The enhanced editor preserves whitespace and mixed line separators by using explicit LF splitting. Its 100,000 UTF-16-unit limit matches the existing API boundary. An oversized paste is rejected whole, with a visible message, rather than silently truncated. Account-wide quotas and request limits still apply.
+Source text remains in the existing note body; the editor itself needs no migration. Media metadata uses additive migration `0010`. The enhanced editor preserves whitespace and mixed line separators by using explicit LF splitting. Its 100,000 UTF-16-unit limit matches the existing API boundary. An oversized paste is rejected whole, with a visible message, rather than silently truncated. Account-wide quotas and request limits still apply.
 
 Drafts and undo exist only in the open tab. Save before navigating, and keep downloads/backups for important material. A tab-close warning is not crash recovery. Neither content nor editor preferences are copied into localStorage. This is not end-to-end encryption.
 

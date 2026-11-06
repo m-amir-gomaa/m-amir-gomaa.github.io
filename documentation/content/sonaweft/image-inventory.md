@@ -1,7 +1,7 @@
 {
   "title": "Declared image package inventory",
   "description": "Observed package versions, license metadata/file hashes and native/system/model review boundaries.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 140,
   "project": "Sonaweft",
   "category": "Reference",

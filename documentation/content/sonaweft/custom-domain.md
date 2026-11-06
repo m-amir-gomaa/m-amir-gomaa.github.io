@@ -1,7 +1,7 @@
 {
   "title": "Custom domain and account access",
   "description": "Public hostname, secure gateway, existing-account access and rollback.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 110,
   "project": "Sonaweft",
   "category": "Operations",

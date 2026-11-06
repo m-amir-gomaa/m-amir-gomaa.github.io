@@ -1,7 +1,7 @@
 {
   "title": "Source workflow and diagnostics release",
   "description": "Implemented review/export/accounts, private monitoring and verified release boundaries.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 160,
   "project": "Pageweft",
   "category": "Release record",

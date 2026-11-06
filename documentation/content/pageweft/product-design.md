@@ -1,7 +1,7 @@
 {
   "title": "Conversion product design",
   "description": "Design rationale and evaluation criteria; the usage guide describes current availability.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 40,
   "project": "Pageweft",
   "category": "Design record",

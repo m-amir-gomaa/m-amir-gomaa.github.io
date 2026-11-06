@@ -1,6 +1,6 @@
 # Why these previews run on Modal
 
-Reviewed: 2026-11-05
+Reviewed: 2026-11-06
 
 ## More than a GPU rental
 

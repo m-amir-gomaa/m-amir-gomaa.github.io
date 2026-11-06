@@ -1,7 +1,7 @@
 {
   "title": "Using Noteweld",
   "description": "A practical route through the editor, private notes, links and graph.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 1,
   "project": "Noteweld",
   "category": "Start here",
@@ -16,7 +16,9 @@
 
 ## Create a private workspace
 
-Open the [sign-in page](https://noteweld.amirgomaa.com/auth/signin), or create an email account using the displayed requirements and keep the private recovery key securely. Recovery is based on your passphrase/key; no email reset service is connected. Keep the recovery key out of messages and screenshots.
+Open the [sign-in page](https://noteweld.amirgomaa.com/auth/signin), or [create an email account](https://noteweld.amirgomaa.com/auth/signup). Complete the security check, follow the email link, then choose your name and passphrase. No account is created until you submit that confirmation form. Email links expire after 30 minutes and work once.
+
+Verified email/password accounts can [request a password-reset email](https://noteweld.amirgomaa.com/auth/forgot). Completing a reset invalidates previous sessions and any old private recovery key. Older unverified accounts retain their existing key/provider recovery; email ownership is not used to silently take over or merge an existing account. Keep any private recovery key out of messages and screenshots.
 
 Create notes or checklists, set labels/colors, pin useful items and use search. Save a note before relying on it being persisted. Archives and trash are distinct; permanently deleted content cannot be recovered through the normal UI. Account export and deletion are available.
 
@@ -27,6 +29,16 @@ Use standard editing, Markdown preview or split view. Optional Vim uses the edit
 Formatting, find/replace, in-tab undo/redo and explicit save controls are described in the [editor manual](/manuals/noteweld/editor/). Markdown downloads preserve the note text. Raw HTML and automatically loaded remote images are restricted in preview.
 
 A save failure is not success: keep the draft, read the error and retry. Conflicting revisions require deliberate resolution. In-tab history and dirty-navigation prompts are useful safeguards, not crash-proof or offline storage.
+
+## Add files and manage storage
+
+In a note, choose **Attach media**, or drop/paste a supported file into the attachment area. Images, audio and video use the note's normal Markdown references. Save the note after insertion. Preview shows supported images and native audio/video players. Browser codec support still applies.
+
+Open [Account → Manage storage and plan](https://noteweld.amirgomaa.com/dashboard/account#storage) to see saved-file bytes, unfinished uploads, pending removals and remaining space. The free preview includes **100 MB** and up to **500 attachments**; images can be up to **10 MB**, audio/video up to **25 MB** per file. Archived/trashed notes and unfinished reservations still count.
+
+Expand **Manage stored attachments** to download or remove a file. Removing an attachment affects every note using it; download a copy first if needed. Removing only its Markdown reference keeps the reusable library file. Account JSON includes a manifest, so download media separately to keep the original bytes.
+
+Plus is planned at **$5/month for 5 GB**; subscriptions are not available yet. When an account exceeds its current allowance, new uploads pause while existing files, downloads, deletion and note editing remain available. Plan expiry does not automatically delete saved files. [Storage and plan details](/manuals/noteweld/storage/).
 
 ## Connect the work
 
@@ -44,7 +56,7 @@ Do not treat this as end-to-end encrypted, collaborative or continuously synchro
 
 Choose **Source bundles** to preview a supported ZIP, check its categories/hashes and confirm an all-or-nothing import. Original/corrected/AI notes retain their labels; source archives stay separate from edits. Download an original backup. Deleting a retained archive preserves notes but breaks its source-file links. Follow [the source guide](/manuals/noteweld/source-bundles/) for limits and duplicate/retry behavior.
 
-In Account, review browser sessions, sign out a session or every device, and confirm recent ownership before sensitive account actions. Google and GitHub are configured. To connect a provider to an existing workspace, sign in to that workspace first, then choose **Account → Sessions and connected sign-in → Provider identities** and confirm ownership if asked. When the five-minute confirmation expires, choosing a security action takes you to the confirmation field. Enter your current passphrase or select your private recovery key, choose **Confirm ownership**, then choose the provider action again. Matching emails do not automatically merge accounts. Authorization redirects pass; real owner consent/link acceptance remains pending. Mailed password resets remain unconfigured.
+In Account, review browser sessions, sign out a session or every device, and confirm recent ownership before sensitive account actions. Google and GitHub are configured. To connect a provider to an existing workspace, sign in to that workspace first, then choose **Account → Sessions and connected sign-in → Provider identities** and confirm ownership if asked. When the five-minute confirmation expires, choosing a security action takes you to the confirmation field. Enter your current passphrase or select your private recovery key, choose **Confirm ownership**, then choose the provider action again. Matching emails do not automatically merge accounts. Authorization redirects pass; real owner consent/link acceptance remains pending. [Email signup and reset](/manuals/noteweld/email-recovery/) have their separate real inbox acceptance.
 
 ## Make the workspace comfortable
 

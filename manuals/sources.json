@@ -1,30 +1,30 @@
 {
-  "reviewed": "2026-11-05",
+  "reviewed": "2026-11-06",
   "documents": [
     {
       "project": "noteweld",
       "path": "README.md",
-      "revision": "418fb8367b1b311a68c1b8b7487874469ce55862",
+      "revision": "1a94c99e3e3d037349ca720535f9d90171013911",
       "working_copy": false,
-      "source_sha256": "5495e8cbe65821fdbb2efbd02340920de40b72261f6f34ba94d5298b65293256",
-      "public_sha256": "806b607b9a5ccb14aa11cb6a305a0d03da7298dfa5511a6f89a1956beef0f78d",
+      "source_sha256": "5bd358c68503199953de74805d21d627e7e1c8fa72a78d51efecaf922ad39086",
+      "public_sha256": "676e7a4a52d4c18a8e91d38c33b89b5b7832c6a0c21f944a42bb412592dd3656",
       "url": "/manuals/noteweld/overview/",
       "mode": "public-edition"
     },
     {
       "project": "noteweld",
       "path": "docs/EDITOR.md",
-      "revision": "418fb8367b1b311a68c1b8b7487874469ce55862",
+      "revision": "1a94c99e3e3d037349ca720535f9d90171013911",
       "working_copy": false,
-      "source_sha256": "7f755d39270802514c3e290f9d763c97508f17356bbb610d3c29dcb05ecff51d",
-      "public_sha256": "c3afdc598c84c4f20b5d519b8c6a9cf723025bdaa10ce7bbdd3cfaa28ffda9bb",
+      "source_sha256": "75a42add5da52c2229c73ac3dfb025cea5a65d9a6668e9eb47c8779324fbe5c7",
+      "public_sha256": "55d0fae50186ea1f1a088cf41094f3da52524dbd44a74d88b0a9bca24cc2aec8",
       "url": "/manuals/noteweld/editor/",
       "mode": "public-edition"
     },
     {
       "project": "noteweld",
       "path": "docs/CONNECTIONS.md",
-      "revision": "418fb8367b1b311a68c1b8b7487874469ce55862",
+      "revision": "1a94c99e3e3d037349ca720535f9d90171013911",
       "working_copy": false,
       "source_sha256": "2f4156cc16ad6128ff0851039476da4e2cd06f59a05f337f5602cfefd53803e0",
       "public_sha256": "be178905281082d04db01ee8ec27334c697c9d1d5b6fea8f7b3123933bf0f5c8",
@@ -34,7 +34,7 @@
     {
       "project": "noteweld",
       "path": "docs/SOURCE-BUNDLES.md",
-      "revision": "418fb8367b1b311a68c1b8b7487874469ce55862",
+      "revision": "1a94c99e3e3d037349ca720535f9d90171013911",
       "working_copy": false,
       "source_sha256": "3d821001186c497ec5a7209c74b44215afdecbd9e2b0fa4d97508c9e4def191b",
       "public_sha256": "72f606c19ea3002d15774e7bebb4f84f772ab33a4ef3b2a82c7be34f5d333f0d",
@@ -44,17 +44,17 @@
     {
       "project": "noteweld",
       "path": "docs/OPERATIONS.md",
-      "revision": "418fb8367b1b311a68c1b8b7487874469ce55862",
+      "revision": "1a94c99e3e3d037349ca720535f9d90171013911",
       "working_copy": false,
-      "source_sha256": "e3a006b55d3aada106a28fba6e8dbc465adb4e4484544be332380ee8cfbcb23f",
-      "public_sha256": "d3296b7a02b69a1e858d098ad48a6dc80eec9667b5f078ab5b5ea24afef036f3",
+      "source_sha256": "b44e17e68a1b2384448d7d31aa7a4972efac28a6721ad69327f7c64aa85e4bf9",
+      "public_sha256": "0aff9e5e5fb8d6e5120877f374ac9dbaec22f44312375465add33ce5e873af7d",
       "url": "/manuals/noteweld/operations/",
       "mode": "curated"
     },
     {
       "project": "noteweld",
       "path": "docs/CONNECTIONS-RELEASE.md",
-      "revision": "418fb8367b1b311a68c1b8b7487874469ce55862",
+      "revision": "1a94c99e3e3d037349ca720535f9d90171013911",
       "working_copy": false,
       "source_sha256": "e0a608a77775b3a926c570227772028f1af327e759eee64f1bdef08b18fbb83f",
       "public_sha256": "a008da602188e4788f378deb2706db140671716822870a8b7c8296cd4d302932",
@@ -64,7 +64,7 @@
     {
       "project": "noteweld",
       "path": "docs/EDITOR-RELEASE.md",
-      "revision": "418fb8367b1b311a68c1b8b7487874469ce55862",
+      "revision": "1a94c99e3e3d037349ca720535f9d90171013911",
       "working_copy": false,
       "source_sha256": "374ca875753b0d5b1e9a64fd7cc56be744d9270ea267efd5a5cc5804f75033c7",
       "public_sha256": "034c2e46683d913bb80586c928fe34fa9575b6ffb61bd605561f6fe11db63fa1",
@@ -74,7 +74,7 @@
     {
       "project": "noteweld",
       "path": "docs/RELEASE.md",
-      "revision": "418fb8367b1b311a68c1b8b7487874469ce55862",
+      "revision": "1a94c99e3e3d037349ca720535f9d90171013911",
       "working_copy": false,
       "source_sha256": "781e4ef97e8cbf4e756e760f9d26af1ddd1987ab252d156f3272e711b6fc6536",
       "public_sha256": "43b4accae0a14d297055a986ed284f83096d66c97d8ce3d9e40bcecd71dbc6d7",
@@ -84,7 +84,7 @@
     {
       "project": "noteweld",
       "path": "docs/ACCESSIBILITY-20261016.md",
-      "revision": "418fb8367b1b311a68c1b8b7487874469ce55862",
+      "revision": "1a94c99e3e3d037349ca720535f9d90171013911",
       "working_copy": false,
       "source_sha256": "0da94ff3b1e823d96ff929a36d95f9ec620d949fa407665973305bb4f854b021",
       "public_sha256": "b5d5001254a94327a35f30806919236512ca23084028e283ad26386ce3854ddc",
@@ -94,7 +94,7 @@
     {
       "project": "noteweld",
       "path": "docs/CUSTOM-DOMAIN.md",
-      "revision": "418fb8367b1b311a68c1b8b7487874469ce55862",
+      "revision": "1a94c99e3e3d037349ca720535f9d90171013911",
       "working_copy": false,
       "source_sha256": "d074761158500b11c134d1308c0530ea47fdc69e2840401c6ce6f91514cc7fdf",
       "public_sha256": "f40e1a5ef298f9d07fef8487a7562dfaf0e321834c0f34a406b2fcf67299dca8",
@@ -104,17 +104,17 @@
     {
       "project": "noteweld",
       "path": "docs/ACCOUNTS.md",
-      "revision": "418fb8367b1b311a68c1b8b7487874469ce55862",
+      "revision": "1a94c99e3e3d037349ca720535f9d90171013911",
       "working_copy": false,
-      "source_sha256": "4789016cf31d3d07cfa9f8094d160036dce3fa66093ec084e2565264644ab33b",
-      "public_sha256": "84b5a02050571c0950e0c2645eb14daf5a6f3fdf4a98b61d25d7b1b178eec362",
+      "source_sha256": "84e107001408734790abfdb26bf41026c6bbba23a639a5d985364aaed2a2ff39",
+      "public_sha256": "c79016b65e4fd6de27cb999f1cbd1cfc7016dfb370a2623f8c7ec94abb4fbabc",
       "url": "/manuals/noteweld/account-work/",
       "mode": "curated"
     },
     {
       "project": "noteweld",
       "path": "docs/SOURCE-HANDOFF-RELEASE.md",
-      "revision": "418fb8367b1b311a68c1b8b7487874469ce55862",
+      "revision": "1a94c99e3e3d037349ca720535f9d90171013911",
       "working_copy": false,
       "source_sha256": "a66cbc046dfb910a4337662d49fb1de89dc22d9ff2343c9081d581ffbfd62f38",
       "public_sha256": "3d9c0908a61ae8df507542e221271e04f892c0d68160282276ef952b863903a9",
@@ -124,7 +124,7 @@
     {
       "project": "noteweld",
       "path": "docs/UI-20261105.md",
-      "revision": "418fb8367b1b311a68c1b8b7487874469ce55862",
+      "revision": "1a94c99e3e3d037349ca720535f9d90171013911",
       "working_copy": false,
       "source_sha256": "e9e182382badf35f39d479a3284694c97a524eb0f822bcc1c548dc5014d10366",
       "public_sha256": "78246fa31b14d65927bf143abea1acbdd3ce35532b38dddb51307d4c9898fe49",
@@ -134,11 +134,51 @@
     {
       "project": "noteweld",
       "path": "docs/OAUTH-20261105.md",
-      "revision": "418fb8367b1b311a68c1b8b7487874469ce55862",
+      "revision": "1a94c99e3e3d037349ca720535f9d90171013911",
       "working_copy": false,
       "source_sha256": "8e200235f974f0a92cdf86160a82a979f41a1b9fa77737d240288a1b525a2fc9",
       "public_sha256": "7410a7b3ce672e67a938a7a09bbe41d80645677ba63a117440d5299c09d2476b",
       "url": "/manuals/noteweld/connected-signin/",
+      "mode": "curated"
+    },
+    {
+      "project": "noteweld",
+      "path": "docs/EMAIL-VERIFICATION-20261106.md",
+      "revision": "1a94c99e3e3d037349ca720535f9d90171013911",
+      "working_copy": false,
+      "source_sha256": "3b941d0bd842b793b9e965e2c93aaed166abef9f282afa1fa38928984b511d78",
+      "public_sha256": "74ffea14178f55d0774c19c57a1d44b306b4208cdb70f3d38d4bd4b24e478283",
+      "url": "/manuals/noteweld/email-recovery/",
+      "mode": "curated"
+    },
+    {
+      "project": "noteweld",
+      "path": "docs/MEDIA-20261106.md",
+      "revision": "1a94c99e3e3d037349ca720535f9d90171013911",
+      "working_copy": false,
+      "source_sha256": "f0d33f023a6465432507c96208bbfc0faa29aa2136f9d67138d9d490d4703910",
+      "public_sha256": "bbe14f14e55fb905a2339353f6ca981e34a0039f0f86920bc43d276e09007593",
+      "url": "/manuals/noteweld/attachments/",
+      "mode": "curated"
+    },
+    {
+      "project": "noteweld",
+      "path": "docs/STORAGE-20261106.md",
+      "revision": "1a94c99e3e3d037349ca720535f9d90171013911",
+      "working_copy": false,
+      "source_sha256": "2ffc1445cbb0ab47ca95930ec437b586a0089c2dffae8c267d5d68f37a7ab1f6",
+      "public_sha256": "bd3d7c0533d5af152a5e71827a305c4f261205cad6fc65c16f82e76887bb2f3e",
+      "url": "/manuals/noteweld/storage/",
+      "mode": "curated"
+    },
+    {
+      "project": "noteweld",
+      "path": "docs/BILLING-PREPARATION-20261106.md",
+      "revision": "1a94c99e3e3d037349ca720535f9d90171013911",
+      "working_copy": false,
+      "source_sha256": "cedd55d16c72ba03a592a4b396f6b6253dd4261e27f5b1adab654fee7ec7e277",
+      "public_sha256": "02400f324252cb0b8eae3f05f3ed7254805e2c1fc3bf134940a09f9b96e5eed1",
+      "url": "/manuals/noteweld/subscription-status/",
       "mode": "curated"
     },
     {

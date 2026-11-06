@@ -1,7 +1,7 @@
 {
   "title": "Book conversion release",
   "description": "Implemented conversion features and the evidence for this dated milestone.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 90,
   "project": "Pageweft",
   "category": "Release record",

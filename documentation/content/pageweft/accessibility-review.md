@@ -1,7 +1,7 @@
 {
   "title": "Accessibility review — 16 October",
   "description": "The specific accessibility fix, test evidence and remaining acceptance limits.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 140,
   "project": "Pageweft",
   "category": "Release record",

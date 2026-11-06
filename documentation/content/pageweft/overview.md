@@ -1,7 +1,7 @@
 {
   "title": "Technical overview",
   "description": "Features, extraction architecture, local setup, cloud deployment and limits.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 30,
   "project": "Pageweft",
   "category": "Reference",

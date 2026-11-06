@@ -1,7 +1,7 @@
 {
   "title": "Dependencies and licensing",
   "description": "Pinned MinerU release, upstream source and third-party licensing boundaries.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 50,
   "project": "Pageweft",
   "category": "Reference",

@@ -1,7 +1,7 @@
 {
   "title": "Owner operations",
   "description": "Usage reporting, admission controls, pause, encrypted ledger backups and recovery.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 60,
   "project": "Pageweft",
   "category": "Operations",

@@ -1,7 +1,7 @@
 {
   "title": "Processing architecture",
   "description": "Browser, isolated ledger, media handling, speech workers and payment events.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 50,
   "project": "Sonaweft",
   "category": "Architecture",

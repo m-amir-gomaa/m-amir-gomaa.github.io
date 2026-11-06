@@ -1,7 +1,7 @@
 {
   "title": "Launch readiness register",
   "description": "An ordered readiness checklist; owner-specific account questions are omitted from this public edition.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 80,
   "project": "Pageweft",
   "category": "Operations",

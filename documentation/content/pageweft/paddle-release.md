@@ -1,7 +1,7 @@
 {
   "title": "Paddle integration evidence",
   "description": "Configured payment integration and the distinction between mocks and real approval.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 100,
   "project": "Pageweft",
   "category": "Release record",

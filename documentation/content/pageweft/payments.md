@@ -1,7 +1,7 @@
 {
   "title": "Payment activation checklist",
   "description": "Owner-only commercial gates, provider verification and the current Paddle procedure.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 70,
   "project": "Pageweft",
   "category": "Operations",

@@ -1,7 +1,7 @@
 {
   "title": "Extraction verification record",
   "description": "Dated extraction checks and the limits of the tested documents.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 110,
   "project": "Pageweft",
   "category": "Release record",

@@ -1,7 +1,7 @@
 {
   "title": "Quality and cost measurement",
   "description": "Offline text scoring, explicit unknown costs, failure-inclusive timings and representative-sample requirements.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 170,
   "project": "Pageweft",
   "category": "Operations",

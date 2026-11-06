@@ -1,7 +1,7 @@
 {
   "title": "Product contract",
   "description": "Recognition, review, file retention, cost controls and the boundaries between outputs.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 40,
   "project": "Sonaweft",
   "category": "Reference",

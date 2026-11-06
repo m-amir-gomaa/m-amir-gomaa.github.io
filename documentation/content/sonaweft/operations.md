@@ -1,7 +1,7 @@
 {
   "title": "Owner operations",
   "description": "Admission caps, monitoring, backups, incidents and payment opening sequence.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 60,
   "project": "Sonaweft",
   "category": "Operations",

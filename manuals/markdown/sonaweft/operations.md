@@ -3,7 +3,7 @@
 > Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones. Production source revision f77aba4 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.
 
 Source baseline: Owner-access repository, revision f77aba405853d62c981dfb5f922547f7050c244b
-Reviewed: 2026-11-05
+Reviewed: 2026-11-06
 
 ## Current public operating boundary
 

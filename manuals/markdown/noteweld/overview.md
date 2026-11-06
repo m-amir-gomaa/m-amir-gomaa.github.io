@@ -1,12 +1,14 @@
 # Technical overview
 
-> Current preview includes the approved forest interface, full appearance customization, Markdown/Vim, connected notes, source imports and browser-session controls. Google/GitHub are configured; real owner consent/link acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 418fb83 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
+> Current preview includes verified email signup/reset, managed image/audio/video attachments, account storage controls, the approved forest interface, full appearance customization, Markdown/Vim, connected notes, source imports and browser-session controls. Google/GitHub are configured; real owner consent/link acceptance remains separate. Billing is closed. Earlier release records describe dated milestones. Production source revision 1a94c99 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision 418fb8367b1b311a68c1b8b7487874469ce55862
-Reviewed: 2026-11-05
+Source baseline: Owner-access repository, revision 1a94c99e3e3d037349ca720535f9d90171013911
+Reviewed: 2026-11-06
 
-**Current release, 5 November:** approved forest UI, custom N logo and complete
-appearance controls are live. [Release evidence](/manuals/noteweld/ui-release/) and
+**Current release, 6 November:** private image/audio/video attachments are live
+on Modal v17, with private R2 primary/recovery storage, an account library and
+native playback. [Media release evidence](/manuals/noteweld/attachments/). The approved
+forest UI, N logo and appearance controls remain live. [Release evidence](/manuals/noteweld/ui-release/) and
 codebase walkthrough (source repository requires access). Earlier dated releases below
 are historical checkpoints.
 
@@ -44,6 +46,36 @@ A private notes/checklist preview built with Next.js 16.3.8, React 19, Auth.js a
 - Browser-session inventory/revocation, sign out all devices, recent-proof provider linking/unlink protection, and private API support IDs. Provider registrations are configured; real owner consent/link acceptance is still pending.
 
 **Not implemented:** bare hashtag parsing, global Vim navigation, durable revision history, paid access, reminders, offline sync, collaboration and end-to-end encryption. Those follow this connected-notes milestone. This is not a production SLA or a place for irreplaceable/sensitive material.
+
+**Local billing preparation, 6 November:** sandbox-only Paddle server routes,
+signed webhook processing, ownership/idempotency checks and reconciliation are
+prepared behind a closed default. They do not enable paid access or media uploads.
+Migration `0009` is now deployed with the media release. Live subscriptions stay
+off and actual Paddle sandbox acceptance remains pending. Backup format 6
+supersedes the earlier format 5. See [billing preparation and remaining acceptance](/manuals/noteweld/subscription-status/)
+before running these operations or configuring a sandbox.
+
+**Hosted media release, 6 November:** private image/audio/video attachments,
+native playback, byte reservations, an account media library and primary/recovery
+object storage passed real public HTTPS acceptance. Both R2 buckets are private.
+That release used migration `0010` and backup format 6. Previous user rows are
+preserved, and pre/post-release snapshots restored into isolated clones. Read [media setup and evidence boundaries](/manuals/noteweld/attachments/).
+
+**Email-signup deployment, 6 November:** Modal v18 (`e6833b2`) enables inbox-first
+signup, managed bot checks, verified-email password resets and signed-IP admission,
+alongside media. Existing users/recovery are preserved. Production uses additive
+`0011`; pre/post encrypted backups restored exactly into isolated clones. Real
+Resend delivery, owner-assisted real widgets, inbox signup/reset, link replay
+refusal, old-session/password rejection and replacement login pass. The temporary
+account was deleted; the final restored snapshot matches original durable rows.
+Read the [email setup and evidence boundary](/manuals/noteweld/email-recovery/).
+
+**Storage and plan release, 6 November:** Modal v19 (`e4f641d`) adds account usage,
+charged upload/removal breakdown, attachment download/delete and safe over-limit
+behavior. CI, independent local UI review, deployed screen/metadata and pre/post
+encrypted restore pass. Free remains 100 MB; 5 GB Plus is local-sandbox only until
+live billing acceptance. Original data is preserved.
+Read [storage behavior and operational limits](/manuals/noteweld/storage/).
 
 Read the [connected-notes guide](/manuals/noteweld/connections/) and [current release evidence](/manuals/noteweld/connections-release/). Graph bounds and title-vs-ID semantics are explicit; original note source remains the stored/exported format with no schema migration.
 

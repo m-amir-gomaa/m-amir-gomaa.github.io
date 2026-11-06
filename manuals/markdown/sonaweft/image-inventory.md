@@ -3,7 +3,7 @@
 > Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones. Production source revision f77aba4 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
 Source baseline: Owner-access repository, revision f77aba405853d62c981dfb5f922547f7050c244b
-Reviewed: 2026-11-05
+Reviewed: 2026-11-06
 
 Actual CPU inspection of the current web/Whisper package images. Full [metadata and license-file hashes](/manuals/metadata/sonaweft-image-inventory.json), SHA256 `4e1fbbab5b0c50ab0afd77f0c95341c011bd4829b23bc5a402661dfcda1a68a0`. No model volume, app secret, customer source or GPU was used. The NVIDIA CUDA base image emitted its normal upstream notice on CPU; this is not GPU inference or a change to the desktop drivers.
 

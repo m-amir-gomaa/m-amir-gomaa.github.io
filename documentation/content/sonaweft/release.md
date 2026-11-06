@@ -1,7 +1,7 @@
 {
   "title": "Hosted release evidence",
   "description": "Actual short-recording/cloud/browser checks and outstanding commercial gates.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 70,
   "project": "Sonaweft",
   "category": "Release record",

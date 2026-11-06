@@ -1,7 +1,7 @@
 {
   "title": "Recoverable transcript review",
   "description": "Compare and restore saved corrections and speaker labels, retain hashed history exports, and understand deletion and expiry.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 150,
   "project": "Sonaweft",
   "category": "Usage guide",

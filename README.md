@@ -1,4 +1,16 @@
-# Current manuals refresh — 5 November 2026
+# Current manuals refresh — 6 November 2026
+
+Noteweld's public guide and app chooser now describe actual email verification,
+mailed recovery, image/audio/video attachments and Account storage controls.
+Four reviewed public summaries cover attachments, email recovery, storage and
+subscription availability. Private operating budgets and credential settings are
+excluded from these editions. Plus remains planned; live checkout is disabled.
+
+Fieldnotes now has **68 indexed articles and 49 reviewed source records**.
+The static build is reproducible; link/publication/DOM checks pass. The separate
+Upwork portfolio feature branch is preserved; this publication updates Pages main.
+
+# Previous manuals refresh — 5 November 2026
 
 All four product guides and the Workbench/journal were checked against current
 source records. Noteweld's guide now covers the deployed interface, 29-role

@@ -1,7 +1,7 @@
 {
   "title": "Technical overview",
   "description": "Hosted workflow, processing tariff, local CLI, deployment and limits.",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "weight": 30,
   "project": "Sonaweft",
   "category": "Reference",
