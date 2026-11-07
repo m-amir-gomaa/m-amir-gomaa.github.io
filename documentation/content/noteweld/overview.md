@@ -1,21 +1,48 @@
 {
   "title": "Technical overview",
   "description": "Architecture, implemented scope, setup and the current release.",
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "weight": 30,
   "project": "Noteweld",
   "category": "Reference",
-  "notice": "Current preview includes verified email signup/reset, managed image/audio/video attachments, account storage controls, the approved forest interface, full appearance customization, Markdown/Vim, connected notes, source imports and browser-session controls. Google/GitHub are configured; real owner consent/link acceptance remains separate. Billing is closed. Earlier release records describe dated milestones. Production source revision 1a94c99 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
+  "notice": "Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 5fbecd6 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
   "sourceurl": "",
   "download": "markdown/noteweld/overview.md"
 }
 
-**Current release, 6 November:** private image/audio/video attachments are live
-on Modal v17, with private R2 primary/recovery storage, an account library and
-native playback. [Media release evidence](/manuals/noteweld/attachments/). The approved
-forest UI, N logo and appearance controls remain live. [Release evidence](/manuals/noteweld/ui-release/) and
-codebase walkthrough (source repository requires access). Earlier dated releases below
-are historical checkpoints.
+**Current release, 7 November:** Modal **v23**, source `a2af9a3`, tag
+`direct-drive-a2af9a3`, deployed at **19:26:24 Cairo**. Signed-in notes now offer
+**Upload to → Noteweld storage / Google Drive** for attach, paste and drop.
+Drive uploads go directly to Google, retain retry state while the editor is open,
+and never fall back to managed storage. The destination is remembered per account
+in this browser. Usage/setup and evidence (source repository requires access),
+[storage/privacy boundaries](/manuals/noteweld/media-storage/).
+
+Existing private R2 media, verified-email signup/reset, account storage management,
+appearance controls and 15-minute Drive consent/expiry recovery are preserved.
+Production stays Free; checkout remains disabled pending Paddle approval and
+actual sandbox acceptance. Own-server storage, end-to-end encryption, native
+Neovim and offline desktop are not implemented.
+
+**Verification:** GitHub quality run 42395768375 (source repository requires access)
+passes: 86 unit/UI, 78 isolated PostgreSQL, 30 browser journeys/three expected
+provider-mode skips and one separate mocked email UI journey. Independent scoped
+interface review: ship. Real browser image/audio/video uploads to the connected
+Google Drive passed byte hashes, private/ranged delivery, saved-note reload,
+media decoding/seeking, remembered destination and anonymous refusal. Reference
+removal retained Google originals; only newly created fixtures were deleted and
+the temporary operator session removed. This uses an explicit administrative
+session fixture, not a new password login, recent ownership proof or Google consent.
+Actual Google Picker UI/renewed consent remain distinct from direct-upload evidence.
+Schema 0012 and encrypted snapshot format 7 are unchanged. The disabled Drive API
+was identified and enabled by the owner; a sign-in-navigation CSP defect is fixed.
+
+[Storage evidence](/manuals/noteweld/storage/),
+[email evidence](/manuals/noteweld/email-recovery/),
+[media evidence](/manuals/noteweld/attachments/),
+[interface release](/manuals/noteweld/ui-release/) and
+codebase walkthrough (source repository requires access). Earlier dated releases below are
+historical checkpoints.
 
 22 October guest release: the home page now introduces the workspace before
 sign-in, with direct account-free editor/graph entry, a [two-minute guide](https://noteweld.amirgomaa.com/help),
@@ -37,7 +64,7 @@ A private notes/checklist preview built with Next.js 16.3.8, React 19, Auth.js a
 ## Implemented
 
 - Real account/seed transactions; normalized unique email and label identities; exact passphrases, with 15-character minimum and bcrypt's 72-byte UTF-8 limit.
-- Cookie authentication, hashed one-time recovery keys, key rotation, session revocation on recovery and account deletion. No email verification/reset provider is connected.
+- Cookie authentication, hashed one-time recovery keys, key rotation, verified-email signup and Resend password resets, session revocation on recovery and account deletion.
 - Notes, checklists, pin/colour/archive/trash, labels and search; shared navigation updates and narrow-screen drawer.
 - Stable wiki links, an owned connection index, outgoing/backlink lists and authenticated linked-note pages, including archive and explicit missing/ambiguous targets.
 - A bounded note graph with label/title filters, neighbourhood focus, fit/zoom/pan and equivalent keyboard/list navigation. [Explore the account-free graph](https://noteweld.amirgomaa.com/example/graph).

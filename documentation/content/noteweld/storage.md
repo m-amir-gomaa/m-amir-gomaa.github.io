@@ -1,11 +1,11 @@
 {
   "title": "Storage usage and plans",
   "description": "Usage, reserved bytes, file management, planned Plus and safe downgrade.",
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "weight": 190,
   "project": "Noteweld",
   "category": "Guide",
-  "notice": "Current preview includes verified email signup/reset, managed image/audio/video attachments, account storage controls, the approved forest interface, full appearance customization, Markdown/Vim, connected notes, source imports and browser-session controls. Google/GitHub are configured; real owner consent/link acceptance remains separate. Billing is closed. Earlier release records describe dated milestones. Production source revision 1a94c99 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
+  "notice": "Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 5fbecd6 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
   "sourceurl": "",
   "download": "markdown/noteweld/storage.md"
 }
@@ -27,3 +27,7 @@ When files exceed the current allowance, new uploads pause. Notes, existing-file
 Unit and actual isolated database tests cover charged reservations, current-plan admission, local sandbox Plus, expiry and retained read/delete access. Browser checks cover local download/removal/reclaimed quota, failure/retry, themes and separately mocked full/unavailable states. Independent review approved the local interface. The deployed account screen and quota metadata passed a documented temporary operator-session check; its session was removed. Encrypted pre/post snapshots restored with original durable data unchanged. Real commercial billing remains a separate gate.
 
 [Using Noteweld](/manuals/noteweld/guide/) is the normal starting point. Private operating budgets, credentials and internal admission configuration are omitted.
+
+## Google Drive and private servers
+
+Choose Google Drive in a note to upload originals directly to your own Drive allowance; those bytes do not consume managed storage, while references still count toward the combined attachment limit. Customer-controlled storage servers and user-held-key end-to-end encryption are not implemented. [Media/storage choices](/manuals/noteweld/media-storage/).

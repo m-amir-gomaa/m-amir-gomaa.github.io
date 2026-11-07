@@ -1,7 +1,7 @@
 {
   "title": "Using Noteweld",
   "description": "A practical route through the editor, private notes, links and graph.",
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "weight": 1,
   "project": "Noteweld",
   "category": "Start here",
@@ -32,13 +32,15 @@ A save failure is not success: keep the draft, read the error and retry. Conflic
 
 ## Add files and manage storage
 
-In a note, choose **Attach media**, or drop/paste a supported file into the attachment area. Images, audio and video use the note's normal Markdown references. Save the note after insertion. Preview shows supported images and native audio/video players. Browser codec support still applies.
+In a note, choose **Upload to → Noteweld storage** or **Google Drive**, then attach, paste or drop a supported file into the attachment area. Connect Google Drive separately in Account first. The choice is remembered for your account in this browser; a failed upload never silently changes providers. Images, audio and video use the note's normal Markdown references. Save the note after insertion. Preview shows supported images and native audio/video players. Browser codec support still applies.
 
-Open [Account → Manage storage and plan](https://noteweld.amirgomaa.com/dashboard/account#storage) to see saved-file bytes, unfinished uploads, pending removals and remaining space. The free preview includes **100 MB** and up to **500 attachments**; images can be up to **10 MB**, audio/video up to **25 MB** per file. Archived/trashed notes and unfinished reservations still count.
+Open [Account → Manage storage and plan](https://noteweld.amirgomaa.com/dashboard/account#storage) to see saved-file bytes, unfinished uploads, pending removals and remaining space. The free preview includes **100 MB of managed storage** and up to **500 combined managed/Drive attachments**; images can be up to **10 MB**, audio/video up to **25 MB** per file. Archived/trashed notes and unfinished reservations still count.
 
 Expand **Manage stored attachments** to download or remove a file. Removing an attachment affects every note using it; download a copy first if needed. Removing only its Markdown reference keeps the reusable library file. Account JSON includes a manifest, so download media separately to keep the original bytes.
 
 Plus is planned at **$5/month for 5 GB**; subscriptions are not available yet. When an account exceeds its current allowance, new uploads pause while existing files, downloads, deletion and note editing remain available. Plan expiry does not automatically delete saved files. [Storage and plan details](/manuals/noteweld/storage/).
+
+Drive originals upload directly from the browser to your connected Google account and use your Google allowance. Noteweld verifies and serves selected media. Removing a Drive reference preserves its original; deleting a managed attachment reclaims its Noteweld storage. Keep the note open to retry an upload. See [media/storage choices](/manuals/noteweld/media-storage/) for retry state, existing-file selection and privacy. Customer-controlled encrypted servers and end-to-end encryption are not implemented.
 
 ## Connect the work
 

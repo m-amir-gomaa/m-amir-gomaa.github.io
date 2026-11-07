@@ -1,11 +1,11 @@
 {
   "title": "Google and GitHub status",
   "description": "Configured providers, explicit linking, recovery and the remaining real-consent acceptance step.",
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "weight": 160,
   "project": "Noteweld",
   "category": "Reference",
-  "notice": "Current preview includes verified email signup/reset, managed image/audio/video attachments, account storage controls, the approved forest interface, full appearance customization, Markdown/Vim, connected notes, source imports and browser-session controls. Google/GitHub are configured; real owner consent/link acceptance remains separate. Billing is closed. Earlier release records describe dated milestones. Production source revision 1a94c99 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
+  "notice": "Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 5fbecd6 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
   "sourceurl": "",
   "download": "markdown/noteweld/connected-signin.md"
 }

@@ -1,4 +1,19 @@
-# Current manuals refresh — 6 November 2026
+# Direct Drive upload guide — 7 November 2026
+
+The deployed Noteweld v23 guide now explains choosing managed storage or Google
+Drive for attach, paste and drop, destination-specific retry, browser-local
+preferences and original retention. The new reviewed media/storage guide preserves
+the previously published email, attachment, storage and subscription guides.
+Private operating controls remain excluded. Customer-supplied servers and
+end-to-end encryption remain future work; paid checkout stays disabled.
+
+The library now has **69 indexed articles and 50 reviewed source records**.
+Reproducible Hugo generation, 78 HTML pages/1,716 local link/asset checks,
+publication-boundary tests, nine portfolio DOM checks and 24 grouped browser
+checks across all 69 article routes pass. This update is
+based on current Pages main; the separate Upwork portfolio edition is preserved.
+
+# Earlier manuals refresh — 6 November 2026
 
 Noteweld's public guide and app chooser now describe actual email verification,
 mailed recovery, image/audio/video attachments and Account storage controls.
