@@ -11,7 +11,7 @@
       "status": "Free hosted preview",
       "live": "https://noteweld.amirgomaa.com/",
       "description": "Write Markdown, connect notes and retain original Pageweft/Sonaweft source bundles in a private workspace.",
-      "notice": "Current preview includes the approved forest interface, full appearance customization, Markdown/Vim, connected notes, source imports and browser-session controls. Google/GitHub are configured; real owner consent/link acceptance remains pending. Billing is closed. Earlier release records describe dated milestones.",
+      "notice": "Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones.",
       "files": [
         {
           "path": "README.md",
@@ -49,7 +49,7 @@
           "description": "CPU hosting, isolated PostgreSQL, encrypted snapshots and incident recovery.",
           "category": "Operations",
           "mode": "curated",
-          "context": "## Current deployment and data\n\nNoteweld runs its Next.js/Node application on Modal behind the public Cloudflare gateway. Neon PostgreSQL stores private account/note state. The preview has explicit account/note/source bounds and billing is closed. No shared wallet/login across the portfolio apps is implied.\n\n## Account and preference persistence\n\nEvery private operation validates the server session and owner. Browser-session revocation and account session versions control continuing access. Google/GitHub entry is configured, with actual owner grant/link acceptance still pending; matching emails never automatically merge accounts. Ordinary email/private-key recovery is deployed.\n\nGuest appearance is browser-local. Saved account appearance is stored with the account and included in exports/backups. Local drafts are not a crash-proof offline database. The owner's private code map and learning material are not public app features.\n\n## Backups and migrations\n\nThe November preferences release took a fresh encrypted snapshot before its additive migration. Account/note/provider-identity counts were preserved. Backup version 4 includes appearance data; earlier supported backup versions restore with defaults. Restore targets must be empty and isolated, and restored sessions must be invalidated. A local backup file alone does not prove off-device disaster recovery.\n\nOwner deployment, credential and recovery commands remain in the access-controlled repository. Keep application public-origin settings and gateway forwarding behavior consistent during rollback. Never erase accounts, identities or quotas to make a deployment appear healthy.\n\n## Verification scope\n\nA successful build is distinct from browser review, database persistence and real provider consent. The deployed release passed ordinary email sign-in, note save, account appearance save/reload/export and temporary-account deletion; [the current release](/manuals/noteweld/ui-release/) gives the relevant counts and limits.\n\n[Using Noteweld](/manuals/noteweld/guide/) explains normal operation; [public domain access](/manuals/noteweld/custom-domain/) explains the hosting boundary."
+          "context": "## Current deployment and data\n\nNoteweld runs its Next.js/Node application on Modal behind the public Cloudflare gateway. Neon PostgreSQL stores private account/note state. The preview has explicit account/note/source bounds and billing is closed. No shared wallet/login across the portfolio apps is implied.\n\n## Account and preference persistence\n\nEvery private operation validates the server session and owner. Browser-session revocation and account session versions control continuing access. Google/GitHub entry is configured, with actual owner grant/link acceptance still pending; matching emails never automatically merge accounts. Verified-email signup and mailed resets are deployed; existing private recovery keys remain available.\n\nGuest appearance is browser-local. Saved account appearance is stored with the account and included in exports/backups. Local drafts are not a crash-proof offline database. The owner's private code map and learning material are not public app features.\n\n## Backups and migrations\n\nThe current schema is 0012 and encrypted snapshot format is 7, including appearance, managed media and Drive reference/grant state. Supported versions 1–7 restore into an empty current-schema target. Restored Drive grants require reconnection. Fresh encrypted hosted snapshots have been restored into separate local clones and original durable rows compared. Restore targets must be empty and isolated, and restored sessions must be invalidated. A local backup file alone does not prove off-device disaster recovery.\n\nOwner deployment, credential and recovery commands remain in the access-controlled repository. Keep application public-origin settings and gateway forwarding behavior consistent during rollback. Never erase accounts, identities or quotas to make a deployment appear healthy.\n\n## Verification scope\n\nA successful build is distinct from browser review, database persistence and real provider consent. The deployed release passed ordinary email sign-in, note save, account appearance save/reload/export and temporary-account deletion; [the current release](/manuals/noteweld/ui-release/) gives the relevant counts and limits.\n\n[Using Noteweld](/manuals/noteweld/guide/) explains normal operation; [public domain access](/manuals/noteweld/custom-domain/) explains the hosting boundary."
         },
         {
           "path": "docs/CONNECTIONS-RELEASE.md",
@@ -75,7 +75,7 @@
         {
           "path": "docs/ACCESSIBILITY-20261016.md",
           "slug": "accessibility-review",
-          "title": "Accessibility review \u2014 16 October",
+          "title": "Accessibility review — 16 October",
           "description": "The specific accessibility fix, test evidence and remaining acceptance limits.",
           "category": "Release record"
         },
@@ -92,10 +92,10 @@
           "path": "docs/ACCOUNTS.md",
           "slug": "account-work",
           "title": "Accounts, recovery and connected sign-in",
-          "description": "Current email/private-key recovery, browser sessions and deliberately linked Google/GitHub identities.",
+          "description": "Verified-email signup/reset, recovery keys, browser sessions and deliberately linked Google/GitHub identities.",
           "category": "Usage guide",
           "mode": "curated",
-          "context": "## Sign in and retain recovery access\n\nUse email and a passphrase, or a configured Google/GitHub provider. Keep the private recovery key securely when creating an email account. Mailed password resets and email verification are not configured. Each portfolio application has a separate account.\n\n## Link a provider to an existing account\n\nSign in to the existing Noteweld account first. Open **Account \u2192 Sessions and connected sign-in \u2192 Provider identities**. Confirm ownership when asked, then choose **Link Google** or **Link GitHub**. Sensitive actions require ownership confirmation from the last five minutes. If it has expired, choosing an action explains the requirement and focuses the confirmation field; it does not change an identity. Enter the current passphrase or choose the private recovery key, confirm ownership, then choose the action again. Matching email addresses never silently merge accounts.\n\nGoogle/GitHub registrations and public-domain authorization requests have passed callback, state and PKCE checks; Google also uses an OIDC nonce. The owner's actual consent/link/unlink acceptance remains pending. A configured button is not evidence of a completed provider grant.\n\n## Sessions, copies and deletion\n\nReview active browser sessions, revoke a selected device or sign out every device. Export important notes/account data before deletion. Changing a passphrase or using recovery rotates recovery access and revokes older sessions. Removing a provider must leave a usable sign-in method.\n\n[Start with the current usage guide](/manuals/noteweld/guide/) or read [the November release](/manuals/noteweld/ui-release/)."
+          "context": "## Sign in and retain recovery access\n\nFor email signup, enter your address, follow the verification email and then choose your name and passphrase. No account is created before confirmation. Verified email accounts can request mailed password resets. Existing private recovery keys and configured Google/GitHub sign-in remain available. Keep recovery keys out of chats and screenshots. Each portfolio application has a separate account.\n\n## Link a provider to an existing account\n\nSign in to the existing Noteweld account first. Open **Account → Sessions and connected sign-in → Provider identities**. Confirm ownership when asked, then choose **Link Google** or **Link GitHub**. Sensitive actions require ownership confirmation from the last five minutes. If it has expired, choosing an action explains the requirement and focuses the confirmation field; it does not change an identity. Enter the current passphrase or choose the private recovery key, confirm ownership, then choose the action again. Matching email addresses never silently merge accounts.\n\nGoogle/GitHub registrations and public-domain authorization requests have passed callback, state and PKCE checks; Google also uses an OIDC nonce. The owner's actual consent/link/unlink acceptance remains pending. A configured button is not evidence of a completed provider grant.\n\n## Sessions, copies and deletion\n\nReview active browser sessions, revoke a selected device or sign out every device. Export important notes/account data before deletion. Changing a passphrase or using recovery rotates recovery access and revokes older sessions. Removing a provider must leave a usable sign-in method.\n\n[Start with the current usage guide](/manuals/noteweld/guide/) or read [the November release](/manuals/noteweld/ui-release/)."
         },
         {
           "path": "docs/SOURCE-HANDOFF-RELEASE.md",
@@ -107,7 +107,7 @@
         {
           "path": "docs/UI-20261105.md",
           "slug": "ui-release",
-          "title": "Interface and appearance release \u2014 5 November",
+          "title": "Interface and appearance release — 5 November",
           "description": "Approved interface/logo, complete color preferences, saved account settings and concrete release evidence.",
           "category": "Release record",
           "mode": "curated",
@@ -120,7 +120,16 @@
           "description": "Configured providers, explicit linking, recovery and the remaining real-consent acceptance step.",
           "category": "Reference",
           "mode": "curated",
-          "context": "## Configuration and actual use are different checks\n\nGoogle and GitHub are configured for Noteweld's public domain. Authorization request checks passed the exact callback URL, state and PKCE; Google also includes its OIDC nonce. Ordinary email sign-in and authenticated note/account operations passed the deployed release checks.\n\nThe owner's actual provider consent, linking/unlinking, cancellation and provider-specific email cases have not yet completed acceptance. Do not interpret configuration as evidence that every external account has been exercised.\n\n## Existing account? Link deliberately\n\nFirst sign in using the method that already owns your notes. Then open **Account \u2192 Sessions and connected sign-in \u2192 Provider identities**, confirm ownership if asked and choose the desired provider. If ownership confirmation has expired, the action remains clickable and guides you to the confirmation field. Confirm using your passphrase or private recovery key and retry the action. Google linking requests an explicit account choice. Matching email addresses do not automatically combine accounts.\n\n[Account controls and recovery](/manuals/noteweld/account-work/) describe the supported safety controls. The [usage guide](/manuals/noteweld/guide/) is the normal starting point."
+          "context": "## Configuration and actual use are different checks\n\nGoogle and GitHub are configured for Noteweld's public domain. Authorization request checks passed the exact callback URL, state and PKCE; Google also includes its OIDC nonce. Ordinary email sign-in and authenticated note/account operations passed the deployed release checks.\n\nThe owner's actual provider consent, linking/unlinking, cancellation and provider-specific email cases have not yet completed acceptance. Do not interpret configuration as evidence that every external account has been exercised.\n\n## Existing account? Link deliberately\n\nFirst sign in using the method that already owns your notes. Then open **Account → Sessions and connected sign-in → Provider identities**, confirm ownership if asked and choose the desired provider. If ownership confirmation has expired, the action remains clickable and guides you to the confirmation field. Confirm using your passphrase or private recovery key and retry the action. Google linking requests an explicit account choice. Matching email addresses do not automatically combine accounts.\n\n[Account controls and recovery](/manuals/noteweld/account-work/) describe the supported safety controls. The [usage guide](/manuals/noteweld/guide/) is the normal starting point."
+        },
+        {
+          "path": "docs/STORAGE-BACKENDS.md",
+          "slug": "media-storage",
+          "title": "Images, audio, video and storage",
+          "description": "Choose Noteweld storage or your Google Drive for attachments, paste and drop.",
+          "category": "Usage guide",
+          "mode": "curated",
+          "context": "## Choose where new files go\n\nIn a signed-in note, use **Upload to → Noteweld storage** or **Google Drive**. Then use **Attach media**, paste an image or drop a file. Connect Google Drive separately under **Account → Google Drive** first. The destination is remembered for your account in this browser; it is not synchronized between devices.\n\nDrive originals upload directly from your browser to your connected Google Drive. Noteweld verifies their type and bytes and inserts private references. Save the note. Use the **Google Drive** panel and **Choose or upload in Drive** for files already in Drive.\n\n## Limits and recovery\n\nThe free preview includes 100 MB of managed Noteweld media. Drive originals use your Google allowance and do not consume managed bytes. Images may be up to 10 MB; supported audio/video up to 25 MB. The account has a combined 500-attachment limit, with up to 100 references per note. Delivery has additional traffic/concurrency safeguards. Paid plans and checkout remain disabled.\n\nA failed Drive upload never falls back to Noteweld storage. Keep the note open and use the destination-specific retry. Reloading or closing the editor clears in-memory retry state. If an upload completed but insertion failed, its original may already exist in Drive: select it through the Drive panel rather than uploading another copy.\n\nRemoving a Drive reference leaves the original in Google Drive; removing a managed attachment reclaims its Noteweld storage and makes it unavailable in notes using it. Download originals separately from text/account exports. Externally changed Drive files require explicit replacement confirmation.\n\n## Privacy and unfinished features\n\nThese options are private to the signed-in account, but are not end-to-end encrypted. The application verifies and serves the selected bytes. Drive access uses a separate, narrow file grant; Google sign-in alone does not connect storage. Customer-supplied encrypted servers, full Obsidian synchronization, native Neovim and offline desktop operation remain future work.\n\n[Return to Using Noteweld](/manuals/noteweld/guide/).\n"
         }
       ],
       "source_access": "owner",
@@ -128,8 +137,29 @@
         {
           "path": "docs/CODEBASE-GUIDE.md",
           "reason": "Private owner learning/codebase walkthrough; delivered locally, not part of the public product manual."
+        },
+        {
+          "path": "docs/BILLING-PREPARATION-20261106.md",
+          "reason": "Owner operations/provider acceptance runbook; public behavior is summarized in the reviewed account and media-storage guides without private operating controls."
+        },
+        {
+          "path": "docs/EMAIL-VERIFICATION-20261106.md",
+          "reason": "Owner operations/provider acceptance runbook; public behavior is summarized in the reviewed account and media-storage guides without private operating controls."
+        },
+        {
+          "path": "docs/GOOGLE-DRIVE.md",
+          "reason": "Owner operations/provider acceptance runbook; public behavior is summarized in the reviewed account and media-storage guides without private operating controls."
+        },
+        {
+          "path": "docs/MEDIA-20261106.md",
+          "reason": "Owner operations/provider acceptance runbook; public behavior is summarized in the reviewed account and media-storage guides without private operating controls."
+        },
+        {
+          "path": "docs/STORAGE-20261106.md",
+          "reason": "Owner operations/provider acceptance runbook; public behavior is summarized in the reviewed account and media-storage guides without private operating controls."
         }
-      ]
+      ],
+      "reviewed": "2026-11-07"
     },
     {
       "slug": "pageweft",
@@ -235,7 +265,7 @@
         {
           "path": "docs/ACCESSIBILITY-20261016.md",
           "slug": "accessibility-review",
-          "title": "Accessibility review \u2014 16 October",
+          "title": "Accessibility review — 16 October",
           "description": "The specific accessibility fix, test evidence and remaining acceptance limits.",
           "category": "Release record"
         },

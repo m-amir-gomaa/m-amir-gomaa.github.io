@@ -1,6 +1,9 @@
 # Fieldnotes — Hugo project documentation and journal
 
-Current review: 5 November 2026 — 64 indexed articles, 45 reviewed source records, explicit owner-only exclusions and curated public summaries.
+Latest scoped review: 7 November 2026 — Noteweld's verified-email and media/Drive
+guides now match the deployed v23 behavior. The library has 65 indexed articles
+and 46 reviewed source records. Other project reviews retain their own dates;
+owner-only provider runbooks remain excluded in favor of curated public summaries.
 
 Source is here; generated output is `../manuals/`. The existing GitHub Pages root publishes both the portfolio and the library. Keeping reviewed generated files in Git avoids changing the working Pages deployment mode or requiring a new hosting account.
 

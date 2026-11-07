@@ -1,6 +1,6 @@
 # Using Noteweld
 
-Reviewed: 2026-11-05
+Reviewed: 2026-11-07
 
 ## Try it without an account
 
@@ -10,7 +10,7 @@ Reviewed: 2026-11-05
 
 ## Create a private workspace
 
-Open the [sign-in page](https://noteweld.amirgomaa.com/auth/signin), or create an email account using the displayed requirements and keep the private recovery key securely. Recovery is based on your passphrase/key; no email reset service is connected. Keep the recovery key out of messages and screenshots.
+Open the [sign-in page](https://noteweld.amirgomaa.com/auth/signin), or start email signup. Follow the verification email before choosing your name and passphrase. Verified email accounts can request mailed password resets. Existing recovery keys remain available; keep them out of messages and screenshots.
 
 Create notes or checklists, set labels/colors, pin useful items and use search. Save a note before relying on it being persisted. Archives and trash are distinct; permanently deleted content cannot be recovered through the normal UI. Account export and deletion are available.
 
@@ -27,6 +27,12 @@ A save failure is not success: keep the draft, read the error and retry. Conflic
 Insert a stable link using the note picker, or use a title link such as `[[Project plan]]`. Stable links retain the note's identity when its title changes. Duplicate titles are ambiguous; missing or unavailable targets are shown explicitly instead of silently choosing another note.
 
 Open a note's outgoing references and backlinks, or use the graph's title/label/archive filters and focused neighborhood. The graph also has a keyboard-accessible HTML list. For supported syntax, rename/deletion behavior and all controls, read [connections](/manuals/noteweld/connections/).
+
+## Attach images, audio and video
+
+In a signed-in note, choose **Upload to → Noteweld storage** or **Google Drive**, then attach, paste or drop a supported file. Connect Drive separately in Account first. Save the note after insertion. Drive files use your Google storage; managed uploads use the free 100 MB Noteweld allowance. The choice is remembered for your account in this browser, and a failed upload never silently changes providers.
+
+Images can be up to 10 MB; audio/video up to 25 MB. The [media and storage guide](/manuals/noteweld/media-storage/) covers existing-file selection, retries, original retention and privacy.
 
 ## Bounds and recovery
 

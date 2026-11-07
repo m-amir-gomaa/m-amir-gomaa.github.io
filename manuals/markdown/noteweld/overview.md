@@ -1,14 +1,43 @@
 # Technical overview
 
-> Current preview includes the approved forest interface, full appearance customization, Markdown/Vim, connected notes, source imports and browser-session controls. Google/GitHub are configured; real owner consent/link acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 418fb83 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
+> Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 5fbecd6 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision 418fb8367b1b311a68c1b8b7487874469ce55862
-Reviewed: 2026-11-05
+Source baseline: Owner-access repository, revision 5fbecd66116306dbcac278981d19a6752f5c50ef
+Reviewed: 2026-11-07
 
-**Current release, 5 November:** approved forest UI, custom N logo and complete
-appearance controls are live. [Release evidence](/manuals/noteweld/ui-release/) and
-codebase walkthrough (source repository requires access). Earlier dated releases below
-are historical checkpoints.
+**Current release, 7 November:** Modal **v23**, source `a2af9a3`, tag
+`direct-drive-a2af9a3`, deployed at **19:26:24 Cairo**. Signed-in notes now offer
+**Upload to → Noteweld storage / Google Drive** for attach, paste and drop.
+Drive uploads go directly to Google, retain retry state while the editor is open,
+and never fall back to managed storage. The destination is remembered per account
+in this browser. Usage/setup and evidence (source repository requires access),
+[storage/privacy boundaries](/manuals/noteweld/media-storage/).
+
+Existing private R2 media, verified-email signup/reset, account storage management,
+appearance controls and 15-minute Drive consent/expiry recovery are preserved.
+Production stays Free; checkout remains disabled pending Paddle approval and
+actual sandbox acceptance. Own-server storage, end-to-end encryption, native
+Neovim and offline desktop are not implemented.
+
+**Verification:** GitHub quality run 42395768375 (source repository requires access)
+passes: 86 unit/UI, 78 isolated PostgreSQL, 30 browser journeys/three expected
+provider-mode skips and one separate mocked email UI journey. Independent scoped
+interface review: ship. Real browser image/audio/video uploads to the connected
+Google Drive passed byte hashes, private/ranged delivery, saved-note reload,
+media decoding/seeking, remembered destination and anonymous refusal. Reference
+removal retained Google originals; only newly created fixtures were deleted and
+the temporary operator session removed. This uses an explicit administrative
+session fixture, not a new password login, recent ownership proof or Google consent.
+Actual Google Picker UI/renewed consent remain distinct from direct-upload evidence.
+Schema 0012 and encrypted snapshot format 7 are unchanged. The disabled Drive API
+was identified and enabled by the owner; a sign-in-navigation CSP defect is fixed.
+
+Storage evidence (source repository requires access),
+email evidence (source repository requires access),
+media evidence (source repository requires access),
+[interface release](/manuals/noteweld/ui-release/) and
+codebase walkthrough (source repository requires access). Earlier dated releases below are
+historical checkpoints.
 
 22 October guest release: the home page now introduces the workspace before
 sign-in, with direct account-free editor/graph entry, a [two-minute guide](https://noteweld.amirgomaa.com/help),
@@ -30,7 +59,7 @@ A private notes/checklist preview built with Next.js 16.3.8, React 19, Auth.js a
 ## Implemented
 
 - Real account/seed transactions; normalized unique email and label identities; exact passphrases, with 15-character minimum and bcrypt's 72-byte UTF-8 limit.
-- Cookie authentication, hashed one-time recovery keys, key rotation, session revocation on recovery and account deletion. No email verification/reset provider is connected.
+- Cookie authentication, hashed one-time recovery keys, key rotation, verified-email signup and Resend password resets, session revocation on recovery and account deletion.
 - Notes, checklists, pin/colour/archive/trash, labels and search; shared navigation updates and narrow-screen drawer.
 - Stable wiki links, an owned connection index, outgoing/backlink lists and authenticated linked-note pages, including archive and explicit missing/ambiguous targets.
 - A bounded note graph with label/title filters, neighbourhood focus, fit/zoom/pan and equivalent keyboard/list navigation. [Explore the account-free graph](https://noteweld.amirgomaa.com/example/graph).
@@ -44,6 +73,36 @@ A private notes/checklist preview built with Next.js 16.3.8, React 19, Auth.js a
 - Browser-session inventory/revocation, sign out all devices, recent-proof provider linking/unlink protection, and private API support IDs. Provider registrations are configured; real owner consent/link acceptance is still pending.
 
 **Not implemented:** bare hashtag parsing, global Vim navigation, durable revision history, paid access, reminders, offline sync, collaboration and end-to-end encryption. Those follow this connected-notes milestone. This is not a production SLA or a place for irreplaceable/sensitive material.
+
+**Local billing preparation, 6 November:** sandbox-only Paddle server routes,
+signed webhook processing, ownership/idempotency checks and reconciliation are
+prepared behind a closed default. They do not enable paid access or media uploads.
+Migration `0009` is now deployed with the media release. Live subscriptions stay
+off and actual Paddle sandbox acceptance remains pending. Backup format 6
+supersedes the earlier format 5. See billing preparation and remaining acceptance (source repository requires access)
+before running these operations or configuring a sandbox.
+
+**Hosted media release, 6 November:** private image/audio/video attachments,
+native playback, byte reservations, an account media library and primary/recovery
+object storage passed real public HTTPS acceptance. Both R2 buckets are private.
+That release used migration `0010` and backup format 6. Previous user rows are
+preserved, and pre/post-release snapshots restored into isolated clones. Read media setup and evidence boundaries (source repository requires access).
+
+**Email-signup deployment, 6 November:** Modal v18 (`e6833b2`) enables inbox-first
+signup, managed bot checks, verified-email password resets and signed-IP admission,
+alongside media. Existing users/recovery are preserved. Production uses additive
+`0011`; pre/post encrypted backups restored exactly into isolated clones. Real
+Resend delivery, owner-assisted real widgets, inbox signup/reset, link replay
+refusal, old-session/password rejection and replacement login pass. The temporary
+account was deleted; the final restored snapshot matches original durable rows.
+Read the email setup and evidence boundary (source repository requires access).
+
+**Storage and plan release, 6 November:** Modal v19 (`e4f641d`) adds account usage,
+charged upload/removal breakdown, attachment download/delete and safe over-limit
+behavior. CI, independent local UI review, deployed screen/metadata and pre/post
+encrypted restore pass. Free remains 100 MB; 5 GB Plus is local-sandbox only until
+live billing acceptance. Original data is preserved.
+Read storage behavior and operational limits (source repository requires access).
 
 Read the [connected-notes guide](/manuals/noteweld/connections/) and [current release evidence](/manuals/noteweld/connections-release/). Graph bounds and title-vs-ID semantics are explicit; original note source remains the stored/exported format with no schema migration.
 

@@ -1,4 +1,19 @@
-# Current manuals refresh — 5 November 2026
+# Noteweld manuals refresh — 7 November 2026
+
+The Noteweld guide now covers deployed verified-email signup/password reset and
+direct image/audio/video uploads to either managed storage or the user's Google
+Drive. It explains destination-specific retry, browser-local preferences, privacy,
+original retention and the disabled paid checkout. A reviewed media/storage guide
+is published; private provider runbooks remain excluded. Native Neovim, offline
+desktop, full vault synchronization and customer-controlled encrypted servers are
+explicitly future work.
+
+The library now has 65 indexed articles and 46 reviewed source records. Local
+Hugo reproduction, 74 HTML pages/1,617 link and asset checks, nine portfolio DOM
+checks, publication-boundary tests and 24 grouped browser checks across all 65
+article routes passed. Other product content and its review dates are preserved.
+
+# Earlier manuals refresh — 5 November 2026
 
 All four product guides and the Workbench/journal were checked against current
 source records. Noteweld's guide now covers the deployed interface, 29-role

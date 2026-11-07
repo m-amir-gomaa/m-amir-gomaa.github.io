@@ -1,9 +1,9 @@
 # Interface and appearance release — 5 November
 
-> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current preview includes the approved forest interface, full appearance customization, Markdown/Vim, connected notes, source imports and browser-session controls. Google/GitHub are configured; real owner consent/link acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 418fb83 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.
+> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 5fbecd6 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.
 
-Source baseline: Owner-access repository, revision 418fb8367b1b311a68c1b8b7487874469ce55862
-Reviewed: 2026-11-05
+Source baseline: Owner-access repository, revision 5fbecd66116306dbcac278981d19a6752f5c50ef
+Reviewed: 2026-11-07
 
 ## What is live
 

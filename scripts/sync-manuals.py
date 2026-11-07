@@ -36,6 +36,7 @@ def main():
     artifact_records = []
     generated = {}
     for project in manifest['projects']:
+        reviewed = project.get('reviewed', DATE)
         repo = (ROOT / project['directory']).resolve()
         revision = git(repo, 'rev-parse', 'HEAD')
         files = {entry['path']: entry for entry in project['files']}
@@ -149,7 +150,7 @@ def main():
                 raise SystemExit(f"Potential credential: review {project['slug']}/{entry['path']} privately")
             relative = f"{project['slug']}/{entry['slug']}"
             download = f"markdown/{relative}.md"
-            values = dict(title=entry['title'], description=entry['description'], date=DATE, weight=number * 10 + 20,
+            values = dict(title=entry['title'], description=entry['description'], date=reviewed, weight=number * 10 + 20,
                           project=project['title'], category=entry.get('category', 'Reference'), notice=notice,
                           sourceurl=source_url, download=download)
             if working_copy:
@@ -157,7 +158,7 @@ def main():
             generated[DOCS / 'content' / (relative + '.md')] = frontmatter(values, body)
             # Download the reviewed public edition with provenance, rather than any private original file.
             baseline = source_url or f"Owner-access repository, revision {revision}"
-            generated[DOCS / 'static' / download] = f"# {entry['title']}\n\n> {values['notice']}\n\nSource baseline: {baseline}\nReviewed: {DATE}\n\n" + body.rstrip() + '\n'
+            generated[DOCS / 'static' / download] = f"# {entry['title']}\n\n> {values['notice']}\n\nSource baseline: {baseline}\nReviewed: {reviewed}\n\n" + body.rstrip() + '\n'
             records.append(dict(project=project['slug'], path=entry['path'], revision=revision,
                                 working_copy=working_copy, source_sha256=digest(text), public_sha256=digest(body),
                                 url=f'/manuals/{relative}/', mode=entry.get('mode', 'public-edition')))
@@ -169,11 +170,14 @@ def main():
         if values.get('sourceurl'):
             continue
         relative = path.relative_to(DOCS / 'content')
+        reviewed = next((project.get('reviewed', DATE) for project in manifest['projects']
+                         if project['slug'] == relative.parts[0]), DATE)
         values['download'] = 'markdown/' + str(relative)
         body = text[end:].strip()
         generated[path] = frontmatter(values, body)
-        generated[DOCS / 'static' / values['download']] = f"# {values['title']}\n\nReviewed: {DATE}\n\n{body}\n"
-    generated[DOCS / 'static' / 'sources.json'] = json.dumps(dict(reviewed=DATE, documents=records, artifacts=artifact_records), indent=2) + '\n'
+        generated[DOCS / 'static' / values['download']] = f"# {values['title']}\n\nReviewed: {reviewed}\n\n{body}\n"
+    latest_review = max([DATE] + [project.get('reviewed', DATE) for project in manifest['projects']])
+    generated[DOCS / 'static' / 'sources.json'] = json.dumps(dict(reviewed=latest_review, documents=records, artifacts=artifact_records), indent=2) + '\n'
     differences = [str(path.relative_to(ROOT)) for path, content in generated.items() if not path.exists() or path.read_text() != content]
     if args.check:
         if differences:
