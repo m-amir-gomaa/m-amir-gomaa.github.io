@@ -99,6 +99,24 @@ Current update — 16 October 2026: Noteweld now includes stable wiki links, out
 
 The full-stack cover is an illustration, clearly labeled. Project descriptions distinguish implemented features from simulation and planned work.
 
+## 9 November 2026 manual refresh
+
+The current guides now cover verified email/recovery in all three hosted apps,
+Noteweld vault import/export, saved history, explicit local sync, reviewed agent
+proposals and keyboard capture. Separate source-distributed guides describe the
+qualified unsigned Linux desktop alpha, reviewed Anki text export and the
+owner-operated encrypted-attachment server profile. They distinguish source
+setup from hosted functionality, public deployment, E2EE and live billing.
+
+Local checks passed: 60 reviewed-source snapshots, reproducible Hugo generation,
+88 HTML pages / 1,909 local links-assets-fragments / 79 articles, nine DOM cases,
+the publication-isolation test and 24 grouped manuals browser checks across all
+79 article routes/four widths. The app chooser/root also passed four-width
+Chromium/accessibility/navigation/no-JS checks. Desktop and narrow-screen captures
+were inspected. This does not certify physical devices, every assistive technology,
+provider consent, payments or a customer-operated server. Public deployment and
+HTTPS verification are recorded separately in the workspace release receipt.
+
 ## Preview and checks
 
 From this directory, run `python -m http.server 8000` and open `http://localhost:8000`. The embedded app uses this portfolio’s origin for localStorage. The separately linked `/Keep/` demo shares storage only when served on the same scheme, host, and port.

@@ -1,11 +1,11 @@
 {
   "title": "Images, audio, video and storage",
   "description": "Choose Noteweld storage or your Google Drive for attachments, paste and drop.",
-  "date": "2026-11-07",
+  "date": "2026-11-09",
   "weight": 210,
   "project": "Noteweld",
   "category": "Usage guide",
-  "notice": "Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 5fbecd6 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
+  "notice": "Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 5868624 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
   "sourceurl": "",
   "download": "markdown/noteweld/media-storage.md"
 }
@@ -22,10 +22,10 @@ The free preview includes 100 MB of managed Noteweld media. Drive originals use 
 
 A failed Drive upload never falls back to Noteweld storage. Keep the note open and use the destination-specific retry. Reloading or closing the editor clears in-memory retry state. If an upload completed but insertion failed, its original may already exist in Drive: select it through the Drive panel rather than uploading another copy.
 
-Removing a Drive reference leaves the original in Google Drive; removing a managed attachment reclaims its Noteweld storage and makes it unavailable in notes using it. Download originals separately from text/account exports. Externally changed Drive files require explicit replacement confirmation.
+Removing a Drive reference leaves the original in Google Drive; removing a managed attachment reclaims its Noteweld storage and makes it unavailable in notes using it. Download individual originals or use Account → Keep a copy → Download Markdown vault to collect current notes and actual available files together. Externally changed Drive files require explicit replacement confirmation.
 
 ## Privacy and unfinished features
 
-These options are private to the signed-in account, but are not end-to-end encrypted. The application verifies and serves the selected bytes. Drive access uses a separate, narrow file grant; Google sign-in alone does not connect storage. Customer-supplied encrypted servers, full Obsidian synchronization, native Neovim and offline desktop operation remain future work.
+These options are private to the signed-in account, but are not end-to-end encrypted. The application verifies and serves the selected bytes. Drive access uses a separate, narrow file grant; Google sign-in alone does not connect storage. [Local-vault sync](/manuals/noteweld/local-sync/) uses explicit previews and conflict decisions. The separately qualified [Linux desktop alpha](/manuals/noteweld/desktop/) adds offline files and actual Neovim; it does not execute Obsidian plugins. A source-distributed [private-server profile](/manuals/noteweld/private-server/) supplies a separate installation with administrator-held encryption keys, not a third hosted destination or E2EE.
 
 [Return to Using Noteweld](/manuals/noteweld/guide/).

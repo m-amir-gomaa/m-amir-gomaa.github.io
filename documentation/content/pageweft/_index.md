@@ -1,12 +1,12 @@
 {
   "title": "Pageweft",
   "description": "Convert technical PDFs into portable Markdown with source-page review and separate corrections.",
-  "date": "2026-11-05",
+  "date": "2026-11-09",
   "weight": 2,
   "number": "02",
   "stack": "PYTHON / MINERU",
   "status": "Bounded public sample",
-  "live": "https://m-amir-gomaa--mineru-pdf-extractor-web-app.modal.run/"
+  "live": "https://pageweft.amirgomaa.com/"
 }
 
 ## A useful reading order
@@ -18,7 +18,7 @@
 
 **Current status:** The free sample is bounded to one selected page and available quota. Paid processing remains closed pending Paddle approval and real payment verification. Historical prices and provider comparisons are dated evidence.
 
-These are reviewed documentation snapshots from 16 October 2026, not live provider/account-status feeds. Each imported record links its source revision; reviewed public editions can be downloaded as Markdown. [How this library is published](/manuals/journal/publishing/).
+Current usage summaries were reviewed on 9 November 2026; dated release records describe their own checkpoints, not live provider/account-status feeds. Each imported record links its source revision; reviewed public editions can be downloaded as Markdown. [How this library is published](/manuals/journal/publishing/).
 
 ## Follow the implementation history
 

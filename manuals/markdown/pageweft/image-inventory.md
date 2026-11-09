@@ -1,9 +1,9 @@
 # Declared image package inventory
 
-> Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones. Production source revision b718402 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
+> Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones. Production source revision 7f7298a is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision b71840236ed905f990ad6c9aa40be256df7410f3
-Reviewed: 2026-11-06
+Source baseline: Owner-access repository, revision 7f7298abe8064c96d1f65865e2fbf25c55b4e5ad
+Reviewed: 2026-11-09
 
 Actual ephemeral CPU inspection of the current deployment package image definitions. Full [wheel metadata and license-file hashes](/manuals/metadata/pageweft-image-inventory.json); SHA256 `4b3bbd7a425c300a9563cfe4a147b0bb1d3e6e49d29a119c7ff75d216d0d1161`. No GPU, model download, customer volume or secret was used. This records installed Python distributions, not a legal compatibility approval. Bundled native/system libraries and model weights need separate review; exact previously observed model revisions and upstream terms are in [third-party source notes](/manuals/pageweft/dependencies/).
 

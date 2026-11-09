@@ -1,7 +1,7 @@
 {
   "title": "Using Pageweft",
   "description": "Inspect a PDF, choose a conversion method, review the source and keep portable files.",
-  "date": "2026-11-05",
+  "date": "2026-11-09",
   "weight": 1,
   "project": "Pageweft",
   "category": "Start here",
@@ -38,9 +38,9 @@ Use original-PDF page references, reported symptoms and the corrections editor. 
 
 Choose single-document, per-page, page-group or PDF-bookmark exports. The ZIP can carry relative image paths, a manifest, source metadata, original engine output and an optional source PDF. Keep raw output when investigating extraction defects.
 
-## Keep your files and recovery key
+## Keep your files
 
-Download results before the 48-hour retention window expires; scheduled cleanup removes expired source/output files. Saved financial/recovery records are separate from file retention. Retain the private recovery key securely and use deletion/discard controls when appropriate.
+Download results before the 48-hour retention window expires; scheduled cleanup removes expired source/output files. Saved financial/recovery records are separate from file retention. Use deletion/discard controls when appropriate. Keep any optional private recovery key securely.
 
 Current pricing and boundaries are in the [technical overview](/manuals/pageweft/overview/). Owner deployment and incident procedures are in [operations](/manuals/pageweft/operations/). The owner reports app domains approved; seller/payout and genuine payment acceptance are still required; no earnings or perfect OCR is promised.
 
@@ -52,4 +52,4 @@ Choose plain Markdown, Obsidian or LLM-oriented exports. Size-targeted chunks pr
 
 ## Accounts and free availability
 
-Use **Account** for email/passphrase sign-in and returning to your private workspace across browsers. Keep the private recovery key shown at signup. Google and mailed reset links remain unconfigured for Pageweft. Signing in does not grant another sample or reset limits. Shared availability is checked privately; owner billing/accounting details are not returned to visitors.
+Use **Account** to sign in, request an email-first signup link or reset a verified address. Choose the passphrase on the confirmation form; opening the link alone does not create the credential. Existing unverified accounts can verify from their owned workspace. Reset completion signs out older sessions and invalidates old recovery keys. A separately saved key is optional when verified email recovery is available. Matching addresses never merge accounts; confirming signup in another browser creates a fresh workspace rather than moving guest files/credits. Google/GitHub registration and genuine consent acceptance remain separate. [Email and recovery guide](/manuals/pageweft/accounts/). Signing in does not grant another sample or reset limits. Shared availability is checked privately; owner billing/accounting details are not returned to visitors.

@@ -1,7 +1,7 @@
 {
   "title": "Pricing research archive",
   "description": "The earlier pricing/discovery record, preserved separately from current product instructions.",
-  "date": "2026-11-06",
+  "date": "2026-11-09",
   "weight": 120,
   "project": "Pageweft",
   "category": "Archive",

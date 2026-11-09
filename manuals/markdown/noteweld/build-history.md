@@ -1,6 +1,6 @@
 # Building Noteweld: accounts to connected notes
 
-Reviewed: 2026-11-07
+Reviewed: 2026-11-09
 
 ## Start from the evidence
 

@@ -1,18 +1,18 @@
 {
   "title": "Owner operations",
   "description": "Usage reporting, admission controls, pause, encrypted ledger backups and recovery.",
-  "date": "2026-11-06",
+  "date": "2026-11-09",
   "weight": 60,
   "project": "Pageweft",
   "category": "Operations",
-  "notice": "Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones. Production source revision b718402 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
+  "notice": "Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones. Production source revision 7f7298a is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
   "sourceurl": "",
   "download": "markdown/pageweft/operations.md"
 }
 
 ## Current public operating boundary
 
-Pageweft runs behind its public Cloudflare gateway on Modal. Email/passphrase and private-key recovery are deployed. Accounts and balances are product-specific. Google and mailed password reset remain unconfigured; paid checkout is closed.
+Pageweft runs behind its public Cloudflare gateway on Modal. Email-first signup, verification and mailed resets for verified addresses are deployed alongside private-key recovery. Accounts and balances are product-specific. Dedicated Google/GitHub registration and genuine consent remain unaccepted; checkout is closed.
 
 ## Admission and privacy
 

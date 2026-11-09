@@ -1,7 +1,7 @@
 {
   "title": "Historical vault design",
   "description": "An optional earlier vault/agent concept, preserved as a design reference.",
-  "date": "2026-11-06",
+  "date": "2026-11-09",
   "weight": 100,
   "project": "Sonaweft",
   "category": "Archive",

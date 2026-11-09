@@ -1,6 +1,6 @@
 # Using Sonaweft
 
-Reviewed: 2026-11-06
+Reviewed: 2026-11-09
 
 ## Hear a completed example
 
@@ -40,6 +40,6 @@ Use playback speed/selection loop, source-linked quotes, listening cues and glos
 
 ## Accounts and free availability
 
-Use **Account** for email/passphrase sign-in and cross-browser recovery. Save the private recovery key at signup; mailed resets and Google sign-in remain unconfigured for Sonaweft. Signing in does not reset sample eligibility. If processing is unavailable, the app displays **Currently unavailable. Please try again later.** Completed examples remain open and owner billing/accounting stays private.
+Use **Account** to sign in, request an email-first signup link or reset a verified address. Choose the passphrase on the confirmation form; opening the link alone does not create the credential. Existing unverified accounts can verify from their owned workspace. Reset completion signs out older sessions and invalidates old recovery keys. A separately saved key is optional when verified email recovery is available. Matching addresses never merge accounts; confirming signup in another browser creates a fresh workspace rather than moving guest files/credits. Google/GitHub registration and genuine consent acceptance remain separate. [Email and recovery guide](/manuals/sonaweft/accounts/). Signing in does not reset sample eligibility. If processing is unavailable, the app displays **Currently unavailable. Please try again later.** Completed examples remain open and owner billing/accounting stays private.
 
 [The scientific example record](/manuals/sonaweft/scientific-example/) explains the source, credit and what the saved transcript demonstrates.

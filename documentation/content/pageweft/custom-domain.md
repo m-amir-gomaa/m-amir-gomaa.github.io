@@ -1,11 +1,11 @@
 {
   "title": "Custom domain and account access",
   "description": "Public hostname, secure gateway, existing-account access and rollback.",
-  "date": "2026-11-06",
+  "date": "2026-11-09",
   "weight": 150,
   "project": "Pageweft",
   "category": "Operations",
-  "notice": "Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones. Production source revision b718402 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
+  "notice": "Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones. Production source revision 7f7298a is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
   "sourceurl": "",
   "download": "markdown/pageweft/custom-domain.md"
 }

@@ -1,9 +1,9 @@
 # Payment activation checklist
 
-> Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones. Production source revision b718402 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification.
+> Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones. Production source revision 7f7298a is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification.
 
-Source baseline: Owner-access repository, revision b71840236ed905f990ad6c9aa40be256df7410f3
-Reviewed: 2026-11-06
+Source baseline: Owner-access repository, revision 7f7298abe8064c96d1f65865e2fbf25c55b4e5ad
+Reviewed: 2026-11-09
 
 Updated 18 October 2026. **Paddle Billing is the selected provider. The integration is deployed; customer checkout remains disabled.** This supersedes the former Lemon Squeezy activation instructions. Existing balances, session keys and permanent Modal identifiers were preserved. Email verification is complete according to Amir; merchant identity/domain approval and actual payment delivery are separate.
 

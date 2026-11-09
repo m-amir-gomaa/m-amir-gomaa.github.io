@@ -1,11 +1,11 @@
 {
   "title": "Declared image package inventory",
   "description": "Observed package versions, license metadata/file hashes and native/system/model review boundaries.",
-  "date": "2026-11-06",
+  "date": "2026-11-09",
   "weight": 140,
   "project": "Sonaweft",
   "category": "Reference",
-  "notice": "Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones. Production source revision f77aba4 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
+  "notice": "Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones. Production source revision 91dd820 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
   "sourceurl": "",
   "download": "markdown/sonaweft/image-inventory.md"
 }
