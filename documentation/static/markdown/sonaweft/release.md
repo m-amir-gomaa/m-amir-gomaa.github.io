@@ -1,8 +1,8 @@
 # Hosted release evidence
 
-> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Dedicated Google/GitHub registration and genuine consent remain open. Paid checkout is closed. Dated release records describe their own checkpoints. Production source revision cd71be6 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
+> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Dedicated Google/GitHub registration and genuine consent remain open. Paid checkout is closed. Dated release records describe their own checkpoints. Production source revision 423e5a1 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce
+Source baseline: Owner-access repository, revision 423e5a1239645814df9d4081543e611b3b8306ae
 Reviewed: 2026-11-09
 
 *Original record: Release evidence — 15 October 2026.*

@@ -1,8 +1,8 @@
 # Custom domain and account access
 
-> Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Dedicated Google/GitHub registration and genuine consent remain open. Paid checkout is closed. Dated release records describe their own checkpoints. Production source revision 7f7298a is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
+> Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Dedicated Google/GitHub registration and genuine consent remain open. Paid checkout is closed. Dated release records describe their own checkpoints. Production source revision 1d1f932 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision 7f7298abe8064c96d1f65865e2fbf25c55b4e5ad
+Source baseline: Owner-access repository, revision 1d1f93250bf1d571569196ae283b030971d7b988
 Reviewed: 2026-11-09
 
 Public address: **https://pageweft.amirgomaa.com/**. A fixed-origin Cloudflare Workers Free gateway connects to the preserved Modal endpoint; Modal still runs the app and processing. No Team upgrade or live payment activation was made. The shared reproducible gateway source/config/tests and rollout guide are in the workspace at `freelance/workflow/cloudflare-edge/`.

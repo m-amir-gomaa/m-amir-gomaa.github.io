@@ -5,7 +5,7 @@
   "weight": 50,
   "project": "Sonaweft",
   "category": "Architecture",
-  "notice": "Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Dedicated Google/GitHub registration and genuine consent remain open. Paid checkout is closed. Dated release records describe their own checkpoints. Production source revision cd71be6 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
+  "notice": "Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Dedicated Google/GitHub registration and genuine consent remain open. Paid checkout is closed. Dated release records describe their own checkpoints. Production source revision 423e5a1 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
   "sourceurl": "",
   "download": "markdown/sonaweft/architecture.md"
 }

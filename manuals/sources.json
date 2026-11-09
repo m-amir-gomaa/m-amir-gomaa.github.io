@@ -4,17 +4,17 @@
     {
       "project": "noteweld",
       "path": "README.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "b661bec25fc1c20929f738e5638f6c658b2d14f643913d59f569a372557e3963",
-      "public_sha256": "73af3b455414060e50434eb6166e9703bb1f9c123ee9e0bc344de2697208ab17",
+      "public_sha256": "5aa73603e854eb6918e7761f179a5dd5f2fa34f9d1c34256522c261df56eb42a",
       "url": "/manuals/noteweld/overview/",
       "mode": "curated"
     },
     {
       "project": "noteweld",
       "path": "docs/EDITOR.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "75a42add5da52c2229c73ac3dfb025cea5a65d9a6668e9eb47c8779324fbe5c7",
       "public_sha256": "55d0fae50186ea1f1a088cf41094f3da52524dbd44a74d88b0a9bca24cc2aec8",
@@ -24,7 +24,7 @@
     {
       "project": "noteweld",
       "path": "docs/CONNECTIONS.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "2f4156cc16ad6128ff0851039476da4e2cd06f59a05f337f5602cfefd53803e0",
       "public_sha256": "be178905281082d04db01ee8ec27334c697c9d1d5b6fea8f7b3123933bf0f5c8",
@@ -34,7 +34,7 @@
     {
       "project": "noteweld",
       "path": "docs/SOURCE-BUNDLES.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "c0979b4ff31fa0e8cb81af18b0178e1e3b993f2017be9f89c625ccdefb22f2e7",
       "public_sha256": "be6bc789f41284263245a290c173def7bad3c81c28150c00ba301874ee750afe",
@@ -44,17 +44,17 @@
     {
       "project": "noteweld",
       "path": "docs/OPERATIONS.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "fd2dc907b63d08657349afce22ad943ff84e4a7a9c9369114ae8bd58871909ff",
-      "public_sha256": "efa60758e0ca6e9e0a8c155d0da0e0cd823fe343dfb80ccbbaff531ffa5ff103",
+      "public_sha256": "20309aee68ee8dd0bcecc514fc2128be90053b8455a1e76e2a05037ae9d9b91a",
       "url": "/manuals/noteweld/operations/",
       "mode": "curated"
     },
     {
       "project": "noteweld",
       "path": "docs/CONNECTIONS-RELEASE.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "e0a608a77775b3a926c570227772028f1af327e759eee64f1bdef08b18fbb83f",
       "public_sha256": "a008da602188e4788f378deb2706db140671716822870a8b7c8296cd4d302932",
@@ -64,7 +64,7 @@
     {
       "project": "noteweld",
       "path": "docs/EDITOR-RELEASE.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "374ca875753b0d5b1e9a64fd7cc56be744d9270ea267efd5a5cc5804f75033c7",
       "public_sha256": "034c2e46683d913bb80586c928fe34fa9575b6ffb61bd605561f6fe11db63fa1",
@@ -74,7 +74,7 @@
     {
       "project": "noteweld",
       "path": "docs/RELEASE.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "781e4ef97e8cbf4e756e760f9d26af1ddd1987ab252d156f3272e711b6fc6536",
       "public_sha256": "43b4accae0a14d297055a986ed284f83096d66c97d8ce3d9e40bcecd71dbc6d7",
@@ -84,7 +84,7 @@
     {
       "project": "noteweld",
       "path": "docs/ACCESSIBILITY-20261016.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "0da94ff3b1e823d96ff929a36d95f9ec620d949fa407665973305bb4f854b021",
       "public_sha256": "b5d5001254a94327a35f30806919236512ca23084028e283ad26386ce3854ddc",
@@ -94,7 +94,7 @@
     {
       "project": "noteweld",
       "path": "docs/CUSTOM-DOMAIN.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "d074761158500b11c134d1308c0530ea47fdc69e2840401c6ce6f91514cc7fdf",
       "public_sha256": "f40e1a5ef298f9d07fef8487a7562dfaf0e321834c0f34a406b2fcf67299dca8",
@@ -104,7 +104,7 @@
     {
       "project": "noteweld",
       "path": "docs/ACCOUNTS.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "21abb076279f1da536261478496863e800c503e7ab29d06f6a9db074adfd633c",
       "public_sha256": "c79016b65e4fd6de27cb999f1cbd1cfc7016dfb370a2623f8c7ec94abb4fbabc",
@@ -114,7 +114,7 @@
     {
       "project": "noteweld",
       "path": "docs/SOURCE-HANDOFF-RELEASE.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "a66cbc046dfb910a4337662d49fb1de89dc22d9ff2343c9081d581ffbfd62f38",
       "public_sha256": "3d9c0908a61ae8df507542e221271e04f892c0d68160282276ef952b863903a9",
@@ -124,7 +124,7 @@
     {
       "project": "noteweld",
       "path": "docs/UI-20261105.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "e9e182382badf35f39d479a3284694c97a524eb0f822bcc1c548dc5014d10366",
       "public_sha256": "78246fa31b14d65927bf143abea1acbdd3ce35532b38dddb51307d4c9898fe49",
@@ -134,7 +134,7 @@
     {
       "project": "noteweld",
       "path": "docs/OAUTH-20261105.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "8e200235f974f0a92cdf86160a82a979f41a1b9fa77737d240288a1b525a2fc9",
       "public_sha256": "7410a7b3ce672e67a938a7a09bbe41d80645677ba63a117440d5299c09d2476b",
@@ -144,7 +144,7 @@
     {
       "project": "noteweld",
       "path": "docs/EMAIL-VERIFICATION-20261106.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "3b941d0bd842b793b9e965e2c93aaed166abef9f282afa1fa38928984b511d78",
       "public_sha256": "74ffea14178f55d0774c19c57a1d44b306b4208cdb70f3d38d4bd4b24e478283",
@@ -154,7 +154,7 @@
     {
       "project": "noteweld",
       "path": "docs/MEDIA-20261106.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "f0d33f023a6465432507c96208bbfc0faa29aa2136f9d67138d9d490d4703910",
       "public_sha256": "abcf5567f078d13e0770d7b3bd9413dd87ca0595b106548999a7c89a02a9a435",
@@ -164,7 +164,7 @@
     {
       "project": "noteweld",
       "path": "docs/STORAGE-20261106.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "2ffc1445cbb0ab47ca95930ec437b586a0089c2dffae8c267d5d68f37a7ab1f6",
       "public_sha256": "4cc3570b395b6ff5cd486599d341347f39a01534ce6d928b18e46496d91386e1",
@@ -174,7 +174,7 @@
     {
       "project": "noteweld",
       "path": "docs/BILLING-PREPARATION-20261106.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "cedd55d16c72ba03a592a4b396f6b6253dd4261e27f5b1adab654fee7ec7e277",
       "public_sha256": "02400f324252cb0b8eae3f05f3ed7254805e2c1fc3bf134940a09f9b96e5eed1",
@@ -184,7 +184,7 @@
     {
       "project": "noteweld",
       "path": "docs/STORAGE-BACKENDS.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "0dddbebefa1bb044480b751ea9b826ed2b63af10b3e259df1f0dd207e8757178",
       "public_sha256": "72a3fe82e0a2ebd0d8f5c97d99630274efe148a0db8d22171a853286b9803a69",
@@ -194,7 +194,7 @@
     {
       "project": "noteweld",
       "path": "docs/HISTORY.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "44a2cef70c6a70d75e3c8d85de7e195a2d0122512ff1c9849c15cd730259c23b",
       "public_sha256": "3e86852b94eeaf072a8ee0856e29659f498cbde6a3141532edc3bbd6097830f9",
@@ -204,7 +204,7 @@
     {
       "project": "noteweld",
       "path": "docs/KEYBOARD.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "d70324679ebe8b4fd01d7c0ac8f4a3e3727bda5aa8f5434924182c8808ab0573",
       "public_sha256": "70b1133908ee53cc2342c93782a4651bc35b7ca223877ac8ce629db2392015de",
@@ -214,7 +214,7 @@
     {
       "project": "noteweld",
       "path": "docs/VAULT-20261108.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "fc2f30ba6e2dea3601711ddc81b9b428592d119ee51ddcac3567390457c1de01",
       "public_sha256": "c45c4b1d1a9489335a33f3ee3998f09223070832d0519bc18c2a55c7ecdb58bf",
@@ -224,7 +224,7 @@
     {
       "project": "noteweld",
       "path": "docs/SYNC.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "fbb62b55de888a06d63160a3da84271380a609790d001344ef4a8b1e09b85a5b",
       "public_sha256": "14f44af9f19b403c7436a84b9145f563a1980f32c6b84d6cc83c25d10fda0a7a",
@@ -234,7 +234,7 @@
     {
       "project": "noteweld",
       "path": "docs/AGENT-INTEGRATION.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "bc7b6653e86f9c7977b31caca3dda99448ae58c84af98c14bba60d280b41a0e8",
       "public_sha256": "8cb613654e857f4fec37177b20bb7702cacb82af02b67f22f61ef21b35052f87",
@@ -244,7 +244,7 @@
     {
       "project": "noteweld",
       "path": "desktop/README.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "4602fa5a291a4e471656caa0095aa617a0f3fedcb405212cd34b880b1e379aad",
       "public_sha256": "e2c5fcf49f7611a9b185a8901aa470519c6010f0c6b58a8f4041b1c806994b1c",
@@ -254,7 +254,7 @@
     {
       "project": "noteweld",
       "path": "integrations/anki/README.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "17fe92942b1deadba231b40eef82c5b68476775fe9003caa4fbfcc78ad58c9c8",
       "public_sha256": "6e9d21c7f854fb99934c1b5ed7bf254de0444300ff8522cc1cff59bb685dc567",
@@ -264,7 +264,7 @@
     {
       "project": "noteweld",
       "path": "integrations/private-server/README.md",
-      "revision": "b4944d8c42d6399c0145d7ccd100418338d38924",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
       "working_copy": false,
       "source_sha256": "b877bdaf854a2467365fa083e5f389aed193cb20e2e118ab80aed2c3a6b49f6e",
       "public_sha256": "b191918aab659b62152fc4c85ba25d98ac6fb3b58946bfefdf362526848eb864",
@@ -272,9 +272,19 @@
       "mode": "curated"
     },
     {
+      "project": "noteweld",
+      "path": "docs/ECOSYSTEM.md",
+      "revision": "3a6e097b05cc466f8ec1213415f96b50454ee196",
+      "working_copy": false,
+      "source_sha256": "3eb5ae290def3297937cf8f6a7ab8fca4eb4504e74d33f231f338c514657f128",
+      "public_sha256": "55f4df9dc220c4c15715c0f9aee1dc226d8264e8e812f67d6e10cbbab886138a",
+      "url": "/manuals/noteweld/ecosystem/",
+      "mode": "public-edition"
+    },
+    {
       "project": "pageweft",
       "path": "README.md",
-      "revision": "7f7298abe8064c96d1f65865e2fbf25c55b4e5ad",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
       "working_copy": false,
       "source_sha256": "8a493bf35540f34bc01facd3d7590a6f493dc499c00c9ff0b8bad4bf5c4c96c2",
       "public_sha256": "f397cebb32570d152ff153cb4d9b9bfc5f436d706b3cdd35e59edccf8304d4d7",
@@ -284,7 +294,7 @@
     {
       "project": "pageweft",
       "path": "docs/CONVERSION-PRODUCT.md",
-      "revision": "7f7298abe8064c96d1f65865e2fbf25c55b4e5ad",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
       "working_copy": false,
       "source_sha256": "cc60fbbe347eacfb7b77f51b51d29bdd95e4273e83b37d6ea46a437eee24dea6",
       "public_sha256": "e355de9399286429ef7305bbf1b9a92ff84fc57fcef5c9a4002cc20833b171f7",
@@ -294,7 +304,7 @@
     {
       "project": "pageweft",
       "path": "docs/THIRD-PARTY.md",
-      "revision": "7f7298abe8064c96d1f65865e2fbf25c55b4e5ad",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
       "working_copy": false,
       "source_sha256": "c9101e16532f734844492818cda736b275120d03b0fc11dcbd168e542ff6042b",
       "public_sha256": "fd4d4a92e75f9e9c3e614e2850b8d03c547f79bfe60c026453018b4328f0f11d",
@@ -304,7 +314,7 @@
     {
       "project": "pageweft",
       "path": "docs/OPERATIONS.md",
-      "revision": "7f7298abe8064c96d1f65865e2fbf25c55b4e5ad",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
       "working_copy": false,
       "source_sha256": "bc57d7914b13daeccc2f331119f566196dbccca210866e9bc57ff5e3d08dee75",
       "public_sha256": "813903581d2447d7f1b72aaa60a4742a3aa726f7b10b7736bd1e07075e0ccee1",
@@ -314,7 +324,7 @@
     {
       "project": "pageweft",
       "path": "docs/PAYMENT-ACTIVATION.md",
-      "revision": "7f7298abe8064c96d1f65865e2fbf25c55b4e5ad",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
       "working_copy": false,
       "source_sha256": "587678b8dedca5bd5165185628700e9faeb6b06794b0de63911051c247d307fd",
       "public_sha256": "b8b1d93ab53281892dcc145c4bd7fbf8a9191670a4039589106393c0996a945b",
@@ -324,7 +334,7 @@
     {
       "project": "pageweft",
       "path": "docs/LAUNCH.md",
-      "revision": "7f7298abe8064c96d1f65865e2fbf25c55b4e5ad",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
       "working_copy": false,
       "source_sha256": "7cc0e0c7a12f23038c66a8da17adcc0f15217a635fec5d47b0e3cbff72ae6ba5",
       "public_sha256": "56f6f344092cfb4d43ec998d2790f27e67236440180cbe9652c618fc5ef0950f",
@@ -334,7 +344,7 @@
     {
       "project": "pageweft",
       "path": "docs/BOOK-RELEASE.md",
-      "revision": "7f7298abe8064c96d1f65865e2fbf25c55b4e5ad",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
       "working_copy": true,
       "source_sha256": "e619459cbbec1639b57e87547c59829fe9e2cedb1da13b08b40f0ef645b39318",
       "public_sha256": "cac369579d3607e9bdaad56cd8b3a6d443cd2708f90d53d1df5c44ac6758fed8",
@@ -344,7 +354,7 @@
     {
       "project": "pageweft",
       "path": "docs/PADDLE-20261015.md",
-      "revision": "7f7298abe8064c96d1f65865e2fbf25c55b4e5ad",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
       "working_copy": false,
       "source_sha256": "d68d7a9e3c68a29d2d7148ef523b72cd04aadd63217b8bbd9e83f24d0709128a",
       "public_sha256": "7294fe4ea3c8d0710a8acbc0141eb16ea5c59936d24de771bcf1579ba70df9e0",
@@ -354,7 +364,7 @@
     {
       "project": "pageweft",
       "path": "docs/VERIFICATION-2026-10-14.md",
-      "revision": "7f7298abe8064c96d1f65865e2fbf25c55b4e5ad",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
       "working_copy": false,
       "source_sha256": "cb08580476c3d49a3049cac13510173dc31b4dca3ab0e9417b97bbee30545aef",
       "public_sha256": "6bce6e509f290b7594b1e1960630239de12c0b8498fb447fb6c6773d5de8ef2c",
@@ -364,7 +374,7 @@
     {
       "project": "pageweft",
       "path": "docs/PRICING-AND-DISCOVERY.md",
-      "revision": "7f7298abe8064c96d1f65865e2fbf25c55b4e5ad",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
       "working_copy": true,
       "source_sha256": "a6b0a23b290caaf258bfb216425b6bee738c100191422977f76ebe64ad660b38",
       "public_sha256": "b3b3e021966961ea563a4323bddf906a2ad9d24ca58d2d832063d342fead9c41",
@@ -374,7 +384,7 @@
     {
       "project": "pageweft",
       "path": "docs/SAAS-DECISIONS.md",
-      "revision": "7f7298abe8064c96d1f65865e2fbf25c55b4e5ad",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
       "working_copy": true,
       "source_sha256": "0bda0c5f46bb28c5e4a7f9253503215ea2964accd12ad508448ef6c1f6368e8f",
       "public_sha256": "ca5d2174d1211863bce8c7e7f076ee5c4aaa48be528785c18925826b81af21ee",
@@ -384,7 +394,7 @@
     {
       "project": "pageweft",
       "path": "docs/ACCESSIBILITY-20261016.md",
-      "revision": "7f7298abe8064c96d1f65865e2fbf25c55b4e5ad",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
       "working_copy": false,
       "source_sha256": "5a21dab5d763d1bc7b90e308101e81f79c712d565dd99c7537767f030bab5940",
       "public_sha256": "d6b4437150e11e73a1922e98bf0a3f50a5a031026f12143fccf5e69e179bc7a5",
@@ -394,7 +404,7 @@
     {
       "project": "pageweft",
       "path": "docs/CUSTOM-DOMAIN.md",
-      "revision": "7f7298abe8064c96d1f65865e2fbf25c55b4e5ad",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
       "working_copy": false,
       "source_sha256": "8b2d3aa5ab44cd72ccffbafbd9d1ed6431547f809be25b0f3a21557aa9f67c88",
       "public_sha256": "12a73a33486c611bae49a2d3697d30752aaaf51792f837b99b53cdbd565378ed",
@@ -404,7 +414,7 @@
     {
       "project": "pageweft",
       "path": "docs/SOURCE-WORKFLOW-RELEASE.md",
-      "revision": "7f7298abe8064c96d1f65865e2fbf25c55b4e5ad",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
       "working_copy": false,
       "source_sha256": "fb3d9cdf775c0cc5ab9c40a60f08af52363f827bfce12124c7039a2cabf9141d",
       "public_sha256": "e8d16db4d82ab54aa935fd807044e14c88667de499f2de63e40a27c00fd52b87",
@@ -414,7 +424,7 @@
     {
       "project": "pageweft",
       "path": "docs/QUALITY-BENCHMARKS.md",
-      "revision": "7f7298abe8064c96d1f65865e2fbf25c55b4e5ad",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
       "working_copy": false,
       "source_sha256": "b159acd5cc85906f7e8e04f487dfa11c9ade885d8ad6d7eca1ecb7e6031b7d07",
       "public_sha256": "565e43b217472bd458c4c2bbc1108f5a9358253bd1ee713aae4423fdeee9d3ec",
@@ -424,7 +434,7 @@
     {
       "project": "pageweft",
       "path": "docs/DEPENDENCY-INVENTORY.md",
-      "revision": "7f7298abe8064c96d1f65865e2fbf25c55b4e5ad",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
       "working_copy": false,
       "source_sha256": "249ddbb35dc7e9610dbee11dc77b0ef1c51b702b8537ccc391776f63e6727778",
       "public_sha256": "a6633b15b024af3ccfb01868bbdbaf68dcd59a02adeeb6aa30713798876c05b9",
@@ -434,7 +444,7 @@
     {
       "project": "pageweft",
       "path": "docs/ACCOUNTS-20261107.md",
-      "revision": "7f7298abe8064c96d1f65865e2fbf25c55b4e5ad",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
       "working_copy": false,
       "source_sha256": "dc2dc8e269f3ec1ce32c162a47bca732077bc37908da32a4e174bb8e0eb844d3",
       "public_sha256": "509644470dd4da376a8269d0d6822e9db670a9b3a2cf87c69f8ac8a3edb51150",
@@ -442,9 +452,19 @@
       "mode": "curated"
     },
     {
+      "project": "pageweft",
+      "path": "docs/ECOSYSTEM.md",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
+      "working_copy": false,
+      "source_sha256": "3eb5ae290def3297937cf8f6a7ab8fca4eb4504e74d33f231f338c514657f128",
+      "public_sha256": "55f4df9dc220c4c15715c0f9aee1dc226d8264e8e812f67d6e10cbbab886138a",
+      "url": "/manuals/pageweft/ecosystem/",
+      "mode": "public-edition"
+    },
+    {
       "project": "sonaweft",
       "path": "README.md",
-      "revision": "cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce",
+      "revision": "423e5a1239645814df9d4081543e611b3b8306ae",
       "working_copy": false,
       "source_sha256": "a12f32a3759876ae38a1eb8475fd899eed7c1583862a2955f51657b564dc44d9",
       "public_sha256": "653550a00aa73e6d51b211d12c9e650bac1113f37ee9e20938599cfb3b5c203f",
@@ -454,7 +474,7 @@
     {
       "project": "sonaweft",
       "path": "docs/PRODUCT.md",
-      "revision": "cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce",
+      "revision": "423e5a1239645814df9d4081543e611b3b8306ae",
       "working_copy": true,
       "source_sha256": "28d9004dadfdb26da007387adb44a840aae9d4622637b68e200d86805df27787",
       "public_sha256": "23551aa07450472a36b0c98496bdbcf448a9771257e6c65decffcedac9882371",
@@ -464,7 +484,7 @@
     {
       "project": "sonaweft",
       "path": "docs/architecture.md",
-      "revision": "cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce",
+      "revision": "423e5a1239645814df9d4081543e611b3b8306ae",
       "working_copy": false,
       "source_sha256": "0a35814a6539c429bf35daa684d4aaf19b0003a79f5a69cb46eb5884beb3c9cc",
       "public_sha256": "3032b2123e5c508b2741dbad1ac0560a9fc059a9795fcc3839c364c27b130386",
@@ -474,7 +494,7 @@
     {
       "project": "sonaweft",
       "path": "docs/OPERATIONS.md",
-      "revision": "cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce",
+      "revision": "423e5a1239645814df9d4081543e611b3b8306ae",
       "working_copy": false,
       "source_sha256": "204c88ba96a679d1fd55c9631906cf40860ef066c06e950f3485bb8e6f561a8f",
       "public_sha256": "4037b4eb7c7dbd2f9de920a01a34e84232f7a05f287cbf135472306fc18e35aa",
@@ -484,7 +504,7 @@
     {
       "project": "sonaweft",
       "path": "docs/RELEASE.md",
-      "revision": "cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce",
+      "revision": "423e5a1239645814df9d4081543e611b3b8306ae",
       "working_copy": false,
       "source_sha256": "c6c3eccaa9a2540660f86bc254e5142a6ec5c798858b27fa0b3628eaf42da2c6",
       "public_sha256": "c0227eb55a1d6fd3f486193d66f3b8eeb8221138bef73d91ed96bb61138f0b21",
@@ -494,7 +514,7 @@
     {
       "project": "sonaweft",
       "path": "docs/claude-code.md",
-      "revision": "cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce",
+      "revision": "423e5a1239645814df9d4081543e611b3b8306ae",
       "working_copy": false,
       "source_sha256": "9f5ee4636a5f2a7fba47a3b0424cae725737884145d594304309eebe0bbef949",
       "public_sha256": "d2451fe63f9285871ab143478292fab02df4ea1f6a39b816c367bc99350b17c9",
@@ -504,7 +524,7 @@
     {
       "project": "sonaweft",
       "path": "docs/demo-upwork.md",
-      "revision": "cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce",
+      "revision": "423e5a1239645814df9d4081543e611b3b8306ae",
       "working_copy": false,
       "source_sha256": "8d748cff46bfed309360a869e710a5d4591322efbdcc2e3fdeabb6fbadcaa3cc",
       "public_sha256": "d6bd6f2f5d8ee00c4c721126fc50645b394dd35578c9e8020592e1f9517ff343",
@@ -514,7 +534,7 @@
     {
       "project": "sonaweft",
       "path": "docs/second-brain.md",
-      "revision": "cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce",
+      "revision": "423e5a1239645814df9d4081543e611b3b8306ae",
       "working_copy": false,
       "source_sha256": "b250a3df5411928ff6612d0e8435e4dd60c0b957260f1ad7913a5ea1ca80e312",
       "public_sha256": "a00b7fd3f7f3b46b69d4654b8489c32029beef663a2119394ae43a0d271d4e75",
@@ -524,7 +544,7 @@
     {
       "project": "sonaweft",
       "path": "docs/CUSTOM-DOMAIN.md",
-      "revision": "cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce",
+      "revision": "423e5a1239645814df9d4081543e611b3b8306ae",
       "working_copy": false,
       "source_sha256": "14e0813c26288196e2f8167ae914571cd0e64f4e96a0cec5f44d144f7a81b2ad",
       "public_sha256": "95d8ed17a71bed97278e3f8f78aae696ecd8437fe870edb28f034c4ef0340da2",
@@ -534,7 +554,7 @@
     {
       "project": "sonaweft",
       "path": "docs/SOURCE-WORKFLOW-RELEASE.md",
-      "revision": "cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce",
+      "revision": "423e5a1239645814df9d4081543e611b3b8306ae",
       "working_copy": false,
       "source_sha256": "dbb8dbbe9247e2c6c41e3bbffe9444d35a937eea4ffc04ca1474cc68ecd6ab56",
       "public_sha256": "fda64546f85af613cc95ce6f76333ee497af00b3952bc8fc0da908e41e226b3d",
@@ -544,7 +564,7 @@
     {
       "project": "sonaweft",
       "path": "docs/QUALITY-BENCHMARKS.md",
-      "revision": "cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce",
+      "revision": "423e5a1239645814df9d4081543e611b3b8306ae",
       "working_copy": false,
       "source_sha256": "68736c256d1af77864ff19ace2f1403891df7b8a23231d8a589cca7e5f689585",
       "public_sha256": "f672e2f60c943eb1c625f44ef281a78d6e5427970a08594804cf2ea893610838",
@@ -554,7 +574,7 @@
     {
       "project": "sonaweft",
       "path": "docs/DEPENDENCY-INVENTORY.md",
-      "revision": "cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce",
+      "revision": "423e5a1239645814df9d4081543e611b3b8306ae",
       "working_copy": false,
       "source_sha256": "3735af09297d8a739134afe45d903c0e5b674494b1370618c5d36a792dfa764b",
       "public_sha256": "1290e649e49ed45c5aec171c999efcd220d8b56b900a0de973bccf6bf15dcd2d",
@@ -564,7 +584,7 @@
     {
       "project": "sonaweft",
       "path": "docs/ANNOTATION-HISTORY.md",
-      "revision": "cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce",
+      "revision": "423e5a1239645814df9d4081543e611b3b8306ae",
       "working_copy": false,
       "source_sha256": "6f2015e8f64308039aee1532588c6ac15617bfe13ef86aa9e92795a6c59ab5c9",
       "public_sha256": "91ba27239747e317d6719f0dd0d96e59053aa7e1c5814f256bc1c7852d4a6804",
@@ -574,7 +594,7 @@
     {
       "project": "sonaweft",
       "path": "docs/SCIENTIFIC-EXAMPLE.md",
-      "revision": "cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce",
+      "revision": "423e5a1239645814df9d4081543e611b3b8306ae",
       "working_copy": false,
       "source_sha256": "8d3f7d62a5631cc10626d02ef26a2752a6013a50ba7509f7c8db7d45b06edb69",
       "public_sha256": "5d308507ada101ac025ef0c3c84e9f8082fbb5fa3d9787c9806defb805f11237",
@@ -584,12 +604,22 @@
     {
       "project": "sonaweft",
       "path": "docs/ACCOUNTS-20261107.md",
-      "revision": "cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce",
+      "revision": "423e5a1239645814df9d4081543e611b3b8306ae",
       "working_copy": false,
       "source_sha256": "f5e23984b976a315526aa5e114b46356725585a8dce6e6a40817eedbcf7ccd9f",
       "public_sha256": "509644470dd4da376a8269d0d6822e9db670a9b3a2cf87c69f8ac8a3edb51150",
       "url": "/manuals/sonaweft/accounts/",
       "mode": "curated"
+    },
+    {
+      "project": "sonaweft",
+      "path": "docs/ECOSYSTEM.md",
+      "revision": "423e5a1239645814df9d4081543e611b3b8306ae",
+      "working_copy": false,
+      "source_sha256": "3eb5ae290def3297937cf8f6a7ab8fca4eb4504e74d33f231f338c514657f128",
+      "public_sha256": "55f4df9dc220c4c15715c0f9aee1dc226d8264e8e812f67d6e10cbbab886138a",
+      "url": "/manuals/sonaweft/ecosystem/",
+      "mode": "public-edition"
     },
     {
       "project": "vanilla-keep",
@@ -606,14 +636,14 @@
     {
       "project": "pageweft",
       "path": "docs/DEPENDENCY-INVENTORY-20261019.json",
-      "revision": "7f7298abe8064c96d1f65865e2fbf25c55b4e5ad",
+      "revision": "1d1f93250bf1d571569196ae283b030971d7b988",
       "sha256": "4b3bbd7a425c300a9563cfe4a147b0bb1d3e6e49d29a119c7ff75d216d0d1161",
       "url": "/manuals/metadata/pageweft-image-inventory.json"
     },
     {
       "project": "sonaweft",
       "path": "docs/DEPENDENCY-INVENTORY-20261019.json",
-      "revision": "cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce",
+      "revision": "423e5a1239645814df9d4081543e611b3b8306ae",
       "sha256": "4e1fbbab5b0c50ab0afd77f0c95341c011bd4829b23bc5a402661dfcda1a68a0",
       "url": "/manuals/metadata/sonaweft-image-inventory.json"
     }

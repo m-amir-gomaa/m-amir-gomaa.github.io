@@ -1,8 +1,8 @@
 # Declared image package inventory
 
-> Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Dedicated Google/GitHub registration and genuine consent remain open. Paid checkout is closed. Dated release records describe their own checkpoints. Production source revision cd71be6 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
+> Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Dedicated Google/GitHub registration and genuine consent remain open. Paid checkout is closed. Dated release records describe their own checkpoints. Production source revision 423e5a1 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce
+Source baseline: Owner-access repository, revision 423e5a1239645814df9d4081543e611b3b8306ae
 Reviewed: 2026-11-09
 
 Actual CPU inspection of the current web/Whisper package images. Full [metadata and license-file hashes](/manuals/metadata/sonaweft-image-inventory.json), SHA256 `4e1fbbab5b0c50ab0afd77f0c95341c011bd4829b23bc5a402661dfcda1a68a0`. No model volume, app secret, customer source or GPU was used. The NVIDIA CUDA base image emitted its normal upstream notice on CPU; this is not GPU inference or a change to the desktop drivers.

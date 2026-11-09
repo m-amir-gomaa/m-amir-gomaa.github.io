@@ -1,8 +1,8 @@
 # Technical overview
 
-> Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision b4944d8 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.
+> Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 3a6e097 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.
 
-Source baseline: Owner-access repository, revision b4944d8c42d6399c0145d7ccd100418338d38924
+Source baseline: Owner-access repository, revision 3a6e097b05cc466f8ec1213415f96b50454ee196
 Reviewed: 2026-11-09
 
 ## Choose a workspace
@@ -17,4 +17,4 @@ Noteweld combines Markdown, optional Vim editing, saved history, links/backlinks
 
 The source-distributed [Linux desktop alpha](/manuals/noteweld/desktop/) adds offline local files and actual Neovim. [Anki handoff](/manuals/noteweld/anki/) exports reviewed text cards. A separate [private-server profile](/manuals/noteweld/private-server/) provides administrator setup and encrypted attachment copies. These do not imply public installers, macOS/Windows qualification, unlimited storage or end-to-end encryption.
 
-Hosted web v29 uses schema 0015 / logical snapshot format 8. Real public cookie, media, archive, history, sync, proposal and keyboard journeys have separate recorded acceptance. Builds, browser checks, external consent and actual payments remain distinct evidence. The production repository is access-controlled; these manuals do not distribute its source or desktop binary.
+Hosted web uses schema 0015 / logical snapshot format 8. Real public cookie, media, archive, history, sync, proposal and keyboard journeys have separate recorded acceptance. Builds, browser checks, external consent and actual payments remain distinct evidence. The production repository is access-controlled; these manuals do not distribute its source or desktop binary.

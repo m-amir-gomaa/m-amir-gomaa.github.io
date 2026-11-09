@@ -1,8 +1,8 @@
 # Payment activation checklist
 
-> Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Dedicated Google/GitHub registration and genuine consent remain open. Paid checkout is closed. Dated release records describe their own checkpoints. Production source revision 7f7298a is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification.
+> Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Dedicated Google/GitHub registration and genuine consent remain open. Paid checkout is closed. Dated release records describe their own checkpoints. Production source revision 1d1f932 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification.
 
-Source baseline: Owner-access repository, revision 7f7298abe8064c96d1f65865e2fbf25c55b4e5ad
+Source baseline: Owner-access repository, revision 1d1f93250bf1d571569196ae283b030971d7b988
 Reviewed: 2026-11-09
 
 Updated 18 October 2026. **Paddle Billing is the selected provider. The integration is deployed; customer checkout remains disabled.** This supersedes the former Lemon Squeezy activation instructions. Existing balances, session keys and permanent Modal identifiers were preserved. Email verification is complete according to Amir; merchant identity/domain approval and actual payment delivery are separate.

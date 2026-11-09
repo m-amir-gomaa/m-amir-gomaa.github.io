@@ -149,4 +149,16 @@ editor, and a response for an earlier result cannot change the newly opened one.
 . The selected passage runs from 181.05 to 244.70 seconds in the source episode.&lt;/p&gt;
 &lt;p&gt;The example credits NOAA and the speakers, links the original source and states that no endorsement is implied. It is third-party source material, not an original recording made for this portfolio. The excerpt contains speech rather than a music insert; the reuse review is specific to this selected source.&lt;/p&gt;</description></item><item><title>Verified email and recovery</title><link>https://amirgomaa.com/manuals/sonaweft/accounts/</link><pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/sonaweft/accounts/</guid><description>&lt;h2 id="create-and-recover-an-account"&gt;Create and recover an account&lt;/h2&gt;
 &lt;p&gt;Open &lt;strong&gt;Account&lt;/strong&gt; to sign in with an existing passphrase. New email signup requests a link; explicitly choosing a passphrase on its confirmation form creates the credential. Opening a link alone does not create it. Existing unverified accounts can verify their address from their owned, recently authenticated workspace. Equal addresses never merge workspaces.&lt;/p&gt;
-&lt;p&gt;Verified addresses can request mailed resets. Completion revokes previous sessions and invalidates old recovery keys. Links expire after thirty minutes and work once; opening/previewing does not consume them. A separate saved key is optional when verified email recovery is available. Keep any key private.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Verified addresses can request mailed resets. Completion revokes previous sessions and invalidates old recovery keys. Links expire after thirty minutes and work once; opening/previewing does not consume them. A separate saved key is optional when verified email recovery is available. Keep any key private.&lt;/p&gt;</description></item><item><title>From sources to connected notes</title><link>https://amirgomaa.com/manuals/sonaweft/ecosystem/</link><pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/sonaweft/ecosystem/</guid><description>&lt;p&gt;Pageweft converts PDF pages to Markdown. Sonaweft transcribes recordings.
+Noteweld keeps editable notes, links, source material and portable vaults.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use Pageweft or Sonaweft, review the original against the result, and save any corrections.&lt;/li&gt;
+&lt;li&gt;Download a &lt;strong&gt;fresh complete ZIP bundle&lt;/strong&gt; from that application&amp;rsquo;s workspace.&lt;/li&gt;
+&lt;li&gt;In Noteweld, open &lt;strong&gt;Source bundles&lt;/strong&gt;, choose &lt;strong&gt;Pageweft or Sonaweft export&lt;/strong&gt;, and validate the ZIP.&lt;/li&gt;
+&lt;li&gt;Review its contents, confirm permission to retain them, and import. Notes and their original archive commit together. The original extraction, corrections and optional AI notes keep separate labels.&lt;/li&gt;
+&lt;li&gt;Edit and link the imported notes. Download the original bundle or export a portable vault when needed.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The current Noteweld preview accepts an archive up to &lt;strong&gt;4 MiB&lt;/strong&gt; and 250 notes,
+subject to remaining account capacity. Pageweft can export fewer pages and omit
+the source PDF. A smaller recording gives a smaller Sonaweft bundle. Keep your
+own originals; a bundle includes source media only when the exporter includes it.&lt;/p&gt;</description></item></channel></rss>

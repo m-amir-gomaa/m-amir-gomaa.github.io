@@ -2,7 +2,7 @@
 
 > Historical reference; not part of the current setup or recommended execution path. This reviewed documentation snapshot includes local documentation edits; the recorded revision is the committed baseline.
 
-Source baseline: Owner-access repository, revision 7f7298abe8064c96d1f65865e2fbf25c55b4e5ad
+Source baseline: Owner-access repository, revision 1d1f93250bf1d571569196ae283b030971d7b988
 Reviewed: 2026-11-09
 
 ## Why this record is separate
