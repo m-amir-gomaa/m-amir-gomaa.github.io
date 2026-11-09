@@ -81,7 +81,8 @@ require('node:fs').mkdirSync(artifacts, { recursive: true });
     assert(/Source baseline: Owner-access repository, revision [a-f0-9]{40}/.test(text));
     assert(!text.includes('github.com/m-amir-gomaa/keep-nextjs/blob/'));
     assert(!text.includes('/home/qwerty/'));
-    await page.goto(origin + '/manuals/pageweft/overview/');
+    // The current overview is prose; use the real measurement JSON example.
+    await page.goto(origin + '/manuals/pageweft/quality-benchmarks/');
     const copy = page.getByRole('button', { name: 'Copy code', exact: true }).first();
     const expectedCode = await page.locator('.highlight pre code').first().textContent();
     await copy.click();

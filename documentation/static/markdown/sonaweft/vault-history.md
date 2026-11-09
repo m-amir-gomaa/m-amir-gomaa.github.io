@@ -2,7 +2,7 @@
 
 > Historical reference; not part of the current setup or recommended execution path.
 
-Source baseline: Owner-access repository, revision 91dd8205583577e926f569b97963320a5dca2155
+Source baseline: Owner-access repository, revision cd71be6037ba0a5ade1889ee90b51eb3bcbc9bce
 Reviewed: 2026-11-09
 
 ## Why this record is separate

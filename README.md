@@ -109,7 +109,7 @@ owner-operated encrypted-attachment server profile. They distinguish source
 setup from hosted functionality, public deployment, E2EE and live billing.
 
 Local checks passed: 60 reviewed-source snapshots, reproducible Hugo generation,
-88 HTML pages / 1,909 local links-assets-fragments / 79 articles, nine DOM cases,
+88 HTML pages / 1,903 local links-assets-fragments / 79 articles, nine DOM cases,
 the publication-isolation test and 24 grouped manuals browser checks across all
 79 article routes/four widths. The app chooser/root also passed four-width
 Chromium/accessibility/navigation/no-JS checks. Desktop and narrow-screen captures

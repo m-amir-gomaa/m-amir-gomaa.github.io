@@ -5,7 +5,7 @@
   "weight": 170,
   "project": "Pageweft",
   "category": "Operations",
-  "notice": "Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones. Production source revision 7f7298a is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
+  "notice": "Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Dedicated Google/GitHub registration and genuine consent remain open. Paid checkout is closed. Dated release records describe their own checkpoints. Production source revision 7f7298a is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
   "sourceurl": "",
   "download": "markdown/pageweft/quality-benchmarks.md"
 }

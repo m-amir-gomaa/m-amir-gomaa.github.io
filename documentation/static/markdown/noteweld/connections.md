@@ -1,8 +1,8 @@
 # Links, backlinks and graphs
 
-> Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 5868624 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
+> Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision b4944d8 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision 586862428db130ed1589aca604631a587d33f8aa
+Source baseline: Owner-access repository, revision b4944d8c42d6399c0145d7ccd100418338d38924
 Reviewed: 2026-11-09
 
 Choose **Link note** while writing to insert a stable reference such as `[[note:UUID|Readable caption]]`. Search titles/labels, select a note and insert; the editor keeps your cursor position and undo. Escape closes the picker and returns focus. A stable ID survives a rename; its optional caption remains the text you wrote, while the link tooltip shows the current title. Copy a stable reference from any note's detail page too.

@@ -5,7 +5,7 @@
   "weight": 100,
   "project": "Noteweld",
   "category": "Release record",
-  "notice": "Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 5868624 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
+  "notice": "Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision b4944d8 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
   "sourceurl": "",
   "download": "markdown/noteweld/foundation-release.md"
 }

@@ -5,7 +5,7 @@
   "weight": 60,
   "project": "Noteweld",
   "category": "Guide",
-  "notice": "Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 5868624 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
+  "notice": "Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision b4944d8 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
   "sourceurl": "",
   "download": "markdown/noteweld/source-bundles.md"
 }
@@ -35,4 +35,4 @@ Every payload must be declared exactly once with SHA256. Validation checks CRC, 
 
 ## Support and recovery
 
-A 5xx response includes a support ID; report that ID without sending private documents or recovery keys. Retry rejected/failed imports only after reviewing the message. Lost passphrase recovery uses your saved private key or an actually configured, deliberately linked provider; email reset is not enabled. Source storage is not end-to-end encrypted. Do not keep sensitive or irreplaceable originals only in this preview.
+A 5xx response includes a support ID; report that ID without sending private documents or recovery keys. Retry rejected/failed imports only after reviewing the message. Verified email/password accounts can request an emailed password reset. Existing unverified accounts retain private-key or deliberately linked provider recovery; matching emails never merge accounts. Source storage is not end-to-end encrypted. Do not keep sensitive or irreplaceable originals only in this preview.
