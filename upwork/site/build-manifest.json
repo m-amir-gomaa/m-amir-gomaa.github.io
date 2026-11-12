@@ -4,11 +4,19 @@
   "inputs": [
     {
       "path": "index.html",
-      "sha256": "439594b66e8dc2dc6eac74a925a07ac35e6275f17f54580ae6e05ae55ee9290f"
+      "sha256": "4dface1700862c411c1badaa57f8bf6415ea9c1f4f1cf2a08f9e452569185066"
     },
     {
       "path": "style.css",
       "sha256": "b30b463c1b89df270fa4fa7f6f09860aba83a9a283e10e374a60e3b3a04bc9ce"
+    },
+    {
+      "path": "theme.css",
+      "sha256": "d4446cc69e7c6d2fe3ae20b96e6bb5333dbe8344fc13ced4a1f4681c29e04503"
+    },
+    {
+      "path": "theme.js",
+      "sha256": "faeb30f8f72d993e2e81bf27594674275469fe59c0052bb977be846d84a72a86"
     },
     {
       "path": "script.js",
@@ -64,7 +72,7 @@
     },
     {
       "path": "../sonaweft/sonaweft_web/templates/example.html",
-      "sha256": "c016bfe57bf38002da020f0ddc6f7d0462e11c94170d8127b04d3d50fa66d8a0"
+      "sha256": "0029be868e1e539172ca592fcefba5d0d0f18f53e6317ff017ea29d0a5e348ac"
     },
     {
       "path": "../sonaweft/sonaweft_web/static/style.css",
@@ -132,8 +140,10 @@
     }
   ],
   "files": {
-    "index.html": "5559df1af4dc301d369c90a743db59b473585c4ab5d2cebb9f704c3b86a90a8a",
+    "index.html": "9a4908d3ee7c88109b3506050f4a58c0f3a7956c72307d2ed3b75bced38d9f35",
     "style.css": "b30b463c1b89df270fa4fa7f6f09860aba83a9a283e10e374a60e3b3a04bc9ce",
+    "theme.css": "d4446cc69e7c6d2fe3ae20b96e6bb5333dbe8344fc13ced4a1f4681c29e04503",
+    "theme.js": "faeb30f8f72d993e2e81bf27594674275469fe59c0052bb977be846d84a72a86",
     "script.js": "cd3c4d7ab7a1ea7a18bb43604927967c13cdb9161aff13ecb88facc8d20ff030",
     "demos/keep/index.html": "95e9e899e9d16262fd6c0c53a8139149518b101cd972134f4aef31de047c65d6",
     "demos/keep/frame-bridge.js": "bb8ba6e3420763ab3beeb96fb17ad012e52e031e319ee38d5fd2022d656f0ca6",

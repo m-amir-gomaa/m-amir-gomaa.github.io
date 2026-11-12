@@ -33,6 +33,7 @@ fill(document,'#instascript .project-links',`<a class="project-link primary" hre
 fill(document,'#document-studio .project-links',`<button class="project-link primary" type="button" data-demo="document">Explore sample output ↗</button><a class="project-link" href="#pageweft-case">Read the case study →</a>`);
 fill(document,'#documentation',`<div><p class="eyebrow">THE WORK, EXPLAINED</p><h2 id="docs-title">Useful software.<br><em>Clear decisions.</em></h2><p>Each project includes its problem, implementation, recorded checks and current boundaries. Explore the examples and expand the case studies.</p><a class="button button-dark" href="#projects">Read the work <span aria-hidden="true">↑</span></a></div><div class="docs-topics"><a href="#noteweld-case"><span>01 / NOTEWELD</span>Writing, connected notes &amp; recovery →</a><a href="#local-case"><span>02 / LOCAL NOTEBOOK</span>Browser state &amp; portable backups →</a><a href="#sonaweft-case"><span>03 / SONAWEFT</span>Recordings, transcripts &amp; source-linked exports →</a><a href="#pageweft-case"><span>04 / PAGEWEFT</span>PDF conversion &amp; source review →</a></div>`);
 fill(document,'.contact-actions',`<a class="button button-light" href="${profile}" target="_blank" rel="noopener noreferrer">Start a conversation on Upwork ↗</a><p>For work discussed on Upwork, keep messages and project arrangements there.</p>`);
+document.querySelector('.source-star')?.remove();
 document.querySelector('#demo-external').href='demos/keep/';
 document.querySelector('#demo-external').textContent='Open local notebook in a new tab ↗';
 document.querySelector('#demo-frame').setAttribute('sandbox','allow-scripts allow-same-origin allow-downloads');
@@ -42,6 +43,7 @@ for(const link of document.querySelectorAll('a[href]')){
 }
 put('index.html',dom.serialize());
 copy(join(root,'style.css'),'style.css');
+for(const name of ['theme.css','theme.js'])copy(join(root,name),name);
 let script=input(join(root,'script.js')).toString();
 script=replaceOnce(script,'https://m-amir-gomaa.github.io/Keep/','demos/keep/');
 script=replaceOnce(script,'https://pageweft.amirgomaa.com/?utm_source=portfolio','assets/document-sample/document.pdf');
