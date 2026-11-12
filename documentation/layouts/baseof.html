@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f5f0">
+  <script src="/theme.js?v=20261112"></script>
   <meta name="description" content="{{ .Description | default site.Params.description }}">
   <title>{{ if .IsHome }}Fieldnotes · Mohamed Amir Gomaa{{ else }}{{ .Title }} · Fieldnotes{{ end }}</title>
   <link rel="canonical" href="{{ .Permalink }}">
@@ -21,15 +22,17 @@
   {{ $wbJS := resources.Get "workbench.js" | minify | fingerprint }}
   <script src="{{ $wbJS.RelPermalink }}" integrity="{{ $wbJS.Data.Integrity }}" defer></script>
   {{ end }}
+  <link rel="stylesheet" href="/theme.css?v=20261112">
   <link rel="alternate" type="application/rss+xml" title="Fieldnotes feed" href="{{ "index.xml" | absURL }}">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="header shell">
   <a class="brand" href="{{ site.Home.RelPermalink }}" aria-label="Fieldnotes home">mg<span>/</span><small>FIELDNOTES</small></a>
+  <div class="header-controls"><button class="theme-toggle" data-theme-toggle type="button" aria-label="Dark mode" aria-pressed="false" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 13A9 9 0 0 1 11 3.2 9 9 0 1 0 20.8 13Z"/></svg><span>Dark mode</span></button></div>
   <nav aria-label="Main navigation"><a href="{{ site.Home.RelPermalink }}#library">Manuals</a><a href="{{ "journal/" | relURL }}">Journal</a><a href="{{ "development-environment/" | relURL }}">Workbench</a><a href="/">Portfolio <span aria-hidden="true">→</span></a></nav>
 </header>
 {{ block "main" . }}{{ end }}
-<footer class="footer shell"><span>© 2026 Mohamed Amir Gomaa · Built with Hugo.</span><a href="mailto:mo.gomaa.formal@gmail.com">Questions or corrections →</a><a href="{{ "index.xml" | relURL }}">RSS</a></footer>
+<footer class="footer shell"><span>© 2026 Mohamed Amir Gomaa · Built with Hugo.</span><a href="mailto:mo.gomaa.formal@gmail.com">Questions or corrections →</a><a class="source-star" href="https://github.com/m-amir-gomaa/m-amir-gomaa.github.io" target="_blank" rel="noopener noreferrer">Star this site on GitHub ↗</a><a href="{{ "index.xml" | relURL }}">RSS</a></footer>
 </body>
 </html>

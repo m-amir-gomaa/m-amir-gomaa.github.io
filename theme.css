@@ -1,0 +1,97 @@
+/* Optional visitor preference. Light remains the default, including in print. */
+.header-controls { display:flex; align-items:center; gap:10px; order:2; margin-left:20px; }
+.theme-toggle { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-width:44px; min-height:44px; padding:9px 12px; border:1px solid var(--line); border-radius:5px; background:transparent; color:var(--ink); font:12px var(--sans); white-space:nowrap; }
+.theme-toggle[hidden] { display:none!important; }
+.apps-nav nav { margin-left:auto; }
+.site-footer,.footer { flex-wrap:wrap; }
+.source-star { font-size:11px; }
+.theme-toggle svg { width:18px; height:18px; flex:none; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+.theme-toggle:hover { border-color:var(--green); }
+.theme-toggle[aria-pressed="true"] { background:var(--lime); border-color:var(--green); }
+.theme-toggle:focus-visible { outline:2px solid var(--green); outline-offset:4px; }
+.site-header nav { margin-left:auto; gap:24px; }
+.header nav { margin-left:auto; }
+.menu-toggle { color:var(--ink); }
+
+@media (max-width:1100px) and (min-width:1041px) {
+  .site-header { padding-inline:24px; }
+  .site-header nav { gap:14px; font-size:12px; }
+}
+@media (max-width:1040px) {
+  .site-header { height:76px; padding-inline:20px; position:relative; }
+  .site-header .header-controls { margin-left:auto; order:0; }
+  .menu-toggle { display:flex; align-items:center; gap:12px; background:transparent; border:1px solid var(--line); padding:8px 12px; min-height:44px; border-radius:4px; font-size:11px; }
+  .site-header nav { display:none; position:absolute; top:75px; left:0; right:0; padding:24px; margin:0; background:var(--paper); z-index:10; border-bottom:1px solid var(--line); align-items:start; gap:20px; box-shadow:0 10px 20px #0001; }
+  .site-header nav.open { display:flex; flex-direction:column; }
+  .header { height:auto; min-height:94px; flex-wrap:wrap; gap:0; padding-block:12px; }
+  .header .header-controls { order:0; margin-left:auto; }
+  .header nav { width:100%; margin-left:0; gap:18px; flex-wrap:wrap; }
+}
+@media (max-width:760px) {
+  .theme-toggle span { display:none; }
+  .theme-toggle { width:44px; padding:10px; }
+  .header-controls { gap:8px; margin-left:8px; }
+  .apps-nav .header-controls { margin-left:auto; order:0; }
+  .apps-nav nav { width:100%; }
+}
+
+@media screen {
+  :root[data-theme="dark"] {
+    color-scheme:dark;
+    --paper:#18211c;
+    --ink:#e9eee2;
+    --muted:#b5c1b0;
+    --line:#425244;
+    --green:#b0cf95;
+    --lime:#34472d;
+    --surface:#232f26;
+    --surface-hover:#2e3e30;
+    scrollbar-color:#73876c var(--paper);
+  }
+  :root[data-theme="dark"] ::selection { background:#526b40; color:#fff; }
+  :root[data-theme="dark"] :is(input,textarea) { caret-color:var(--green); }
+  :root[data-theme="dark"] :is(.button-dark,.filter.active,.skip-link),
+  :root[data-theme="dark"] .header ~ main .button:not(.button-light) { color:var(--paper); }
+  :root[data-theme="dark"] .filter:hover:not(.active) { background:var(--surface-hover); }
+  :root[data-theme="dark"] .contact-section { color:#e9eee2; }
+  :root[data-theme="dark"] :is(.case-study .case-note,.sample-panel) { background:var(--surface); }
+  :root[data-theme="dark"] dialog { background:var(--paper); color:var(--ink); border-color:var(--line); }
+  :root[data-theme="dark"] :is(.sample-toolbar button,#sample-retry) { background:var(--surface); color:var(--ink); border-color:var(--line); }
+  :root[data-theme="dark"] .sample-pages button[aria-pressed="true"] { background:var(--ink); color:var(--paper); }
+  /* The portfolio's paper illustrations keep their authored light palette. */
+  :root[data-theme="dark"] :is(.hero-art,.workspace-cover,.local-cover,.transcript-cover,.document-cover) { color:#202721; }
+  :root[data-theme="dark"] .hero-art .art-stamp { color:#456343; }
+  :root[data-theme="dark"] .guest-launch-links>a { border-color:var(--line); }
+  :root[data-theme="dark"] .guest-launch-links>a:hover { background:var(--surface-hover); }
+  :root[data-theme="dark"] :is(.guest-launch-links span,.guest-launch-note) { color:var(--muted); }
+  /* The app chooser uses the same preference as the portfolio. */
+  :root[data-theme="dark"] .apps-page { background:var(--paper); color:var(--ink); }
+  :root[data-theme="dark"] .apps-page em { color:var(--green); }
+  :root[data-theme="dark"] .apps-nav .wordmark span { color:var(--muted); }
+  :root[data-theme="dark"] :is(.app-choice,.apps-local) { background:var(--surface); border-color:var(--line); }
+  :root[data-theme="dark"] .app-sonaweft { background:#23362d; }
+  :root[data-theme="dark"] .app-pageweft { background:#363126; }
+  :root[data-theme="dark"] :is(.apps-nav,.apps-explained,.apps-answers details,.apps-footer,.app-choice dl>div) { border-color:var(--line); }
+  :root[data-theme="dark"] :is(.apps-intro>p:last-child,.app-choice .eyebrow,.app-choice>p:not(.eyebrow),.app-choice dd,.apps-answers p,.apps-local p:not(.eyebrow),.apps-footer) { color:var(--muted); }
+  /* Fieldnotes: reading surfaces, search, tables and code. */
+  :root[data-theme="dark"] :is(.index-card,.index-card li,.card-foot,.project-foot) { border-color:var(--line); }
+  :root[data-theme="dark"] :is(.index-card p,.card-foot) { color:var(--muted); }
+  :root[data-theme="dark"] :is(.project-card,.environment-preview,.notice,.badge,.prose th,.prose blockquote,.toc) { background:var(--surface); border-color:var(--line); }
+  :root[data-theme="dark"] .project-pageweft { background:#23362d; }
+  :root[data-theme="dark"] .project-sonaweft { background:#363126; }
+  :root[data-theme="dark"] .project-card:hover { background:var(--surface-hover); border-color:var(--green); }
+  :root[data-theme="dark"] .notice { color:var(--ink); }
+  :root[data-theme="dark"] .search-row input { background:var(--surface); border-color:var(--line); }
+  :root[data-theme="dark"] .search-row button { color:var(--ink); }
+  :root[data-theme="dark"] .prose a { color:var(--green); }
+  :root[data-theme="dark"] .prose code { background:var(--surface-hover); color:var(--ink); }
+  :root[data-theme="dark"] .prose pre code { background:none; color:inherit; }
+  :root[data-theme="dark"] .environment-preview-art span { border-color:var(--line); }
+  /* The workbench editor retains its own terminal colors. */
+  :root[data-theme="dark"] .wb-monogram { color:var(--green); }
+  :root[data-theme="dark"] .wb-layer-node[aria-pressed="true"] { background:var(--surface-hover); border-color:var(--green); }
+  :root[data-theme="dark"] #wb-picker { background:var(--paper); color:var(--ink); }
+  :root[data-theme="dark"] :is(#wb-picker input,.wb-picker-top button) { background:var(--surface); color:var(--ink); border-color:var(--line); }
+  :root[data-theme="dark"] #wb-picker-results button:hover { background:var(--surface-hover); }
+}
+@media print { .header-controls { display:none!important; } }
