@@ -1,3 +1,26 @@
+# Optional dark mode — 12 November 2026
+
+Portfolio, app chooser and every Fieldnotes page share an optional dark-mode
+button. Light is the default even for a dark system preference. `theme.js` runs
+before CSS paints and remembers the visitor's choice in localStorage; other tabs
+follow it. Blocked storage leaves the current-page switch usable. Without
+JavaScript the controls stay hidden and the light site remains readable. Print
+keeps the light palette. `theme.css` preserves the existing visual identity.
+
+Public footers link the already-public site repository for voluntary GitHub
+stars. The generated Upwork edition retains the theme control and strips that
+external source link. Payment links are separate from theme state and remain
+unpublished until a working destination is configured.
+
+Run `PORTFOLIO_TEST_URL=http://127.0.0.1:8346 node tests/theme.browser.cjs`
+against a local root server. It checks seven routes, both themes at five widths,
+keyboard/mobile-menu behavior, persistence/navigation/tab sync, dark contrast,
+search, light print, blocked storage and no-JS fallback. Desktop and phone
+captures were visually inspected. Existing portfolio, guest, Hugo/link and
+publication checks also pass. The design detector's incumbent typography,
+illustration and spacing findings are outside this bounded theme change; its
+Hugo-template stylesheet paths cannot resolve before generation.
+
 # Direct Drive upload guide — 7 November 2026
 
 The deployed Noteweld v23 guide now explains choosing managed storage or Google
