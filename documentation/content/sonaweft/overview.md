@@ -1,98 +1,31 @@
 {
   "title": "Technical overview",
   "description": "Hosted workflow, processing tariff, local CLI, deployment and limits.",
-  "date": "2026-11-05",
+  "date": "2026-11-12",
   "weight": 30,
   "project": "Sonaweft",
   "category": "Reference",
-  "notice": "Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones. Production source revision f77aba4 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.",
+  "notice": "Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Google/GitHub sign-in and owner account linking have passed their recorded acceptance. Paid checkout is closed. Dated release records describe their own checkpoints. Reviewed source revision 825f4b5 is reserved for owner-authorized review; a source checkpoint does not establish deployment. This public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
   "sourceurl": "",
   "download": "markdown/sonaweft/overview.md"
 }
 
-23 October: the [completed example](https://sonaweft.amirgomaa.com/example) now uses
-an attributed human-voiced NOAA explanation of why gravity varies across Earth.
-Its 64-second audio, real machine transcript, subtitles and portable bundle agree;
-AI-assisted editorial listening notes are labeled separately. Source credit,
-excerpt bounds and reuse information accompany the downloadable files.
+## Hosted transcription workflow
 
-22 October guest/account collection: [the short guide](https://sonaweft.amirgomaa.com/help)
-and [email sign-in](https://sonaweft.amirgomaa.com/account) provide clear entry to
-the existing workspace. Email uses salted scrypt, exact passphrases, CSRF-protected
-rotating sessions, explicit workspace switching and private-key recovery. No email
-verification/reset delivery or real Google consent is claimed. Guest processing
-now fails closed without a verified zero-net-spend control and fresh billing
-headroom; completed examples remain usable. Current local acceptance: 105 backend
-checks, real SQLite email/recovery browser journeys and four-width accessibility,
-plus the existing source/review/history/media workflow. See workspace milestone 017
-for guest release evidence; milestone 018 records private quota activation and current provider checks.
+Sonaweft runs Python/FastAPI, a serialized SQLite ledger and hosted speech workers on Modal behind Cloudflare. Inspect authorized English audio/video up to 64 MiB / 60 minutes before confirming transcription. The eligible free sample transcribes the first thirty seconds, subject to private availability. Completed examples start no inference.
 
-Selected transcript passages can open an authoritative server quote for reprocessing using their original recording offsets. Earlier jobs and corrections remain separate; preparing a quote never starts inference. Retries use the same server pricing path, and changed intervals must be quoted again before confirmation.
+Listen to timestamped segments, keep immutable recognition separate from saved corrections, and optionally consent to transcript-text review by DeepSeek. Audio is not sent to that text provider. Public HTTPS direct media/RSS sources use checked redirects; arbitrary platform pages, private cookies and unrestricted URL downloads are not supported. Recognition, corrections, optional AI notes and scholarly metadata are separate evidence.
 
-[Open Sonaweft](https://sonaweft.amirgomaa.com) · [Hear completed example](https://sonaweft.amirgomaa.com/example) · [Product contract](/manuals/sonaweft/product/) · [Operations](/manuals/sonaweft/operations/) · [Release evidence](/manuals/sonaweft/release/)
+## Current service tariff
 
-Turn authorized recordings into timestamped transcripts, editable drafts, subtitles and portable Markdown. Hear each segment while correcting it. Original speech recognition, your corrections and optional AI notes remain separate. Formerly instaScript / Transcript Studio; existing commands, Python imports and GitHub URLs remain compatible.
+Configured one-time processing packs are $5/$10; checkout remains closed. Transcription is $0.15/job plus $0.015/started minute; standard review is $0.25 plus $0.020/minute; advanced review is $0.35 plus $0.025/minute. A sixty-minute job is respectively $1.05, $1.45 or $1.85 at those service tariffs. They are not actual measured provider reimbursements or guaranteed margins.
 
-## Hosted workflow
-
-1. Upload English audio/video, up to **64 MiB / 60 minutes**; inspection returns a quote without starting transcription.
-2. Confirm media rights, then request a bounded **30-second** sample or paid processing when commercial access opens.
-3. Optionally consent to sending transcript text to DeepSeek for standard/deeper review. Audio is not sent to DeepSeek.
-4. Follow the job, hear timestamped segments, search text and save separate corrections with revision checks.
-5. Export original Markdown/text/JSON/SRT/VTT, corrected Markdown/JSON, optional summary/research questions and a hashed `instascript-export/v1` manifest.
-
-AI suggestions never silently replace the original. Source questions quote actual segments; explicit Crossref lookup returns scholarly metadata candidates, not factual verdicts. Hosted URL downloads, diarization, speaker identification and certified transcription are not implemented; use an authorized upload or the local CLI.
-
-The sample is once per workspace/IP hash, subject to three global samples/day, twenty/month and additional admission/storage caps. Sources/results expire after 48 hours with hourly cleanup. Paid packs remain **closed** pending Paddle seller/website approval and real payment acceptance tests. No card is needed for an available sample.
-
-## Service pricing
-
-One-time **$5 / $10 processing packs**, no recurring access fee. Credit is reserved before dispatch and consumed only when the complete selected result succeeds; failure returns the full reservation. Explicit retries get a fresh quote and can reuse retained ASR.
-
-| Processing | Per job | Per started minute | 60 minutes |
-|---|---:|---:|---:|
-| Transcription | $0.15 | $0.015 | $1.05 |
-| With standard review | $0.25 | $0.020 | $1.45 |
-| With advanced review | $0.35 | $0.025 | $1.85 |
-
-Applicable tax is handled at checkout. These are service tariffs, not exact provider reimbursements or guaranteed margins. Sonaweft/Pageweft balances are independent processing entitlements.
+Reservations settle on successful selected work and release on failure. Explicit retries get fresh quotes and may reuse retained recognition. Source/results expire after 48 hours, so download them. [Verified email/recovery](/manuals/sonaweft/accounts/) is deployed; real owner Google/GitHub sign-in and explicit linking have passed; commercial payment acceptance remains separate. Accounts/balances do not merge across apps.
 
 ## Local CLI
 
-Python **3.13** is the tested pip environment. Install FFmpeg/FFprobe and yt-dlp separately. Local recognition uses CPU/int8; downloaded models and optional provider charges are the operator's responsibility.
+The standalone source CLI uses tested Python 3.13, FFmpeg/FFprobe and yt-dlp for supported authorized sources. Local recognition uses CPU/int8; model downloads and optional provider charges are separate from hosted usage. Compatibility command/import names remain. Source installation commands are provided with the owner-access repository; archived agent scripts are not required.
 
-```sh
-python3.13 -m venv .venv
-.venv/bin/python -m pip install .
-bin/sonaweft recording.mp3 --out ./out
-bin/sonaweft 'https://example.org/authorized-media' --out ./out
-bin/sonaweft --queue ./queue.md --out ./out
-bin/sonaweft recording.mp3 --review --review-model standard --out ./out
-bin/sonaweft --export-item ./out/ITEM --format vtt
-```
+## Evidence and output
 
-The launchers resolve NixOS wheel libraries dynamically, prefer an existing tested `.venv-web`, otherwise `.venv`; `SONAWEFT_PYTHON` overrides. Export `DEEPSEEK_API_KEY` only for review. `.env` files are not automatically loaded; see .env.example (source repository requires access). `SONAWEFT_VAULT` takes precedence over legacy `IG_INTEL_VAULT`; the old `~/ig_intel/Inbox` default is preserved.
-
-Private `.pending` checkpoints support retry without repeating successful ASR. Complete exports publish atomically; hashes detect modified/incomplete output, which is preserved. Source/model/review identity suppresses repeats. Cross-path perceptual deduplication is not promised. A killed process may leave `running.lock`; verify it has stopped before removing only that lock.
-
-Local yt-dlp may explicitly use configured browser cookies when a source requires login. Hosted uploads never use the owner's browser session. Live site access depends on permissions and upstream changes; metadata fixtures do not certify platform downloads.
-
-## Deployment and development
-
-FastAPI, an on-demand Modal L4 speech worker, separate optional LLM processing and a serialized SQLite ledger use independent Sonaweft volumes/secrets. Workers scale to zero; storage, schedules and requests still consume resources. Large model weights are cached in the cloud, not on the laptop's 2 GB GPU.
-
-```sh
-.venv/bin/python -m pip install '.[web,cloud]'
-# Configure your own account and three secrets described in OPERATIONS.md.
-.venv/bin/python -m modal deploy app.py
-
-python -m pip install -r requirements-dev.txt
-python -m unittest discover -s tests -q
-ruff check --select E9,F63,F7,F82,F401 app.py instascript sonaweft_web scripts tests
-node --check sonaweft_web/static/app.js
-node --check sonaweft_web/static/checkout.js
-```
-
-FFmpeg is required by boundary tests. Tests use real temporary SQLite/files/FFprobe with fake model dispatch and mocked payment APIs. Actual model/cloud/browser evidence is recorded separately. requirements-web.lock (source repository requires access) records the tested Linux development environment; app.py (source repository requires access) pins cloud dependencies and an immutable model revision. No sibling repository is needed. Nix files have a separate verification status in RELEASE.md. New self-hosters need their own credentials, products and approvals.
-
-The existing application edition remains MIT; upstream tools/models have their own licenses. Source-access policy and future commercial additions (source repository requires access) preserve that existing grant and require explicit licensing for any future proprietary modules. Private repository access does not withdraw the MIT permissions already granted. No speech model guarantees accuracy across accents, noise or long recordings.
+Actual hosted short-audio recognition, correction/history/export browser journeys and real synthetic account/recovery acceptance have recorded evidence. The completed example is an attributed NOAA scientific interview. Export text/Markdown/JSON/subtitles and a hashed source-linked archive; Noteweld can preview/import it. No automatic diarization, verified speaker identity, universal accuracy, representative long-recording cost margin or live payment is claimed. [Using Sonaweft](/manuals/sonaweft/guide/) explains the practical flow.

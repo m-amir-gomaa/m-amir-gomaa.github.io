@@ -1,7 +1,7 @@
 {
   "title": "Product decisions archive",
   "description": "Historical product decisions and their current professional summary.",
-  "date": "2026-11-05",
+  "date": "2026-11-12",
   "weight": 130,
   "project": "Pageweft",
   "category": "Archive",

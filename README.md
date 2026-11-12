@@ -21,22 +21,34 @@ publication checks also pass. The design detector's incumbent typography,
 illustration and spacing findings are outside this bounded theme change; its
 Hugo-template stylesheet paths cannot resolve before generation.
 
-# Noteweld manuals refresh — 7 November 2026
+# Direct Drive upload guide — 7 November 2026
 
-The Noteweld guide now covers deployed verified-email signup/password reset and
-direct image/audio/video uploads to either managed storage or the user's Google
-Drive. It explains destination-specific retry, browser-local preferences, privacy,
-original retention and the disabled paid checkout. A reviewed media/storage guide
-is published; private provider runbooks remain excluded. Native Neovim, offline
-desktop, full vault synchronization and customer-controlled encrypted servers are
-explicitly future work.
+The deployed Noteweld v23 guide now explains choosing managed storage or Google
+Drive for attach, paste and drop, destination-specific retry, browser-local
+preferences and original retention. The new reviewed media/storage guide preserves
+the previously published email, attachment, storage and subscription guides.
+Private operating controls remain excluded. Customer-supplied servers and
+end-to-end encryption remain future work; paid checkout stays disabled.
 
-The library now has 65 indexed articles and 46 reviewed source records. Local
-Hugo reproduction, 74 HTML pages/1,617 link and asset checks, nine portfolio DOM
-checks, publication-boundary tests and 24 grouped browser checks across all 65
-article routes passed. Other product content and its review dates are preserved.
+The library now has **69 indexed articles and 50 reviewed source records**.
+Reproducible Hugo generation, 78 HTML pages/1,716 local link/asset checks,
+publication-boundary tests, nine portfolio DOM checks and 24 grouped browser
+checks across all 69 article routes pass. This update is
+based on current Pages main; the separate Upwork portfolio edition is preserved.
 
-# Earlier manuals refresh — 5 November 2026
+# Earlier manuals refresh — 6 November 2026
+
+Noteweld's public guide and app chooser now describe actual email verification,
+mailed recovery, image/audio/video attachments and Account storage controls.
+Four reviewed public summaries cover attachments, email recovery, storage and
+subscription availability. Private operating budgets and credential settings are
+excluded from these editions. Plus remains planned; live checkout is disabled.
+
+Fieldnotes now has **68 indexed articles and 49 reviewed source records**.
+The static build is reproducible; link/publication/DOM checks pass. The separate
+Upwork portfolio feature branch is preserved; this publication updates Pages main.
+
+# Previous manuals refresh — 5 November 2026
 
 All four product guides and the Workbench/journal were checked against current
 source records. Noteweld's guide now covers the deployed interface, 29-role
@@ -109,6 +121,24 @@ Local verification passed: reproducible Hugo build; 28 source snapshot checks; 4
 Current update — 16 October 2026: Noteweld now includes stable wiki links, outgoing/backlink panels, authenticated linked-note pages and a bounded/filterable graph. Its card links the account-free editor, original graph example, private workspace and `feat/connected-notes` source. The separate vanilla implementation is unchanged. The cover remains an illustration; graph limits and future import/revision work are explicit.
 
 The full-stack cover is an illustration, clearly labeled. Project descriptions distinguish implemented features from simulation and planned work.
+
+## 9 November 2026 manual refresh
+
+The current guides now cover verified email/recovery in all three hosted apps,
+Noteweld vault import/export, saved history, explicit local sync, reviewed agent
+proposals and keyboard capture. Separate source-distributed guides describe the
+qualified unsigned Linux desktop alpha, reviewed Anki text export and the
+owner-operated encrypted-attachment server profile. They distinguish source
+setup from hosted functionality, public deployment, E2EE and live billing.
+
+Local checks passed: 60 reviewed-source snapshots, reproducible Hugo generation,
+88 HTML pages / 1,903 local links-assets-fragments / 79 articles, nine DOM cases,
+the publication-isolation test and 24 grouped manuals browser checks across all
+79 article routes/four widths. The app chooser/root also passed four-width
+Chromium/accessibility/navigation/no-JS checks. Desktop and narrow-screen captures
+were inspected. This does not certify physical devices, every assistive technology,
+provider consent, payments or a customer-operated server. Public deployment and
+HTTPS verification are recorded separately in the workspace release receipt.
 
 ## Preview and checks
 

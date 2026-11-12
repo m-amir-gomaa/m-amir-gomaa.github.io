@@ -1,9 +1,9 @@
 # Source workflow and diagnostics release
 
-> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones. Production source revision b718402 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
+> Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Google/GitHub sign-in and owner account linking have passed their recorded acceptance. Paid checkout is closed. Dated release records describe their own checkpoints. Reviewed source revision 30e8e34 is reserved for owner-authorized review; a source checkpoint does not establish deployment. This public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision b71840236ed905f990ad6c9aa40be256df7410f3
-Reviewed: 2026-11-05
+Source baseline: Owner-access repository, revision 30e8e34bf67280bf26dcc5109ca4d016d3808bc3
+Reviewed: 2026-11-12
 
 *Original record: Source workflow and diagnostics — 18 October 2026.*
 

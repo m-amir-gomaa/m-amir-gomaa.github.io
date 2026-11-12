@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-10-19",
+  "reviewed": "2026-11-09",
   "projects": [
     {
       "slug": "noteweld",
@@ -11,7 +11,7 @@
       "status": "Free hosted preview",
       "live": "https://noteweld.amirgomaa.com/",
       "description": "Write Markdown, connect notes and retain original Pageweft/Sonaweft source bundles in a private workspace.",
-      "notice": "Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones.",
+      "notice": "Current preview includes email signup/reset, Google/GitHub sign-in, private managed media, user-owned Google Drive uploads, Markdown/Vim, connected notes and source imports. Paid checkout is closed. Managed attachment E2EE is a planned requirement, not an available feature. Earlier release records retain their dated scope.",
       "files": [
         {
           "path": "README.md",
@@ -19,7 +19,9 @@
           "title": "Technical overview",
           "description": "Architecture, implemented scope, setup and the current release.",
           "category": "Reference",
-          "start_at_title": true
+          "start_at_title": true,
+          "mode": "curated",
+          "context": "## Choose a workspace\n\nNoteweld combines Markdown, optional Vim editing, saved history, links/backlinks, a graph, full color preferences and keyboard search/capture. The hosted preview uses Next.js/Node on Modal, Neon PostgreSQL and a fixed Cloudflare HTTPS gateway. Managed media uses private R2; selected-file Google Drive is a separate storage connection. Vercel is not the active application host.\n\n[Using Noteweld](/manuals/noteweld/guide/) is the practical starting point. Verified email signup/recovery is live. Google/GitHub sign-in has passed genuine owner acceptance. Sensitive provider linking/removal retains separate ownership checks. Paid checkout stays disabled.\n\n## Portable work\n\n[Vault transport](/manuals/noteweld/portable-vault/) retains sources and exports current notes with actual available files. [History](/manuals/noteweld/history/) provides bounded recovery. [Local sync](/manuals/noteweld/local-sync/) uses stable identities, exact previews and explicit conflict decisions. [Agent proposals](/manuals/noteweld/agent-access/) require separate human acceptance.\n\nThe source-distributed [Linux desktop alpha](/manuals/noteweld/desktop/) adds offline local files and actual Neovim. [Anki handoff](/manuals/noteweld/anki/) exports reviewed text cards. A separate [private-server profile](/manuals/noteweld/private-server/) provides administrator setup and encrypted attachment copies. These do not imply public installers, macOS/Windows qualification, unlimited storage or end-to-end encryption.\n\nThe deployed hosted web uses schema 0015 / logical snapshot format 8; the newer Paymob source checkpoint is not a billing deployment. Real public cookie, media, archive, history, sync, proposal and keyboard journeys have separate recorded acceptance. Builds, browser checks, external consent and actual payments remain distinct evidence. The production repository is access-controlled; these manuals do not distribute its source or desktop binary.\n"
         },
         {
           "path": "docs/EDITOR.md",
@@ -49,7 +51,7 @@
           "description": "CPU hosting, isolated PostgreSQL, encrypted snapshots and incident recovery.",
           "category": "Operations",
           "mode": "curated",
-          "context": "## Current deployment and data\n\nNoteweld runs its Next.js/Node application on Modal behind the public Cloudflare gateway. Neon PostgreSQL stores private account/note state. The preview has explicit account/note/source bounds and billing is closed. No shared wallet/login across the portfolio apps is implied.\n\n## Account and preference persistence\n\nEvery private operation validates the server session and owner. Browser-session revocation and account session versions control continuing access. Google/GitHub entry is configured, with actual owner grant/link acceptance still pending; matching emails never automatically merge accounts. Verified-email signup and mailed resets are deployed; existing private recovery keys remain available.\n\nGuest appearance is browser-local. Saved account appearance is stored with the account and included in exports/backups. Local drafts are not a crash-proof offline database. The owner's private code map and learning material are not public app features.\n\n## Backups and migrations\n\nThe current schema is 0012 and encrypted snapshot format is 7, including appearance, managed media and Drive reference/grant state. Supported versions 1–7 restore into an empty current-schema target. Restored Drive grants require reconnection. Fresh encrypted hosted snapshots have been restored into separate local clones and original durable rows compared. Restore targets must be empty and isolated, and restored sessions must be invalidated. A local backup file alone does not prove off-device disaster recovery.\n\nOwner deployment, credential and recovery commands remain in the access-controlled repository. Keep application public-origin settings and gateway forwarding behavior consistent during rollback. Never erase accounts, identities or quotas to make a deployment appear healthy.\n\n## Verification scope\n\nA successful build is distinct from browser review, database persistence and real provider consent. The deployed release passed ordinary email sign-in, note save, account appearance save/reload/export and temporary-account deletion; [the current release](/manuals/noteweld/ui-release/) gives the relevant counts and limits.\n\n[Using Noteweld](/manuals/noteweld/guide/) explains normal operation; [public domain access](/manuals/noteweld/custom-domain/) explains the hosting boundary."
+          "context": "## Hosted service\n\nNoteweld runs on Modal behind its fixed Cloudflare HTTPS gateway, with Neon PostgreSQL. The hosted web service uses schema 0015 / logical snapshot format 8. Verified email recovery is live; real owner Google/GitHub sign-in has passed; commercial acceptance remains separate. Billing stays closed. R2 and selected Drive media retain their respective storage boundaries. Neither is end-to-end encrypted.\n\n## Backups and recovery\n\nEncrypted database snapshots include durable notes/history, identity and media metadata. They exclude browser sessions, pending inbox challenges, live device credentials/pairings and pending agent drafts. Restore requires an isolated empty target, invalidates sessions and requires device/Drive reconnection. Media bytes require separate recovery copies. A database snapshot alone cannot recover attachments.\n\nExact encrypted pre/post restores preserved original durable rows for hosted history, sync, proposals and finder releases. Local snapshots alone do not prove off-device disaster recovery. Credentials, private budgets and deployment commands remain in the owner repository.\n\n## Separate private deployment\n\nThe [private-server profile](/manuals/noteweld/private-server/) uses fixed administrator paths and authenticated encrypted attachment/recovery files with server-held keys. Notes, PostgreSQL/WAL, sources and temporary files still require encrypted OS storage. It does not provision a public server, add a hosted upload destination or supply E2EE. [Storage](/manuals/noteweld/storage/) explains allowances and safe over-limit behavior.\n"
         },
         {
           "path": "docs/CONNECTIONS-RELEASE.md",
@@ -92,10 +94,10 @@
           "path": "docs/ACCOUNTS.md",
           "slug": "account-work",
           "title": "Accounts, recovery and connected sign-in",
-          "description": "Verified-email signup/reset, recovery keys, browser sessions and deliberately linked Google/GitHub identities.",
+          "description": "Current email/private-key recovery, browser sessions and deliberately linked Google/GitHub identities.",
           "category": "Usage guide",
           "mode": "curated",
-          "context": "## Sign in and retain recovery access\n\nFor email signup, enter your address, follow the verification email and then choose your name and passphrase. No account is created before confirmation. Verified email accounts can request mailed password resets. Existing private recovery keys and configured Google/GitHub sign-in remain available. Keep recovery keys out of chats and screenshots. Each portfolio application has a separate account.\n\n## Link a provider to an existing account\n\nSign in to the existing Noteweld account first. Open **Account → Sessions and connected sign-in → Provider identities**. Confirm ownership when asked, then choose **Link Google** or **Link GitHub**. Sensitive actions require ownership confirmation from the last five minutes. If it has expired, choosing an action explains the requirement and focuses the confirmation field; it does not change an identity. Enter the current passphrase or choose the private recovery key, confirm ownership, then choose the action again. Matching email addresses never silently merge accounts.\n\nGoogle/GitHub registrations and public-domain authorization requests have passed callback, state and PKCE checks; Google also uses an OIDC nonce. The owner's actual consent/link/unlink acceptance remains pending. A configured button is not evidence of a completed provider grant.\n\n## Sessions, copies and deletion\n\nReview active browser sessions, revoke a selected device or sign out every device. Export important notes/account data before deletion. Changing a passphrase or using recovery rotates recovery access and revokes older sessions. Removing a provider must leave a usable sign-in method.\n\n[Start with the current usage guide](/manuals/noteweld/guide/) or read [the November release](/manuals/noteweld/ui-release/)."
+          "context": "## Sign in and retain recovery access\n\nCreate an email account by completing the security check, following the inbox link and explicitly choosing your name/passphrase. Verified email/password accounts can request mailed resets; links expire after 30 minutes and work once. A completed reset signs out previous sessions and invalidates any old private recovery key. Existing unverified accounts retain their previous key/provider recovery. Configured Google/GitHub sign-in remains a separate method; accounts never silently merge. Each portfolio application has a separate account.\n\n## Link a provider to an existing account\n\nSign in to the existing Noteweld account first. Open **Account → Sessions and connected sign-in → Provider identities**. Confirm ownership when asked, then choose **Link Google** or **Link GitHub**. Sensitive actions require ownership confirmation from the last five minutes. If it has expired, choosing an action explains the requirement and focuses the confirmation field; it does not change an identity. Enter the current passphrase or choose the private recovery key, confirm ownership, then choose the action again. Matching email addresses never silently merge accounts.\n\nGoogle/GitHub registrations and public-domain authorization requests have passed callback, state and PKCE checks; Google also uses an OIDC nonce. The owner's actual consent/link/unlink acceptance remains pending. A configured button is not evidence of a completed provider grant.\n\n## Sessions, copies and deletion\n\nReview active browser sessions, revoke a selected device or sign out every device. Export important notes/account data before deletion. Changing a passphrase or using recovery rotates recovery access and revokes older sessions. Removing a provider must leave a usable sign-in method.\n\n[Start with the current usage guide](/manuals/noteweld/guide/) or read [the November release](/manuals/noteweld/ui-release/)."
         },
         {
           "path": "docs/SOURCE-HANDOFF-RELEASE.md",
@@ -123,13 +125,137 @@
           "context": "## Configuration and actual use are different checks\n\nGoogle and GitHub are configured for Noteweld's public domain. Authorization request checks passed the exact callback URL, state and PKCE; Google also includes its OIDC nonce. Ordinary email sign-in and authenticated note/account operations passed the deployed release checks.\n\nThe owner's actual provider consent, linking/unlinking, cancellation and provider-specific email cases have not yet completed acceptance. Do not interpret configuration as evidence that every external account has been exercised.\n\n## Existing account? Link deliberately\n\nFirst sign in using the method that already owns your notes. Then open **Account → Sessions and connected sign-in → Provider identities**, confirm ownership if asked and choose the desired provider. If ownership confirmation has expired, the action remains clickable and guides you to the confirmation field. Confirm using your passphrase or private recovery key and retry the action. Google linking requests an explicit account choice. Matching email addresses do not automatically combine accounts.\n\n[Account controls and recovery](/manuals/noteweld/account-work/) describe the supported safety controls. The [usage guide](/manuals/noteweld/guide/) is the normal starting point."
         },
         {
+          "path": "docs/EMAIL-VERIFICATION-20261106.md",
+          "slug": "email-recovery",
+          "title": "Email signup and password recovery",
+          "description": "Verified signup, one-use inbox links, password resets and legacy recovery.",
+          "category": "Guide",
+          "mode": "curated",
+          "context": "## Create an email account\n\nOpen [signup](https://noteweld.amirgomaa.com/auth/signup), complete the security check and request your email. Follow the link, choose your name and passphrase, then confirm. Opening the link alone creates no account. Links expire after 30 minutes and work once. Use at least 15 characters, following the form's full password requirements.\n\n## Recover access\n\nVerified email/password accounts can [request a reset](https://noteweld.amirgomaa.com/auth/forgot). Completing the emailed form changes the password and signs out previous sessions. Any old private recovery key stops working. Unverified legacy accounts retain their existing key/provider methods; inbox ownership never silently merges or takes over an older account.\n\n## What was checked\n\nThe owner completed actual security widgets in Firefox. Signup and reset messages reached the inbox; explicit confirmation, reused-link refusal, old-session/password rejection, replacement login and temporary-account deletion passed. Local suites cover additional expiry, concurrency and provider-failure boundaries. Separate raw widget-token replay was not captured. Google/GitHub consent remains a separate acceptance task.\n\n[Using Noteweld](/manuals/noteweld/guide/) covers the normal workspace. Private anti-abuse budgets and provider credentials are not published."
+        },
+        {
+          "path": "docs/MEDIA-20261106.md",
+          "slug": "attachments",
+          "title": "Images, audio and video",
+          "description": "Attach, preview, retain, download and delete private note media.",
+          "category": "Guide",
+          "mode": "curated",
+          "context": "## Add a file to a note\n\nChoose **Upload to → Noteweld storage** or **Google Drive**, then attach, paste or drop one supported file into the editor attachment area. Connect Drive separately in Account first. The destination is remembered per account in this browser; failed uploads never silently switch providers. Save the note after insertion. Preview shows supported images and native audio/video players; codec support depends on the browser.\n\nImages can be up to 10 MB and audio/video up to 25 MB per file. The free account allowance is 100 MB, with at most 500 attachments. Managed files live in private Cloudflare R2 storage with a recovery copy; Drive originals remain in the connected Google Drive and do not consume managed bytes; account permissions control reads. Notes and media are not end-to-end encrypted.\n\n## Keep or remove files\n\nOpen **Account → Manage storage and plan → Manage stored attachments** to download or remove a file. Removing only its Markdown reference keeps the reusable original in the library. Deleting the library file affects every note using it. Download anything important first.\n\nAccount JSON includes an attachment manifest, not the actual media bytes; download those separately. Archived/trashed notes and unfinished reservations still count. Shared availability can temporarily pause uploads without disclosing private accounting.\n\n## Evidence\n\nActual public HTTPS checks passed original-byte storage/recovery, private access and foreign-account refusal, ranges, native image/audio/video playback, saved-note reload, invalid/oversize rejection and explicit deletion. This does not certify every browser codec or an unlimited hosting allowance.\n\n[Storage and plan behavior](/manuals/noteweld/storage/) explains usage and over-limit recovery.\n\n[Drive uploads, retries and privacy](/manuals/noteweld/media-storage/) explains direct uploads and original retention.\n"
+        },
+        {
+          "path": "docs/STORAGE-20261106.md",
+          "slug": "storage",
+          "title": "Storage usage and plans",
+          "description": "Usage, reserved bytes, file management, planned Plus and safe downgrade.",
+          "category": "Guide",
+          "mode": "curated",
+          "context": "## Find your usage\n\nOpen [Account → Manage storage and plan](https://noteweld.amirgomaa.com/dashboard/account#storage). The panel shows saved files, unfinished uploads, pending removals and remaining space. Free includes 100 MB and at most 500 attachments; images can be up to 10 MB, audio/video up to 25 MB each.\n\nReservations and unfinished removals count until released. Archived/trashed notes still count. Expand the library to download ready files or remove an unneeded file/reservation. Removal warns that any note using the file will show an unavailable attachment. Refresh retries a failed read; stale displayed values are labeled.\n\n## More storage and changes of plan\n\nPaid managed bundles are being prepared, including a larger allowance for heavier file use. Final prices and quotas are not yet an active offer; the earlier 5 GB/$5 proposal is superseded. Client-key attachment E2EE is a requirement for the planned paid privacy offer and is not implemented today. A local payment fixture does not grant production storage or prove a real purchase.\n\nWhen files exceed the current allowance, new uploads pause. Notes, existing-file downloads and deletion remain available. Plan expiry does not automatically delete saved files. Account JSON contains a metadata manifest. For current notes and actual available media together, choose Account → Keep a copy → Download Markdown vault.\n\n## Verification\n\nUnit and actual isolated database tests cover charged reservations, current-plan admission, local sandbox Plus, expiry and retained read/delete access. Browser checks cover local download/removal/reclaimed quota, failure/retry, themes and separately mocked full/unavailable states. Independent review approved the local interface. The deployed account screen and quota metadata passed a documented temporary operator-session check; its session was removed. Encrypted pre/post snapshots restored with original durable data unchanged. Real commercial billing remains a separate gate.\n\n[Using Noteweld](/manuals/noteweld/guide/) is the normal starting point. Private operating budgets, credentials and internal admission configuration are omitted.\n\n## Google Drive and private servers\n\nChoose Google Drive in a note to upload originals directly to your own Drive allowance; those bytes do not consume managed storage, while references still count toward the combined attachment limit. A separate source-distributed owner-operated server profile adds authenticated encrypted attachment storage. It is not a third destination in the hosted menu and does not provide user-held-key end-to-end encryption. [Private-server scope](/manuals/noteweld/private-server/). [Media/storage choices](/manuals/noteweld/media-storage/).\n"
+        },
+        {
+          "path": "docs/BILLING-PREPARATION-20261106.md",
+          "slug": "subscription-status",
+          "title": "Subscription availability",
+          "description": "Planned storage subscriptions and the distinction between test and real payments.",
+          "category": "Reference",
+          "mode": "curated",
+          "context": "## Current availability\n\nPaid storage and live checkout remain disabled. The current free preview includes 100 MB of managed media. Larger paid bundles are being prepared; final quotas and prices are not yet available to purchase.\n\nPaymob is the selected payment integration. The earlier Paddle implementation is retained as an inactive fallback. Merchant signup does not prove currency approval, recurring payments or a completed purchase. The initial payment design uses manually renewed 30-day access rather than promising automatic renewal.\n\n## Privacy before a paid offer\n\nManaged attachment end-to-end encryption is planned, not implemented. Current R2 storage uses provider-managed encryption and the application can read bytes. The planned paid privacy offer must complete client-side encryption, recovery, export and device acceptance before launch. [Encryption scope](/manuals/noteweld/encryption/).\n\nActual provider checkout/webhook delivery, sustainable capacity, costs and retention still require acceptance. Test fixtures do not establish live billing. No customer should pay for an unavailable offer.\n\n[Storage and plans](/manuals/noteweld/storage/) describes today's limits and safe over-limit behavior. Provider credentials and private operating budgets are excluded from this public edition.\n"
+        },
+        {
           "path": "docs/STORAGE-BACKENDS.md",
           "slug": "media-storage",
           "title": "Images, audio, video and storage",
-          "description": "Choose Noteweld storage or your Google Drive for attachments, paste and drop.",
+          "description": "Compare managed cloud, Google Drive, local files and a self-hosted server, with current encryption boundaries.",
           "category": "Usage guide",
           "mode": "curated",
-          "context": "## Choose where new files go\n\nIn a signed-in note, use **Upload to → Noteweld storage** or **Google Drive**. Then use **Attach media**, paste an image or drop a file. Connect Google Drive separately under **Account → Google Drive** first. The destination is remembered for your account in this browser; it is not synchronized between devices.\n\nDrive originals upload directly from your browser to your connected Google Drive. Noteweld verifies their type and bytes and inserts private references. Save the note. Use the **Google Drive** panel and **Choose or upload in Drive** for files already in Drive.\n\n## Limits and recovery\n\nThe free preview includes 100 MB of managed Noteweld media. Drive originals use your Google allowance and do not consume managed bytes. Images may be up to 10 MB; supported audio/video up to 25 MB. The account has a combined 500-attachment limit, with up to 100 references per note. Delivery has additional traffic/concurrency safeguards. Paid plans and checkout remain disabled.\n\nA failed Drive upload never falls back to Noteweld storage. Keep the note open and use the destination-specific retry. Reloading or closing the editor clears in-memory retry state. If an upload completed but insertion failed, its original may already exist in Drive: select it through the Drive panel rather than uploading another copy.\n\nRemoving a Drive reference leaves the original in Google Drive; removing a managed attachment reclaims its Noteweld storage and makes it unavailable in notes using it. Download originals separately from text/account exports. Externally changed Drive files require explicit replacement confirmation.\n\n## Privacy and unfinished features\n\nThese options are private to the signed-in account, but are not end-to-end encrypted. The application verifies and serves the selected bytes. Drive access uses a separate, narrow file grant; Google sign-in alone does not connect storage. Customer-supplied encrypted servers, full Obsidian synchronization, native Neovim and offline desktop operation remain future work.\n\n[Return to Using Noteweld](/manuals/noteweld/guide/).\n"
+          "context": "## Choose the storage you want\n\n| Option | Cost and setup | Privacy today |\n| --- | --- | --- |\n| Managed Noteweld cloud | Free bounded preview; paid managed bundles are being prepared | Private R2 storage, provider-managed encryption at rest; the application can read files |\n| Your Google Drive | No Noteweld storage subscription; your Google allowance and any Google charges apply | Google encrypts files at rest/in transit; this integration adds no client-key E2EE |\n| Local desktop vault | No cloud subscription; you manage disk, setup and backups | Ordinary local files; protect the device and disk yourself |\n| Separate private server | Intended free self-host software; you pay any infrastructure costs and configure/maintain it | Current attachment encryption uses server-held keys, not E2EE |\n\nPaid managed storage is intended to add convenience and **client-key end-to-end encryption for supported attachments**. That encryption is not implemented or available to buy today. Google Drive is not accurately described as unencrypted. The paid offer's final quotas and prices are still being qualified; the earlier 5 GB/$5 proposal is no longer a final offer. See [the encryption plan and limits](/manuals/noteweld/encryption/).\n\nLocal and self-hosted operation mean the user handles setup, updates, security, storage and backups. Current desktop/server profiles are source-distributed alphas; a public open-source release and its license are separate work. They are not a provisioned or managed free server.\n\n## Choose where new files go\n\nIn a signed-in note, use **Upload to → Noteweld storage** or **Google Drive**. Then use **Attach media**, paste an image or drop a file. Connect Google Drive separately under **Account → Google Drive** first. The destination is remembered for your account in this browser; it is not synchronized between devices.\n\nDrive originals upload directly from your browser to your connected Google Drive. Noteweld verifies their type and bytes and inserts private references. Save the note. Use the **Google Drive** panel and **Choose or upload in Drive** for files already in Drive.\n\n## Limits and recovery\n\nThe free preview includes 100 MB of managed Noteweld media. Drive originals use your Google allowance and do not consume managed bytes. Images may be up to 10 MB; supported audio/video up to 25 MB. The account has a combined 500-attachment limit, with up to 100 references per note. Delivery has additional traffic/concurrency safeguards. Paid plans and checkout remain disabled.\n\nA failed Drive upload never falls back to Noteweld storage. Keep the note open and use the destination-specific retry. Reloading or closing the editor clears in-memory retry state. If an upload completed but insertion failed, its original may already exist in Drive: select it through the Drive panel rather than uploading another copy.\n\nRemoving a Drive reference leaves the original in Google Drive; removing a managed attachment reclaims its Noteweld storage and makes it unavailable in notes using it. Download individual originals or use Account → Keep a copy → Download Markdown vault to collect current notes and actual available files together. Externally changed Drive files require explicit replacement confirmation.\n\n## Privacy and unfinished features\n\nThese options are private to the signed-in account, but are not end-to-end encrypted. The application verifies and serves the selected bytes. Drive access uses a separate, narrow file grant; Google sign-in alone does not connect storage. [Local-vault sync](/manuals/noteweld/local-sync/) uses explicit previews and conflict decisions. The separately qualified [Linux desktop alpha](/manuals/noteweld/desktop/) adds offline files and actual Neovim; it does not execute Obsidian plugins. A source-distributed [private-server profile](/manuals/noteweld/private-server/) supplies a separate installation with administrator-held encryption keys, not a third hosted destination or E2EE.\n\n[Return to Using Noteweld](/manuals/noteweld/guide/).\n"
+        },
+        {
+          "path": "docs/E2EE-DESIGN-20261112.md",
+          "slug": "encryption",
+          "title": "Encryption and storage privacy",
+          "description": "Current provider encryption, the planned client-key attachment E2EE boundary and recovery responsibilities.",
+          "category": "Reference",
+          "mode": "curated",
+          "context": "## Current behavior\n\nHosted managed attachments are private to the signed-in account and stored in two R2 buckets. Cloudflare encrypts objects at rest and HTTPS protects transfers, but the application can read contents. This is not end-to-end encryption. Google's Drive encryption also protects files at rest/in transit; the current Noteweld integration adds no client-key E2EE. The private-server profile encrypts attachments with administrator-held keys, which also is not E2EE.\n\n## Planned paid attachment privacy\n\nThe paid managed-cloud direction is to encrypt supported attachments on an approved user device before upload and decrypt only on approved user devices. The server and storage provider would receive ciphertext without the unwrapped file key. This is a design requirement, not a shipped or purchasable feature.\n\nAn initial attachment-only feature would not make note text, titles, search, account records or payment information E2EE. Its exact metadata scope must be documented; ciphertext sizes and access timing remain visible. Processing a decrypted copy with a cloud AI/OCR/transcription service is a separate disclosure requiring an explicit user action.\n\n## Keys and recovery\n\nThe intended design uses user-held recovery material and deliberate device enrollment. An email/account-password reset must not secretly recover an encryption key. Without an approved device or the user's recovery material, support would be unable to decrypt files. Revocation cannot erase plaintext already downloaded.\n\nBrowser playback, large-file bounds, desktop/CLI sync, downloads and vault exports all need compatible client-side handling. Existing plaintext files require explicit client-mediated migration; old backups cannot be retroactively made secret by relabeling them. Current file-size and type limits remain until their replacements are qualified.\n\nImplementation and independent security review, corruption/wrong-key tests, real device/browser journeys and encrypted backup/restore acceptance must precede an E2EE claim. Web users still trust delivered client code; a compromised device or malicious replacement client can access unlocked data.\n\nCompare [storage choices](/manuals/noteweld/media-storage/) and [private-server responsibilities](/manuals/noteweld/private-server/).\n\nPrimary references: [R2 data security](https://developers.cloudflare.com/r2/reference/data-security/) and [Google Drive encryption](https://support.google.com/drive/answer/10519333?hl=en).\n"
+        },
+        {
+          "path": "docs/HISTORY.md",
+          "slug": "history",
+          "title": "Recover saved versions",
+          "description": "Compare and restore bounded saved revisions.",
+          "category": "Guide",
+          "mode": "curated",
+          "context": "## Compare and restore\n\nOpen a saved note, choose **History**, select a version and compare it with the current content. Download its Markdown or confirm **Restore this version**. Restore creates a new revision; newer concurrent edits are refused rather than overwritten.\n\nFree recovery retains up to ten revisions per note for fourteen days, within 8 MiB compressed history per account. Older entries can expire sooner under pressure. Existing notes begin capturing history on their next edit; past versions are not fabricated. Permanent deletion removes history. Separately deleted media, disconnected Drive grants and unsaved text cannot be recreated. Vault exports contain current content, not full history.\n\nSnapshots include text, checklist and note properties. Standalone label-setting changes are not note revisions. Restore a trashed note from Trash first. Keep independent exports.\n\nThe deployed release exercised real PostgreSQL ownership, conflict/retention/corruption/rollback checks, browser comparisons/downloads/restore and actual public password/cookie restoration. Encrypted pre/post restores preserved original durable data. This is bounded recovery, not unlimited backup or crash-proof drafts.\n"
+        },
+        {
+          "path": "docs/KEYBOARD.md",
+          "slug": "keyboard",
+          "title": "Find, capture and navigate",
+          "description": "Keyboard search, capture templates and saved-note navigation.",
+          "category": "Guide",
+          "mode": "curated",
+          "context": "## Find saved work\n\nChoose **Find & commands** in the header. Outside editable fields, Ctrl+K (Linux/Windows) or Cmd+K (macOS) opens it. Inside the editor use the header button so the editor keeps its keys. Type title, passage, checklist or label words; all words must match. Filter by label or include Archive; Trash is excluded. At most twenty results appear.\n\nArrows/Enter choose, Tab reaches filters and Escape restores focus. Opening a note focuses its title. Links/backlinks and **Back to notes** continue navigation. Ctrl/Cmd+S saves inside the editor; failure retains the draft.\n\n## Capture safely\n\nWith no phrase, choose **New blank note**, **New source note** or **New decision note**. Templates provide editable prompts, not generated claims. A nonempty draft is focused rather than replaced. Unsaved-work confirmation remains active.\n\nSearch matches bounded literal text within the signed-in account. It uses no embeddings/inference service. Failure preserves the phrase/filters for Retry. Hosted acceptance exercised search, archive/labels, capture/save, dirty drafts, links and anonymous refusal. Chromium checks also exercised keyboard, network retry and scoped accessibility.\n"
+        },
+        {
+          "path": "docs/VAULT-20261108.md",
+          "slug": "portable-vault",
+          "title": "Markdown and Obsidian vaults",
+          "description": "Preview ZIP imports and export notes with actual files.",
+          "category": "Guide",
+          "mode": "curated",
+          "context": "## Import a folder\n\nIn **Source bundles**, choose **Markdown or Obsidian vault ZIP**. ZIP only intended material, removing credentials/private configuration first. Validate, inspect and confirm. Preview creates no notes; application is atomic and idempotent within the limits.\n\nOriginal archives remain separate/downloadable. Editable copies retain frontmatter/source text and map supported references to owned notes/files. Missing/ambiguous targets are not guessed. Configuration/plugins remain inert; this is not an Obsidian plugin runtime.\n\n## Keep a readable copy\n\n**Account → Keep a copy → Download Markdown vault** collects current notes/checklists, available stored attachments, retained sources and original ZIPs, with relative links and a state/hash manifest. Unsaved drafts, full past-version history, arbitrary remote media and credentials are excluded. A missing/corrupt/disconnected stored file fails collection explicitly; restore access and retry. Account JSON is separate metadata.\n\nImports are bounded to 4 MiB ZIP, 1,000 entries, 32 MiB expanded, 250 notes, 2 MiB note text and 8 MiB retained sources per account. Export is bounded to 192 MiB/4,096 files, transfer admission and a two-minute stream deadline. Hosted import/export exercised original bytes, R2 media and export hashes, including reimport without resurrecting deliberately deleted editable notes. [Local sync](/manuals/noteweld/local-sync/) is separate.\n"
+        },
+        {
+          "path": "docs/SYNC.md",
+          "slug": "local-sync",
+          "title": "Local vault sync and devices",
+          "description": "Pair a folder and preview transfers with recoverable conflicts.",
+          "category": "Guide",
+          "mode": "curated",
+          "context": "## Connect deliberately\n\nThe source CLI needs Node.js 24.13+ and locked dependencies. Connect a chosen Markdown folder to a compatible server, open the printed URL in your browser and approve the named device/scope in **Account → Devices & agents**. Never enter passwords/recovery keys into an agent or pairing prompt. Grants expire after 90 days and can be revoked earlier.\n\nPrepare/download the initial snapshot, review and confirm its digest. Preparation does not overwrite visible files. For an existing Obsidian vault, first import its ZIP on the website and explicitly adopt that source. Exact commands are provided with the access-controlled source.\n\n## Daily work and conflicts\n\nEdit locally online or offline. Preview pushes/pulls/conflicts, then confirm that exact preview. Divergent edits retain local text plus a separate cloud copy for an explicit decision. Local deletion never silently deletes a cloud note; cloud deletion never silently erases a local file. Adopt deliberate renames before editing moved content. New local notes require include-new preview. Keep the sync journal when moving the vault.\n\nNew local media uses managed storage with existing limits, without silently falling back to Drive. Plugins/configuration are not executed. Reader scopes read, Agent scopes propose for review, and Sync scopes read/update notes/files. None manages account settings, providers or billing. Scopes cover the complete account, not selected folders.\n\nCredentials live outside the vault in private files, not an encrypted keychain. Revocation blocks future access but does not erase downloaded files. Reset/sign-out-all invalidates grants; restored clients reconnect. Actual CLI/PostgreSQL/browser and hosted journeys exercised two-way edits, conflicts, R2 bytes, new notes and revocation. See the separately qualified [desktop alpha](/manuals/noteweld/desktop/).\n"
+        },
+        {
+          "path": "docs/AGENT-INTEGRATION.md",
+          "slug": "agent-access",
+          "title": "Reviewed agent proposals",
+          "description": "Allow reading and proposed changes with separate human acceptance.",
+          "category": "Guide",
+          "mode": "curated",
+          "context": "## Review before accepting\n\nAn explicitly paired Agent can list/read owned notes and submit complete Markdown creation/update proposals. It cannot approve itself, directly delete notes, manage providers or billing. Open **Account → Devices & agents → Review agent proposals**, compare the text/reason, then accept or reject. Accepted work uses ordinary ownership, revisions, quotas and history. A stale revision or revoked/expired device refuses acceptance. Checklist updates are unsupported.\n\nThe optional stdio MCP bridge exposes list_notes, read_note, propose_note and proposal_status. Device bearer access is separate from browser cookies; only the authenticated owner approves. Installation does not pair an account or change a model. Portable human/agent instructions accompany the source.\n\nGrants expire after 90 days and cover the entire account. Drafts/receipts expire after seven days, with bounded counts, bytes and submission rates. Backups retain accepted notes/history but omit grants and pending proposals. Real DeepTutor MCP transport, CLI, PostgreSQL and browser decisions were exercised without invoking a model or changing its account/configuration. Hosted checks covered read/propose, review/history, duplicate/stale refusal and revocation; they do not create another owner's grant.\n"
+        },
+        {
+          "path": "desktop/README.md",
+          "slug": "desktop",
+          "title": "Linux desktop alpha",
+          "description": "Offline Markdown with actual Neovim and optional cloud sync.",
+          "category": "Guide",
+          "mode": "curated",
+          "context": "## Local files and your real editor\n\nThe source-distributed unsigned Linux x64 alpha opens an ordinary Markdown/Obsidian folder. No account is needed for offline reading, full-text search, links/backlinks, Connections, note templates and supported local media. **Refresh files** updates indexes after another app edits files. Start with a copy of valuable work and keep independent backups.\n\n**Edit in nvim** opens the actual editor in a split pane; **Expand editor** enlarges the same process. Use :w to save and :wq to save/close. Ctrl/Cmd+Shift+F6 returns focus to app controls. Settings accepts an executable plus separate arguments, not a shell command string. Neovim uses its normal configuration/plugins and local-user permissions beyond the renderer sandbox.\n\nA checked working copy protects the original; written edits are verified before replacement. Concurrent edits preserve both, and written work can recover after restart. Unwritten keystrokes are not recoverable. Remote images are not automatically loaded and the viewer does not run Obsidian plugins.\n\n## Preferences, setup and limits\n\nOptional [cloud sync](/manuals/noteweld/local-sync/) requires browser approval and exact transfer confirmation. Credentials stay outside the vault in private files, not an encrypted keychain. Six palettes, light/dark/system, reading font/size and 32 app color roles save locally; Neovim colors/keymaps remain its own settings.\n\nThe owner-access source contains Node 24, native dependency, runtime/build and launch instructions. This page does not distribute an installer/private source. Thirteen actual Linux scenarios, packaged SQLite/PTY/Neovim, written restart recovery, scoped accessibility and hosted two-way sync/revocation passed. Independent finish review accepted the two listed corrections. macOS/Windows packages, signing, auto-update and every editor plugin remain unqualified.\n"
+        },
+        {
+          "path": "integrations/anki/README.md",
+          "slug": "anki",
+          "title": "Anki text-card handoff",
+          "description": "Review source-grounded text cards with stable import identities.",
+          "category": "Guide",
+          "mode": "curated",
+          "context": "## Preview, export, import\n\nThe optional source CLI accepts explicitly authored card batches with a stable external ID, question/answer, local source path, exact file hash and verbatim supporting quote. It checks visible vault bytes before export. Human review still determines accuracy and useful retrieval; a matching quote alone does not make a good card.\n\nPreview the batch, inspect its digest and confirm export to a new UTF-8 tab-separated file. Active HTML and Anki sound syntax are escaped. No model call, Noteweld account or AnkiWeb credential is needed.\n\nCreate **Noteweld Recall v1** in Anki with fields **NoteweldID, Question, Answer, Source**, NoteweldID first, and one Recall card template. Import into the intended deck, review field mapping/duplicate-update settings and confirm. Keep IDs stable on later imports to update the same notes/cards while preserving scheduling. Omitted cards are not deleted. Exact CLI/template/agent instructions accompany the source.\n\nThis is text-only: no app export button, automatic live-deck writes, synthetic ratings, cloze/image/audio generation or duplicate FSRS. Anki owns scheduling. Installed Anki 26.09.3 imported real CLI output three times into a temporary collection; one synthetic review and later text updates preserved note/card IDs, checked scheduling fields and exact review rows. The owner's profile/AnkiWeb were untouched.\n"
+        },
+        {
+          "path": "integrations/private-server/README.md",
+          "slug": "private-server",
+          "title": "Owner-operated private server",
+          "description": "Separate deployment with encrypted attachments and explicit recovery.",
+          "category": "Guide",
+          "mode": "curated",
+          "context": "## Separate installation\n\nThis source profile runs a separate compatible Noteweld instance. The owner intends free self-host software: the user supplies the machine, storage, setup, updates, security and backups, including any hosting bills. Current source access/licensing remains limited; a public open-source release is not yet delivered. It does not provision a public server, add a third hosted upload destination or provide unlimited paid storage. Desktop/CLI clients select a compatible origin and pair to that server's account; existing accounts/files do not move automatically.\n\nAn administrator supplies PostgreSQL, a fixed HTTPS origin and private directories. Setup generates private configuration/independent keys. Migrations require an explicit target. Owner bootstrap is limited to an empty account table and does not mark email verified. Email, OAuth, DNS/TLS, public deployment and independent backup custody need separate configuration and acceptance. Billing stays disabled.\n\n## Privacy and recovery\n\nAttachments use authenticated AES-256-GCM envelopes tied to object identity, with primary/recovery copies. Reads authenticate before plaintext/ranges; a missing/corrupt primary can use an authenticated recovery file. Paths are fixed administrator configuration, not untrusted note URLs. Permissions, symlinks, hashes and sizes are checked.\n\nThe server holds keys: this is encryption at rest, not E2EE. Notes, PostgreSQL/WAL, source imports and temporary files still need encrypted OS storage. Two directories on one disk are not off-device disaster recovery. Protect and independently retain keys.\n\nEncrypted database backup uses a separate key; restore requires an explicitly selected new empty database. Media bytes, live sessions/devices and pending proposals are excluded. Keep a coherent database/object copy plus independent keys; reconnect clients/Drive after restore. Wrong keys, damaged snapshots, the live target and nonempty targets are refused.\n\nActual local PostgreSQL bootstrap/owner creation/backup/restore, corruption/identity/range checks, media cleanup/accounting and a production-browser encrypted-media journey passed. No public customer server, reverse proxy, off-device backup or key rotation was provisioned/certified. Human/agent runbooks and example service/proxy files accompany the source.\n"
+        },
+        {
+          "path": "docs/ECOSYSTEM.md",
+          "slug": "ecosystem",
+          "title": "From sources to connected notes",
+          "category": "Usage",
+          "description": "Move reviewed Pageweft and Sonaweft exports into Noteweld with explicit validation and separate account boundaries."
         }
       ],
       "source_access": "owner",
@@ -139,27 +265,23 @@
           "reason": "Private owner learning/codebase walkthrough; delivered locally, not part of the public product manual."
         },
         {
-          "path": "docs/BILLING-PREPARATION-20261106.md",
-          "reason": "Owner operations/provider acceptance runbook; public behavior is summarized in the reviewed account and media-storage guides without private operating controls."
-        },
-        {
-          "path": "docs/EMAIL-VERIFICATION-20261106.md",
-          "reason": "Owner operations/provider acceptance runbook; public behavior is summarized in the reviewed account and media-storage guides without private operating controls."
-        },
-        {
           "path": "docs/GOOGLE-DRIVE.md",
-          "reason": "Owner operations/provider acceptance runbook; public behavior is summarized in the reviewed account and media-storage guides without private operating controls."
+          "reason": "Owner provider setup/acceptance runbook; public behavior is summarized in the reviewed media-storage guide without private operating controls."
         },
         {
-          "path": "docs/MEDIA-20261106.md",
-          "reason": "Owner operations/provider acceptance runbook; public behavior is summarized in the reviewed account and media-storage guides without private operating controls."
+          "path": "docs/DESKTOP-ACCEPTANCE.md",
+          "reason": "Private dated owner build/package receipts; the public desktop summary states exercised scope and limitations without local paths."
         },
         {
-          "path": "docs/STORAGE-20261106.md",
-          "reason": "Owner operations/provider acceptance runbook; public behavior is summarized in the reviewed account and media-storage guides without private operating controls."
+          "path": "docs/PAYMOB-20261112.md",
+          "reason": "Private merchant activation, financial and operational acceptance runbook; current customer behavior is curated in subscription-status."
+        },
+        {
+          "path": "docs/INTEGRATION-FINISH-20261110.md",
+          "reason": "Private account/operational acceptance and diagnostics; current customer-facing behavior remains in the reviewed usage guides."
         }
       ],
-      "reviewed": "2026-11-07"
+      "reviewed": "2026-11-12"
     },
     {
       "slug": "pageweft",
@@ -171,7 +293,7 @@
       "status": "Bounded public sample",
       "live": "https://pageweft.amirgomaa.com/",
       "description": "Convert technical PDFs into portable Markdown with source-page review and separate corrections.",
-      "notice": "Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones.",
+      "notice": "Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Google/GitHub sign-in and owner account linking have passed their recorded acceptance. Paid checkout is closed. Dated release records describe their own checkpoints.",
       "files": [
         {
           "path": "README.md",
@@ -182,7 +304,9 @@
           "start_at_title": true,
           "public_replacements": {
             "Live samples fail closed until the Modal\nzero-net-spend control and billing headroom can be verified.": "Free processing may be temporarily unavailable. Completed examples remain available."
-          }
+          },
+          "mode": "curated",
+          "context": "## Hosted PDF workflow\n\nPageweft runs a Python/FastAPI web interface and serialized SQLite ledger on Modal behind Cloudflare. Inspect authorized PDFs up to 64 MiB / 1,000 pages, choose original page ranges and review the extraction plan/quote. Automatic routing uses text extraction or pinned MinerU OCR; forced OCR and explicit CPU text-only routes remain separate. Text-only does not reconstruct images or full layout.\n\nBounded sections preserve completed output through partial failures. Review against source pages, retain engine versions separately from corrections, and export single/per-page/group/bookmark Markdown with relative media and hashed provenance. Plain Markdown, Obsidian and LLM-oriented presets are formatting choices, not generated summaries or accuracy guarantees.\n\n## Current service tariff\n\nMinerU extraction is $0.50/job plus $0.005/selected page; text-only is $0.25 plus $0.001/page. Reprocessing completed pages has a $0.20 service fee plus page usage; failed-page retries do not repeat an already charged initial fee. One-time packs are configured at $5/$10, but checkout remains closed. These are configured service tariffs, not measured provider reimbursements or guaranteed margins.\n\nAn eligible public sample processes one selected page subject to private availability. Accounts/balances are independent from other apps. Files/corrections expire after 48 hours; download retained results. Verification/reset mail is deployed; [accounts](/manuals/pageweft/accounts/) explains ownership and recovery. Genuine OAuth consent and payment delivery remain separate.\n\n## Evidence and setup\n\nReal cloud CPU PDF text extraction, review/export browsers, source lineage and deployed synthetic account/recovery acceptance have recorded checks. Complex OCR still needs comparison against the source; no broad accuracy or scale benchmark is implied. The engine is AGPL-3.0: repository privacy is not licensing clearance. [Dependency review](/manuals/pageweft/dependencies/) explains that boundary.\n\nThe owner-access source contains Python/Modal development/deploy commands and provider configuration. It preserves one serialized ledger writer and separate media recovery. [Using Pageweft](/manuals/pageweft/guide/) is the visitor starting point; [operations](/manuals/pageweft/operations/) describes recovery boundaries. No customer Modal account or local GPU is needed to use the hosted site.\n"
         },
         {
           "path": "docs/CONVERSION-PRODUCT.md",
@@ -205,14 +329,16 @@
           "description": "Usage reporting, admission controls, pause, encrypted ledger backups and recovery.",
           "category": "Operations",
           "mode": "curated",
-          "context": "## Current public operating boundary\n\nPageweft runs behind its public Cloudflare gateway on Modal. Email/passphrase and private-key recovery are deployed. Accounts and balances are product-specific. Google and mailed password reset remain unconfigured; paid checkout is closed.\n\n## Admission and privacy\n\nLive free processing checks visitor eligibility and private shared availability before dispatch. An unavailable or unverifiable admission check refuses new processing with **Currently unavailable. Please try again later.** Completed examples remain open. Signing in does not reset sample eligibility.\n\nOwner accounting amounts, spending settings, usage, reset details and private reports are deliberately omitted from public documentation and responses. Customer quotes and balances are a separate contract. An admission estimate is not proof of actual provider charges or a physically isolated provider billing account.\n\n## Durable work and recovery\n\nThe application records processing state and accounting transactionally, separates source/derived material, and checks ownership before private downloads. Retries and partial failures have explicit state and settlement behavior. Download retained outputs before their normal 48-hour expiry; immediate deletion closes access and removes supported files while financial records remain separate.\n\nOwner pause, diagnostics, backup and recovery commands are private operational tools. They are not public administration routes. Preserve source/ledger ownership, idempotency and admission gates during recovery; do not reset quotas or disable guards to reopen a trial.\n\n## Payment and quality evidence\n\nThe owner reports domain approval; seller/payout readiness and genuine payment/refund/payout acceptance remain separate. No billing activation or provider account change was performed by this guide refresh. Representative OCR/transcription quality, scale and margins require their own evidence.\n\n[Use the application](/manuals/pageweft/guide/) or read [current provider boundaries](/manuals/journal/provider-costs-and-payments/)."
+          "context": "## Current public operating boundary\n\nPageweft runs behind its public Cloudflare gateway on Modal. Email-first signup, verification and mailed resets for verified addresses are deployed alongside private-key recovery. Accounts and balances are product-specific. Google/GitHub owner sign-in/linking acceptance has passed; checkout is closed.\n\n## Admission and privacy\n\nLive free processing checks visitor eligibility and private shared availability before dispatch. An unavailable or unverifiable admission check refuses new processing with **Currently unavailable. Please try again later.** Completed examples remain open. Signing in does not reset sample eligibility.\n\nOwner accounting amounts, spending settings, usage, reset details and private reports are deliberately omitted from public documentation and responses. Customer quotes and balances are a separate contract. An admission estimate is not proof of actual provider charges or a physically isolated provider billing account.\n\n## Durable work and recovery\n\nThe application records processing state and accounting transactionally, separates source/derived material, and checks ownership before private downloads. Retries and partial failures have explicit state and settlement behavior. Download retained outputs before their normal 48-hour expiry; immediate deletion closes access and removes supported files while financial records remain separate.\n\nOwner pause, diagnostics, backup and recovery commands are private operational tools. They are not public administration routes. Preserve source/ledger ownership, idempotency and admission gates during recovery; do not reset quotas or disable guards to reopen a trial.\n\n## Payment and quality evidence\n\nThe owner reports domain approval; seller/payout readiness and genuine payment/refund/payout acceptance remain separate. No billing activation or provider account change was performed by this guide refresh. Representative OCR/transcription quality, scale and margins require their own evidence.\n\n[Use the application](/manuals/pageweft/guide/) or read [current provider boundaries](/manuals/journal/provider-costs-and-payments/)."
         },
         {
           "path": "docs/PAYMENT-ACTIVATION.md",
           "slug": "payments",
-          "title": "Payment activation checklist",
-          "description": "Owner-only commercial gates, provider verification and the current Paddle procedure.",
-          "category": "Operations"
+          "title": "Payments and availability",
+          "description": "Current Paymob preparation, closed checkout and the distinction between a source checkpoint and a purchase offer.",
+          "category": "Operations",
+          "mode": "curated",
+          "context": "## Current availability\n\nPaid checkout is closed. Paymob is the selected replacement for the earlier Paddle integration. The new source path prepares hosted one-time processing-pack checkout, owner-bound orders and verified provider reconciliation; it has not completed real merchant checkout, refund or payout acceptance.\n\nThe earlier $5/$10 processing packs remain provisional. A displayed processing tariff is not a measured provider cost or a guaranteed margin. No browser return flag grants credit; the server must verify the canonical payment and retain refund/reversal state.\n\n## Before payments open\n\nThe merchant must have the exact payment method, currency, international-card eligibility and settlement arrangements approved. Signup and an application-domain approval are separate from this acceptance. A hosted card form keeps card entry with Paymob, but does not make the processor the seller or supply automatic merchant-of-record tax handling.\n\nMissed callbacks, duplicate notifications, refunds, disputes, recovery and actual payout require real provider acceptance. Local synthetic tests do not establish these outcomes. No payment is currently needed to inspect the completed example or use eligible free processing.\n\n## Earlier provider history\n\nPaddle source and dated evidence are retained privately for rollback and review. Its older activation instructions are not the current setup path. See [provider roles and payment boundaries](/manuals/journal/provider-costs-and-payments/) and [Using Pageweft](/manuals/pageweft/guide/).\n"
         },
         {
           "path": "docs/LAUNCH.md",
@@ -296,6 +422,22 @@
           "title": "Declared image package inventory",
           "description": "Observed package versions, license metadata/file hashes and native/system/model review boundaries.",
           "category": "Reference"
+        },
+        {
+          "path": "docs/ACCOUNTS-20261107.md",
+          "slug": "accounts",
+          "title": "Verified email and recovery",
+          "description": "Email-first signup, address verification and mailed password recovery.",
+          "category": "Guide",
+          "mode": "curated",
+          "context": "## Create and recover an account\n\nOpen **Account** to sign in with an existing passphrase. New email signup requests a link; explicitly choosing a passphrase on its confirmation form creates the credential. Opening a link alone does not create it. Existing unverified accounts can verify their address from their owned, recently authenticated workspace. Equal addresses never merge workspaces.\n\nVerified addresses can request mailed resets. Completion revokes previous sessions and invalidates old recovery keys. Links expire after thirty minutes and work once; opening/previewing does not consume them. A separate saved key is optional when verified email recovery is available. Keep any key private.\n\nConfirmation in another browser explicitly creates a fresh workspace. Guest files/credits remain in the original browser without implicit transfer. A passphrase or existing private key confirms ownership for sensitive session/provider actions.\n\n## Providers and availability\n\nGoogle/GitHub identity flows have local state/nonce/PKCE tests; dedicated registrations and genuine owner sign-in/linking acceptance have passed. Absent providers stay hidden. Accounts are product-specific. Signing in does not reset free eligibility or open checkout. Email verification, CSRF and throttles are active; an IP/cookie is not verified human identity. Unavailable processing returns **Currently unavailable. Please try again later.** Owner accounting stays private.\n\nThe deployed release passed real synthetic Resend issuance and actual HTTPS confirmation/reset/replay refusal, old-session revocation, ownership proof and readiness. Fixtures were removed and original data preserved through encrypted pre/post restores. A synthetic receipt is not a human inbox or OAuth-consent check. No GPU/payment job ran for this acceptance.\n"
+        },
+        {
+          "path": "docs/ECOSYSTEM.md",
+          "slug": "ecosystem",
+          "title": "From sources to connected notes",
+          "category": "Usage",
+          "description": "Move reviewed Pageweft and Sonaweft exports into Noteweld with explicit validation and separate account boundaries."
         }
       ],
       "artifacts": [
@@ -309,8 +451,29 @@
         {
           "path": "docs/GUEST-BUDGET.md",
           "reason": "Owner-only guest accounting policy and provider financial controls. Never publish amounts, usage, reset data or owner reports."
+        },
+        {
+          "path": "docs/ACCOUNT-COLD-START-20261110.md",
+          "reason": "Private account/operational acceptance and diagnostics; current customer-facing behavior remains in the reviewed usage guides."
+        },
+        {
+          "path": "docs/ACCOUNT-SELECTION-20261110.md",
+          "reason": "Private account/operational acceptance and diagnostics; current customer-facing behavior remains in the reviewed usage guides."
+        },
+        {
+          "path": "docs/INTEGRATION-FINISH-20261110.md",
+          "reason": "Private account/operational acceptance and diagnostics; current customer-facing behavior remains in the reviewed usage guides."
+        },
+        {
+          "path": "docs/TELEMETRY-20261111.md",
+          "reason": "Private account/operational acceptance and diagnostics; current customer-facing behavior remains in the reviewed usage guides."
+        },
+        {
+          "path": "docs/PAYMOB-20261112.md",
+          "reason": "Private payment configuration, rollback and provider-acceptance runbook; customer availability is described in the reviewed public payment guide."
         }
-      ]
+      ],
+      "reviewed": "2026-11-12"
     },
     {
       "slug": "sonaweft",
@@ -322,7 +485,7 @@
       "status": "Bounded public sample",
       "live": "https://sonaweft.amirgomaa.com/",
       "description": "Turn recordings into timestamped transcripts, separate corrections and source-linked notes.",
-      "notice": "Current public preview supports email/passphrase and private-key recovery. Free processing may be temporarily unavailable; completed examples remain open. Google and mailed email reset remain unconfigured for this product. Paid billing is closed; earlier release records describe dated milestones.",
+      "notice": "Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Google/GitHub sign-in and owner account linking have passed their recorded acceptance. Paid checkout is closed. Dated release records describe their own checkpoints.",
       "files": [
         {
           "path": "README.md",
@@ -330,14 +493,18 @@
           "title": "Technical overview",
           "description": "Hosted workflow, processing tariff, local CLI, deployment and limits.",
           "category": "Reference",
-          "start_at_title": true
+          "start_at_title": true,
+          "mode": "curated",
+          "context": "## Hosted transcription workflow\n\nSonaweft runs Python/FastAPI, a serialized SQLite ledger and hosted speech workers on Modal behind Cloudflare. Inspect authorized English audio/video up to 64 MiB / 60 minutes before confirming transcription. The eligible free sample transcribes the first thirty seconds, subject to private availability. Completed examples start no inference.\n\nListen to timestamped segments, keep immutable recognition separate from saved corrections, and optionally consent to transcript-text review by DeepSeek. Audio is not sent to that text provider. Public HTTPS direct media/RSS sources use checked redirects; arbitrary platform pages, private cookies and unrestricted URL downloads are not supported. Recognition, corrections, optional AI notes and scholarly metadata are separate evidence.\n\n## Current service tariff\n\nConfigured one-time processing packs are $5/$10; checkout remains closed. Transcription is $0.15/job plus $0.015/started minute; standard review is $0.25 plus $0.020/minute; advanced review is $0.35 plus $0.025/minute. A sixty-minute job is respectively $1.05, $1.45 or $1.85 at those service tariffs. They are not actual measured provider reimbursements or guaranteed margins.\n\nReservations settle on successful selected work and release on failure. Explicit retries get fresh quotes and may reuse retained recognition. Source/results expire after 48 hours, so download them. [Verified email/recovery](/manuals/sonaweft/accounts/) is deployed; real owner Google/GitHub sign-in and explicit linking have passed; commercial payment acceptance remains separate. Accounts/balances do not merge across apps.\n\n## Local CLI\n\nThe standalone source CLI uses tested Python 3.13, FFmpeg/FFprobe and yt-dlp for supported authorized sources. Local recognition uses CPU/int8; model downloads and optional provider charges are separate from hosted usage. Compatibility command/import names remain. Source installation commands are provided with the owner-access repository; archived agent scripts are not required.\n\n## Evidence and output\n\nActual hosted short-audio recognition, correction/history/export browser journeys and real synthetic account/recovery acceptance have recorded evidence. The completed example is an attributed NOAA scientific interview. Export text/Markdown/JSON/subtitles and a hashed source-linked archive; Noteweld can preview/import it. No automatic diarization, verified speaker identity, universal accuracy, representative long-recording cost margin or live payment is claimed. [Using Sonaweft](/manuals/sonaweft/guide/) explains the practical flow.\n"
         },
         {
           "path": "docs/PRODUCT.md",
           "slug": "product",
           "title": "Product contract",
           "description": "Recognition, review, file retention, cost controls and the boundaries between outputs.",
-          "category": "Reference"
+          "category": "Reference",
+          "mode": "curated",
+          "context": "## Source and interpretation stay separate\n\nSonaweft accepts authorized English recordings, produces timestamped speech recognition, and keeps original text separate from later corrections, speaker-label annotations, optional AI notes and external research candidates. Manual labels do not establish speaker identity; recognition and AI output require review against the recording.\n\nInspection and quotes precede processing. The bounded sample is subject to private availability. Optional transcript review sends text to the named provider only after consent; audio is not sent to that text provider. Selected-span jobs retain original recording offsets and do not erase older work. Explicit retries use fresh quotes and retained recognition where available.\n\n## Retain useful work\n\nListen to source segments, save separate corrections with revision checks, compare/restore retained annotations, and export Markdown/text/JSON/subtitles or a hashed source-linked bundle. Noteweld's current importer can preview and atomically import its supported bundle within its own limits. The two applications do not share login, balances or storage.\n\nHosted files normally expire after 48 hours. Immediate deletion closes access while financial records remain separate. Processing packs are configured, but paid checkout stays disabled pending genuine commercial/provider acceptance. See [current tariffs](/manuals/sonaweft/overview/) and [the practical guide](/manuals/sonaweft/guide/).\n\n## Quality boundary\n\nAn attractive short example and passing transport/account tests do not prove accuracy on every recording, representative long-recording margins, certified transcription, verified speakers or user demand. Local CLI setup, historical agent concepts and hosted processing are distinct workflows. Private owner planning and working-copy product edits are not republished as a current public contract.\n"
         },
         {
           "path": "docs/architecture.md",
@@ -353,7 +520,7 @@
           "description": "Admission caps, monitoring, backups, incidents and payment opening sequence.",
           "category": "Operations",
           "mode": "curated",
-          "context": "## Current public operating boundary\n\nSonaweft runs behind its public Cloudflare gateway on Modal. Email/passphrase and private-key recovery are deployed. Accounts and balances are product-specific. Google and mailed password reset remain unconfigured; paid checkout is closed.\n\n## Admission and privacy\n\nLive free processing checks visitor eligibility and private shared availability before dispatch. An unavailable or unverifiable admission check refuses new processing with **Currently unavailable. Please try again later.** Completed examples remain open. Signing in does not reset sample eligibility.\n\nOwner accounting amounts, spending settings, usage, reset details and private reports are deliberately omitted from public documentation and responses. Customer quotes and balances are a separate contract. An admission estimate is not proof of actual provider charges or a physically isolated provider billing account.\n\n## Durable work and recovery\n\nThe application records processing state and accounting transactionally, separates source/derived material, and checks ownership before private downloads. Retries and partial failures have explicit state and settlement behavior. Download retained outputs before their normal 48-hour expiry; immediate deletion closes access and removes supported files while financial records remain separate.\n\nOwner pause, diagnostics, backup and recovery commands are private operational tools. They are not public administration routes. Preserve source/ledger ownership, idempotency and admission gates during recovery; do not reset quotas or disable guards to reopen a trial.\n\n## Payment and quality evidence\n\nThe owner reports domain approval; seller/payout readiness and genuine payment/refund/payout acceptance remain separate. No billing activation or provider account change was performed by this guide refresh. Representative OCR/transcription quality, scale and margins require their own evidence.\n\n[Use the application](/manuals/sonaweft/guide/) or read [current provider boundaries](/manuals/journal/provider-costs-and-payments/)."
+          "context": "## Current public operating boundary\n\nSonaweft runs behind its public Cloudflare gateway on Modal. Email-first signup, verification and mailed resets for verified addresses are deployed alongside private-key recovery. Accounts and balances are product-specific. Google/GitHub owner sign-in/linking acceptance has passed; checkout is closed.\n\n## Admission and privacy\n\nLive free processing checks visitor eligibility and private shared availability before dispatch. An unavailable or unverifiable admission check refuses new processing with **Currently unavailable. Please try again later.** Completed examples remain open. Signing in does not reset sample eligibility.\n\nOwner accounting amounts, spending settings, usage, reset details and private reports are deliberately omitted from public documentation and responses. Customer quotes and balances are a separate contract. An admission estimate is not proof of actual provider charges or a physically isolated provider billing account.\n\n## Durable work and recovery\n\nThe application records processing state and accounting transactionally, separates source/derived material, and checks ownership before private downloads. Retries and partial failures have explicit state and settlement behavior. Download retained outputs before their normal 48-hour expiry; immediate deletion closes access and removes supported files while financial records remain separate.\n\nOwner pause, diagnostics, backup and recovery commands are private operational tools. They are not public administration routes. Preserve source/ledger ownership, idempotency and admission gates during recovery; do not reset quotas or disable guards to reopen a trial.\n\n## Payment and quality evidence\n\nThe owner reports domain approval; seller/payout readiness and genuine payment/refund/payout acceptance remain separate. No billing activation or provider account change was performed by this guide refresh. Representative OCR/transcription quality, scale and margins require their own evidence.\n\n[Use the application](/manuals/sonaweft/guide/) or read [current provider boundaries](/manuals/journal/provider-costs-and-payments/)."
         },
         {
           "path": "docs/RELEASE.md",
@@ -432,6 +599,22 @@
           "category": "Release record",
           "mode": "curated",
           "context": "## Listen to a real scientific explanation\n\nThe completed Sonaweft example is a continuous **63.65-second NOAA Ocean Podcast excerpt** about why gravity varies across Earth. Megan Forbes interviews physicist Derek van Westrum in [Understanding Gravity, episode 33](https://oceanservice.noaa.gov/podcast/mar20/gravity.html). The selected passage runs from 181.05 to 244.70 seconds in the source episode.\n\nThe example credits NOAA and the speakers, links the original source and states that no endorsement is implied. It is third-party source material, not an original recording made for this portfolio. The excerpt contains speech rather than a music insert; the reuse review is specific to this selected source.\n\n## What you are seeing\n\nThe saved transcript comes from actual Whisper recognition. Recognition, manual corrections, source attribution and editorial listening notes remain separate. The listening notes are explicitly labeled as prepared with AI assistance; they are not output from Sonaweft's optional review provider. No new processing job is needed to open the example.\n\nListen, follow timestamps, try the review controls and download the complete bundle. Source offsets and hashes preserve traceability; a good short example does not certify transcription accuracy on every recording.\n\n[Hear the completed example](https://sonaweft.amirgomaa.com/example) or follow [the usage guide](/manuals/sonaweft/guide/)."
+        },
+        {
+          "path": "docs/ACCOUNTS-20261107.md",
+          "slug": "accounts",
+          "title": "Verified email and recovery",
+          "description": "Email-first signup, address verification and mailed password recovery.",
+          "category": "Guide",
+          "mode": "curated",
+          "context": "## Create and recover an account\n\nOpen **Account** to sign in with an existing passphrase. New email signup requests a link; explicitly choosing a passphrase on its confirmation form creates the credential. Opening a link alone does not create it. Existing unverified accounts can verify their address from their owned, recently authenticated workspace. Equal addresses never merge workspaces.\n\nVerified addresses can request mailed resets. Completion revokes previous sessions and invalidates old recovery keys. Links expire after thirty minutes and work once; opening/previewing does not consume them. A separate saved key is optional when verified email recovery is available. Keep any key private.\n\nConfirmation in another browser explicitly creates a fresh workspace. Guest files/credits remain in the original browser without implicit transfer. A passphrase or existing private key confirms ownership for sensitive session/provider actions.\n\n## Providers and availability\n\nGoogle/GitHub identity flows have local state/nonce/PKCE tests; dedicated registrations and genuine owner sign-in/linking acceptance have passed. Absent providers stay hidden. Accounts are product-specific. Signing in does not reset free eligibility or open checkout. Email verification, CSRF and throttles are active; an IP/cookie is not verified human identity. Unavailable processing returns **Currently unavailable. Please try again later.** Owner accounting stays private.\n\nThe deployed release passed real synthetic Resend issuance and actual HTTPS confirmation/reset/replay refusal, old-session revocation, ownership proof and readiness. Fixtures were removed and original data preserved through encrypted pre/post restores. A synthetic receipt is not a human inbox or OAuth-consent check. No GPU/payment job ran for this acceptance.\n"
+        },
+        {
+          "path": "docs/ECOSYSTEM.md",
+          "slug": "ecosystem",
+          "title": "From sources to connected notes",
+          "category": "Usage",
+          "description": "Move reviewed Pageweft and Sonaweft exports into Noteweld with explicit validation and separate account boundaries."
         }
       ],
       "artifacts": [
@@ -445,8 +628,29 @@
         {
           "path": "docs/GUEST-BUDGET.md",
           "reason": "Owner-only guest accounting policy and provider financial controls. Never publish amounts, usage, reset data or owner reports."
+        },
+        {
+          "path": "docs/ACCOUNT-COLD-START-20261110.md",
+          "reason": "Private account/operational acceptance and diagnostics; current customer-facing behavior remains in the reviewed usage guides."
+        },
+        {
+          "path": "docs/ACCOUNT-SELECTION-20261110.md",
+          "reason": "Private account/operational acceptance and diagnostics; current customer-facing behavior remains in the reviewed usage guides."
+        },
+        {
+          "path": "docs/INTEGRATION-FINISH-20261110.md",
+          "reason": "Private account/operational acceptance and diagnostics; current customer-facing behavior remains in the reviewed usage guides."
+        },
+        {
+          "path": "docs/TELEMETRY-20261111.md",
+          "reason": "Private account/operational acceptance and diagnostics; current customer-facing behavior remains in the reviewed usage guides."
+        },
+        {
+          "path": "docs/PAYMOB-20261112.md",
+          "reason": "Private payment configuration, rollback and provider-acceptance runbook; customer availability is described in the reviewed public payment guide."
         }
-      ]
+      ],
+      "reviewed": "2026-11-12"
     },
     {
       "slug": "vanilla-keep",

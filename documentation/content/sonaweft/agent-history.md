@@ -1,7 +1,7 @@
 {
   "title": "Historical agent setup",
   "description": "Legacy Claude Code and UTCP discovery notes.",
-  "date": "2026-11-05",
+  "date": "2026-11-12",
   "weight": 80,
   "project": "Sonaweft",
   "category": "Archive",

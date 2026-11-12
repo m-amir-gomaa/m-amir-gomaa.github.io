@@ -1,6 +1,6 @@
 # Building Sonaweft: speech, source and recovery
 
-Reviewed: 2026-11-05
+Reviewed: 2026-11-12
 
 ## Source chronology
 

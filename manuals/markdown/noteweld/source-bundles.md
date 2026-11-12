@@ -1,9 +1,9 @@
 # Source bundles and provenance
 
-> Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 5fbecd6 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
+> Current preview includes email signup/reset, Google/GitHub sign-in, private managed media, user-owned Google Drive uploads, Markdown/Vim, connected notes and source imports. Paid checkout is closed. Managed attachment E2EE is a planned requirement, not an available feature. Earlier release records retain their dated scope. Reviewed source revision fe0ff51 is reserved for owner-authorized review; a source checkpoint does not establish deployment. This public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision 5fbecd66116306dbcac278981d19a6752f5c50ef
-Reviewed: 2026-11-07
+Source baseline: Owner-access repository, revision fe0ff516cabfebf5b602d704deb1eb4e969ec4d8
+Reviewed: 2026-11-12
 
 ## Import, review, edit
 
@@ -30,4 +30,4 @@ Every payload must be declared exactly once with SHA256. Validation checks CRC, 
 
 ## Support and recovery
 
-A 5xx response includes a support ID; report that ID without sending private documents or recovery keys. Retry rejected/failed imports only after reviewing the message. Lost passphrase recovery uses your saved private key or an actually configured, deliberately linked provider; email reset is not enabled. Source storage is not end-to-end encrypted. Do not keep sensitive or irreplaceable originals only in this preview.
+A 5xx response includes a support ID; report that ID without sending private documents or recovery keys. Retry rejected/failed imports only after reviewing the message. Verified email/password accounts can request an emailed password reset. Existing unverified accounts retain private-key or deliberately linked provider recovery; matching emails never merge accounts. Source storage is not end-to-end encrypted. Do not keep sensitive or irreplaceable originals only in this preview.

@@ -11,7 +11,7 @@ from urllib.parse import quote, urlsplit, unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / 'documentation'
-DATE = '2026-11-05'
+DATE = '2026-11-06'
 
 
 def git(path, *args):
@@ -69,7 +69,7 @@ def main():
             notice = project['notice']
             if project.get('source_access') == 'owner':
                 source_url = ''
-                notice += f' Production source revision {revision[:7]} is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.'
+                notice += f' Reviewed source revision {revision[:7]} is reserved for owner-authorized review; a source checkpoint does not establish deployment. This public edition is readable independently; public source samples have their own explicit licenses.'
             if entry.get('category') == 'Release record':
                 notice = 'Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. ' + notice
             if entry.get('mode') in {'reference', 'curated'}:
@@ -110,7 +110,7 @@ def main():
                     body = body.split('## Owner account status and remaining answer')[0].rstrip()
                 # These headings refer to research snapshots, not current third-party fee quotations.
                 if entry['path'] in ['docs/BOOK-RELEASE.md', 'docs/PAYMENT-ACTIVATION.md']:
-                    notice += ' Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification.'
+                    notice += ' Earlier Lemon Squeezy and Paddle selection material is historical; Paymob is the selected replacement and checkout remains closed. External prices require fresh verification.'
 
                 def link(match):
                     label, destination = match.group(1), match.group(2)
@@ -170,14 +170,12 @@ def main():
         if values.get('sourceurl'):
             continue
         relative = path.relative_to(DOCS / 'content')
-        reviewed = next((project.get('reviewed', DATE) for project in manifest['projects']
-                         if project['slug'] == relative.parts[0]), DATE)
+        reviewed = next((project.get('reviewed', DATE) for project in manifest['projects'] if project['slug'] == relative.parts[0]), DATE)
         values['download'] = 'markdown/' + str(relative)
         body = text[end:].strip()
         generated[path] = frontmatter(values, body)
         generated[DOCS / 'static' / values['download']] = f"# {values['title']}\n\nReviewed: {reviewed}\n\n{body}\n"
-    latest_review = max([DATE] + [project.get('reviewed', DATE) for project in manifest['projects']])
-    generated[DOCS / 'static' / 'sources.json'] = json.dumps(dict(reviewed=latest_review, documents=records, artifacts=artifact_records), indent=2) + '\n'
+    generated[DOCS / 'static' / 'sources.json'] = json.dumps(dict(reviewed=max([DATE] + [project.get('reviewed', DATE) for project in manifest['projects']]), documents=records, artifacts=artifact_records), indent=2) + '\n'
     differences = [str(path.relative_to(ROOT)) for path, content in generated.items() if not path.exists() or path.read_text() != content]
     if args.check:
         if differences:

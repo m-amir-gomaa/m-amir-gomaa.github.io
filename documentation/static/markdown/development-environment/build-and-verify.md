@@ -1,6 +1,6 @@
 # Build, activate, verify, recover
 
-Reviewed: 2026-11-05
+Reviewed: 2026-11-06
 
 ## Review before changing the system
 

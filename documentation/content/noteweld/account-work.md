@@ -1,18 +1,18 @@
 {
   "title": "Accounts, recovery and connected sign-in",
-  "description": "Verified-email signup/reset, recovery keys, browser sessions and deliberately linked Google/GitHub identities.",
-  "date": "2026-11-07",
+  "description": "Current email/private-key recovery, browser sessions and deliberately linked Google/GitHub identities.",
+  "date": "2026-11-12",
   "weight": 130,
   "project": "Noteweld",
   "category": "Usage guide",
-  "notice": "Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision 5fbecd6 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
+  "notice": "Current preview includes email signup/reset, Google/GitHub sign-in, private managed media, user-owned Google Drive uploads, Markdown/Vim, connected notes and source imports. Paid checkout is closed. Managed attachment E2EE is a planned requirement, not an available feature. Earlier release records retain their dated scope. Reviewed source revision fe0ff51 is reserved for owner-authorized review; a source checkpoint does not establish deployment. This public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
   "sourceurl": "",
   "download": "markdown/noteweld/account-work.md"
 }
 
 ## Sign in and retain recovery access
 
-For email signup, enter your address, follow the verification email and then choose your name and passphrase. No account is created before confirmation. Verified email accounts can request mailed password resets. Existing private recovery keys and configured Google/GitHub sign-in remain available. Keep recovery keys out of chats and screenshots. Each portfolio application has a separate account.
+Create an email account by completing the security check, following the inbox link and explicitly choosing your name/passphrase. Verified email/password accounts can request mailed resets; links expire after 30 minutes and work once. A completed reset signs out previous sessions and invalidates any old private recovery key. Existing unverified accounts retain their previous key/provider recovery. Configured Google/GitHub sign-in remains a separate method; accounts never silently merge. Each portfolio application has a separate account.
 
 ## Link a provider to an existing account
 
