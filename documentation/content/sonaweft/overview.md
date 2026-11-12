@@ -1,11 +1,11 @@
 {
   "title": "Technical overview",
   "description": "Hosted workflow, processing tariff, local CLI, deployment and limits.",
-  "date": "2026-11-09",
+  "date": "2026-11-12",
   "weight": 30,
   "project": "Sonaweft",
   "category": "Reference",
-  "notice": "Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Dedicated Google/GitHub registration and genuine consent remain open. Paid checkout is closed. Dated release records describe their own checkpoints. Production source revision 423e5a1 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
+  "notice": "Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Google/GitHub sign-in and owner account linking have passed their recorded acceptance. Paid checkout is closed. Dated release records describe their own checkpoints. Reviewed source revision 825f4b5 is reserved for owner-authorized review; a source checkpoint does not establish deployment. This public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
   "sourceurl": "",
   "download": "markdown/sonaweft/overview.md"
 }
@@ -20,7 +20,7 @@ Listen to timestamped segments, keep immutable recognition separate from saved c
 
 Configured one-time processing packs are $5/$10; checkout remains closed. Transcription is $0.15/job plus $0.015/started minute; standard review is $0.25 plus $0.020/minute; advanced review is $0.35 plus $0.025/minute. A sixty-minute job is respectively $1.05, $1.45 or $1.85 at those service tariffs. They are not actual measured provider reimbursements or guaranteed margins.
 
-Reservations settle on successful selected work and release on failure. Explicit retries get fresh quotes and may reuse retained recognition. Source/results expire after 48 hours, so download them. [Verified email/recovery](/manuals/sonaweft/accounts/) is deployed; genuine OAuth consent and commercial payment acceptance remain separate. Accounts/balances do not merge across apps.
+Reservations settle on successful selected work and release on failure. Explicit retries get fresh quotes and may reuse retained recognition. Source/results expire after 48 hours, so download them. [Verified email/recovery](/manuals/sonaweft/accounts/) is deployed; real owner Google/GitHub sign-in and explicit linking have passed; commercial payment acceptance remains separate. Accounts/balances do not merge across apps.
 
 ## Local CLI
 

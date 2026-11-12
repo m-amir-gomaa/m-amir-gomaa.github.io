@@ -1,9 +1,9 @@
 # Verified email and recovery
 
-> Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Dedicated Google/GitHub registration and genuine consent remain open. Paid checkout is closed. Dated release records describe their own checkpoints. Production source revision 1d1f932 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.
+> Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Google/GitHub sign-in and owner account linking have passed their recorded acceptance. Paid checkout is closed. Dated release records describe their own checkpoints. Reviewed source revision 30e8e34 is reserved for owner-authorized review; a source checkpoint does not establish deployment. This public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.
 
-Source baseline: Owner-access repository, revision 1d1f93250bf1d571569196ae283b030971d7b988
-Reviewed: 2026-11-09
+Source baseline: Owner-access repository, revision 30e8e34bf67280bf26dcc5109ca4d016d3808bc3
+Reviewed: 2026-11-12
 
 ## Create and recover an account
 
@@ -15,6 +15,6 @@ Confirmation in another browser explicitly creates a fresh workspace. Guest file
 
 ## Providers and availability
 
-Google/GitHub identity flows have local state/nonce/PKCE tests; dedicated registrations and genuine consent acceptance remain separate. Absent providers stay hidden. Accounts are product-specific. Signing in does not reset free eligibility or open checkout. Email verification, CSRF and throttles are active; an IP/cookie is not verified human identity. Unavailable processing returns **Currently unavailable. Please try again later.** Owner accounting stays private.
+Google/GitHub identity flows have local state/nonce/PKCE tests; dedicated registrations and genuine owner sign-in/linking acceptance have passed. Absent providers stay hidden. Accounts are product-specific. Signing in does not reset free eligibility or open checkout. Email verification, CSRF and throttles are active; an IP/cookie is not verified human identity. Unavailable processing returns **Currently unavailable. Please try again later.** Owner accounting stays private.
 
 The deployed release passed real synthetic Resend issuance and actual HTTPS confirmation/reset/replay refusal, old-session revocation, ownership proof and readiness. Fixtures were removed and original data preserved through encrypted pre/post restores. A synthetic receipt is not a human inbox or OAuth-consent check. No GPU/payment job ran for this acceptance.

@@ -1,18 +1,20 @@
 # Subscription availability
 
-> Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision f3ee71e is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.
+> Current preview includes email signup/reset, Google/GitHub sign-in, private managed media, user-owned Google Drive uploads, Markdown/Vim, connected notes and source imports. Paid checkout is closed. Managed attachment E2EE is a planned requirement, not an available feature. Earlier release records retain their dated scope. Reviewed source revision fe0ff51 is reserved for owner-authorized review; a source checkpoint does not establish deployment. This public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.
 
-Source baseline: Owner-access repository, revision f3ee71eb002b7d8f8cbae191098be617c1e0622b
-Reviewed: 2026-11-09
+Source baseline: Owner-access repository, revision fe0ff516cabfebf5b602d704deb1eb4e969ec4d8
+Reviewed: 2026-11-12
 
 ## Current availability
 
-Subscriptions and live checkout remain disabled. The current free preview includes 100 MB of managed media. Plus is planned at $5/month for 5 GB; planned capacity is not an active purchase offer.
+Paid storage and live checkout remain disabled. The current free preview includes 100 MB of managed media. Larger paid bundles are being prepared; final quotas and prices are not yet available to purchase.
 
-## Preparation is not a real payment
+Paymob is the selected payment integration. The earlier Paddle implementation is retained as an inactive fallback. Merchant signup does not prove currency approval, recurring payments or a completed purchase. The initial payment design uses manually renewed 30-day access rather than promising automatic renewal.
 
-Paddle sandbox server preparation and isolated tests cover protected checkout intents, signed-event validation, duplicates, ordered state, reconciliation and owner boundaries. Local sandbox Plus storage tests never grant production storage or prove an actual purchase.
+## Privacy before a paid offer
 
-Merchant approval, actual sandbox checkout delivery, commercial capacity, live activation and payment/payout acceptance remain separate. The interface must not take a payment while checkout is unavailable.
+Managed attachment end-to-end encryption is planned, not implemented. Current R2 storage uses provider-managed encryption and the application can read bytes. The planned paid privacy offer must complete client-side encryption, recovery, export and device acceptance before launch. [Encryption scope](/manuals/noteweld/encryption/).
 
-[Storage and plans](/manuals/noteweld/storage/) describes today's limits and safe over-limit behavior. Owner verification documents, provider credentials and private operating budgets are excluded from this public edition.
+Actual provider checkout/webhook delivery, sustainable capacity, costs and retention still require acceptance. Test fixtures do not establish live billing. No customer should pay for an unavailable offer.
+
+[Storage and plans](/manuals/noteweld/storage/) describes today's limits and safe over-limit behavior. Provider credentials and private operating budgets are excluded from this public edition.

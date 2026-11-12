@@ -1,11 +1,11 @@
 {
   "title": "Product contract",
   "description": "Recognition, review, file retention, cost controls and the boundaries between outputs.",
-  "date": "2026-11-09",
+  "date": "2026-11-12",
   "weight": 40,
   "project": "Sonaweft",
   "category": "Reference",
-  "notice": "Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Dedicated Google/GitHub registration and genuine consent remain open. Paid checkout is closed. Dated release records describe their own checkpoints. Production source revision 423e5a1 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted. This reviewed documentation snapshot includes local documentation edits; the recorded revision is the committed baseline.",
+  "notice": "Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Google/GitHub sign-in and owner account linking have passed their recorded acceptance. Paid checkout is closed. Dated release records describe their own checkpoints. Reviewed source revision 825f4b5 is reserved for owner-authorized review; a source checkpoint does not establish deployment. This public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted. This reviewed documentation snapshot includes local documentation edits; the recorded revision is the committed baseline.",
   "sourceurl": "",
   "download": "markdown/sonaweft/product.md"
 }

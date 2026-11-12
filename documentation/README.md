@@ -1,9 +1,10 @@
 # Fieldnotes — Hugo project documentation and journal
 
-Latest scoped review: 9 November 2026 — all three current usage/account guides,
+Latest scoped review: 12 November 2026 — all three current usage/account guides,
 Noteweld portable vault/history/sync/agent/finder flows, source-distributed Linux
-desktop alpha, Anki handoff and private-server boundaries. The library has 79
-indexed articles and 60 reviewed source records. Historical release records retain
+desktop alpha, Anki handoff and private-server boundaries. The library has 83
+indexed articles and 64 reviewed source records. Storage choices and the planned
+attachment E2EE boundary distinguish current features from the paid target. Historical release records retain
 their own milestone scope. Private runbooks/receipts remain excluded or represented
 by deliberately reviewed public summaries.
 

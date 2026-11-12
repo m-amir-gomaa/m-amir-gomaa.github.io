@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Journal on Fieldnotes · Mohamed Amir Gomaa</title><link>https://amirgomaa.com/manuals/journal/</link><description>Recent content in Journal on Fieldnotes · Mohamed Amir Gomaa</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://amirgomaa.com/manuals/journal/index.xml" rel="self" type="application/rss+xml"/><item><title>Why these previews run on Modal</title><link>https://amirgomaa.com/manuals/journal/hosting/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/hosting/</guid><description>&lt;h2 id="more-than-a-gpu-rental"&gt;More than a GPU rental&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Journal on Fieldnotes · Mohamed Amir Gomaa</title><link>https://amirgomaa.com/manuals/journal/</link><description>Recent content in Journal on Fieldnotes · Mohamed Amir Gomaa</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 12 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://amirgomaa.com/manuals/journal/index.xml" rel="self" type="application/rss+xml"/><item><title>Why these previews run on Modal</title><link>https://amirgomaa.com/manuals/journal/hosting/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/hosting/</guid><description>&lt;h2 id="more-than-a-gpu-rental"&gt;More than a GPU rental&lt;/h2&gt;
 &lt;p&gt;Modal runs application containers on CPU as well as GPU resources. It supports HTTP applications, background functions, schedules, persistent volumes and secrets. An HTTP server can be Python/FastAPI or a Node process; the deployment wrapper does not require every application to be written in Python.&lt;/p&gt;
 &lt;p&gt;Official references: &lt;a href="https://modal.com/docs/guide/webhooks"&gt;HTTP applications&lt;/a&gt;
 , &lt;a href="https://modal.com/docs/guide/scale"&gt;autoscaling&lt;/a&gt;
@@ -137,7 +137,7 @@ the manifest&amp;rsquo;s exported-file hashes.&lt;/p&gt;</description></item><it
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Each source/application release has separate evidence; a passing portfolio check does not establish private persistence, model accuracy or payment delivery.&lt;/p&gt;</description></item><item><title>Neon, Modal costs and opening Paddle</title><link>https://amirgomaa.com/manuals/journal/provider-costs-and-payments/</link><pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/provider-costs-and-payments/</guid><description>&lt;h2 id="what-serves-the-applications"&gt;What serves the applications&lt;/h2&gt;
+&lt;p&gt;Each source/application release has separate evidence; a passing portfolio check does not establish private persistence, model accuracy or payment delivery.&lt;/p&gt;</description></item><item><title>Hosting, storage and payment readiness</title><link>https://amirgomaa.com/manuals/journal/provider-costs-and-payments/</link><pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/provider-costs-and-payments/</guid><description>&lt;h2 id="what-serves-the-applications"&gt;What serves the applications&lt;/h2&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -175,8 +175,12 @@ the manifest&amp;rsquo;s exported-file hashes.&lt;/p&gt;</description></item><it
  &lt;td&gt;Optional user-selected Noteweld media; separate from Google sign-in&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
- &lt;td&gt;Paddle integration&lt;/td&gt;
- &lt;td&gt;Processing packs and Noteweld subscriptions are prepared; paid checkout remains closed&lt;/td&gt;
+ &lt;td&gt;Paymob preparation&lt;/td&gt;
+ &lt;td&gt;Selected replacement for payments across all three apps; checkout remains closed&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Earlier Paddle integration&lt;/td&gt;
+ &lt;td&gt;Retained as inactive source/history for rollback; not the current onboarding path&lt;/td&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;

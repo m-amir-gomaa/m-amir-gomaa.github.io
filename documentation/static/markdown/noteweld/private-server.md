@@ -1,13 +1,13 @@
 # Owner-operated private server
 
-> Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision f3ee71e is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.
+> Current preview includes email signup/reset, Google/GitHub sign-in, private managed media, user-owned Google Drive uploads, Markdown/Vim, connected notes and source imports. Paid checkout is closed. Managed attachment E2EE is a planned requirement, not an available feature. Earlier release records retain their dated scope. Reviewed source revision fe0ff51 is reserved for owner-authorized review; a source checkpoint does not establish deployment. This public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.
 
-Source baseline: Owner-access repository, revision f3ee71eb002b7d8f8cbae191098be617c1e0622b
-Reviewed: 2026-11-09
+Source baseline: Owner-access repository, revision fe0ff516cabfebf5b602d704deb1eb4e969ec4d8
+Reviewed: 2026-11-12
 
 ## Separate installation
 
-This source profile runs a separate compatible Noteweld instance. It does not provision a public server, add a third hosted upload destination or provide unlimited paid storage. Desktop/CLI clients select a compatible origin and pair to that server's account; existing accounts/files do not move automatically.
+This source profile runs a separate compatible Noteweld instance. The owner intends free self-host software: the user supplies the machine, storage, setup, updates, security and backups, including any hosting bills. Current source access/licensing remains limited; a public open-source release is not yet delivered. It does not provision a public server, add a third hosted upload destination or provide unlimited paid storage. Desktop/CLI clients select a compatible origin and pair to that server's account; existing accounts/files do not move automatically.
 
 An administrator supplies PostgreSQL, a fixed HTTPS origin and private directories. Setup generates private configuration/independent keys. Migrations require an explicit target. Owner bootstrap is limited to an empty account table and does not mark email verified. Email, OAuth, DNS/TLS, public deployment and independent backup custody need separate configuration and acceptance. Billing stays disabled.
 

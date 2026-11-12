@@ -69,7 +69,7 @@ def main():
             notice = project['notice']
             if project.get('source_access') == 'owner':
                 source_url = ''
-                notice += f' Production source revision {revision[:7]} is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.'
+                notice += f' Reviewed source revision {revision[:7]} is reserved for owner-authorized review; a source checkpoint does not establish deployment. This public edition is readable independently; public source samples have their own explicit licenses.'
             if entry.get('category') == 'Release record':
                 notice = 'Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. ' + notice
             if entry.get('mode') in {'reference', 'curated'}:
@@ -110,7 +110,7 @@ def main():
                     body = body.split('## Owner account status and remaining answer')[0].rstrip()
                 # These headings refer to research snapshots, not current third-party fee quotations.
                 if entry['path'] in ['docs/BOOK-RELEASE.md', 'docs/PAYMENT-ACTIVATION.md']:
-                    notice += ' Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification.'
+                    notice += ' Earlier Lemon Squeezy and Paddle selection material is historical; Paymob is the selected replacement and checkout remains closed. External prices require fresh verification.'
 
                 def link(match):
                     label, destination = match.group(1), match.group(2)

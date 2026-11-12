@@ -1,18 +1,18 @@
 {
   "title": "Owner operations",
   "description": "Admission caps, monitoring, backups, incidents and payment opening sequence.",
-  "date": "2026-11-09",
+  "date": "2026-11-12",
   "weight": 60,
   "project": "Sonaweft",
   "category": "Operations",
-  "notice": "Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Dedicated Google/GitHub registration and genuine consent remain open. Paid checkout is closed. Dated release records describe their own checkpoints. Production source revision 423e5a1 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
+  "notice": "Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Google/GitHub sign-in and owner account linking have passed their recorded acceptance. Paid checkout is closed. Dated release records describe their own checkpoints. Reviewed source revision 825f4b5 is reserved for owner-authorized review; a source checkpoint does not establish deployment. This public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
   "sourceurl": "",
   "download": "markdown/sonaweft/operations.md"
 }
 
 ## Current public operating boundary
 
-Sonaweft runs behind its public Cloudflare gateway on Modal. Email-first signup, verification and mailed resets for verified addresses are deployed alongside private-key recovery. Accounts and balances are product-specific. Dedicated Google/GitHub registration and genuine consent remain unaccepted; checkout is closed.
+Sonaweft runs behind its public Cloudflare gateway on Modal. Email-first signup, verification and mailed resets for verified addresses are deployed alongside private-key recovery. Accounts and balances are product-specific. Google/GitHub owner sign-in/linking acceptance has passed; checkout is closed.
 
 ## Admission and privacy
 

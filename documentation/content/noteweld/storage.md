@@ -1,11 +1,11 @@
 {
   "title": "Storage usage and plans",
   "description": "Usage, reserved bytes, file management, planned Plus and safe downgrade.",
-  "date": "2026-11-09",
+  "date": "2026-11-12",
   "weight": 190,
   "project": "Noteweld",
   "category": "Guide",
-  "notice": "Current preview includes verified-email signup/reset, private managed media, user-owned Google Drive uploads, the forest interface, appearance customization, Markdown/Vim, connected notes and source imports. Google/GitHub sign-in are configured; full owner link/unlink acceptance remains pending. Billing is closed. Earlier release records describe dated milestones. Production source revision f3ee71e is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
+  "notice": "Current preview includes email signup/reset, Google/GitHub sign-in, private managed media, user-owned Google Drive uploads, Markdown/Vim, connected notes and source imports. Paid checkout is closed. Managed attachment E2EE is a planned requirement, not an available feature. Earlier release records retain their dated scope. Reviewed source revision fe0ff51 is reserved for owner-authorized review; a source checkpoint does not establish deployment. This public edition is readable independently; public source samples have their own explicit licenses. This is an explicitly reviewed public summary; private operational and learner details are omitted.",
   "sourceurl": "",
   "download": "markdown/noteweld/storage.md"
 }
@@ -18,7 +18,7 @@ Reservations and unfinished removals count until released. Archived/trashed note
 
 ## More storage and changes of plan
 
-Plus is planned at $5/month for 5 GB. Subscriptions are not available yet; no payment or production upgrade is implied by a local sandbox test.
+Paid managed bundles are being prepared, including a larger allowance for heavier file use. Final prices and quotas are not yet an active offer; the earlier 5 GB/$5 proposal is superseded. Client-key attachment E2EE is a requirement for the planned paid privacy offer and is not implemented today. A local payment fixture does not grant production storage or prove a real purchase.
 
 When files exceed the current allowance, new uploads pause. Notes, existing-file downloads and deletion remain available. Plan expiry does not automatically delete saved files. Account JSON contains a metadata manifest. For current notes and actual available media together, choose Account → Keep a copy → Download Markdown vault.
 

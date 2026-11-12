@@ -1,11 +1,11 @@
 {
   "title": "Book conversion release",
   "description": "Implemented conversion features and the evidence for this dated milestone.",
-  "date": "2026-11-09",
+  "date": "2026-11-12",
   "weight": 90,
   "project": "Pageweft",
   "category": "Release record",
-  "notice": "Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Dedicated Google/GitHub registration and genuine consent remain open. Paid checkout is closed. Dated release records describe their own checkpoints. Production source revision 1d1f932 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses. Earlier Lemon Squeezy material is historical; Paddle is the selected integration and checkout remains closed. External prices require fresh verification. This reviewed documentation snapshot includes local documentation edits; the recorded revision is the committed baseline.",
+  "notice": "Dated release evidence. Feature availability and counts describe this milestone, not every later version. Start with the current usage guide. Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Google/GitHub sign-in and owner account linking have passed their recorded acceptance. Paid checkout is closed. Dated release records describe their own checkpoints. Reviewed source revision 30e8e34 is reserved for owner-authorized review; a source checkpoint does not establish deployment. This public edition is readable independently; public source samples have their own explicit licenses. Earlier Lemon Squeezy and Paddle selection material is historical; Paymob is the selected replacement and checkout remains closed. External prices require fresh verification. This reviewed documentation snapshot includes local documentation edits; the recorded revision is the committed baseline.",
   "sourceurl": "",
   "download": "markdown/pageweft/book-release.md"
 }

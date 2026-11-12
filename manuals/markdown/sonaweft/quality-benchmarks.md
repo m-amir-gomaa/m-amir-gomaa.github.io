@@ -1,9 +1,9 @@
 # Quality and cost measurement
 
-> Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Dedicated Google/GitHub registration and genuine consent remain open. Paid checkout is closed. Dated release records describe their own checkpoints. Production source revision 423e5a1 is reserved for owner-authorized review. This reviewed public edition is readable independently; public source samples have their own explicit licenses.
+> Current public preview supports verified email-first signup, mailed resets for verified addresses and existing private-key recovery. Processing may be temporarily unavailable; completed examples remain open. Google/GitHub sign-in and owner account linking have passed their recorded acceptance. Paid checkout is closed. Dated release records describe their own checkpoints. Reviewed source revision 825f4b5 is reserved for owner-authorized review; a source checkpoint does not establish deployment. This public edition is readable independently; public source samples have their own explicit licenses.
 
-Source baseline: Owner-access repository, revision 423e5a1239645814df9d4081543e611b3b8306ae
-Reviewed: 2026-11-09
+Source baseline: Owner-access repository, revision 825f4b500c71743ad55d71b80682b5f926db3808
+Reviewed: 2026-11-12
 
 ## Offline scoring
 

@@ -1,7 +1,7 @@
 {
   "title": "Historical demo script",
   "description": "An older terminal demonstration and proposal draft.",
-  "date": "2026-11-09",
+  "date": "2026-11-12",
   "weight": 90,
   "project": "Sonaweft",
   "category": "Archive",
