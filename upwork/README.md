@@ -5,7 +5,7 @@ from the regular GitHub Pages portfolio at amirgomaa.com. Its only owner contact
 destination is the existing Upwork profile; it contains no email/social contact
 links and no route back to contact-bearing owner pages.
 
-It preserves the four case studies, a clearly labeled Noteweld editor screenshot,
+It preserves five case studies, including the simulated-carrier NestJS/Prisma API, a clearly labeled Noteweld editor screenshot,
 the actual browser-only local notebook, the original PDF/source comparison and
 the attributed completed NOAA scientific recording/transcript. Demos and downloads
 are served locally to this host. There is no sign-in, upload, API, payment or new

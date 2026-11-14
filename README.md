@@ -1,3 +1,18 @@
+# Backend portfolio refresh — 14 November 2026
+
+Added Carrier Relay API with public source, a dated NestJS/Prisma engineering
+journal and actual local Swagger image. Thirty tests pass locally and in its
+GitHub CI, including real PostgreSQL booking/replay races. The three connected
+app descriptions now reflect current source and deployment boundaries; a second
+journal entry lists technologies/providers without publishing private costs.
+The contact-free Upwork edition includes five case studies and current imagery.
+
+Local Hugo generation/reproducibility, publication boundaries, DOM and local
+link checks pass. Four-width browser checks pass on the main portfolio and
+contact-free edition. Public deployment is recorded separately in the private
+14 November handoff. These checks do not establish final Noteweld platform
+release or payment/model-provider activation.
+
 # Optional dark mode — 12 November 2026
 
 Portfolio, app chooser and every Fieldnotes page share an optional dark-mode

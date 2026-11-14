@@ -17,15 +17,15 @@ await test('documentation library is connected from navigation and every project
   const manual = project.querySelector('a[href^="manuals/"]');
   assert.ok(manual);
   assert.ok(existsSync(resolve(root, manual.getAttribute('href'), 'index.html')));
-  const history = project.querySelector('a[href$="/build-history/"]');
+  const history = project.querySelector('a[href$="/build-history/"], a[href="manuals/journal/carrier-relay-api/"]');
   assert.ok(history);
   assert.ok(existsSync(resolve(root, history.getAttribute('href'), 'index.html')));
  }
 });
 function page() { const dom = new JSDOM(html, { url: 'https://m-amir-gomaa.github.io/', runScripts: 'outside-only' }); dom.window.eval(script); return dom; }
-await test('all four projects expose demos and readable source or implementation guides', () => {
+await test('all five projects expose readable source or implementation guides', () => {
  const dom = page(); const document = dom.window.document;
- assert.equal(document.querySelectorAll('.project').length, 4);
+ assert.equal(document.querySelectorAll('.project').length, 5);
  assert.equal(document.querySelectorAll('.project[hidden]').length, 0);
  assert.ok(document.querySelector('a[href="https://www.upwork.com/freelancers/~0173c5ce93bb9457ec"]'));
  for (const project of document.querySelectorAll('.project')) {
@@ -52,7 +52,11 @@ await test('project filters update results and accessible pressed state', () => 
  assert.equal(document.querySelectorAll('.project:not([hidden])').length, 2);
  assert.equal(document.querySelector('#project-count').textContent, '2 projects');
  document.querySelector('[data-filter="all"]').click();
- assert.equal(document.querySelectorAll('.project:not([hidden])').length, 4);
+ assert.equal(document.querySelectorAll('.project:not([hidden])').length, 5);
+ document.querySelector('[data-filter="backend"]').click();
+ assert.equal(document.querySelectorAll('.project:not([hidden])').length, 1);
+ assert.equal(document.querySelector('.project:not([hidden])').id, 'carrier-relay');
+ assert.equal(document.querySelector('#project-count').textContent, '1 project');
  dom.window.close();
 });
 await test('mobile navigation closes on selection, outside clicks, and Escape', () => {
@@ -131,9 +135,9 @@ await test('published downloads are valid targets and unreviewed resume is not o
 await test('retired Go project has no card, filter, styling or published manual', () => {
  const document = new JSDOM(html).window.document;
  assert.equal(document.querySelector('#hermes'), null);
- assert.equal(document.querySelector('[data-filter="backend"]'), null);
- assert.equal(document.querySelector('[data-filter="all"] span').textContent, '04');
- assert.equal(document.querySelector('#project-count').textContent, '4 projects');
+ assert.equal(document.querySelectorAll('.project[data-category="backend"]').length, 1);
+ assert.equal(document.querySelector('[data-filter="all"] span').textContent, '05');
+ assert.equal(document.querySelector('#project-count').textContent, '5 projects');
  assert.doesNotMatch(html, /batchlark|portfolio-hermes|queue-lab/i);
  assert.doesNotMatch(readFileSync(resolve(root, 'style.css'), 'utf8'), /hermes-cover|queue-art|worker-row/);
  assert.equal(existsSync(resolve(root, 'manuals/queue-lab')), false);

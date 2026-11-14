@@ -12,11 +12,11 @@ const profile='https://www.upwork.com/freelancers/~0173c5ce93bb9457ec';
    page.on('request',r=>{if(!r.url().startsWith(origin+'/')&&!r.url().startsWith('data:'))external.push(r.url());});
    page.on('response',r=>{if(r.status()>=400)failed.push([r.status(),r.url()]);});
    const response=await page.goto(origin+'/',{waitUntil:'networkidle'});assert.equal(response.status(),200);
-   assert.equal(await page.locator('.project').count(),4);
+   assert.equal(await page.locator('.project').count(),5);
    assert.equal(await page.locator('a[href^="mailto:"],a[href*="linkedin.com"],form').count(),0);
    const outgoing=await page.locator('a[href^="https://"]').evaluateAll(nodes=>nodes.map(n=>n.href));assert(outgoing.every(x=>x===profile));
-   await page.getByRole('button',{name:'Tools 02',exact:true}).click();assert.equal(await page.locator('.project:visible').count(),2);await page.getByRole('button',{name:'All work 04',exact:true}).click();
-   await page.getByRole('button',{name:'Tools 02',exact:true}).click();await page.locator('#documentation a[href="#noteweld-case"]').click();assert(await page.locator('#noteweld-case').evaluate(x=>x.open));assert.equal(await page.locator('.project:visible').count(),4);
+   await page.getByRole('button',{name:'Tools 02',exact:true}).click();assert.equal(await page.locator('.project:visible').count(),2);await page.getByRole('button',{name:'All work 05',exact:true}).click();
+   await page.getByRole('button',{name:'Tools 02',exact:true}).click();await page.locator('#documentation a[href="#noteweld-case"]').click();assert(await page.locator('#noteweld-case').evaluate(x=>x.open));assert.equal(await page.locator('.project:visible').count(),5);
    const details=page.locator('#noteweld-case summary');await details.focus();await page.keyboard.press('Enter');assert.equal(await page.locator('#noteweld-case').evaluate(x=>x.open),false);await page.keyboard.press('Enter');assert(await page.locator('#noteweld-case').evaluate(x=>x.open));
    await page.getByRole('button',{name:'Explore sample output ↗',exact:true}).click();await page.getByRole('status').filter({hasText:'Showing original PDF page 1'}).waitFor();
    await page.getByRole('button',{name:'2 · Observations',exact:true}).click();assert.match(await page.locator('#sample-markdown').innerText(),/Site B: 18 plants/);
@@ -41,7 +41,7 @@ const profile='https://www.upwork.com/freelancers/~0173c5ce93bb9457ec';
    results.push({width,projectFilters:true,keyboardCaseStudy:true,pdfPreview:true,localNotebook:true,scientificAudio:true,automatedAccessibilityViolations:0,externalRequests:external,pageErrors:errors});await context.close();
   }
   const context=await browser.newContext({viewport:{width:1000,height:750},reducedMotion:'reduce'}),page=await context.newPage();await page.goto(origin+'/',{waitUntil:'networkidle'});await page.screenshot({path:path.join(output,'personal-portfolio.png')});await context.close();
-  const nojs=await browser.newContext({javaScriptEnabled:false}),plain=await nojs.newPage();await plain.goto(origin+'/');assert.equal(await plain.locator('.project').count(),4);await plain.goto(origin+'/demos/sonaweft/');assert.equal(await plain.locator('audio').count(),1);await nojs.close();
+  const nojs=await browser.newContext({javaScriptEnabled:false}),plain=await nojs.newPage();await plain.goto(origin+'/');assert.equal(await plain.locator('.project').count(),5);await plain.goto(origin+'/demos/sonaweft/');assert.equal(await plain.locator('audio').count(),1);await nojs.close();
   const failure=await browser.newContext(),retry=await failure.newPage();let abort=true;await retry.route('**/assets/document-sample/field-notes.md',r=>abort?r.abort():r.continue());await retry.goto(origin+'/');await retry.getByRole('button',{name:'Explore sample output ↗',exact:true}).click();await retry.locator('#sample-retry').waitFor({state:'visible'});abort=false;await retry.locator('#sample-retry').click();await retry.getByRole('status').filter({hasText:'Showing original PDF page 1'}).waitFor();await failure.close();
   fs.writeFileSync(path.join(output,'result.json'),JSON.stringify({origin,results,noJavaScript:true,pdfFailureAndRetry:true},null,2));console.log('PASS contact-free edition at four widths: local demos/audio/PDF, keyboard, failure/retry, downloads, accessibility, no overflow/page errors or outside requests; no-JS reading/audio.');
  }finally{await browser.close();}

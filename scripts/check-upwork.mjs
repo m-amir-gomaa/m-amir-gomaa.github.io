@@ -26,5 +26,5 @@ for(const [file,document] of pages){
 }
 const manifest=JSON.parse(readFileSync(join(root,'build-manifest.json'),'utf8'));
 for(const [name,hash] of Object.entries(manifest.files))assert.equal(createHash('sha256').update(readFileSync(join(root,name))).digest('hex'),hash,name);
-assert.equal(pages.get(join(root,'index.html')).querySelectorAll('.project').length,4);
+assert.equal(pages.get(join(root,'index.html')).querySelectorAll('.project').length,5);
 console.log(`PASS ${pages.size} contact-free HTML pages, ${links} local links/assets/fragments and ${Object.keys(manifest.files).length} manifest hashes; outbound owner contact is Upwork only.`);

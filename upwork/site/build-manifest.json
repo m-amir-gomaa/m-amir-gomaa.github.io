@@ -4,7 +4,7 @@
   "inputs": [
     {
       "path": "index.html",
-      "sha256": "4dface1700862c411c1badaa57f8bf6415ea9c1f4f1cf2a08f9e452569185066"
+      "sha256": "7a4aa5ac6565fa68ba151f5e50ffc1d6ed99758a0db63aad65faf3c5cb22641c"
     },
     {
       "path": "style.css",
@@ -67,8 +67,12 @@
       "sha256": "b774f7b94d69089239c37d18411166aa674b4718280b42a628b761ec1d799700"
     },
     {
-      "path": "../workflow/upwork-profile-20261023/assets/noteweld.png",
-      "sha256": "d0419fa4beac74e4f61d5e8042100e67cd02ca7eb470344a2dbd26d7a13de2d4"
+      "path": "../workflow/upwork-profile-20261114/assets/noteweld.png",
+      "sha256": "98492253c754fe608d86d7078600ca9678eafa516dcfb8a9518bd3b1d6e80205"
+    },
+    {
+      "path": "../workflow/upwork-profile-20261114/assets/carrier-relay-api.png",
+      "sha256": "3c9df65e2f7364d6e04a4040262992f3c87662bf88b96e98e034bb97ee082892"
     },
     {
       "path": "../sonaweft/sonaweft_web/templates/example.html",
@@ -140,7 +144,7 @@
     }
   ],
   "files": {
-    "index.html": "9a4908d3ee7c88109b3506050f4a58c0f3a7956c72307d2ed3b75bced38d9f35",
+    "index.html": "b0435f8462623ac576049ff2d7c6bec55ed901ef5335d9a603986aa78885a617",
     "style.css": "b30b463c1b89df270fa4fa7f6f09860aba83a9a283e10e374a60e3b3a04bc9ce",
     "theme.css": "d4446cc69e7c6d2fe3ae20b96e6bb5333dbe8344fc13ced4a1f4681c29e04503",
     "theme.js": "faeb30f8f72d993e2e81bf27594674275469fe59c0052bb977be846d84a72a86",
@@ -157,7 +161,8 @@
     "assets/document-sample/page-2.png": "89cf6dae7bac71f2dab55cebd6954df3b31474826e5224af3f6deadfa840627f",
     "assets/document-sample/page-3.png": "074c5ca3ae55088a04284ec3cf7ed19d248be44ab70e090f9debf017c80616e1",
     "assets/document-sample/README.md": "b774f7b94d69089239c37d18411166aa674b4718280b42a628b761ec1d799700",
-    "assets/screenshots/noteweld.png": "d0419fa4beac74e4f61d5e8042100e67cd02ca7eb470344a2dbd26d7a13de2d4",
+    "assets/screenshots/noteweld.png": "98492253c754fe608d86d7078600ca9678eafa516dcfb8a9518bd3b1d6e80205",
+    "assets/screenshots/carrier-relay-api.png": "3c9df65e2f7364d6e04a4040262992f3c87662bf88b96e98e034bb97ee082892",
     "demos/sonaweft/index.html": "b43639222ec81a6be5bfa271a448a6e06ed1031a4e2fb6a64ce9ad21f61eb648",
     "demos/sonaweft/style.css": "6afeff629c7d62957386e30403f6aeec3aedce650f5cc7e7fb839f85267aef26",
     "demos/sonaweft/example.js": "1b2e743371f4b84c522ffeaaf9b1c0bf9ac2c09a1c365386229a1b96a86d643d",

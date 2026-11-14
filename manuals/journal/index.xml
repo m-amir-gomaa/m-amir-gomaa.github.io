@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Journal on Fieldnotes · Mohamed Amir Gomaa</title><link>https://amirgomaa.com/manuals/journal/</link><description>Recent content in Journal on Fieldnotes · Mohamed Amir Gomaa</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 12 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://amirgomaa.com/manuals/journal/index.xml" rel="self" type="application/rss+xml"/><item><title>Why these previews run on Modal</title><link>https://amirgomaa.com/manuals/journal/hosting/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/hosting/</guid><description>&lt;h2 id="more-than-a-gpu-rental"&gt;More than a GPU rental&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Journal on Fieldnotes · Mohamed Amir Gomaa</title><link>https://amirgomaa.com/manuals/journal/</link><description>Recent content in Journal on Fieldnotes · Mohamed Amir Gomaa</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 14 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://amirgomaa.com/manuals/journal/index.xml" rel="self" type="application/rss+xml"/><item><title>Idempotent Carrier Webhooks and Optimistic Locking in NestJS + Prisma</title><link>https://amirgomaa.com/manuals/journal/carrier-relay-api/</link><pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/carrier-relay-api/</guid><description>&lt;p&gt;The &lt;a href="https://github.com/m-amir-gomaa/carrier-relay-api"&gt;Carrier Relay API source&lt;/a&gt;
+
+explores three failure boundaries in a TypeScript backend: a carrier that does
+not answer, two callers booking the same shipment, and a webhook delivered more
+than once. It uses NestJS, Prisma and PostgreSQL. ALPHA, BRAVO and CHARLIE are
+simulated carrier adapters; this is a backend demonstration, not a live shipping
+service or a claim of production carrier access.&lt;/p&gt;
+&lt;h2 id="return-the-quotes-that-arrived"&gt;Return the quotes that arrived&lt;/h2&gt;
+&lt;p&gt;The aggregator calls all three adapters concurrently with &lt;code&gt;Promise.allSettled&lt;/code&gt;.
+Each request has a bounded timeout and cancellation signal. One rejected or
+timed-out adapter therefore does not discard successful quotes from the others.
+The response keeps partial failures explicit and ranks successful prices
+deterministically. The caller can distinguish a usable partial result from
+complete carrier failure.&lt;/p&gt;</description></item><item><title>Why these previews run on Modal</title><link>https://amirgomaa.com/manuals/journal/hosting/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/hosting/</guid><description>&lt;h2 id="more-than-a-gpu-rental"&gt;More than a GPU rental&lt;/h2&gt;
 &lt;p&gt;Modal runs application containers on CPU as well as GPU resources. It supports HTTP applications, background functions, schedules, persistent volumes and secrets. An HTTP server can be Python/FastAPI or a Node process; the deployment wrapper does not require every application to be written in Python.&lt;/p&gt;
 &lt;p&gt;Official references: &lt;a href="https://modal.com/docs/guide/webhooks"&gt;HTTP applications&lt;/a&gt;
 , &lt;a href="https://modal.com/docs/guide/scale"&gt;autoscaling&lt;/a&gt;
@@ -198,4 +211,23 @@ The original recognition remains a separate source throughout.&lt;/p&gt;
 . A
 &lt;a href="https://sonaweft.amirgomaa.com/example"&gt;completed original example&lt;/a&gt;
  is readable
-without consuming processing credit.&lt;/p&gt;</description></item></channel></rss>
+without consuming processing credit.&lt;/p&gt;</description></item><item><title>Three connected apps: services, privacy and reliable handoffs</title><link>https://amirgomaa.com/manuals/journal/connected-workspace-20261114/</link><pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate><guid>https://amirgomaa.com/manuals/journal/connected-workspace-20261114/</guid><description>&lt;p&gt;Noteweld is the writing workspace. Pageweft converts PDFs into reviewed source
+bundles; Sonaweft turns recordings into timestamped transcripts and derived notes.
+Each service owns its accounts, authorization and processing credit. A matching
+email address does not merge accounts or balances.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Web / Electron desktop
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; |
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Noteweld ---------- reviewed PDF bundles -------- Pageweft
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; | FastAPI / MinerU
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; +------------- reviewed audio bundles ------ Sonaweft
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; | FastAPI / Whisper
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; +-- PostgreSQL: notes, revisions, sync and receipts
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Optional MCP clients -&amp;gt; separate Noteweld / Pageweft / Sonaweft tools
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="what-changed"&gt;What changed&lt;/h2&gt;
+&lt;p&gt;The connected Pageweft and Sonaweft APIs now expose scoped quote, approval,
+processing, status, cancellation and export operations. Separate MCP namespaces
+wrap those contracts. The shared Noteweld web/desktop processing screen implements
+the same sequence: obtain a quote, approve the exact work, follow its status,
+then inspect an export before importing it. Imports keep source provenance and
+recover from interrupted or repeated delivery.&lt;/p&gt;</description></item></channel></rss>
