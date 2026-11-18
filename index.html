@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#f6f5f0" name="theme-color"/>
+<script src="theme.js?v=20261112"></script>
+<meta content="Mohamed Amir Gomaa — software developer building clear web interfaces, reproducible NixOS environments, and practical JavaScript applications." name="description"/>
+<meta content="Mohamed Amir Gomaa · Software Development" property="og:title"/>
+<meta content="Practical browser software and a reproducible NixOS development workbench. Available for freelance projects on Upwork." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://amirgomaa.com/" property="og:url"/>
+<link href="https://amirgomaa.com/" rel="canonical"/>
+<title>Mohamed Amir Gomaa · Software Development</title>
+<link href="style.css?v=20261115" rel="stylesheet"/>
+<link href="theme.css?v=20261112" rel="stylesheet"/>
+<script defer="" src="script.js?v=20261119"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<a aria-label="Mohamed Amir Gomaa home" class="wordmark" href="#home">mg<span> / </span><small>DEVELOPMENT</small></a>
+<div class="header-controls"><button aria-label="Dark mode" aria-pressed="false" class="theme-toggle" data-theme-toggle="" hidden="" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M20.8 13A9 9 0 0 1 11 3.2 9 9 0 1 0 20.8 13Z"></path></svg><span>Dark mode</span></button><button aria-controls="navigation" aria-expanded="false" class="menu-toggle" id="menu-toggle">Menu <span aria-hidden="true">+</span></button></div>
+<nav aria-label="Main navigation" id="navigation">
+<a href="#projects">Selected work</a>
+<a href="manuals/">Manuals</a>
+<a href="manuals/development-environment/">Workbench</a>
+<a href="#approach">How I work</a>
+<a class="nav-contact" href="#contact">Work on Upwork <span aria-hidden="true">↗</span></a>
+</nav>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero shell" id="home">
+<div class="hero-kicker"><span aria-hidden="true" class="availability-dot"></span> Available for freelance projects <span class="hero-location">Based in Egypt · Working remotely</span></div>
+<div class="hero-grid">
+<div><p class="eyebrow">MOHAMED GOMAA / SOFTWARE DEVELOPER</p><h1 id="hero-title">Useful software.<br/><em>Thoughtfully</em><br/>built.</h1><p class="hero-description">I build focused browser interfaces, reliable backend services, and reproducible Linux development systems with JavaScript, TypeScript, NixOS, and PostgreSQL.</p><div class="hero-actions"><a class="button button-dark" href="#projects">Explore my work <span aria-hidden="true">↓</span></a><a class="text-link" href="https://www.upwork.com/freelancers/~0173c5ce93bb9457ec" rel="noopener noreferrer" target="_blank">Find me on Upwork ↗</a></div></div>
+<div class="hero-aside"><div class="work-label"><span>FROM THE WORKBENCH</span><span>01 / 02</span></div><div aria-hidden="true" class="hero-art"><div class="art-grid"></div><div class="art-note note-one"><span class="tiny-label">PINNED / PROJECT PLAN</span><h3>A little less chaos.</h3><p>One place for notes,<br/>tasks, and next steps.</p><span class="note-tag">Local Keep</span></div><div class="art-note note-two"><span class="tiny-label">TODAY'S CHECKLIST</span><p><span class="check-box done">✓</span> Build the interface</p><p><span class="check-box done">✓</span> Test recovery paths</p><p><span class="check-box"></span> Ship with confidence</p></div><div class="art-stamp">Made to<br/><em>be used.</em></div></div><div class="work-caption"><span>Notes, checklists &amp; a calmer workflow.</span><a aria-label="Explore Local Keep" href="#keep-local">Explore ↗</a></div></div>
+</div>
+<div class="hero-foot"><span>Interfaces with intent. Systems with a reason.</span><div><span>JAVASCRIPT</span><span>TYPESCRIPT</span><span>NIXOS</span><span>CSS</span></div></div>
+</section>
+<section aria-labelledby="work-title" class="work-section shell" id="projects">
+<div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">Built. Tested.<br/><em>Explained.</em></h2></div><p>Try the browser demo. Inspect the system.<br/>Read the manuals behind both projects.</p></div>
+<div aria-label="Filter projects" class="filter-bar"><div class="filters"><button aria-pressed="true" class="filter active" data-filter="all" type="button">All work <span>02</span></button><button aria-pressed="false" class="filter" data-filter="web" type="button">Web app <span>01</span></button><button aria-pressed="false" class="filter" data-filter="systems" type="button">Systems <span>01</span></button></div><p class="small-mono" id="project-count" role="status">2 projects</p></div>
+<div class="project-grid">
+<article class="project" data-category="web" id="keep-local">
+<div class="project-cover local-cover"><div class="cover-top"><span>LOCAL KEEP</span><span>RUNNING APP PREVIEW</span></div><div class="app-frame"><iframe inert="" loading="lazy" sandbox="allow-scripts allow-same-origin" src="demos/keep/index.html" tabindex="-1" title="Local Keep browser application preview"></iframe></div><div class="preview-overlay"><button class="button button-light" data-demo="keep" type="button">Try it right here ↗</button></div></div>
+<div class="project-body"><div class="project-meta"><span>01 / BROWSER APPLICATION</span><span>JavaScript · CSS · Webpack · LocalStorage</span></div><h3>Local Keep — Browser Notes &amp; Checklists</h3><p>A local Google Keep clone built directly with native DOM APIs. Create notes and checklists, organize with labels and colors, search instantly, and export/import portable JSON backups.</p><div class="project-links"><button class="project-link primary" data-demo="keep" type="button">Try interactive demo ↗</button><a class="project-link" href="manuals/vanilla-keep/">Read the manual →</a><a class="project-link" href="manuals/vanilla-keep/overview/">Implementation notes →</a><a class="project-link" href="manuals/vanilla-keep/build-history/">Build history →</a></div><details class="case-study"><summary>The engineering behind it <span aria-hidden="true">+</span></summary><div><h4>The problem</h4><p>Quick notes should work immediately without an account or server. Browser storage is convenient, but users still need reliable backup, validated import, and safe recovery if storage writes fail.</p><h4>What I built</h4><ul><li>Modular vanilla JavaScript and native DOM events without a UI framework.</li><li>Notes, checklists, pinning, color themes, labels, search, archive, and recoverable trash.</li><li>Versioned JSON backup/export including archived and trashed items.</li><li>Validated, additive JSON import with duplicate protection and storage-failure rollback.</li><li>Raw JSON recovery path when existing browser data is malformed, instead of silently resetting user notes.</li></ul><h4>What I check</h4><p>Store operations, checklist editing, backup roundtrips, malformed imports, duplicate IDs, partial storage failures, and responsive keyboard navigation.</p><p class="case-note">The embedded demo uses this browser's localStorage. Your notes stay on this device.</p></div></details></div>
+</article>
+<article class="project" data-category="systems" id="nixosenv">
+<div class="project-cover transcript-cover"><div class="cover-top"><span>NIXOSENV / THE WORKBENCH</span><span>REPRODUCIBLE LINUX SYSTEM</span></div><div class="terminal-preview"><div class="terminal-chrome"><i></i><i></i><i></i><span>flake.nix · hyprland · neovim</span></div><code><span class="terminal-prompt">$</span> nixos-rebuild switch --flake ~/NixOSenv#nixos<br/><br/><span class="terminal-muted"># Declarative OS, desktop &amp; editor toolchain</span><br/><span class="terminal-accent">flake.nix</span> · pinned system &amp; Home Manager<br/><span class="terminal-accent">hyprland.nix</span> · Wayland keyboard-first desktop<br/><span class="terminal-accent">nvim.nix</span> · wrapped Neovim + LSPs/formatters<br/><br/><span class="terminal-muted"># Reproducible builds. Explicit recovery.<br/># Personal state kept cleanly separate.</span></code></div><span class="cover-note">Declarative NixOS system configuration</span></div>
+<div class="project-body"><div class="project-meta"><span>02 / SYSTEMS &amp; TOOLING</span><span>NixOS · Home Manager · Hyprland · Neovim</span></div><h3>NixOSenv — Reproducible Development Workbench</h3><p>A flake-pinned NixOS workstation combining a keyboard-first Hyprland Wayland desktop, wrapped Neovim with Nix-supplied language servers, explicit security hardening, and verified recovery workflows.</p><div class="project-links"><a class="project-link primary" href="manuals/development-environment/">Open interactive workbench →</a><a class="project-link" href="manuals/development-environment/system-map/">System architecture →</a><a class="project-link" href="manuals/development-environment/editor-guide/">Neovim workflow →</a><a class="project-link" href="manuals/development-environment/build-and-verify/">Build &amp; verify →</a></div><details class="case-study"><summary>The engineering behind it <span aria-hidden="true">+</span></summary><div><h4>The problem</h4><p>Development machines drift over time as global packages, editor binaries, and desktop settings accumulate ad-hoc edits. Rebuilding cleanly should be predictable without risking personal data or secrets.</p><h4>What I built</h4><ul><li>Flake-pinned NixOS + Home Manager configuration separating declarative packages from mutable personal state.</li><li>Hyprland Wayland desktop with Kitty, Waybar, Rofi, PipeWire/WirePlumber, and explicit Intel-default / NVIDIA-offload graphics.</li><li>Nix-wrapped Neovim supplying gopls, typescript-language-server, nil, pyright, clangd, rust-analyzer, Marksman, and formatters natively.</li><li>Stateful firewall, restricted local DNS, root-editor isolation, source-hygiene build checks, and automated backup verification.</li></ul><h4>What I check</h4><p>Full flake evaluation and system builds, Home Manager activation, headless Neovim language-server resolution, Hyprland config validation, and disposable-data backup copy tests.</p><p class="case-note">Explore the interactive configuration sketch and layer map inside the Workbench manual.</p></div></details></div>
+</article>
+</div>
+</section>
+<section aria-labelledby="docs-title" class="docs-section shell" id="documentation">
+<div><p class="eyebrow">THE WORK, EXPLAINED</p><h2 id="docs-title">Useful software.<br/><em>Readable manuals.</em></h2><p>Explore how both projects work, follow the technical decisions, and inspect what was verified.</p><a class="button button-dark" href="manuals/">Open Manuals <span aria-hidden="true">→</span></a></div>
+<div class="docs-topics"><a href="manuals/vanilla-keep/"><span>LOCAL KEEP</span>Browser notes, checklists &amp; JSON portability →</a><a href="manuals/development-environment/"><span>NIXOSENV</span>Interactive workbench, Hyprland &amp; Neovim →</a></div>
+</section>
+<section aria-labelledby="approach-title" class="approach-section shell" id="approach"><div class="section-heading"><div><p class="eyebrow">02 / THE WAY I WORK</p><h2 id="approach-title">Good work starts<br/><em>with clarity.</em></h2></div><p>I focus on practical web interfaces, reliable backend workflows,<br/>and reproducible engineering environments.</p></div><div class="approach-grid"><div><span class="step-number">01</span><h3>Understand the job.</h3><p>Reproduce the issue or define the workflow. Agree on what a successful result looks like.</p></div><div><span class="step-number">02</span><h3>Build the useful part.</h3><p>Keep changes focused. Make the happy path, empty states, and failure states work together.</p></div><div><span class="step-number">03</span><h3>Check &amp; hand over.</h3><p>Test the behavior, explain the decisions, and provide clear steps for reviewing and running the work.</p></div></div></section>
+<section aria-labelledby="contact-title" class="contact-section" id="contact"><div class="shell contact-grid"><div><p class="eyebrow">HAVE SOMETHING IN MIND?</p><h2 id="contact-title">Let's make<br/>it <em>work.</em></h2><p>A web interface, a backend integration, or a tricky bug that needs a careful second pair of eyes. Reach out on Upwork to discuss your project.</p></div><div class="contact-actions"><a class="button button-light" href="https://www.upwork.com/freelancers/~0173c5ce93bb9457ec" rel="noopener noreferrer" target="_blank">Start a conversation on Upwork ↗</a></div></div></section>
+</main>
+<footer class="site-footer shell"><span>© <span id="year">2026</span> Mohamed Amir Gomaa</span><span>Built with HTML, CSS &amp; JavaScript.</span><a href="#home">Back to top ↑</a></footer>
+<dialog aria-describedby="demo-description" aria-labelledby="demo-title" id="demo-dialog">
+<div class="dialog-header"><div><h2 id="demo-title">Local Keep · interactive demo</h2><p id="demo-description">Try notes, checklists, search, and JSON backup. Data stays in this browser.</p></div><button aria-label="Close interactive demo" class="dialog-close" id="close-demo" type="button">×</button></div>
+<iframe id="demo-frame" sandbox="allow-scripts allow-same-origin" title="Interactive Local Keep browser demo"></iframe>
+<a class="dialog-external" href="demos/keep/index.html" id="demo-external" rel="noopener noreferrer" target="_blank">Open full-screen demo in a new tab ↗</a>
+</dialog>
+</body>
+</html>
